@@ -1,0 +1,22 @@
+---
+export const prerender = false;
+import Admin from '../../../layouts/Admin.astro';
+import { q } from '../../../lib/server/db';
+const db = q();
+const runs = await db.all<{ id: number; provider_id: string; mode: string; status: string; started_at: string; finished_at: string | null; complete_feed: number; checkpoint: string; pages_fetched: number; items_seen: number; items_invalid: number; inserted: number; updated: number; unchanged: number; marked_missing: number; archived: number; rows_written: number; rows_read: number; budget_rows: number; error: string | null }>(
+  'SELECT * FROM import_runs ORDER BY id DESC LIMIT 40');
+const [last] = await db.all<{ value: string }>("SELECT value FROM site_settings WHERE key = 'last_sync_dispatch'");
+---
+<Admin title="Imports">
+  <form method="post" action="/api/admin/request-sync/" class="row">
+    <input type="hidden" name="return" value="/admin/imports/" />
+    <button class="btn btn-primary">Request sync now</button>
+    <span class="note">Starts the GitHub Actions job (import → publish → deploy if changed). Heavy work never runs inside this request. Last dispatch: {last?.value ?? 'never'}.</span>
+  </form>
+  <table class="t" style="margin-top:12px"><thead><tr><th>#</th><th>Provider</th><th>Status</th><th>Time</th><th>Pages / items</th><th>New / upd / same</th><th>Missing / archived</th><th>Rows written / budget</th><th>Checkpoint</th><th>Error</th></tr></thead><tbody>
+    {runs.map((r) => <tr><td>{r.id}</td><td>{r.provider_id}</td><td><span class:list={['pill', r.status]}>{r.status}</span>{r.complete_feed ? ' ✓ full feed' : ''}</td>
+      <td class="note">{r.started_at.slice(0, 16).replace('T', ' ')}{r.finished_at && ` → ${r.finished_at.slice(11, 16)}`}</td><td>{r.pages_fetched} / {r.items_seen} ({r.items_invalid} invalid)</td>
+      <td>{r.inserted} / {r.updated} / {r.unchanged}</td><td>{r.marked_missing} / {r.archived}</td><td>{r.rows_written.toLocaleString('en-US')} / {r.budget_rows.toLocaleString('en-US')}</td><td class="note">{r.checkpoint}</td><td class="note">{r.error ?? ''}</td></tr>)}
+    {runs.length === 0 && <tr><td colspan="10">No data yet</td></tr>}
+  </tbody></table>
+</Admin>

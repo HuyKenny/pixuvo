@@ -1,0 +1,16 @@
+---
+export const prerender = false;
+import Admin from '../../../layouts/Admin.astro';
+import { q } from '../../../lib/server/db';
+const st = ['open', 'resolved', 'dismissed'].includes(Astro.url.searchParams.get('status') ?? '') ? Astro.url.searchParams.get('status')! : 'open';
+const rows = await q().all<{ id: number; game_id: number; title: string | null; slug: string | null; reason: string; message: string; page_path: string; created_at: string; status: string }>(
+  'SELECT r.id, r.game_id, g.title, g.slug, r.reason, r.message, r.page_path, r.created_at, r.status FROM reports r LEFT JOIN games g ON g.id = r.game_id WHERE r.status = ? ORDER BY r.id DESC LIMIT 100', [st]);
+---
+<Admin title="Reports">
+  <p class="row">{['open', 'resolved', 'dismissed'].map((s) => <a class="btn btn-ghost btn-sm" href={`?status=${s}`} aria-current={s === st ? 'page' : undefined}>{s}</a>)}</p>
+  <table class="t"><thead><tr><th>#</th><th>Game</th><th>Reason</th><th>Message</th><th>When</th><th></th></tr></thead><tbody>
+    {rows.map((r) => <tr><td>{r.id}</td><td><a href={`/admin/games/${r.game_id}/`}>{r.title ?? r.game_id}</a></td><td>{r.reason}</td><td style="white-space:pre-line">{r.message}</td><td class="note">{r.created_at.slice(0, 16).replace('T', ' ')}</td>
+      <td>{['resolved', 'dismissed', 'open'].filter((s) => s !== r.status).map((s) => <form method="post" action="/api/admin/report-status/" class="inline"><input type="hidden" name="return" value={`/admin/reports/?status=${st}`} /><input type="hidden" name="id" value={r.id} /><input type="hidden" name="status" value={s} /><button class="btn btn-ghost btn-sm">{s}</button></form>)}</td></tr>)}
+    {rows.length === 0 && <tr><td colspan="6">No {st} reports.</td></tr>}
+  </tbody></table>
+</Admin>

@@ -1,0 +1,38 @@
+---
+export const prerender = false;
+import Admin from '../../layouts/Admin.astro';
+import { q } from '../../lib/server/db';
+const db = q();
+const [status, providers, runs, settings, reports, dups, metrics] = await Promise.all([
+  db.all<{ status: string; n: number }>('SELECT status, count(*) AS n FROM games GROUP BY status'),
+  db.all<{ id: string; name: string; publish_status: string; monetize_status: string; consent_mode: string; n: number }>(
+    "SELECT p.id, p.name, p.publish_status, p.monetize_status, p.consent_mode, (SELECT count(*) FROM game_sources s WHERE s.provider_id = p.id AND s.status = 'active') AS n FROM providers p ORDER BY p.id"),
+  db.all<{ id: number; provider_id: string; status: string; started_at: string; inserted: number; updated: number; rows_written: number; error: string | null }>('SELECT id, provider_id, status, started_at, inserted, updated, rows_written, error FROM import_runs ORDER BY id DESC LIMIT 6'),
+  db.all<{ key: string; value: string; updated_at: string }>('SELECT key, value, updated_at FROM site_settings'),
+  db.all<{ n: number }>("SELECT count(*) AS n FROM reports WHERE status = 'open'"),
+  db.all<{ n: number }>("SELECT count(*) AS n FROM duplicate_candidates WHERE status = 'open'"),
+  db.all<{ clicks: number | null; days: number }>("SELECT sum(play_clicks) AS clicks, count(DISTINCT day) AS days FROM aggregate_metrics WHERE day >= date('now', '-7 day')"),
+]);
+const s = Object.fromEntries(settings.map((x) => [x.key, x]));
+const pending = s.data_version?.value !== s.published_version?.value;
+---
+<Admin title="Dashboard">
+  <div class="kpis">
+    {status.map((r) => <div class="kpi"><span class:list={['pill', r.status]}>{r.status}</span><b>{r.n.toLocaleString('en-US')}</b>games</div>)}
+    <div class="kpi"><span class="pill">open reports</span><b>{reports[0]?.n ?? 0}</b><a href="/admin/reports/">Review</a></div>
+    <div class="kpi"><span class="pill">duplicate queue</span><b>{dups[0]?.n ?? 0}</b><a href="/admin/duplicates/">Review</a></div>
+    <div class="kpi"><span class="pill">play clicks, 7 days</span><b>{metrics[0]?.clicks ? metrics[0].clicks.toLocaleString('en-US') : 'No data yet'}</b>counted when Play is pressed</div>
+  </div>
+  <h2>Publication</h2>
+  <p>Data version <b>{s.data_version?.value}</b> · published (static pages) <b>{s.published_version?.value}</b> {pending ? <span class="pill pending">changes waiting for the next publish</span> : <span class="pill published">static pages up to date</span>}</p>
+  <p class="note">Dynamic pages and the play check reflect changes within ~1 minute. Static pages (homepage, category first pages, top games) update with the next catalog publish (daily sync or “Request sync” on Imports).</p>
+  <h2>Providers</h2>
+  <table class="t"><thead><tr><th>Provider</th><th>Publish</th><th>Monetize</th><th>Consent</th><th>Active sources</th></tr></thead><tbody>
+    {providers.map((p) => <tr><td><a href="/admin/providers/">{p.name}</a></td><td><span class:list={['pill', p.publish_status]}>{p.publish_status}</span></td><td><span class:list={['pill', p.monetize_status]}>{p.monetize_status}</span></td><td><span class:list={['pill', p.consent_mode]}>{p.consent_mode}</span></td><td>{p.n.toLocaleString('en-US')}</td></tr>)}
+  </tbody></table>
+  <h2>Latest imports</h2>
+  <table class="t"><thead><tr><th>#</th><th>Provider</th><th>Status</th><th>Started</th><th>New / updated</th><th>Rows written</th><th>Error</th></tr></thead><tbody>
+    {runs.length ? runs.map((r) => <tr><td>{r.id}</td><td>{r.provider_id}</td><td><span class:list={['pill', r.status]}>{r.status}</span></td><td>{r.started_at.slice(0, 16).replace('T', ' ')}</td><td>{r.inserted} / {r.updated}</td><td>{r.rows_written.toLocaleString('en-US')}</td><td>{r.error ?? ''}</td></tr>) : <tr><td colspan="7">No data yet</td></tr>}
+  </tbody></table>
+  <p class="note">Revenue is not available in Pixuvo — see the GameMonetize and GamePix publisher dashboards.</p>
+</Admin>

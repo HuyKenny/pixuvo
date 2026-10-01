@@ -1,0 +1,73 @@
+---
+import Base from '../layouts/Base.astro';
+import GameGrid from './GameGrid.astro';
+import Pagination from './Pagination.astro';
+import Breadcrumbs from './Breadcrumbs.astro';
+import FilterPanel from './FilterPanel.astro';
+import type { CategoryInfo, GameCard } from '../lib/types';
+import { SITE, categoryPath, canonical, gamePath } from '../lib/site';
+import { approxCount } from '../lib/format';
+import { MIN_CATEGORY_GAMES } from '../lib/taxonomy';
+
+interface Props {
+  slug: string;
+  name: string;
+  h1: string;
+  title: string;
+  description: string;
+  intro: string;
+  games: GameCard[];
+  total: number;
+  page: number;
+  pages: number;
+  category: CategoryInfo | null;
+  categories: CategoryInfo[];
+  parent?: CategoryInfo | null;
+  indexable?: boolean;
+  filterable?: boolean;
+  related?: Array<{ href: string; name: string }>;
+}
+const p = Astro.props;
+const path = categoryPath(p.slug, p.page);
+const subs = p.category ? p.categories.filter((c) => c.parent === p.category!.slug && c.count >= MIN_CATEGORY_GAMES) : [];
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'Categories', href: '/categories/' }];
+if (p.parent) crumbs.push({ name: p.parent.name, href: categoryPath(p.parent.slug) });
+crumbs.push({ name: p.page > 1 ? `${p.name} – page ${p.page}` : p.name, href: path });
+const ld = [{
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: p.h1,
+  url: canonical(path),
+  mainEntity: {
+    '@type': 'ItemList',
+    numberOfItems: p.games.length,
+    itemListElement: p.games.slice(0, 24).map((g, i) => ({ '@type': 'ListItem', position: (p.page - 1) * SITE.pageSize + i + 1, url: canonical(gamePath(g.slug)), name: g.title })),
+  },
+}];
+const pageTitle = p.page > 1 ? `${p.title.split(' – ')[0]} – Page ${p.page}` : p.title;
+const filterable = p.filterable !== false;
+---
+<Base title={pageTitle} description={p.page > 1 ? `${p.description} Page ${p.page}.` : p.description} path={path} noindex={p.indexable === false}
+  prev={p.page > 1 ? categoryPath(p.slug, p.page - 1) : null} next={p.page < p.pages ? categoryPath(p.slug, p.page + 1) : null} jsonLd={ld}>
+  <div class="wrap">
+    <Breadcrumbs items={crumbs} />
+    <div class="page-head">
+      <h1>{p.h1}{p.page > 1 && <span> – page {p.page}</span>}</h1>
+      {p.page === 1 && <p class="lead">{p.intro} {approxCount(p.total)} games.</p>}
+    </div>
+    {subs.length > 0 && (
+      <nav aria-label={`${p.name} subcategories`}><div class="chips">
+        {subs.map((s) => <a class="chip" href={categoryPath(s.slug)}>{s.name} <span class="count">{approxCount(s.count)}</span></a>)}
+      </div></nav>
+    )}
+    {filterable && <FilterPanel category={p.category?.slug ?? null} total={p.total} />}
+    <GameGrid games={p.games} id="game-grid" eagerCount={p.page === 1 ? 7 : 0} label={`${p.name} games`} />
+    <div id="game-pager"><Pagination page={p.page} pages={p.pages} href={(n) => categoryPath(p.slug, n)} label={`${p.name} pages`} /></div>
+    {p.related && p.related.length > 0 && (
+      <section class="section" aria-labelledby="rel-h">
+        <div class="section-head"><h2 id="rel-h">Related</h2></div>
+        <div class="chips">{p.related.map((r) => <a class="chip" href={r.href}>{r.name}</a>)}</div>
+      </section>
+    )}
+  </div>
+</Base>

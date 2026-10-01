@@ -1,0 +1,39 @@
+---
+import '../styles/global.css';
+interface Props { title: string }
+const { title } = Astro.props;
+const msg = Astro.url.searchParams.get('msg');
+const ok = Astro.url.searchParams.get('ok') === '1';
+const nav = [['/admin/', 'Dashboard'], ['/admin/games/', 'Games'], ['/admin/providers/', 'Providers'], ['/admin/imports/', 'Imports'], ['/admin/duplicates/', 'Duplicates'], ['/admin/categories/', 'Categories'], ['/admin/seo/', 'SEO'], ['/admin/reports/', 'Reports'], ['/admin/settings/', 'Settings'], ['/admin/audit/', 'Audit log']];
+---
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="robots" content="noindex, nofollow" /><title>{title} · Pixuvo admin</title>
+<style>
+  .admin-nav{display:flex;flex-wrap:wrap;gap:4px;padding:10px 0}
+  .admin-nav a{color:#dfe2f5;text-decoration:none;padding:6px 10px;border-radius:8px;font-weight:600;font-size:14px}
+  .admin-nav a[aria-current=page],.admin-nav a:hover{background:var(--navy-800);color:#fff}
+  table.t{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;font-size:14px}
+  table.t th,table.t td{padding:8px 10px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top}
+  table.t th{background:#f7f8fc;font-weight:700}
+  .flash{padding:10px 14px;border-radius:10px;margin:12px 0;font-weight:600}
+  .flash.ok{background:#e6f7ef;color:#0b6b48}.flash.err{background:#fdecef;color:#9b1c3a}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+  .kpi{background:#fff;border-radius:12px;padding:12px 14px;box-shadow:var(--shadow-card)}.kpi b{display:block;font-size:24px}
+  .inline{display:inline}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:end}
+  .pill{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;font-weight:700;background:#eef0f8}
+  .pill.published,.pill.approved,.pill.active,.pill.completed{background:#e6f7ef;color:#0b6b48}
+  .pill.pending_review,.pill.pending,.pill.missing,.pill.running,.pill.budget_stopped{background:#fff4dc;color:#8a5a00}
+  .pill.hidden,.pill.archived,.pill.disabled,.pill.failed,.pill.rejected,.pill.not_approved,.pill.awaiting_approval,.pill.blocked,.pill.removed{background:#fdecef;color:#9b1c3a}
+  .admin main{padding-top:10px}
+</style></head>
+<body class="admin">
+  <header class="site-header"><div class="wrap"><div class="header-row" style="height:auto;padding:8px 0;flex-wrap:wrap"><strong style="font-size:18px">Pixuvo admin</strong><span class="note" style="color:#aab0d4">{Astro.locals.adminEmail}</span></div>
+  <nav class="admin-nav" aria-label="Admin">{nav.map(([h, l]) => <a href={h} aria-current={Astro.url.pathname === h ? 'page' : undefined}>{l}</a>)}</nav></div></header>
+  <main class="wrap" id="main">
+    <h1 style="font-size:26px;margin:10px 0">{title}</h1>
+    {msg && <p class:list={['flash', ok ? 'ok' : 'err']} role="status">{msg}</p>}
+    <slot />
+  </main>
+</body>
+</html>

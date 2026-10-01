@@ -1,0 +1,80 @@
+/**
+ * Exports the catalog snapshot used by prerendered pages:
+ *   src/data/snapshot/site.json   categories, home sections, category first pages, landings
+ *   src/data/snapshot/games.json  details of the top-N games that get static pages
+ * Source is local D1 (dev) or production D1 (publish). Prerendered pages read ONLY
+ * this snapshot; everything else is rendered from D1 at request time.
+ *
+ *   tsx scripts/snapshot.ts --target local|remote [--games 3000]
+ */
+import { mkdirSync, writeFileSync } from 'node:fs';
+import { parseArgs } from 'node:util';
+import { categoryGames, getCategories, getGame, getLandings, getSetting, landingGames, topGames, type Q } from '../src/lib/catalog.ts';
+import { MIN_CATEGORY_GAMES } from '../src/lib/taxonomy.ts';
+import type { GameCard, GameDetail } from '../src/lib/types.ts';
+import { loadConfig } from './lib/env.ts';
+import { openTarget } from './lib/target.ts';
+
+const { values } = parseArgs({ options: { target: { type: 'string', default: 'local' }, games: { type: 'string', default: '3000' }, out: { type: 'string', default: 'src/data/snapshot' } } });
+const cfg = loadConfig();
+const db = openTarget(values.target!, cfg);
+let reads = 0;
+const q: Q = { all: async (sql, params = []) => { const r = await db.all(sql, params as never); reads += r.meta.rows_read; return r.rows as never; } };
+
+const HOME_SECTIONS = ['puzzle', 'action', 'racing', 'arcade', 'shooting', 'sports', '2-player', 'dress-up', 'simulation', 'io'];
+
+const t0 = Date.now();
+const [dataVersion, maxSeqRaw, popularRaw, trendingRaw] = await Promise.all([getSetting(q, 'data_version'), getSetting(q, 'max_dir_seq'), getSetting(q, 'list:popular'), getSetting(q, 'list:trending')]);
+const categories = await getCategories(q);
+const live = categories.filter((c) => c.count >= MIN_CATEGORY_GAMES);
+const [{ n: published } = { n: 0 }] = await q.all<{ n: number }>("SELECT count(*) AS n FROM games WHERE status = 'published'");
+const [{ m: maxSeq } = { m: 0 }] = await q.all<{ m: number }>('SELECT coalesce(max(dir_seq), 0) AS m FROM games');
+
+const featured = await topGames(q, 'featured', 36);
+const newest = await topGames(q, 'new', 18);
+const sections: Array<{ slug: string; name: string; count: number; games: GameCard[] }> = [];
+const categoryPages: Record<string, GameCard[]> = {};
+for (const c of live) {
+  const page = await categoryGames(q, c, 'featured', 1);
+  categoryPages[c.slug] = page.items;
+  if (HOME_SECTIONS.includes(c.slug)) sections.push({ slug: c.slug, name: c.name, count: c.count, games: page.items.slice(0, 12) });
+}
+sections.sort((a, b) => HOME_SECTIONS.indexOf(a.slug) - HOME_SECTIONS.indexOf(b.slug));
+
+const landings = [];
+for (const l of await getLandings(q)) {
+  const r = await landingGames(q, categories, l.all, 96);
+  if (r.total >= l.minGames) landings.push({ ...l, count: r.total, games: r.items });
+  else console.warn(`landing ${l.slug}: only ${r.total} games (< ${l.minGames}) — not published`);
+}
+
+const ids = (raw: string | null) => { try { const a = JSON.parse(raw ?? 'null'); return Array.isArray(a) ? a.filter(Number.isInteger) as number[] : null; } catch { return null; } };
+const popularIds = ids(popularRaw);
+const trendingIds = ids(trendingRaw);
+
+// Static detail pages: the best-ranked games, plus everything already on the homepage.
+const N = Math.max(0, Math.min(15_000, Number(values.games)));
+const slugRows = await q.all<{ slug: string }>(`SELECT slug FROM games WHERE status = 'published' ORDER BY rank_score DESC, id DESC LIMIT ?`, [N]);
+const wanted = new Set(slugRows.map((r) => r.slug));
+for (const g of [...featured, ...newest]) wanted.add(g.slug);
+const details: GameDetail[] = [];
+for (const slug of wanted) {
+  const r = await getGame(q, slug);
+  if (r.kind === 'ok') details.push(r.game);
+}
+
+mkdirSync(values.out!, { recursive: true });
+const site = {
+  generatedAt: new Date().toISOString(),
+  dataVersion: dataVersion ?? '0',
+  published,
+  maxDirSeq: Number(maxSeqRaw ?? maxSeq) || maxSeq,
+  categories,
+  home: { featured, newest, sections, hasPopular: !!popularIds?.length, hasTrending: !!trendingIds?.length },
+  categoryPages,
+  landings,
+};
+writeFileSync(`${values.out}/site.json`, JSON.stringify(site));
+writeFileSync(`${values.out}/games.json`, JSON.stringify(details));
+console.log(`snapshot: ${published} published, ${live.length} live categories, ${landings.length} landings, ${details.length} static game pages, ${reads} rows read, ${((Date.now() - t0) / 1000).toFixed(1)} s`);
+db.close?.();

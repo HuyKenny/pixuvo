@@ -1,0 +1,87 @@
+/**
+ * Runs only for on-demand routes — static files are served by Workers Static
+ * Assets without invoking the Worker. Responsibilities:
+ *  1. admin guard (Cloudflare Access JWT, fail closed)
+ *  2. edge cache for public GET pages/APIs (key = path + whitelisted params + data_version)
+ *  3. security / robots headers
+ */
+import { defineMiddleware } from 'astro:middleware';
+import { authenticateAdmin } from './lib/server/access';
+import { dataVersion, q } from './lib/server/db';
+import { getEnv } from './lib/server/env';
+import { SECURITY_HEADERS } from './lib/security';
+import { normTitle } from './lib/text';
+
+const NO_CACHE = [/^\/api\/(play|rate|report|cron|admin)\b/, /^\/admin\b/];
+const PARAMS: Record<string, string[]> = {
+  '/api/games/': ['cat', 'device', 'players', 'mode', 'style', 'controls', 'sort', 'page'],
+  '/api/suggest/': ['q'],
+  '/search/': ['q', 'page'],
+};
+
+function cacheKey(url: URL, version: string): string | null {
+  const allowed = PARAMS[url.pathname] ?? [];
+  const sp = new URLSearchParams();
+  for (const k of allowed) {
+    let v = url.searchParams.get(k);
+    if (v === null || v === '') continue;
+    if (k === 'q') v = normTitle(v.slice(0, 80));
+    if (v.length > 40) return null;
+    sp.set(k, v);
+  }
+  sp.set('__v', version);
+  sp.set('__b', __BUILD_ID__);
+  return `https://pixuvo.com${url.pathname}?${sp.toString()}`;
+}
+
+function withHeaders(res: Response, url: URL, extra: Record<string, string> = {}): Response {
+  const out = new Response(res.body, res);
+  for (const [k, v] of Object.entries(SECURITY_HEADERS)) if (!out.headers.has(k)) out.headers.set(k, v);
+  for (const [k, v] of Object.entries(extra)) out.headers.set(k, v);
+  const preview = url.hostname.endsWith('.workers.dev') || getEnv().ENVIRONMENT === 'preview';
+  if (preview || url.pathname.startsWith('/admin') || url.pathname.startsWith('/api/')) out.headers.set('X-Robots-Tag', 'noindex, nofollow');
+  return out;
+}
+
+export const onRequest = defineMiddleware(async (ctx, next) => {
+  const url = ctx.url;
+  const env = getEnv();
+
+  if (url.pathname.startsWith('/admin') || url.pathname.startsWith('/api/admin')) {
+    const auth = await authenticateAdmin(ctx.request, env);
+    if (!auth.ok) {
+      const body = url.pathname.startsWith('/api/') ? JSON.stringify({ error: auth.reason }) : `<!doctype html><title>Admin</title><p>${auth.reason}</p>`;
+      return withHeaders(new Response(body, { status: auth.status, headers: { 'content-type': url.pathname.startsWith('/api/') ? 'application/json' : 'text/html; charset=utf-8', 'cache-control': 'private, no-store' } }), url);
+    }
+    ctx.locals.adminEmail = auth.email;
+    const res = await next();
+    return withHeaders(res, url, { 'Cache-Control': 'private, no-store' });
+  }
+
+  const cacheable = ctx.request.method === 'GET' && !NO_CACHE.some((r) => r.test(url.pathname)) && !ctx.request.headers.has('authorization');
+  const cache = cacheable && typeof caches !== 'undefined' ? (caches as unknown as { default: Cache }).default : null;
+  let key: string | null = null;
+  if (cache) {
+    try {
+      key = cacheKey(url, await dataVersion(q()));
+      if (key) {
+        const hit = await cache.match(key);
+        if (hit) return withHeaders(hit, url, { 'X-Pixuvo-Cache': 'HIT' });
+      }
+    } catch {
+      key = null;
+    }
+  }
+
+  const res = await next();
+  if (cache && key && res.status === 200 && !res.headers.has('set-cookie')) {
+    const isApi = url.pathname.startsWith('/api/');
+    const toStore = new Response(res.clone().body, res);
+    toStore.headers.set('Cache-Control', `public, s-maxage=${isApi ? 300 : 600}`);
+    ctx.locals.cfContext?.waitUntil?.(cache.put(key, toStore));
+    const out = withHeaders(res, url, { 'X-Pixuvo-Cache': 'MISS' });
+    if (!out.headers.has('cache-control') || out.headers.get('cache-control')!.includes('private')) out.headers.set('Cache-Control', 'public, max-age=60');
+    return out;
+  }
+  return withHeaders(res, url);
+});

@@ -1,0 +1,44 @@
+---
+/**
+ * Popular / Trending are computed from real Pixuvo play counts (scripts/metrics.ts):
+ *  popular  = most play clicks in the last 7 days (min 5 plays)
+ *  trending = biggest rise in plays: last 3 days vs. the 7 days before (min 5 plays)
+ * Until enough data exists the page says so, shows "Featured games" instead and is noindex.
+ */
+import Base from '../layouts/Base.astro';
+import GameGrid from './GameGrid.astro';
+import Breadcrumbs from './Breadcrumbs.astro';
+import { gamesByIds, getSetting, topGames } from '../lib/catalog';
+import { q } from '../lib/server/db';
+interface Props { kind: 'popular' | 'trending' }
+const { kind } = Astro.props;
+const db = q();
+let ids: number[] = [];
+try {
+  const raw = await getSetting(db, `list:${kind}`);
+  const arr = raw ? (JSON.parse(raw) as unknown) : [];
+  ids = Array.isArray(arr) ? arr.filter((x): x is number => Number.isInteger(x)) : [];
+} catch {
+  ids = [];
+}
+const games = ids.length >= 12 ? await gamesByIds(db, ids.slice(0, 90)) : [];
+const hasData = games.length >= 12;
+const fallback = hasData ? [] : await topGames(db, 'featured', 48);
+const name = kind === 'popular' ? 'Popular games' : 'Trending games';
+const path = `/${kind}-games/`;
+---
+<Base title={kind === 'popular' ? 'Popular Games – Most Played on Pixuvo' : 'Trending Games – Rising on Pixuvo'} description={kind === 'popular' ? 'The most played free online games on Pixuvo this week.' : 'Games whose plays on Pixuvo are rising fastest right now.'} path={path} noindex={!hasData}>
+  <div class="wrap">
+    <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name, href: path }]} />
+    <div class="page-head">
+      <h1>{name}</h1>
+      <p class="lead">{kind === 'popular' ? 'Ranked by the number of times visitors pressed Play on Pixuvo in the last 7 days.' : 'Games with the biggest rise in plays on Pixuvo over the last 3 days compared with the week before.'}</p>
+    </div>
+    {hasData ? <GameGrid games={games} eagerCount={7} label={name} /> : (
+      <>
+        <div class="empty-state"><strong>Not enough play data yet</strong>Pixuvo is new, so we do not have enough plays to rank games honestly. Here are our featured games instead.</div>
+        <div class="section"><div class="section-head"><h2>Featured games</h2></div><GameGrid games={fallback} label="Featured games" /></div>
+      </>
+    )}
+  </div>
+</Base>

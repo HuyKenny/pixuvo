@@ -1,0 +1,15 @@
+---
+/**
+ * Optional display ad outside the game iframe. OFF by default: renders nothing
+ * unless PUBLIC_ADS_PROVIDER is configured at build time. Fixed height reserves
+ * space (no layout shift); never placed within 150 px of the game controls.
+ */
+interface Props { slot: string; height?: number }
+const { slot, height = 250 } = Astro.props;
+const provider = import.meta.env.PUBLIC_ADS_PROVIDER;
+---
+{provider && (
+  <aside class="ad-slot" style={`min-height:${height}px`} data-ad-slot={slot} aria-label="Advertisement">
+    <span class="ad-label">Advertisement</span>
+  </aside>
+)}

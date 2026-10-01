@@ -1,0 +1,37 @@
+---
+export const prerender = true;
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { snapshot } from '../../lib/snapshot';
+import { MIN_CATEGORY_GAMES } from '../../lib/taxonomy';
+import { categoryPath } from '../../lib/site';
+import { approxCount } from '../../lib/format';
+const live = snapshot.categories.filter((c) => c.count >= MIN_CATEGORY_GAMES);
+const genres = live.filter((c) => c.kind === 'genre').sort((a, b) => b.count - a.count);
+const modes = live.filter((c) => c.kind === 'mode');
+const subsOf = (slug: string) => live.filter((c) => c.parent === slug);
+---
+<Base title="Game Categories – Browse Free Online Games by Genre" description={`Browse ${live.length} game categories on Pixuvo: genres like puzzle, racing and action, plus ways to play such as 2 player and multiplayer.`} path="/categories/">
+  <div class="wrap">
+    <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'Categories', href: '/categories/' }]} />
+    <div class="page-head"><h1>Game categories</h1><p class="lead">Genres describe what you play; “ways to play” describe how. A game can be in several categories.</p></div>
+    <section class="category-group" aria-labelledby="modes-h">
+      <h2 id="modes-h">Ways to play</h2>
+      <div class="cat-grid">
+        {modes.map((c) => <a class="cat-tile" href={categoryPath(c.slug)}><strong>{c.name} <span class="n">{approxCount(c.count)}</span></strong><p>{c.blurb}</p></a>)}
+        {snapshot.landings.map((l) => <a class="cat-tile" href={categoryPath(l.slug)}><strong>{l.h1.replace(/ Games$/, '')} <span class="n">{approxCount(l.count)}</span></strong><p>{l.description.split('.')[0]}.</p></a>)}
+      </div>
+    </section>
+    <section class="category-group" aria-labelledby="genres-h">
+      <h2 id="genres-h">Genres</h2>
+      <div class="cat-grid">
+        {genres.map((c) => (
+          <div class="cat-tile">
+            <a href={categoryPath(c.slug)} style="color:inherit;text-decoration:none"><strong>{c.name} <span class="n">{approxCount(c.count)}</span></strong><p>{c.blurb}</p></a>
+            {subsOf(c.slug).length > 0 && <div class="subs">{subsOf(c.slug).map((s) => <a href={categoryPath(s.slug)}>{s.name}</a>)}</div>}
+          </div>
+        ))}
+      </div>
+    </section>
+  </div>
+</Base>

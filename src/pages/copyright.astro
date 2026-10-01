@@ -1,0 +1,19 @@
+---
+export const prerender = true;
+import Doc from '../layouts/Doc.astro';
+import { SITE } from '../lib/site';
+---
+<Doc title="Copyright and Trademark Notices" h1="Copyright and trademark notices" description="How to tell Pixuvo about content that infringes your copyright or trademark." path="/copyright/" updated="2 October 2026">
+  <p>Pixuvo embeds games provided by distribution partners and does not host the game files. We respect intellectual property rights and act quickly on valid notices. Games that use third-party brands in their title are held for manual review before they appear on Pixuvo.</p>
+  <h2>How to send a notice</h2>
+  <p>E-mail <a href={`mailto:${SITE.email}?subject=Copyright%20notice`}>{SITE.email}</a> with:</p>
+  <ol>
+    <li>the Pixuvo URL(s) of the game or page concerned;</li>
+    <li>a description of the work or trademark you believe is infringed;</li>
+    <li>your name, contact details and your relationship to the rights holder;</li>
+    <li>a statement that you believe in good faith the use is not authorised, and that the information in your notice is accurate.</li>
+  </ol>
+  <p>You can also use <strong>Report issue → Copyright or trademark problem</strong> on any game page; for formal notices please use e-mail.</p>
+  <h2>What happens next</h2>
+  <p>We review notices promptly. When a notice is valid we remove or disable the game on Pixuvo and inform the distribution partner. Removing a game from Pixuvo does not remove it from the partner’s catalog or from other websites.</p>
+</Doc>

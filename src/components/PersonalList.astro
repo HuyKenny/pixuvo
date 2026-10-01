@@ -1,0 +1,58 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from './Breadcrumbs.astro';
+interface Props { kind: 'favorites' | 'recent' }
+const { kind } = Astro.props;
+const fav = kind === 'favorites';
+const name = fav ? 'Favorites' : 'Recently played';
+const path = fav ? '/favorites/' : '/recently-played/';
+---
+<Base title={name} description={fav ? 'Your favorite games on Pixuvo, saved in this browser.' : 'Games you played recently on Pixuvo, saved in this browser.'} path={null} noindex>
+  <div class="wrap">
+    <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name, href: path }]} />
+    <div class="page-head">
+      <h1>{name}</h1>
+      <p class="lead">{fav ? 'Saved only in this browser — no account needed. Clearing your browser data removes them.' : 'Your play history stays in this browser. It is a list of games, not saved game progress.'}</p>
+    </div>
+    <div class="filter-bar">
+      <span class="result-count" data-count aria-live="polite"></span>
+      <button type="button" class="btn btn-ghost btn-sm" data-clear hidden>{fav ? 'Remove all favorites' : 'Clear history'}</button>
+    </div>
+    <p class="note" data-unavailable hidden>Your browser blocks local storage, so {fav ? 'favorites' : 'history'} cannot be kept after you leave this page.</p>
+    <div class="grid" id="personal-grid" role="list" aria-label={name} data-kind={kind}></div>
+    <div class="empty-state" data-empty hidden><strong>{fav ? 'No favorites yet' : 'Nothing here yet'}</strong>{fav ? 'Tap the heart on any game to save it here.' : 'Games you start will appear here.'} <a href="/">Find a game</a></div>
+  </div>
+</Base>
+<script>
+  import { store } from '../scripts/store';
+  import { cardHtml } from '../scripts/cards';
+  const grid = document.getElementById('personal-grid')!;
+  const kind = grid.dataset.kind as 'favorites' | 'recent';
+  const label = kind === 'favorites' ? 'favorites' : 'history';
+  const empty = document.querySelector<HTMLElement>('[data-empty]')!;
+  const clear = document.querySelector<HTMLButtonElement>('[data-clear]')!;
+  const count = document.querySelector<HTMLElement>('[data-count]')!;
+  if (!store.available()) document.querySelector<HTMLElement>('[data-unavailable]')!.hidden = false;
+  const draw = () => {
+    const items = kind === 'favorites' ? store.favorites() : store.recent();
+    grid.innerHTML = items.map((g) => cardHtml(g, { removable: label })).join('');
+    empty.hidden = items.length > 0;
+    clear.hidden = items.length === 0;
+    count.textContent = items.length ? `${items.length} ${items.length === 1 ? 'game' : 'games'}` : '';
+  };
+  grid.addEventListener('click', (e) => {
+    const b = (e.target as Element).closest<HTMLButtonElement>('[data-remove]');
+    if (!b) return;
+    e.preventDefault();
+    const id = Number(b.dataset.remove);
+    if (kind === 'favorites') store.removeFavorite(id);
+    else store.removeRecent(id);
+    count.focus?.();
+  });
+  clear.addEventListener('click', () => {
+    if (kind === 'favorites') store.clearFavorites();
+    else store.clearRecent();
+  });
+  store.subscribe(draw);
+  draw();
+</script>

@@ -1,0 +1,23 @@
+---
+export const prerender = false;
+import Admin from '../../../layouts/Admin.astro';
+import { q } from '../../../lib/server/db';
+import { getEnv } from '../../../lib/server/env';
+const env = getEnv();
+const settings = await q().all<{ key: string; value: string; updated_at: string }>('SELECT key, value, updated_at FROM site_settings ORDER BY key');
+const secrets: Array<[string, boolean]> = [
+  ['Cloudflare Access (admin)', !!(env.ACCESS_TEAM_DOMAIN && env.ACCESS_AUD)], ['Turnstile secret', !!env.TURNSTILE_SECRET_KEY], ['Cron secret', !!env.CRON_SECRET],
+  ['GitHub dispatch token', !!env.GH_DISPATCH_TOKEN], ['IP hash salt', !!env.IP_HASH_SALT], ['Write rate limiter', !!env.RL_WRITE], ['Play rate limiter', !!env.RL_PLAY],
+];
+---
+<Admin title="Settings">
+  <h2>Configuration</h2>
+  <table class="t"><tbody>{secrets.map(([k, v]) => <tr><td>{k}</td><td><span class:list={['pill', v ? 'approved' : 'disabled']}>{v ? 'configured' : 'missing'}</span></td></tr>)}</tbody></table>
+  <p class="note">Secret values are never shown. Set them with <code>wrangler secret put</code>.</p>
+  <h2>Site settings</h2>
+  <table class="t"><thead><tr><th>Key</th><th>Value</th><th>Updated</th></tr></thead><tbody>{settings.map((s) => <tr><td>{s.key}</td><td style="max-width:420px;word-break:break-all">{s.value.slice(0, 200)}</td><td class="note">{s.updated_at.slice(0, 16)}</td></tr>)}</tbody></table>
+  <h2>Advertising outside games</h2>
+  <form method="post" action="/api/admin/setting/" class="row"><input type="hidden" name="return" value="/admin/settings/" /><input type="hidden" name="key" value="ads_enabled" />
+    <label class="field">ads_enabled<select name="value"><option>false</option><option>true</option></select></label><button class="btn btn-ghost">Save</button></form>
+  <p class="note">Display ads also need an approved ad network, its ads.txt lines, a certified CMP where required, and a rebuild with PUBLIC_ADS_PROVIDER. This switch alone shows nothing.</p>
+</Admin>

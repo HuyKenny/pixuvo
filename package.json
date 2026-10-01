@@ -1,0 +1,50 @@
+{
+  "name": "pixuvo",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "packageManager": "pnpm@11.15.1",
+  "scripts": {
+    "dev": "astro dev",
+    "check": "astro check",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "build": "astro build && tsx scripts/postbuild.ts",
+    "preview": "wrangler dev -c dist/server/wrangler.json --local --persist-to .wrangler/state",
+    "db:migrate:local": "wrangler d1 migrations apply pixuvo-production --local",
+    "db:migrate:remote": "tsx scripts/db-backup.ts && wrangler d1 migrations apply pixuvo-production --remote",
+    "import:games": "tsx scripts/import/cli.ts",
+    "import:dry-run": "tsx scripts/import/cli.ts --dry-run",
+    "catalog:publish": "tsx scripts/publish.ts",
+    "verify:free-tier": "tsx scripts/verify-free-tier.ts",
+    "verify:launch": "tsx scripts/verify-launch.ts",
+    "deploy": "tsx scripts/deploy.ts"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^14.3.3",
+    "astro": "^7.3.5",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@cloudflare/vitest-pool-workers": "^0.22.0",
+    "@playwright/test": "~1.61.1",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^22.20.4",
+    "better-sqlite3": "^13.0.3",
+    "dotenv": "^17.4.2",
+    "eslint": "^10.11.0",
+    "eslint-plugin-astro": "^3.2.1",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.71.0",
+    "vitest": "^4.1.11",
+    "wrangler": "^4.146.0"
+  }
+}

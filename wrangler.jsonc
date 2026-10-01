@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // NOTE: @astrojs/cloudflare builds dist/server/wrangler.json from this file; deploy/preview use THAT file.
+  "name": "pixuvo",
+  "main": "@astrojs/cloudflare/entrypoints/server",
+  "compatibility_date": "2026-09-25",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "preview_urls": false,
+  "assets": { "binding": "ASSETS", "directory": "./dist/client", "html_handling": "auto-trailing-slash", "not_found_handling": "none" },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "pixuvo-production", "database_id": "7191a68f-d043-434d-8166-fcca9c5b8d55", "migrations_dir": "migrations" }
+  ],
+  // Workers Rate Limiting API (per colo, best effort): 20 writes/min, 60 plays/min per IP.
+  "ratelimits": [
+    { "name": "RL_WRITE", "namespace_id": "71001", "simple": { "limit": 20, "period": 60 } },
+    { "name": "RL_PLAY", "namespace_id": "71002", "simple": { "limit": 60, "period": 60 } }
+  ],
+  "vars": { "ENVIRONMENT": "production", "SITE_URL": "https://pixuvo.com", "GH_REPO": "HuyKenny/pixuvo" },
+  "observability": { "enabled": true, "head_sampling_rate": 1 }
+}

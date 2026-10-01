@@ -1,0 +1,10 @@
+---
+import type { CategoryInfo } from '../lib/types';
+import { categoryPath } from '../lib/site';
+interface Props { categories: CategoryInfo[]; current?: string; label?: string }
+const { categories, current, label = 'Game categories' } = Astro.props;
+---
+<nav aria-label={label}><div class="chips">
+  {categories.map((c) => <a class="chip" href={categoryPath(c.slug)} aria-current={c.slug === current ? 'page' : undefined}>{c.name}</a>)}
+  <a class="chip" href="/categories/">All categories</a>
+</div></nav>

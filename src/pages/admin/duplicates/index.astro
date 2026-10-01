@@ -1,0 +1,23 @@
+---
+export const prerender = false;
+import Admin from '../../../layouts/Admin.astro';
+import { q } from '../../../lib/server/db';
+const rows = await q().all<{ id: number; score: number; signals: string; a: number; at: string; as_: string; ath: string; ap: string | null; b: number; bt: string; bs: string; bth: string; bp: string | null }>(
+  `SELECT d.id, d.score, d.signals, a.id AS a, a.title AS at, a.slug AS as_, a.thumb_url AS ath, (SELECT group_concat(provider_id) FROM game_sources WHERE game_id = a.id) AS ap,
+          b.id AS b, b.title AS bt, b.slug AS bs, b.thumb_url AS bth, (SELECT group_concat(provider_id) FROM game_sources WHERE game_id = b.id) AS bp
+     FROM duplicate_candidates d JOIN games a ON a.id = d.game_a JOIN games b ON b.id = d.game_b
+    WHERE d.status = 'open' AND a.status != 'merged' AND b.status != 'merged' ORDER BY d.score DESC, d.id LIMIT 50`);
+---
+<Admin title="Possible duplicates">
+  <p class="note">Same title key but not enough evidence for an automatic merge. Merging keeps all sources and 301-redirects the removed URL.</p>
+  <table class="t"><thead><tr><th>Score</th><th>Game A</th><th>Game B</th><th>Signals</th><th>Action</th></tr></thead><tbody>
+    {rows.map((r) => <tr><td>{r.score}</td>
+      <td><img src={r.ath} alt="" width="96" height="72" referrerpolicy="no-referrer" /><br /><a href={`/admin/games/${r.a}/`}>{r.at}</a><br /><span class="note">{r.ap}</span></td>
+      <td><img src={r.bth} alt="" width="96" height="72" referrerpolicy="no-referrer" /><br /><a href={`/admin/games/${r.b}/`}>{r.bt}</a><br /><span class="note">{r.bp}</span></td>
+      <td class="note">{r.signals}</td>
+      <td><form method="post" action="/api/admin/merge/"><input type="hidden" name="return" value="/admin/duplicates/" /><input type="hidden" name="candidate" value={r.id} /><input type="hidden" name="keep" value={r.a} /><input type="hidden" name="dup" value={r.b} /><button class="btn btn-ghost btn-sm">Keep A, merge B</button></form>
+        <form method="post" action="/api/admin/merge/"><input type="hidden" name="return" value="/admin/duplicates/" /><input type="hidden" name="candidate" value={r.id} /><input type="hidden" name="keep" value={r.b} /><input type="hidden" name="dup" value={r.a} /><button class="btn btn-ghost btn-sm">Keep B, merge A</button></form>
+        <form method="post" action="/api/admin/duplicate-reject/"><input type="hidden" name="return" value="/admin/duplicates/" /><input type="hidden" name="candidate" value={r.id} /><button class="btn btn-ghost btn-sm">Not a duplicate</button></form></td></tr>)}
+    {rows.length === 0 && <tr><td colspan="5">Queue is empty.</td></tr>}
+  </tbody></table>
+</Admin>

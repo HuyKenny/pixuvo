@@ -1,0 +1,54 @@
+---
+export const prerender = false;
+import Admin from '../../../layouts/Admin.astro';
+import { q } from '../../../lib/server/db';
+import { CATEGORIES } from '../../../lib/taxonomy';
+const id = Number(Astro.params.id);
+if (!Number.isInteger(id) || id <= 0) return Astro.rewrite('/404/');
+const db = q();
+const [g] = await db.all<{ id: number; slug: string; title: string; description: string; instructions: string; status: string; review_reason: string | null; primary_source_id: number; thumb_url: string }>(
+  'SELECT id, slug, title, description, instructions, status, review_reason, primary_source_id, thumb_url FROM games WHERE id = ?', [id]);
+if (!g) return Astro.rewrite('/404/');
+const [sources, cats, ovs] = await Promise.all([
+  db.all<{ id: number; provider_id: string; provider_game_id: string; status: string; embed_url: string; last_seen_at: string; missing_since: string | null }>('SELECT id, provider_id, provider_game_id, status, embed_url, last_seen_at, missing_since FROM game_sources WHERE game_id = ?', [id]),
+  db.all<{ slug: string; origin: string }>('SELECT c.slug, gc.origin FROM game_categories gc JOIN categories c ON c.id = gc.category_id WHERE gc.game_id = ?', [id]),
+  db.all<{ field: string; value: string; updated_by: string; updated_at: string }>('SELECT field, value, updated_by, updated_at FROM editorial_overrides WHERE game_id = ?', [id]),
+]);
+const catSet = new Set(cats.map((c) => c.slug));
+const ret = Astro.url.pathname;
+---
+<Admin title={g.title}>
+  <p><span class:list={['pill', g.status]}>{g.status}</span> {g.review_reason && <span class="note">({g.review_reason})</span>} · <a href={`/games/${g.slug}/`}>/games/{g.slug}/</a></p>
+  <form method="post" action="/api/admin/games-status/" class="row">
+    <input type="hidden" name="return" value={ret} /><input type="hidden" name="id" value={g.id} />
+    <label class="field">Status<select name="status">{['published', 'hidden', 'pending_review', 'archived'].map((s) => <option selected={s === g.status}>{s}</option>)}</select></label>
+    <button class="btn btn-primary">Change status</button>
+  </form>
+  <h2>Editorial text</h2>
+  <form method="post" action="/api/admin/game-edit/" style="display:grid;gap:10px;max-width:820px">
+    <input type="hidden" name="return" value={ret} /><input type="hidden" name="id" value={g.id} />
+    <label class="field">Title<input type="text" name="title" value={g.title} maxlength="120" /></label>
+    <label class="field">Description<textarea name="description" rows="6">{g.description}</textarea></label>
+    <label class="field">How to play<textarea name="instructions" rows="4">{g.instructions}</textarea></label>
+    <fieldset style="border:1px solid var(--border);border-radius:10px"><legend>Categories (editorial override)</legend>
+      <div class="opt-row">{CATEGORIES.map((c) => <label class="opt"><input type="checkbox" name="categories" value={c.slug} checked={catSet.has(c.slug)} /><span>{c.name}</span></label>)}</div>
+      <label style="display:block;margin-top:8px"><input type="checkbox" name="save_categories" value="1" /> Save category selection (otherwise categories stay provider-managed)</label>
+    </fieldset>
+    <button class="btn btn-primary">Save edits</button>
+  </form>
+  <h2>Overrides</h2>
+  <table class="t"><thead><tr><th>Field</th><th>Value</th><th>By</th><th></th></tr></thead><tbody>
+    {ovs.map((o) => <tr><td>{o.field}</td><td class="note">{o.value.slice(0, 160)}</td><td class="note">{o.updated_by} · {o.updated_at.slice(0, 16)}</td>
+      <td><form method="post" action="/api/admin/override-clear/" class="inline"><input type="hidden" name="return" value={ret} /><input type="hidden" name="id" value={g.id} /><input type="hidden" name="field" value={o.field} /><button class="btn btn-ghost btn-sm">Remove</button></form></td></tr>)}
+    {ovs.length === 0 && <tr><td colspan="4">None — all fields follow the provider.</td></tr>}
+  </tbody></table>
+  <h2>Sources</h2>
+  <table class="t"><thead><tr><th>ID</th><th>Provider</th><th>Status</th><th>Embed</th><th>Last seen</th><th></th></tr></thead><tbody>
+    {sources.map((s) => <tr><td>{s.id}{s.id === g.primary_source_id && <> <span class="pill">primary</span></>}</td><td>{s.provider_id} #{s.provider_game_id}</td><td><span class:list={['pill', s.status]}>{s.status}</span>{s.missing_since && <span class="note"> since {s.missing_since.slice(0, 10)}</span>}</td>
+      <td class="note" style="max-width:280px;word-break:break-all">{s.embed_url}</td><td class="note">{s.last_seen_at.slice(0, 10)}</td>
+      <td>
+        <form method="post" action="/api/admin/source-status/" class="inline"><input type="hidden" name="return" value={ret} /><input type="hidden" name="source" value={s.id} /><input type="hidden" name="status" value={s.status === 'disabled' ? 'active' : 'disabled'} /><button class="btn btn-ghost btn-sm">{s.status === 'disabled' ? 'Enable' : 'Disable'}</button></form>
+        {s.id !== g.primary_source_id && <form method="post" action="/api/admin/primary-source/" class="inline"><input type="hidden" name="return" value={ret} /><input type="hidden" name="id" value={g.id} /><input type="hidden" name="source" value={s.id} /><button class="btn btn-ghost btn-sm">Make primary</button></form>}
+      </td></tr>)}
+  </tbody></table>
+</Admin>

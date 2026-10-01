@@ -1,0 +1,12 @@
+---
+export const prerender = false;
+import Admin from '../../../layouts/Admin.astro';
+import { q } from '../../../lib/server/db';
+const rows = await q().all<{ at: string; actor: string; action: string; target_type: string; target_id: string; details: string }>('SELECT at, actor, action, target_type, target_id, details FROM admin_audit_log ORDER BY id DESC LIMIT 200');
+---
+<Admin title="Audit log">
+  <table class="t"><thead><tr><th>When</th><th>Who</th><th>Action</th><th>Target</th><th>Details</th></tr></thead><tbody>
+    {rows.map((r) => <tr><td class="note">{r.at.slice(0, 19).replace('T', ' ')}</td><td>{r.actor}</td><td>{r.action}</td><td>{r.target_type} {r.target_id}</td><td class="note" style="max-width:420px;word-break:break-all">{r.details}</td></tr>)}
+    {rows.length === 0 && <tr><td colspan="5">No admin changes yet.</td></tr>}
+  </tbody></table>
+</Admin>

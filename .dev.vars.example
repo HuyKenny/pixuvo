@@ -1,0 +1,10 @@
+# Local development only (wrangler dev / astro dev). Copy to .dev.vars.
+ENVIRONMENT=local
+SITE_URL=http://localhost:4321
+# Admin: Cloudflare Access is required in production. Locally you may bypass it explicitly:
+ADMIN_DEV_BYPASS=1
+# Optional — leave empty locally; forms then use the local test path.
+TURNSTILE_SECRET_KEY=
+CRON_SECRET=local-cron-secret
+GH_DISPATCH_TOKEN=
+IP_HASH_SALT=local-salt

@@ -1,0 +1,34 @@
+---
+export const prerender = false;
+import Admin from '../../../layouts/Admin.astro';
+import { q } from '../../../lib/server/db';
+import { getLandings } from '../../../lib/catalog';
+import { CATEGORIES } from '../../../lib/taxonomy';
+const db = q();
+const landings = await getLandings(db, true);
+const status = new Map((await db.all<{ slug: string; status: string }>('SELECT slug, status FROM seo_landings')).map((r) => [r.slug, r.status]));
+const redirects = await db.all<{ old_slug: string; slug: string }>('SELECT r.old_slug, g.slug FROM slug_redirects r JOIN games g ON g.id = r.game_id ORDER BY r.created_at DESC LIMIT 50');
+---
+<Admin title="SEO landings & redirects">
+  <p class="note">Landing pages are curated intersections of categories (e.g. racing ∩ 2 player). They appear only with at least their minimum number of real games, after the next catalog publish.</p>
+  {[...landings, { slug: '', h1: '', title: '', description: '', intro: '', all: [], indexable: true, minGames: 24 }].map((l) => (
+    <details class="panel" style="margin-top:10px" open={!l.slug}>
+      <summary><b>{l.slug ? `/${l.slug}-games/` : 'New landing'}</b> {l.slug && <span class:list={['pill', status.get(l.slug)]}>{status.get(l.slug)}</span>}</summary>
+      <form method="post" action="/api/admin/landing/" style="display:grid;gap:8px;margin-top:8px">
+        <input type="hidden" name="return" value="/admin/seo/" />
+        <label class="field">Slug (without -games)<input type="text" name="slug" value={l.slug} required pattern="[a-z0-9-]{3,60}" /></label>
+        <label class="field">H1<input type="text" name="h1" value={l.h1} required /></label>
+        <label class="field">Title<input type="text" name="title" value={l.title} required maxlength="70" /></label>
+        <label class="field">Meta description<input type="text" name="description" value={l.description} required maxlength="170" /></label>
+        <label class="field">Intro<textarea name="intro" rows="3">{l.intro}</textarea></label>
+        <div class="opt-row">{CATEGORIES.map((c) => <label class="opt"><input type="checkbox" name="all" value={c.slug} checked={l.all.includes(c.slug)} /><span>{c.name}</span></label>)}</div>
+        <div class="row"><label class="field">Status<select name="status"><option selected={status.get(l.slug) === 'published'}>published</option><option selected={status.get(l.slug) !== 'published'}>draft</option></select></label>
+          <label><input type="checkbox" name="indexable" value="1" checked={l.indexable} /> indexable</label><button class="btn btn-primary">Save</button></div>
+      </form>
+    </details>
+  ))}
+  <h2>Game URL redirects (301)</h2>
+  <form method="post" action="/api/admin/redirect/" class="row"><input type="hidden" name="return" value="/admin/seo/" />
+    <label class="field">Old slug<input type="text" name="old" required /></label><label class="field">Target game slug<input type="text" name="target" required /></label><button class="btn btn-primary">Add redirect</button></form>
+  <table class="t" style="margin-top:10px"><thead><tr><th>Old</th><th>Target</th></tr></thead><tbody>{redirects.map((r) => <tr><td>/games/{r.old_slug}/</td><td>/games/{r.slug}/</td></tr>)}{redirects.length === 0 && <tr><td colspan="2">None yet.</td></tr>}</tbody></table>
+</Admin>

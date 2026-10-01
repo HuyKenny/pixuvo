@@ -1,0 +1,35 @@
+---
+/**
+ * Consent layer. Pixuvo pages currently run NO analytics and NO advertising, so
+ * the banner only opens automatically once an optional category is switched on
+ * (PUBLIC_CONSENT_CATEGORIES at build time). Until then "Privacy choices" in the
+ * footer shows the state. Optional scripts must be loaded through
+ * `whenConsented()` in src/scripts/consent.ts — never directly.
+ */
+const active = (import.meta.env.PUBLIC_CONSENT_CATEGORIES ?? '').split(',').map((s: string) => s.trim()).filter(Boolean);
+const analytics = active.includes('analytics');
+const ads = active.includes('ads');
+---
+<section class="consent" id="consent" hidden aria-labelledby="consent-title" data-consent data-active={active.join(',')} role="dialog" aria-modal="false">
+  <h2 id="consent-title">Your privacy choices</h2>
+  <p>
+    Pixuvo needs your browser storage only for things you ask for (favorites, recently played, this choice).
+    {active.length === 0 ? ' We do not run analytics or advertising on Pixuvo pages at the moment.' : ' Optional features below run only if you allow them.'}
+    Games load from our partners only when you press Play; partners show their own ads inside games and handle their own consent. See <a href="/cookies/">Cookies</a>.
+  </p>
+  <details open={active.length > 0}>
+    <summary>Settings</summary>
+    <label><input type="checkbox" checked disabled /> <span><strong>Necessary</strong> — favorites, history and your privacy choice, stored only in your browser.</span></label>
+    <label><input type="checkbox" name="analytics" disabled={!analytics} /> <span><strong>Analytics</strong> — {analytics ? 'anonymous usage statistics.' : 'not in use.'}</span></label>
+    <label><input type="checkbox" name="ads" disabled={!ads} /> <span><strong>Advertising on Pixuvo pages</strong> — {ads ? 'ads around the game area.' : 'not in use.'}</span></label>
+  </details>
+  <div class="row">
+    {active.length > 0 && <button type="button" class="btn btn-ghost" data-consent-action="reject">Reject optional</button>}
+    {active.length > 0 && <button type="button" class="btn btn-ghost" data-consent-action="save">Save choices</button>}
+    {active.length > 0 && <button type="button" class="btn btn-primary" data-consent-action="accept">Accept all</button>}
+    {active.length === 0 && <button type="button" class="btn btn-primary" data-consent-action="close">Close</button>}
+  </div>
+</section>
+<script>
+  import '../scripts/consent';
+</script>

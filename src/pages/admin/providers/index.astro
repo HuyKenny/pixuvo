@@ -1,0 +1,26 @@
+---
+export const prerender = false;
+import Admin from '../../../layouts/Admin.astro';
+import { q } from '../../../lib/server/db';
+const rows = await q().all<{ id: string; name: string; website: string; catalog_status: string; publish_status: string; monetize_status: string; consent_mode: string; attribution: string; notes: string; verified_at: string | null; active: number; total: number }>(
+  `SELECT p.*, (SELECT count(*) FROM game_sources s WHERE s.provider_id = p.id AND s.status = 'active') AS active, (SELECT count(*) FROM game_sources s WHERE s.provider_id = p.id) AS total FROM providers p ORDER BY p.id`);
+---
+<Admin title="Providers">
+  <p class="note">Three separate permissions: catalog available ≠ allowed to publish ≠ monetization approved. Plays are checked against these values on every start.</p>
+  {rows.map((p) => (
+    <section class="panel" style="margin-top:12px">
+      <h2>{p.name} <span class="note">({p.id}) · {p.active.toLocaleString('en-US')} active of {p.total.toLocaleString('en-US')} sources · catalog {p.catalog_status}</span></h2>
+      <form method="post" action="/api/admin/provider/" style="display:grid;gap:8px">
+        <input type="hidden" name="return" value="/admin/providers/" /><input type="hidden" name="id" value={p.id} />
+        <div class="row">
+          <label class="field">Publish<select name="publish_status">{['approved', 'pending', 'awaiting_approval', 'rejected', 'disabled'].map((s) => <option selected={s === p.publish_status}>{s}</option>)}</select></label>
+          <label class="field">Monetization<select name="monetize_status">{['approved', 'pending', 'not_approved', 'disabled'].map((s) => <option selected={s === p.monetize_status}>{s}</option>)}</select></label>
+          <label class="field">Consent<select name="consent_mode">{['partner_handles', 'blocked'].map((s) => <option selected={s === p.consent_mode}>{s}</option>)}</select></label>
+        </div>
+        <label class="field">Notes<textarea name="notes" rows="3">{p.notes}</textarea></label>
+        <p class="note">Attribution config (non-secret): {p.attribution} · last verified {p.verified_at?.slice(0, 10) ?? 'never'}</p>
+        <div><button class="btn btn-primary">Save {p.name}</button></div>
+      </form>
+    </section>
+  ))}
+</Admin>

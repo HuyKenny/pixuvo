@@ -1,0 +1,17 @@
+---
+export const prerender = false;
+import Admin from '../../../layouts/Admin.astro';
+import { q } from '../../../lib/server/db';
+import { MIN_CATEGORY_GAMES } from '../../../lib/taxonomy';
+const db = q();
+const cats = await db.all<{ slug: string; name: string; kind: string; parent: string | null; game_count: number }>('SELECT c.slug, c.name, c.kind, p.slug AS parent, c.game_count FROM categories c LEFT JOIN categories p ON p.id = c.parent_id ORDER BY c.sort');
+const tags = await db.all<{ slug: string; name: string; n: number }>('SELECT t.slug, t.name, count(*) AS n FROM game_tags gt JOIN tags t ON t.id = gt.tag_id GROUP BY t.id ORDER BY n DESC LIMIT 60');
+---
+<Admin title="Categories & tags">
+  <p class="note">The taxonomy is defined in code (src/lib/taxonomy.ts) and synced by each import, so mapping rules are versioned and reviewable. Pages publish at ≥ {MIN_CATEGORY_GAMES} games.</p>
+  <table class="t"><thead><tr><th>Category</th><th>Kind</th><th>Parent</th><th>Published games</th><th>Page</th></tr></thead><tbody>
+    {cats.map((c) => <tr><td>{c.name} <span class="note">{c.slug}</span></td><td>{c.kind}</td><td>{c.parent ?? ''}</td><td>{c.game_count.toLocaleString('en-US')}</td><td>{c.game_count >= MIN_CATEGORY_GAMES ? <a href={`/${c.slug}-games/`}>live</a> : <span class="pill hidden">not published</span>}</td></tr>)}
+  </tbody></table>
+  <h2>Top tags</h2>
+  <p>{tags.map((t) => <span class="pill" style="margin:2px">{t.name} · {t.n}</span>)}</p>
+</Admin>

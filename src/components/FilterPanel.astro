@@ -1,0 +1,47 @@
+---
+import Icon from './Icon.astro';
+interface Props { category: string | null; total: number }
+const { category, total } = Astro.props;
+const groups = [
+  { key: 'sort', legend: 'Sort by', opts: [['featured', 'Featured'], ['new', 'Newest'], ['az', 'A–Z']] },
+  { key: 'device', legend: 'Device', opts: [['mobile', 'Works on mobile']], hint: 'As declared by the game’s publisher.' },
+  { key: 'players', legend: 'Players', opts: [['1', '1 player'], ['2', '2+ players']] },
+  { key: 'mode', legend: 'Multiplayer', opts: [['local', 'Same device'], ['online', 'Online']] },
+  { key: 'style', legend: 'Visual style', opts: [['2d', '2D'], ['3d', '3D'], ['pixel', 'Pixel art']] },
+  { key: 'controls', legend: 'Controls', opts: [['keyboard', 'Keyboard'], ['mouse', 'Mouse'], ['touch', 'Touch']], hint: 'Based on the game’s own instructions — not a guarantee.' },
+] as const;
+---
+<div class="filter-bar" data-filters data-category={category ?? ''} data-total={total}>
+  <span class="result-count" aria-live="polite" data-result-count>{total.toLocaleString('en-US')} games</span>
+  <button type="button" class="btn btn-ghost btn-sm" data-drawer-open="filter-drawer" aria-controls="filter-drawer" aria-expanded="false">
+    <Icon name="filter" size={18} /> Filters &amp; sort <span data-filter-badge></span>
+  </button>
+  <div class="active-filters" data-active-filters></div>
+</div>
+<div class="drawer" id="filter-drawer" data-drawer aria-hidden="true">
+  <div class="drawer-backdrop" data-drawer-close></div>
+  <div class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="filter-title">
+    <div class="drawer-head"><span id="filter-title">Filters &amp; sort</span><button type="button" class="icon-btn" aria-label="Close filters" data-drawer-close><Icon name="x" /></button></div>
+    <form class="filter-form" data-filter-form>
+      {groups.map((g) => (
+        <fieldset>
+          <legend>{g.legend}</legend>
+          {'hint' in g && <p class="hint">{g.hint}</p>}
+          <div class="opt-row">
+            {g.opts.map(([v, label], i) => (
+              <label class="opt"><input type={g.key === 'sort' ? 'radio' : 'checkbox'} name={g.key} value={v} checked={g.key === 'sort' && i === 0} data-autofocus={g.key === 'sort' && i === 0 ? '' : undefined} /><span>{label}</span></label>
+            ))}
+          </div>
+        </fieldset>
+      ))}
+      <div class="drawer-foot">
+        <button type="button" class="btn btn-ghost" data-filter-clear>Clear all</button>
+        <button type="button" class="btn btn-primary" data-drawer-close>Show games</button>
+      </div>
+    </form>
+  </div>
+</div>
+<noscript><p class="note">Filters need JavaScript. All games are still reachable through the pages below.</p></noscript>
+<script>
+  import '../scripts/filters';
+</script>

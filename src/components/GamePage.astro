@@ -1,0 +1,149 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from './Breadcrumbs.astro';
+import GameGrid from './GameGrid.astro';
+import Icon from './Icon.astro';
+import AdSlot from './AdSlot.astro';
+import type { GameDetail } from '../lib/types';
+import { SITE, canonical, categoryPath, gamePath } from '../lib/site';
+import { fmtDate, plural } from '../lib/format';
+import { truncate } from '../lib/text';
+
+interface Props { game: GameDetail }
+const { game: g } = Astro.props;
+const path = gamePath(g.slug);
+const cat = g.primaryCategory;
+const crumbs = [{ name: 'Home', href: '/' }, ...(cat ? [{ name: `${cat.name} games`, href: categoryPath(cat.slug) }] : [{ name: 'All games', href: '/games/' }]), { name: g.title, href: path }];
+const desc = g.description ? truncate(g.description.replace(/\s+/g, ' '), 150) : `Play ${g.title} for free in your browser on Pixuvo. No downloads.`;
+const portrait = g.orientation === 'portrait' || (!!g.width && !!g.height && g.height > g.width * 1.1);
+const genres = g.categories.filter((c) => c.slug !== cat?.slug);
+const votes = g.ratingUp + g.ratingDown;
+const players = g.players ? (g.players >= 2 ? `${g.players}+ players` : '1 player') : null;
+const modeLabel = g.multiplayerMode === 'online' ? 'Online multiplayer' : g.multiplayerMode === 'local' ? 'Same-device multiplayer' : null;
+const styleLabel = g.visualStyle === 'pixel' ? 'Pixel art' : g.visualStyle?.toUpperCase() ?? null;
+const ld = [{
+  '@context': 'https://schema.org',
+  '@type': 'VideoGame',
+  name: g.title,
+  url: canonical(path),
+  image: g.thumb,
+  ...(g.description ? { description: truncate(g.description, 500) } : {}),
+  genre: g.categories.filter((c) => c.slug !== '2-player' && c.slug !== 'multiplayer').map((c) => c.name).slice(0, 4),
+  gamePlatform: 'Web browser',
+  applicationCategory: 'Game',
+  operatingSystem: 'Any',
+  playMode: g.players && g.players >= 2 ? 'MultiPlayer' : g.players === 1 ? 'SinglePlayer' : undefined,
+  ...(g.releaseDate ? { datePublished: g.releaseDate } : {}),
+  offers: { '@type': 'Offer', price: 0, priceCurrency: 'USD' },
+}];
+const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait };
+---
+<Base title={`${g.title} – Play Free Online`} description={desc} path={path} ogImage={g.thumb} jsonLd={ld}>
+  <div class="wrap">
+    <Breadcrumbs items={crumbs} />
+    <div class="game-layout">
+      <div>
+        <div class="game-head">
+          <h1>{g.title}</h1>
+          <p class="game-sub">{[cat?.name, players, g.mobile ? 'Works on mobile' : null].filter(Boolean).join(' · ')}</p>
+        </div>
+        <div class:list={['stage', { portrait }]} id="stage" data-game={JSON.stringify(data)}>
+          <div class="stage-poster" data-poster>
+            <img class="bg" src={g.thumb} alt="" width="320" height="240" referrerpolicy="no-referrer" />
+            <div class="inner">
+              <img class="cover" src={g.thumb} alt={`${g.title} cover image`} width="320" height="240" fetchpriority="high" referrerpolicy="no-referrer" />
+              <button type="button" class="play-btn" data-play><Icon name="play" /> Play</button>
+              <p class="stage-msg" data-stage-msg>The game loads from our partner when you press Play.</p>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary exit-expanded" data-exit-expanded><Icon name="x" size={18} /> Exit</button>
+        <div class="game-actions" aria-label="Game actions">
+          <button type="button" class="btn btn-ghost btn-sm" data-fullscreen><Icon name="maximize" size={18} /> Fullscreen</button>
+          <button type="button" class="btn btn-ghost btn-sm" data-fav={g.id} data-slug={g.slug} data-title={g.title} data-thumb={g.thumb} aria-pressed="false" data-fav-label="static"><Icon name="heart" size={18} /> Favorite</button>
+          <button type="button" class="btn btn-ghost btn-sm" data-share><Icon name="share" size={18} /> Share</button>
+          <span class="spacer"></span>
+          <button type="button" class="btn btn-ghost btn-sm" data-report-open><Icon name="flag" size={18} /> Report issue</button>
+        </div>
+        <p class="note" data-share-status aria-live="polite"></p>
+
+        <section class="panel" aria-labelledby="about-h" style="margin-top:14px">
+          <h2 id="about-h">About {g.title}</h2>
+          {g.description ? <div class="prose"><p>{g.description}</p></div> : <p class="note">The publisher has not provided a description for this game yet.</p>}
+          {g.instructions && (<><h2 style="margin-top:14px">How to play</h2><div class="prose"><p>{g.instructions}</p></div></>)}
+        </section>
+      </div>
+      <aside>
+        <section class="panel" aria-labelledby="facts-h">
+          <h2 id="facts-h">Game details</h2>
+          <dl class="facts">
+            {cat && (<><dt>Category</dt><dd><a href={categoryPath(cat.slug)}>{cat.name}</a></dd></>)}
+            {players && (<><dt>Players</dt><dd>{players}</dd></>)}
+            {modeLabel && (<><dt>Multiplayer</dt><dd>{modeLabel}</dd></>)}
+            <dt>Mobile</dt><dd>{g.mobile ? 'Yes (publisher)' : 'Not stated'}</dd>
+            {g.controls.length > 0 && (<><dt>Controls</dt><dd>{g.controls.map((c) => c[0]!.toUpperCase() + c.slice(1)).join(', ')} <span class="note">(from instructions)</span></dd></>)}
+            {styleLabel && (<><dt>Style</dt><dd>{styleLabel}</dd></>)}
+            {g.releaseDate && (<><dt>Released</dt><dd>{fmtDate(g.releaseDate)}</dd></>)}
+            <dt>Added</dt><dd>{fmtDate(g.addedAt)}</dd>
+            {g.providerName && (<><dt>Provided by</dt><dd>{g.providerName}</dd></>)}
+          </dl>
+          {genres.length > 0 && (
+            <><h2 style="margin-top:14px">Also in</h2>
+            <ul class="tag-list">{genres.map((c) => <li><a href={categoryPath(c.slug)}>{c.name}</a></li>)}</ul></>
+          )}
+          {g.tags.length > 0 && (
+            <><h2 style="margin-top:14px">Tags</h2>
+            <ul class="tag-list">{g.tags.map((t) => <li><a href={`/search/?q=${encodeURIComponent(t.name)}`} rel="nofollow">{t.name}</a></li>)}</ul></>
+          )}
+        </section>
+        <section class="panel" aria-labelledby="rate-h">
+          <h2 id="rate-h">Did you enjoy it?</h2>
+          <div class="rating" data-rating data-up={g.ratingUp} data-down={g.ratingDown}>
+            <button type="button" class="btn btn-ghost btn-sm" data-vote="1" aria-pressed="false"><Icon name="up" size={18} /> Like</button>
+            <button type="button" class="btn btn-ghost btn-sm" data-vote="-1" aria-pressed="false"><Icon name="down" size={18} /> Dislike</button>
+            <span class="score" data-score>{votes > 0 ? `${Math.round((g.ratingUp / votes) * 100)}% liked · ${plural(votes, 'vote')} on Pixuvo` : 'Not rated yet'}</span>
+          </div>
+          <div data-turnstile-slot></div>
+          <p class="form-status" data-rate-status aria-live="polite"></p>
+        </section>
+        <AdSlot slot="game-sidebar" />
+      </aside>
+    </div>
+
+    {g.related.length > 0 && (
+      <section class="section" aria-labelledby="related-h">
+        <div class="section-head"><h2 id="related-h">More games like {g.title}</h2>{cat && <a href={categoryPath(cat.slug)}>All {cat.name.toLowerCase()} games</a>}</div>
+        <GameGrid games={g.related} label="Related games" />
+      </section>
+    )}
+  </div>
+
+  <dialog id="report-dialog" aria-labelledby="report-h">
+    <form method="dialog" data-report-form>
+      <h2 id="report-h">Report a problem</h2>
+      <p class="note" style="margin:0">Tell us what is wrong with <strong>{g.title}</strong>. We review every report.</p>
+      <label class="field">What happened?
+        <select name="reason" required>
+          <option value="not_loading">The game does not load</option>
+          <option value="broken_controls">Controls do not work</option>
+          <option value="inappropriate">Inappropriate content</option>
+          <option value="copyright">Copyright or trademark problem</option>
+          <option value="other">Something else</option>
+        </select>
+      </label>
+      <label class="field">Details (optional)
+        <textarea name="message" maxlength="1000" placeholder="Browser, device, what you saw…"></textarea>
+      </label>
+      <div data-turnstile-slot></div>
+      <p class="form-status" data-report-status aria-live="polite"></p>
+      <div style="display:flex;gap:8px;justify-content:flex-end">
+        <button type="button" class="btn btn-ghost" data-report-cancel>Cancel</button>
+        <button type="submit" class="btn btn-primary" value="send">Send report</button>
+      </div>
+      <p class="note" style="margin:0">For legal notices see <a href="/copyright/">Copyright</a>.</p>
+    </form>
+  </dialog>
+</Base>
+<script>
+  import '../scripts/player';
+</script>

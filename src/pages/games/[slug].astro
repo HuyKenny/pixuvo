@@ -1,0 +1,12 @@
+---
+// Top-ranked games are prerendered from the snapshot; all others fall through to games/[...path].astro.
+export const prerender = true;
+import GamePage from '../../components/GamePage.astro';
+import { snapshotGames } from '../../lib/snapshot';
+import type { GameDetail } from '../../lib/types';
+export function getStaticPaths() {
+  return snapshotGames.map((g) => ({ params: { slug: g.slug }, props: { game: g } }));
+}
+const { game } = Astro.props as { game: GameDetail };
+---
+<GamePage game={game} />

@@ -1,0 +1,22 @@
+---
+interface Props { page: number; pages: number; href: (p: number) => string; label?: string }
+const { page, pages, href, label = 'Pagination' } = Astro.props;
+const nums: Array<number | 'gap'> = [];
+const add = (n: number) => { if (n >= 1 && n <= pages && !nums.includes(n)) nums.push(n); };
+add(1);
+if (page - 2 > 2) nums.push('gap');
+for (let n = page - 2; n <= page + 2; n++) add(n);
+if (page + 2 < pages - 1) nums.push('gap');
+add(pages);
+---
+{pages > 1 && (
+  <nav aria-label={label}>
+    <ul class="pagination">
+      {page > 1 && <li><a href={href(page - 1)} rel="prev">Previous</a></li>}
+      {nums.map((n) => n === 'gap'
+        ? <li><span class="gap" aria-hidden="true">…</span></li>
+        : <li>{n === page ? <span aria-current="page">{n}</span> : <a href={href(n)}>{n}</a>}</li>)}
+      {page < pages && <li><a href={href(page + 1)} rel="next">Next</a></li>}
+    </ul>
+  </nav>
+)}

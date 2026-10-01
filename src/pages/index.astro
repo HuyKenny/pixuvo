@@ -1,0 +1,75 @@
+---
+export const prerender = true;
+import Base from '../layouts/Base.astro';
+import GameGrid from '../components/GameGrid.astro';
+import CategoryChips from '../components/CategoryChips.astro';
+import { snapshot } from '../lib/snapshot';
+import { SITE, categoryPath } from '../lib/site';
+import { approxCount } from '../lib/format';
+import { MIN_CATEGORY_GAMES } from '../lib/taxonomy';
+
+const nav = snapshot.categories.filter((c) => c.nav && c.count >= MIN_CATEGORY_GAMES);
+const more = snapshot.categories.filter((c) => !c.nav && c.kind === 'genre' && c.count >= MIN_CATEGORY_GAMES).slice(0, 10);
+const total = snapshot.published;
+const ld = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Pixuvo',
+    url: SITE.url + '/',
+    potentialAction: { '@type': 'SearchAction', target: `${SITE.url}/search/?q={search_term_string}`, 'query-input': 'required name=search_term_string' },
+  },
+  { '@context': 'https://schema.org', '@type': 'Organization', name: 'Pixuvo', url: SITE.url + '/', logo: `${SITE.url}/logo-512.png`, email: SITE.email },
+];
+---
+<Base title={`Pixuvo – Free Online Games, No Downloads`} description={`Play ${approxCount(total)} free online games in your browser: puzzle, racing, action, 2 player and more. No downloads, no sign-up — just play.`} path="/" jsonLd={ld}>
+  <div class="wrap">
+    <div class="intro-strip">
+      <h1>{SITE.tagline}</h1>
+      <p>{SITE.subline} {approxCount(total)} games to choose from.</p>
+    </div>
+    <CategoryChips categories={[...nav, ...more]} />
+
+    <section class="section" id="recent-section" hidden aria-labelledby="recent-h">
+      <div class="section-head"><h2 id="recent-h">Recently played</h2><a href="/recently-played/">See all</a></div>
+      <div class="grid" id="recent-grid" role="list" aria-label="Recently played games"></div>
+    </section>
+
+    <section class="section" aria-labelledby="featured-h">
+      <div class="section-head"><h2 id="featured-h">Featured games</h2><a href="/games/">All games</a></div>
+      <GameGrid games={snapshot.home.featured.slice(0, 21)} eagerCount={7} label="Featured games" />
+    </section>
+
+    <section class="section" aria-labelledby="new-h">
+      <div class="section-head"><h2 id="new-h">New games</h2><a href="/new-games/">More new games</a></div>
+      <GameGrid games={snapshot.home.newest.slice(0, 14)} label="New games" />
+    </section>
+
+    {snapshot.home.sections.map((s) => (
+      <section class="section" aria-labelledby={`sec-${s.slug}`}>
+        <div class="section-head"><h2 id={`sec-${s.slug}`}>{s.name} games</h2><a href={categoryPath(s.slug)}>All {approxCount(s.count)}</a></div>
+        <GameGrid games={s.games.slice(0, 7)} label={`${s.name} games`} />
+      </section>
+    ))}
+
+    <section class="section" aria-labelledby="explore-h">
+      <div class="section-head"><h2 id="explore-h">Explore more</h2></div>
+      <p><a href="/categories/">Browse all categories</a> · <a href="/games/">Every game, newest first</a> · <a href="/favorites/">Your favorites</a></p>
+    </section>
+  </div>
+</Base>
+<script>
+  import { store } from '../scripts/store';
+  import { cardHtml } from '../scripts/cards';
+  const sec = document.getElementById('recent-section');
+  const grid = document.getElementById('recent-grid');
+  const draw = () => {
+    const items = store.recent().slice(0, 7);
+    if (!sec || !grid) return;
+    sec.hidden = items.length === 0;
+    grid.innerHTML = items.map((g) => cardHtml(g)).join('');
+    (window as unknown as { pixuvoSyncFavs?: () => void }).pixuvoSyncFavs?.();
+  };
+  draw();
+  store.subscribe(draw);
+</script>

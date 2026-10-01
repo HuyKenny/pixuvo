@@ -1,0 +1,24 @@
+---
+export const prerender = true;
+import Doc from '../layouts/Doc.astro';
+---
+<Doc title="Cookies and Local Storage" h1="Cookies and local storage" description="Which browser storage Pixuvo uses, which is optional, and how to change your choice." path="/cookies/" updated="2 October 2026">
+  <p>Pixuvo pages set <strong>no cookies</strong> of their own. We use your browser’s local storage only for features you use:</p>
+  <table>
+    <thead><tr><th>Key</th><th>What it does</th><th>Type</th></tr></thead>
+    <tbody>
+      <tr><td><code>pixuvo:favorites</code></td><td>Games you marked with the heart</td><td>Necessary for the feature you asked for</td></tr>
+      <tr><td><code>pixuvo:recent</code></td><td>Recently played list</td><td>Necessary for the feature</td></tr>
+      <tr><td><code>pixuvo:vote:&lt;id&gt;</code></td><td>Remembers your like/dislike</td><td>Necessary for the feature</td></tr>
+      <tr><td><code>pixuvo:consent</code></td><td>Your privacy choice</td><td>Necessary</td></tr>
+      <tr><td><code>pixuvo:src:&lt;id&gt;</code> (session storage)</td><td>Keeps the same game version during one visit</td><td>Necessary</td></tr>
+    </tbody>
+  </table>
+  <h2>Optional technologies</h2>
+  <p>We currently use <strong>no analytics and no advertising</strong> on our pages. If we add any, they will be listed here and will only run after you allow them. You can review or change your choice at any time:</p>
+  <p><button type="button" class="btn btn-primary" data-consent-open>Open privacy choices</button></p>
+  <h2>Inside games</h2>
+  <p>Games are loaded from our partners only after you press Play. Inside the game frame, the partner and its advertising providers may use cookies or similar technologies and may show their own consent message. Their policies apply; you can also block third-party cookies in your browser.</p>
+  <h2>Spam protection</h2>
+  <p>When you vote or report a problem, Cloudflare Turnstile may check your browser to tell humans from bots. It loads only at that moment.</p>
+</Doc>

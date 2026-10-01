@@ -1,0 +1,9 @@
+---
+import type { GameCard as Card } from '../lib/types';
+import GameCard from './GameCard.astro';
+interface Props { games: Card[]; eagerCount?: number; id?: string; wide?: boolean; label?: string }
+const { games, eagerCount = 0, id, wide = false, label } = Astro.props;
+---
+<div class:list={['grid', { 'grid-wide': wide }]} id={id} role="list" aria-label={label}>
+  {games.map((g, i) => <div role="listitem"><GameCard game={g} eager={i < eagerCount} /></div>)}
+</div>

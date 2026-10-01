@@ -1,0 +1,43 @@
+---
+export const prerender = false;
+import Admin from '../../../layouts/Admin.astro';
+import { q } from '../../../lib/server/db';
+import { buildFtsQuery, clampPage } from '../../../lib/catalog';
+const sp = Astro.url.searchParams;
+const status = ['published', 'pending_review', 'hidden', 'archived', 'merged'].includes(sp.get('status') ?? '') ? sp.get('status')! : '';
+const term = (sp.get('q') ?? '').slice(0, 80);
+const page = clampPage(sp.get('page') ?? '1', 2000) ?? 1;
+const db = q();
+const where: string[] = [];
+const params: Array<string | number> = [];
+let from = 'FROM games g';
+const fq = term ? buildFtsQuery(term) : null;
+if (/^\d+$/.test(term)) { where.push('g.id = ?'); params.push(Number(term)); }
+else if (fq) { from = 'FROM games_fts f JOIN games g ON g.id = f.rowid'; where.push('games_fts MATCH ?'); params.push(fq.match); }
+if (status) { where.push('g.status = ?'); params.push(status); }
+const w = where.length ? `WHERE ${where.join(' AND ')}` : '';
+const rows = await db.all<{ id: number; slug: string; title: string; status: string; review_reason: string | null; added_at: string; sources: string }>(
+  `SELECT g.id, g.slug, g.title, g.status, g.review_reason, g.added_at, (SELECT group_concat(provider_id || ':' || status) FROM game_sources s WHERE s.game_id = g.id) AS sources
+   ${from} ${w} ORDER BY g.id DESC LIMIT 50 OFFSET ?`, [...params, (page - 1) * 50]);
+const ret = Astro.url.pathname + Astro.url.search;
+---
+<Admin title="Games">
+  <form class="row" method="get">
+    <label class="field">Search (title or ID)<input type="search" name="q" value={term} /></label>
+    <label class="field">Status<select name="status"><option value="">Any</option>{['published', 'pending_review', 'hidden', 'archived', 'merged'].map((s) => <option selected={s === status}>{s}</option>)}</select></label>
+    <button class="btn btn-primary">Filter</button>
+  </form>
+  <form method="post" action="/api/admin/games-status/">
+    <input type="hidden" name="return" value={ret} />
+    <div class="row" style="margin:12px 0"><label class="field">Set selected (max 50) to<select name="status"><option>published</option><option>hidden</option><option>pending_review</option></select></label><button class="btn btn-ghost">Apply</button></div>
+    <table class="t"><thead><tr><th></th><th>ID</th><th>Title</th><th>Status</th><th>Sources</th><th>Added</th></tr></thead><tbody>
+      {rows.map((r) => <tr>
+        <td><input type="checkbox" name="id" value={r.id} aria-label={`Select ${r.title}`} /></td><td>{r.id}</td>
+        <td><a href={`/admin/games/${r.id}/`}>{r.title}</a><br /><span class="note">{r.slug}</span></td>
+        <td><span class:list={['pill', r.status]}>{r.status}</span>{r.review_reason && <><br /><span class="note">{r.review_reason}</span></>}</td>
+        <td class="note">{r.sources}</td><td class="note">{r.added_at.slice(0, 10)}</td></tr>)}
+      {rows.length === 0 && <tr><td colspan="6">No games match.</td></tr>}
+    </tbody></table>
+  </form>
+  <p class="row" style="margin-top:12px">{page > 1 && <a class="btn btn-ghost btn-sm" href={`?q=${encodeURIComponent(term)}&status=${status}&page=${page - 1}`}>Previous</a>}{rows.length === 50 && <a class="btn btn-ghost btn-sm" href={`?q=${encodeURIComponent(term)}&status=${status}&page=${page + 1}`}>Next</a>}</p>
+</Admin>

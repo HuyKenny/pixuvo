@@ -1,0 +1,27 @@
+-- Editorially approved SEO landing pages: intersections of two existing categories.
+-- Each was checked to have well over min_games real games on 2026-10-02.
+INSERT INTO seo_landings (slug, h1, title, description, intro, filter, status, indexable, min_games, updated_at) VALUES
+ ('2-player-racing', '2 Player Racing Games', '2 Player Racing Games – Race a Friend Online for Free',
+  'Free 2 player racing games you can play in your browser: split-screen races, car duels and head-to-head tracks. No downloads.',
+  'Racing games that are tagged by their publishers for two players. Most of them are played on one device — one player on the arrow keys, the other on WASD — so check the controls on each game page before you start.',
+  '{"all":["racing","2-player"]}', 'published', 1, 24, '2026-10-02T00:00:00Z'),
+ ('2-player-sports', '2 Player Sports Games', '2 Player Sports Games – Play Against a Friend',
+  'Free 2 player sports games: football, basketball, tennis-style duels and more, playable in your browser without downloads.',
+  'Sports games marked for two players: penalty shoot-outs, one-on-one ball games and quick matches. Many share one keyboard, so a friend next to you is all you need.',
+  '{"all":["sports","2-player"]}', 'published', 1, 24, '2026-10-02T00:00:00Z'),
+ ('2-player-shooting', '2 Player Shooting Games', '2 Player Shooting Games – Duels and Co-op Shooters',
+  'Free 2 player shooting games for the browser: duels, tank battles and shooters for two. No downloads, just play.',
+  'Shooting games tagged for two players — from split-keyboard duels to tank battles. Each game page lists what the publisher says about controls and players.',
+  '{"all":["shooting","2-player"]}', 'published', 1, 24, '2026-10-02T00:00:00Z'),
+ ('2-player-football', '2 Player Football Games', '2 Player Football (Soccer) Games – Play With a Friend',
+  'Free 2 player football (soccer) games: head soccer, penalties and quick matches you can play in your browser.',
+  'Football games for two players, often called soccer games. Expect short matches and penalty duels; the controls for each player are listed on the game page when the publisher provides them.',
+  '{"all":["football","2-player"]}', 'published', 1, 24, '2026-10-02T00:00:00Z'),
+ ('2-player-fighting', '2 Player Fighting Games', '2 Player Fighting Games – Brawl With a Friend',
+  'Free 2 player fighting games in your browser: one-on-one duels, stickman fights and arena brawlers.',
+  'Fighting games tagged for two players. Most are one-on-one duels on the same keyboard; some also offer a computer opponent.',
+  '{"all":["fighting","2-player"]}', 'published', 1, 24, '2026-10-02T00:00:00Z'),
+ ('multiplayer-shooting', 'Multiplayer Shooting Games', 'Multiplayer Shooting Games – Online and Local Shooters',
+  'Free multiplayer shooting games: arena shooters, .io battles and team modes playable in your browser.',
+  'Shooting games their publishers mark as multiplayer. Some connect you to other players online, others are played on one device — the game page says which when the information is available.',
+  '{"all":["shooting","multiplayer"]}', 'published', 1, 24, '2026-10-02T00:00:00Z');

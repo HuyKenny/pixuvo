@@ -1,0 +1,14 @@
+---
+interface Props { size?: number; word?: boolean }
+const { size = 34, word = true } = Astro.props;
+---
+<a href="/" class="logo" aria-label="Pixuvo home">
+  <svg width={size} height={size} viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+    <rect width="32" height="32" rx="9" fill="#6a35f2" />
+    <rect x="9" y="7.5" width="4.5" height="17" rx="1.4" fill="#fff" />
+    <rect x="13.5" y="11" width="4.5" height="10" rx="1.4" fill="#fff" />
+    <rect x="18" y="14" width="4.5" height="4" rx="1.4" fill="#fff" />
+    <rect x="22.5" y="6.5" width="3.5" height="3.5" rx="1.1" fill="#2dd4bf" />
+  </svg>
+  {word && <span class="logo-word">pixuvo</span>}
+</a>

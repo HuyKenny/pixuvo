@@ -1,0 +1,35 @@
+---
+export const prerender = true;
+import Doc from '../layouts/Doc.astro';
+import { SITE } from '../lib/site';
+---
+<Doc title="Privacy Policy" h1="Privacy policy" description="What personal data Pixuvo processes, why, for how long, and your rights under the GDPR." path="/privacy/" updated="2 October 2026">
+  <h2>Controller</h2>
+  <p>{SITE.operator.name}, {SITE.operator.address}, company ID (IČO) {SITE.operator.companyId} (“we”). Contact for privacy matters: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.</p>
+
+  <h2>What we process and why</h2>
+  <table>
+    <thead><tr><th>Data</th><th>Purpose</th><th>Legal basis (GDPR)</th><th>Retention</th></tr></thead>
+    <tbody>
+      <tr><td>IP address and request data (browser, page requested) handled by our hosting provider Cloudflare</td><td>Delivering the website, security, abuse and rate limiting</td><td>Legitimate interest, Art. 6(1)(f)</td><td>Short-lived provider logs; we do not store IP addresses in our database</td></tr>
+      <tr><td>A one-way hash derived from your IP address and a secret, when you vote or report a problem</td><td>Allow one vote per visitor and stop spam</td><td>Legitimate interest, Art. 6(1)(f)</td><td>Votes: while the game is listed. Reports: up to 12 months</td></tr>
+      <tr><td>The text of a problem report you send</td><td>Fixing the problem you reported</td><td>Legitimate interest, Art. 6(1)(f)</td><td>Up to 12 months</td></tr>
+      <tr><td>E-mails you send us</td><td>Answering you</td><td>Legitimate interest / steps at your request</td><td>As long as needed for the conversation, at most 3 years</td></tr>
+      <tr><td>Daily totals of plays per game (no personal data)</td><td>Ranking popular games, finding broken ones</td><td>—</td><td>Aggregated statistics</td></tr>
+    </tbody>
+  </table>
+  <p>Favorites, recently played games, your votes and your privacy choice are stored <strong>only in your browser’s local storage</strong>. We never receive that list.</p>
+  <p>We currently run <strong>no analytics and no advertising</strong> on Pixuvo pages. If that changes, this page and the <a href="/cookies/">cookie settings</a> will be updated first, and optional technologies will only run with your consent.</p>
+
+  <h2>Games from partners</h2>
+  <p>When you press <em>Play</em>, the game is loaded from our distribution partner (GameMonetize or GamePix, named on each game page). From that moment the partner, and the advertising companies it works with, receive data such as your IP address and device information and may use cookies or similar technologies inside the game frame. They act as independent controllers under their own privacy policies, available on their websites. Nothing from the game is loaded before you press Play.</p>
+
+  <h2>Processors and transfers</h2>
+  <p>Cloudflare, Inc. hosts the website, database and spam protection (Turnstile). Cloudflare may process data outside the EU under the EU–US Data Privacy Framework and Standard Contractual Clauses.</p>
+
+  <h2>Children</h2>
+  <p>Pixuvo is a general-audience website and does not ask anyone for personal information. Some games may appeal to children; parents should review the games their children play. Games and in-game advertising are provided by partners, as described above.</p>
+
+  <h2>Your rights</h2>
+  <p>You can ask for access, rectification, erasure, restriction, objection and data portability by writing to <a href={`mailto:${SITE.email}`}>{SITE.email}</a>. Because we store only hashes, we may need details (game, date) to find a record. You may lodge a complaint with the Czech Office for Personal Data Protection (Úřad pro ochranu osobních údajů, www.uoou.cz) or your local authority.</p>
+</Doc>
