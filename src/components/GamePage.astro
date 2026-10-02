@@ -19,7 +19,10 @@ const { game: g } = Astro.props;
 const path = gamePath(g.slug);
 const cat = g.primaryCategory;
 const crumbs = [{ name: 'Home', href: '/' }, ...(cat ? [{ name: `${cat.name} Games`, href: categoryPath(cat.slug) }] : [{ name: 'All games', href: '/games/' }]), { name: g.title, href: path }];
-const desc = g.description ? truncate(g.description.replace(/\s+/g, ' '), 150) : `Play ${g.title} for free in your browser on Pixuvo. No downloads.`;
+const tail = `Play ${g.title} free in your browser on Pixuvo — no download.`;
+const short = g.description ? truncate(g.description.replace(/\s+/g, ' ').trim(), 150) : '';
+// Partner blurbs can be a few words ("A one-touch race, fly, crash"): pad them to a useful snippet.
+const desc = short.length >= 70 ? short : short ? truncate(`${short.replace(/[.!]?$/, '.')} ${tail}`, 158) : `${tail} Free online game, no sign-up.`;
 const portrait = g.orientation === 'portrait' || (!!g.width && !!g.height && g.height > g.width * 1.1);
 const votes = g.ratingUp + g.ratingDown;
 const liked = votes >= 5 ? Math.round((g.ratingUp / votes) * 100) : null; // shown only with ≥ 5 real votes
