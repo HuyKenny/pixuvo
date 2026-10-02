@@ -82,3 +82,12 @@ embed format and permission check but were not started one by one.
 * Turnstile human pass, real Access login (needs your inbox for the one-time PIN), and the cron chain
   (needs `GH_DISPATCH_TOKEN`) are not end-to-end tested.
 * Lighthouse SEO on pixuvo.com itself not measured (local DNS on the Raspberry still cached the old record).
+
+## 2026-10-02 — games on phones
+- Found on production (Pixel 7 emulation): ~7 % of game pages were wider than the phone (grid column grew to the
+  min-content of long titles/tags) → the browser zoomed the page out; portrait games started ~250 px down and did not
+  fit the screen; landscape games stayed 16:9 even with the phone turned sideways.
+- Fixed: `minmax(0, 1fr)` game column; compact head on phones; stage sized by orientation (portrait = free screen
+  height, adaptive = tall frame, landscape = 16:9 + rotate hint); sideways phone = full-screen game without tab bar.
+- Live check after deploy: `audit.mjs` — 380 pages (80 non-game + 300 random games) all OK, mobile pass: no page wider
+  than the screen; play smoke GameMonetize/GamePix/Playgama OK; verify:launch 28/28; e2e 48/48.
