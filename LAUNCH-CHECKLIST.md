@@ -22,7 +22,7 @@ State: 2026-10-02. ✅ done and verified · ⚠️ done with a known caveat · �
 - ⚠️ **GameMonetize consent:** no consent prompt inside GameMonetize games from an EU IP (Google ads + Tag Manager
   load right away). **Owner decision 2026-10-02: publish anyway** (`consent_mode = owner_accepted`). Legal risk accepted
   by the operator; recommended: ask GameMonetize how they handle EEA consent (TCF) and revisit.
-- ⛔ GameMonetize monetization: press **Verify** for pixuvo.com in the GameMonetize dashboard (owner not logged in in Chrome yet), then set monetize_status = approved in Admin → Providers.
+- ✅ GameMonetize: pixuvo.com ads.txt VERIFIED and website Approved in the dashboard (2026-10-02); monetize_status = approved.
 - ✅ GamePix: new property **9O09X** (https://pixuvo.com) — ads.txt VALID, property ACTIVE (2026-10-02); all 13 904 embeds rewritten to sid=9O09X; monetize_status = approved.
 - ✅ Playgama imported (2 081 new games + 269 attached), clid attribution, Google CMP. GameDistribution: rejected (awaiting approval). Famobi: no account.
 - ✅ Duplicate queue cleared (`scripts/review-queue.ts`): exact title across partners or near-identical text → merged; the rest marked "not a duplicate".
