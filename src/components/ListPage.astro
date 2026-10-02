@@ -24,7 +24,7 @@ try {
 const games = ids.length >= 12 ? await gamesByIds(db, ids.slice(0, 90)) : [];
 const hasData = games.length >= 12;
 const fallback = hasData ? [] : await topGames(db, 'featured', 48);
-const name = kind === 'popular' ? 'Popular games' : 'Trending games';
+const name = kind === 'popular' ? 'Most played this week' : 'Trending games';
 const path = `/${kind}-games/`;
 ---
 <Base title={kind === 'popular' ? 'Popular Games – Most Played on Pixuvo' : 'Trending Games – Rising on Pixuvo'} description={kind === 'popular' ? 'The most played free online games on Pixuvo this week.' : 'Games whose plays on Pixuvo are rising fastest right now.'} path={path} noindex={!hasData}>
@@ -32,9 +32,9 @@ const path = `/${kind}-games/`;
     <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name, href: path }]} />
     <div class="page-head">
       <h1>{name}</h1>
-      <p class="lead">{kind === 'popular' ? 'Ranked by the number of times visitors pressed Play on Pixuvo in the last 7 days.' : 'Games with the biggest rise in plays on Pixuvo over the last 3 days compared with the week before.'}</p>
+      <p class="lead">{kind === 'popular' ? 'Ranked by how many times each game was started on Pixuvo in the last 7 days (each visitor counts once a day).' : 'Games with the biggest rise in plays on Pixuvo over the last 3 days compared with the week before (each visitor counts once a day).'}</p>
     </div>
-    {hasData ? <GameGrid games={games} eagerCount={7} label={name} /> : (
+    {hasData ? <GameGrid games={games} eagerCount={7} label={name} ranked={kind === 'popular'} /> : (
       <>
         <div class="empty-state"><strong>Not enough play data yet</strong>Pixuvo is new, so we do not have enough plays to rank games honestly. Here are our featured games instead.</div>
         <div class="section"><div class="section-head"><h2>Featured games</h2></div><GameGrid games={fallback} label="Featured games" /></div>

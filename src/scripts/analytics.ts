@@ -1,0 +1,54 @@
+/**
+ * Google Analytics 4, consent-first (children's site, EU):
+ * - gtag.js is requested ONLY after the visitor allows "Analytics" (whenConsented);
+ * - Consent Mode: analytics granted, all advertising signals denied; Google signals and
+ *   ad personalisation off; no user-ID, no custom personal data;
+ * - withdrawing consent switches analytics_storage to denied and deletes the _ga cookies.
+ */
+import { whenConsented } from './consent';
+
+type Gtag = (...args: unknown[]) => void;
+interface W { dataLayer?: unknown[]; gtag?: Gtag }
+const w = window as unknown as W;
+
+export function track(event: string, params: Record<string, string | number> = {}) {
+  w.gtag?.('event', event, params);
+}
+
+export function setupAnalytics(id: string, testSrc?: string) {
+  whenConsented('analytics', () => {
+    if (testSrc) {
+      // e2e: a local stand-in proves the consent gate without calling Google.
+      const s = document.createElement('script');
+      s.src = testSrc;
+      s.defer = true;
+      document.head.appendChild(s);
+      return;
+    }
+    if (w.gtag) return;
+    w.dataLayer = w.dataLayer ?? [];
+    // gtag must push the `arguments` object itself (that is what gtag.js expects).
+    w.gtag = function gtag() {
+      // eslint-disable-next-line prefer-rest-params
+      w.dataLayer!.push(arguments);
+    };
+    w.gtag('consent', 'default', { analytics_storage: 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
+    w.gtag('js', new Date());
+    w.gtag('config', id, { allow_google_signals: false, allow_ad_personalization_signals: false });
+    const s = document.createElement('script');
+    s.async = true;
+    s.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(id)}`;
+    document.head.appendChild(s);
+  });
+  window.addEventListener('pixuvo:consent', (e) => {
+    const state = (e as CustomEvent<{ analytics?: boolean }>).detail;
+    if (state?.analytics || !w.gtag) return;
+    w.gtag('consent', 'update', { analytics_storage: 'denied' });
+    const host = location.hostname.replace(/^www\./, '');
+    for (const c of document.cookie.split(';')) {
+      const name = c.split('=')[0]!.trim();
+      if (!name.startsWith('_ga')) continue;
+      for (const domain of ['', `; domain=.${host}`, `; domain=${host}`]) document.cookie = `${name}=; Max-Age=0; path=/${domain}`;
+    }
+  });
+}

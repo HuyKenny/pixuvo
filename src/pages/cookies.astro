@@ -3,7 +3,7 @@ export const prerender = true;
 import Doc from '../layouts/Doc.astro';
 ---
 <Doc title="Cookies and Local Storage" h1="Cookies and local storage" description="Which browser storage Pixuvo uses, which is optional, and how to change your choice." path="/cookies/" updated="2 October 2026">
-  <p>Pixuvo pages set <strong>no cookies</strong> of their own. We use your browser’s local storage only for features you use:</p>
+  <p>Without your consent Pixuvo pages set <strong>no cookies</strong>. We use your browser’s local storage only for features you use:</p>
   <table>
     <thead><tr><th>Key</th><th>What it does</th><th>Type</th></tr></thead>
     <tbody>
@@ -12,10 +12,11 @@ import Doc from '../layouts/Doc.astro';
       <tr><td><code>pixuvo:vote:&lt;id&gt;</code></td><td>Remembers your like/dislike</td><td>Necessary for the feature</td></tr>
       <tr><td><code>pixuvo:consent</code></td><td>Your privacy choice</td><td>Necessary</td></tr>
       <tr><td><code>pixuvo:src:&lt;id&gt;</code> (session storage)</td><td>Keeps the same game version during one visit</td><td>Necessary</td></tr>
+      <tr><td><code>_ga</code>, <code>_ga_XESJS34X9Z</code> (cookies, Google Analytics)</td><td>Tell visits apart for usage statistics; up to 2 years</td><td><strong>Optional — only with your consent</strong></td></tr>
     </tbody>
   </table>
   <h2>Optional technologies</h2>
-  <p>We currently use <strong>no analytics and no advertising</strong> on our pages. If we add any, they will be listed here and will only run after you allow them. You can review or change your choice at any time:</p>
+  <p><strong>Analytics (Google Analytics 4)</strong> runs only after you allow it. Advertising features, Google signals and ad personalisation are switched off. We show <strong>no advertising</strong> on our pages. You can review or change your choice at any time — withdrawing consent stops analytics and deletes its cookies:</p>
   <p><button type="button" class="btn btn-primary" data-consent-open>Open privacy choices</button></p>
   <h2>Inside games</h2>
   <p>A game is loaded from our partner when you open its game page (list pages load only cover images). Inside the game frame, the partner and its advertising providers may use cookies or similar technologies and may show their own consent message. Their policies apply; you can also block third-party cookies in your browser.</p>

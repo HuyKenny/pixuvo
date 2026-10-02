@@ -13,6 +13,7 @@ import { fmtDate, plural } from '../lib/format';
 import { truncate } from '../lib/text';
 import { parseControls } from '../lib/controls';
 import { categoryIcon } from '../lib/category-icons';
+import { MIN_PLAYS_SHOWN, playsLabel } from '../lib/plays';
 
 interface Props { game: GameDetail }
 const { game: g } = Astro.props;
@@ -65,6 +66,7 @@ const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait,
               {liked !== null
                 ? <><span class="liked-ico" aria-hidden="true">👍</span><strong>{liked}% liked</strong> <span>({plural(votes, 'vote')} on Pixuvo)</span></>
                 : <span class="muted">Not rated yet</span>}
+              {(g.plays7d ?? 0) >= MIN_PLAYS_SHOWN && <span class="game-plays">▶ Played {playsLabel(g.plays7d!)}× this week</span>}
             </p>
           </div>
           <div class="game-tags">{g.categories.slice(0, 3).map((c, i) => <Tag href={categoryPath(c.slug)} tone={tones[i % tones.length]!}>{c.name}</Tag>)}{g.mobile && <Tag tone="green">📱 Works on mobile</Tag>}</div>

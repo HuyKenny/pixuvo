@@ -14,7 +14,7 @@ export interface Snapshot {
   published: number;
   maxDirSeq: number;
   categories: CategoryInfo[];
-  home: { featured: GameCard[]; newest: GameCard[]; sections: Array<{ slug: string; name: string; count: number; games: GameCard[] }>; hasPopular: boolean; hasTrending: boolean };
+  home: { featured: GameCard[]; newest: GameCard[]; sections: Array<{ slug: string; name: string; count: number; games: GameCard[] }>; hasPopular: boolean; hasTrending: boolean; popular: GameCard[]; gameOfDay: GameCard | null; playsYesterday: number };
   categoryPages: Record<string, GameCard[]>;
   landings: Array<Landing & { count: number; games: GameCard[] }>;
 }

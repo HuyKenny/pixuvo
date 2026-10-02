@@ -66,10 +66,10 @@ const canonicalUrl = path ? abs(path) : null;
     <ConsentBanner />
     <script>
       import '../scripts/favorites';
-      import { whenConsented } from '../scripts/consent';
-      // Optional analytics loads ONLY after consent (none configured in production today).
-      const src = import.meta.env.PUBLIC_ANALYTICS_SRC;
-      if (src) whenConsented('analytics', () => { const s = document.createElement('script'); s.src = src; s.defer = true; document.head.appendChild(s); });
+      import { setupAnalytics } from '../scripts/analytics';
+      import { SITE } from '../lib/site';
+      // Google Analytics loads ONLY after consent; e2e builds use a local stand-in script.
+      setupAnalytics(SITE.ga4, import.meta.env.PUBLIC_ANALYTICS_SRC || undefined);
     </script>
   </body>
 </html>

@@ -1,12 +1,16 @@
 ---
 import { approxCount } from '../lib/format';
 import { uiIcon } from '../lib/category-icons';
-interface Props { games: number; categories: number }
-const { games, categories } = Astro.props;
+interface Props { games: number; categories: number; playsYesterday?: number }
+const { games, categories, playsYesterday = 0 } = Astro.props;
+// Real game starts yesterday (each visitor counts once per game); shown only when it is a meaningful number.
+const played = playsYesterday >= 50;
 const items = [
   { icon: uiIcon('controller'), big: `${approxCount(games)}`, small: 'Games', note: 'and counting' },
   { icon: uiIcon('grid'), big: `${categories}`, small: 'Categories', note: 'something for everyone' },
-  { icon: uiIcon('lightning'), big: 'Play', small: 'Instantly', note: 'starts in one click' },
+  played
+    ? { icon: uiIcon('lightning'), big: playsYesterday.toLocaleString('en-US'), small: 'Plays', note: 'yesterday on Pixuvo' }
+    : { icon: uiIcon('lightning'), big: 'Play', small: 'Instantly', note: 'starts in one click' },
   { icon: uiIcon('cloud'), big: 'No', small: 'Download', note: 'works in your browser' },
 ];
 ---

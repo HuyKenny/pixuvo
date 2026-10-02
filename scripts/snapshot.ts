@@ -9,7 +9,7 @@
  */
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { parseArgs } from 'node:util';
-import { categoryGames, computeFacets, getCategories, getGamesBatch, getLandings, getSetting, landingGames, topGames, type Q } from '../src/lib/catalog.ts';
+import { categoryGames, computeFacets, gamesByIds, getCategories, getGamesBatch, getLandings, getSetting, landingGames, topGames, type Q } from '../src/lib/catalog.ts';
 import { MIN_CATEGORY_GAMES, THEMES } from '../src/lib/taxonomy.ts';
 import type { GameCard, GameDetail } from '../src/lib/types.ts';
 import { loadConfig } from './lib/env.ts';
@@ -52,6 +52,13 @@ for (const l of await getLandings(q)) {
 const ids = (raw: string | null) => { try { const a = JSON.parse(raw ?? 'null'); return Array.isArray(a) ? a.filter(Number.isInteger) as number[] : null; } catch { return null; } };
 const popularIds = ids(popularRaw);
 const trendingIds = ids(trendingRaw);
+// Most played this week (real plays, ranked by scripts/metrics.ts) for the homepage leaderboard.
+const popular = popularIds?.length ? (await gamesByIds(q, popularIds.slice(0, 12))) : [];
+// Game of the day: one of the top featured games, the same for everyone all day (snapshot runs daily).
+const dayNo = Math.floor(Date.now() / 86_400_000);
+const gameOfDay = featured.length ? featured[dayNo % Math.min(featured.length, 36)]! : null;
+// Real number of game starts yesterday (UTC), shown only when it is a meaningful number.
+const playsYesterday = Number((await q.all<{ n: number | null }>("SELECT sum(play_clicks) AS n FROM aggregate_metrics WHERE day = date('now', '-1 day')"))[0]?.n ?? 0);
 
 // Static detail pages: the best-ranked games, plus everything already on the homepage.
 const N = Math.max(0, Math.min(15_000, Number(values.games)));
@@ -73,7 +80,7 @@ const site = {
   published,
   maxDirSeq: Number(maxSeqRaw ?? 0),
   categories,
-  home: { featured, newest, sections, hasPopular: !!popularIds?.length, hasTrending: !!trendingIds?.length },
+  home: { featured, newest, sections, hasPopular: !!popularIds?.length, hasTrending: !!trendingIds?.length, popular, gameOfDay, playsYesterday },
   categoryPages,
   landings,
 };

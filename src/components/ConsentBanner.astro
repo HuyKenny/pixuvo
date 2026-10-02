@@ -1,12 +1,15 @@
 ---
 /**
- * Consent layer. Pixuvo pages currently run NO analytics and NO advertising, so
- * the banner only opens automatically once an optional category is switched on
- * (PUBLIC_CONSENT_CATEGORIES at build time). Until then "Privacy choices" in the
+ * Consent layer. Pixuvo pages run Google Analytics only with consent and NO advertising;
+ * the banner opens automatically while an optional category is on and no choice exists
+ * (PUBLIC_CONSENT_CATEGORIES overrides at build time). Until then "Privacy choices" in the
  * footer shows the state. Optional scripts must be loaded through
  * `whenConsented()` in src/scripts/consent.ts — never directly.
  */
-const active = (import.meta.env.PUBLIC_CONSENT_CATEGORIES ?? '').split(',').map((s: string) => s.trim()).filter(Boolean);
+import { SITE } from '../lib/site';
+// Build-time override (tests); otherwise analytics is offered whenever a GA4 id is configured.
+const raw = import.meta.env.PUBLIC_CONSENT_CATEGORIES ?? (SITE.ga4 ? 'analytics' : '');
+const active = raw.split(',').map((s: string) => s.trim()).filter(Boolean);
 const analytics = active.includes('analytics');
 const ads = active.includes('ads');
 ---
@@ -20,7 +23,7 @@ const ads = active.includes('ads');
   <details open={active.length > 0}>
     <summary>Settings</summary>
     <label><input type="checkbox" checked disabled /> <span><strong>Necessary</strong> — favorites, history and your privacy choice, stored only in your browser.</span></label>
-    <label><input type="checkbox" name="analytics" disabled={!analytics} /> <span><strong>Analytics</strong> — {analytics ? 'anonymous usage statistics.' : 'not in use.'}</span></label>
+    <label><input type="checkbox" name="analytics" disabled={!analytics} /> <span><strong>Analytics</strong> — {analytics ? 'Google Analytics counts visits and which games are played. No ads, no profiles, no Google signals.' : 'not in use.'}</span></label>
     <label><input type="checkbox" name="ads" disabled={!ads} /> <span><strong>Advertising on Pixuvo pages</strong> — {ads ? 'ads around the game area.' : 'not in use.'}</span></label>
   </details>
   <div class="row">

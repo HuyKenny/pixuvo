@@ -327,6 +327,16 @@ test.describe('consent', () => {
     await page.click('[data-consent-action="save"]');
     await expect.poll(() => hits.length).toBeGreaterThan(0);
   });
+  test('Google Analytics is never requested before consent', async ({ page }) => {
+    const ga: string[] = [];
+    page.on('request', (r) => { if (/googletagmanager|google-analytics/.test(r.url())) ga.push(r.url()); });
+    await page.goto('/');
+    await page.goto('/racing-games/');
+    expect(ga).toEqual([]);
+    expect(await page.evaluate(() => typeof (window as unknown as { gtag?: unknown }).gtag)).toBe('undefined');
+    expect(await page.evaluate(() => document.cookie)).not.toContain('_ga');
+  });
+
   test('closing nothing ≠ consent: reload without a choice still loads nothing', async ({ page }) => {
     const hits: string[] = [];
     page.on('request', (r) => { if (r.url().includes('/e2e-fixture/analytics.js')) hits.push(r.url()); });

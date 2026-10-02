@@ -7,6 +7,8 @@ export interface GameCard {
   cat: string | null;
   mobile: boolean;
   players: number | null;
+  /** Times the game was started on Pixuvo in the last 7 days (counted once per visitor and day). */
+  plays7d?: number;
 }
 
 export interface CategoryRef {

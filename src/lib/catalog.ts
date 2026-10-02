@@ -20,14 +20,16 @@ interface CardRow {
   thumb_url: string;
   mobile_friendly: number | null;
   players_max: number | null;
+  plays_7d: number | null;
   cat: string | null;
 }
 
-const CARD_COLS = 'g.id, g.slug, g.title, g.thumb_url, g.mobile_friendly, g.players_max, pc.name AS cat';
+const CARD_COLS = 'g.id, g.slug, g.title, g.thumb_url, g.mobile_friendly, g.players_max, g.plays_7d, pc.name AS cat';
 const CARD_JOIN = 'LEFT JOIN categories pc ON pc.id = g.primary_category_id';
 
 export function toCard(r: CardRow): GameCard {
-  return { id: r.id, slug: r.slug, title: r.title, thumb: r.thumb_url, cat: r.cat, mobile: r.mobile_friendly === 1, players: r.players_max };
+  // Real plays on Pixuvo in the last 7 days (scripts/metrics.ts); omitted when zero to keep payloads small.
+  return { id: r.id, slug: r.slug, title: r.title, thumb: r.thumb_url, cat: r.cat, mobile: r.mobile_friendly === 1, players: r.players_max, ...(r.plays_7d ? { plays7d: r.plays_7d } : {}) };
 }
 
 // ── Categories ──────────────────────────────────────────────────────────────

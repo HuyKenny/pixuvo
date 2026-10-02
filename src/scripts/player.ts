@@ -10,6 +10,7 @@
  * - Leaving the page removes the iframe so sound stops.
  */
 import { store } from './store';
+import { track } from './analytics';
 
 interface GameData {
   id: number;
@@ -82,6 +83,7 @@ if (stage && data) {
     }
     mount(body as PlayResponse);
     store.addRecent({ id: data!.id, slug: data!.slug, title: data!.title, thumb: data!.thumb, ...(data!.cat ? { cat: data!.cat } : {}) });
+    track('game_start', { game_slug: data!.slug, provider: (body as PlayResponse).provider, ...(data!.cat ? { game_category: data!.cat } : {}) });
   }
 
   function mount(p: PlayResponse) {

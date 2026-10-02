@@ -13,6 +13,8 @@ export const SITE = {
   },
   pageSize: 42, // full rows at 2, 3, 6 and 7 columns
   maxCategoryPages: 100,
+  /** Google Analytics 4 — loads only after the visitor allows "Analytics" (src/scripts/analytics.ts). */
+  ga4: 'G-XESJS34X9Z',
 } as const;
 
 /** Absolute canonical URL on the production host regardless of request Host header. */

@@ -7,11 +7,12 @@ const TEST_MODE = (typeof process !== 'undefined' && process.env?.PUBLIC_TEST_MO
 export function csp(): string {
   return [
     "default-src 'self'",
-    "script-src 'self' https://challenges.cloudflare.com",
+    // Google Analytics (consent-gated in src/scripts/analytics.ts).
+    "script-src 'self' https://challenges.cloudflare.com https://www.googletagmanager.com",
     "style-src 'self' 'unsafe-inline'",
-    `img-src 'self' data: ${IMAGE_HOSTS.join(' ')}`,
+    `img-src 'self' data: ${IMAGE_HOSTS.join(' ')} https://www.googletagmanager.com https://*.google-analytics.com`,
     `frame-src ${TEST_MODE ? "'self' " : ''}${GAME_FRAME_HOSTS.join(' ')} https://challenges.cloudflare.com`,
-    "connect-src 'self'",
+    "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com",
     "font-src 'self'",
     "manifest-src 'self'",
     "base-uri 'self'",

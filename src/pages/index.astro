@@ -8,6 +8,7 @@ import StatCards from '../components/StatCards.astro';
 import CategoryTiles from '../components/CategoryTiles.astro';
 import FilterSidebar from '../components/FilterSidebar.astro';
 import Icon from '../components/Icon.astro';
+import GameOfDay from '../components/GameOfDay.astro';
 import { snapshot } from '../lib/snapshot';
 import { SITE, categoryPath } from '../lib/site';
 import { approxCount } from '../lib/format';
@@ -37,7 +38,7 @@ const ld = [
       <div class="home-main">
         <div class="hero-row">
           <Hero total={total} picks={snapshot.home.featured.slice(0, 24)} />
-          <StatCards games={total} categories={live.length} />
+          <StatCards games={total} categories={live.length} playsYesterday={snapshot.home.playsYesterday} />
         </div>
         <nav class="quickrow" aria-label="Quick filters">
           <a class="qchip" href="/2-player-games/"><span aria-hidden="true">👥</span>2 Players</a>
@@ -53,6 +54,15 @@ const ld = [
           <div class="section-head"><h2 id="recent-h"><img src={uiIcon('clock')} alt="" width="30" height="30" />Continue Playing</h2><a href="/recently-played/">View all <Icon name="play" size={12} /></a></div>
           <div class="grid" id="recent-grid" role="list" aria-label="Recently played games"></div>
         </section>
+
+        {snapshot.home.gameOfDay && <GameOfDay game={snapshot.home.gameOfDay} />}
+
+        {snapshot.home.popular.length >= 6 && (
+          <section class="section" aria-labelledby="top-h">
+            <div class="section-head"><h2 id="top-h"><img src={uiIcon('trophy')} alt="" width="30" height="30" />Most Played This Week</h2><a href="/popular-games/">Full ranking</a></div>
+            <GameGrid games={snapshot.home.popular.slice(0, 12)} label="Most played games this week" ranked />
+          </section>
+        )}
 
         <section class="section" aria-labelledby="featured-h">
           <div class="section-head"><h2 id="featured-h"><img src={uiIcon('popular')} alt="" width="30" height="30" />{snapshot.home.hasTrending ? 'Trending Now' : 'Featured Games'}</h2><a href={snapshot.home.hasTrending ? '/trending-games/' : '/games/'}>View all</a></div>
@@ -97,11 +107,11 @@ const ld = [
   import { cardHtml, type ClientCard } from '../scripts/cards';
   const ago = (ts: number) => {
     const m = Math.max(1, Math.round((Date.now() - ts) / 60000));
-    if (m < 60) return `Played ${m} min ago`;
+    if (m < 60) return `${m} min ago`;
     const h = Math.round(m / 60);
-    if (h < 24) return `Played ${h} h ago`;
+    if (h < 24) return `${h} h ago`;
     const d = Math.round(h / 24);
-    return `Played ${d} day${d === 1 ? '' : 's'} ago`;
+    return `${d} day${d === 1 ? '' : 's'} ago`;
   };
   const sec = document.getElementById('recent-section');
   const grid = document.getElementById('recent-grid');
@@ -109,7 +119,7 @@ const ld = [
     const items = store.recent().slice(0, 6);
     if (!sec || !grid) return;
     sec.hidden = items.length === 0;
-    grid.innerHTML = items.map((g) => cardHtml(g, { note: ago(g.at) })).join('');
+    grid.innerHTML = items.map((g) => cardHtml(g, { note: (g.n && g.n > 1 ? `Played ${g.n}× · ` : '') + ago(g.at) })).join('');
     (window as unknown as { pixuvoSyncFavs?: () => void }).pixuvoSyncFavs?.();
   };
   draw();

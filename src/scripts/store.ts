@@ -10,6 +10,8 @@ export interface StoredGame {
   at: number;
   /** Primary category slug (recommendations); optional for older entries. */
   cat?: string;
+  /** How many days this game was played on this device (counted once per day). Stays in this browser only. */
+  n?: number;
 }
 
 const KEYS = { fav: 'pixuvo:favorites', recent: 'pixuvo:recent' } as const;
@@ -41,7 +43,7 @@ function read(kind: keyof typeof KEYS): StoredGame[] {
     if (!Array.isArray(arr)) return [];
     return arr
       .filter((x): x is StoredGame => !!x && typeof x === 'object' && Number.isInteger((x as StoredGame).id) && typeof (x as StoredGame).slug === 'string' && /^[a-z0-9-]{1,90}$/.test((x as StoredGame).slug))
-      .map((x) => ({ id: x.id, slug: x.slug, title: String(x.title ?? '').slice(0, 120), thumb: safeThumb(x.thumb), at: Number(x.at) || 0, ...(typeof x.cat === 'string' && /^[a-z0-9-]{1,40}$/.test(x.cat) ? { cat: x.cat } : {}) }))
+      .map((x) => ({ id: x.id, slug: x.slug, title: String(x.title ?? '').slice(0, 120), thumb: safeThumb(x.thumb), at: Number(x.at) || 0, ...(typeof x.cat === 'string' && /^[a-z0-9-]{1,40}$/.test(x.cat) ? { cat: x.cat } : {}), ...(Number.isInteger(x.n) && x.n! > 0 ? { n: Math.min(x.n!, 9999) } : {}) }))
       .slice(0, LIMIT[kind]);
   } catch {
     return [];
@@ -93,9 +95,13 @@ export const store = {
   removeFavorite(id: number) {
     write('fav', read('fav').filter((x) => x.id !== id));
   },
-  addRecent(g: Omit<StoredGame, 'at'>) {
-    const list = read('recent').filter((x) => x.id !== g.id);
-    list.unshift({ ...g, at: Date.now() });
+  addRecent(g: Omit<StoredGame, 'at' | 'n'>) {
+    const all = read('recent');
+    const prev = all.find((x) => x.id === g.id);
+    const sameDay = prev && new Date(prev.at).toDateString() === new Date().toDateString();
+    const n = (prev?.n ?? (prev ? 1 : 0)) + (sameDay ? 0 : 1);
+    const list = all.filter((x) => x.id !== g.id);
+    list.unshift({ ...g, at: Date.now(), n: Math.max(1, n) });
     write('recent', list);
   },
   removeRecent(id: number) {

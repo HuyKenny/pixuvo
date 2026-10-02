@@ -1,0 +1,18 @@
+---
+/** One featured game per day (picked by the daily snapshot), the same for every visitor. */
+import Icon from './Icon.astro';
+import type { GameCard } from '../lib/types';
+interface Props { game: GameCard }
+const { game: g } = Astro.props;
+---
+<section class="gotd" aria-labelledby="gotd-h">
+  <a class="gotd-card" href={`/games/${g.slug}/`}>
+    <img class="gotd-img" src={g.thumb} alt="" width="320" height="240" loading="lazy" referrerpolicy="no-referrer" />
+    <span class="gotd-text">
+      <span class="gotd-kicker" id="gotd-h">⭐ Game of the Day</span>
+      <strong>{g.title}</strong>
+      {g.cat && <small>{g.cat}</small>}
+      <span class="gotd-btn"><Icon name="play" size={18} /> Play now</span>
+    </span>
+  </a>
+</section>

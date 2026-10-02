@@ -3146,3 +3146,90 @@ body.is-fullscreen .bottom-nav {
     margin-inline: calc(50% - 50vw); /* full bleed whatever the side padding */
   }
 }
+
+/* Own data: leaderboard badges, game of the day, play counts */
+.grid-ranked .card-badge {
+  background: linear-gradient(135deg, #ffb703, #fb8500);
+  color: #3a1d00;
+  font-size: 13px;
+}
+.game-plays {
+  margin-left: 10px;
+  font-weight: 800;
+  color: var(--pill-teal);
+  white-space: nowrap;
+}
+.gotd {
+  margin-top: 18px;
+}
+.gotd-card {
+  display: grid;
+  grid-template-columns: 140px minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+  padding: 12px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #fff7e0, #ffe8f3);
+  border: 2px solid #ffd27a;
+  color: var(--ink);
+  text-decoration: none;
+  box-shadow: var(--shadow-card);
+}
+@media (min-width: 700px) {
+  .gotd-card {
+    grid-template-columns: 220px minmax(0, 1fr);
+    padding: 14px 18px;
+  }
+}
+.gotd-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 14px;
+}
+.gotd-text {
+  display: grid;
+  gap: 4px;
+  justify-items: start;
+}
+.gotd-kicker {
+  font-weight: 900;
+  font-size: 14px;
+  color: #b4520a;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.gotd-text strong {
+  font-size: clamp(18px, 2.4vw, 26px);
+  font-weight: 900;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+.gotd-text small {
+  color: var(--muted);
+  font-weight: 700;
+}
+.gotd-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: 999px;
+  background: var(--grad-primary);
+  color: #fff;
+  font-weight: 900;
+}
+.gotd-btn svg {
+  fill: currentColor;
+}
+@media (hover: hover) {
+  .gotd-card:hover .gotd-btn {
+    filter: brightness(1.1);
+  }
+}
+.filterside ul a,
+.filterside ul a:visited {
+  text-decoration: none;
+}
