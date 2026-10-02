@@ -1,5 +1,7 @@
 import { isLocal, type AppEnv } from './env';
 
+const TURNSTILE_HOSTS = ['pixuvo.com', 'www.pixuvo.com'];
+
 export type TurnstileResult = { ok: true } | { ok: false; status: number; reason: string };
 
 /** Server-side Turnstile check. Without a secret in production, writes are refused (fail closed). */
@@ -15,8 +17,10 @@ export async function verifyTurnstile(env: AppEnv, token: unknown, ip: string): 
   body.set('remoteip', ip);
   try {
     const res = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', { method: 'POST', body });
-    const data = (await res.json()) as { success?: boolean };
-    return data.success ? { ok: true } : { ok: false, status: 403, reason: 'Verification failed. Please try again.' };
+    const data = (await res.json()) as { success?: boolean; hostname?: string };
+    // A token solved on another site that embeds our public site key is not valid here.
+    const hostOk = !data.hostname || TURNSTILE_HOSTS.includes(data.hostname);
+    return data.success && hostOk ? { ok: true } : { ok: false, status: 403, reason: 'Verification failed. Please try again.' };
   } catch {
     return { ok: false, status: 503, reason: 'Verification service unavailable.' };
   }

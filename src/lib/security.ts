@@ -28,6 +28,25 @@ export const SECURITY_HEADERS: Record<string, string> = {
   'Referrer-Policy': 'strict-origin-when-cross-origin',
   'X-Frame-Options': 'DENY',
   'Permissions-Policy': 'camera=(), microphone=(), geolocation=(), payment=(), usb=(), browsing-topics=()',
-  'Strict-Transport-Security': 'max-age=31536000',
+  'Strict-Transport-Security': 'max-age=31536000; includeSubDomains',
   'Cross-Origin-Opener-Policy': 'same-origin-allow-popups',
+  'Cross-Origin-Resource-Policy': 'same-site',
 };
+
+/** Game frames may only come from partner hosts the CSP allows. */
+export function isAllowedEmbed(u: URL): boolean {
+  return u.protocol === 'https:' && GAME_FRAME_HOSTS.includes(u.origin);
+}
+
+/** Cache API key that marks "this visitor already started this game today". */
+export function playKey(visitor: string, id: number, day: string): string {
+  return `https://pixuvo.com/__play-seen/${visitor}/${id}/${day}`;
+}
+
+/** Same-site admin path only: `/admin/..//evil.com` normalises to `//evil.com`, so check AFTER parsing. */
+export function safeAdminReturn(ret: string): string {
+  if (!/^\/admin\/[a-z0-9\-/?=&%._]*$/i.test(ret)) return '/admin/';
+  const u = new URL(ret, 'https://pixuvo.com');
+  if (u.origin !== 'https://pixuvo.com' || !u.pathname.startsWith('/admin/') || u.pathname.includes('//')) return '/admin/';
+  return u.pathname + u.search;
+}

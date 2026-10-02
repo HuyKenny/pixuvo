@@ -5,11 +5,11 @@ import { q } from '../../../lib/server/db';
 import { getEnv } from '../../../lib/server/env';
 import { dispatchSync, type DispatchEnv } from '../../../lib/server/dispatch';
 import { sameOrigin } from '../../../lib/server/http';
+import { safeAdminReturn } from '../../../lib/security';
 export const prerender = false;
 
 function back(ret: string, r: A.ActionResult): Response {
-  const safe = /^\/admin\/[a-z0-9\-/?=&%._]*$/i.test(ret) ? ret : '/admin/';
-  const u = new URL(safe, 'https://pixuvo.com');
+  const u = new URL(safeAdminReturn(ret), 'https://pixuvo.com');
   u.searchParams.set('msg', r.message);
   u.searchParams.set('ok', r.ok ? '1' : '0');
   return new Response(null, { status: 303, headers: { location: u.pathname + u.search, 'cache-control': 'no-store' } });

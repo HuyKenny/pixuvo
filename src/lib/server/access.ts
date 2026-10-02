@@ -25,8 +25,9 @@ function b64urlToBytes(s: string): Uint8Array<ArrayBuffer> {
   return out;
 }
 
-async function getJwks(team: string, fetchImpl: typeof fetch): Promise<Jwk[]> {
-  if (jwksCache && jwksCache.team === team && Date.now() - jwksCache.at < 3600_000) return jwksCache.keys;
+let lastForced = 0;
+async function getJwks(team: string, fetchImpl: typeof fetch, force = false): Promise<Jwk[]> {
+  if (!force && jwksCache && jwksCache.team === team && Date.now() - jwksCache.at < 3600_000) return jwksCache.keys;
   const res = await fetchImpl(`https://${team}/cdn-cgi/access/certs`);
   if (!res.ok) throw new Error(`JWKS HTTP ${res.status}`);
   const data = (await res.json()) as { keys?: Jwk[] };
@@ -50,8 +51,14 @@ export async function verifyAccessJwt(
     return { ok: false, reason: 'undecodable token' };
   }
   if (header.alg !== 'RS256' || !header.kid) return { ok: false, reason: 'unexpected alg' };
-  const keys = opts.jwks ?? (await getJwks(opts.team, opts.fetchImpl ?? fetch));
-  const jwk = keys.find((k) => k.kid === header.kid);
+  let keys = opts.jwks ?? (await getJwks(opts.team, opts.fetchImpl ?? fetch));
+  let jwk = keys.find((k) => k.kid === header.kid);
+  // Access rotated its keys: refetch once (at most once a minute, so junk kids cannot force a fetch per request).
+  if (!jwk && !opts.jwks && Date.now() - lastForced > 60_000) {
+    lastForced = Date.now();
+    keys = await getJwks(opts.team, opts.fetchImpl ?? fetch, true);
+    jwk = keys.find((k) => k.kid === header.kid);
+  }
   if (!jwk) return { ok: false, reason: 'unknown key id' };
   const key = await crypto.subtle.importKey('jwk', { kty: 'RSA', n: jwk.n, e: jwk.e, alg: 'RS256', ext: true }, { name: 'RSASSA-PKCS1-v1_5', hash: 'SHA-256' }, false, ['verify']);
   const valid = await crypto.subtle.verify('RSASSA-PKCS1-v1_5', key, b64urlToBytes(parts[2]!), new TextEncoder().encode(`${parts[0]}.${parts[1]}`));

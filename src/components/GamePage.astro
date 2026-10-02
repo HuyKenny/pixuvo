@@ -41,9 +41,13 @@ const ld = [{
   ...(g.releaseDate ? { datePublished: g.releaseDate } : {}),
   offers: { '@type': 'Offer', price: 0, priceCurrency: 'USD' },
 }];
+// The game starts on page open: warm up the partner's frame host.
+const FRAME_HOST: Record<string, string> = { GameMonetize: 'https://html5.gamemonetize.co', GamePix: 'https://play.gamepix.com', Playgama: 'https://playgama.com' };
+const frameHost = g.providerName ? FRAME_HOST[g.providerName] : undefined;
 const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait, ...(cat ? { cat: cat.slug } : {}) };
 ---
 <Base title={`${g.title} – Play Free Online`} description={desc} path={path} ogImage={g.thumb} jsonLd={ld}>
+  {frameHost && <link slot="head" rel="preconnect" href={frameHost} />}
   <div class="wrap">
     <Breadcrumbs items={crumbs} />
     <div class="game-layout">

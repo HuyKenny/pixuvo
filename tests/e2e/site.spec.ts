@@ -280,6 +280,19 @@ test.describe('admin & security', () => {
     }
   });
 
+  test('HSTS with subdomains, CORP, security.txt and long cache for static files', async ({ request }) => {
+    const h = (await request.get('/')).headers();
+    expect(h['strict-transport-security']).toContain('includeSubDomains');
+    expect(h['cross-origin-resource-policy']).toBe('same-site');
+    const sec = await request.get('/.well-known/security.txt');
+    expect(sec.status()).toBe(200);
+    expect(await sec.text()).toContain('Contact: mailto:info@pixuvo.com');
+    expect((await request.get('/fonts/nunito-latin.v1.woff2')).headers()['cache-control']).toContain('immutable');
+    expect((await request.get('/icons/cat/puzzle.webp')).headers()['cache-control']).toContain('max-age=604800');
+    expect((await request.get('/data/facets.json')).headers()['cache-control']).toContain('max-age=300');
+    expect((await request.get('/')).headers()['cache-control'] ?? '').not.toContain('max-age=604800');
+  });
+
   test('robots, sitemap and ads.txt', async ({ request }) => {
     const robots = await (await request.get('/robots.txt')).text();
     expect(robots).toContain('Sitemap: https://pixuvo.com/sitemap.xml');

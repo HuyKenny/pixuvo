@@ -5,6 +5,8 @@ export interface AppEnv {
   ASSETS: Fetcher;
   RL_WRITE?: RateLimit;
   RL_PLAY?: RateLimit;
+  /** Cache-missed search/filter reads (D1). */
+  RL_READ?: RateLimit;
   ENVIRONMENT?: string;
   SITE_URL?: string;
   ADMIN_DEV_BYPASS?: string;

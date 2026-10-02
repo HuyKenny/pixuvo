@@ -9,9 +9,11 @@ import { defineMiddleware } from 'astro:middleware';
 import { authenticateAdmin } from './lib/server/access';
 import { dataVersion, q } from './lib/server/db';
 import { getEnv } from './lib/server/env';
+import { clientIp } from './lib/server/http';
 import { SECURITY_HEADERS } from './lib/security';
 import { normTitle } from './lib/text';
 
+const READ_LIMITED = [/^\/api\/(games|suggest)\/$/, /^\/search\/$/];
 const NO_CACHE = [/^\/api\/(play|rate|report|cron|admin)\b/, /^\/admin\b/];
 const PARAMS: Record<string, string[]> = {
   '/api/games/': ['cat', 'sub', 'theme', 'q', 'device', 'players', 'mode', 'style', 'controls', 'sort', 'page'],
@@ -74,14 +76,24 @@ export const onRequest = defineMiddleware(async (ctx, next) => {
     }
   }
 
+  // Cache misses on search/filter endpoints run D1 queries: limit them per IP (cache hits stay free).
+  if (READ_LIMITED.some((r) => r.test(url.pathname))) {
+    const rl = getEnv().RL_READ;
+    if (rl && !(await rl.limit({ key: clientIp(ctx.request) })).success) {
+      return withHeaders(new Response(JSON.stringify({ error: 'Too many requests — please wait a moment.' }), { status: 429, headers: { 'content-type': url.pathname.startsWith('/api/') ? 'application/json' : 'text/plain; charset=utf-8', 'cache-control': 'no-store', 'retry-after': '30' } }), url);
+    }
+  }
+
   const res = await next();
-  if (cache && key && res.status === 200 && !res.headers.has('set-cookie')) {
+  const cc = res.headers.get('cache-control') ?? '';
+  // Never store a response the route marked private.
+  if (cache && key && res.status === 200 && !res.headers.has('set-cookie') && !/private|no-store/.test(cc)) {
     const isApi = url.pathname.startsWith('/api/');
     const toStore = new Response(res.clone().body, res);
     toStore.headers.set('Cache-Control', `public, s-maxage=${isApi ? 300 : 600}`);
     ctx.locals.cfContext?.waitUntil?.(cache.put(key, toStore));
     const out = withHeaders(res, url, { 'X-Pixuvo-Cache': 'MISS' });
-    if (!out.headers.has('cache-control') || out.headers.get('cache-control')!.includes('private')) out.headers.set('Cache-Control', 'public, max-age=60');
+    if (!out.headers.has('cache-control')) out.headers.set('Cache-Control', 'public, max-age=60');
     return out;
   }
   return withHeaders(res, url);

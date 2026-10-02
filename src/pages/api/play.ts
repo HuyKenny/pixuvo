@@ -8,7 +8,8 @@
 import type { APIRoute } from 'astro';
 import { q } from '../../lib/server/db';
 import { getEnv } from '../../lib/server/env';
-import { clientIp, error, json, readJson, sameOrigin } from '../../lib/server/http';
+import { clientIp, error, json, readJson, sameOrigin, sha256Hex } from '../../lib/server/http';
+import { isAllowedEmbed, playKey } from '../../lib/security';
 
 export const prerender = false;
 
@@ -32,10 +33,10 @@ const SANDBOX = 'allow-scripts allow-same-origin allow-popups allow-popups-to-es
 export const POST: APIRoute = async ({ request }) => {
   if (!sameOrigin(request)) return error(403, 'Cross-site request refused.');
   const env = getEnv();
-  if (env.RL_PLAY) {
-    const { success } = await env.RL_PLAY.limit({ key: clientIp(request) });
-    if (!success) return error(429, 'Too many requests — please wait a moment.');
-  }
+  // Fail closed: without the limiter every page view could hammer D1.
+  if (!env.RL_PLAY) return error(503, 'Games are temporarily unavailable.');
+  const { success } = await env.RL_PLAY.limit({ key: clientIp(request) });
+  if (!success) return error(429, 'Too many requests — please wait a moment.');
   const body = await readJson<{ id?: unknown; source?: unknown }>(request);
   const id = Number(body?.id);
   if (!Number.isInteger(id) || id <= 0) return error(400, 'Invalid game.');
@@ -71,16 +72,18 @@ export const POST: APIRoute = async ({ request }) => {
   let embed: URL;
   try {
     embed = new URL(pick.embed_url);
-    if (embed.protocol !== 'https:') throw new Error('insecure');
+    // Only partner hosts the CSP allows; anything else would just be a blocked frame.
+    if (!isAllowedEmbed(embed)) throw new Error('host');
   } catch {
     return error(500, 'This game is misconfigured. Please report it.');
   }
   // e2e/test mode: never load real partner games (no ad impressions from tests). Relative URL on purpose:
   // `wrangler dev` rewrites request.url to the route host (pixuvo.com) when routes are configured.
   if (env.ENVIRONMENT === 'test') return json({ embedUrl: `/e2e-fixture/game/?id=${id}`, sourceId: pick.id, provider: pick.provider_name, allow: ALLOW, sandbox: SANDBOX });
-  // One aggregated write per play click (no per-second tracking).
+  // One aggregated write per play, counted at most once per visitor, game and day: the game starts
+  // on page open, so reloads must not inflate trending (or cost a D1 write each time).
   const day = new Date().toISOString().slice(0, 10);
-  await db.run(
+  if (await firstPlayToday(env.IP_HASH_SALT, clientIp(request), id, day)) await db.run(
     `INSERT INTO aggregate_metrics (day, game_id, play_clicks) VALUES (?, ?, 1)
      ON CONFLICT(day, game_id) DO UPDATE SET play_clicks = play_clicks + 1`,
     [day, id],
@@ -89,3 +92,18 @@ export const POST: APIRoute = async ({ request }) => {
 };
 
 export const GET: APIRoute = () => error(405, 'Use POST.');
+
+/** Dedupe in the colo's Cache API (no storage writes). Best effort: a cache miss just counts once more. */
+async function firstPlayToday(salt: string | undefined, ip: string, id: number, day: string): Promise<boolean> {
+  const cache = typeof caches !== 'undefined' ? (caches as unknown as { default: Cache }).default : null;
+  if (!cache) return true;
+  const visitor = (await sha256Hex(`${salt ?? 'local'}|${ip}`)).slice(0, 24);
+  const key = playKey(visitor, id, day);
+  try {
+    if (await cache.match(key)) return false;
+    await cache.put(key, new Response('1', { headers: { 'cache-control': 'public, max-age=86400' } }));
+  } catch {
+    /* count it */
+  }
+  return true;
+}

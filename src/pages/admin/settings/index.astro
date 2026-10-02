@@ -7,7 +7,7 @@ const env = getEnv();
 const settings = await q().all<{ key: string; value: string; updated_at: string }>('SELECT key, value, updated_at FROM site_settings ORDER BY key');
 const secrets: Array<[string, boolean]> = [
   ['Cloudflare Access (admin)', !!(env.ACCESS_TEAM_DOMAIN && env.ACCESS_AUD)], ['Turnstile secret', !!env.TURNSTILE_SECRET_KEY], ['Cron secret', !!env.CRON_SECRET],
-  ['GitHub dispatch token', !!env.GH_DISPATCH_TOKEN], ['IP hash salt', !!env.IP_HASH_SALT], ['Write rate limiter', !!env.RL_WRITE], ['Play rate limiter', !!env.RL_PLAY],
+  ['GitHub dispatch token', !!env.GH_DISPATCH_TOKEN], ['IP hash salt', !!env.IP_HASH_SALT], ['Write rate limiter', !!env.RL_WRITE], ['Play rate limiter', !!env.RL_PLAY], ['Read rate limiter', !!env.RL_READ],
 ];
 ---
 <Admin title="Settings">

@@ -22,11 +22,12 @@ export const POST: APIRoute = async ({ request }) => {
   if (!ts.ok) return error(ts.status, ts.reason);
   const message = htmlToText(typeof body?.message === 'string' ? body.message : '', 1000);
   const path = typeof body?.path === 'string' && /^\/[a-z0-9\-/]{0,120}$/.test(body.path) ? body.path : '';
+  if (!env.IP_HASH_SALT && !isLocal(env)) return error(503, 'Reporting is temporarily unavailable. Please e-mail info@pixuvo.com.');
   const voter = (await sha256Hex(`${env.IP_HASH_SALT ?? 'local'}|${ip}`)).slice(0, 32);
   const db = q();
   const [game] = await db.all<{ id: number }>('SELECT id FROM games WHERE id = ? LIMIT 1', [id]);
   if (!game) return error(404, 'Game not found.');
-  const [{ n } = { n: 0 }] = await db.all<{ n: number }>("SELECT count(*) AS n FROM reports WHERE voter_hash = ? AND created_at > datetime('now', '-1 day')", [voter]);
+  const [{ n } = { n: 0 }] = await db.all<{ n: number }>("SELECT count(*) AS n FROM reports WHERE voter_hash = ? AND created_at > ?", [voter, new Date(Date.now() - 86_400_000).toISOString()]);
   if (n >= 20) return error(429, 'Too many reports today.');
   await db.run('INSERT INTO reports (game_id, reason, message, page_path, voter_hash, created_at) VALUES (?, ?, ?, ?, ?, ?)', [id, reason, message, path, voter, new Date().toISOString()]);
   return json({ ok: true }, { status: 201 });

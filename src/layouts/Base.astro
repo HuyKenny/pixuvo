@@ -49,6 +49,7 @@ const canonicalUrl = path ? abs(path) : null;
     {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
     <meta property="og:image" content={ogImage ?? `${SITE.url}/og-default.png`} />
     <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preload" href="/fonts/nunito-latin.v1.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preconnect" href="https://img.gamemonetize.com" />
     <link rel="preconnect" href="https://img.gamepix.com" />
     <link rel="preconnect" href="https://static.playgama.com" />

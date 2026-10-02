@@ -3,7 +3,7 @@
 /* Nunito (SIL OFL 1.1, public/fonts/NUNITO-OFL.txt), self-hosted latin subset. */
 @font-face {
   font-family: 'Nunito';
-  src: url('/fonts/nunito-latin.woff2') format('woff2');
+  src: url('/fonts/nunito-latin.v1.woff2') format('woff2');
   font-weight: 300 1000;
   font-style: normal;
   font-display: swap;

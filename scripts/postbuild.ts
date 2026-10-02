@@ -52,7 +52,15 @@ const existing = existsSync(join(CLIENT, '_headers')) ? readFileSync(join(CLIENT
 const preview = process.env.PUBLIC_NOINDEX === '1' ? '  X-Robots-Tag: noindex, nofollow\n' : '';
 // workers.dev is a technical mirror: never indexable, even for static files.
 const mirror = 'https://pixuvo.huy-kenny.workers.dev/*\n  X-Robots-Tag: noindex, nofollow\n';
-writeFileSync(join(CLIENT, '_headers'), `/*\n${headerLines}\n${preview}\n${mirror}\n${existing}`);
+// Long cache for files that never change in place (font name is versioned), shorter for the rest.
+// HTML keeps the default max-age=0 so a deploy shows up immediately.
+const caching = [
+  '/fonts/*\n  Cache-Control: public, max-age=31536000, immutable',
+  '/icons/*\n  Cache-Control: public, max-age=604800, stale-while-revalidate=86400',
+  '/data/*\n  Cache-Control: public, max-age=300, stale-while-revalidate=3600',
+  ...['/favicon.svg', '/favicon.ico', '/apple-touch-icon.png', '/icon-192.png', '/logo-512.png', '/icon-maskable-512.png', '/og-default.png'].map((f) => `${f}\n  Cache-Control: public, max-age=86400, stale-while-revalidate=604800`),
+].join('\n');
+writeFileSync(join(CLIENT, '_headers'), `/*\n${headerLines}\n${preview}\n${mirror}\n${caching}\n${existing}`);
 
 const html = assets.filter((p) => p.endsWith('.html')).length;
 console.log(`postbuild: ${assets.length} static files (${html} HTML pages), Worker bundle ${(serverBytes / 1024 / 1024).toFixed(2)} MB`);
