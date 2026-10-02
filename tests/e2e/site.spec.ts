@@ -17,7 +17,7 @@ test.describe('navigation & pages', () => {
     expect(href).toMatch(/^\/games\/[a-z0-9-]+\/$/);
     await cta.click();
     await expect(page).toHaveURL(/\/games\/[a-z0-9-]+\/$/);
-    await expect(page.locator('[data-play]')).toContainText('Play Now');
+    await expect(page.locator('#stage iframe')).toHaveCount(1);
   });
 
   test('category page: cards link to real game pages, favorite button does not navigate', async ({ page }) => {
@@ -130,11 +130,10 @@ test.describe('filters', () => {
 });
 
 test.describe('game page & player', () => {
-  test('Play loads the (fixture) game only after clicking; leaving removes it; history updated', async ({ page }) => {
+  test('the (fixture) game loads on its own — one Play inside the game, not two; history updated', async ({ page }) => {
     await page.goto('/racing-games/');
     await page.locator('#game-grid a.card-link').first().click();
-    await expect(page.locator('#stage iframe')).toHaveCount(0);
-    await page.click('[data-play]');
+    await expect(page.locator('[data-play]')).toBeHidden();
     const frame = page.frameLocator('#stage iframe');
     await expect(frame.locator('#fixture')).toContainText('Fixture game');
     await page.goto('/recently-played/');
@@ -180,6 +179,7 @@ test.describe('game page & player', () => {
     for (const slug of slugs) {
       await page.goto(`/games/${slug}/`);
       await expect(page.locator('.game-actions .action-btn')).toHaveCount(4);
+      await expect(page.locator('#stage iframe')).toHaveCount(1);
       const rating = await page.locator('.game-rating').innerText();
       if (!/liked/.test(rating)) expect(rating).toContain('Not rated yet');
       expect(rating).not.toContain('★');

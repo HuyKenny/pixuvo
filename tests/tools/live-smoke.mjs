@@ -10,7 +10,7 @@ p.on('console', (m) => m.type() === 'error' && errs.push(m.text().slice(0, 160))
 p.on('pageerror', (e) => errs.push('pageerror ' + e.message.slice(0, 160)));
 for (const slug of slugs) {
   await p.goto(`https://pixuvo.com/games/${slug}/`, { waitUntil: 'domcontentloaded' });
-  await p.click('[data-play]');
+  await p.waitForSelector('#stage iframe', { timeout: 15000 }); // the game starts on its own
   await p.waitForSelector('#stage iframe', { timeout: 15000 });
   await p.waitForTimeout(10000);
   console.log(slug, '→', await p.$eval('#stage iframe', (f) => f.src), 'frames', p.frames().length);

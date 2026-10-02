@@ -1,8 +1,10 @@
 /**
  * Game page behaviour.
- * - The partner iframe is created only after the visitor presses Play, and only
- *   after /api/play confirms the source is still active and permitted (so a
- *   revoked game cannot start even from stale cached HTML).
+ * - The partner game loads on its own when the page opens (partner games have their
+ *   own Play button, so a second one here would mean clicking twice), but only after
+ *   /api/play confirms the source is still active and permitted (so a revoked game
+ *   cannot start even from stale cached HTML). Crawlers get the poster only.
+ *   Our Play button appears only when the automatic start fails or after bfcache.
  * - The chosen source is pinned for the browser session (no mid-session switching).
  * - Cross-origin iframe = opaque: we do not claim "loaded" or track playtime.
  * - Leaving the page removes the iframe so sound stops.
@@ -40,9 +42,14 @@ if (stage && data) {
     msg.innerHTML = html;
   };
 
+  const showPlay = () => {
+    playBtn.hidden = false;
+    playBtn.disabled = false;
+  };
+
   async function play() {
     playBtn.disabled = true;
-    setMsg('Starting…');
+    setMsg('Loading game…');
     let pinned: string | null = null;
     try {
       pinned = sessionStorage.getItem(pinKey);
@@ -57,13 +64,13 @@ if (stage && data) {
         body: JSON.stringify({ id: data!.id, source: pinned ? Number(pinned) : null }),
       });
     } catch {
-      playBtn.disabled = false;
+      showPlay();
       setMsg('Could not reach Pixuvo. Check your connection and try again.');
       return;
     }
     const body = (await res.json().catch(() => ({}))) as Partial<PlayResponse> & { error?: string };
     if (!res.ok || !body.embedUrl) {
-      playBtn.disabled = res.status >= 500 ? false : true;
+      if (res.status >= 500) showPlay();
       setMsg(`${escapeText(body.error ?? 'This game is not available right now.')} <a href="/">Find another game</a>.`);
       return;
     }
@@ -89,7 +96,7 @@ if (stage && data) {
     iframe = f;
     poster.hidden = true;
     stage!.appendChild(f);
-    f.focus();
+    f.focus({ preventScroll: true });
     // We cannot see inside a cross-origin game; offer help instead of a fake progress bar.
     const help = document.querySelector<HTMLElement>('[data-share-status]');
     if (help) help.innerHTML = 'Game not starting? <button type="button" class="link-btn" data-retry>Reload the game</button> or <button type="button" class="link-btn" data-report-open>report the problem</button>.';
@@ -104,12 +111,17 @@ if (stage && data) {
   }
 
   playBtn.addEventListener('click', play);
+  const BOT = /bot|crawl|spider|slurp|bingpreview|facebookexternalhit|embedly|headlesschrome\/.*google/i;
+  if (BOT.test(navigator.userAgent)) showPlay();
+  else {
+    playBtn.hidden = true;
+    void play();
+  }
   document.addEventListener('click', (e) => {
     const t = e.target as Element;
     if (t.closest('[data-retry]')) {
       unmount();
       poster.hidden = false;
-      playBtn.disabled = false;
       play();
     }
   });
@@ -118,8 +130,8 @@ if (stage && data) {
   window.addEventListener('pageshow', (e) => {
     if ((e as PageTransitionEvent).persisted && !iframe) {
       poster.hidden = false;
-      playBtn.disabled = false;
-      setMsg('Press Play to continue.');
+      playBtn.hidden = true;
+      void play();
     }
   });
 

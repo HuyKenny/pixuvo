@@ -34,7 +34,7 @@ Legend: ✅ implemented + tested · 🟡 implemented, partly verified · ⛔ blo
 ## Game page & play
 - ✅ Breadcrumb, H1, stage, Play, Fullscreen (expanded fallback), Favorite, Share, Report, facts, description,
   instructions, related.
-- ✅ Iframe only after Play; `/api/play/` checks permission each time (revocation works on stale HTML).
+- ✅ Iframe loads on page open (owner decision 2026-10-02: no second Play button), never for crawlers; `/api/play/` checks permission each time (revocation works on stale HTML).
 - ✅ Source pinned per session; country/device restrictions honoured; iframe removed on leave.
 - ✅ Live production smoke test for both partners (no clicks inside frames).
 

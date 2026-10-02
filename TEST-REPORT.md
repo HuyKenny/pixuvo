@@ -29,7 +29,7 @@ Playwright (test-mode build, fixture iframe instead of partner games — no ad i
 homepage (games in first screen, canonical, no fake trends), category → card → detail, favorite button does not
 navigate, no `href="#"`, crawlable pagination with per-page canonical and real 404 out of range, 301 for `/page/1/`,
 real 404s, search without JS + noindex, autocomplete keyboard (↓, Enter), **filters: combine, count, pills, single
-removal, Clear all, empty state, state restored after Back**, filter API validation, **Play loads only after click +
+removal, Clear all, empty state, state restored after Back**, filter API validation, **game loads on its own (no double Play) +
 history**, **favorites persist after reload and can be removed**, play API refuses unknown game and cross-site origin,
 rating + report flow, truthful JSON-LD (no aggregateRating), **admin UI and API refuse unauthenticated clients**
 (no-store), cron requires secret, security headers on static and dynamic pages, robots/sitemaps/ads.txt, **consent:

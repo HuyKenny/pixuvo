@@ -12,12 +12,11 @@ for (const width of [360, 390, 1440]) {
     await page.goto('/racing-games/');
     await page.locator('#game-grid a.card-link').first().click();
     expect(await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)).toBeLessThanOrEqual(0);
-    // The Play button sits fully inside the stage (the stage clips overflow).
+    // The game starts by itself and fills the stage.
     const stage = (await page.locator('#stage').boundingBox())!;
-    const play = (await page.locator('[data-play]').boundingBox())!;
-    expect(play.y, `play top @${width}`).toBeGreaterThanOrEqual(stage.y);
-    expect(play.y + play.height, `play bottom @${width}`).toBeLessThanOrEqual(stage.y + stage.height);
-    expect(play.height).toBeGreaterThanOrEqual(48);
+    const frame = (await page.locator('#stage iframe').boundingBox())!;
+    expect(Math.abs(frame.width - stage.width), `iframe width @${width}`).toBeLessThan(2);
+    expect(stage.height).toBeGreaterThan(200);
   });
 }
 

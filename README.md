@@ -51,7 +51,7 @@ build fails, and runtime pages read only D1.
 | `pnpm import:dry-run -- --target remote` | the same, without writing; prints the plan and a row estimate |
 | `pnpm catalog:publish -- --deploy` | snapshot → build → deploy (only if data or code changed) → live checks |
 | `pnpm verify:free-tier` | real usage vs Workers/D1 free limits + query plans |
-| `pnpm verify:launch` | live checks of https://pixuvo.com (read-only, never presses Play) |
+| `pnpm verify:launch` | live checks of https://pixuvo.com (read-only, never loads a game) |
 | `pnpm deploy` | restore bookmark + migrations + forced publish |
 | `tsx scripts/sql.ts --target remote "SELECT …"` | read-only SQL for operations |
 

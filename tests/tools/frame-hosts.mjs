@@ -9,7 +9,7 @@ await p.goto(`${base}/games/${slug}/`, { waitUntil: 'domcontentloaded' });
 await p.waitForTimeout(1500);
 console.log('hosts before Play:', [...hosts.keys()].join(', '));
 hosts.clear();
-await p.click('[data-play]');
+await p.waitForSelector('#stage iframe', { timeout: 15000 }); // the game starts on its own
 await p.waitForTimeout(Number(wait));
 console.log('frames:', p.frames().map((f) => f.url().slice(0, 100)).join('\n  '));
 console.log('hosts after Play:', [...hosts.entries()].sort((a, b) => b[1] - a[1]).map(([h, n]) => `${h}(${n})`).join(', '));

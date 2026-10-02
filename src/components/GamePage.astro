@@ -66,8 +66,9 @@ const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait,
             <img class="bg" src={g.thumb} alt="" width="320" height="240" referrerpolicy="no-referrer" />
             <div class="inner">
               <img class="cover" src={g.thumb} alt={`${g.title} cover image`} width="320" height="240" fetchpriority="high" referrerpolicy="no-referrer" />
-              <button type="button" class="play-btn" data-play><Icon name="play" /> Play Now</button>
-              <p class="stage-msg" data-stage-msg>No download required • Play instantly in your browser</p>
+              <button type="button" class="play-btn" data-play hidden><Icon name="play" /> Play Now</button>
+              <p class="stage-msg" data-stage-msg><span class="loader" aria-hidden="true"></span>Loading game…</p>
+              <noscript><p class="stage-msg">Turn on JavaScript to play this game.</p></noscript>
             </div>
           </div>
         </div>

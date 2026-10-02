@@ -10,7 +10,7 @@ p.on('console', (m) => { if (m.type() === 'error') errors.push(m.text().slice(0,
 for (const slug of slugs) {
   await p.goto(`${base}/games/${slug}/`, { waitUntil: 'domcontentloaded' });
   const before = p.frames().length;
-  await p.click('[data-play]');
+  await p.waitForSelector('#stage iframe', { timeout: 15000 }); // the game starts on its own
   await p.waitForSelector('#stage iframe', { timeout: 15000 });
   await p.waitForTimeout(12000);
   const src = await p.$eval('#stage iframe', (f) => f.src);

@@ -18,7 +18,7 @@ State: 2026-10-02. ✅ done and verified · ⚠️ done with a known caveat · �
 ## Catalog and partners
 - ✅ 44 011 published games after the editorial pass on 2026-10-02 (2 052 duplicates merged with 301 redirects, 286 false
   "adult" tag holds published); 3 018 still held on purpose: third-party brand titles (2 787) and gambling/kissing wording.
-- ✅ Live smoke test on production: GameMonetize and GamePix games start after Play, inside the sandboxed frame.
+- ✅ Live smoke test on production: GameMonetize and GamePix games start inside the sandboxed frame. Since 2026-10-02 the game loads on page open (partners have their own Play button — owner decision, one click instead of two); crawlers get the poster only.
 - ⚠️ **GameMonetize consent:** no consent prompt inside GameMonetize games from an EU IP (Google ads + Tag Manager
   load right away). **Owner decision 2026-10-02: publish anyway** (`consent_mode = owner_accepted`). Legal risk accepted
   by the operator; recommended: ask GameMonetize how they handle EEA consent (TCF) and revisit.
