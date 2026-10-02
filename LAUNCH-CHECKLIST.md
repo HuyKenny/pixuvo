@@ -6,7 +6,10 @@ State: 2026-10-02. ✅ done and verified · ⚠️ done with a known caveat · �
 - ✅ pixuvo.com served by the `pixuvo` Worker (custom domain); WEDOS placeholder A/AAAA records for the apex removed
   (backup: `~/ai/backups/pixuvo/dns-before-switch-2026-10-02.json`).
 - ✅ `www.pixuvo.com` → 301 → `https://pixuvo.com/…` (zone Redirect Rule, keeps path and query).
-- ✅ HTTP → HTTPS (Always Use HTTPS on).
+- ✅ HTTP → HTTPS (Always Use HTTPS on). TLS ≥ 1.2, SSL strict, HSTS includeSubDomains, DMARC p=reject.
+- ✅ Zone hardening 2026-10-02: WEDOS wildcard/www records removed, WAF (scanners, non-GET, empty UA), rate limit /api + /search
+  (details `~/ai/reports/pixuvo/audit-2026-10-02.md`).
+- ⛔ DNSSEC: signed in Cloudflare (pending) — owner adds DS `2371 13 2 BEB31179…018E` in the WEDOS panel.
 - ✅ workers.dev mirror sends `X-Robots-Tag: noindex` for static and dynamic responses.
 - ✅ D1 `pixuvo-production` with migrations 0001–0003; Time Travel bookmark recorded before migrations.
 - ✅ Worker secrets: Turnstile, cron secret, IP-hash salt, Access team/audience. Rate-limit bindings active.
