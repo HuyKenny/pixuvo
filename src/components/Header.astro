@@ -1,13 +1,14 @@
 ---
 import Logo from './Logo.astro';
 import Icon from './Icon.astro';
+import { uiIcon } from '../lib/category-icons';
 const path = Astro.url.pathname;
 const nav = [
-  { href: '/categories/', label: 'Categories' },
-  { href: '/new-games/', label: 'New' },
-  { href: '/popular-games/', label: 'Popular' },
-  { href: '/2-player-games/', label: '2 Player' },
-  { href: '/multiplayer-games/', label: 'Multiplayer' },
+  { href: '/categories/', label: 'Categories', icon: uiIcon('grid') },
+  { href: '/new-games/', label: 'New', icon: uiIcon('lightning') },
+  { href: '/popular-games/', label: 'Popular', icon: uiIcon('popular') },
+  { href: '/2-player-games/', label: '2 Player', icon: uiIcon('two') },
+  { href: '/favorites/', label: 'Favorites', icon: uiIcon('heart') },
 ];
 const q = Astro.props.query ?? '';
 interface Props { query?: string | undefined }
@@ -19,16 +20,15 @@ interface Props { query?: string | undefined }
     <form class="header-search" action="/search/" method="get" role="search" data-search>
       <label class="sr-only" for="site-search">Search games</label>
       <div class="search-field">
-        <input id="site-search" name="q" type="search" value={q} placeholder="Search games" autocomplete="off" spellcheck="false"
+        <input id="site-search" name="q" type="search" value={q} placeholder="Search games, categories…" autocomplete="off" spellcheck="false"
           maxlength="80" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="search-suggest" enterkeyhint="search" data-search-input />
-        <button type="submit" aria-label="Search"><Icon name="search" size={18} /></button>
+        <button type="submit" aria-label="Search"><Icon name="search" size={20} /></button>
       </div>
       <ul id="search-suggest" class="suggest" role="listbox" aria-label="Suggestions" hidden></ul>
       <p class="sr-only" aria-live="polite" data-search-status></p>
     </form>
     <nav class="main-nav" aria-label="Main">
-      {nav.map((n) => <a href={n.href} aria-current={path === n.href ? 'page' : undefined}>{n.label}</a>)}
-      <a href="/favorites/" class="nav-fav" aria-current={path === '/favorites/' ? 'page' : undefined}><Icon name="heart" size={18} />Favorites</a>
+      {nav.map((n) => <a href={n.href} aria-current={path === n.href ? 'page' : undefined}><img src={n.icon} alt="" width="22" height="22" />{n.label}</a>)}
     </nav>
     <button type="button" class="icon-btn menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer" data-drawer-open="nav-drawer">
       <Icon name="menu" />
@@ -40,12 +40,10 @@ interface Props { query?: string | undefined }
   <div class="drawer-panel" role="dialog" aria-modal="true" aria-label="Menu">
     <div class="drawer-head">Menu <button type="button" class="icon-btn" aria-label="Close menu" data-drawer-close><Icon name="x" /></button></div>
     <nav class="drawer-nav" aria-label="Mobile">
-      <a href="/">Home</a>
-      {nav.map((n) => <a href={n.href}>{n.label}</a>)}
-      <a href="/favorites/">Favorites</a>
-      <a href="/recently-played/">Recently played</a>
-      <a href="/games/">All games</a>
-      <a href="/trending-games/">Trending</a>
+      <a href="/"><img src={uiIcon('controller')} alt="" width="26" height="26" />Home</a>
+      {nav.map((n) => <a href={n.href}><img src={n.icon} alt="" width="26" height="26" />{n.label}</a>)}
+      <a href="/recently-played/"><img src={uiIcon('clock')} alt="" width="26" height="26" />Recently played</a>
+      <a href="/games/"><img src={uiIcon('star')} alt="" width="26" height="26" />All games</a>
     </nav>
   </div>
 </div>

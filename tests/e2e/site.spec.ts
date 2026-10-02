@@ -1,16 +1,23 @@
 import { expect, test } from '@playwright/test';
 
 test.describe('navigation & pages', () => {
-  test('homepage shows games, categories and search without a giant hero', async ({ page }) => {
+  test('homepage: hero with real count, Start Playing opens a game, sidebar filters link to /games/', async ({ page }) => {
     await page.goto('/');
-    await expect(page.locator('h1')).toContainText('Find your next favorite game');
+    await expect(page.locator('h1')).toContainText(/Play [\d,]+\+? Free Online Games/);
     await expect(page.locator('.card').first()).toBeVisible();
-    const firstCard = await page.locator('.card').first().boundingBox();
-    expect(firstCard!.y).toBeLessThan(500); // games are visible on the first screen
     await expect(page.locator('#site-search')).toBeVisible();
     await expect(page.locator('link[rel=canonical]')).toHaveAttribute('href', 'https://pixuvo.com/');
     // No fake trends on cold start.
-    await expect(page.locator('text=Trending now')).toHaveCount(0);
+    await expect(page.locator('text=Trending Now')).toHaveCount(0);
+    await expect(page.locator('.catbar .catpill').first()).toBeVisible();
+    const side = page.locator('.filterside a[href^="/games/#"]');
+    expect(await side.count()).toBeGreaterThan(0);
+    const cta = page.locator('[data-random-game]');
+    const href = await cta.getAttribute('href');
+    expect(href).toMatch(/^\/games\/[a-z0-9-]+\/$/);
+    await cta.click();
+    await expect(page).toHaveURL(/\/games\/[a-z0-9-]+\/$/);
+    await expect(page.locator('[data-play]')).toContainText('Play Now');
   });
 
   test('category page: cards link to real game pages, favorite button does not navigate', async ({ page }) => {
@@ -45,6 +52,7 @@ test.describe('navigation & pages', () => {
     const one = await request.get('/racing-games/page/1/', { maxRedirects: 0 });
     expect(one.status()).toBe(301);
     await page.goto('/games/');
+    if (await page.locator('#consent').isVisible()) await page.click('[data-consent-action="reject"]');
     await page.locator('nav[aria-label="All games pages"] a', { hasText: '2' }).first().click();
     await expect(page).toHaveURL(/\/games\/page\/2\/$/);
   });
@@ -163,6 +171,25 @@ test.describe('game page & player', () => {
     await page.fill('#report-dialog textarea', 'Black screen <script>alert(1)</script>');
     await page.click('#report-dialog button[type=submit]');
     await expect(page.locator('[data-report-status]')).toContainText(/received/);
+  });
+
+  test('game page: no rating shown without votes; controls are drawn, not just text', async ({ page, request }) => {
+    const html = await (await request.get('/racing-games/')).text();
+    const slugs = [...html.matchAll(/href="\/games\/([a-z0-9-]+)\/"/g)].map((m) => m[1]).slice(0, 8);
+    let sawControls = false;
+    for (const slug of slugs) {
+      await page.goto(`/games/${slug}/`);
+      await expect(page.locator('.game-actions .action-btn')).toHaveCount(4);
+      const rating = await page.locator('.game-rating').innerText();
+      if (!/liked/.test(rating)) expect(rating).toContain('Not rated yet');
+      expect(rating).not.toContain('★');
+      const controls = page.locator('#controls-h');
+      if (await controls.count()) {
+        sawControls = true;
+        expect(await page.locator('.controls kbd, .controls svg').count()).toBeGreaterThan(0);
+      }
+    }
+    test.info().annotations.push({ type: 'controls', description: String(sawControls) });
   });
 
   test('structured data is truthful (no aggregateRating)', async ({ request }) => {

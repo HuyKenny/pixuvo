@@ -2,13 +2,17 @@
 import type { GameCard } from '../lib/types';
 import { gamePath } from '../lib/site';
 import Icon from './Icon.astro';
-interface Props { game: GameCard; eager?: boolean }
-const { game, eager = false } = Astro.props;
+interface Props { game: GameCard; eager?: boolean; badge?: string | undefined }
+const { game, eager = false, badge } = Astro.props;
 const meta = [game.cat, game.players && game.players >= 2 ? `${game.players}+ players` : null].filter(Boolean).join(' · ');
 ---
 <article class="card" data-game-id={game.id}>
   <a class="card-link" href={gamePath(game.slug)}>
-    <img class="card-thumb" src={game.thumb} alt="" width="320" height="240" loading={eager ? 'eager' : 'lazy'} decoding="async" fetchpriority={eager ? 'high' : 'auto'} referrerpolicy="no-referrer" />
+    <span class="card-media">
+      <img class="card-thumb" src={game.thumb} alt="" width="320" height="240" loading={eager ? 'eager' : 'lazy'} decoding="async" fetchpriority={eager ? 'high' : 'auto'} referrerpolicy="no-referrer" />
+      <span class="card-play" aria-hidden="true"><Icon name="play" size={22} /></span>
+      {badge && <span class="card-badge">{badge}</span>}
+    </span>
     <span class="card-body">
       <span class="card-title">{game.title}</span>
       {meta && <span class="card-meta">{meta}</span>}

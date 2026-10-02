@@ -61,7 +61,7 @@ for (const d of details) {
   const pool = (d.primaryCategory ? categoryPages[d.primaryCategory.slug] : featured) ?? featured;
   const others = pool.filter((g) => g.id !== d.id);
   const start = others.length ? d.id % others.length : 0;
-  d.related = [...others.slice(start), ...others.slice(0, start)].slice(0, 12);
+  d.related = [...others.slice(start), ...others.slice(0, start)].slice(0, 24);
 }
 
 mkdirSync(values.out!, { recursive: true });

@@ -4,48 +4,14 @@ import { SITE } from '../lib/site';
 const year = new Date().getUTCFullYear();
 ---
 <footer class="site-footer">
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <Logo />
-        <p>{SITE.subline}</p>
-        <button type="button" class="footer-btn" data-consent-open>Privacy choices</button>
-      </div>
-      <div>
-        <h2>Play</h2>
-        <ul>
-          <li><a href="/games/">All games</a></li>
-          <li><a href="/new-games/">New games</a></li>
-          <li><a href="/categories/">Categories</a></li>
-          <li><a href="/favorites/">Favorites</a></li>
-          <li><a href="/recently-played/">Recently played</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Popular genres</h2>
-        <ul>
-          <li><a href="/puzzle-games/">Puzzle</a></li>
-          <li><a href="/racing-games/">Racing</a></li>
-          <li><a href="/action-games/">Action</a></li>
-          <li><a href="/shooting-games/">Shooting</a></li>
-          <li><a href="/2-player-games/">2 Player</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Pixuvo</h2>
-        <ul>
-          <li><a href="/about/">About</a></li>
-          <li><a href="/contact/">Contact</a></li>
-          <li><a href="/privacy/">Privacy</a></li>
-          <li><a href="/cookies/">Cookies</a></li>
-          <li><a href="/terms/">Terms</a></li>
-          <li><a href="/copyright/">Copyright</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="fine">
-      <span>© {year} Pixuvo. Games are provided by their developers and distribution partners.</span>
-      <span><a href={`mailto:${SITE.email}`}>{SITE.email}</a></span>
-    </div>
+  <div class="wrap footer-row">
+    <div class="footer-brand"><Logo size={30} /><span>Play more games. Every day.</span></div>
+    <nav aria-label="Footer">
+      <a href="/">Home</a><a href="/categories/">Categories</a><a href="/new-games/">New Games</a><a href="/popular-games/">Popular</a><a href="/2-player-games/">2 Player</a><a href="/games/">All Games</a>
+    </nav>
+  </div>
+  <div class="wrap footer-fine">
+    <nav aria-label="Legal"><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/cookies/">Cookies</a><a href="/terms/">Terms</a><a href="/copyright/">Copyright</a><button type="button" class="link-btn footer-link" data-consent-open>Privacy choices</button></nav>
+    <span>© {year} Pixuvo · Games by their developers and partners · <a href={`mailto:${SITE.email}`}>{SITE.email}</a></span>
   </div>
 </footer>

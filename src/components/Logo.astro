@@ -1,14 +1,14 @@
 ---
 interface Props { size?: number; word?: boolean }
-const { size = 34, word = true } = Astro.props;
+const { size = 38, word = true } = Astro.props;
 ---
 <a href="/" class="logo" aria-label="Pixuvo home">
-  <svg width={size} height={size} viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-    <rect width="32" height="32" rx="9" fill="#6a35f2" />
-    <rect x="9" y="7.5" width="4.5" height="17" rx="1.4" fill="#fff" />
-    <rect x="13.5" y="11" width="4.5" height="10" rx="1.4" fill="#fff" />
-    <rect x="18" y="14" width="4.5" height="4" rx="1.4" fill="#fff" />
-    <rect x="22.5" y="6.5" width="3.5" height="3.5" rx="1.1" fill="#2dd4bf" />
+  <svg width={size} height={size} viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+    <defs><linearGradient id="lg-pad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9b6bff" /><stop offset="1" stop-color="#5a28e0" /></linearGradient></defs>
+    <path d="M10 11h20c5.5 0 9 4.6 8.4 10l-1 8.2c-.5 4-4.9 6-8.1 3.6L25 30H15l-4.3 2.8c-3.2 2.4-7.6.4-8.1-3.6l-1-8.2C1 15.6 4.5 11 10 11z" fill="url(#lg-pad)" />
+    <path d="M10.5 18.5v7M7 22h7" stroke="#fff" stroke-width="2.6" stroke-linecap="round" />
+    <circle cx="27" cy="19.5" r="2.2" fill="#2dd4bf" /><circle cx="31" cy="23.5" r="2.2" fill="#ffd166" />
+    <rect x="17" y="4" width="6" height="6" rx="1.8" fill="#2dd4bf" />
   </svg>
-  {word && <span class="logo-word">pixuvo</span>}
+  {word && <span class="logo-word">PIXUVO</span>}
 </a>

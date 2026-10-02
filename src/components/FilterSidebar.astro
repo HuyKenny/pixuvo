@@ -1,0 +1,25 @@
+---
+/** Homepage filter panel: every option is a plain link to /games/ with fragment filters (nothing crawlable). */
+import type { CategoryInfo } from '../lib/types';
+import { categoryIcon } from '../lib/category-icons';
+import { categoryPath } from '../lib/site';
+interface Props { genres: CategoryInfo[] }
+const { genres } = Astro.props;
+const groups = [
+  { title: 'Players', opts: [['players=1', '👤', '1 Player'], ['players=2', '👥', '2+ Players'], ['mode=online', '🌐', 'Online']] },
+  { title: 'Device', opts: [['device=mobile', '📱', 'Works on mobile']] },
+  { title: 'Controls', opts: [['controls=keyboard', '⌨️', 'Keyboard'], ['controls=mouse', '🖱️', 'Mouse'], ['controls=touch', '👆', 'Touch']] },
+  { title: 'Style', opts: [['style=2d', '🟦', '2D'], ['style=3d', '🧊', '3D'], ['style=pixel', '👾', 'Pixel']] },
+];
+---
+<aside class="filterside" aria-label="Find a game">
+  <h2>Find a game</h2>
+  <h3>Genre</h3>
+  <ul>{genres.map((g) => <li><a href={categoryPath(g.slug)}><img src={categoryIcon(g.slug)} alt="" width="22" height="22" loading="lazy" />{g.name}</a></li>)}</ul>
+  {groups.map((g) => (
+    <>
+      <h3>{g.title}</h3>
+      <ul>{g.opts.map(([frag, emoji, label]) => <li><a href={`/games/#${frag}`}><span class="fs-emoji" aria-hidden="true">{emoji}</span>{label}</a></li>)}</ul>
+    </>
+  ))}
+</aside>

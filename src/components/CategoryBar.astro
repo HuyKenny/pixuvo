@@ -1,0 +1,18 @@
+---
+import type { CategoryInfo } from '../lib/types';
+import { categoryPath } from '../lib/site';
+import { categoryIcon } from '../lib/category-icons';
+interface Props { categories: CategoryInfo[]; current?: string | undefined; label?: string }
+const { categories, current, label = 'Game categories' } = Astro.props;
+---
+<nav class="catbar" aria-label={label}>
+  <div class="catbar-row">
+    {categories.map((c) => (
+      <a class="catpill" href={categoryPath(c.slug)} aria-current={c.slug === current ? 'page' : undefined}>
+        <img src={categoryIcon(c.slug)} alt="" width="30" height="30" loading="lazy" decoding="async" />
+        <span>{c.name}</span>
+      </a>
+    ))}
+    <a class="catpill catpill-more" href="/categories/"><img src="/icons/cat/ui-grid.webp" alt="" width="30" height="30" loading="lazy" /><span>All</span></a>
+  </div>
+</nav>

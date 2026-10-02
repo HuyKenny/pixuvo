@@ -1,0 +1,15 @@
+---
+import { approxCount } from '../lib/format';
+import { uiIcon } from '../lib/category-icons';
+interface Props { games: number; categories: number }
+const { games, categories } = Astro.props;
+const items = [
+  { icon: uiIcon('controller'), big: `${approxCount(games)}`, small: 'Games', note: 'and counting' },
+  { icon: uiIcon('grid'), big: `${categories}`, small: 'Categories', note: 'something for everyone' },
+  { icon: uiIcon('lightning'), big: 'Play', small: 'Instantly', note: 'starts in one click' },
+  { icon: uiIcon('cloud'), big: 'No', small: 'Download', note: 'works in your browser' },
+];
+---
+<ul class="statcards" aria-label="Why Pixuvo">
+  {items.map((i) => <li><img src={i.icon} alt="" width="44" height="44" /><span><strong>{i.big} <em>{i.small}</em></strong><small>{i.note}</small></span></li>)}
+</ul>

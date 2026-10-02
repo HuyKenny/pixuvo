@@ -274,7 +274,7 @@ export async function getGame(q: Q, slug: string): Promise<GameLookup> {
     ),
     q.all<CategoryRef>('SELECT t.slug, t.name FROM game_tags gt JOIN tags t ON t.id = gt.tag_id WHERE gt.game_id = ? LIMIT 12', [r.id]),
   ]);
-  const related = await relatedGames(q, r.id, r.primary_category_id, 12);
+  const related = await relatedGames(q, r.id, r.primary_category_id, 24);
   let controls: string[] = [];
   try {
     controls = r.controls_inferred ? (JSON.parse(r.controls_inferred) as string[]).filter((x) => typeof x === 'string') : [];

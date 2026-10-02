@@ -8,7 +8,7 @@ import { approxCount } from '../lib/format';
 <Doc title="About Pixuvo" h1="About Pixuvo" description="Pixuvo is a free browser game portal: games from licensed distribution partners, sorted so you can find your next favorite quickly." path="/about/" updated="2 October 2026">
   <p><strong>{SITE.tagline}</strong> Pixuvo collects free browser games in one place and sorts them so you can find something to play in a few seconds. {SITE.subline}</p>
   <h2>Where the games come from</h2>
-  <p>We do not make the games. They are created by independent developers and distributed by game distribution partners (currently GameMonetize and GamePix), who allow publishers like Pixuvo to embed them. The games run on the partners’ servers inside a frame on our pages. Advertising you see inside a game is served by the partner.</p>
+  <p>We do not make the games. They are created by independent developers and distributed by game distribution partners (currently GameMonetize, GamePix and Playgama), who allow publishers like Pixuvo to embed them. The games run on the partners’ servers inside a frame on our pages. Advertising you see inside a game is served by the partner.</p>
   <p>Right now the catalog contains {approxCount(snapshot.published)} games. Categories, tags and player counts come from the information the partners provide; where something is unknown we leave it out rather than guess.</p>
   <h2>What Pixuvo does not do</h2>
   <ul>
@@ -16,6 +16,8 @@ import { approxCount } from '../lib/format';
     <li>No game downloads or installers.</li>
     <li>No analytics or advertising on Pixuvo pages at the moment — see <a href="/privacy/">Privacy</a>.</li>
   </ul>
+  <h2>Artwork and fonts</h2>
+  <p>The Pixu mascot and logo are our own. Category icons are <a href="https://github.com/microsoft/fluentui-emoji" rel="noopener">Fluent Emoji</a> by Microsoft (MIT license), interface icons are from <a href="https://lucide.dev" rel="noopener">Lucide</a> (ISC license) and the headline font is <a href="https://fonts.google.com/specimen/Nunito" rel="noopener">Nunito</a> (SIL Open Font License). Game names and images belong to their developers.</p>
   <h2>Who runs Pixuvo</h2>
   <p>Pixuvo is operated by {SITE.operator.name}, {SITE.operator.address}, company ID (IČO) {SITE.operator.companyId}. Contact: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.</p>
 </Doc>

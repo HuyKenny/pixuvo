@@ -1,0 +1,22 @@
+---
+import type { CategoryInfo, GameCard } from '../lib/types';
+import { categoryPath } from '../lib/site';
+import { categoryIcon } from '../lib/category-icons';
+import { approxCount } from '../lib/format';
+interface Props { tiles: Array<{ cat: CategoryInfo; cover: GameCard | undefined }> }
+const { tiles } = Astro.props;
+---
+<ul class="cattiles">
+  {tiles.map(({ cat, cover }) => (
+    <li>
+      <a href={categoryPath(cat.slug)} class="cattile">
+        <span class="cattile-img">
+          {cover && <img src={cover.thumb} alt="" width="320" height="240" loading="lazy" decoding="async" referrerpolicy="no-referrer" />}
+          <img class="cattile-icon" src={categoryIcon(cat.slug)} alt="" width="48" height="48" loading="lazy" />
+        </span>
+        <strong>{cat.name}</strong>
+        <small>{approxCount(cat.count)} games</small>
+      </a>
+    </li>
+  ))}
+</ul>

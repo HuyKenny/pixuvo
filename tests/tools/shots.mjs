@@ -3,7 +3,7 @@ import { chromium } from '@playwright/test';
 const [base, out, ip] = process.argv.slice(2);
 const host = new URL(base).hostname;
 const b = await chromium.launch({ args: ip ? [`--host-resolver-rules=MAP ${host} ${ip}`] : [] });
-const pages = [['home', '/'], ['category', '/racing-games/'], ['game', '/games/drop-planets/'], ['search', '/search/?q=car'], ['categories', '/categories/'], ['filters', '/racing-games/#players=2&sort=new']];
+const pages = [['home', '/'], ['category', '/racing-games/'], ['game', process.env.SHOT_GAME ?? '/games/drop-planets/'], ['search', '/search/?q=car'], ['categories', '/categories/'], ['filters', '/racing-games/#players=2&sort=new']];
 for (const [w, h, tag] of [[1440, 900, 'desktop'], [390, 844, 'mobile'], [360, 780, 'mobile360']]) {
   const ctx = await b.newContext({ viewport: { width: w, height: h }, deviceScaleFactor: 1 });
   const p = await ctx.newPage();

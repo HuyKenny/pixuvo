@@ -15,6 +15,7 @@ interface GameData {
   title: string;
   thumb: string;
   portrait: boolean;
+  cat?: string;
 }
 interface PlayResponse {
   embedUrl: string;
@@ -72,7 +73,7 @@ if (stage && data) {
       /* ignore */
     }
     mount(body as PlayResponse);
-    store.addRecent({ id: data!.id, slug: data!.slug, title: data!.title, thumb: data!.thumb });
+    store.addRecent({ id: data!.id, slug: data!.slug, title: data!.title, thumb: data!.thumb, ...(data!.cat ? { cat: data!.cat } : {}) });
   }
 
   function mount(p: PlayResponse) {
@@ -255,7 +256,7 @@ function setupRating(g: GameData) {
     }
     paint();
     const votes = (body.up ?? 0) + (body.down ?? 0);
-    const score = box.querySelector('[data-score]');
+    const score = box.parentElement?.querySelector('[data-score]');
     if (score && votes > 0) score.textContent = `${Math.round(((body.up ?? 0) / votes) * 100)}% liked · ${votes} vote${votes === 1 ? '' : 's'} on Pixuvo`;
     if (status) {
       status.className = 'form-status ok';

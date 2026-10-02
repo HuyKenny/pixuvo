@@ -3,25 +3,31 @@ import Base from '../layouts/Base.astro';
 import GameGrid from './GameGrid.astro';
 import Pagination from './Pagination.astro';
 import Breadcrumbs from './Breadcrumbs.astro';
+import FilterPanel from './FilterPanel.astro';
+import CategoryBar from './CategoryBar.astro';
 import { directoryPage, getSetting } from '../lib/catalog';
-import { q } from '../lib/server/db';
+import { categoriesCached, q } from '../lib/server/db';
+import { MIN_CATEGORY_GAMES } from '../lib/taxonomy';
 import { approxCount } from '../lib/format';
 interface Props { page: number }
 const { page } = Astro.props;
 const db = q();
 const [maxSeq, published] = await Promise.all([getSetting(db, 'max_dir_seq'), getSetting(db, 'published_count')]);
 const res = await directoryPage(db, Number(maxSeq ?? 0), page);
+const cats = (await categoriesCached(db)).filter((c) => c.nav && c.count >= MIN_CATEGORY_GAMES);
 const href = (n: number) => (n > 1 ? `/games/page/${n}/` : '/games/');
 ---
 <Base title={page > 1 ? `All Games – Page ${page}` : 'All Free Online Games – Newest First'} description={`Every game on Pixuvo, newest additions first${page > 1 ? ` – page ${page}` : ''}. ${approxCount(Number(published ?? 0))} free browser games, no downloads.`}
   path={href(page)} prev={page > 1 ? href(page - 1) : null} next={page < res.pages ? href(page + 1) : null}>
   <div class="wrap">
+    <CategoryBar categories={cats} />
     <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: page > 1 ? `All games – page ${page}` : 'All games', href: href(page) }]} />
     <div class="page-head">
       <h1>All games{page > 1 && ` – page ${page}`}</h1>
       <p class="lead">Every game on Pixuvo, newest additions first. Looking for something specific? Try <a href="/categories/">categories</a> or search.</p>
     </div>
-    {res.items.length ? <GameGrid games={res.items} eagerCount={page === 1 ? 7 : 0} label="All games" /> : <div class="empty-state"><strong>No games on this page</strong>Games listed here were removed from the catalog. <a href="/games/">Back to the first page</a>.</div>}
-    <Pagination page={page} pages={res.pages} href={href} label="All games pages" />
+    <FilterPanel category={null} total={Number(published ?? 0)} />
+    {res.items.length ? <GameGrid games={res.items} eagerCount={page === 1 ? 7 : 0} label="All games" id="game-grid" /> : <div class="empty-state"><strong>No games on this page</strong>Games listed here were removed from the catalog. <a href="/games/">Back to the first page</a>.</div>}
+    <div id="game-pager"><Pagination page={page} pages={res.pages} href={href} label="All games pages" /></div>
   </div>
 </Base>

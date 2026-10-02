@@ -1,0 +1,31 @@
+---
+import type { ControlRow } from '../lib/controls';
+interface Props { rows: ControlRow[] }
+const { rows } = Astro.props;
+const isArrows = (k: string[]) => k.join('') === '↑←↓→';
+const isWasd = (k: string[]) => k.join('') === 'WASD';
+---
+<ul class="controls">
+  {rows.map((r) => (
+    <li class="control-row">
+      <span class="control-input" aria-hidden="true">
+        {r.device === 'keys' && (isArrows(r.keys) || isWasd(r.keys)) ? (
+          <span class="keypad">
+            <kbd class="k-up">{r.keys[0]}</kbd><kbd>{r.keys[1]}</kbd><kbd>{r.keys[2]}</kbd><kbd>{r.keys[3]}</kbd>
+          </span>
+        ) : r.device === 'keys' ? (
+          <span class="keyrow">{r.keys.map((k) => <kbd class:list={[{ wide: k.length > 2 }]}>{k}</kbd>)}</span>
+        ) : r.device === 'mouse' ? (
+          <svg class="dev-icon" viewBox="0 0 48 64" width="40" height="52"><rect x="4" y="4" width="40" height="56" rx="20" fill="#fff" stroke="#2d3778" stroke-width="4" /><path d="M24 4v22M4 26h40" stroke="#2d3778" stroke-width="4" /><path d="M6 24c0-11 8-19 18-20v22H6z" fill={r.gesture === 'Click' ? '#6d3cf5' : '#e9e1ff'} /></svg>
+        ) : (
+          <svg class="dev-icon" viewBox="0 0 48 64" width="40" height="52"><path d="M20 30V10a5 5 0 0110 0v18l10 3c4 1 6 5 5 9l-3 13c-1 5-5 8-10 8H24c-4 0-7-2-9-5l-8-12c-2-3-1-7 2-8s6 0 8 3l3 4z" fill="#ffd6b5" stroke="#2d3778" stroke-width="3.5" stroke-linejoin="round" />{r.gesture === 'Swipe' && <path d="M2 8h14M10 2l6 6-6 6" stroke="#6d3cf5" stroke-width="3.5" fill="none" stroke-linecap="round" />}</svg>
+        )}
+      </span>
+      <span class="control-text">
+        <strong>{r.action ?? (r.device === 'keys' ? 'Press' : r.gesture)}</strong>
+        <small>{r.device === 'keys' ? (isArrows(r.keys) ? 'Arrow keys' : isWasd(r.keys) ? 'W A S D keys' : `${r.keys.join(' ')} key`) : r.device === 'mouse' ? `Mouse · ${r.gesture}` : `Touch · ${r.gesture}`}</small>
+      </span>
+    </li>
+  ))}
+</ul>
+<p class="note">From the game's instructions.</p>

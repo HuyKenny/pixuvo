@@ -8,6 +8,8 @@ export interface StoredGame {
   title: string;
   thumb: string;
   at: number;
+  /** Primary category slug (recommendations); optional for older entries. */
+  cat?: string;
 }
 
 const KEYS = { fav: 'pixuvo:favorites', recent: 'pixuvo:recent' } as const;
@@ -39,7 +41,7 @@ function read(kind: keyof typeof KEYS): StoredGame[] {
     if (!Array.isArray(arr)) return [];
     return arr
       .filter((x): x is StoredGame => !!x && typeof x === 'object' && Number.isInteger((x as StoredGame).id) && typeof (x as StoredGame).slug === 'string' && /^[a-z0-9-]{1,90}$/.test((x as StoredGame).slug))
-      .map((x) => ({ id: x.id, slug: x.slug, title: String(x.title ?? '').slice(0, 120), thumb: safeThumb(x.thumb), at: Number(x.at) || 0 }))
+      .map((x) => ({ id: x.id, slug: x.slug, title: String(x.title ?? '').slice(0, 120), thumb: safeThumb(x.thumb), at: Number(x.at) || 0, ...(typeof x.cat === 'string' && /^[a-z0-9-]{1,40}$/.test(x.cat) ? { cat: x.cat } : {}) }))
       .slice(0, LIMIT[kind]);
   } catch {
     return [];

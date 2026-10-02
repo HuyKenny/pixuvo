@@ -1,0 +1,15 @@
+---
+import type { GameCard } from '../lib/types';
+import { gamePath } from '../lib/site';
+import Tag from './Tag.astro';
+interface Props { games: GameCard[] }
+const { games } = Astro.props;
+---
+<ul class="reclist">
+  {games.map((g) => (
+    <li><a href={gamePath(g.slug)}>
+      <img src={g.thumb} alt="" width="128" height="96" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+      <span><strong>{g.title}</strong>{g.cat && <Tag tone="violet" small>{g.cat}</Tag>}</span>
+    </a></li>
+  ))}
+</ul>

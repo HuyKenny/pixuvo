@@ -1,0 +1,7 @@
+---
+/** Colourful pill. Colour comes from the kind so the same thing always looks the same. */
+interface Props { href?: string | undefined; tone?: 'violet' | 'blue' | 'teal' | 'orange' | 'pink' | 'green'; small?: boolean }
+const { href, tone = 'violet', small = false } = Astro.props;
+const cls = ['tag', `tag-${tone}`, small ? 'tag-sm' : ''].filter(Boolean).join(' ');
+---
+{href ? <a class={cls} href={href}><slot /></a> : <span class={cls}><slot /></span>}
