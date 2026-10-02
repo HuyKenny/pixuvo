@@ -8,7 +8,7 @@
  *   - last 24 h: D1 rows read vs 5 M, rows written vs 100 k (account-wide)
  *   - query plans of the hot queries (no full scans of games)
  */
-import { existsSync, readdirSync, statSync } from 'node:fs';
+import { existsSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { parseArgs } from 'node:util';
 import { loadConfig } from './lib/env.ts';

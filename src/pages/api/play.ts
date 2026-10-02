@@ -75,8 +75,9 @@ export const POST: APIRoute = async ({ request }) => {
   } catch {
     return error(500, 'This game is misconfigured. Please report it.');
   }
-  // e2e/test mode: never load real partner games (no ad impressions from tests).
-  if (env.ENVIRONMENT === 'test') embed = new URL(`/e2e-fixture/game/?id=${id}`, request.url);
+  // e2e/test mode: never load real partner games (no ad impressions from tests). Relative URL on purpose:
+  // `wrangler dev` rewrites request.url to the route host (pixuvo.com) when routes are configured.
+  if (env.ENVIRONMENT === 'test') return json({ embedUrl: `/e2e-fixture/game/?id=${id}`, sourceId: pick.id, provider: pick.provider_name, allow: ALLOW, sandbox: SANDBOX });
   // One aggregated write per play click (no per-second tracking).
   const day = new Date().toISOString().slice(0, 10);
   await db.run(

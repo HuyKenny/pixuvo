@@ -195,16 +195,22 @@ async function turnstileToken(slot: HTMLElement | null): Promise<string | null> 
   const ts = (window as unknown as { turnstile?: { render: (el: HTMLElement, o: Record<string, unknown>) => string; remove: (id: string) => void } }).turnstile;
   if (!ts || !slot) return null;
   return new Promise((resolve) => {
+    // Never hang: a challenge that cannot complete (blocked script, bot) ends as a visible error.
+    const timer = window.setTimeout(() => resolve(null), 25_000);
+    const done = (t: string | null) => {
+      window.clearTimeout(timer);
+      resolve(t);
+    };
     slot.innerHTML = '';
     const id = ts.render(slot, {
       sitekey: TURNSTILE_KEY,
       appearance: 'interaction-only',
       callback: (t: string) => {
-        resolve(t);
+        done(t);
         setTimeout(() => ts.remove(id), 0);
       },
-      'error-callback': () => resolve(null),
-      'expired-callback': () => resolve(null),
+      'error-callback': () => done(null),
+      'expired-callback': () => done(null),
     });
   });
 }

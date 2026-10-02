@@ -4,6 +4,18 @@
  *   tsx scripts/verify-launch.ts [--base https://pixuvo.com] [--quick] [--preview]
  */
 import { parseArgs } from 'node:util';
+import { Resolver } from 'node:dns';
+import { Agent, setGlobalDispatcher } from 'undici';
+
+// VERIFY_DNS=1.1.1.1 bypasses a local resolver that still caches an old/negative answer (e.g. right after a DNS switch).
+if (process.env.VERIFY_DNS) {
+  const r = new Resolver();
+  r.setServers([process.env.VERIFY_DNS]);
+  type Cb = (err: Error | null, address: string | Array<{ address: string; family: number }>, family?: number) => void;
+  const lookup = (host: string, opts: { all?: boolean }, cb: Cb) =>
+    r.resolve4(host, (err, a) => (err ? cb(err, '', 4) : opts?.all ? cb(null, a.map((address) => ({ address, family: 4 }))) : cb(null, a[0]!, 4)));
+  setGlobalDispatcher(new Agent({ connect: { lookup: lookup as never } }));
+}
 
 const { values } = parseArgs({ options: { base: { type: 'string', default: 'https://pixuvo.com' }, quick: { type: 'boolean', default: false }, preview: { type: 'boolean', default: false } } });
 const base = values.base!.replace(/\/$/, '');
@@ -30,12 +42,14 @@ for (const [p, code] of [['/games/', 200], ['/racing-games/', 200], ['/racing-ga
 const dyn = await get('/games/page/3/');
 check(dyn.status === 200 && !!dyn.headers.get('content-security-policy'), 'dynamic page with CSP');
 const robots = await (await get('/robots.txt')).text();
-check(values.preview ? robots.includes('Disallow: /') : robots.includes('Sitemap: https://pixuvo.com/sitemap.xml') && !robots.includes('Disallow: /\n'), 'robots.txt');
+// Cloudflare may prepend its managed AI-crawler section; what matters is that "User-agent: *" is not disallowed.
+const starBlocked = /User-agent: \*\s*\n(?:[^\n]+\n)*?Disallow: \/\s*\n/.test(robots);
+check(values.preview ? robots.includes('Disallow: /') : robots.includes('Sitemap: https://pixuvo.com/sitemap.xml') && !starBlocked, 'robots.txt (crawlers allowed, sitemap listed)');
 const sm = await get('/sitemap.xml');
 const smx = await sm.text();
 check(sm.status === 200 && smx.includes('/sitemaps/games-1.xml'), 'sitemap index');
 const g1 = await (await get('/sitemaps/games-1.xml')).text();
-check(/<loc>https:\/\/pixuvo\.com\/games\/[a-z0-9-]+\/<\/loc>/.test(g1) && !/search|admin|favorites/.test(g1), 'games sitemap (canonical URLs only)');
+check(/<loc>https:\/\/pixuvo\.com\/games\/[a-z0-9-]+\/<\/loc>/.test(g1) && !/pixuvo\.com\/(search|admin|favorites|recently-played)\//.test(g1), 'games sitemap (canonical URLs only)');
 const ads = await (await get('/ads.txt')).text();
 check(ads.includes('google.com, pub-5519830896693885, DIRECT'), 'ads.txt has GameMonetize lines');
 for (const p of ['/admin/', '/api/admin/games-status/']) {

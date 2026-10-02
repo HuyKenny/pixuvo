@@ -209,7 +209,7 @@ test.describe('admin & security', () => {
     expect(idx).toContain('/sitemaps/games-1.xml');
     const games = await (await request.get('/sitemaps/games-1.xml')).text();
     expect(games).toMatch(/<loc>https:\/\/pixuvo\.com\/games\/[a-z0-9-]+\/<\/loc><lastmod>\d{4}-\d\d-\d\d<\/lastmod>/);
-    expect(games).not.toMatch(/search|favorites|admin|#/);
+    expect(games).not.toMatch(/pixuvo\.com\/(search|favorites|admin|recently-played)\/|#/);
     const cats = await (await request.get('/sitemaps/categories.xml')).text();
     expect(cats).toContain('/racing-games/');
     const ads = await (await request.get('/ads.txt')).text();

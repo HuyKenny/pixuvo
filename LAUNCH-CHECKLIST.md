@@ -1,0 +1,51 @@
+# Launch checklist
+
+State: 2026-10-02. ✅ done and verified · ⚠️ done with a known caveat · ⛔ external blocker (needs the owner).
+
+## Site and infrastructure
+- ✅ pixuvo.com served by the `pixuvo` Worker (custom domain); WEDOS placeholder A/AAAA records for the apex removed
+  (backup: `~/ai/backups/pixuvo/dns-before-switch-2026-10-02.json`).
+- ✅ `www.pixuvo.com` → 301 → `https://pixuvo.com/…` (zone Redirect Rule, keeps path and query).
+- ✅ HTTP → HTTPS (Always Use HTTPS on).
+- ✅ workers.dev mirror sends `X-Robots-Tag: noindex` for static and dynamic responses.
+- ✅ D1 `pixuvo-production` with migrations 0001–0003; Time Travel bookmark recorded before migrations.
+- ✅ Worker secrets: Turnstile, cron secret, IP-hash salt, Access team/audience. Rate-limit bindings active.
+- ✅ Admin behind Cloudflare Access (`/admin`, `/api/admin`, allow h@huy.cz and huy.kenny@gmail.com) + JWT check in code.
+- ✅ info@pixuvo.com → h@huy.cz (Cloudflare Email Routing, MX/SPF/DKIM records created).
+- ✅ `verify:launch` 28/28 on production.
+- ⛔ `GH_DISPATCH_TOKEN` (fine-grained GitHub token) — without it the daily cron and "Request sync" answer 503.
+- ⛔ cron-job.org job (POST `/api/cron/sync/`, see OPERATIONS.md).
+
+## Catalog and partners
+- ✅ 45 731 published games (49 063 imported; 3 332 held for review: brand/IP titles, adult/gambling wording).
+- ✅ Live smoke test on production: GameMonetize and GamePix games start after Play, inside the sandboxed frame.
+- ⚠️ **GameMonetize consent:** no consent prompt inside GameMonetize games from an EU IP (Google ads + Tag Manager
+  load right away). **Owner decision 2026-10-02: publish anyway** (`consent_mode = owner_accepted`). Legal risk accepted
+  by the operator; recommended: ask GameMonetize how they handle EEA consent (TCF) and revisit.
+- ⛔ Monetization not yet confirmed for either partner: after launch press **Verify** for pixuvo.com in the
+  GameMonetize and GamePix dashboards, then set monetize_status = approved in Admin → Providers.
+- ⛔ GamePix ads.txt lines: original file needed (the pasted text lost its line breaks).
+- ⛔ Playgama: export file + `clid`. GameDistribution: rejected (awaiting approval). Famobi: no account.
+- ⚠️ 4 460 possible duplicates wait in Admin → Duplicates (same title, not enough evidence to merge automatically).
+
+## SEO
+- ✅ Canonical domain, `lang="en"`, unique titles/descriptions/H1, breadcrumbs, OG tags, JSON-LD
+  (WebSite, Organization, BreadcrumbList, CollectionPage/ItemList, VideoGame — no aggregateRating).
+- ✅ Sitemap index + pages/categories/games sitemaps with real `lastmod`; only indexable canonical URLs.
+- ✅ Filters in the URL fragment (no crawlable combinations); 6 curated landing pages; search, favorites,
+  recently-played and popular/trending without data are `noindex`.
+- ⚠️ Cloudflare's managed robots.txt section on this zone blocks AI *user* agents too (ChatGPT-User, Claude-User,
+  Perplexity-User). The portfolio rule from 23 Sept says AI search should pass — owner to decide; Pixuvo's own rules
+  are appended after it and allow all regular crawlers.
+- ⛔ Submit `https://pixuvo.com/sitemap.xml` in Google Search Console / Bing / Seznam once the property exists.
+
+## Legal (texts are drafts to be reviewed, not legal advice)
+- ✅ About, Contact, Privacy, Cookies, Terms, Copyright pages with the real operator: Ha Duy Huy, Bartáková 36,
+  140 00 Praha, IČO 07876823, data box dxmsrdt, non-VAT payer, info@pixuvo.com.
+- ⚠️ Review the privacy policy wording (partner roles as independent controllers, retention) with a lawyer.
+- ✅ No own analytics or ads → the consent banner stays closed; "Privacy choices" shows the state. Optional scripts can
+  only load through `whenConsented()` (tested).
+- ⛔ Before showing own ads: approved ad network + its ads.txt lines + a certified CMP where required.
+
+## Not in V1 (by design)
+Accounts, chat, comments, own multiplayer, payments, virtual currency, own display ads, cloud saves.
