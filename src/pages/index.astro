@@ -21,7 +21,7 @@ const genres = live.filter((c) => c.kind === 'genre').sort((a, b) => b.count - a
 const TILE = ['racing', 'action', 'puzzle', 'sports', 'shooting', 'simulation', 'io', '2-player', 'car', 'football', 'arcade', 'adventure'];
 const tiles = TILE.map((s) => live.find((c) => c.slug === s)).filter((c): c is (typeof live)[number] => !!c).slice(0, 8)
   .map((cat) => ({ cat, cover: snapshot.categoryPages[cat.slug]?.[0] }));
-const twoPlayer = snapshot.categoryPages['2-player']?.slice(0, 8) ?? [];
+const twoPlayer = snapshot.categoryPages['2-player']?.slice(0, 12) ?? [];
 const total = snapshot.published;
 const ld = [
   { '@context': 'https://schema.org', '@type': 'WebSite', name: 'Pixuvo', url: SITE.url + '/',
@@ -69,8 +69,8 @@ const ld = [
       </section>
       <section class="section" aria-labelledby="rec-h">
         <div class="section-head"><h2 id="rec-h"><img src={uiIcon('star')} alt="" width="30" height="30" />Recommended For You</h2><a href="/games/">View all</a></div>
-        <div id="rec-grid" data-fallback={JSON.stringify(snapshot.home.featured.slice(12, 20))}>
-          <GameGrid games={snapshot.home.featured.slice(12, 20)} label="Recommended games" wide />
+        <div id="rec-grid" data-fallback={JSON.stringify(snapshot.home.featured.slice(12, 24))}>
+          <GameGrid games={snapshot.home.featured.slice(12, 24)} label="Recommended games" wide />
         </div>
       </section>
     </div>
@@ -78,7 +78,7 @@ const ld = [
     {snapshot.home.sections.filter((s) => ['racing', 'action', 'puzzle', 'sports'].includes(s.slug)).map((s) => (
       <section class="section" aria-labelledby={`sec-${s.slug}`}>
         <div class="section-head"><h2 id={`sec-${s.slug}`}><img src={`/icons/cat/${s.slug}.webp`} alt="" width="30" height="30" loading="lazy" />{s.name} Games</h2><a href={categoryPath(s.slug)}>All {approxCount(s.count)}</a></div>
-        <GameGrid games={s.games.slice(0, 6)} label={`${s.name} games`} />
+        <GameGrid games={s.games.slice(0, 7)} label={`${s.name} games`} row />
       </section>
     ))}
   </div>
@@ -115,8 +115,8 @@ const ld = [
       .then((raw: unknown) => {
         const data = raw as { items?: ClientCard[] } | null;
         const played = new Set(store.recent().map((x) => x.id));
-        const items = (data?.items ?? []).filter((g) => !played.has(g.id)).slice(0, 8);
-        if (items.length >= 4) {
+        const items = (data?.items ?? []).filter((g) => !played.has(g.id)).slice(0, 12);
+        if (items.length >= 12) {
           rec.innerHTML = `<div class="grid grid-wide" role="list" aria-label="Recommended games">${items.map((g) => cardHtml(g)).join('')}</div>`;
           (window as unknown as { pixuvoSyncFavs?: () => void }).pixuvoSyncFavs?.();
         }

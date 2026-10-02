@@ -1,9 +1,9 @@
 ---
 import type { GameCard as Card } from '../lib/types';
 import GameCard from './GameCard.astro';
-interface Props { games: Card[]; eagerCount?: number; id?: string; wide?: boolean; compact?: boolean; label?: string }
-const { games, eagerCount = 0, id, wide = false, compact = false, label } = Astro.props;
+interface Props { games: Card[]; eagerCount?: number; id?: string; wide?: boolean; compact?: boolean; label?: string; /** One full row: extra cards are hidden where fewer columns fit. */ row?: boolean }
+const { games, eagerCount = 0, id, wide = false, compact = false, label, row = false } = Astro.props;
 ---
-<div class:list={['grid', { 'grid-wide': wide, 'grid-compact': compact }]} id={id} role="list" aria-label={label}>
+<div class:list={['grid', { 'grid-wide': wide, 'grid-compact': compact, 'grid-row': row }]} id={id} role="list" aria-label={label}>
   {games.map((g, i) => <div role="listitem"><GameCard game={g} eager={i < eagerCount} /></div>)}
 </div>
