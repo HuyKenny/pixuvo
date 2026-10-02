@@ -2,10 +2,12 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   // NOTE: @astrojs/cloudflare builds dist/server/wrangler.json from this file; deploy/preview use THAT file.
   "name": "pixuvo",
-  "main": "@astrojs/cloudflare/entrypoints/server",
+  "main": "./src/worker.ts",
   "compatibility_date": "2026-09-25",
   "compatibility_flags": ["nodejs_compat"],
   "workers_dev": true,
+  // Daily 03:20 UTC: dispatch the GitHub "Sync and publish" workflow (src/worker.ts → scheduled).
+  "triggers": { "crons": ["20 3 * * *"] },
   // pixuvo.com is served by this Worker; www.pixuvo.com is a zone Redirect Rule (301 → apex), so it never hits the Worker.
   "routes": [{ "pattern": "pixuvo.com", "custom_domain": true }],
   "preview_urls": false,

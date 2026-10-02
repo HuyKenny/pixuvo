@@ -3,6 +3,7 @@ import type { APIRoute } from 'astro';
 import * as A from '../../../lib/server/admin';
 import { q } from '../../../lib/server/db';
 import { getEnv } from '../../../lib/server/env';
+import { dispatchSync, type DispatchEnv } from '../../../lib/server/dispatch';
 import { sameOrigin } from '../../../lib/server/http';
 export const prerender = false;
 
@@ -66,17 +67,8 @@ export const POST: APIRoute = async ({ request, params, locals }) => {
       r = await A.saveSetting(db, actor, s('key'), s('value'));
       break;
     case 'request-sync': {
-      const env = getEnv();
-      if (!env.GH_DISPATCH_TOKEN || !env.GH_REPO) {
-        r = { ok: false, message: 'GitHub dispatch token is not configured (see CREDENTIALS_REQUIRED.md).' };
-        break;
-      }
-      const res = await fetch(`https://api.github.com/repos/${env.GH_REPO}/actions/workflows/sync.yml/dispatches`, {
-        method: 'POST',
-        headers: { authorization: `Bearer ${env.GH_DISPATCH_TOKEN}`, accept: 'application/vnd.github+json', 'user-agent': 'pixuvo-admin', 'x-github-api-version': '2022-11-28' },
-        body: JSON.stringify({ ref: 'main' }),
-      });
-      r = res.status === 204 ? { ok: true, message: 'Sync requested — watch the Imports table in a few minutes.' } : { ok: false, message: `GitHub refused the dispatch (${res.status}).` };
+      const d = await dispatchSync(getEnv() as unknown as DispatchEnv, { force: true });
+      r = !d.ok ? { ok: false, message: d.error } : 'dispatched' in d ? { ok: true, message: 'Sync requested — watch the Imports table in a few minutes.' } : { ok: true, message: 'Already dispatched recently.' };
       break;
     }
     default:

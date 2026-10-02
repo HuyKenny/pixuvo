@@ -13,8 +13,7 @@ State: 2026-10-02. ✅ done and verified · ⚠️ done with a known caveat · �
 - ✅ Admin behind Cloudflare Access (`/admin`, `/api/admin`, allow h@huy.cz and huy.kenny@gmail.com) + JWT check in code.
 - ✅ info@pixuvo.com → h@huy.cz (Cloudflare Email Routing, MX/SPF/DKIM records created).
 - ✅ `verify:launch` 28/28 on production.
-- ⛔ `GH_DISPATCH_TOKEN` (fine-grained GitHub token) — without it the daily cron and "Request sync" answer 503.
-- ⛔ cron-job.org job (POST `/api/cron/sync/`, see OPERATIONS.md).
+- ✅ Daily sync: Worker Cron Trigger 03:20 UTC → GitHub workflow (fine-grained token, Actions on this repo only); first dispatched run 2026-10-02.
 
 ## Catalog and partners
 - ✅ 45 731 published games (49 063 imported; 3 332 held for review: brand/IP titles, adult/gambling wording).

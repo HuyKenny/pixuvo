@@ -3,15 +3,16 @@
 ## Daily sync
 
 ```
-cron-job.org (daily) ──POST https://pixuvo.com/api/cron/sync/──► Worker
-   headers: Authorization: Bearer <CRON_SECRET>, Content-Type: application/json, body: {}
-Worker ──workflow_dispatch──► GitHub Actions "Sync and publish" (HuyKenny/pixuvo)
+Worker Cron Trigger (daily 03:20 UTC, src/worker.ts) ──workflow_dispatch──► GitHub Actions "Sync and publish" (HuyKenny/pixuvo)
+   (manual/external alternative: POST https://pixuvo.com/api/cron/sync/ with Authorization: Bearer <CRON_SECRET>,
+    Content-Type: application/json, body {})
    test → restore bookmark → migrations → import (budget 90 000 rows) → metrics → publish (deploy only if changed) → free-tier report
 ```
 
 * The endpoint refuses a second dispatch within 6 h and never runs the import itself.
 * "Request sync now" in Admin → Imports does the same dispatch.
-* Without `GH_DISPATCH_TOKEN` the endpoint answers 503 and nothing runs (see CREDENTIALS_REQUIRED.md).
+* The dispatch uses the fine-grained token `pixuvo-cron-dispatch` (Actions read/write on this repo only, Worker secret `GH_DISPATCH_TOKEN`).
+* Why not cron-job.org: it would need the cron secret stored at a third party; the built-in Cron Trigger is free and keeps every secret inside Cloudflare.
 * Measured cost of a sync run: see COSTS-AND-LIMITS.md. GitHub Actions minutes are shared with other repos (2 000/month).
 
 ### Manual runs (from `apps/pixuvo`)
