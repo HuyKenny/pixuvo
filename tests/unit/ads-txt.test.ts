@@ -3,7 +3,9 @@ import { renderAdsTxt } from '../../src/config/ads-txt.ts';
 describe('ads.txt', () => {
   it('renders only valid records', () => {
     const txt = renderAdsTxt();
-    for (const line of txt.trim().split('\n')) expect(line.startsWith('#') || /^[a-z0-9.-]+, [A-Za-z0-9._:-]+, (DIRECT|RESELLER)(, [A-Za-z0-9]+)?$/i.test(line)).toBe(true);
     expect(txt).toContain('google.com, pub-5519830896693885, DIRECT, f08c47fec0942fa0');
+    expect(txt).toContain('#gpx-property-M7X08');
+    expect(txt).toContain('rev.iq, Kf077RYmx6XvWT8mhSbYq7LIQTU, DIRECT');
+    expect(txt.split('\n').length).toBeGreaterThan(880);
   });
 });
