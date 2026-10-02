@@ -94,12 +94,11 @@ test.describe('filters', () => {
     await page.goto('/racing-games/');
     await expect(page.locator('[data-filters]')).toHaveAttribute('data-facets', 'ready');
     const total = await page.locator('[data-result-count]').innerText();
-    await page.click('.qchip-main');
-    await page.locator('#filter-drawer input[type=checkbox]').first().locator('xpath=..').click();
+    // Desktop: filters sit in the left column (no sheet, no Filters chip).
+    await expect(page.locator('.qchip-main')).toBeHidden();
+    await page.locator('.list-side input[type=checkbox]').first().locator('xpath=..').click();
     await expect(page).toHaveURL(/#[a-z]+=/);
-    await page.locator('#filter-drawer label.opt', { hasText: 'Newest' }).click();
-    await expect(page.locator('[data-show-count]')).toContainText(/Show|No games/);
-    await page.click('#filter-drawer .drawer-foot [data-drawer-close]');
+    await page.locator('.list-side label.opt', { hasText: 'Newest' }).click();
     await expect(page).toHaveURL(/sort=new/);
     await expect(page.locator('[data-sort-label]')).toHaveText('Newest');
     await expect(page.locator('[data-active-filters] .filter-pill')).toHaveCount(1); // sort is not a pill
@@ -125,10 +124,10 @@ test.describe('filters', () => {
   test('options with fewer than 12 games are not offered', async ({ page }) => {
     await page.goto('/racing-games/');
     await expect(page.locator('[data-filters]')).toHaveAttribute('data-facets', 'ready');
-    await page.click('.qchip-main');
-    const counts = await page.locator('#filter-drawer .opt small').allInnerTexts();
+    const counts = await page.locator('.list-side .opt small').allInnerTexts();
+    expect(counts.length).toBeGreaterThan(0);
     for (const c of counts) expect(Number(c.replace(/,/g, ''))).toBeGreaterThanOrEqual(12);
-    await expect(page.locator('#filter-drawer input[value="local"]')).toHaveCount(0);
+    await expect(page.locator('.list-side input[value="local"]')).toHaveCount(0);
   });
 
   test('quick subcategory chip filters in place', async ({ page }) => {
@@ -145,15 +144,20 @@ test.describe('filters', () => {
     }
   });
 
-  test('Show more appends the next page', async ({ page }) => {
+  test('pages are numbered (no endless list); filtered results get numbered pages too', async ({ page, request }) => {
     await page.goto('/games/');
-    const more = page.locator('[data-show-more]');
-    if (await more.isHidden()) return; // fixture catalog fits one page
+    await expect(page.locator('[data-show-more]')).toHaveCount(0);
+    expect(await page.locator('#game-grid .card').count()).toBeLessThanOrEqual(42);
+    // Find a filter with more than one page of results in the fixture.
+    const res = await (await request.get('/api/games/?sort=az')).json();
+    if (res.pages < 2) return;
+    await page.goto('/games/#sort=az');
+    await expect(page.locator('#game-pager [data-filter-page="2"]').first()).toBeVisible();
     if (await page.locator('#consent').isVisible()) await page.click('[data-consent-action="reject"]');
-    const before = await page.locator('#game-grid .card').count();
-    expect(before).toBe(42);
-    await more.click();
-    await expect.poll(async () => page.locator('#game-grid .card').count()).toBeGreaterThan(before);
+    const first = await page.locator('#game-grid .card-title').first().innerText();
+    await page.locator('#game-pager [data-filter-page="2"]', { hasText: '2' }).click();
+    await expect(page).toHaveURL(/page=2/);
+    await expect(page.locator('#game-grid .card-title').first()).not.toHaveText(first);
   });
 
   test('impossible combination shows an empty state', async ({ page }) => {
@@ -226,7 +230,8 @@ test.describe('game page & player', () => {
     for (const slug of slugs) {
       await page.goto(`/games/${slug}/`);
       await expect(page.locator('.game-actions .action-btn')).toHaveCount(4);
-      await expect(page.locator('#stage iframe')).toHaveCount(1);
+      // Game loaded — or, after many starts in one suite, the play rate limit shows our Play button again.
+      await expect(page.locator('#stage iframe, #stage [data-play]:not([hidden])')).toHaveCount(1);
       const rating = await page.locator('.game-rating').innerText();
       if (!/liked/.test(rating)) expect(rating).toContain('Not rated yet');
       expect(rating).not.toContain('★');

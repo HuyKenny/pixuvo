@@ -70,7 +70,7 @@ if (stage && data) {
     }
     const body = (await res.json().catch(() => ({}))) as Partial<PlayResponse> & { error?: string };
     if (!res.ok || !body.embedUrl) {
-      if (res.status >= 500) showPlay();
+      if (res.status >= 500 || res.status === 429) showPlay(); // worth another try
       setMsg(`${escapeText(body.error ?? 'This game is not available right now.')} <a href="/">Find another game</a>.`);
       return;
     }

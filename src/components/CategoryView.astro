@@ -4,6 +4,7 @@ import GameGrid from './GameGrid.astro';
 import Pagination from './Pagination.astro';
 import Breadcrumbs from './Breadcrumbs.astro';
 import FilterPanel from './FilterPanel.astro';
+import FilterSide from './FilterSide.astro';
 import CategoryBar from './CategoryBar.astro';
 import { categoryIcon } from '../lib/category-icons';
 import type { CategoryInfo, GameCard } from '../lib/types';
@@ -66,10 +67,14 @@ const filterable = p.filterable !== false;
         {subs.map((s) => <a class="chip" href={categoryPath(s.slug)}><img src={categoryIcon(s.slug)} alt="" width="22" height="22" loading="lazy" />{s.name} <span class="count">{approxCount(s.count)}</span></a>)}
       </div></nav>
     )}
-    {filterable && <FilterPanel category={p.category?.slug ?? null} name={p.name} total={p.total} subs={subs.map((s) => ({ slug: s.slug, name: s.name, count: s.count }))} />}
-    <GameGrid games={p.games} id="game-grid" eagerCount={p.page === 1 ? 4 : 0} label={`${p.name} games`} />
-    {filterable && <button type="button" class="btn-more" data-show-more data-page={p.page} data-pages={p.pages} hidden={p.page >= p.pages}>Show more games</button>}
-    <div id="game-pager"><Pagination page={p.page} pages={p.pages} href={(n) => categoryPath(p.slug, n)} label={`${p.name} pages`} /></div>
+    <div class:list={[{ 'list-layout': filterable }]}>
+      {filterable && <FilterSide />}
+      <div class="list-main">
+        {filterable && <FilterPanel category={p.category?.slug ?? null} name={p.name} total={p.total} subs={subs.map((s) => ({ slug: s.slug, name: s.name, count: s.count }))} />}
+        <GameGrid games={p.games} id="game-grid" eagerCount={p.page === 1 ? 4 : 0} label={`${p.name} games`} />
+        <div id="game-pager"><Pagination page={p.page} pages={p.pages} href={(n) => categoryPath(p.slug, n)} label={`${p.name} pages`} /></div>
+      </div>
+    </div>
     {subs.length > 0 && filterable && (
       <section class="section" aria-labelledby="sub-h">
         <div class="section-head"><h2 id="sub-h">Explore {p.name} games</h2></div>

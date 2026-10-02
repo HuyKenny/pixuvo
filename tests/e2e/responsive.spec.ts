@@ -39,6 +39,7 @@ test('keyboard: skip link, visible focus, drawer focus trap basics', async ({ pa
   await page.keyboard.press('Tab');
   const focusedHasRing = await page.evaluate(() => getComputedStyle(document.activeElement as Element).boxShadow !== 'none' || getComputedStyle(document.activeElement as Element).outlineStyle !== 'none');
   expect(focusedHasRing).toBe(true);
+  await page.setViewportSize({ width: 390, height: 844 }); // phones: filters open as a sheet
   await page.goto('/racing-games/');
   await page.locator('.qchip-main').focus();
   await page.keyboard.press('Enter');
@@ -83,4 +84,18 @@ test('expanded mode (no Fullscreen API, e.g. iPhone) locks scrolling and Exit wo
   await page.click('[data-exit-expanded]');
   await expect(page.locator('body')).not.toHaveClass(/expanded-mode/);
   await expect(page.locator('html')).not.toHaveClass(/no-scroll/);
+});
+
+test('phones: no filter column, sheet instead; desktop: filter column on the left', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto('/racing-games/');
+  await expect(page.locator('.list-side')).toBeHidden();
+  await page.click('.qchip-main');
+  await expect(page.locator('#filter-drawer input').first()).toBeVisible();
+  await page.keyboard.press('Escape');
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await expect(page.locator('.list-side')).toBeVisible();
+  const side = (await page.locator('.list-side').boundingBox())!;
+  const grid = (await page.locator('#game-grid').boundingBox())!;
+  expect(side.x).toBeLessThan(grid.x);
 });

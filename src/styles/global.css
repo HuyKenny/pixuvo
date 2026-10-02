@@ -2738,32 +2738,6 @@ html.no-scroll body {
   margin-bottom: 4px;
 }
 
-/* Show more */
-.btn-more {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: min(420px, 100%);
-  min-height: 56px;
-  margin: 18px auto 6px;
-  border: 0;
-  border-radius: 999px;
-  background: var(--grad-primary);
-  color: #fff;
-  font: inherit;
-  font-size: 18px;
-  font-weight: 900;
-  cursor: pointer;
-  box-shadow: 0 8px 0 rgb(13 18 53 / 0.18);
-}
-.btn-more[hidden] {
-  display: none;
-}
-.btn-more:disabled {
-  opacity: 0.75;
-  cursor: progress;
-}
-
 /* ── Homepage on phones: games on the first screen ───────────────────────── */
 .home-layout {
   grid-template-columns: minmax(0, 1fr);
@@ -2953,5 +2927,114 @@ body.is-fullscreen .bottom-nav {
     min-height: 60px;
     font-size: 14px;
     padding: 4px;
+  }
+}
+
+/* ── Category / all-games pages: filter column on the left (desktop) ─────── */
+.list-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 22px;
+}
+.list-main {
+  min-width: 0;
+}
+@media (min-width: 1180px) {
+  .list-layout {
+    grid-template-columns: 250px minmax(0, 1fr);
+    align-items: start;
+  }
+  .list-main .grid:not(.grid-wide):not(.grid-compact) {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  /* The sidebar replaces the sheet: no Filters / Sort chips on desktop */
+  .list-layout .qchip[data-drawer-open] {
+    display: none;
+  }
+  .list-layout .finder {
+    margin-top: 0;
+  }
+}
+.list-side {
+  max-height: calc(100vh - var(--header-h) - 32px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+}
+.side-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 4px 4px;
+}
+.side-head h2 {
+  margin: 0;
+  font-size: 19px;
+}
+.side-head .link-btn {
+  font-size: 14px;
+  padding: 4px;
+}
+.side-form fieldset {
+  padding: 10px 2px 12px;
+}
+.side-form fieldset:last-child {
+  border-bottom: 0;
+}
+.side-form legend {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin: 0 6px 6px;
+}
+.side-form .hint {
+  margin: 0 6px 6px;
+  font-size: 12.5px;
+}
+.side-form .opt-row {
+  flex-direction: column;
+  gap: 2px;
+}
+.side-form .opt span {
+  width: 100%;
+  min-height: 38px;
+  padding: 0 8px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink-2);
+}
+.side-form .opt span::before {
+  content: '';
+  flex: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #c3c8e0;
+  border-radius: 6px;
+  background: #fff;
+}
+.side-form .opt input[type='radio'] + span::before {
+  border-radius: 999px;
+}
+.side-form .opt span small {
+  margin-left: auto;
+}
+.side-form .opt input:checked + span {
+  background: var(--pill-violet-bg);
+  color: var(--pill-violet);
+}
+.side-form .opt input:checked + span::before {
+  border-color: var(--violet-600);
+  background: var(--violet-600) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3.5 8.5l3 3 6-7' fill='none' stroke='%23fff' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 12px no-repeat;
+}
+.side-form .opt input:checked + span small {
+  color: var(--pill-violet);
+}
+@media (hover: hover) {
+  .side-form .opt:hover span {
+    background: var(--surface);
   }
 }

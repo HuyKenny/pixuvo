@@ -6,15 +6,18 @@
  *
  * Option counts come from /data/facets.json (snapshot); options with fewer than
  * MIN games in this list are hidden, so a filter never promises an empty result.
- * "Show more games" appends the next page in place (unfiltered and filtered).
+ * Filtered results are paged with numbered links (#…&page=2); the desktop sidebar and the
+ * phone bottom sheet are two views of the same groups and stay in sync.
  */
 import { cardHtml, esc, type ClientCard } from './cards';
 
 const MIN = 12;
-const KEYS = ['q', 'sort', 'sub', 'theme', 'players', 'device', 'controls', 'style', 'mode'] as const;
+const KEYS = ['q', 'sort', 'sub', 'theme', 'players', 'device', 'controls', 'style', 'mode', 'page'] as const;
 type Key = (typeof KEYS)[number];
 type State = Partial<Record<Key, string[]>>;
-const SINGLE: Key[] = ['q', 'sort', 'device', 'mode'];
+const SINGLE: Key[] = ['q', 'sort', 'device', 'mode', 'page'];
+/** Not filters: no pill, no badge count. */
+const META: Key[] = ['sort', 'page'];
 
 interface Facets {
   sub: Array<{ slug: string; name: string; n: number }>;
@@ -41,14 +44,14 @@ const nf = (n: number) => NF.format(n);
 const syncFavs = () => (window as unknown as { pixuvoSyncFavs?: () => void }).pixuvoSyncFavs?.();
 
 const bar = document.querySelector<HTMLElement>('[data-filters]');
-const form = document.querySelector<HTMLFormElement>('[data-filter-form]');
+const forms = [...document.querySelectorAll<HTMLFormElement>('[data-filter-form]')];
 const gridEl = document.getElementById('game-grid');
 
-if (bar && form && gridEl) {
+if (bar && forms.length && gridEl) {
   const grid = gridEl;
   const pager = document.getElementById('game-pager');
-  const more = document.querySelector<HTMLButtonElement>('[data-show-more]');
-  const groupsBox = form.querySelector<HTMLElement>('[data-filter-groups]')!;
+  const groupBoxes = forms.map((f) => f.querySelector<HTMLElement>('[data-filter-groups]')!);
+  let built = false;
   const category = bar.dataset.category ?? '';
   const total = Number(bar.dataset.total ?? '0');
   const subs = JSON.parse(bar.dataset.subs ?? '[]') as Array<{ slug: string; name: string }>;
@@ -56,16 +59,12 @@ if (bar && form && gridEl) {
   const activeBox = bar.querySelector<HTMLElement>('[data-active-filters]')!;
   const badge = bar.querySelector<HTMLElement>('[data-filter-badge]')!;
   const sortLabel = bar.querySelector<HTMLElement>('[data-sort-label]');
-  const showCount = form.querySelector<HTMLElement>('[data-show-count]');
+  const showCount = document.querySelector<HTMLElement>('[data-show-count]');
   const search = bar.querySelector<HTMLFormElement>('[data-filter-search]');
   const qInput = search?.querySelector<HTMLInputElement>('input[name=q]') ?? null;
   const qClear = bar.querySelector<HTMLButtonElement>('[data-filter-qclear]');
   const originalGrid = grid.innerHTML;
   const originalPager = pager?.innerHTML ?? '';
-  const serverPage = Number(more?.dataset.page ?? '1');
-  const serverPages = Number(more?.dataset.pages ?? '1');
-  /** Pages already on screen: unfiltered starts at the server page, filtered at 1. */
-  let view = { filtered: false, page: serverPage, pages: serverPages };
   let facets: Facets | null = null;
   let themeMeta: FacetFile['themes'] = [];
   let ctrl: AbortController | null = null;
@@ -86,6 +85,8 @@ if (bar && form && gridEl) {
       if (vals.length) out[k] = SINGLE.includes(k) ? vals.slice(0, 1) : vals;
     }
     if (out.sort?.[0] === 'featured') delete out.sort;
+    if (out.page && (!/^\d{1,3}$/.test(out.page[0]!) || out.page[0] === '1')) delete out.page;
+    if (out.page && Object.keys(out).length === 1) delete out.page; // unfiltered pages are real URLs
     return out;
   };
   const writeHash = (s: State) => {
@@ -95,7 +96,7 @@ if (bar && form && gridEl) {
     apply();
   };
   const isFiltered = (s: State) => Object.keys(s).length > 0;
-  const activeCount = (s: State) => KEYS.filter((k) => k !== 'sort').reduce((n, k) => n + (s[k]?.length ?? 0), 0);
+  const activeCount = (s: State) => KEYS.filter((k) => !META.includes(k)).reduce((n, k) => n + (s[k]?.length ?? 0), 0);
 
   // ── Sheet ────────────────────────────────────────────────────────────────
   function groups(): Group[] {
@@ -114,19 +115,21 @@ if (bar && form && gridEl) {
     return g.map((x) => ({ ...x, opts: x.radio ? x.opts : x.opts.filter((o) => has(o.n) || s[x.key]?.includes(o.v)) })).filter((x) => x.opts.length > 0);
   }
   function renderGroups() {
-    groupsBox.innerHTML = groups()
+    built = true;
+    const gs = groups();
+    groupBoxes.forEach((box) => (box.innerHTML = gs
       .map((g, gi) => `<fieldset><legend>${esc(g.legend)}</legend>${g.hint ? `<p class="hint">${esc(g.hint)}</p>` : ''}<div class="opt-row">${g.opts
-        .map((o, i) => `<label class="opt"><input type="${g.radio ? 'radio' : 'checkbox'}" name="${g.key}" value="${esc(o.v)}"${gi === 0 && i === 0 ? ' data-autofocus' : ''}><span>${o.img ? `<img src="${esc(o.img)}" alt="" width="24" height="24" loading="lazy">` : o.ico ? `<i aria-hidden="true">${o.ico}</i>` : ''}${esc(o.label)}${o.n !== undefined ? `<small>${nf(o.n)}</small>` : ''}</span></label>`)
+        .map((o, i) => `<label class="opt"><input type="${g.radio ? 'radio' : 'checkbox'}" name="${g.key}" value="${esc(o.v)}"${gi === 0 && i === 0 && box.closest('[data-drawer]') ? ' data-autofocus' : ''}><span>${o.img ? `<img src="${esc(o.img)}" alt="" width="24" height="24" loading="lazy">` : o.ico ? `<i aria-hidden="true">${o.ico}</i>` : ''}${esc(o.label)}${o.n !== undefined ? `<small>${nf(o.n)}</small>` : ''}</span></label>`)
         .join('')}</div></fieldset>`)
-      .join('');
+      .join('')));
   }
   const label = (k: Key, v: string) =>
     k === 'q' ? `“${v}”` : k === 'sub' ? subs.find((x) => x.slug === v)?.name ?? v : k === 'theme' ? themeMeta.find((x) => x.slug === v)?.name ?? v : LABELS[`${k}:${v}`] ?? v;
 
   function syncUI(s: State) {
-    form!.querySelectorAll<HTMLInputElement>('input').forEach((i) => {
+    forms.forEach((f) => f.querySelectorAll<HTMLInputElement>('input').forEach((i) => {
       i.checked = i.name === 'sort' ? (s.sort?.[0] ?? 'featured') === i.value : !!s[i.name as Key]?.includes(i.value);
-    });
+    }));
     const n = activeCount(s);
     badge.textContent = String(n);
     badge.hidden = n === 0;
@@ -134,15 +137,25 @@ if (bar && form && gridEl) {
     bar!.querySelectorAll<HTMLElement>('[data-quick]').forEach((c) => c.setAttribute('aria-pressed', String(!!s[c.dataset.quick as Key]?.includes(c.dataset.value!))));
     if (qInput && document.activeElement !== qInput) qInput.value = s.q?.[0] ?? '';
     if (qClear) qClear.hidden = !(qInput?.value);
-    const pills = KEYS.filter((k) => k !== 'sort').flatMap((k) => (s[k] ?? []).map((v) => [k, v] as const));
+    const pills = KEYS.filter((k) => !META.includes(k)).flatMap((k) => (s[k] ?? []).map((v) => [k, v] as const));
     activeBox.innerHTML = pills
       .map(([k, v]) => `<button type="button" class="filter-pill" data-remove-filter="${k}" data-value="${esc(v)}">${esc(label(k, v))}<span aria-hidden="true">×</span><span class="sr-only"> — remove filter</span></button>`)
       .join('') + (pills.length ? '<button type="button" class="link-btn" data-filter-clear>Clear all</button>' : '');
   }
-  function setMore() {
-    if (!more) return;
-    more.hidden = view.page >= view.pages;
-    more.disabled = false;
+  function pagerHtml(page: number, pages: number): string {
+    const b = (p: number, text: string, cur = false) =>
+      cur ? `<li><span aria-current="page">${text}</span></li>` : `<li><a href="#" data-filter-page="${p}"${text === String(p) ? '' : ` aria-label="${text === '‹' ? 'Previous' : 'Next'} page"`}>${text}</a></li>`;
+    const nums = new Set([1, pages, page - 2, page - 1, page, page + 1, page + 2].filter((p) => p >= 1 && p <= pages));
+    const out: string[] = [];
+    if (page > 1) out.push(b(page - 1, '‹'));
+    let last = 0;
+    for (const p of [...nums].sort((a, z) => a - z)) {
+      if (p - last > 1) out.push('<li><span class="gap" aria-hidden="true">…</span></li>');
+      out.push(b(p, String(p), p === page));
+      last = p;
+    }
+    if (page < pages) out.push(b(page + 1, '›'));
+    return `<nav aria-label="Filtered results pages"><ul class="pagination">${out.join('')}</ul></nav>`;
   }
 
   // ── Fetching ─────────────────────────────────────────────────────────────
@@ -152,6 +165,7 @@ if (bar && form && gridEl) {
     for (const k of KEYS) if (s[k]?.length) qs.set(k, s[k]!.join(','));
     // Unfiltered /games/ lists newest first.
     if (!category && !s.sort && !isFiltered(s)) qs.set('sort', 'new');
+    qs.delete('page');
     if (page > 1) qs.set('page', String(page));
     return qs;
   };
@@ -170,11 +184,8 @@ if (bar && form && gridEl) {
       ctrl?.abort();
       grid.innerHTML = originalGrid;
       if (pager) pager.innerHTML = originalPager;
-      if (pager) pager.hidden = false;
       count.textContent = `${nf(total)} games`;
       if (showCount) showCount.textContent = `Show ${nf(total)} games`;
-      view = { filtered: false, page: serverPage, pages: serverPages };
-      setMore();
       syncFavs();
       return;
     }
@@ -182,15 +193,13 @@ if (bar && form && gridEl) {
     ctrl = new AbortController();
     grid.classList.add('loading-veil');
     try {
-      const data = await load(s, 1, ctrl.signal);
+      const data = await load(s, Number(s.page?.[0] ?? '1'), ctrl.signal);
       grid.innerHTML = data.items.length
         ? data.items.map((g) => cardHtml(g)).join('')
         : `<div class="empty-state" role="listitem"><span class="empty-ico" aria-hidden="true">🔍</span><strong>No games match all of these</strong>Remove one of the filters above, or <button type="button" class="link-btn" data-filter-clear>clear all filters</button>.</div>`;
       count.textContent = countText(data);
       if (showCount) showCount.textContent = data.total ? `Show ${countText(data)}` : 'No games — change filters';
-      if (pager) pager.hidden = true;
-      view = { filtered: true, page: 1, pages: data.pages };
-      setMore();
+      if (pager) pager.innerHTML = data.pages > 1 ? pagerHtml(data.page, data.pages) : '';
       syncFavs();
     } catch (e) {
       if ((e as Error).name === 'AbortError') return;
@@ -200,57 +209,12 @@ if (bar && form && gridEl) {
     }
   }
 
-  async function showMore(): Promise<boolean> {
-    if (!more || view.page >= view.pages) return false;
-    more.disabled = true;
-    const label0 = more.textContent;
-    more.textContent = 'Loading…';
-    try {
-      const next = view.page + 1;
-      const data = await load(readHash(), next);
-      const seen = new Set([...grid.querySelectorAll<HTMLElement>('[data-game-id]')].map((x) => x.dataset.gameId));
-      grid.insertAdjacentHTML('beforeend', data.items.filter((g) => !seen.has(String(g.id))).map((g) => cardHtml(g)).join(''));
-      view.page = next;
-      view.pages = Math.min(view.pages, data.pages || view.pages);
-      if (!data.items.length) view.pages = view.page;
-      syncFavs();
-      return true;
-    } catch {
-      return false;
-    } finally {
-      more.textContent = label0;
-      setMore();
-    }
-  }
-
-  // Back from a game: re-add the pages that were shown with "Show more" and return to the same spot.
-  const moreKey = () => `pixuvo:more:${location.pathname}${location.hash}`;
-  const remember = () => {
-    try {
-      const extra = view.page - (view.filtered ? 1 : serverPage);
-      if (extra > 0) sessionStorage.setItem(moreKey(), JSON.stringify({ extra, y: Math.round(scrollY) }));
-      else sessionStorage.removeItem(moreKey());
-    } catch {
-      /* ignore */
-    }
-  };
-  async function restore() {
-    let saved: { extra: number; y: number } | null = null;
-    try {
-      saved = JSON.parse(sessionStorage.getItem(moreKey()) ?? 'null');
-    } catch {
-      saved = null;
-    }
-    if (!saved || !(saved.extra > 0)) return;
-    for (let i = 0; i < Math.min(saved.extra, 10); i++) if (!(await showMore())) break;
-    scrollTo({ top: saved.y, behavior: 'instant' as ScrollBehavior });
-  }
-
   // ── Events ───────────────────────────────────────────────────────────────
-  form.addEventListener('change', (e) => {
+  const onChange = (e: Event) => {
     const t = e.target as HTMLInputElement;
     const k = t.name as Key;
     const s = readHash();
+    delete s.page;
     if (k === 'sort') s.sort = [t.value];
     else if (SINGLE.includes(k)) {
       if (t.checked) s[k] = [t.value];
@@ -263,10 +227,12 @@ if (bar && form && gridEl) {
       else delete s[k];
     }
     writeHash(s);
-  });
+  };
+  forms.forEach((f) => f.addEventListener('change', onChange));
   let qTimer = 0;
   const setQ = (v: string) => {
     const s = readHash();
+    delete s.page;
     const t = v.trim();
     if (t.length >= 2) s.q = [t.slice(0, 60)];
     else delete s.q;
@@ -296,6 +262,7 @@ if (bar && form && gridEl) {
       const k = quick.dataset.quick as Key;
       const v = quick.dataset.value!;
       const s = readHash();
+      delete s.page;
       const cur = new Set(s[k] ?? []);
       if (cur.has(v)) cur.delete(v);
       else {
@@ -311,6 +278,7 @@ if (bar && form && gridEl) {
     if (rm) {
       const s = readHash();
       const k = rm.dataset.removeFilter as Key;
+      delete s.page;
       s[k] = (s[k] ?? []).filter((x) => x !== rm.dataset.value);
       if (!s[k]!.length) delete s[k];
       writeHash(s);
@@ -324,13 +292,15 @@ if (bar && form && gridEl) {
       apply();
       return;
     }
-    if (el.closest('[data-show-more]')) {
-      showMore();
-      return;
+    const pg = el.closest<HTMLElement>('[data-filter-page]');
+    if (pg) {
+      e.preventDefault();
+      const s = readHash();
+      s.page = [pg.dataset.filterPage!];
+      writeHash(s);
+      bar.scrollIntoView({ block: 'start' });
     }
-    if (el.closest('#game-grid a.card-link')) remember();
   });
-  window.addEventListener('pagehide', remember);
   window.addEventListener('hashchange', apply);
 
   // Facet counts (static file, cached); the sheet works without them, just without counts.
@@ -350,21 +320,26 @@ if (bar && form && gridEl) {
     })
     .catch(() => {})
     .finally(() => (bar.dataset.facets = 'ready'));
-  // The sheet is off-screen until opened: build it when the browser is idle.
+  // Desktop sidebar is on screen: build it right away. The phone sheet is off-screen until opened: build it when idle.
+  if (document.querySelector('.list-side') && matchMedia('(min-width: 1180px)').matches) {
+    renderGroups();
+    syncUI(readHash());
+  }
   (window.requestIdleCallback ?? ((cb: () => void) => setTimeout(cb, 200)))(() => {
-    if (!groupsBox.childElementCount) renderGroups();
+    if (!built) {
+      renderGroups();
+      syncUI(readHash());
+    }
   });
   // Opened before the idle callback ran: build it now (pointerdown/keydown fire before the drawer's click handler).
   for (const ev of ['pointerdown', 'keydown'] as const)
     bar.querySelectorAll('[data-drawer-open="filter-drawer"]').forEach((b) => b.addEventListener(ev, () => {
-      if (!groupsBox.childElementCount) {
+      if (!built) {
         renderGroups();
         syncUI(readHash());
       }
     }));
-  setMore();
   bar.querySelectorAll<HTMLElement>('a[data-quick]').forEach((a) => a.setAttribute('role', 'button'));
   if (showCount) showCount.textContent = `Show ${nf(total)} games`;
-  if (location.hash.length > 1) apply().then(restore);
-  else restore();
+  if (location.hash.length > 1) apply();
 }
