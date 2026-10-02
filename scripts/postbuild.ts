@@ -50,7 +50,9 @@ if (Array.isArray(wr.kv_namespaces) && wr.kv_namespaces.length) errors.push('KV 
 const headerLines = Object.entries(SECURITY_HEADERS).map(([k, v]) => `  ${k}: ${v}`).join('\n');
 const existing = existsSync(join(CLIENT, '_headers')) ? readFileSync(join(CLIENT, '_headers'), 'utf8') : '';
 const preview = process.env.PUBLIC_NOINDEX === '1' ? '  X-Robots-Tag: noindex, nofollow\n' : '';
-writeFileSync(join(CLIENT, '_headers'), `/*\n${headerLines}\n${preview}\n${existing}`);
+// workers.dev is a technical mirror: never indexable, even for static files.
+const mirror = 'https://pixuvo.huy-kenny.workers.dev/*\n  X-Robots-Tag: noindex, nofollow\n';
+writeFileSync(join(CLIENT, '_headers'), `/*\n${headerLines}\n${preview}\n${mirror}\n${existing}`);
 
 const html = assets.filter((p) => p.endsWith('.html')).length;
 console.log(`postbuild: ${assets.length} static files (${html} HTML pages), Worker bundle ${(serverBytes / 1024 / 1024).toFixed(2)} MB`);

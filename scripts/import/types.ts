@@ -37,7 +37,7 @@ export interface AdapterContext {
   fetchJson: (url: string) => Promise<unknown>;
   startPage: number;
   /** Local file for providers without a feed URL. */
-  file?: string;
+  file?: string | undefined;
   config: Record<string, string | undefined>;
 }
 

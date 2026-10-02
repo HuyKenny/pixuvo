@@ -47,7 +47,7 @@ export function clampPage(raw: unknown, max = 10_000): number | null {
   return n;
 }
 
-export async function categoryGames(q: Q, cat: CategoryInfo, sort: ListSort, page: number, pageSize = SITE.pageSize): Promise<Paged<GameCard>> {
+export async function categoryGames(q: Q, cat: CategoryInfo, sort: ListSort, page: number, pageSize: number = SITE.pageSize): Promise<Paged<GameCard>> {
   const order = sort === 'new' ? 'gc.added_at DESC, gc.game_id' : sort === 'az' ? 'g.title_norm, g.id' : 'gc.rank_score DESC, gc.game_id';
   const rows = await q.all<CardRow>(
     `SELECT ${CARD_COLS} FROM game_categories gc JOIN games g ON g.id = gc.game_id ${CARD_JOIN}
@@ -71,7 +71,7 @@ export async function gamesByIds(q: Q, ids: number[]): Promise<GameCard[]> {
   const clean = ids.filter((x) => Number.isInteger(x) && x > 0).slice(0, 90);
   if (!clean.length) return [];
   const rows = await q.all<CardRow>(
-    `SELECT ${CARD_COLS} FROM games g ${CARD_JOIN} WHERE g.status = 'published' AND g.id IN (${clean.map(() => '?').join(',')})`,
+    `SELECT ${CARD_COLS} FROM games g ${CARD_JOIN} WHERE g.id IN (${clean.map(() => '?').join(',')}) AND +g.status = 'published'`,
     clean,
   );
   const byId = new Map(rows.map((r) => [r.id, toCard(r)]));
@@ -79,7 +79,7 @@ export async function gamesByIds(q: Q, ids: number[]): Promise<GameCard[]> {
 }
 
 /** /games/ directory: newest additions first, paged by dir_seq ranges (O(page) reads, deterministic). */
-export async function directoryPage(q: Q, maxSeq: number, page: number, pageSize = SITE.pageSize): Promise<Paged<GameCard>> {
+export async function directoryPage(q: Q, maxSeq: number, page: number, pageSize: number = SITE.pageSize): Promise<Paged<GameCard>> {
   const hi = maxSeq - (page - 1) * pageSize;
   const lo = hi - pageSize;
   const rows = await q.all<CardRow>(
@@ -122,7 +122,7 @@ export function parseFilters(sp: URLSearchParams, cats: CategoryInfo[]): FilterI
   return { cat, device: device!, players: players!, mode: mode!, style: style!, controls: controls!, sort: sort ?? 'featured', page };
 }
 
-export async function filterGames(q: Q, f: FilterInput, pageSize = SITE.pageSize): Promise<Paged<GameCard> & { capped: boolean }> {
+export async function filterGames(q: Q, f: FilterInput, pageSize: number = SITE.pageSize): Promise<Paged<GameCard> & { capped: boolean }> {
   const where: string[] = [];
   const params: Param[] = [];
   if (f.device) where.push('g.mobile_friendly = 1');
@@ -378,4 +378,65 @@ export async function landingGames(q: Q, cats: CategoryInfo[], slugs: string[], 
     params,
   );
   return { items: rows.map(toCard), total: cnt[0]?.n ?? 0 };
+}
+
+/**
+ * Batch detail loader for the snapshot export: 3 queries per 90 games instead of
+ * ~5 per game. `related` is left empty — the snapshot fills it from category lists.
+ */
+export async function getGamesBatch(q: Q, ids: number[]): Promise<GameDetail[]> {
+  const out: GameDetail[] = [];
+  const kindOrder = (k: string) => (k === 'genre' ? 0 : k === 'subgenre' ? 1 : 2);
+  for (let i = 0; i < ids.length; i += 90) {
+    const chunk = ids.slice(i, i + 90);
+    const ph = chunk.map(() => '?').join(',');
+    const [rows, cats, tags] = await Promise.all([
+      q.all<DetailRow>(
+        `SELECT ${CARD_COLS}, g.description, g.instructions, g.controls_inferred, g.status, g.merged_into, g.primary_category_id, pc.slug AS pc_slug,
+                g.source_release_date, g.added_at, g.updated_at, g.orientation, g.multiplayer_mode, g.technology, g.visual_style,
+                g.rating_up, g.rating_down, p.name AS provider_name, s.width, s.height
+           FROM games g ${CARD_JOIN}
+           LEFT JOIN game_sources s ON s.id = g.primary_source_id
+           LEFT JOIN providers p ON p.id = s.provider_id
+          WHERE g.id IN (${ph}) AND +g.status = 'published'` /* unary + keeps SQLite on the primary key instead of the status index */,
+        chunk,
+      ),
+      q.all<CategoryRef & { game_id: number; kind: string; sort: number }>(
+        `SELECT gc.game_id, c.slug, c.name, c.kind, c.sort FROM game_categories gc JOIN categories c ON c.id = gc.category_id WHERE gc.game_id IN (${ph})`,
+        chunk,
+      ),
+      q.all<CategoryRef & { game_id: number }>(`SELECT gt.game_id, t.slug, t.name FROM game_tags gt JOIN tags t ON t.id = gt.tag_id WHERE gt.game_id IN (${ph})`, chunk),
+    ]);
+    for (const r of rows) {
+      let controls: string[] = [];
+      try {
+        controls = r.controls_inferred ? (JSON.parse(r.controls_inferred) as string[]) : [];
+      } catch {
+        controls = [];
+      }
+      out.push({
+        ...toCard(r),
+        description: r.description,
+        instructions: r.instructions,
+        controls,
+        categories: cats.filter((c) => c.game_id === r.id).sort((a, b) => kindOrder(a.kind) - kindOrder(b.kind) || a.sort - b.sort).map(({ slug, name }) => ({ slug, name })),
+        tags: tags.filter((t) => t.game_id === r.id).slice(0, 12).map(({ slug, name }) => ({ slug, name })),
+        primaryCategory: r.pc_slug && r.cat ? { slug: r.pc_slug, name: r.cat } : null,
+        releaseDate: r.source_release_date,
+        addedAt: r.added_at,
+        updatedAt: r.updated_at,
+        orientation: r.orientation,
+        multiplayerMode: r.multiplayer_mode,
+        technology: r.technology,
+        visualStyle: r.visual_style,
+        ratingUp: r.rating_up,
+        ratingDown: r.rating_down,
+        providerName: r.provider_name,
+        width: r.width,
+        height: r.height,
+        related: [],
+      });
+    }
+  }
+  return out;
 }

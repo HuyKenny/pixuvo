@@ -10,7 +10,7 @@ const nav = [
   { href: '/multiplayer-games/', label: 'Multiplayer' },
 ];
 const q = Astro.props.query ?? '';
-interface Props { query?: string }
+interface Props { query?: string | undefined }
 ---
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">

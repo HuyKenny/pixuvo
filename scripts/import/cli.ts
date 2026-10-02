@@ -43,7 +43,7 @@ for (const id of providers) {
     console.log(`skip ${id}: ${ready.reason}`);
     continue;
   }
-  const minInterval = id === 'gamemonetize' ? 15_000 : 400;
+  const minInterval = id === 'gamemonetize' ? 8_000 : 400; // GameMonetize answers Cloudflare 1015 to bursts
   const fetcher = cached(values['cache-dir'], (url) => fetchJson(url, { allowHosts: adapter.feedHosts, minIntervalMs: minInterval }));
   const rep = await runImport(db, adapter, {
     dryRun: values['dry-run']!,

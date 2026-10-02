@@ -43,7 +43,7 @@ export async function setGameStatus(db: D1Q, actor: string, ids: number[], statu
   return { ok: true, message: `${clean.length} game(s) set to ${status}.` };
 }
 
-export async function editGame(db: D1Q, actor: string, id: number, fields: { title?: string; description?: string; instructions?: string; categories?: string[] }): Promise<ActionResult> {
+export async function editGame(db: D1Q, actor: string, id: number, fields: { title?: string | undefined; description?: string | undefined; instructions?: string | undefined; categories?: string[] | undefined }): Promise<ActionResult> {
   const stmts: Stmt[] = [];
   const set: string[] = [];
   const params: Param[] = [];
@@ -120,7 +120,26 @@ export async function updateProvider(db: D1Q, actor: string, id: string, f: { pu
     audit(actor, 'provider.update', 'provider', id, f),
     bump,
   ]);
-  return { ok: true, message: `Provider ${id} updated. Plays are checked against it immediately.` };
+  // Listings follow the permission: hide games that have no other usable source, restore them when re-enabled.
+  const usable = f.publish_status === 'approved' && f.consent_mode !== 'blocked';
+  const otherUsable = `EXISTS (SELECT 1 FROM game_sources s2 JOIN providers p2 ON p2.id = s2.provider_id
+      WHERE s2.game_id = games.id AND s2.provider_id != ? AND s2.status IN ('active','missing') AND p2.publish_status = 'approved' AND p2.consent_mode != 'blocked')`;
+  if (!usable) {
+    await db.batch([
+      { sql: `UPDATE games SET status = 'hidden', review_reason = 'provider_disabled', updated_at = ? WHERE status = 'published'
+               AND id IN (SELECT game_id FROM game_sources WHERE provider_id = ?) AND NOT ${otherUsable}`, params: [now(), id, id] },
+      { sql: `UPDATE game_categories SET published = 0 WHERE published = 1 AND game_id IN (SELECT id FROM games WHERE review_reason = 'provider_disabled')` },
+      { sql: `UPDATE categories SET game_count = (SELECT count(*) FROM game_categories gc WHERE gc.category_id = categories.id AND gc.published = 1)` },
+    ]);
+  } else {
+    await db.batch([
+      { sql: `UPDATE games SET status = 'published', review_reason = NULL, updated_at = ? WHERE status = 'hidden' AND review_reason = 'provider_disabled'
+               AND id IN (SELECT game_id FROM game_sources WHERE provider_id = ?)`, params: [now(), id] },
+      { sql: `UPDATE game_categories SET published = 1 WHERE published = 0 AND game_id IN (SELECT game_id FROM game_sources WHERE provider_id = ?) AND (SELECT status FROM games WHERE id = game_categories.game_id) = 'published'`, params: [id] },
+      { sql: `UPDATE categories SET game_count = (SELECT count(*) FROM game_categories gc WHERE gc.category_id = categories.id AND gc.published = 1)` },
+    ]);
+  }
+  return { ok: true, message: `Provider ${id} updated. Plays are checked immediately; listings ${usable ? 'restored' : 'hidden'} (static pages follow with the next publish).` };
 }
 
 /** Merge game `dup` into `keep`: sources move, categories union, old slug 301s to the survivor. */

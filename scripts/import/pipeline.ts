@@ -23,17 +23,17 @@ export interface RunOptions {
   dryRun: boolean;
   /** Max rows_written this run may consume (D1 counts index rows too). */
   budgetRows: number;
-  startPage?: number;
-  resume?: boolean;
-  graceDays?: number;
-  now?: Date;
+  startPage?: number | undefined;
+  resume?: boolean | undefined;
+  graceDays?: number | undefined;
+  now?: Date | undefined;
   config: Record<string, string | undefined>;
   fetchJson: (url: string) => Promise<unknown>;
-  log?: (msg: string) => void;
+  log?: (msg: string) => void | undefined;
   /** Ignore provider publish_status (technical import only). Never publishes. */
-  technicalOnly?: boolean;
+  technicalOnly?: boolean | undefined;
   /** Override the adapter's minimum for a trustworthy complete feed (tests). */
-  minCompleteItems?: number;
+  minCompleteItems?: number | undefined;
 }
 
 export interface RunReport {

@@ -13,7 +13,6 @@ function inactive(id: string, reason: string): ProviderAdapter {
     imageHosts: [],
     minCompleteItems: Number.POSITIVE_INFINITY,
     ready: () => ({ ok: false, reason }),
-    // eslint-disable-next-line require-yield
     async *pages() {
       throw new Error(`${id}: ${reason}`);
     },

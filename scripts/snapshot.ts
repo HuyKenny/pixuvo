@@ -9,7 +9,7 @@
  */
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { parseArgs } from 'node:util';
-import { categoryGames, getCategories, getGame, getLandings, getSetting, landingGames, topGames, type Q } from '../src/lib/catalog.ts';
+import { categoryGames, getCategories, getGamesBatch, getLandings, getSetting, landingGames, topGames, type Q } from '../src/lib/catalog.ts';
 import { MIN_CATEGORY_GAMES } from '../src/lib/taxonomy.ts';
 import type { GameCard, GameDetail } from '../src/lib/types.ts';
 import { loadConfig } from './lib/env.ts';
@@ -19,7 +19,7 @@ const { values } = parseArgs({ options: { target: { type: 'string', default: 'lo
 const cfg = loadConfig();
 const db = openTarget(values.target!, cfg);
 let reads = 0;
-const q: Q = { all: async (sql, params = []) => { const r = await db.all(sql, params as never); reads += r.meta.rows_read; return r.rows as never; } };
+const q: Q = { all: async (sql, params = []) => { const r = await db.all(sql, params as never); reads += r.meta.rows_read; if (process.env.SNAPSHOT_DEBUG && r.meta.rows_read > 5000) console.log(r.meta.rows_read, sql.replace(/\s+/g, " ").slice(0, 140)); return r.rows as never; } };
 
 const HOME_SECTIONS = ['puzzle', 'action', 'racing', 'arcade', 'shooting', 'sports', '2-player', 'dress-up', 'simulation', 'io'];
 
@@ -27,8 +27,7 @@ const t0 = Date.now();
 const [dataVersion, maxSeqRaw, popularRaw, trendingRaw] = await Promise.all([getSetting(q, 'data_version'), getSetting(q, 'max_dir_seq'), getSetting(q, 'list:popular'), getSetting(q, 'list:trending')]);
 const categories = await getCategories(q);
 const live = categories.filter((c) => c.count >= MIN_CATEGORY_GAMES);
-const [{ n: published } = { n: 0 }] = await q.all<{ n: number }>("SELECT count(*) AS n FROM games WHERE status = 'published'");
-const [{ m: maxSeq } = { m: 0 }] = await q.all<{ m: number }>('SELECT coalesce(max(dir_seq), 0) AS m FROM games');
+const published = Number((await getSetting(q, 'published_count')) ?? 0);
 
 const featured = await topGames(q, 'featured', 36);
 const newest = await topGames(q, 'new', 18);
@@ -54,13 +53,15 @@ const trendingIds = ids(trendingRaw);
 
 // Static detail pages: the best-ranked games, plus everything already on the homepage.
 const N = Math.max(0, Math.min(15_000, Number(values.games)));
-const slugRows = await q.all<{ slug: string }>(`SELECT slug FROM games WHERE status = 'published' ORDER BY rank_score DESC, id DESC LIMIT ?`, [N]);
-const wanted = new Set(slugRows.map((r) => r.slug));
-for (const g of [...featured, ...newest]) wanted.add(g.slug);
-const details: GameDetail[] = [];
-for (const slug of wanted) {
-  const r = await getGame(q, slug);
-  if (r.kind === 'ok') details.push(r.game);
+const idRows = await q.all<{ id: number }>(`SELECT id FROM games WHERE status = 'published' ORDER BY rank_score DESC, id DESC LIMIT ?`, [N]);
+const wanted = [...new Set([...idRows.map((r) => r.id), ...featured.map((g) => g.id), ...newest.map((g) => g.id)])];
+const details: GameDetail[] = await getGamesBatch(q, wanted);
+// Related games for static pages: same primary category (its top list), never the game itself, rotated by id.
+for (const d of details) {
+  const pool = (d.primaryCategory ? categoryPages[d.primaryCategory.slug] : featured) ?? featured;
+  const others = pool.filter((g) => g.id !== d.id);
+  const start = others.length ? d.id % others.length : 0;
+  d.related = [...others.slice(start), ...others.slice(0, start)].slice(0, 12);
 }
 
 mkdirSync(values.out!, { recursive: true });
@@ -68,7 +69,7 @@ const site = {
   generatedAt: new Date().toISOString(),
   dataVersion: dataVersion ?? '0',
   published,
-  maxDirSeq: Number(maxSeqRaw ?? maxSeq) || maxSeq,
+  maxDirSeq: Number(maxSeqRaw ?? 0),
   categories,
   home: { featured, newest, sections, hasPopular: !!popularIds?.length, hasTrending: !!trendingIds?.length },
   categoryPages,

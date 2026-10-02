@@ -64,10 +64,10 @@ export class SqliteDb implements SqlDb {
 export interface D1HttpConfig {
   accountId: string;
   databaseId: string;
-  apiToken?: string;
-  email?: string;
-  globalKey?: string;
-  fetchImpl?: typeof fetch;
+  apiToken?: string | undefined;
+  email?: string | undefined;
+  globalKey?: string | undefined;
+  fetchImpl?: typeof fetch | undefined;
 }
 
 export class D1HttpDb implements SqlDb {

@@ -7,7 +7,7 @@ import { cardHtml, esc, type ClientCard } from './cards';
 
 const bar = document.querySelector<HTMLElement>('[data-filters]');
 const form = document.querySelector<HTMLFormElement>('[data-filter-form]');
-const grid = document.getElementById('game-grid');
+const gridEl = document.getElementById('game-grid');
 const pager = document.getElementById('game-pager');
 
 const KEYS = ['sort', 'device', 'players', 'mode', 'style', 'controls', 'page'] as const;
@@ -19,7 +19,8 @@ const LABELS: Record<string, string> = {
   'controls:keyboard': 'Keyboard', 'controls:mouse': 'Mouse', 'controls:touch': 'Touch',
 };
 
-if (bar && form && grid) {
+if (bar && form && gridEl) {
+  const grid = gridEl;
   const category = bar.dataset.category ?? '';
   const total = Number(bar.dataset.total ?? '0');
   const originalGrid = grid.innerHTML;
