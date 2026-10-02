@@ -39,6 +39,15 @@ const ld = [
           <Hero total={total} picks={snapshot.home.featured.slice(0, 24)} />
           <StatCards games={total} categories={live.length} />
         </div>
+        <nav class="quickrow" aria-label="Quick filters">
+          <a class="qchip" href="/2-player-games/"><span aria-hidden="true">👥</span>2 Players</a>
+          <a class="qchip" href="/games/#device=mobile"><span aria-hidden="true">📱</span>Works on mobile</a>
+          <a class="qchip" href="/games/#controls=touch"><span aria-hidden="true">👆</span>Touch</a>
+          <a class="qchip" href="/games/#controls=mouse"><span aria-hidden="true">🖱️</span>Mouse</a>
+          <a class="qchip" href="/games/#style=3d"><span aria-hidden="true">🧊</span>3D</a>
+          <a class="qchip" href="/games/#style=pixel"><span aria-hidden="true">👾</span>Pixel art</a>
+          <a class="qchip" href="/new-games/"><span aria-hidden="true">🆕</span>New</a>
+        </nav>
 
         <section class="section" id="recent-section" hidden aria-labelledby="recent-h">
           <div class="section-head"><h2 id="recent-h"><img src={uiIcon('clock')} alt="" width="30" height="30" />Continue Playing</h2><a href="/recently-played/">View all <Icon name="play" size={12} /></a></div>
@@ -47,7 +56,7 @@ const ld = [
 
         <section class="section" aria-labelledby="featured-h">
           <div class="section-head"><h2 id="featured-h"><img src={uiIcon('popular')} alt="" width="30" height="30" />{snapshot.home.hasTrending ? 'Trending Now' : 'Featured Games'}</h2><a href={snapshot.home.hasTrending ? '/trending-games/' : '/games/'}>View all</a></div>
-          <GameGrid games={snapshot.home.featured.slice(0, 12)} eagerCount={6} label="Featured games" />
+          <GameGrid games={snapshot.home.featured.slice(0, 12)} eagerCount={4} label="Featured games" />
         </section>
 
         <section class="section" aria-labelledby="new-h">

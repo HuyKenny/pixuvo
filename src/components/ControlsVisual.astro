@@ -4,10 +4,11 @@ interface Props { rows: ControlRow[] }
 const { rows } = Astro.props;
 const isArrows = (k: string[]) => k.join('') === '↑←↓→';
 const isWasd = (k: string[]) => k.join('') === 'WASD';
+const keysOnly = rows.length > 0 && rows.every((r) => r.device === 'keys');
 ---
 <ul class="controls">
   {rows.map((r) => (
-    <li class="control-row">
+    <li class="control-row" data-device={r.device}>
       <span class="control-input" aria-hidden="true">
         {r.device === 'keys' && (isArrows(r.keys) || isWasd(r.keys)) ? (
           <span class="keypad">
@@ -29,3 +30,4 @@ const isWasd = (k: string[]) => k.join('') === 'WASD';
   ))}
 </ul>
 <p class="note">From the game's instructions.</p>
+{keysOnly && <p class="kb-note">⌨️ This game may need a keyboard — it might not work on a phone.</p>}

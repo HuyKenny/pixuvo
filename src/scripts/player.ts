@@ -136,21 +136,56 @@ if (stage && data) {
   });
 
   // Fullscreen, with an "expanded" fallback where the API is missing (iPhone Safari).
-  const exitExpanded = () => document.body.classList.remove('expanded-mode');
+  // Landscape games also try to lock landscape (Android Chrome allows it only in fullscreen).
+  const scr = screen as Screen & { orientation?: ScreenOrientation & { lock?: (o: string) => Promise<void> } };
+  const setExpanded = (on: boolean) => {
+    document.body.classList.toggle('expanded-mode', on);
+    document.documentElement.classList.toggle('no-scroll', on);
+  };
+  const exitExpanded = () => setExpanded(false);
   document.querySelector('[data-fullscreen]')?.addEventListener('click', async () => {
     const el = stage as HTMLElement & { webkitRequestFullscreen?: () => Promise<void> };
     try {
       if (el.requestFullscreen) await el.requestFullscreen({ navigationUI: 'hide' });
       else if (el.webkitRequestFullscreen) await el.webkitRequestFullscreen();
       else throw new Error('no fullscreen');
+      if (!data.portrait) await scr.orientation?.lock?.('landscape').catch(() => {});
     } catch {
-      document.body.classList.add('expanded-mode');
+      setExpanded(true);
     }
+  });
+  document.addEventListener('fullscreenchange', () => {
+    document.body.classList.toggle('is-fullscreen', !!document.fullscreenElement);
+    if (!document.fullscreenElement) scr.orientation?.unlock?.();
   });
   document.querySelector('[data-exit-expanded]')?.addEventListener('click', exitExpanded);
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') exitExpanded();
   });
+
+  // "Turn your phone" hint: landscape game, touch phone held upright. Dismissal is remembered.
+  const hint = document.querySelector<HTMLElement>('[data-rotate-hint]');
+  if (hint && !data.portrait) {
+    const portraitPhone = matchMedia('(orientation: portrait) and (max-width: 699px) and (pointer: coarse)');
+    let dismissed = false;
+    try {
+      dismissed = localStorage.getItem('pixuvo:rotate-hint') === 'off';
+    } catch {
+      /* ignore */
+    }
+    const sync = () => (hint.hidden = dismissed || !portraitPhone.matches);
+    portraitPhone.addEventListener('change', sync);
+    hint.querySelector('[data-rotate-close]')?.addEventListener('click', () => {
+      dismissed = true;
+      try {
+        localStorage.setItem('pixuvo:rotate-hint', 'off');
+      } catch {
+        /* ignore */
+      }
+      sync();
+    });
+    sync();
+  }
 
   // Share
   document.querySelector('[data-share]')?.addEventListener('click', async () => {

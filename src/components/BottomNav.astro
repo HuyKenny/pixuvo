@@ -1,0 +1,31 @@
+---
+/** Phone tab bar (hidden ≥ 900px). Icons + one word each, 56px tall plus the safe area. */
+import { uiIcon } from '../lib/category-icons';
+import Icon from './Icon.astro';
+const path = Astro.url.pathname;
+const tabs = [
+  { href: '/', label: 'Home', icon: uiIcon('controller') },
+  { href: '/categories/', label: 'Categories', icon: uiIcon('grid') },
+  { href: '/search/', label: 'Search', icon: '', search: true },
+  { href: '/favorites/', label: 'Favorites', icon: uiIcon('heart') },
+  { href: '/recently-played/', label: 'Recent', icon: uiIcon('clock') },
+];
+---
+<nav class="bottom-nav" aria-label="Quick menu">
+  {tabs.map((t) => (
+    <a href={t.href} aria-current={path === t.href ? 'page' : undefined} data-focus-search={t.search ? '' : undefined}>
+      {t.icon ? <img src={t.icon} alt="" width="26" height="26" /> : <span class="bn-ico"><Icon name="search" size={24} /></span>}
+      <span>{t.label}</span>
+    </a>
+  ))}
+</nav>
+<script>
+  // "Search" jumps to the search field in the header instead of loading a page.
+  document.querySelector('[data-focus-search]')?.addEventListener('click', (e) => {
+    const input = document.getElementById('site-search') as HTMLInputElement | null;
+    if (!input) return;
+    e.preventDefault();
+    scrollTo({ top: 0, behavior: 'smooth' });
+    input.focus();
+  });
+</script>

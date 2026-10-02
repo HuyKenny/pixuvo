@@ -58,7 +58,7 @@ const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait,
                 : <span class="muted">Not rated yet</span>}
             </p>
           </div>
-          <div class="game-tags">{g.categories.slice(0, 3).map((c, i) => <Tag href={categoryPath(c.slug)} tone={tones[i % tones.length]!}>{c.name}</Tag>)}</div>
+          <div class="game-tags">{g.categories.slice(0, 3).map((c, i) => <Tag href={categoryPath(c.slug)} tone={tones[i % tones.length]!}>{c.name}</Tag>)}{g.mobile && <Tag tone="green">📱 Works on mobile</Tag>}</div>
         </header>
 
         <div class:list={['stage', { portrait }]} id="stage" data-game={JSON.stringify(data)}>
@@ -72,10 +72,17 @@ const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait,
             </div>
           </div>
         </div>
-        <button type="button" class="btn btn-primary exit-expanded" data-exit-expanded><Icon name="x" size={18} /> Exit</button>
+        <button type="button" class="btn btn-primary exit-expanded" data-exit-expanded><Icon name="x" size={22} /> Exit</button>
+        {!portrait && (
+          <p class="rotate-hint" data-rotate-hint hidden>
+            <span class="rotate-ico" aria-hidden="true">📱↻</span>
+            <span>Turn your phone sideways or tap <strong>Fullscreen</strong> for a bigger game.</span>
+            <button type="button" class="icon-btn" data-rotate-close aria-label="Hide this tip"><Icon name="x" size={18} /></button>
+          </p>
+        )}
         <div class="game-actions" aria-label="Game actions">
-          <button type="button" class="action-btn" data-fav={g.id} data-slug={g.slug} data-title={g.title} data-thumb={g.thumb} aria-pressed="false" data-fav-label="static"><Icon name="heart" size={20} /> <span>Add to Favorites</span></button>
-          <button type="button" class="action-btn" data-fullscreen><Icon name="maximize" size={20} /> <span>Fullscreen</span></button>
+          <button type="button" class="action-btn action-main" data-fullscreen><Icon name="maximize" size={20} /> <span>Fullscreen</span></button>
+          <button type="button" class="action-btn" data-fav={g.id} data-slug={g.slug} data-title={g.title} data-thumb={g.thumb} aria-pressed="false" data-fav-label="static"><Icon name="heart" size={20} /> <span>Favorite</span></button>
           <button type="button" class="action-btn" data-share><Icon name="share" size={20} /> <span>Share</span></button>
           <button type="button" class="action-btn" data-report-open><Icon name="flag" size={20} /> <span>Report Issue</span></button>
         </div>

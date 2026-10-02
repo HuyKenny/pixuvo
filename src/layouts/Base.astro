@@ -3,6 +3,7 @@ import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import ConsentBanner from '../components/ConsentBanner.astro';
+import BottomNav from '../components/BottomNav.astro';
 import { SITE, canonical as abs } from '../lib/site';
 
 interface Props {
@@ -29,7 +30,7 @@ const canonicalUrl = path ? abs(path) : null;
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <meta name="robots" content={robots} />
@@ -60,6 +61,7 @@ const canonicalUrl = path ? abs(path) : null;
       <slot />
     </main>
     <Footer />
+    <BottomNav />
     <ConsentBanner />
     <script>
       import '../scripts/favorites';

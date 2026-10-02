@@ -24,3 +24,6 @@ const og = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" vi
 </svg>`;
 await sharp(Buffer.from(og)).png().toFile('public/og-default.png');
 console.log('icons written');
+// Maskable app icon: full-bleed brand colour, the mark inside the 80 % safe zone.
+const mark = await sharp(svg, { density: 1200 }).resize(360, 360).png().toBuffer();
+await sharp({ create: { width: 512, height: 512, channels: 4, background: '#6a35f2' } }).composite([{ input: mark, gravity: 'center' }]).png().toFile('public/icon-maskable-512.png');
