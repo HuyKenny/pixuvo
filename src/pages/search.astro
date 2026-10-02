@@ -25,7 +25,7 @@ const href = (n: number) => `/search/?q=${encodeURIComponent(raw)}${n > 1 ? `&pa
       </form>
     )}
     {raw && res === null && <div class="empty-state"><strong>Please type at least 2 letters or numbers</strong>Then press Enter.</div>}
-    {res && res.items.length > 0 && <GameGrid games={res.items} label="Search results" />}
+    {res && res.items.length > 0 && <GameGrid games={res.items} eagerCount={4} label="Search results" />}
     {res && res.items.length === 0 && <div class="empty-state"><strong>No games match “{raw}”</strong>Check the spelling, try a shorter word, or <a href="/categories/">browse categories</a>.</div>}
     {res && <Pagination page={page} pages={pages} href={href} label="Search result pages" />}
   </div>

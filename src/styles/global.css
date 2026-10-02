@@ -3038,3 +3038,15 @@ body.is-fullscreen .bottom-nav {
     background: var(--surface);
   }
 }
+
+/* a11y polish */
+.kb-note {
+  color: #8a3a00;
+}
+.consent p a,
+.lead a,
+.note a {
+  display: inline-block;
+  min-height: 24px;
+  line-height: 24px;
+}
