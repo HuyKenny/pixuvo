@@ -24,6 +24,8 @@ const short = g.description ? truncate(g.description.replace(/\s+/g, ' ').trim()
 // Partner blurbs can be a few words ("A one-touch race, fly, crash"): pad them to a useful snippet.
 const desc = short.length >= 70 ? short : short ? truncate(`${short.replace(/[.!]?$/, '.')} ${tail}`, 158) : `${tail} Free online game, no sign-up.`;
 const portrait = g.orientation === 'portrait' || (!!g.width && !!g.height && g.height > g.width * 1.1);
+// How the stage is sized on phones: portrait = full screen height, any = tall adaptive frame, landscape = 16:9.
+const fit = portrait ? 'portrait' : g.orientation === 'any' ? 'any' : 'landscape';
 const votes = g.ratingUp + g.ratingDown;
 const liked = votes >= 5 ? Math.round((g.ratingUp / votes) * 100) : null; // shown only with ≥ 5 real votes
 const players = g.players ? (g.players >= 2 ? `${g.players}+ players` : '1 player') : null;
@@ -47,11 +49,11 @@ const ld = [{
 // The game starts on page open: warm up the partner's frame host.
 const FRAME_HOST: Record<string, string> = { GameMonetize: 'https://html5.gamemonetize.co', GamePix: 'https://play.gamepix.com', Playgama: 'https://playgama.com' };
 const frameHost = g.providerName ? FRAME_HOST[g.providerName] : undefined;
-const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait, ...(cat ? { cat: cat.slug } : {}) };
+const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait, fit, ...(cat ? { cat: cat.slug } : {}) };
 ---
 <Base title={`${g.title} – Play Free Online`} description={desc} path={path} ogImage={g.thumb} jsonLd={ld}>
   {frameHost && <link slot="head" rel="preconnect" href={frameHost} />}
-  <div class="wrap">
+  <div class="wrap game-page">
     <Breadcrumbs items={crumbs} />
     <div class="game-layout">
       <div class="game-main">
@@ -68,7 +70,7 @@ const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait,
           <div class="game-tags">{g.categories.slice(0, 3).map((c, i) => <Tag href={categoryPath(c.slug)} tone={tones[i % tones.length]!}>{c.name}</Tag>)}{g.mobile && <Tag tone="green">📱 Works on mobile</Tag>}</div>
         </header>
 
-        <div class:list={['stage', { portrait }]} id="stage" data-game={JSON.stringify(data)}>
+        <div class:list={['stage', { portrait }]} id="stage" data-fit={fit} data-game={JSON.stringify(data)}>
           <div class="stage-poster" data-poster>
             <img class="bg" src={g.thumb} alt="" width="320" height="240" referrerpolicy="no-referrer" />
             <div class="inner">
@@ -80,7 +82,7 @@ const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait,
           </div>
         </div>
         <button type="button" class="btn btn-primary exit-expanded" data-exit-expanded><Icon name="x" size={22} /> Exit</button>
-        {!portrait && (
+        {fit === 'landscape' && (
           <p class="rotate-hint" data-rotate-hint hidden>
             <span class="rotate-ico" aria-hidden="true">📱↻</span>
             <span>Turn your phone sideways or tap <strong>Fullscreen</strong> for a bigger game.</span>

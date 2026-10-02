@@ -17,6 +17,7 @@ interface GameData {
   title: string;
   thumb: string;
   portrait: boolean;
+  fit?: 'portrait' | 'landscape' | 'any';
   cat?: string;
 }
 interface PlayResponse {
@@ -99,8 +100,24 @@ if (stage && data) {
     f.focus({ preventScroll: true });
     // We cannot see inside a cross-origin game; offer help instead of a fake progress bar.
     const help = document.querySelector<HTMLElement>('[data-share-status]');
-    if (help) help.innerHTML = 'Game not starting? <button type="button" class="link-btn" data-retry>Reload the game</button> or <button type="button" class="link-btn" data-report-open>report the problem</button>.';
+    if (help) help.innerHTML = '<span class="help-row"><span>Game not starting?</span><button type="button" class="mini-btn" data-retry>↻ Reload</button><button type="button" class="mini-btn" data-report-open>⚑ Report</button></span>';
+    fitToScreen();
   }
+
+  // Phones: bring the whole game into view once (only if the visitor has not scrolled yet).
+  const phone = matchMedia('(max-width: 699.98px), (orientation: landscape) and (max-height: 500px)');
+  let userScrolled = false;
+  for (const ev of ['touchmove', 'wheel', 'keydown'] as const) addEventListener(ev, () => (userScrolled = true), { once: true, passive: true });
+  function fitToScreen() {
+    if (!phone.matches || userScrolled) return;
+    const header = matchMedia('(orientation: landscape) and (max-height: 500px)').matches ? 0 : (document.querySelector('.site-header')?.getBoundingClientRect().height ?? 0);
+    const top = stage!.getBoundingClientRect().top + scrollY - header;
+    scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+  }
+  matchMedia('(orientation: landscape)').addEventListener('change', () => {
+    userScrolled = false;
+    setTimeout(fitToScreen, 300);
+  });
 
   function unmount() {
     if (iframe) {
@@ -165,7 +182,7 @@ if (stage && data) {
 
   // "Turn your phone" hint: landscape game, touch phone held upright. Dismissal is remembered.
   const hint = document.querySelector<HTMLElement>('[data-rotate-hint]');
-  if (hint && !data.portrait) {
+  if (hint && (data.fit ?? (data.portrait ? 'portrait' : 'landscape')) === 'landscape') {
     const portraitPhone = matchMedia('(orientation: portrait) and (max-width: 699px) and (pointer: coarse)');
     let dismissed = false;
     try {

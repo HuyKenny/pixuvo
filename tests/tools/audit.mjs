@@ -49,3 +49,20 @@ for (const [s, l, loc] of bad) problems.push(`link ${s} ${l}${loc ? ` -> ${loc}`
 times.sort((a, b) => a - b);
 console.log(`pages: median ${times[times.length >> 1]} ms, p95 ${times[Math.floor(times.length * 0.95)]} ms; internal links checked ${linkList.length}`);
 console.log(problems.length ? `PROBLEMS (${problems.length}):\n` + problems.slice(0, 80).join('\n') : 'no problems');
+
+// Mobile pass: pages must never be wider than a phone screen (the browser would zoom the page out).
+if (!process.env.NO_MOBILE) {
+  const { chromium, devices } = await import('@playwright/test');
+  const b = await chromium.launch({ args: ['--disable-ipv6'] });
+  const ctx = await b.newContext({ ...devices['Pixel 7'] });
+  await ctx.route(/gamemonetize\.co|play\.gamepix\.com|playgama\.com\/export/, (r) => r.abort()); // layout only, no partner games
+  const p = await ctx.newPage();
+  const wide = [];
+  for (const u of [...other, ...sample]) {
+    await p.goto(u, { waitUntil: 'domcontentloaded' }).catch(() => {});
+    const w = await p.evaluate(() => document.documentElement.scrollWidth - innerWidth).catch(() => 0);
+    if (w > 1) wide.push(`+${w}px ${u}`);
+  }
+  await b.close();
+  console.log(wide.length ? `MOBILE OVERFLOW (${wide.length}):\n${wide.slice(0, 40).join('\n')}` : `mobile: no page wider than the screen (${other.length + sample.length} pages)`);
+}

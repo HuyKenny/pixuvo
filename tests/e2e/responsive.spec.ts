@@ -99,3 +99,33 @@ test('phones: no filter column, sheet instead; desktop: filter column on the lef
   const grid = (await page.locator('#game-grid').boundingBox())!;
   expect(side.x).toBeLessThan(grid.x);
 });
+
+test('phones: game pages never get wider than the screen; the game fits the screen', async ({ page, request }) => {
+  const html = await (await request.get('/games/')).text();
+  const slugs = [...new Set([...html.matchAll(/href="\/games\/([a-z0-9-]+)\/"/g)].map((m) => m[1]))].slice(0, 12);
+  await page.setViewportSize({ width: 360, height: 780 });
+  let checkedPortrait = false;
+  for (const s of slugs) {
+    await page.goto(`/games/${s}/`);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth), s).toBeLessThanOrEqual(360);
+    const fit = await page.locator('#stage').getAttribute('data-fit');
+    if (fit === 'portrait' || fit === 'any') {
+      checkedPortrait = true;
+      const stage = (await page.locator('#stage').boundingBox())!;
+      // After the automatic scroll the whole stage is above the tab bar.
+      await expect.poll(async () => page.evaluate(() => document.getElementById('stage')!.getBoundingClientRect().bottom)).toBeLessThanOrEqual(780 - 55);
+      expect(stage.height).toBeGreaterThan(400);
+    }
+  }
+  test.info().annotations.push({ type: 'portrait-checked', description: String(checkedPortrait) });
+});
+
+test('phone turned sideways: the game uses the whole screen height, no tab bar', async ({ page, request }) => {
+  const html = await (await request.get('/games/')).text();
+  const slug = /href="\/games\/([a-z0-9-]+)\/"/.exec(html)![1];
+  await page.setViewportSize({ width: 844, height: 390 });
+  await page.goto(`/games/${slug}/`);
+  const stage = (await page.locator('#stage').boundingBox())!;
+  expect(Math.abs(stage.height - 390)).toBeLessThan(4);
+  await expect(page.locator('.bottom-nav')).toBeHidden();
+});
