@@ -3527,3 +3527,6 @@ body.is-fullscreen .bottom-nav {
   .home-main > .sec-featured { order: 3; }
   .home-main > .moods { order: 4; }
 }
+/* AA contrast on the pastel mood tiles */
+.mood-orange { color: #8f3f05; }
+.mood-green { color: #136b30; }
