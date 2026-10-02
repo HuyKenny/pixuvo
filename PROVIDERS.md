@@ -42,10 +42,10 @@ State on 2026-10-02:
 ## GamePix
 
 * **Docs used:** https://partners.gamepix.com/publishers and the publisher dashboard feed URL, checked 2026-10-02.
-* **Feed:** `https://feeds.gamepix.com/v2/json?sid=M7X08&pagination=96&page=N` (JSON Feed 1.1, `next_url` paging,
+* **Feed:** `https://feeds.gamepix.com/v2/json?sid=9O09X&pagination=96&page=N` (JSON Feed 1.1, `next_url` paging,
   145 pages = 13 893 games). Fields: `id, title, namespace, description, category, orientation, quality_score,
   width, height, date_published, date_modified, banner_image, image, url`.
-* **Attribution:** publisher `sid=M7X08` is part of every embed URL (`https://play.gamepix.com/<ns>/embed?sid=M7X08`).
+* **Attribution:** publisher `sid=9O09X` is part of every embed URL (`https://play.gamepix.com/<ns>/embed?sid=9O09X`).
   The importer rejects any item or `next_url` without our sid.
 * **Consent:** live test 2026-10-02 — GamePix shows its own consent notice inside the frame before gameplay/ads.
 * **ads.txt:** the GamePix snippet reached us without line breaks and cannot be split without guessing

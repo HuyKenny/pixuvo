@@ -10,7 +10,7 @@ export const ADS_TXT_BLOCKS: Array<{ source: string; lines: string[] }> = [
     source: 'GameMonetize.com',
     lines: ['google.com, pub-5519830896693885, DIRECT, f08c47fec0942fa0', 'google.com, pub-4764333688337558, DIRECT, f08c47fec0942fa0'],
   },
-  { source: 'GamePix (property M7X08)', lines: GAMEPIX_ADS_TXT.split('\n') },
+  { source: 'GamePix (property 9O09X)', lines: GAMEPIX_ADS_TXT.split('\n') },
 ];
 
 // domain, publisher id, relationship[, cert id][ # comment]  — comment lines and blank lines pass through.
