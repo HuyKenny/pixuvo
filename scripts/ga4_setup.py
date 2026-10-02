@@ -32,7 +32,7 @@ def token():
     key = json.load(open(os.path.expanduser('~/.config/gsc/service-account.json')))
     now = int(time.time())
     enc = lambda d: base64.urlsafe_b64encode(json.dumps(d).encode()).rstrip(b'=')
-    head, claim = enc({'alg': 'RS256', 'typ': 'JWT'}), enc({'iss': key['client_email'], 'scope': 'https://www.googleapis.com/auth/analytics.edit', 'aud': 'https://oauth2.googleapis.com/token', 'iat': now, 'exp': now + 3600})
+    head, claim = enc({'alg': 'RS256', 'typ': 'JWT'}), enc({'iss': key['client_email'], 'scope': 'https://www.googleapis.com/auth/analytics.edit https://www.googleapis.com/auth/analytics.readonly', 'aud': 'https://oauth2.googleapis.com/token', 'iat': now, 'exp': now + 3600})
     pk = serialization.load_pem_private_key(key['private_key'].encode(), None)
     sig = base64.urlsafe_b64encode(pk.sign(head + b'.' + claim, padding.PKCS1v15(), hashes.SHA256())).rstrip(b'=')
     body = urllib.parse.urlencode({'grant_type': 'urn:ietf:params:oauth:grant-type:jwt-bearer', 'assertion': (head + b'.' + claim + b'.' + sig).decode()}).encode()
@@ -50,31 +50,36 @@ def call(method, path, body=None):
         raise SystemExit(f'{method} {path}: HTTP {e.code} {json.load(e).get("error", {}).get("message")}')
 
 
-check = '--check' in sys.argv
-dims = {d['parameterName'] for d in call('GET', f'{PROPERTY}/customDimensions').get('customDimensions', [])}
-mets = {m['parameterName'] for m in call('GET', f'{PROPERTY}/customMetrics').get('customMetrics', [])}
-keys = {k['eventName'] for k in call('GET', f'{PROPERTY}/keyEvents').get('keyEvents', [])}
-for p, name, desc in DIMENSIONS:
-    if p in dims:
-        continue
-    print('dimension', p, '(missing)' if check else '→ created')
-    if not check:
-        call('POST', f'{PROPERTY}/customDimensions', {'parameterName': p, 'displayName': name, 'description': desc, 'scope': 'EVENT'})
-for p, name, desc, unit in METRICS:
-    if p in mets:
-        continue
-    print('metric', p, '(missing)' if check else '→ created')
-    if not check:
-        call('POST', f'{PROPERTY}/customMetrics', {'parameterName': p, 'displayName': name, 'description': desc, 'scope': 'EVENT', 'measurementUnit': unit})
-for e in KEY_EVENTS:
-    if e in keys:
-        continue
-    print('key event', e, '(missing)' if check else '→ created')
-    if not check:
-        call('POST', f'{PROPERTY}/keyEvents', {'eventName': e, 'countingMethod': 'ONCE_PER_EVENT'})
-ret = call('GET', f'{PROPERTY}/dataRetentionSettings')
-if ret.get('eventDataRetention') != 'TWO_MONTHS' or ret.get('userDataRetention') != 'TWO_MONTHS':
-    print('retention', ret.get('eventDataRetention'), ret.get('userDataRetention'), '(should be 2 months)' if check else '→ 2 months')
-    if not check:
-        call('PATCH', f'{PROPERTY}/dataRetentionSettings?updateMask=eventDataRetention,userDataRetention', {'eventDataRetention': 'TWO_MONTHS', 'userDataRetention': 'TWO_MONTHS', 'resetUserDataOnNewActivity': True})
-print('done' if not check else 'check finished')
+def main():
+    check = '--check' in sys.argv
+    dims = {d['parameterName'] for d in call('GET', f'{PROPERTY}/customDimensions').get('customDimensions', [])}
+    mets = {m['parameterName'] for m in call('GET', f'{PROPERTY}/customMetrics').get('customMetrics', [])}
+    keys = {k['eventName'] for k in call('GET', f'{PROPERTY}/keyEvents').get('keyEvents', [])}
+    for p, name, desc in DIMENSIONS:
+        if p in dims:
+            continue
+        print('dimension', p, '(missing)' if check else '→ created')
+        if not check:
+            call('POST', f'{PROPERTY}/customDimensions', {'parameterName': p, 'displayName': name, 'description': desc, 'scope': 'EVENT'})
+    for p, name, desc, unit in METRICS:
+        if p in mets:
+            continue
+        print('metric', p, '(missing)' if check else '→ created')
+        if not check:
+            call('POST', f'{PROPERTY}/customMetrics', {'parameterName': p, 'displayName': name, 'description': desc, 'scope': 'EVENT', 'measurementUnit': unit})
+    for e in KEY_EVENTS:
+        if e in keys:
+            continue
+        print('key event', e, '(missing)' if check else '→ created')
+        if not check:
+            call('POST', f'{PROPERTY}/keyEvents', {'eventName': e, 'countingMethod': 'ONCE_PER_EVENT'})
+    ret = call('GET', f'{PROPERTY}/dataRetentionSettings')
+    if ret.get('eventDataRetention') != 'TWO_MONTHS' or ret.get('userDataRetention') != 'TWO_MONTHS':
+        print('retention', ret.get('eventDataRetention'), ret.get('userDataRetention'), '(should be 2 months)' if check else '→ 2 months')
+        if not check:
+            call('PATCH', f'{PROPERTY}/dataRetentionSettings?updateMask=eventDataRetention,userDataRetention', {'eventDataRetention': 'TWO_MONTHS', 'userDataRetention': 'TWO_MONTHS', 'resetUserDataOnNewActivity': True})
+    print('done' if not check else 'check finished')
+
+
+if __name__ == '__main__':
+    main()
