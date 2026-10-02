@@ -45,8 +45,11 @@ State: 2026-10-02. ✅ done and verified · ⚠️ done with a known caveat · �
 - ✅ About, Contact, Privacy, Cookies, Terms, Copyright pages with the real operator: Ha Duy Huy, Bartáková 36,
   140 00 Praha, IČO 07876823, data box dxmsrdt, non-VAT payer, info@pixuvo.com.
 - ⚠️ Review the privacy policy wording (partner roles as independent controllers, retention) with a lawyer.
-- ✅ No own analytics or ads → the consent banner stays closed; "Privacy choices" shows the state. Optional scripts can
-  only load through `whenConsented()` (tested).
+- ✅ Google Analytics 4 `G-XESJS34X9Z` (2026-10-02) loads ONLY after "Analytics" consent (`src/scripts/analytics.ts`):
+  consent mode with ad signals denied, Google signals + ad personalisation off, `game_start` event; withdrawing consent
+  deletes `_ga` cookies. Verified live: reject → no request from pixuvo.com to Google (the GameMonetize frame loads its
+  own gtag — partner, see consent note above); accept → page_view + game_start. No own ads.
+- ⛔ Owner, in the GA4 admin: Data retention → 2 months; keep Google signals and ads links off (children's site).
 - ⛔ Before showing own ads: approved ad network + its ads.txt lines + a certified CMP where required.
 
 ## Not in V1 (by design)
