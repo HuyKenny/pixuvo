@@ -1373,7 +1373,7 @@ body {
   font-family: var(--font-display);
   font-weight: 900;
   font-size: 26px;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.02em;
 }
 .header-search {
   max-width: 640px;
