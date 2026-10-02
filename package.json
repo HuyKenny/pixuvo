@@ -22,7 +22,8 @@
     "catalog:publish": "tsx scripts/publish.ts",
     "verify:free-tier": "tsx scripts/verify-free-tier.ts",
     "verify:launch": "tsx scripts/verify-launch.ts",
-    "deploy": "tsx scripts/deploy.ts"
+    "deploy": "tsx scripts/deploy.ts",
+    "test:e2e:setup": "tsx scripts/e2e-setup.ts"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^14.3.3",
@@ -40,6 +41,7 @@
     "dotenv": "^17.4.2",
     "eslint": "^10.11.0",
     "eslint-plugin-astro": "^3.2.1",
+    "sharp": "^0.35.5",
     "tailwindcss": "^4.3.3",
     "tsx": "^4.23.15",
     "typescript": "~6.0.3",

@@ -15,7 +15,7 @@ const rows = await q().all<{ id: string; name: string; website: string; catalog_
         <div class="row">
           <label class="field">Publish<select name="publish_status">{['approved', 'pending', 'awaiting_approval', 'rejected', 'disabled'].map((s) => <option selected={s === p.publish_status}>{s}</option>)}</select></label>
           <label class="field">Monetization<select name="monetize_status">{['approved', 'pending', 'not_approved', 'disabled'].map((s) => <option selected={s === p.monetize_status}>{s}</option>)}</select></label>
-          <label class="field">Consent<select name="consent_mode">{['partner_handles', 'blocked'].map((s) => <option selected={s === p.consent_mode}>{s}</option>)}</select></label>
+          <label class="field">Consent<select name="consent_mode">{['partner_handles', 'owner_accepted', 'blocked'].map((s) => <option selected={s === p.consent_mode}>{s}</option>)}</select></label>
         </div>
         <label class="field">Notes<textarea name="notes" rows="3">{p.notes}</textarea></label>
         <p class="note">Attribution config (non-secret): {p.attribution} · last verified {p.verified_at?.slice(0, 10) ?? 'never'}</p>

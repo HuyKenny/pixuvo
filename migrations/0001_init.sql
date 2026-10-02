@@ -11,7 +11,9 @@ CREATE TABLE providers (
   publish_status   TEXT NOT NULL DEFAULT 'pending' CHECK (publish_status IN ('approved','pending','awaiting_approval','rejected','disabled')),
   -- 3) permission to monetize + attribution in place
   monetize_status  TEXT NOT NULL DEFAULT 'pending' CHECK (monetize_status IN ('approved','pending','not_approved','disabled')),
-  consent_mode     TEXT NOT NULL DEFAULT 'blocked' CHECK (consent_mode IN ('partner_handles','blocked')),
+  -- partner_handles = partner shows its own consent flow (verified live)
+  -- owner_accepted  = no partner consent flow found; site owner explicitly decided to publish anyway
+  consent_mode     TEXT NOT NULL DEFAULT 'blocked' CHECK (consent_mode IN ('partner_handles','owner_accepted','blocked')),
   attribution      TEXT NOT NULL DEFAULT '{}',     -- JSON: non-secret attribution config (e.g. GamePix sid)
   notes            TEXT NOT NULL DEFAULT '',
   verified_at      TEXT,
@@ -277,10 +279,10 @@ INSERT INTO site_settings (key, value, updated_at) VALUES
   ('ads_enabled', 'false', '2026-10-02T00:00:00Z');
 
 INSERT INTO providers (id, name, website, catalog_status, publish_status, monetize_status, consent_mode, attribution, notes, updated_at) VALUES
-  ('gamemonetize', 'GameMonetize', 'https://gamemonetize.com', 'available', 'approved', 'pending', 'partner_handles', '{}',
-   'Publisher account registered by the site owner; feed https://gamemonetize.com/feed.php. Revenue is attributed by verified domain + ads.txt in the GameMonetize dashboard. Mark monetization approved after the dashboard "Verify" succeeds.', '2026-10-02T00:00:00Z'),
+  ('gamemonetize', 'GameMonetize', 'https://gamemonetize.com', 'available', 'approved', 'pending', 'owner_accepted', '{}',
+   'Publisher account registered by the site owner; feed https://gamemonetize.com/feed.php. Revenue is attributed by verified domain + ads.txt in the GameMonetize dashboard. Mark monetization approved after the dashboard "Verify" succeeds. CONSENT: live test 2026-10-02 from an EU IP showed Google IMA/doubleclick ad requests and Google Tag Manager inside the game frame with NO consent prompt. The site owner decided on 2026-10-02 to publish GameMonetize games anyway (see LAUNCH-CHECKLIST.md).', '2026-10-02T00:00:00Z'),
   ('gamepix', 'GamePix', 'https://www.gamepix.com', 'available', 'approved', 'pending', 'partner_handles', '{"sid":"M7X08"}',
-   'Publisher account registered by the site owner (sid M7X08). The sid is part of every embed URL. Mark monetization approved after ads.txt verification in the GamePix dashboard.', '2026-10-02T00:00:00Z'),
+   'Publisher account registered by the site owner (sid M7X08). The sid is part of every embed URL. Mark monetization approved after ads.txt verification in the GamePix dashboard. CONSENT: live test 2026-10-02 from an EU IP: GamePix shows its own consent notice inside the game frame before ads.', '2026-10-02T00:00:00Z'),
   ('playgama', 'Playgama', 'https://playgama.com', 'unknown', 'pending', 'pending', 'blocked', '{}',
    'Account registered; catalog only available as a manual JSON download so far and the clid is not configured. Disabled until both exist.', '2026-10-02T00:00:00Z'),
   ('gamedistribution', 'GameDistribution', 'https://gamedistribution.com', 'unknown', 'awaiting_approval', 'not_approved', 'blocked', '{}',

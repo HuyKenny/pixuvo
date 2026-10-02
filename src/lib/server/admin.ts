@@ -108,7 +108,7 @@ export async function setPrimarySource(db: D1Q, actor: string, gameId: number, s
 const PROVIDER_FIELDS = {
   publish_status: new Set(['approved', 'pending', 'awaiting_approval', 'rejected', 'disabled']),
   monetize_status: new Set(['approved', 'pending', 'not_approved', 'disabled']),
-  consent_mode: new Set(['partner_handles', 'blocked']),
+  consent_mode: new Set(['partner_handles', 'owner_accepted', 'blocked']),
 };
 export async function updateProvider(db: D1Q, actor: string, id: string, f: { publish_status: string; monetize_status: string; consent_mode: string; notes: string }): Promise<ActionResult> {
   if (!PROVIDER_FIELDS.publish_status.has(f.publish_status) || !PROVIDER_FIELDS.monetize_status.has(f.monetize_status) || !PROVIDER_FIELDS.consent_mode.has(f.consent_mode)) {

@@ -75,6 +75,8 @@ export const POST: APIRoute = async ({ request }) => {
   } catch {
     return error(500, 'This game is misconfigured. Please report it.');
   }
+  // e2e/test mode: never load real partner games (no ad impressions from tests).
+  if (env.ENVIRONMENT === 'test') embed = new URL(`/e2e-fixture/game/?id=${id}`, request.url);
   // One aggregated write per play click (no per-second tracking).
   const day = new Date().toISOString().slice(0, 10);
   await db.run(

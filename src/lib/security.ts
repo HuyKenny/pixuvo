@@ -2,13 +2,15 @@
 export const GAME_FRAME_HOSTS = ['https://html5.gamemonetize.co', 'https://html5.gamemonetize.com', 'https://play.gamepix.com'];
 export const IMAGE_HOSTS = ['https://img.gamemonetize.com', 'https://img.gamepix.com'];
 
+const TEST_MODE = (typeof process !== 'undefined' && process.env?.PUBLIC_TEST_MODE === '1') || import.meta.env?.PUBLIC_TEST_MODE === '1';
+
 export function csp(): string {
   return [
     "default-src 'self'",
     "script-src 'self' https://challenges.cloudflare.com",
     "style-src 'self' 'unsafe-inline'",
     `img-src 'self' data: ${IMAGE_HOSTS.join(' ')}`,
-    `frame-src ${GAME_FRAME_HOSTS.join(' ')} https://challenges.cloudflare.com`,
+    `frame-src ${TEST_MODE ? "'self' " : ''}${GAME_FRAME_HOSTS.join(' ')} https://challenges.cloudflare.com`,
     "connect-src 'self'",
     "font-src 'self'",
     "manifest-src 'self'",

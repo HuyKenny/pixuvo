@@ -31,7 +31,7 @@ export const gamemonetize: ProviderAdapter = {
       base.searchParams.set('page', String(page));
       const data = await ctx.fetchJson(base.toString());
       if (!Array.isArray(data)) throw new Error(`GameMonetize page ${page}: expected an array`);
-      const isLast = data.length < PAGE_SIZE;
+      const isLast = data.length < (Number(ctx.config.GAMEMONETIZE_PAGE_SIZE) || PAGE_SIZE);
       yield { page, items: data, isLast };
       if (isLast) return;
     }

@@ -32,6 +32,8 @@ export interface RunOptions {
   log?: (msg: string) => void;
   /** Ignore provider publish_status (technical import only). Never publishes. */
   technicalOnly?: boolean;
+  /** Override the adapter's minimum for a trustworthy complete feed (tests). */
+  minCompleteItems?: number;
 }
 
 export interface RunReport {
@@ -83,7 +85,7 @@ interface LightGame {
 
 /** Rough rows_written per statement kind, incl. indexes (calibrated against D1 meta in COSTS-AND-LIMITS.md). */
 const EST = { game: 5, source: 3, catRow: 4, tagRow: 2, tagNew: 2, fts: 6, update: 4 };
-const FLUSH_AT = 40;
+const FLUSH_AT = Number(process.env.IMPORT_FLUSH_AT ?? 40);
 
 export async function runImport(db: SqlDb, adapter: ProviderAdapter, opts: RunOptions): Promise<RunReport> {
   const log = opts.log ?? (() => {});
@@ -184,7 +186,8 @@ export async function runImport(db: SqlDb, adapter: ProviderAdapter, opts: RunOp
     if (!pending.length) return;
     if (!opts.dryRun) {
       const meta = await db.batch(pending);
-      rep.rowsWritten += meta.rows_written || 0;
+      // SQLite reports changed rows only (no index rows) — budget with the larger estimate there.
+      rep.rowsWritten += db.kind === 'sqlite' ? Math.max(meta.rows_written || 0, pendingEst) : meta.rows_written || 0;
       rep.rowsRead += meta.rows_read || 0;
     }
     pending = [];
@@ -232,7 +235,7 @@ export async function runImport(db: SqlDb, adapter: ProviderAdapter, opts: RunOp
       rep.status = opts.dryRun ? 'dry_run' : 'budget_stopped';
       rep.checkpoint = { page: lastPage };
     } else {
-      rep.completeFeed = reachedEnd && startPage === 1 && rep.itemsSeen - rep.itemsInvalid >= adapter.minCompleteItems;
+      rep.completeFeed = reachedEnd && startPage === 1 && rep.itemsSeen - rep.itemsInvalid >= (opts.minCompleteItems ?? adapter.minCompleteItems);
       if (rep.completeFeed) await detectMissing();
       else log(`${adapter.id}: feed not complete in this run — missing-detection skipped`);
     }

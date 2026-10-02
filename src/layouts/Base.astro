@@ -62,6 +62,10 @@ const canonicalUrl = path ? abs(path) : null;
     <ConsentBanner />
     <script>
       import '../scripts/favorites';
+      import { whenConsented } from '../scripts/consent';
+      // Optional analytics loads ONLY after consent (none configured in production today).
+      const src = import.meta.env.PUBLIC_ANALYTICS_SRC;
+      if (src) whenConsented('analytics', () => { const s = document.createElement('script'); s.src = src; s.defer = true; document.head.appendChild(s); });
     </script>
   </body>
 </html>

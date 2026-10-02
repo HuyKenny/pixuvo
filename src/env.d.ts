@@ -11,5 +11,6 @@ interface ImportMetaEnv {
   readonly PUBLIC_CONSENT_CATEGORIES?: string;
   readonly PUBLIC_ANALYTICS_SRC?: string;
   readonly PUBLIC_ADS_PROVIDER?: string;
+  readonly PUBLIC_TEST_MODE?: string;
 }
 declare const __BUILD_ID__: string;

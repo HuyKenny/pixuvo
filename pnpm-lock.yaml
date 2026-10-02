@@ -48,6 +48,9 @@ importers:
       eslint-plugin-astro:
         specifier: ^3.2.1
         version: 3.2.1(@typescript-eslint/parser@8.71.0(eslint@10.11.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(eslint@10.11.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript-eslint@8.71.0(eslint@10.11.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))
+      sharp:
+        specifier: ^0.35.5
+        version: 0.35.5(@types/node@22.20.4)
       tailwindcss:
         specifier: ^4.3.3
         version: 4.3.3
@@ -5780,7 +5783,6 @@ snapshots:
       '@img/sharp-win32-ia32': 0.35.5
       '@img/sharp-win32-x64': 0.35.5
       '@types/node': 22.20.4
-    optional: true
 
   shebang-command@2.0.0:
     dependencies:
