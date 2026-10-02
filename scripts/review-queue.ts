@@ -48,7 +48,11 @@ for (const c of cands) {
   const cross = !(c.pa ?? '').split(',').some((p) => (c.pb ?? '').split(',').includes(p));
   const sim = jaccard(shingles(c.da), shingles(c.db_));
   const merge = exact && (cross || sim >= 0.5);
-  if (dry) { merge ? merged++ : rejected++; continue; }
+  if (dry) {
+    if (merge) merged++;
+    else rejected++;
+    continue;
+  }
   if (merge) {
     // Keep the published one; if both are, keep the older (lower id).
     const [keep, dup] = c.sa === 'published' && c.sb !== 'published' ? [c.a, c.b] : c.sb === 'published' && c.sa !== 'published' ? [c.b, c.a] : [Math.min(c.a, c.b), Math.max(c.a, c.b)];
