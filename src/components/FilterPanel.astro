@@ -34,7 +34,7 @@ const { category, name, total, subs = [], links = [] } = Astro.props;
       Sort: <strong data-sort-label>Best</strong> <span aria-hidden="true">▾</span>
     </button>
     {subs.map((s) => (
-      <a class="qchip" href={categoryPath(s.slug)} data-quick="sub" data-value={s.slug} aria-pressed="false">
+      <a class="qchip" href={categoryPath(s.slug)} data-quick="sub" data-value={s.slug}>
         <img src={categoryIcon(s.slug)} alt="" width="26" height="26" loading="lazy" />{s.name}<small>{approxCount(s.count)}</small>
       </a>
     ))}

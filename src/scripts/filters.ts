@@ -36,7 +36,8 @@ const LABELS: Record<string, string> = {
   'mode:local': 'Same device', 'mode:online': 'Online', 'style:2d': '2D', 'style:3d': '3D', 'style:pixel': 'Pixel art',
   'controls:keyboard': 'Keyboard', 'controls:mouse': 'Mouse', 'controls:touch': 'Touch',
 };
-const nf = (n: number) => n.toLocaleString('en-US');
+const NF = new Intl.NumberFormat('en-US'); // one formatter: toLocaleString builds a new one per call
+const nf = (n: number) => NF.format(n);
 const syncFavs = () => (window as unknown as { pixuvoSyncFavs?: () => void }).pixuvoSyncFavs?.();
 
 const bar = document.querySelector<HTMLElement>('[data-filters]');
@@ -349,8 +350,20 @@ if (bar && form && gridEl) {
     })
     .catch(() => {})
     .finally(() => (bar.dataset.facets = 'ready'));
-  renderGroups();
+  // The sheet is off-screen until opened: build it when the browser is idle.
+  (window.requestIdleCallback ?? ((cb: () => void) => setTimeout(cb, 200)))(() => {
+    if (!groupsBox.childElementCount) renderGroups();
+  });
+  // Opened before the idle callback ran: build it now (pointerdown/keydown fire before the drawer's click handler).
+  for (const ev of ['pointerdown', 'keydown'] as const)
+    bar.querySelectorAll('[data-drawer-open="filter-drawer"]').forEach((b) => b.addEventListener(ev, () => {
+      if (!groupsBox.childElementCount) {
+        renderGroups();
+        syncUI(readHash());
+      }
+    }));
   setMore();
+  bar.querySelectorAll<HTMLElement>('a[data-quick]').forEach((a) => a.setAttribute('role', 'button'));
   if (showCount) showCount.textContent = `Show ${nf(total)} games`;
   if (location.hash.length > 1) apply().then(restore);
   else restore();
