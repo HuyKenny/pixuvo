@@ -15,7 +15,7 @@ State on 2026-10-02:
 | Provider | Catalog | Publish | Monetize | Consent | Games in D1 |
 |---|---|---|---|---|---|
 | GameMonetize | available | approved | **pending** (verify ads.txt in dashboard) | **owner_accepted** | 38 131 sources |
-| GamePix | available | approved | **pending** (verify ads.txt in dashboard) | partner_handles | 13 892 sources (2 961 merged into GameMonetize games) |
+| GamePix | available | approved | **approved** (property 9O09X, ads.txt VALID) | partner_handles | 13 892 sources (2 961 merged into GameMonetize games) |
 | Playgama | available | approved | **pending** (revenue in widgets.playgama.com) | partner_handles | 2 350 sources (2 081 own games, 269 attached) |
 | GameDistribution | unknown | **awaiting_approval** | not_approved | blocked | 0 — application rejected |
 | Famobi | unknown | disabled | not_approved | blocked | 0 — no account |
