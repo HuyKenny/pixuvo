@@ -8,7 +8,7 @@ export const prerender = false;
 
 const STATIC_PAGES: Array<[string, string]> = [
   ['/', ''], ['/games/', ''], ['/categories/', '2026-10-02'], ['/new-games/', ''],
-  ['/about/', '2026-10-02'], ['/contact/', '2026-10-02'], ['/privacy/', '2026-10-02'], ['/cookies/', '2026-10-02'], ['/terms/', '2026-10-02'], ['/copyright/', '2026-10-02'],
+  ['/parents/', '2026-10-02'], ['/about/', '2026-10-02'], ['/contact/', '2026-10-02'], ['/privacy/', '2026-10-02'], ['/cookies/', '2026-10-02'], ['/terms/', '2026-10-02'], ['/copyright/', '2026-10-02'],
 ];
 
 const url = (loc: string, lastmod: string | null) => `<url><loc>https://pixuvo.com${esc(loc)}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ''}</url>`;

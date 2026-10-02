@@ -9,3 +9,11 @@ export function rankBadge(i: number, plays?: number): string {
   const place = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : `#${i + 1}`;
   return plays && plays >= MIN_PLAYS_SHOWN ? `${place} · ${playsLabel(plays)} plays` : place;
 }
+
+/** At most one status badge per card, from real data only: 🔥 HOT (≥ 25 plays this week) beats NEW. */
+export const HOT_PLAYS = 25;
+export function cardBadge(g: { plays7d?: number; isNew?: boolean }): string | undefined {
+  if ((g.plays7d ?? 0) >= HOT_PLAYS) return '🔥 Hot';
+  if (g.isNew) return 'NEW';
+  return undefined;
+}

@@ -1,0 +1,17 @@
+---
+/** "What do you feel like?" — big intent tiles that open existing categories/filters, plus a random pick. */
+import type { GameCard } from '../lib/types';
+interface Props { picks: GameCard[] }
+const { picks } = Astro.props;
+const moods = [
+  { href: '/puzzle-games/#theme=brain', emoji: '🧠', label: 'Train your brain', tone: 'teal' },
+  { href: '/racing-games/', emoji: '🏎️', label: 'Speed & racing', tone: 'orange' },
+  { href: '/2-player-games/', emoji: '👥', label: 'Play with a friend', tone: 'blue' },
+  { href: '/action-games/', emoji: '💥', label: 'Action!', tone: 'pink' },
+  { href: '/casual-games/', emoji: '😌', label: 'Chill & relax', tone: 'green' },
+];
+---
+<nav class="moods" aria-label="What do you feel like playing?">
+  {moods.map((m) => <a class={`mood mood-${m.tone}`} href={m.href}><span class="mood-emoji" aria-hidden="true">{m.emoji}</span><span>{m.label}</span></a>)}
+  {picks[0] && <a class="mood mood-violet" href={`/games/${picks[0].slug}/`} data-random-game={JSON.stringify(picks.map((g) => g.slug))}><span class="mood-emoji" aria-hidden="true">🎲</span><span>Surprise me!</span></a>}
+</nav>

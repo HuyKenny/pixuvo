@@ -12,7 +12,7 @@ test.describe('navigation & pages', () => {
     await expect(page.locator('.catbar .catpill').first()).toBeVisible();
     const side = page.locator('.filterside a[href^="/games/#"]');
     expect(await side.count()).toBeGreaterThan(0);
-    const cta = page.locator('[data-random-game]');
+    const cta = page.locator('.btn-hero[data-random-game]');
     const href = await cta.getAttribute('href');
     expect(href).toMatch(/^\/games\/[a-z0-9-]+\/$/);
     await cta.click();
@@ -214,7 +214,7 @@ test.describe('game page & player', () => {
     await page.goto('/racing-games/');
     await page.locator('#game-grid a.card-link').first().click();
     await page.click('[data-vote="1"]');
-    await expect(page.locator('[data-rate-status]')).toContainText(/Thanks/);
+    await expect(page.locator('[data-rate-status]').first()).toContainText(/Thanks/);
     await expect(page.locator('[data-score]')).toContainText(/1 vote/);
     await page.click('.game-actions [data-report-open]');
     await page.selectOption('#report-dialog select[name=reason]', 'not_loading');
@@ -229,7 +229,7 @@ test.describe('game page & player', () => {
     let sawControls = false;
     for (const slug of slugs) {
       await page.goto(`/games/${slug}/`);
-      await expect(page.locator('.game-actions .action-btn')).toHaveCount(4);
+      await expect(page.locator('.game-actions .action-btn')).toHaveCount(6);
       // Game loaded — or, after many starts in one suite, the play rate limit shows our Play button again.
       await expect(page.locator('#stage iframe, #stage [data-play]:not([hidden])')).toHaveCount(1);
       const rating = await page.locator('.game-rating').innerText();
@@ -291,6 +291,29 @@ test.describe('admin & security', () => {
     expect((await request.get('/icons/cat/puzzle.webp')).headers()['cache-control']).toContain('max-age=604800');
     expect((await request.get('/data/facets.json')).headers()['cache-control']).toContain('max-age=300');
     expect((await request.get('/')).headers()['cache-control'] ?? '').not.toContain('max-age=604800');
+  });
+
+  test('parents page, random game, prefetch-only speculation rules, honest FAQ', async ({ page, request }) => {
+    const parents = await request.get('/parents/');
+    expect(parents.status()).toBe(200);
+    expect(await (await request.get('/')).text()).toContain('href="/parents/"');
+    const rnd = await request.get('/random/', { maxRedirects: 0 });
+    expect(rnd.status()).toBe(302);
+    expect(rnd.headers()['location']).toMatch(/^\/games\/[a-z0-9-]+\/$/);
+    const home = await (await request.get('/')).text();
+    const rules = JSON.parse(/<script type="speculationrules">([^<]+)<\/script>/.exec(home)![1]!);
+    expect(rules.prefetch).toBeTruthy();
+    expect(rules.prerender).toBeUndefined(); // a prerendered game page would start the game and count a play
+    const cat = await (await request.get('/racing-games/')).text();
+    const slug = /href="\/games\/([a-z0-9-]+)\/"/.exec(cat)![1];
+    await page.goto(`/games/${slug}/`);
+    const qs = await page.locator('.faq summary').allInnerTexts();
+    if (qs.length) {
+      expect(qs[0]).toMatch(/free\?$/);
+      // A phone question only appears when the publisher declared mobile support.
+      const mobileDeclared = await page.locator('.game-tags .tag', { hasText: 'Works on mobile' }).count();
+      expect(qs.some((q) => /phone/.test(q))).toBe(mobileDeclared > 0);
+    }
   });
 
   test('robots, sitemap and ads.txt', async ({ request }) => {

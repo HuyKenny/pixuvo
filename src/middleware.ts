@@ -14,7 +14,7 @@ import { SECURITY_HEADERS } from './lib/security';
 import { normTitle } from './lib/text';
 
 const READ_LIMITED = [/^\/api\/(games|suggest)\/$/, /^\/search\/$/];
-const NO_CACHE = [/^\/api\/(play|rate|report|cron|admin)\b/, /^\/admin\b/];
+const NO_CACHE = [/^\/api\/(play|rate|report|cron|admin)\b/, /^\/admin\b/, /^\/random\//];
 const PARAMS: Record<string, string[]> = {
   '/api/games/': ['cat', 'sub', 'theme', 'q', 'device', 'players', 'mode', 'style', 'controls', 'sort', 'page'],
   '/api/suggest/': ['q'],

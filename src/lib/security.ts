@@ -8,7 +8,7 @@ export function csp(): string {
   return [
     "default-src 'self'",
     // Google Analytics (consent-gated in src/scripts/analytics.ts).
-    "script-src 'self' https://challenges.cloudflare.com https://www.googletagmanager.com",
+    "script-src 'self' 'inline-speculation-rules' https://challenges.cloudflare.com https://www.googletagmanager.com",
     "style-src 'self' 'unsafe-inline'",
     `img-src 'self' data: ${IMAGE_HOSTS.join(' ')} https://www.googletagmanager.com https://*.google-analytics.com`,
     `frame-src ${TEST_MODE ? "'self' " : ''}${GAME_FRAME_HOSTS.join(' ')} https://challenges.cloudflare.com`,

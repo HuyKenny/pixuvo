@@ -103,7 +103,7 @@ if (stage && data) {
     f.focus({ preventScroll: true });
     // We cannot see inside a cross-origin game; offer help instead of a fake progress bar.
     const help = document.querySelector<HTMLElement>('[data-share-status]');
-    if (help) help.innerHTML = '<span class="help-row"><span>Game not starting?</span><button type="button" class="mini-btn" data-retry>↻ Reload</button><button type="button" class="mini-btn" data-report-open>⚑ Report</button></span>';
+    if (help) help.innerHTML = '<span class="help-row"><span>Game not starting?</span><button type="button" class="mini-btn" data-retry>↻ Reload the game</button></span>';
     fitToScreen();
   }
 
@@ -302,9 +302,11 @@ async function turnstileToken(slot: HTMLElement | null): Promise<string | null> 
 }
 
 function setupRating(g: GameData) {
+  // Vote buttons live under the game (quick) and in the sidebar panel; they share one state.
   const box = document.querySelector<HTMLElement>('[data-rating]');
-  if (!box) return;
-  const status = document.querySelector<HTMLElement>('[data-rate-status]');
+  if (!box && !document.querySelector('[data-vote]')) return;
+  const statusEls = () => [...document.querySelectorAll<HTMLElement>('[data-rate-status]')];
+  const setStatus = (cls: string, text: string) => statusEls().forEach((el) => { el.className = `form-status ${cls}`.trim(); el.textContent = text; });
   const key = `pixuvo:vote:${g.id}`;
   let mine = 0;
   try {
@@ -312,25 +314,20 @@ function setupRating(g: GameData) {
   } catch {
     mine = 0;
   }
-  const paint = () => box.querySelectorAll<HTMLButtonElement>('[data-vote]').forEach((b) => b.setAttribute('aria-pressed', String(Number(b.dataset.vote) === mine)));
+  const paint = () => document.querySelectorAll<HTMLButtonElement>('[data-vote]').forEach((b) => b.setAttribute('aria-pressed', String(Number(b.dataset.vote) === mine)));
   paint();
-  box.addEventListener('click', async (e) => {
+  document.addEventListener('click', async (e) => {
     const b = (e.target as Element).closest<HTMLButtonElement>('[data-vote]');
     if (!b) return;
     const value = Number(b.dataset.vote);
     if (value === mine) return;
-    if (status) {
-      status.className = 'form-status';
-      status.textContent = 'Saving…';
-    }
-    const token = await turnstileToken(box.parentElement?.querySelector('[data-turnstile-slot]') ?? null);
+    setStatus('', 'Saving…');
+    const slot = b.closest('.game-main')?.querySelector<HTMLElement>('[data-quick-ts]') ?? box?.parentElement?.querySelector<HTMLElement>('[data-turnstile-slot]') ?? null;
+    const token = await turnstileToken(slot);
     const res = await fetch('/api/rate/', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ id: g.id, value, token }) }).catch(() => null);
     const body = (await res?.json().catch(() => ({}))) as { up?: number; down?: number; error?: string };
     if (!res || !res.ok) {
-      if (status) {
-        status.className = 'form-status err';
-        status.textContent = body?.error ?? 'Could not save your vote.';
-      }
+      setStatus('err', body?.error ?? 'Could not save your vote.');
       return;
     }
     mine = value;
@@ -341,11 +338,10 @@ function setupRating(g: GameData) {
     }
     paint();
     const votes = (body.up ?? 0) + (body.down ?? 0);
-    const score = box.parentElement?.querySelector('[data-score]');
+    const score = document.querySelector('[data-score]');
     if (score && votes > 0) score.textContent = `${Math.round(((body.up ?? 0) / votes) * 100)}% liked · ${votes} vote${votes === 1 ? '' : 's'} on Pixuvo`;
-    if (status) {
-      status.className = 'form-status ok';
-      status.textContent = 'Thanks for your vote!';
+    {
+      setStatus('ok', value > 0 ? 'Thanks — glad you like it! 👍' : 'Thanks for telling us! 👎');
       track('rate_game', { rating: value > 0 ? 'like' : 'dislike' });
     }
   });

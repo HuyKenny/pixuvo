@@ -3233,3 +3233,297 @@ body.is-fullscreen .bottom-nav {
 .filterside ul a:visited {
   text-decoration: none;
 }
+
+/* Compact consent bar: short question + two buttons, details on demand */
+.consent {
+  padding: 12px 14px;
+  max-width: 640px;
+}
+.consent-text {
+  margin: 0 0 8px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--ink-2);
+}
+.consent-text strong {
+  color: var(--ink);
+  margin-right: 4px;
+}
+.consent .row .btn {
+  flex: 1 1 120px;
+  min-height: 44px;
+}
+.consent details {
+  margin: 4px 0 0;
+}
+.consent details summary {
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 13.5px;
+  color: var(--muted);
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+}
+.consent-fine {
+  font-size: 12.5px;
+  color: var(--muted);
+  margin: 6px 0 8px;
+}
+@media (min-width: 900px) {
+  /* Desktop: a slim bar in the bottom-left corner, clear of the game stage and the centre of the page */
+  .consent {
+    left: 16px;
+    right: auto;
+    width: 400px;
+    margin: 0;
+  }
+}
+
+/* Phone home: games on the first screen (hero compact, featured row before the game of the day) */
+@media (max-width: 699.98px) {
+  .home-main > * {
+    order: 5;
+  }
+  .home-main > #recent-section {
+    order: 0;
+  }
+  .home-main > .hero-row {
+    order: 1;
+  }
+  .home-main > .quickrow {
+    order: 2;
+  }
+  .home-main > .sec-featured {
+    order: 3;
+  }
+  .home-main > .gotd {
+    order: 4;
+  }
+  .hero {
+    grid-template-columns: minmax(0, 1fr) 84px;
+    padding: 14px 14px;
+    border-radius: 18px;
+  }
+  .hero h1 {
+    font-size: 21px;
+    margin-bottom: 8px;
+  }
+  .hero p,
+  .hero-checks {
+    display: none;
+  }
+  .btn-hero {
+    min-height: 46px;
+    padding: 0 18px;
+    font-size: 16px;
+    box-shadow: 0 5px 0 rgb(13 18 53 / 0.25);
+  }
+  .hero-mascot {
+    max-width: 84px;
+  }
+  .catbar {
+    margin: 8px 0 2px;
+  }
+  .catpill {
+    min-height: 46px;
+  }
+  .catpill img {
+    width: 28px;
+    height: 28px;
+  }
+  .quickrow {
+    margin-top: 10px;
+  }
+  .home-main > .sec-featured {
+    margin-top: 14px;
+  }
+}
+
+/* Game page: quick votes in the action row, "Play next" strip under the game (phones/tablets) */
+@media (min-width: 640px) {
+  .game-actions {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1100px) {
+  .game-actions {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+.vote-btn[aria-pressed='true'][data-vote='1'] {
+  background: var(--pill-green-bg);
+  border-color: #8fd6a8;
+  color: var(--pill-green);
+}
+.vote-btn[aria-pressed='true'][data-vote='-1'] {
+  background: var(--pill-orange-bg);
+  border-color: #f2b98a;
+  color: var(--pill-orange);
+}
+.quick-status:empty {
+  display: none;
+}
+.quick-status {
+  margin: 8px 0 0;
+  font-weight: 800;
+}
+.playnext {
+  margin-top: 14px;
+}
+.playnext-h {
+  font-size: 18px;
+  margin: 0 0 8px;
+}
+.playnext-row {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+  padding-bottom: 6px;
+}
+.playnext-row::-webkit-scrollbar {
+  display: none;
+}
+.playnext-card {
+  flex: none;
+  width: 136px;
+  scroll-snap-align: start;
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.25;
+}
+.playnext-card img {
+  display: block;
+  width: 136px;
+  height: 102px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 6px;
+  box-shadow: var(--shadow-card);
+}
+.playnext-card span {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+@media (min-width: 1100px) {
+  .playnext {
+    display: none;
+  }
+}
+@media (max-width: 699.98px) {
+  .playnext-row {
+    margin-inline: calc(-1 * max(16px, env(safe-area-inset-left, 0px)));
+    padding-inline: max(16px, env(safe-area-inset-left, 0px));
+  }
+}
+
+/* Mood tiles ("What do you feel like?") */
+.moods {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 16px;
+}
+@media (min-width: 560px) {
+  .moods {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1100px) {
+  .moods {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+.mood {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 64px;
+  padding: 10px 14px;
+  border-radius: 18px;
+  font-weight: 900;
+  font-size: 15.5px;
+  line-height: 1.15;
+  text-decoration: none;
+  box-shadow: var(--shadow-card);
+}
+.mood-emoji {
+  font-size: 28px;
+  flex: none;
+}
+.mood-teal { background: var(--pill-teal-bg); color: var(--pill-teal); }
+.mood-orange { background: var(--pill-orange-bg); color: var(--pill-orange); }
+.mood-blue { background: var(--pill-blue-bg); color: var(--pill-blue); }
+.mood-pink { background: var(--pill-pink-bg); color: var(--pill-pink); }
+.mood-green { background: var(--pill-green-bg); color: var(--pill-green); }
+.mood-violet { background: var(--grad-primary); color: #fff; }
+@media (hover: hover) {
+  .mood:hover {
+    transform: translateY(-2px);
+  }
+}
+.drawer-emoji {
+  width: 26px;
+  text-align: center;
+  font-size: 22px;
+}
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Good to know (FAQ from real data) */
+.faq details {
+  border-top: 1px solid var(--border);
+  padding: 4px 0;
+}
+.faq details:first-of-type {
+  border-top: 0;
+}
+.faq summary {
+  cursor: pointer;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  font-size: 15.5px;
+}
+.faq details p {
+  margin: 0 0 10px;
+  color: var(--ink-2);
+}
+.consent .consent-settings {
+  display: inline;
+  min-height: 0;
+  padding: 0;
+  font-size: inherit;
+}
+.consent details:not([open]) {
+  display: none;
+}
+/* Navigation lists are not running text: no underline (beats `li a:not(.chip):not(.btn)`) */
+.filterside li a:not(.chip):not(.btn),
+.reclist li a:not(.chip):not(.btn) {
+  text-decoration: none;
+}
+/* Home order on every width: hero → quick filters → continue → moods → featured → game of the day → rest */
+.home-main > * { order: 5; }
+.home-main > #recent-section { order: 0; }
+.home-main > .hero-row { order: 1; }
+.home-main > .quickrow { order: 2; }
+.home-main > .moods { order: 3; }
+.home-main > .sec-featured { order: 4; }
+.home-main > .gotd { order: 4; }
+.home-main > .sec-featured + * { order: 5; }
+@media (max-width: 699.98px) {
+  /* Phones: games first, then the mood tiles */
+  .home-main > .sec-featured { order: 3; }
+  .home-main > .moods { order: 4; }
+}

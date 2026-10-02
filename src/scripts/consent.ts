@@ -63,10 +63,18 @@ if (box) {
       if (b) b.checked = !!s?.[c];
     }
     box.hidden = false;
+    // Opened from "Privacy choices": show the detailed settings right away.
+    const details = box.querySelector<HTMLDetailsElement>('[data-consent-details]');
+    if (details) details.open = true;
     box.querySelector<HTMLElement>('button')?.focus();
   };
   if (active.length && !getConsent()) box.hidden = false;
   box.addEventListener('click', (e) => {
+    if ((e.target as Element).closest('[data-consent-settings]')) {
+      const d = box.querySelector<HTMLDetailsElement>('[data-consent-details]');
+      if (d) d.open = !d.open;
+      return;
+    }
     const action = (e.target as Element).closest<HTMLElement>('[data-consent-action]')?.dataset.consentAction;
     if (!action) return;
     const allow = (c: ConsentCategory) => active.includes(c);

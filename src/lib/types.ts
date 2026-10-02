@@ -9,6 +9,8 @@ export interface GameCard {
   players: number | null;
   /** Times the game was started on Pixuvo in the last 7 days (counted once per visitor and day). */
   plays7d?: number;
+  /** Added to Pixuvo in the last 7 days (after the launch import). */
+  isNew?: boolean;
 }
 
 export interface CategoryRef {
@@ -44,6 +46,8 @@ export interface GameDetail extends GameCard {
   providerName: string | null;
   width: number | null;
   height: number | null;
+  /** Declared by the partner (Playgama); false when unknown. */
+  inAppPurchases: boolean;
   related: GameCard[];
 }
 

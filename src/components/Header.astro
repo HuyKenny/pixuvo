@@ -44,6 +44,8 @@ interface Props { query?: string | undefined }
       {nav.map((n) => <a href={n.href}><img src={n.icon} alt="" width="26" height="26" />{n.label}</a>)}
       <a href="/recently-played/"><img src={uiIcon('clock')} alt="" width="26" height="26" />Recently played</a>
       <a href="/games/"><img src={uiIcon('star')} alt="" width="26" height="26" />All games</a>
+      <a href="/random/" rel="nofollow"><span class="drawer-emoji" aria-hidden="true">🎲</span>Random game</a>
+      <a href="/parents/"><span class="drawer-emoji" aria-hidden="true">👪</span>For parents</a>
     </nav>
   </div>
 </div>

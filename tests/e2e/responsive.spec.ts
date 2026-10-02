@@ -76,7 +76,9 @@ test('expanded mode (no Fullscreen API, e.g. iPhone) locks scrolling and Exit wo
   });
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto('/racing-games/');
+  if (await page.locator('#consent').isVisible()) await page.click('[data-consent-action="reject"]');
   await page.locator('#game-grid a.card-link').first().click();
+  await page.waitForTimeout(800); // let the one-time scroll-to-game settle
   await page.click('[data-fullscreen]');
   await expect(page.locator('body')).toHaveClass(/expanded-mode/);
   await expect(page.locator('html')).toHaveClass(/no-scroll/);
@@ -128,4 +130,27 @@ test('phone turned sideways: the game uses the whole screen height, no tab bar',
   const stage = (await page.locator('#stage').boundingBox())!;
   expect(Math.abs(stage.height - 390)).toBeLessThan(4);
   await expect(page.locator('.bottom-nav')).toBeHidden();
+});
+
+test('phones: compact privacy bar, games on the first screen', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto('/');
+  const bar = (await page.locator('#consent').boundingBox())!;
+  expect(bar.height).toBeLessThanOrEqual(170);
+  await page.click('[data-consent-action="reject"]');
+  await expect(page.locator('#consent')).toBeHidden();
+  await page.reload();
+  const top = await page.evaluate(() => document.querySelector('.home-main .grid .card')!.getBoundingClientRect().top);
+  expect(top).toBeLessThan(560);
+});
+
+test('phones: quick vote under the game and a Play next strip', async ({ page, request }) => {
+  const html = await (await request.get('/racing-games/')).text();
+  const slug = /href="\/games\/([a-z0-9-]+)\/"/.exec(html)![1];
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(`/games/${slug}/`);
+  await expect(page.locator('.game-actions [data-vote="1"]')).toBeVisible();
+  await expect(page.locator('.playnext .playnext-card').first()).toBeVisible();
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await expect(page.locator('.playnext')).toBeHidden();
 });

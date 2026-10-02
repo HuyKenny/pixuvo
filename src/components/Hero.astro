@@ -24,8 +24,7 @@ const first = picks[0];
 </section>
 <script>
   // "Start Playing" opens a different featured game each time.
-  const a = document.querySelector<HTMLAnchorElement>('[data-random-game]');
-  if (a) {
+  for (const a of document.querySelectorAll<HTMLAnchorElement>('[data-random-game]')) {
     try {
       const list = JSON.parse(a.dataset.randomGame ?? '[]') as string[];
       if (list.length) a.href = `/games/${list[Math.floor(Math.random() * list.length)]}/`;

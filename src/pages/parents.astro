@@ -1,0 +1,26 @@
+---
+export const prerender = true;
+import Doc from '../layouts/Doc.astro';
+import { SITE } from '../lib/site';
+---
+<Doc title="For Parents – Is Pixuvo Safe for Kids?" h1="For parents" description="How Pixuvo keeps game time simple and safe: no accounts, no chat, no ads on our pages, games checked before they appear, in-game purchases marked." path="/parents/" updated="2 October 2026">
+  <p>Pixuvo is a free collection of browser games for kids and families. Here is exactly what your child gets — and what they do not.</p>
+  <h2>What Pixuvo does not have</h2>
+  <ul>
+    <li><strong>No accounts and no chat.</strong> Kids cannot message strangers on Pixuvo and never type in a name, e-mail or password.</li>
+    <li><strong>No ads on Pixuvo pages.</strong> Games come from distribution partners (GameMonetize, GamePix, Playgama), who may show short ads inside the game, for example before it starts.</li>
+    <li><strong>No downloads or installers.</strong> Games run in the browser.</li>
+  </ul>
+  <h2>How games get onto Pixuvo</h2>
+  <ul>
+    <li>Every game comes from a licensed distribution partner. Titles and tags that mention adult content, gambling, betting or kissing are held back automatically and never published without review.</li>
+    <li>Games that name a third-party brand (for example a famous franchise) are held back until we can check them.</li>
+    <li>Anyone can report a game with the <strong>Report Issue</strong> button under it; we read every report.</li>
+  </ul>
+  <h2>Purchases inside games</h2>
+  <p>Pixuvo itself sells nothing. Some partner games offer optional in-game purchases; when the partner declares this, the game page shows <strong>💳 In-game purchases</strong>. Partners do not always say, so we recommend keeping purchase approval on in your browser or device settings.</p>
+  <h2>Privacy</h2>
+  <p>Favorites and recently played games stay in your child’s browser. Usage statistics (Google Analytics) run only if someone allows them in the privacy choices — you can use every feature without it. Details: <a href="/privacy/">Privacy</a> and <a href="/cookies/">Cookies</a>.</p>
+  <h2>Questions or a problem?</h2>
+  <p>Write to <a href={`mailto:${SITE.email}`}>{SITE.email}</a> — we answer every message.</p>
+</Doc>

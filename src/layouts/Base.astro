@@ -60,6 +60,8 @@ const canonicalUrl = path ? abs(path) : null;
     <link rel="preconnect" href="https://img.gamepix.com" />
     <link rel="preconnect" href="https://static.playgama.com" />
     {jsonLd.map((d) => <script type="application/ld+json" set:html={JSON.stringify(d).replace(/</g, '\\u003c')} />)}
+    {/* Instant navigation: PREFETCH only (never prerender — a prerendered game page would start the game and count a play). */}
+    <script type="speculationrules" set:html={JSON.stringify({ prefetch: [{ where: { and: [{ href_matches: '/*' }, { not: { href_matches: ['/random/*', '/api/*', '/admin/*', '/*\\?*'] } }] }, eagerness: 'moderate' }] })} />
     <slot name="head" />
   </head>
   <body data-ga={gaContext}>

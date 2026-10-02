@@ -21,15 +21,23 @@ interface CardRow {
   mobile_friendly: number | null;
   players_max: number | null;
   plays_7d: number | null;
+  added_at: string | null;
   cat: string | null;
 }
 
-const CARD_COLS = 'g.id, g.slug, g.title, g.thumb_url, g.mobile_friendly, g.players_max, g.plays_7d, pc.name AS cat';
+const CARD_COLS = 'g.id, g.slug, g.title, g.thumb_url, g.mobile_friendly, g.players_max, g.plays_7d, g.added_at, pc.name AS cat';
 const CARD_JOIN = 'LEFT JOIN categories pc ON pc.id = g.primary_category_id';
+
+/** The whole catalog was imported at launch, so "NEW" only counts games added after it (and within 7 days). */
+const NEW_AFTER = Date.parse('2026-10-03T00:00:00Z');
+export function isNewGame(addedAt: string | null, now = Date.now()): boolean {
+  const t = addedAt ? Date.parse(addedAt) : NaN;
+  return Number.isFinite(t) && t >= NEW_AFTER && now - t <= 7 * 86_400_000;
+}
 
 export function toCard(r: CardRow): GameCard {
   // Real plays on Pixuvo in the last 7 days (scripts/metrics.ts); omitted when zero to keep payloads small.
-  return { id: r.id, slug: r.slug, title: r.title, thumb: r.thumb_url, cat: r.cat, mobile: r.mobile_friendly === 1, players: r.players_max, ...(r.plays_7d ? { plays7d: r.plays_7d } : {}) };
+  return { id: r.id, slug: r.slug, title: r.title, thumb: r.thumb_url, cat: r.cat, mobile: r.mobile_friendly === 1, players: r.players_max, ...(r.plays_7d ? { plays7d: r.plays_7d } : {}), ...(isNewGame(r.added_at) ? { isNew: true } : {}) };
 }
 
 // ── Categories ──────────────────────────────────────────────────────────────
@@ -373,6 +381,16 @@ interface DetailRow extends CardRow {
   provider_name: string | null;
   width: number | null;
   height: number | null;
+  restrictions: string | null;
+}
+
+/** Partner-declared in-game purchases (Playgama gives it; others do not say → false, never guessed). */
+function inAppPurchases(raw: string | null): boolean {
+  try {
+    return (JSON.parse(raw ?? '{}') as { in_game_purchases?: unknown }).in_game_purchases === true;
+  } catch {
+    return false;
+  }
 }
 
 export async function getGame(q: Q, slug: string): Promise<GameLookup> {
@@ -380,7 +398,7 @@ export async function getGame(q: Q, slug: string): Promise<GameLookup> {
   const [r] = await q.all<DetailRow>(
     `SELECT ${CARD_COLS}, g.description, g.instructions, g.controls_inferred, g.status, g.merged_into, g.primary_category_id, pc.slug AS pc_slug,
             g.source_release_date, g.added_at, g.updated_at, g.orientation, g.multiplayer_mode, g.technology, g.visual_style,
-            g.rating_up, g.rating_down, p.name AS provider_name, s.width, s.height
+            g.rating_up, g.rating_down, p.name AS provider_name, s.width, s.height, s.restrictions
        FROM games g ${CARD_JOIN}
        LEFT JOIN game_sources s ON s.id = g.primary_source_id
        LEFT JOIN providers p ON p.id = s.provider_id
@@ -438,6 +456,7 @@ export async function getGame(q: Q, slug: string): Promise<GameLookup> {
       providerName: r.provider_name,
       width: r.width,
       height: r.height,
+      inAppPurchases: inAppPurchases(r.restrictions),
       related,
     },
   };
@@ -529,7 +548,7 @@ export async function getGamesBatch(q: Q, ids: number[]): Promise<GameDetail[]> 
       q.all<DetailRow>(
         `SELECT ${CARD_COLS}, g.description, g.instructions, g.controls_inferred, g.status, g.merged_into, g.primary_category_id, pc.slug AS pc_slug,
                 g.source_release_date, g.added_at, g.updated_at, g.orientation, g.multiplayer_mode, g.technology, g.visual_style,
-                g.rating_up, g.rating_down, p.name AS provider_name, s.width, s.height
+                g.rating_up, g.rating_down, p.name AS provider_name, s.width, s.height, s.restrictions
            FROM games g ${CARD_JOIN}
            LEFT JOIN game_sources s ON s.id = g.primary_source_id
            LEFT JOIN providers p ON p.id = s.provider_id
@@ -569,6 +588,7 @@ export async function getGamesBatch(q: Q, ids: number[]): Promise<GameDetail[]> 
         providerName: r.provider_name,
         width: r.width,
         height: r.height,
+      inAppPurchases: inAppPurchases(r.restrictions),
         related: [],
       });
     }

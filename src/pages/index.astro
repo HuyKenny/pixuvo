@@ -9,6 +9,7 @@ import CategoryTiles from '../components/CategoryTiles.astro';
 import FilterSidebar from '../components/FilterSidebar.astro';
 import Icon from '../components/Icon.astro';
 import GameOfDay from '../components/GameOfDay.astro';
+import MoodTiles from '../components/MoodTiles.astro';
 import { snapshot } from '../lib/snapshot';
 import { SITE, categoryPath } from '../lib/site';
 import { approxCount } from '../lib/format';
@@ -55,7 +56,7 @@ const ld = [
           <div class="grid" id="recent-grid" role="list" aria-label="Recently played games"></div>
         </section>
 
-        {snapshot.home.gameOfDay && <GameOfDay game={snapshot.home.gameOfDay} />}
+        <MoodTiles picks={snapshot.home.featured.slice(0, 36)} />
 
         {snapshot.home.popular.length >= 6 && (
           <section class="section" aria-labelledby="top-h">
@@ -64,10 +65,12 @@ const ld = [
           </section>
         )}
 
-        <section class="section" aria-labelledby="featured-h">
+        <section class="section sec-featured" aria-labelledby="featured-h">
           <div class="section-head"><h2 id="featured-h"><img src={uiIcon('popular')} alt="" width="30" height="30" />{snapshot.home.hasTrending ? 'Trending Now' : 'Featured Games'}</h2><a href={snapshot.home.hasTrending ? '/trending-games/' : '/games/'}>View all</a></div>
           <GameGrid games={snapshot.home.featured.slice(0, 12)} eagerCount={4} label="Featured games" />
         </section>
+
+        {snapshot.home.gameOfDay && <GameOfDay game={snapshot.home.gameOfDay} />}
 
         <section class="section" aria-labelledby="new-h">
           <div class="section-head"><h2 id="new-h"><span class="new-badge">NEW</span>New Games</h2><a href="/new-games/">View all</a></div>

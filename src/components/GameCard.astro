@@ -2,8 +2,10 @@
 import type { GameCard } from '../lib/types';
 import { gamePath } from '../lib/site';
 import Icon from './Icon.astro';
+import { cardBadge } from '../lib/plays';
 interface Props { game: GameCard; eager?: boolean; badge?: string | undefined }
-const { game, eager = false, badge } = Astro.props;
+const { game, eager = false, badge: given } = Astro.props;
+const badge = given ?? cardBadge(game);
 const meta = [game.cat, game.players && game.players >= 2 ? `${game.players}+ players` : null].filter(Boolean).join(' · ');
 ---
 <article class="card" data-game-id={game.id}>

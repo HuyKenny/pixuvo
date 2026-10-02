@@ -38,6 +38,16 @@ const moreCat = g.related.slice(5, 11);
 const similar = g.related.slice(11, 17);
 const topCat = g.related.slice(17, 23);
 const devices = g.mobile ? 'Desktop, Mobile, Tablet' : 'Desktop';
+// "Good to know": questions answered ONLY from real data (nothing is asked when the answer is unknown).
+const keyName = (r: (typeof controls)[number]) => r.device === 'keys' ? (r.keys.join('') === '↑←↓→' ? 'the arrow keys' : r.keys.join('') === 'WASD' ? 'W A S D' : r.keys.join(' ')) : r.device === 'mouse' ? `the mouse (${(r.gesture ?? 'click').toLowerCase()})` : `touch (${(r.gesture ?? 'tap').toLowerCase()})`;
+const controlText = controls.slice(0, 4).map((r) => `${keyName(r)}${r.action ? ` to ${r.action.toLowerCase()}` : ''}`).join(', ');
+const faq: Array<{ q: string; a: string }> = [
+  { q: `Is ${g.title} free?`, a: `Yes. You can play ${g.title} for free in your browser on Pixuvo — no download and no sign-up.${g.inAppPurchases ? ' The game itself offers optional in-game purchases.' : ''}` },
+  ...(g.mobile ? [{ q: `Can I play ${g.title} on a phone or tablet?`, a: 'Yes — the game’s publisher says it works on mobile devices.' }] : []),
+  ...(g.players ? [{ q: `How many players can play?`, a: g.players >= 2 ? `${g.title} can be played by ${g.players} or more players.` : `${g.title} is a single-player game.` }] : []),
+  ...(controlText ? [{ q: `How do I control ${g.title}?`, a: `Use ${controlText}. (From the game’s instructions.)` }] : []),
+  ...(g.categories.length ? [{ q: `What kind of game is ${g.title}?`, a: `It is listed under ${g.categories.slice(0, 3).map((c) => c.name).join(', ')} on Pixuvo.` }] : []),
+];
 const ld = [{
   '@context': 'https://schema.org', '@type': 'VideoGame', name: g.title, url: canonical(path), image: g.thumb,
   ...(g.description ? { description: truncate(g.description, 500) } : {}),
@@ -46,7 +56,7 @@ const ld = [{
   playMode: g.players && g.players >= 2 ? 'MultiPlayer' : g.players === 1 ? 'SinglePlayer' : undefined,
   ...(g.releaseDate ? { datePublished: g.releaseDate } : {}),
   offers: { '@type': 'Offer', price: 0, priceCurrency: 'USD' },
-}];
+}, ...(faq.length >= 3 ? [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }] : [])];
 // The game starts on page open: warm up the partner's frame host.
 const FRAME_HOST: Record<string, string> = { GameMonetize: 'https://html5.gamemonetize.co', GamePix: 'https://play.gamepix.com', Playgama: 'https://playgama.com' };
 const frameHost = g.providerName ? FRAME_HOST[g.providerName] : undefined;
@@ -69,7 +79,7 @@ const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait,
               {(g.plays7d ?? 0) >= MIN_PLAYS_SHOWN && <span class="game-plays">▶ Played {playsLabel(g.plays7d!)}× this week</span>}
             </p>
           </div>
-          <div class="game-tags">{g.categories.slice(0, 3).map((c, i) => <Tag href={categoryPath(c.slug)} tone={tones[i % tones.length]!}>{c.name}</Tag>)}{g.mobile && <Tag tone="green">📱 Works on mobile</Tag>}</div>
+          <div class="game-tags">{g.categories.slice(0, 3).map((c, i) => <Tag href={categoryPath(c.slug)} tone={tones[i % tones.length]!}>{c.name}</Tag>)}{g.mobile && <Tag tone="green">📱 Works on mobile</Tag>}{g.inAppPurchases && <Tag tone="orange">💳 In-game purchases</Tag>}</div>
         </header>
 
         <div class:list={['stage', { portrait }]} id="stage" data-fit={fit} data-game={JSON.stringify(data)}>
@@ -93,11 +103,28 @@ const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait,
         )}
         <div class="game-actions" aria-label="Game actions">
           <button type="button" class="action-btn action-main" data-fullscreen><Icon name="maximize" size={20} /> <span>Fullscreen</span></button>
+          <button type="button" class="action-btn vote-btn" data-vote="1" aria-pressed="false"><Icon name="up" size={20} /> <span>Like</span></button>
+          <button type="button" class="action-btn vote-btn" data-vote="-1" aria-pressed="false"><Icon name="down" size={20} /> <span>Dislike</span></button>
           <button type="button" class="action-btn" data-fav={g.id} data-slug={g.slug} data-title={g.title} data-thumb={g.thumb} aria-pressed="false" data-fav-label="static"><Icon name="heart" size={20} /> <span>Favorite</span></button>
           <button type="button" class="action-btn" data-share><Icon name="share" size={20} /> <span>Share</span></button>
           <button type="button" class="action-btn" data-report-open><Icon name="flag" size={20} /> <span>Report Issue</span></button>
         </div>
+        <p class="form-status quick-status" data-rate-status aria-live="polite"></p>
+        <div data-turnstile-slot data-quick-ts></div>
         <p class="note" data-share-status aria-live="polite"></p>
+        {sideList.length > 0 && (
+          <nav class="playnext" aria-label="Play next">
+            <h2 class="playnext-h">▶ Play next</h2>
+            <div class="playnext-row">
+              {g.related.slice(0, 8).map((r) => (
+                <a href={`/games/${r.slug}/`} class="playnext-card">
+                  <img src={r.thumb} alt="" width="160" height="120" loading="lazy" referrerpolicy="no-referrer" />
+                  <span>{r.title}</span>
+                </a>
+              ))}
+            </div>
+          </nav>
+        )}
 
         <section class="panel" aria-labelledby="about-h">
           <h2 id="about-h"><span class="panel-ico" aria-hidden="true">📄</span>About {g.title}</h2>
@@ -105,6 +132,7 @@ const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait,
           <div class="tag-row">
             {g.categories.map((c, i) => <Tag href={categoryPath(c.slug)} tone={tones[i % tones.length]!} small>{c.name}</Tag>)}
             {styleLabel && <Tag tone="orange" small>{styleLabel}</Tag>}
+            {g.inAppPurchases && <Tag tone="orange" small>💳 In-game purchases</Tag>}
             {g.controls.map((c) => <Tag tone="pink" small>{c[0]!.toUpperCase() + c.slice(1)}</Tag>)}
           </div>
         </section>
@@ -125,6 +153,12 @@ const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait,
             )}
           </div>
         )}
+        {faq.length >= 3 && (
+          <section class="panel faq" aria-labelledby="faq-h">
+            <h2 id="faq-h"><span class="panel-ico" aria-hidden="true">💡</span>Good to know</h2>
+            {faq.map((f) => <details><summary>{f.q}</summary><p>{f.a}</p></details>)}
+          </section>
+        )}
       </div>
 
       <aside class="game-side">
@@ -143,6 +177,7 @@ const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait,
             <dt>Platform</dt><dd>Web browser</dd>
             {g.technology && (<><dt>Technology</dt><dd>{g.technology === 'html5' ? 'HTML5' : g.technology === 'webgl' ? 'WebGL' : 'Unity'}</dd></>)}
             <dt>Devices</dt><dd>{devices}{!g.mobile && <span class="note"> (mobile not stated)</span>}</dd>
+            {g.inAppPurchases && (<><dt>Purchases</dt><dd>💳 Optional in-game purchases (declared by the publisher)</dd></>)}
             {styleLabel && (<><dt>Style</dt><dd>{styleLabel}</dd></>)}
             <dt>Added</dt><dd>{fmtDate(g.addedAt)}</dd>
             {g.providerName && (<><dt>Provider</dt><dd>{g.providerName}</dd></>)}
