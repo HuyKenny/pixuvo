@@ -52,9 +52,8 @@ export function setupAnalytics(id: string, testSrc?: string) {
     w.gtag('consent', 'default', { analytics_storage: 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
     w.gtag('js', new Date());
     const ctx = pageContext();
-    // Sent with every event on this page, so reports can split by game, category, partner and page type.
-    w.gtag('set', ctx);
-    w.gtag('config', id, { allow_google_signals: false, allow_ad_personalization_signals: false, content_group: ctx.page_type ?? 'other' });
+    // Config parameters go with every event on this page, so reports split by game, category, partner and page type.
+    w.gtag('config', id, { ...ctx, allow_google_signals: false, allow_ad_personalization_signals: false, content_group: ctx.page_type ?? 'other' });
     document.addEventListener('click', (e) => {
       const a = (e.target as Element).closest<HTMLAnchorElement>('a.card-link, a.gotd-card, .reclist a');
       const slug = a ? /\/games\/([a-z0-9-]+)\/$/.exec(new URL(a.href, location.href).pathname)?.[1] : undefined;

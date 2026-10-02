@@ -133,7 +133,7 @@ if (stage && data) {
     if (since) acc += Date.now() - since;
     since = 0;
     const secs = Math.min(3600, Math.round(acc / 1000));
-    if (secs >= 5) track('game_play', { play_seconds: secs, transport_type: 'beacon' });
+    if (secs >= 5) track('game_play', { play_seconds: secs });
     acc = 0;
   };
   document.addEventListener('visibilitychange', () => (document.visibilityState === 'hidden' ? stopClock() : startClock()));
