@@ -50,7 +50,8 @@ State: 2026-10-02. ✅ done and verified · ⚠️ done with a known caveat · �
   deletes `_ga` cookies. Verified live: reject → no request from pixuvo.com to Google (the GameMonetize frame loads its
   own gtag — partner, see consent note above); accept → page_view + game_start. No own ads.
 - ⛔ Owner, in the GA4 admin: Data retention → 2 months; keep Google signals and ads links off (children's site).
-- ⛔ Before showing own ads: approved ad network + its ads.txt lines + a certified CMP where required.
+- ✅ Owner decision 2026-10-02: revenue ONLY from partner games (in-game ads, revenue share) — no own ads on Pixuvo pages.
+- ⛔ Owner: payout details in the GameMonetize, GamePix and Playgama dashboards (Playgama threshold $100).
 
 ## Not in V1 (by design)
 Accounts, chat, comments, own multiplayer, payments, virtual currency, own display ads, cloud saves.
