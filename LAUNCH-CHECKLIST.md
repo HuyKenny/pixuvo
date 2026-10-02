@@ -24,8 +24,9 @@ State: 2026-10-02. ✅ done and verified · ⚠️ done with a known caveat · �
   by the operator; recommended: ask GameMonetize how they handle EEA consent (TCF) and revisit.
 - ⛔ Monetization not yet confirmed for either partner: after launch press **Verify** for pixuvo.com in the
   GameMonetize and GamePix dashboards, then set monetize_status = approved in Admin → Providers.
-- ⛔ GamePix ads.txt lines: original file needed (the pasted text lost its line breaks).
-- ⛔ Playgama: export file + `clid`. GameDistribution: rejected (awaiting approval). Famobi: no account.
+- ✅ GamePix ads.txt: 879 lines copied verbatim from the dashboard (hash-checked), live in /ads.txt.
+- ⛔ **GamePix property M7X08 has the domain saved as `https://pixuvocom` (missing dot)** → "Verify ads.txt" fails. The dashboard has no edit; GamePix support must correct it (do NOT create a new property — the sid would change).
+- ✅ Playgama imported (2 081 new games + 269 attached), clid attribution, Google CMP. GameDistribution: rejected (awaiting approval). Famobi: no account.
 - ✅ Duplicate queue cleared (`scripts/review-queue.ts`): exact title across partners or near-identical text → merged; the rest marked "not a duplicate".
 
 ## SEO

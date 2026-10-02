@@ -16,7 +16,7 @@ State on 2026-10-02:
 |---|---|---|---|---|---|
 | GameMonetize | available | approved | **pending** (verify ads.txt in dashboard) | **owner_accepted** | 38 131 sources |
 | GamePix | available | approved | **pending** (verify ads.txt in dashboard) | partner_handles | 13 892 sources (2 961 merged into GameMonetize games) |
-| Playgama | unknown | pending | pending | blocked | 0 — adapter inactive |
+| Playgama | available | approved | **pending** (revenue in widgets.playgama.com) | partner_handles | 2 350 sources (2 081 own games, 269 attached) |
 | GameDistribution | unknown | **awaiting_approval** | not_approved | blocked | 0 — application rejected |
 | Famobi | unknown | disabled | not_approved | blocked | 0 — no account |
 
@@ -55,11 +55,16 @@ State on 2026-10-02:
 
 ## Playgama
 
-* **Docs:** https://playgama.com/partners, https://playgama.com/partners-api (export endpoint documented with
-  required `page`, `pageSize`, `clid`; our test calls returned 404, response schema not verifiable).
-* **State:** account registered, but the dashboard offers only a manual JSON download and no `clid` is configured.
-  The adapter (`scripts/import/adapters/inactive.ts`) refuses to run and says why. Needed: the JSON export file and
-  the `clid` → then a parser is written against the real schema.
+* **Docs used:** https://wiki.playgama.com/playgama/for-partners/import-the-game-catalog and the partner dashboard
+  (widgets.playgama.com), checked 2026-10-02.
+* **Feed:** the dashboard's "Download all Games" calls `POST https://playgama.com/api/v1/partner/export/catalogue/games`
+  with `{pagination:{limit,offset}, filters:{}, sort:{}}` → `{games[], totalCount}` (2 367 games, no login needed).
+  Fields: id, slug, title, description, howToPlayText, gameURL, genres, tags, images, mobileReady, inGamePurchases,
+  supportedLanguages, screenOrientation.
+* **Attribution:** our `clid` (`PLAYGAMA_CLID`, from the dashboard's embed code) is appended to every
+  `https://playgama.com/export/game/<slug>`, exactly like the dashboard's iframe code.
+* 17 games point to their own domains (e.g. numicolor.com) and are skipped (not on the frame allowlist).
+* **Consent:** live test 2026-10-02 from an EU IP — Google's certified consent dialog (Funding Choices) before ads.
 
 ## GameDistribution
 
