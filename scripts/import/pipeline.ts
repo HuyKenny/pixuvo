@@ -297,7 +297,9 @@ export async function runImport(db: SqlDb, adapter: ProviderAdapter, opts: RunOp
     if (!mayPublish) return { status: 'pending_review', reason: 'provider_not_approved' };
     const brands = findBrandTerms(item.title);
     if (brands.length) return { status: 'pending_review', reason: `brand_ip:${brands.slice(0, 3).join('|')}` };
-    const sens = findSensitiveTerms(item.title + ' ' + item.labels.join(' '));
+    // Titles are checked for every sensitive term; partner tags only for gambling — GameMonetize uses "Adult"
+    // as a loose audience label on ordinary casual games (verified on 290 samples, 2026-10-02).
+    const sens = [...findSensitiveTerms(item.title), ...findSensitiveTerms(item.labels.join(' ')).filter((t) => t !== 'adult' && t !== 'kiss' && t !== 'kissing')];
     if (sens.length) return { status: 'pending_review', reason: `sensitive:${sens.slice(0, 3).join('|')}` };
     return { status: 'published', reason: null };
   }

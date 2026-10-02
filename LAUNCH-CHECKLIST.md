@@ -16,7 +16,8 @@ State: 2026-10-02. ✅ done and verified · ⚠️ done with a known caveat · �
 - ✅ Daily sync: Worker Cron Trigger 03:20 UTC → GitHub workflow (fine-grained token, Actions on this repo only); first dispatched run 2026-10-02.
 
 ## Catalog and partners
-- ✅ 45 731 published games (49 063 imported; 3 332 held for review: brand/IP titles, adult/gambling wording).
+- ✅ 44 011 published games after the editorial pass on 2026-10-02 (2 052 duplicates merged with 301 redirects, 286 false
+  "adult" tag holds published); 3 018 still held on purpose: third-party brand titles (2 787) and gambling/kissing wording.
 - ✅ Live smoke test on production: GameMonetize and GamePix games start after Play, inside the sandboxed frame.
 - ⚠️ **GameMonetize consent:** no consent prompt inside GameMonetize games from an EU IP (Google ads + Tag Manager
   load right away). **Owner decision 2026-10-02: publish anyway** (`consent_mode = owner_accepted`). Legal risk accepted
@@ -25,7 +26,7 @@ State: 2026-10-02. ✅ done and verified · ⚠️ done with a known caveat · �
   GameMonetize and GamePix dashboards, then set monetize_status = approved in Admin → Providers.
 - ⛔ GamePix ads.txt lines: original file needed (the pasted text lost its line breaks).
 - ⛔ Playgama: export file + `clid`. GameDistribution: rejected (awaiting approval). Famobi: no account.
-- ⚠️ 4 460 possible duplicates wait in Admin → Duplicates (same title, not enough evidence to merge automatically).
+- ✅ Duplicate queue cleared (`scripts/review-queue.ts`): exact title across partners or near-identical text → merged; the rest marked "not a duplicate".
 
 ## SEO
 - ✅ Canonical domain, `lang="en"`, unique titles/descriptions/H1, breadcrumbs, OG tags, JSON-LD

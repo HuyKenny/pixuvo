@@ -143,7 +143,7 @@ export async function updateProvider(db: D1Q, actor: string, id: string, f: { pu
 }
 
 /** Merge game `dup` into `keep`: sources move, categories union, old slug 301s to the survivor. */
-export async function mergeGames(db: D1Q, actor: string, keep: number, dup: number, candidateId: number | null): Promise<ActionResult> {
+export async function mergeGames(db: D1Q, actor: string, keep: number, dup: number, candidateId: number | null, opts: { recount?: boolean } = {}): Promise<ActionResult> {
   if (keep === dup) return { ok: false, message: 'Cannot merge a game into itself.' };
   const rows = await db.all<{ id: number; slug: string; status: string }>('SELECT id, slug, status FROM games WHERE id IN (?, ?)', [keep, dup]);
   const k = rows.find((r) => r.id === keep);
@@ -162,7 +162,8 @@ export async function mergeGames(db: D1Q, actor: string, keep: number, dup: numb
     { sql: 'DELETE FROM games_fts WHERE rowid = ?', params: [dup] },
     { sql: "UPDATE duplicate_candidates SET status = 'merged', resolved_at = ?, resolved_by = ? WHERE (game_a = ? AND game_b = ?) OR (game_a = ? AND game_b = ?)", params: [now(), actor, keep, dup, dup, keep] },
     { sql: "UPDATE duplicate_candidates SET status = 'rejected', resolved_at = ?, resolved_by = 'merge' WHERE status = 'open' AND (game_a = ? OR game_b = ?)", params: [now(), dup, dup] },
-    { sql: `UPDATE categories SET game_count = (SELECT count(*) FROM game_categories gc WHERE gc.category_id = categories.id AND gc.published = 1)` },
+    // Bulk callers recount once at the end instead of after every merge.
+    ...(opts.recount === false ? [] : [{ sql: `UPDATE categories SET game_count = (SELECT count(*) FROM game_categories gc WHERE gc.category_id = categories.id AND gc.published = 1)` }]),
     audit(actor, 'game.merge', 'game', keep, { merged: dup, candidateId, oldSlug: d.slug }),
     bump,
   ]);
