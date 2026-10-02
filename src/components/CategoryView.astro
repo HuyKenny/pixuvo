@@ -50,7 +50,7 @@ const ld = [{
 const pageTitle = p.page > 1 ? `${p.title.split(' – ')[0]} – Page ${p.page}` : p.title;
 const filterable = p.filterable !== false;
 ---
-<Base title={pageTitle} description={p.page > 1 ? `${p.description} Page ${p.page}.` : p.description} path={path} noindex={p.indexable === false}
+<Base title={pageTitle} description={p.page > 1 ? `${p.description} Page ${p.page}.` : p.description} path={path} noindex={p.indexable === false} ga={{ page_type: 'category', game_category: p.category?.slug ?? p.slug }}
   prev={p.page > 1 ? categoryPath(p.slug, p.page - 1) : null} next={p.page < p.pages ? categoryPath(p.slug, p.page + 1) : null} jsonLd={ld}>
   <div class="wrap">
     <CategoryBar categories={p.categories.filter((c) => c.nav && c.count >= MIN_CATEGORY_GAMES)} current={p.category?.slug ?? p.parent?.slug} />

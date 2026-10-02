@@ -15,6 +15,23 @@ export function track(event: string, params: Record<string, string | number> = {
   w.gtag?.('event', event, params);
 }
 
+/** Page context rendered by Base.astro (page_type, game_slug, game_category, provider, game_title). */
+function pageContext(): Record<string, string> {
+  try {
+    const raw = JSON.parse(document.body.dataset.ga ?? '{}') as Record<string, unknown>;
+    return Object.fromEntries(Object.entries(raw).filter(([k, v]) => /^[a-z_]{2,30}$/.test(k) && typeof v === 'string').map(([k, v]) => [k, (v as string).slice(0, 100)]));
+  } catch {
+    return {};
+  }
+}
+
+/** Which list a game card was clicked in ("Most played games this week", "Recommended games", …). */
+function listName(el: Element): string {
+  if (el.closest('.gotd')) return 'Game of the Day';
+  const labelled = el.closest('[aria-label]');
+  return (labelled?.getAttribute('aria-label') ?? 'other').slice(0, 60);
+}
+
 export function setupAnalytics(id: string, testSrc?: string) {
   whenConsented('analytics', () => {
     if (testSrc) {
@@ -34,7 +51,15 @@ export function setupAnalytics(id: string, testSrc?: string) {
     };
     w.gtag('consent', 'default', { analytics_storage: 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
     w.gtag('js', new Date());
-    w.gtag('config', id, { allow_google_signals: false, allow_ad_personalization_signals: false });
+    const ctx = pageContext();
+    // Sent with every event on this page, so reports can split by game, category, partner and page type.
+    w.gtag('set', ctx);
+    w.gtag('config', id, { allow_google_signals: false, allow_ad_personalization_signals: false, content_group: ctx.page_type ?? 'other' });
+    document.addEventListener('click', (e) => {
+      const a = (e.target as Element).closest<HTMLAnchorElement>('a.card-link, a.gotd-card, .reclist a');
+      const slug = a ? /\/games\/([a-z0-9-]+)\/$/.exec(new URL(a.href, location.href).pathname)?.[1] : undefined;
+      if (a && slug) track('select_game', { game_slug: slug, list_name: listName(a) });
+    });
     const s = document.createElement('script');
     s.async = true;
     s.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(id)}`;

@@ -1,3 +1,4 @@
+import { track } from './analytics';
 import { store } from './store';
 
 function sync(root: ParentNode = document) {
@@ -17,7 +18,8 @@ document.addEventListener('click', (e) => {
   e.stopPropagation();
   const id = Number(btn.dataset.fav);
   if (!Number.isInteger(id)) return;
-  store.toggleFavorite({ id, slug: btn.dataset.slug ?? '', title: btn.dataset.title ?? '', thumb: btn.dataset.thumb ?? '' });
+  const added = store.toggleFavorite({ id, slug: btn.dataset.slug ?? '', title: btn.dataset.title ?? '', thumb: btn.dataset.thumb ?? '' });
+  if (added) track('favorite_add', { game_slug: btn.dataset.slug ?? '' });
   sync();
 });
 

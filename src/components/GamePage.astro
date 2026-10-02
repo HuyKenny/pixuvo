@@ -52,7 +52,7 @@ const FRAME_HOST: Record<string, string> = { GameMonetize: 'https://html5.gamemo
 const frameHost = g.providerName ? FRAME_HOST[g.providerName] : undefined;
 const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait, fit, ...(cat ? { cat: cat.slug } : {}) };
 ---
-<Base title={`${g.title} – Play Free Online`} description={desc} path={path} ogImage={g.thumb} jsonLd={ld}>
+<Base title={`${g.title} – Play Free Online`} description={desc} path={path} ogImage={g.thumb} jsonLd={ld} ga={{ page_type: 'game', game_slug: g.slug, game_title: g.title.slice(0, 90), ...(cat ? { game_category: cat.slug } : {}), ...(g.providerName ? { provider: g.providerName } : {}) }}>
   {frameHost && <link slot="head" rel="preconnect" href={frameHost} />}
   <div class="wrap game-page">
     <Breadcrumbs items={crumbs} />

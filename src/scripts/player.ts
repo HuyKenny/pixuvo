@@ -83,6 +83,7 @@ if (stage && data) {
     }
     mount(body as PlayResponse);
     store.addRecent({ id: data!.id, slug: data!.slug, title: data!.title, thumb: data!.thumb, ...(data!.cat ? { cat: data!.cat } : {}) });
+    startClock();
     track('game_start', { game_slug: data!.slug, provider: (body as PlayResponse).provider, ...(data!.cat ? { game_category: data!.cat } : {}) });
   }
 
@@ -120,6 +121,23 @@ if (stage && data) {
     userScrolled = false;
     setTimeout(fitToScreen, 300);
   });
+
+  // Time the game page is visible with the game running (the frame is cross-origin, so this is the honest
+  // measure we have): sent as game_play when the page is hidden or left. Ad revenue grows with play time.
+  let since = 0;
+  let acc = 0;
+  const startClock = () => {
+    if (!since && iframe && document.visibilityState === 'visible') since = Date.now();
+  };
+  const stopClock = () => {
+    if (since) acc += Date.now() - since;
+    since = 0;
+    const secs = Math.min(3600, Math.round(acc / 1000));
+    if (secs >= 5) track('game_play', { play_seconds: secs, transport_type: 'beacon' });
+    acc = 0;
+  };
+  document.addEventListener('visibilitychange', () => (document.visibilityState === 'hidden' ? stopClock() : startClock()));
+  addEventListener('pagehide', stopClock);
 
   function unmount() {
     if (iframe) {
@@ -211,6 +229,7 @@ if (stage && data) {
     const url = `https://pixuvo.com/games/${data.slug}/`;
     const status = document.querySelector<HTMLElement>('[data-share-status]');
     try {
+      track('share', { method: 'share' in navigator ? 'native' : 'copy_link', content_type: 'game', item_id: data.slug });
       if (navigator.share) await navigator.share({ title: data.title, url });
       else {
         await navigator.clipboard.writeText(url);
@@ -327,6 +346,7 @@ function setupRating(g: GameData) {
     if (status) {
       status.className = 'form-status ok';
       status.textContent = 'Thanks for your vote!';
+      track('rate_game', { rating: value > 0 ? 'like' : 'dislike' });
     }
   });
 }
@@ -362,6 +382,7 @@ function setupReport(g: GameData) {
     }
     status.className = 'form-status ok';
     status.textContent = 'Thank you — your report was received.';
+    track('report_issue', { reason: String(fd.get('reason') ?? '') });
     form.reset();
     setTimeout(() => dlg.close(), 1500);
   });

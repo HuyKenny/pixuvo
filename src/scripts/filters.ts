@@ -10,6 +10,7 @@
  * phone bottom sheet are two views of the same groups and stay in sync.
  */
 import { cardHtml, esc, type ClientCard } from './cards';
+import { track } from './analytics';
 
 const MIN = 12;
 const KEYS = ['q', 'sort', 'sub', 'theme', 'players', 'device', 'controls', 'style', 'mode', 'page'] as const;
@@ -90,6 +91,13 @@ if (bar && forms.length && gridEl) {
     return out;
   };
   const writeHash = (s: State) => {
+    // Analytics: which filters kids use, and what they search for inside a category.
+    const before = readHash();
+    for (const k of KEYS) {
+      if (k === 'page') continue;
+      const added = (s[k] ?? []).filter((v) => !(before[k] ?? []).includes(v));
+      for (const v of added) track(k === 'q' ? 'search' : 'filter_use', k === 'q' ? { search_term: v.slice(0, 60) } : { filter_key: k, filter_value: v });
+    }
     const parts: string[] = [];
     for (const k of KEYS) if (s[k]?.length) parts.push(`${k}=${k === 'q' ? encodeURIComponent(s[k]![0]!) : s[k]!.join(',')}`);
     history.replaceState(null, '', parts.length ? `#${parts.join('&')}` : location.pathname + location.search);

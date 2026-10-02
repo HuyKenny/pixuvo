@@ -18,8 +18,14 @@ interface Props {
   query?: string | undefined;
   prev?: string | null;
   next?: string | null;
+  /** Analytics context sent with every GA4 event on this page (page_type, game_slug, game_category, provider…). */
+  ga?: Record<string, string>;
 }
-const { title, description, path, noindex = false, ogImage, ogType = 'website', jsonLd = [], query, prev, next } = Astro.props;
+const { title, description, path, noindex = false, ogImage, ogType = 'website', jsonLd = [], query, prev, next, ga } = Astro.props;
+// Page type for analytics, from the URL when the page does not say.
+const urlPath = Astro.url.pathname;
+const pageType = ga?.page_type ?? (urlPath === '/' ? 'home' : urlPath.startsWith('/search') ? 'search' : /^\/(popular|trending|new)-games\//.test(urlPath) ? 'list' : /^\/[a-z0-9-]+-games\//.test(urlPath) ? 'category' : urlPath.startsWith('/games/') ? 'directory' : 'info');
+const gaContext = JSON.stringify({ ...ga, page_type: pageType });
 // Preview builds (workers.dev) are never indexable.
 const preview = import.meta.env.PUBLIC_NOINDEX === '1';
 const robots = noindex || preview ? 'noindex, follow' : 'index, follow, max-image-preview:large';
@@ -56,7 +62,7 @@ const canonicalUrl = path ? abs(path) : null;
     {jsonLd.map((d) => <script type="application/ld+json" set:html={JSON.stringify(d).replace(/</g, '\\u003c')} />)}
     <slot name="head" />
   </head>
-  <body>
+  <body data-ga={gaContext}>
     <Header query={query} />
     <main id="main" tabindex="-1">
       <slot />
