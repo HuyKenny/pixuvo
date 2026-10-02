@@ -90,31 +90,70 @@ test.describe('navigation & pages', () => {
 });
 
 test.describe('filters', () => {
-  test('fragment filters combine, show count, pills, clear all and survive Back', async ({ page }) => {
+  test('finder: sheet filters, sort, search inside the category, pills, Back and clear all', async ({ page }) => {
     await page.goto('/racing-games/');
+    await expect(page.locator('[data-filters]')).toHaveAttribute('data-facets', 'ready');
     const total = await page.locator('[data-result-count]').innerText();
-    await page.click('[data-drawer-open="filter-drawer"]');
-    await page.locator('#filter-drawer label.opt', { hasText: '2+ players' }).click();
-    await expect(page).toHaveURL(/#players=2/);
-    await page.click('#filter-drawer .drawer-foot [data-drawer-close]');
-    await expect(page.locator('[data-active-filters] .filter-pill')).toHaveCount(1);
-    await expect(page.locator('[data-result-count]')).not.toHaveText(total);
-    // Add a second filter and check combination.
-    await page.click('[data-drawer-open="filter-drawer"]');
+    await page.click('.qchip-main');
+    await page.locator('#filter-drawer input[type=checkbox]').first().locator('xpath=..').click();
+    await expect(page).toHaveURL(/#[a-z]+=/);
     await page.locator('#filter-drawer label.opt', { hasText: 'Newest' }).click();
+    await expect(page.locator('[data-show-count]')).toContainText(/Show|No games/);
     await page.click('#filter-drawer .drawer-foot [data-drawer-close]');
-    await expect(page).toHaveURL(/players=2/);
     await expect(page).toHaveURL(/sort=new/);
-    // Go to a game and come back: state restored from the fragment.
-    const first = page.locator('#game-grid a.card-link').first();
-    await first.click();
-    await page.goBack();
-    await expect(page.locator('[data-active-filters] .filter-pill')).toHaveCount(2);
-    // Remove a single filter, then clear all.
-    await page.locator('[data-remove-filter="players"]').click();
-    await expect(page).not.toHaveURL(/players=2/);
+    await expect(page.locator('[data-sort-label]')).toHaveText('Newest');
+    await expect(page.locator('[data-active-filters] .filter-pill')).toHaveCount(1); // sort is not a pill
+    await expect(page.locator('.qchip-badge')).toHaveText('1');
+    // Search inside the category.
     await page.locator('[data-active-filters] [data-filter-clear]').click();
+    const word = (await page.locator('#game-grid .card-title').first().innerText()).split(/\s+/).find((w) => w.length >= 3)!;
+    await page.fill('#finder-q', word);
+    await page.press('#finder-q', 'Enter');
+    await expect(page).toHaveURL(/q=/);
+    await expect(page.locator('#game-grid .card').first()).toBeVisible();
+    await expect(page.locator('[data-active-filters] .filter-pill')).toHaveCount(1);
+    // Back from a game restores the state.
+    await page.locator('#game-grid a.card-link').first().click();
+    await page.goBack();
+    await expect(page.locator('#finder-q')).toHaveValue(word);
+    await expect(page.locator('[data-active-filters] .filter-pill')).toHaveCount(1);
+    await page.locator('[data-remove-filter="q"]').click();
+    await expect(page).not.toHaveURL(/q=/);
     await expect(page.locator('[data-result-count]')).toHaveText(total);
+  });
+
+  test('options with fewer than 12 games are not offered', async ({ page }) => {
+    await page.goto('/racing-games/');
+    await expect(page.locator('[data-filters]')).toHaveAttribute('data-facets', 'ready');
+    await page.click('.qchip-main');
+    const counts = await page.locator('#filter-drawer .opt small').allInnerTexts();
+    for (const c of counts) expect(Number(c.replace(/,/g, ''))).toBeGreaterThanOrEqual(12);
+    await expect(page.locator('#filter-drawer input[value="local"]')).toHaveCount(0);
+  });
+
+  test('quick subcategory chip filters in place', async ({ page }) => {
+    for (const path of ['/racing-games/', '/puzzle-games/', '/action-games/', '/arcade-games/']) {
+      await page.goto(path);
+      const chip = page.locator('.qchip[data-quick="sub"]').first();
+      if (!(await chip.count())) continue;
+      await chip.click();
+      await expect(page).toHaveURL(new RegExp(`${path}#sub=`));
+      await expect(chip).toHaveAttribute('aria-pressed', 'true');
+      await chip.click();
+      await expect(chip).toHaveAttribute('aria-pressed', 'false');
+      return;
+    }
+  });
+
+  test('Show more appends the next page', async ({ page }) => {
+    await page.goto('/games/');
+    const more = page.locator('[data-show-more]');
+    if (await more.isHidden()) return; // fixture catalog fits one page
+    if (await page.locator('#consent').isVisible()) await page.click('[data-consent-action="reject"]');
+    const before = await page.locator('#game-grid .card').count();
+    expect(before).toBe(42);
+    await more.click();
+    await expect.poll(async () => page.locator('#game-grid .card').count()).toBeGreaterThan(before);
   });
 
   test('impossible combination shows an empty state', async ({ page }) => {
@@ -126,6 +165,14 @@ test.describe('filters', () => {
     expect((await request.get('/api/games/?players=7')).status()).toBe(400);
     expect((await request.get('/api/games/?evil=1')).status()).toBe(400);
     expect((await request.get('/api/games/?cat=racing&players=2')).status()).toBe(200);
+    expect((await request.get('/api/games/?cat=racing&players=1,2&q=car')).status()).toBe(200);
+    expect((await request.get('/api/games/?theme=nope')).status()).toBe(400);
+    // New params are part of the edge-cache key: a different search must not return the cached list.
+    const all = await (await request.get('/api/games/?cat=racing')).json();
+    const none = await (await request.get('/api/games/?cat=racing&q=zzqqxx')).json();
+    expect(all.total).toBeGreaterThan(0);
+    expect(none.total).toBe(0);
+    expect((await request.get('/api/games/?sub=jigsaw')).status()).toBe(400); // subcategory needs its parent category
   });
 });
 

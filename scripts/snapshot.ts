@@ -9,8 +9,8 @@
  */
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { parseArgs } from 'node:util';
-import { categoryGames, getCategories, getGamesBatch, getLandings, getSetting, landingGames, topGames, type Q } from '../src/lib/catalog.ts';
-import { MIN_CATEGORY_GAMES } from '../src/lib/taxonomy.ts';
+import { categoryGames, computeFacets, getCategories, getGamesBatch, getLandings, getSetting, landingGames, topGames, type Q } from '../src/lib/catalog.ts';
+import { MIN_CATEGORY_GAMES, THEMES } from '../src/lib/taxonomy.ts';
 import type { GameCard, GameDetail } from '../src/lib/types.ts';
 import { loadConfig } from './lib/env.ts';
 import { openTarget } from './lib/target.ts';
@@ -39,6 +39,8 @@ for (const c of live) {
   if (HOME_SECTIONS.includes(c.slug)) sections.push({ slug: c.slug, name: c.name, count: c.count, games: page.items.slice(0, 12) });
 }
 sections.sort((a, b) => HOME_SECTIONS.indexOf(a.slug) - HOME_SECTIONS.indexOf(b.slug));
+
+const facets = await computeFacets(q, categories);
 
 const landings = [];
 for (const l of await getLandings(q)) {
@@ -75,6 +77,9 @@ const site = {
   categoryPages,
   landings,
 };
+// Filter option counts: a static file the filter sheet fetches (also for SSR pages, which cannot import the snapshot).
+mkdirSync('public/data', { recursive: true });
+writeFileSync('public/data/facets.json', JSON.stringify({ generatedAt: site.generatedAt, themes: THEMES.map(({ slug, name, emoji }) => ({ slug, name, emoji })), facets }));
 writeFileSync(`${values.out}/site.json`, JSON.stringify(site));
 writeFileSync(`${values.out}/games.json`, JSON.stringify(details));
 console.log(`snapshot: ${published} published, ${live.length} live categories, ${landings.length} landings, ${details.length} static game pages, ${reads} rows read, ${((Date.now() - t0) / 1000).toFixed(1)} s`);

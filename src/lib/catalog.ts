@@ -3,7 +3,7 @@
  * scripts (snapshot export) pass the REST/SQLite client. Every query is
  * parameterised, selects explicit columns and is bounded by LIMIT.
  */
-import { SEARCH_SYNONYMS } from './taxonomy';
+import { MIN_CATEGORY_GAMES, SEARCH_SYNONYMS, THEMES, THEME_SLUGS, type ThemeDef } from './taxonomy';
 import { normTitle } from './text';
 import type { CategoryInfo, CategoryRef, GameCard, GameDetail, ListSort, Paged } from './types';
 import { SITE } from './site';
@@ -91,16 +91,27 @@ export async function directoryPage(q: Q, maxSeq: number, page: number, pageSize
 }
 
 // ── Filters (client state lives in the URL fragment; this is the JSON API behind it) ──
+type Players = '1' | '2';
+type Style = '2d' | '3d' | 'pixel';
+type Controls = 'keyboard' | 'mouse' | 'touch';
 export interface FilterInput {
   cat: CategoryInfo | null;
+  /** Subcategories of `cat` (OR). */
+  sub: CategoryInfo[];
+  /** Curated tag groups (OR). */
+  theme: ThemeDef[];
+  /** Text search inside the list (FTS). */
+  q: { match: string; norm: string } | null;
   device: 'mobile' | null;
-  players: '1' | '2' | null;
+  players: Players[];
   mode: 'local' | 'online' | null;
-  style: '2d' | '3d' | 'pixel' | null;
-  controls: 'keyboard' | 'mouse' | 'touch' | null;
+  style: Style[];
+  controls: Controls[];
   sort: ListSort;
   page: number;
 }
+
+const MAX_MULTI = 5;
 
 export function parseFilters(sp: URLSearchParams, cats: CategoryInfo[]): FilterInput | null {
   const pick = <T extends string>(k: string, allowed: readonly T[]): T | null | undefined => {
@@ -108,37 +119,74 @@ export function parseFilters(sp: URLSearchParams, cats: CategoryInfo[]): FilterI
     if (v === null || v === '') return null;
     return (allowed as readonly string[]).includes(v) ? (v as T) : undefined;
   };
+  /** Comma list; undefined = invalid. Duplicates are dropped. */
+  const list = <T extends string>(k: string, allowed: readonly T[]): T[] | undefined => {
+    const v = sp.get(k);
+    if (v === null || v === '') return [];
+    const parts = [...new Set(v.split(','))];
+    if (parts.length > MAX_MULTI || parts.some((x) => !(allowed as readonly string[]).includes(x))) return undefined;
+    return parts as T[];
+  };
   const catSlug = sp.get('cat');
   const cat = catSlug ? cats.find((c) => c.slug === catSlug) ?? null : null;
   if (catSlug && !cat) return null;
+  const subSlugs = list('sub', cat ? cats.filter((c) => c.parent === cat.slug).map((c) => c.slug) : []);
+  const themeSlugs = list('theme', THEME_SLUGS);
+  const rawQ = sp.get('q');
+  let text: FilterInput['q'] = null;
+  if (rawQ !== null && rawQ !== '') {
+    if (rawQ.length > 60) return null;
+    text = buildFtsQuery(rawQ);
+    if (!text) return null;
+  }
   const device = pick('device', ['mobile'] as const);
-  const players = pick('players', ['1', '2'] as const);
+  const players = list('players', ['1', '2'] as const);
   const mode = pick('mode', ['local', 'online'] as const);
-  const style = pick('style', ['2d', '3d', 'pixel'] as const);
-  const controls = pick('controls', ['keyboard', 'mouse', 'touch'] as const);
+  const style = list('style', ['2d', '3d', 'pixel'] as const);
+  const controls = list('controls', ['keyboard', 'mouse', 'touch'] as const);
   const sort = pick('sort', ['featured', 'new', 'az'] as const);
   const page = clampPage(sp.get('page') ?? '1', SITE.maxCategoryPages);
-  if ([device, players, mode, style, controls, sort].includes(undefined) || page === null) return null;
-  return { cat, device: device!, players: players!, mode: mode!, style: style!, controls: controls!, sort: sort ?? 'featured', page };
+  if ([device, mode, sort].includes(undefined) || [subSlugs, themeSlugs, players, style, controls].includes(undefined) || page === null) return null;
+  return {
+    cat,
+    sub: subSlugs!.map((x) => cats.find((c) => c.slug === x)!),
+    theme: themeSlugs!.map((x) => THEMES.find((t) => t.slug === x)!),
+    q: text,
+    device: device!, players: players!, mode: mode!, style: style!, controls: controls!, sort: sort ?? 'featured', page,
+  };
 }
+
+const marks = (n: number) => Array.from({ length: n }, () => '?').join(', ');
 
 export async function filterGames(q: Q, f: FilterInput, pageSize: number = SITE.pageSize): Promise<Paged<GameCard> & { capped: boolean }> {
   const where: string[] = [];
   const params: Param[] = [];
   if (f.device) where.push('g.mobile_friendly = 1');
-  if (f.players === '1') where.push('g.players_max = 1');
-  if (f.players === '2') where.push('g.players_max >= 2');
+  if (f.players.length) where.push(`(${f.players.map((p) => (p === '1' ? 'g.players_max = 1' : 'g.players_max >= 2')).join(' OR ')})`);
   if (f.mode) {
     where.push('g.multiplayer_mode = ?');
     params.push(f.mode);
   }
-  if (f.style) {
-    where.push('g.visual_style = ?');
-    params.push(f.style);
+  if (f.style.length) {
+    where.push(`g.visual_style IN (${marks(f.style.length)})`);
+    params.push(...f.style);
   }
-  if (f.controls) {
-    where.push('g.controls_inferred LIKE ?');
-    params.push(`%"${f.controls}"%`);
+  if (f.controls.length) {
+    where.push(`(${f.controls.map(() => 'g.controls_inferred LIKE ?').join(' OR ')})`);
+    params.push(...f.controls.map((c) => `%"${c}"%`));
+  }
+  if (f.sub.length) {
+    where.push(`EXISTS (SELECT 1 FROM game_categories x WHERE x.category_id IN (${marks(f.sub.length)}) AND x.game_id = g.id AND x.published = 1)`);
+    params.push(...f.sub.map((c) => c.id));
+  }
+  if (f.theme.length) {
+    const tags = f.theme.flatMap((t) => t.tags);
+    where.push(`EXISTS (SELECT 1 FROM game_tags gt WHERE gt.game_id = g.id AND gt.tag_id IN (SELECT id FROM tags WHERE slug IN (${marks(tags.length)})))`);
+    params.push(...tags);
+  }
+  if (f.q) {
+    where.push('g.id IN (SELECT rowid FROM games_fts WHERE games_fts MATCH ?)');
+    params.push(f.q.match);
   }
   const extra = where.length ? ' AND ' + where.join(' AND ') : '';
   const CAP = 5000;
@@ -164,6 +212,91 @@ export async function filterGames(q: Q, f: FilterInput, pageSize: number = SITE.
     pages: Math.min(SITE.maxCategoryPages, Math.max(1, Math.ceil(Math.min(n, CAP) / pageSize))),
   };
 }
+
+// ── Facets: per-category option counts for the filter UI (computed offline by the snapshot) ──
+export interface Facets {
+  sub: Array<{ slug: string; name: string; n: number }>;
+  theme: Array<{ slug: string; n: number }>;
+  players: Partial<Record<Players, number>>;
+  device: number;
+  style: Partial<Record<Style, number>>;
+  controls: Partial<Record<Controls, number>>;
+}
+
+/** All categories in a few GROUP BY passes (snapshot job — not for request time). */
+export async function computeFacets(q: Q, cats: CategoryInfo[]): Promise<Record<string, Facets>> {
+  const out: Record<string, Facets> = {};
+  const byId = new Map(cats.map((c) => [c.id, c]));
+  for (const c of cats) out[c.slug] = { sub: [], theme: [], players: {}, device: 0, style: {}, controls: {} };
+  // Subcategories: their own counts are the facet counts (a game in a subcategory is shown in its parent's list).
+  for (const c of cats) if (c.parent && out[c.parent] && c.count >= MIN_CATEGORY_GAMES) out[c.parent]!.sub.push({ slug: c.slug, name: c.name, n: c.count });
+  for (const f of Object.values(out)) f.sub.sort((a, b) => b.n - a.n);
+  const attrs = await q.all<{ cid: number; pl: number | null; mob: number | null; vs: string | null; kb: number; ms: number; tc: number; n: number }>(
+    `SELECT gc.category_id AS cid, CASE WHEN g.players_max >= 2 THEN 2 WHEN g.players_max = 1 THEN 1 END AS pl, g.mobile_friendly AS mob, g.visual_style AS vs,
+            (g.controls_inferred LIKE '%"keyboard"%') AS kb, (g.controls_inferred LIKE '%"mouse"%') AS ms, (g.controls_inferred LIKE '%"touch"%') AS tc, count(*) AS n
+       FROM game_categories gc JOIN games g ON g.id = gc.game_id
+      WHERE gc.published = 1 GROUP BY 1, 2, 3, 4, 5, 6, 7`,
+  );
+  const add = <K extends string>(rec: Partial<Record<K, number>>, k: K, n: number) => (rec[k] = (rec[k] ?? 0) + n);
+  for (const r of attrs) {
+    const c = byId.get(r.cid);
+    const f = c && out[c.slug];
+    if (!f) continue;
+    if (r.pl === 1) add(f.players, '1', r.n);
+    if (r.pl === 2) add(f.players, '2', r.n);
+    if (r.mob === 1) f.device += r.n;
+    if (r.vs === '2d' || r.vs === '3d' || r.vs === 'pixel') add(f.style, r.vs, r.n);
+    if (r.kb) add(f.controls, 'keyboard', r.n);
+    if (r.ms) add(f.controls, 'mouse', r.n);
+    if (r.tc) add(f.controls, 'touch', r.n);
+  }
+  const tagToTheme = new Map(THEMES.flatMap((t) => t.tags.map((tag) => [tag, t.slug] as const)));
+  const allTags = [...tagToTheme.keys()];
+  // A game can carry two tags of one theme (logic + logical): count distinct games per theme.
+  const themes = await q.all<{ cid: number; theme: string; n: number }>(
+    `SELECT cid, theme, count(*) AS n FROM (
+        SELECT DISTINCT gc.category_id AS cid, gc.game_id, ${'CASE t.slug ' + THEMES.flatMap((t) => t.tags.map((tag) => `WHEN '${tag}' THEN '${t.slug}'`)).join(' ') + ' END'} AS theme
+          FROM tags t JOIN game_tags gt ON gt.tag_id = t.id JOIN game_categories gc ON gc.game_id = gt.game_id
+         WHERE t.slug IN (${marks(allTags.length)}) AND gc.published = 1)
+      GROUP BY 1, 2`,
+    allTags,
+  );
+  for (const r of themes) {
+    const c = byId.get(r.cid);
+    if (c && out[c.slug] && r.n >= MIN_CATEGORY_GAMES) out[c.slug]!.theme.push({ slug: r.theme, n: r.n });
+  }
+  // Whole catalog (/games/): no subcategories, genres are links there.
+  const all: Facets = { sub: [], theme: [], players: {}, device: 0, style: {}, controls: {} };
+  const ga = await q.all<{ pl: number | null; mob: number | null; vs: string | null; kb: number; ms: number; tc: number; n: number }>(
+    `SELECT CASE WHEN players_max >= 2 THEN 2 WHEN players_max = 1 THEN 1 END AS pl, mobile_friendly AS mob, visual_style AS vs,
+            (controls_inferred LIKE '%"keyboard"%') AS kb, (controls_inferred LIKE '%"mouse"%') AS ms, (controls_inferred LIKE '%"touch"%') AS tc, count(*) AS n
+       FROM games WHERE status = 'published' GROUP BY 1, 2, 3, 4, 5, 6`,
+  );
+  for (const r of ga) {
+    if (r.pl === 1) add(all.players, '1', r.n);
+    if (r.pl === 2) add(all.players, '2', r.n);
+    if (r.mob === 1) all.device += r.n;
+    if (r.vs === '2d' || r.vs === '3d' || r.vs === 'pixel') add(all.style, r.vs, r.n);
+    if (r.kb) add(all.controls, 'keyboard', r.n);
+    if (r.ms) add(all.controls, 'mouse', r.n);
+    if (r.tc) add(all.controls, 'touch', r.n);
+  }
+  const allThemes = await q.all<{ theme: string; n: number }>(
+    `SELECT theme, count(*) AS n FROM (
+        SELECT DISTINCT gt.game_id, ${'CASE t.slug ' + THEMES.flatMap((t) => t.tags.map((tag) => `WHEN '${tag}' THEN '${t.slug}'`)).join(' ') + ' END'} AS theme
+          FROM tags t JOIN game_tags gt ON gt.tag_id = t.id JOIN games g ON g.id = gt.game_id
+         WHERE t.slug IN (${marks(allTags.length)}) AND g.status = 'published')
+      GROUP BY 1`,
+    allTags,
+  );
+  for (const r of allThemes) if (r.n >= MIN_CATEGORY_GAMES) all.theme.push({ slug: r.theme, n: r.n });
+  all.theme.sort((a, b) => b.n - a.n);
+  out[ALL_FACETS] = all;
+  for (const f of Object.values(out)) f.theme.sort((a, b) => b.n - a.n);
+  return out;
+}
+/** Facet key for the whole catalog (/games/). */
+export const ALL_FACETS = '__all';
 
 // ── Search ──────────────────────────────────────────────────────────────────
 /** Builds a safe FTS5 expression: user text never reaches MATCH unescaped. */

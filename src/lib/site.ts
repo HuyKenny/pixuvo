@@ -11,7 +11,7 @@ export const SITE = {
     dataBox: 'dxmsrdt',
     vat: 'Not a VAT payer',
   },
-  pageSize: 49, // 7 columns × 7 rows on desktop
+  pageSize: 42, // full rows at 2, 3, 6 and 7 columns
   maxCategoryPages: 100,
 } as const;
 

@@ -31,7 +31,7 @@ interface Props {
 }
 const p = Astro.props;
 const path = categoryPath(p.slug, p.page);
-const subs = p.category ? p.categories.filter((c) => c.parent === p.category!.slug && c.count >= MIN_CATEGORY_GAMES) : [];
+const subs = p.category ? p.categories.filter((c) => c.parent === p.category!.slug && c.count >= MIN_CATEGORY_GAMES).sort((a, b) => b.count - a.count) : [];
 const crumbs = [{ name: 'Home', href: '/' }, { name: 'Categories', href: '/categories/' }];
 if (p.parent) crumbs.push({ name: p.parent.name, href: categoryPath(p.parent.slug) });
 crumbs.push({ name: p.page > 1 ? `${p.name} – page ${p.page}` : p.name, href: path });
@@ -61,14 +61,21 @@ const filterable = p.filterable !== false;
       {p.page === 1 && <p class="lead">{p.intro} {approxCount(p.total)} games.</p>}
       </div>
     </div>
-    {subs.length > 0 && (
+    {subs.length > 0 && !filterable && (
       <nav aria-label={`${p.name} subcategories`}><div class="chips">
         {subs.map((s) => <a class="chip" href={categoryPath(s.slug)}><img src={categoryIcon(s.slug)} alt="" width="22" height="22" loading="lazy" />{s.name} <span class="count">{approxCount(s.count)}</span></a>)}
       </div></nav>
     )}
-    {filterable && <FilterPanel category={p.category?.slug ?? null} total={p.total} />}
-    <GameGrid games={p.games} id="game-grid" eagerCount={p.page === 1 ? 7 : 0} label={`${p.name} games`} />
+    {filterable && <FilterPanel category={p.category?.slug ?? null} name={p.name} total={p.total} subs={subs.map((s) => ({ slug: s.slug, name: s.name, count: s.count }))} />}
+    <GameGrid games={p.games} id="game-grid" eagerCount={p.page === 1 ? 4 : 0} label={`${p.name} games`} />
+    {filterable && <button type="button" class="btn-more" data-show-more data-page={p.page} data-pages={p.pages} hidden={p.page >= p.pages}>Show more games</button>}
     <div id="game-pager"><Pagination page={p.page} pages={p.pages} href={(n) => categoryPath(p.slug, n)} label={`${p.name} pages`} /></div>
+    {subs.length > 0 && filterable && (
+      <section class="section" aria-labelledby="sub-h">
+        <div class="section-head"><h2 id="sub-h">Explore {p.name} games</h2></div>
+        <div class="chips">{subs.map((s) => <a class="chip" href={categoryPath(s.slug)}><img src={categoryIcon(s.slug)} alt="" width="22" height="22" loading="lazy" />{s.name} games <span class="count">{approxCount(s.count)}</span></a>)}</div>
+      </section>
+    )}
     {p.related && p.related.length > 0 && (
       <section class="section" aria-labelledby="rel-h">
         <div class="section-head"><h2 id="rel-h">Related</h2></div>

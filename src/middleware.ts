@@ -14,7 +14,7 @@ import { normTitle } from './lib/text';
 
 const NO_CACHE = [/^\/api\/(play|rate|report|cron|admin)\b/, /^\/admin\b/];
 const PARAMS: Record<string, string[]> = {
-  '/api/games/': ['cat', 'device', 'players', 'mode', 'style', 'controls', 'sort', 'page'],
+  '/api/games/': ['cat', 'sub', 'theme', 'q', 'device', 'players', 'mode', 'style', 'controls', 'sort', 'page'],
   '/api/suggest/': ['q'],
   '/search/': ['q', 'page'],
 };
@@ -26,7 +26,8 @@ function cacheKey(url: URL, version: string): string | null {
     let v = url.searchParams.get(k);
     if (v === null || v === '') continue;
     if (k === 'q') v = normTitle(v.slice(0, 80));
-    if (v.length > 40) return null;
+    else if (v.includes(',')) v = [...new Set(v.split(','))].sort().join(','); // same set → same key
+    if (v.length > 120) return null;
     sp.set(k, v);
   }
   sp.set('__v', version);

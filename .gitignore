@@ -13,3 +13,4 @@ playwright-report/
 coverage/
 tmp/
 *.log
+public/data/

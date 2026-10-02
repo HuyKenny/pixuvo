@@ -26,8 +26,9 @@ const href = (n: number) => (n > 1 ? `/games/page/${n}/` : '/games/');
       <h1>All games{page > 1 && ` – page ${page}`}</h1>
       <p class="lead">Every game on Pixuvo, newest additions first. Looking for something specific? Try <a href="/categories/">categories</a> or search.</p>
     </div>
-    <FilterPanel category={null} total={Number(published ?? 0)} />
-    {res.items.length ? <GameGrid games={res.items} eagerCount={page === 1 ? 7 : 0} label="All games" id="game-grid" /> : <div class="empty-state"><strong>No games on this page</strong>Games listed here were removed from the catalog. <a href="/games/">Back to the first page</a>.</div>}
+    <FilterPanel category={null} name="all games" total={Number(published ?? 0)} links={cats.filter((c) => c.kind === 'genre').slice(0, 12).map((c) => ({ slug: c.slug, name: c.name }))} />
+    {res.items.length ? <GameGrid games={res.items} eagerCount={page === 1 ? 4 : 0} label="All games" id="game-grid" /> : <div class="empty-state"><strong>No games on this page</strong>Games listed here were removed from the catalog. <a href="/games/">Back to the first page</a>.</div>}
+    <button type="button" class="btn-more" data-show-more data-page={page} data-pages={res.pages} hidden={page >= res.pages}>Show more games</button>
     <div id="game-pager"><Pagination page={page} pages={res.pages} href={href} label="All games pages" /></div>
   </div>
 </Base>

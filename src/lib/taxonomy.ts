@@ -191,6 +191,39 @@ export function findSensitiveTerms(text: string): string[] {
 }
 
 /** Query synonyms for search (both directions). */
+/**
+ * Themes = curated groups of partner tags, used as a category filter ("Animals", "Christmas"…).
+ * Partner tags are noisy (logic/logical, jump/jumping); a theme merges the spellings.
+ * Only themes with at least MIN_CATEGORY_GAMES games in a category are offered there.
+ */
+export interface ThemeDef {
+  slug: string;
+  name: string;
+  emoji: string;
+  tags: string[];
+}
+export const THEMES: ThemeDef[] = [
+  { slug: 'animals', name: 'Animals', emoji: '🐶', tags: ['animal', 'animals', 'pet', 'pets', 'dog', 'cat', 'horse', 'dinosaur', 'dino'] },
+  { slug: 'cars', name: 'Cars', emoji: '🚗', tags: ['cars', 'car', 'supercars', 'drifting', 'drift'] },
+  { slug: 'brain', name: 'Brain & Logic', emoji: '🧠', tags: ['brain', 'logic', 'logical', 'mind', 'iq', 'thinking', 'brain-teaser'] },
+  { slug: 'christmas', name: 'Christmas', emoji: '🎄', tags: ['christmas', 'xmas', 'santa'] },
+  { slug: 'halloween', name: 'Halloween', emoji: '🎃', tags: ['halloween', 'spooky', 'pumpkin'] },
+  { slug: 'food', name: 'Candy & Food', emoji: '🍭', tags: ['candy', 'food', 'cake', 'fruit', 'sweet', 'pizza'] },
+  { slug: 'fashion', name: 'Fashion & Princess', emoji: '👑', tags: ['princess', 'fashion', 'makeover', 'dress-up', 'dressup'] },
+  { slug: 'monsters', name: 'Monsters', emoji: '👾', tags: ['monster', 'monsters'] },
+  { slug: 'space', name: 'Space', emoji: '🚀', tags: ['space', 'alien', 'aliens', 'galaxy', 'planet'] },
+  { slug: 'superhero', name: 'Superheroes', emoji: '🦸', tags: ['superhero', 'superheroes', 'hero'] },
+  { slug: 'army', name: 'Army & War', emoji: '🪖', tags: ['army', 'war', 'military', 'soldier', 'soldiers'] },
+  { slug: 'anime', name: 'Anime', emoji: '🌸', tags: ['anime', 'manga'] },
+  { slug: 'ball', name: 'Ball', emoji: '⚽', tags: ['ball', 'balls'] },
+  { slug: 'drawing', name: 'Drawing & Colors', emoji: '🎨', tags: ['drawing', 'draw', 'color', 'colors', 'coloring', 'paint', 'painting'] },
+  { slug: 'relaxing', name: 'Relaxing', emoji: '😌', tags: ['relaxation', 'relaxing', 'relax', 'satisfying', 'asmr'] },
+  { slug: 'physics', name: 'Physics', emoji: '🧲', tags: ['physics'] },
+  { slug: 'family', name: 'Little Kids', emoji: '🧸', tags: ['baby', 'family', 'kids', 'toddler', 'preschool'] },
+  { slug: 'classic', name: 'Classic', emoji: '🕹️', tags: ['classic'] },
+];
+export const THEME_SLUGS = THEMES.map((t) => t.slug);
+
 export const SEARCH_SYNONYMS: Record<string, string[]> = {
   car: ['driving', 'racing', 'cars'],
   cars: ['car', 'driving'],

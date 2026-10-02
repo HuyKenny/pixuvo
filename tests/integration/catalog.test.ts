@@ -1,7 +1,7 @@
 import { beforeAll, describe, expect, it } from 'vitest';
 import { runImport } from '../../scripts/import/pipeline.ts';
 import { gamemonetize } from '../../scripts/import/adapters/gamemonetize.ts';
-import { categoryGames, directoryPage, filterGames, getCategories, getGame, landingGames, parseFilters, relatedGames, searchGames, suggest } from '../../src/lib/catalog.ts';
+import { ALL_FACETS, categoryGames, computeFacets, directoryPage, filterGames, getCategories, getGame, landingGames, parseFilters, relatedGames, searchGames, suggest } from '../../src/lib/catalog.ts';
 import { asQ, freshDb, GM_CONFIG, gmFeed, gmItem } from '../helpers.ts';
 
 const db = freshDb();
@@ -14,7 +14,7 @@ beforeAll(async () => {
     gmItem(3, { title: 'Super Car Drift', tags: 'car, drift, 3d, 2 player' }),
     gmItem(4, { title: 'Soccer Heads', category: 'Sports', tags: 'soccer, 2 player', description: 'Head the ball into the goal.' }),
     gmItem(5, { title: 'Pixel Racer', tags: 'racing, pixel, 1 player', instructions: 'Click to accelerate.' }),
-    ...Array.from({ length: 20 }, (_, i) => gmItem(100 + i, { title: `Racing Filler ${i}`, tags: 'car, racing' })),
+    ...Array.from({ length: 20 }, (_, i) => gmItem(100 + i, { title: `Racing Filler ${i}`, tags: 'car, racing, cars' })),
   ];
   await runImport(db, gamemonetize, { dryRun: false, budgetRows: 1e6, config: GM_CONFIG, fetchJson: gmFeed([items]), minCompleteItems: 1 });
 });
@@ -49,6 +49,27 @@ describe('catalog queries', () => {
     expect(pixel.items.map((g) => g.title)).toEqual(['Pixel Racer']);
     const none = await filterGames(q, parseFilters(new URLSearchParams('cat=sports&style=pixel'), cats)!);
     expect(none.total).toBe(0);
+  });
+  it('subcategory, theme, text and OR filters', async () => {
+    const cats = await getCategories(q);
+    const titles = async (qs: string) => (await filterGames(q, parseFilters(new URLSearchParams(qs), cats)!)).items.map((g) => g.title);
+    if (cats.some((c) => c.slug === 'drift' && c.parent === 'racing')) expect(await titles('cat=racing&sub=drift')).toEqual(['Super Car Drift']);
+    expect(await titles('cat=racing&q=drift')).toEqual(['Super Car Drift']);
+    expect(await titles('cat=racing&q=pixel racer')).toEqual(['Pixel Racer']);
+    const cars = await titles('cat=racing&theme=cars');
+    expect(cars).toContain('Racing Filler 0');
+    expect(cars).not.toContain('Pixel Racer');
+    const both = await titles('players=1,2');
+    expect(both).toEqual(expect.arrayContaining(['Pixel Racer', 'Super Car Drift', 'Soccer Heads']));
+    expect(await titles('cat=racing&q=zzzz nothing')).toEqual([]);
+  });
+  it('facets count options per category and for the whole catalog', async () => {
+    const cats = await getCategories(q);
+    const f = await computeFacets(q, cats);
+    expect(f.racing!.players['2']).toBeGreaterThanOrEqual(1);
+    expect(f.racing!.theme.find((t) => t.slug === 'cars')?.n).toBeGreaterThanOrEqual(12);
+    expect(f[ALL_FACETS]!.device).toBe(1);
+    expect(f.racing!.sub.every((s) => s.n >= 12)).toBe(true);
   });
   it('category pages are paged deterministically', async () => {
     const cats = await getCategories(q);
