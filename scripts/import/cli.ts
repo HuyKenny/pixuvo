@@ -29,7 +29,7 @@ const { values } = parseArgs({
 
 const cfg = loadConfig();
 const db = openTarget(values.target!, cfg);
-const providers = values.provider === 'all' ? ['gamemonetize', 'gamepix'] : values.provider!.split(',');
+const providers = values.provider === 'all' ? ['gamemonetize', 'gamepix', 'playgama'] : values.provider!.split(',');
 let budget = Number(values.budget);
 if (!Number.isFinite(budget) || budget <= 0) throw new Error('--budget must be a positive number');
 
@@ -44,7 +44,7 @@ for (const id of providers) {
     continue;
   }
   const minInterval = id === 'gamemonetize' ? 8_000 : 400; // GameMonetize answers Cloudflare 1015 to bursts
-  const fetcher = cached(values['cache-dir'], (url) => fetchJson(url, { allowHosts: adapter.feedHosts, minIntervalMs: minInterval }));
+  const fetcher = cached(values['cache-dir'], (url, init) => fetchJson(url, { allowHosts: adapter.feedHosts, minIntervalMs: minInterval, ...(init ?? {}) }));
   const rep = await runImport(db, adapter, {
     dryRun: values['dry-run']!,
     budgetRows: budget,
@@ -80,13 +80,14 @@ function summary(r: RunReport): string {
   ].filter(Boolean).join('\n');
 }
 
-function cached(dir: string | undefined, f: (url: string) => Promise<unknown>) {
+type Init = { method?: 'GET' | 'POST'; body?: unknown };
+function cached(dir: string | undefined, f: (url: string, init?: Init) => Promise<unknown>) {
   if (!dir) return f;
   mkdirSync(dir, { recursive: true });
-  return async (url: string) => {
-    const p = join(dir, createHash('sha1').update(url).digest('hex') + '.json');
+  return async (url: string, init?: Init) => {
+    const p = join(dir, createHash('sha1').update(url + JSON.stringify(init?.body ?? '')).digest('hex') + '.json');
     if (existsSync(p)) return JSON.parse(readFileSync(p, 'utf8'));
-    const v = await f(url);
+    const v = await f(url, init);
     writeFileSync(p, JSON.stringify(v));
     return v;
   };

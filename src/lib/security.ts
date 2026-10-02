@@ -1,6 +1,6 @@
 /** Security headers shared by the middleware (SSR) and scripts/postbuild.ts (_headers for static files). */
-export const GAME_FRAME_HOSTS = ['https://html5.gamemonetize.co', 'https://html5.gamemonetize.com', 'https://play.gamepix.com'];
-export const IMAGE_HOSTS = ['https://img.gamemonetize.com', 'https://img.gamepix.com'];
+export const GAME_FRAME_HOSTS = ['https://html5.gamemonetize.co', 'https://html5.gamemonetize.com', 'https://play.gamepix.com', 'https://playgama.com'];
+export const IMAGE_HOSTS = ['https://img.gamemonetize.com', 'https://img.gamepix.com', 'https://static.playgama.com'];
 
 const TEST_MODE = (typeof process !== 'undefined' && process.env?.PUBLIC_TEST_MODE === '1') || import.meta.env?.PUBLIC_TEST_MODE === '1';
 

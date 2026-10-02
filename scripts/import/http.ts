@@ -15,6 +15,9 @@ export interface FetchOptions {
   /** Injected for tests. */
   fetchImpl?: typeof fetch;
   sleep?: (ms: number) => Promise<void>;
+  /** POST JSON body (Playgama's export API is POST-only). */
+  method?: 'GET' | 'POST';
+  body?: unknown;
 }
 
 export class FeedError extends Error {
@@ -54,6 +57,8 @@ export async function fetchJson(url: string, opts: FetchOptions): Promise<unknow
     userAgent = 'PixuvoCatalogBot/1.0 (+https://pixuvo.com/about/)',
     fetchImpl = fetch,
     sleep = defaultSleep,
+    method = 'GET',
+    body,
   } = opts;
 
   let attempt = 0;
@@ -83,9 +88,11 @@ export async function fetchJson(url: string, opts: FetchOptions): Promise<unknow
       let res: Response;
       try {
         res = await fetchImpl(current.toString(), {
+          method,
           redirect: 'manual',
           signal: ctrl.signal,
-          headers: { accept: 'application/json', 'user-agent': userAgent },
+          headers: { accept: 'application/json', 'user-agent': userAgent, ...(method === 'POST' ? { 'content-type': 'application/json' } : {}) },
+          ...(method === 'POST' ? { body: JSON.stringify(body ?? {}) } : {}),
         });
       } catch (e) {
         clearTimeout(timer);

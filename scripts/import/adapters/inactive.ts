@@ -20,10 +20,6 @@ function inactive(id: string, reason: string): ProviderAdapter {
   };
 }
 
-export const playgama = inactive(
-  'playgama',
-  'needs PLAYGAMA_CLID and a verified catalog export (the dashboard currently only offers a manual JSON download; its schema has not been provided yet)',
-);
 export const gamedistribution = inactive(
   'gamedistribution',
   'publisher application rejected (low traffic) — status awaiting_approval; no publishing or monetization allowed',

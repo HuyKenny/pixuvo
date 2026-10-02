@@ -25,8 +25,24 @@ describe('adapters', () => {
     const pages = gamepix.pages({ startPage: 1, config: { GAMEPIX_SID: 'M7X08' }, fetchJson: async () => ({ items: [], next_url: 'https://feeds.gamepix.com/v2/json?sid=EVIL&page=2' }) });
     await expect(pages.next()).rejects.toThrow(/sid/);
   });
+  it('parses a Playgama record, appends our clid and skips foreign-domain games', async () => {
+    const { playgama } = await import('../../scripts/import/adapters/playgama.ts');
+    const cfg = { PLAYGAMA_CLID: 'p_32f1a219-f53f-4b7c-ba4c-b2715b71d41a' };
+    const base = { id: '97426', title: 'Piece of Cake', description: 'Merge <b>cakes</b>.', howToPlayText: 'Drag items.', gameURL: 'https://playgama.com/export/game/piece-of-cake',
+      genres: ['puzzle', 'cooking'], tags: ['relaxing-games', 'android-games'], images: ['https://static.playgama.com/p-img/x/big_preview/a?width=448'],
+      mobileReady: ['For Android', 'For Desktop'], screenOrientation: { horizontal: true, vertical: false }, inGamePurchases: 'Yes' };
+    const r = playgama.parse(base, cfg);
+    expect(r.ok).toBe(true);
+    if (!r.ok) return;
+    expect(new URL(r.item.embedUrl).searchParams.get('clid')).toBe(cfg.PLAYGAMA_CLID);
+    expect(r.item).toMatchObject({ description: 'Merge cakes.', orientation: 'landscape', mobileFriendly: 1 });
+    expect(r.item.labels).toEqual(expect.arrayContaining(['puzzle', 'cooking', 'relaxing']));
+    expect(r.item.labels).not.toContain('android');
+    expect(playgama.parse({ ...base, gameURL: 'https://numicolor.com/export' }, cfg).ok).toBe(false);
+    expect(playgama.ready({}).ok).toBe(false);
+  });
   it('keeps unapproved providers inactive with an explanation', () => {
-    for (const id of ['playgama', 'gamedistribution', 'famobi']) {
+    for (const id of ['gamedistribution', 'famobi']) {
       const r = ADAPTERS[id]!.ready({});
       expect(r.ok).toBe(false);
     }

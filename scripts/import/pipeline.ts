@@ -28,7 +28,7 @@ export interface RunOptions {
   graceDays?: number | undefined;
   now?: Date | undefined;
   config: Record<string, string | undefined>;
-  fetchJson: (url: string) => Promise<unknown>;
+  fetchJson: (url: string, init?: { method?: 'GET' | 'POST'; body?: unknown }) => Promise<unknown>;
   log?: (msg: string) => void | undefined;
   /** Ignore provider publish_status (technical import only). Never publishes. */
   technicalOnly?: boolean | undefined;

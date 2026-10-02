@@ -30,6 +30,7 @@ export function htmlToText(input: unknown, maxLen = 5000): string {
     .replace(/<\s*(script|style|iframe|object|embed|noscript)[^>]*>[\s\S]*?<\s*\/\s*\1\s*>/gi, ' ')
     .replace(/<\s*br\s*\/?>/gi, '\n')
     .replace(/<\s*\/?\s*(p|div|li|ul|ol|h[1-6]|tr|table|section|article)[^>]*>/gi, '\n')
+    .replace(/<\s*\/?\s*(b|i|u|em|strong|span|a|small|mark|sup|sub)(\s[^>]*)?>/gi, '')
     .replace(/<[^>]*>/g, ' ');
   s = decodeEntities(s);
   s = stripUnsafeChars(s);

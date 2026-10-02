@@ -34,7 +34,7 @@ export interface FeedPage {
 }
 
 export interface AdapterContext {
-  fetchJson: (url: string) => Promise<unknown>;
+  fetchJson: (url: string, init?: { method?: 'GET' | 'POST'; body?: unknown }) => Promise<unknown>;
   startPage: number;
   /** Local file for providers without a feed URL. */
   file?: string | undefined;

@@ -50,6 +50,7 @@ const canonicalUrl = path ? abs(path) : null;
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://img.gamemonetize.com" />
     <link rel="preconnect" href="https://img.gamepix.com" />
+    <link rel="preconnect" href="https://static.playgama.com" />
     {jsonLd.map((d) => <script type="application/ld+json" set:html={JSON.stringify(d).replace(/</g, '\\u003c')} />)}
     <slot name="head" />
   </head>
