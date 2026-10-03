@@ -8,6 +8,7 @@ import Icon from './Icon.astro';
 import { categoryIcon } from '../lib/category-icons';
 import { categoryPath } from '../lib/site';
 import { useI18n } from '../i18n';
+import { CATEGORIES } from '../lib/taxonomy';
 interface Props {
   category: string | null;
   name: string;
@@ -20,9 +21,11 @@ interface Props {
 const { category, name, total, subs = [], links = [] } = Astro.props;
 const i = await useI18n(Astro);
 const t = i.t;
+// Localised names of every category: facet options from /data/facets.json carry English names.
+const catNames = i.lang === 'en' ? {} : Object.fromEntries(CATEGORIES.map((c) => [c.slug, i.cat(c.slug, c.name)]));
 const gv = category ? i.catGames(category, name) : { games: name, gamesLc: name };
 ---
-<div class="finder" data-filters data-category={category ?? ''} data-total={total} data-subs={JSON.stringify(subs.map((s) => ({ slug: s.slug, name: s.name })))}>
+<div class="finder" data-filters data-category={category ?? ''} data-total={total} data-subs={JSON.stringify(subs.map((s) => ({ slug: s.slug, name: s.name })))} data-cat-names={JSON.stringify(catNames)}>
   <form class="finder-search" role="search" data-filter-search>
     <label class="sr-only" for="finder-q">{t('filter.searchIn', gv)}</label>
     <Icon name="search" size={20} />

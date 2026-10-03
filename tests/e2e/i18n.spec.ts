@@ -74,6 +74,10 @@ test.describe('localised pages', () => {
   test('client strings and API card categories follow the page language', async ({ page }) => {
     await page.goto('/cs/racing-games/#players=2');
     await expect(page.locator('[data-result-count]')).not.toContainText('games');
+    // Filter options are rendered by the browser from facets.json: their category names must be localised too.
+    await page.setViewportSize({ width: 1440, height: 900 });
+    const side = await page.locator('.list-layout').innerText();
+    for (const en of ['Motorcycle', 'Car\n', 'Racing games']) expect(side, en).not.toContain(en);
     const api = await page.request.get('/api/games/?cat=racing&lang=cs');
     const data = (await api.json()) as { items: Array<{ cat: string | null }> };
     expect(data.items.some((g) => g.cat && g.cat !== 'Racing' && g.cat !== 'Car')).toBe(true);

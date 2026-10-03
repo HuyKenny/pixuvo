@@ -58,6 +58,7 @@ if (bar && forms.length && gridEl) {
   const category = bar.dataset.category ?? '';
   const total = Number(bar.dataset.total ?? '0');
   const subs = JSON.parse(bar.dataset.subs ?? '[]') as Array<{ slug: string; name: string }>;
+  const catNames = JSON.parse(bar.dataset.catNames ?? '{}') as Record<string, string>;
   const count = bar.querySelector<HTMLElement>('[data-result-count]')!;
   const activeBox = bar.querySelector<HTMLElement>('[data-active-filters]')!;
   const badge = bar.querySelector<HTMLElement>('[data-filter-badge]')!;
@@ -113,7 +114,7 @@ if (bar && forms.length && gridEl) {
     const f = facets;
     const has = (n: number | undefined) => !f || (n ?? 0) >= MIN;
     const g: Group[] = [{ key: 'sort', legend: tr('c.sortBy'), radio: true, opts: [{ v: 'featured', label: tr('c.sortBest'), ico: '⭐' }, { v: 'new', label: tr('c.sortNewest'), ico: '🆕' }, { v: 'az', label: tr('c.sortAz'), ico: '🔤' }] }];
-    const subOpts = (f?.sub ?? subs.map((x) => ({ ...x, n: undefined as number | undefined }))).map((x) => ({ v: x.slug, label: x.name, img: `/icons/cat/${x.slug}.webp`, n: x.n }));
+    const subOpts = (f?.sub ?? subs.map((x) => ({ ...x, n: undefined as number | undefined }))).map((x) => ({ v: x.slug, label: catNames[x.slug] ?? x.name, img: `/icons/cat/${x.slug}.webp`, n: x.n })); // facets.json names are English; data-subs carries the page language
     if (subOpts.length) g.push({ key: 'sub', legend: tr('c.type'), opts: subOpts });
     if (f) g.push({ key: 'theme', legend: tr('c.theme'), opts: f.theme.map((t) => { const m = themeMeta.find((x) => x.slug === t.slug); return { v: t.slug, label: themeName(t.slug, m?.name ?? t.slug), ico: m?.emoji, n: t.n }; }) });
     g.push({ key: 'players', legend: tr('c.playersLegend'), opts: [{ v: '1', label: tr('c.p1'), ico: '👤', n: f?.players['1'] }, { v: '2', label: tr('c.p2'), ico: '👥', n: f?.players['2'] }] });
@@ -134,7 +135,7 @@ if (bar && forms.length && gridEl) {
       .join('')));
   }
   const label = (k: Key, v: string) =>
-    k === 'q' ? `“${v}”` : k === 'sub' ? subs.find((x) => x.slug === v)?.name ?? v : k === 'theme' ? themeName(v, themeMeta.find((x) => x.slug === v)?.name ?? v) : LABELS[`${k}:${v}`] ?? v;
+    k === 'q' ? `“${v}”` : k === 'sub' ? catNames[v] ?? subs.find((x) => x.slug === v)?.name ?? v : k === 'theme' ? themeName(v, themeMeta.find((x) => x.slug === v)?.name ?? v) : LABELS[`${k}:${v}`] ?? v;
 
   function syncUI(s: State) {
     forms.forEach((f) => f.querySelectorAll<HTMLInputElement>('input').forEach((i) => {
