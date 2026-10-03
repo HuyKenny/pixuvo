@@ -93,11 +93,7 @@
  "home.statCategoriesNote": "für jeden etwas dabei",
  "home.statPlays": "Spielstarts",
  "home.statPlaysNote": "gestern auf Pixuvo",
- "home.statPlay": "Sofort",
- "home.statInstantly": "spielen",
  "home.statInstantlyNote": "startet mit einem Klick",
- "home.statNo": "Kein",
- "home.statDownload": "Download",
  "home.statDownloadNote": "läuft im Browser",
  "home.quick2p": "2 Spieler",
  "home.quickMobile": "Fürs Handy",
@@ -614,5 +610,7 @@
  "theme.physics": "Physik",
  "theme.family": "Für die Kleinen",
  "theme.classic": "Klassiker",
- "new.leadEnd": "."
+ "new.leadEnd": ".",
+ "home.statPlayNow": "Sofort spielen",
+ "home.statNoDownloads": "Kein Download"
 }

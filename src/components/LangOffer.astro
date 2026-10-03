@@ -5,7 +5,7 @@
  * redirects; hidden for bots (needs JS) and after dismissing.
  */
 import { LOCALES } from '../i18n/locales';
-const offers = Object.fromEntries(LOCALES.map((l) => [l.code, { offer: l.offer, go: l.go }]));
+const offers = Object.fromEntries(LOCALES.map((l) => [l.code, { offer: l.offer, go: l.go, dir: l.dir }]));
 ---
 <div class="lang-offer" data-lang-offer data-offers={JSON.stringify(offers)} hidden role="region" aria-label="Language">
   <span data-offer-text></span>
@@ -25,10 +25,13 @@ const offers = Object.fromEntries(LOCALES.map((l) => [l.code, { offer: l.offer, 
     }
     const want = fromAcceptLanguage((navigator.languages ?? [navigator.language]).join(','));
     if (!dismissed && want && want !== page && !location.pathname.startsWith('/search')) {
-      const offers = JSON.parse(box.dataset.offers ?? '{}') as Record<string, { offer: string; go: string }>;
+      const offers = JSON.parse(box.dataset.offers ?? '{}') as Record<string, { offer: string; go: string; dir: string }>;
       const o = offers[want];
       if (o) {
-        box.querySelector('[data-offer-text]')!.textContent = o.offer;
+        const text = box.querySelector<HTMLElement>('[data-offer-text]')!;
+        text.textContent = o.offer;
+        text.lang = want;
+        text.dir = o.dir;
         const go = box.querySelector<HTMLAnchorElement>('[data-offer-go]')!;
         go.textContent = o.go;
         go.href = localePath(want, stripLocale(location.pathname)) + location.search + location.hash;

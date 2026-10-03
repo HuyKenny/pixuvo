@@ -3570,7 +3570,7 @@ body.is-fullscreen .bottom-nav {
 
 /* ── Right-to-left (Arabic) ───────────────────────────────────────────────── */
 [dir='rtl'] .breadcrumbs li + li::before { content: '‹'; }
-[dir='rtl'] .icon-arrow, [dir='rtl'] .btn-hero svg, [dir='rtl'] .card-play svg { transform: scaleX(-1); }
+[dir='rtl'] .icon-arrow { transform: scaleX(-1); }
 [dir='rtl'] .search-field input { text-align: right; }
 
 /* ── Language switcher & offer bar ─────────────────────────────────────── */
@@ -3591,9 +3591,11 @@ body.is-fullscreen .bottom-nav {
 .drawer-lang .langswitch summary { color: #1b2152; border: 1px solid #dfe3f2; }
 .drawer-lang .ls-name { display: inline; }
 @media (max-width: 899.98px) { .langswitch-header { display: none; } }
-.lang-offer { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: center; padding: 8px 16px; background: #fff7d6; color: #3d3200; font-size: 14.5px; font-weight: 600; border-bottom: 1px solid #f0e2a3; }
+.lang-offer { display: flex; align-items: center; gap: 10px; justify-content: center; padding: 8px 16px; background: #fff7d6; color: #3d3200; font-size: 14.5px; font-weight: 600; border-bottom: 1px solid #f0e2a3; }
 .lang-offer[hidden] { display: none; }
-.lang-offer .icon-btn { width: 36px; height: 36px; color: #3d3200; }
+.lang-offer [data-offer-text] { min-width: 0; }
+.lang-offer .btn { flex: none; }
+.lang-offer .icon-btn { flex: none; width: 44px; height: 44px; color: #3d3200; }
 .mt-note { margin-top: 6px; }
 .doc-binding { padding: 10px 14px; background: #f3f0ff; border-radius: 10px; }
 .search-cats { margin: 4px 0 16px; }

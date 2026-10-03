@@ -92,11 +92,7 @@
  "home.statCategoriesNote": "มีสำหรับทุกคน",
  "home.statPlays": "ครั้งที่เล่น",
  "home.statPlaysNote": "เมื่อวานบน Pixuvo",
- "home.statPlay": "เล่น",
- "home.statInstantly": "ทันที",
  "home.statInstantlyNote": "เริ่มได้ในคลิกเดียว",
- "home.statNo": "ไม่ต้อง",
- "home.statDownload": "ดาวน์โหลด",
  "home.statDownloadNote": "เล่นได้ในเบราว์เซอร์",
  "home.quick2p": "2 คน",
  "home.quickMobile": "เล่นบนมือถือได้",
@@ -606,5 +602,7 @@
  "theme.physics": "ฟิสิกส์",
  "theme.family": "เด็กเล็ก",
  "theme.classic": "คลาสสิก",
- "new.leadEnd": ""
+ "new.leadEnd": "",
+ "home.statPlayNow": "เล่นได้ทันที",
+ "home.statNoDownloads": "ไม่ต้องดาวน์โหลด"
 }

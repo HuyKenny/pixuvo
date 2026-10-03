@@ -92,11 +92,7 @@
  "home.statCategoriesNote": "人人都能找到喜欢的",
  "home.statPlays": "次游玩",
  "home.statPlaysNote": "昨天在 Pixuvo 上",
- "home.statPlay": "即点",
- "home.statInstantly": "即玩",
  "home.statInstantlyNote": "点一下就开始",
- "home.statNo": "无需",
- "home.statDownload": "下载",
  "home.statDownloadNote": "在浏览器里就能玩",
  "home.quick2p": "双人",
  "home.quickMobile": "支持手机",
@@ -606,5 +602,7 @@
  "theme.physics": "物理",
  "theme.family": "幼儿",
  "theme.classic": "经典",
- "new.leadEnd": "。"
+ "new.leadEnd": "。",
+ "home.statPlayNow": "即点即玩",
+ "home.statNoDownloads": "无需下载"
 }

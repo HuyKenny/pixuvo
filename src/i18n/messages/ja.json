@@ -92,11 +92,7 @@
  "home.statCategoriesNote": "だれでも楽しめる",
  "home.statPlays": "プレイ",
  "home.statPlaysNote": "昨日の Pixuvo でのプレイ数",
- "home.statPlay": "すぐに",
- "home.statInstantly": "遊べる",
  "home.statInstantlyNote": "ワンクリックでスタート",
- "home.statNo": "なし",
- "home.statDownload": "ダウンロード",
  "home.statDownloadNote": "ブラウザで動きます",
  "home.quick2p": "2人用",
  "home.quickMobile": "スマホOK",
@@ -606,5 +602,7 @@
  "theme.physics": "物理",
  "theme.family": "小さな子ども向け",
  "theme.classic": "クラシック",
- "new.leadEnd": "。"
+ "new.leadEnd": "。",
+ "home.statPlayNow": "すぐに遊べる",
+ "home.statNoDownloads": "ダウンロード不要"
 }

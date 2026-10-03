@@ -11,10 +11,10 @@ const items = [
   { icon: uiIcon('grid'), big: n(categories), small: t('home.statCategories'), note: t('home.statCategoriesNote') },
   played
     ? { icon: uiIcon('lightning'), big: n(playsYesterday), small: t('home.statPlays'), note: t('home.statPlaysNote') }
-    : { icon: uiIcon('lightning'), big: t('home.statPlay'), small: t('home.statInstantly'), note: t('home.statInstantlyNote') },
-  { icon: uiIcon('cloud'), big: t('home.statNo'), small: t('home.statDownload'), note: t('home.statDownloadNote') },
+    : { icon: uiIcon('lightning'), big: t('home.statPlayNow'), small: '', note: t('home.statInstantlyNote') },
+  { icon: uiIcon('cloud'), big: t('home.statNoDownloads'), small: '', note: t('home.statDownloadNote') },
 ];
 ---
 <ul class="statcards" aria-label={t('a11y.whyPixuvo')}>
-  {items.map((i) => <li><img src={i.icon} alt="" width="44" height="44" /><span><strong>{i.big} <em>{i.small}</em></strong><small>{i.note}</small></span></li>)}
+  {items.map((i) => <li><img src={i.icon} alt="" width="44" height="44" /><span><strong>{i.big}{i.small && <> <em>{i.small}</em></>}</strong><small>{i.note}</small></span></li>)}
 </ul>

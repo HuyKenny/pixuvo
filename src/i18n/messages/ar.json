@@ -97,11 +97,7 @@
  "home.statCategoriesNote": "شيء للجميع",
  "home.statPlays": "مرة لعب",
  "home.statPlaysNote": "أمس على Pixuvo",
- "home.statPlay": "العب",
- "home.statInstantly": "فورًا",
  "home.statInstantlyNote": "تبدأ بنقرة واحدة",
- "home.statNo": "بلا",
- "home.statDownload": "تنزيل",
  "home.statDownloadNote": "تعمل في متصفحك",
  "home.quick2p": "لشخصين",
  "home.quickMobile": "تعمل على الجوال",
@@ -646,5 +642,7 @@
  "theme.physics": "فيزياء",
  "theme.family": "للصغار",
  "theme.classic": "كلاسيكية",
- "new.leadEnd": "."
+ "new.leadEnd": ".",
+ "home.statPlayNow": "العب فورًا",
+ "home.statNoDownloads": "بلا تنزيل"
 }

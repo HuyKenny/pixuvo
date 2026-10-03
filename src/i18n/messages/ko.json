@@ -92,11 +92,7 @@
  "home.statCategoriesNote": "누구나 좋아할 게임",
  "home.statPlays": "플레이",
  "home.statPlaysNote": "어제 Pixuvo에서",
- "home.statPlay": "플레이",
- "home.statInstantly": "바로",
  "home.statInstantlyNote": "클릭 한 번으로 시작",
- "home.statNo": "다운로드",
- "home.statDownload": "없음",
  "home.statDownloadNote": "브라우저에서 바로 실행",
  "home.quick2p": "2인용",
  "home.quickMobile": "모바일 가능",
@@ -606,5 +602,7 @@
  "theme.physics": "물리",
  "theme.family": "어린이",
  "theme.classic": "클래식",
- "new.leadEnd": "."
+ "new.leadEnd": ".",
+ "home.statPlayNow": "바로 플레이",
+ "home.statNoDownloads": "다운로드 없음"
 }
