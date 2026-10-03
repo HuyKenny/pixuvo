@@ -23,10 +23,10 @@ const results: Array<[boolean, string, string]> = [];
 const check = (ok: boolean, name: string, detail = '') => results.push([ok, name, detail]);
 const get = (path: string, init: RequestInit = {}) => fetch(path.startsWith('http') ? path : base + path, { redirect: 'manual', ...init, headers: { 'user-agent': 'PixuvoLaunchCheck/1.0', ...(init.headers ?? {}) } });
 
-const home = await get('/');
+const home = await get('/', { headers: { 'accept-language': 'en-US,en;q=0.9' } });
 const homeHtml = await home.text();
 check(home.status === 200, 'homepage 200', String(home.status));
-check(/<html lang="en">/.test(homeHtml), 'lang="en"');
+check(/<html lang="en" dir="ltr"/.test(homeHtml), 'lang="en"');
 check(values.preview ? /noindex/.test(homeHtml) : homeHtml.includes('<link rel="canonical" href="https://pixuvo.com/">'), values.preview ? 'preview is noindex' : 'canonical on homepage');
 check(!!home.headers.get('content-security-policy'), 'CSP header on static page');
 const m = /href="\/games\/([a-z0-9-]+)\/"/.exec(homeHtml);
@@ -61,6 +61,19 @@ const cron = await get('/api/cron/sync/', { method: 'POST', headers: { 'content-
 check(cron.status === 401 || cron.status === 503, 'cron endpoint needs secret', String(cron.status));
 const sug = await get('/api/suggest/?q=car');
 check(sug.status === 200 && ((await sug.json()) as { items: unknown[] }).items.length > 0, 'autocomplete returns games');
+// Languages: homepage detection, a localised page with hreflang, RTL, per-language sitemap.
+const det = await get('/', { headers: { 'accept-language': 'cs-CZ,cs;q=0.9' } });
+check(det.status === 302 && det.headers.get('location') === '/cs/', 'homepage → /cs/ for Czech browser', `${det.status} ${det.headers.get('location')}`);
+const bot = await get('/', { headers: { 'accept-language': 'cs', 'user-agent': 'Mozilla/5.0 (compatible; Googlebot/2.1)' } });
+check(bot.status === 200, 'bots are not redirected', String(bot.status));
+const csCat = await get('/cs/racing-games/');
+const csHtml = await csCat.text();
+check(csCat.status === 200 && /<html lang="cs"/.test(csHtml) && csHtml.includes('hreflang="x-default"') && csHtml.includes('<link rel="canonical" href="https://pixuvo.com/cs/racing-games/">'), 'Czech category page (lang, canonical, hreflang)', String(csCat.status));
+check(!/href="\/games\/[a-z0-9-]+\/"/.test(csHtml), 'Czech page links stay in Czech');
+const ar = await get('/ar/');
+check(ar.status === 200 && /<html lang="ar" dir="rtl"/.test(await ar.text()), 'Arabic homepage is right-to-left', String(ar.status));
+check((await get('/xx/')).status === 404, 'unknown language → 404');
+check((await get('/sitemaps/cs-categories.xml')).status === 200, 'Czech categories sitemap');
 if (!values.quick && !values.preview) {
   const http = await fetch('http://pixuvo.com/', { redirect: 'manual' });
   check([301, 308].includes(http.status) && (http.headers.get('location') ?? '').startsWith('https://pixuvo.com'), 'http → https', String(http.status));
