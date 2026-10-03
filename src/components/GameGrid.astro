@@ -8,5 +8,5 @@ interface Props { games: Card[]; eagerCount?: number; id?: string; wide?: boolea
 const { games, eagerCount = 0, id, wide = false, compact = false, label, row = false, ranked = false } = Astro.props;
 ---
 <div class:list={['grid', { 'grid-wide': wide, 'grid-compact': compact, 'grid-row': row, 'grid-ranked': ranked }]} id={id} role="list" aria-label={label}>
-  {games.map((g, i) => <div role="listitem"><GameCard game={g} eager={i < eagerCount} badge={ranked ? rankBadge(i, g.plays7d, t) : undefined} /></div>)}
+  {games.map((g, i) => <div role="listitem"><GameCard game={g} eager={i < eagerCount} priority={i < Math.min(2, eagerCount)} badge={ranked ? rankBadge(i, g.plays7d, t) : undefined} /></div>)}
 </div>

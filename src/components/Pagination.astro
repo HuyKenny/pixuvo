@@ -1,15 +1,10 @@
 ---
 import { useI18n } from '../i18n';
+import { pagerItems } from '../lib/pager';
 interface Props { page: number; pages: number; href: (p: number) => string; label?: string }
 const { t } = await useI18n(Astro);
 const { page, pages, href, label = t('a11y.pagination') } = Astro.props;
-const nums: Array<number | 'gap'> = [];
-const add = (n: number) => { if (n >= 1 && n <= pages && !nums.includes(n)) nums.push(n); };
-add(1);
-if (page - 2 > 2) nums.push('gap');
-for (let n = page - 2; n <= page + 2; n++) add(n);
-if (page + 2 < pages - 1) nums.push('gap');
-add(pages);
+const nums = pagerItems(page, pages);
 ---
 {pages > 1 && (
   <nav aria-label={label}>

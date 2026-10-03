@@ -51,6 +51,8 @@ export interface GameDetail extends GameCard {
   /** Declared by the partner (Playgama); false when unknown. */
   inAppPurchases: boolean;
   related: GameCard[];
+  /** Next games of the primary category by id (chain through the whole category, see neighborGames). */
+  neighbors?: GameCard[];
 }
 
 export type ListSort = 'featured' | 'new' | 'az';

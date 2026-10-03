@@ -16,7 +16,7 @@ import { langFromPath, stripLocale } from './i18n/locales';
 import { localiseHtml } from './i18n/links';
 
 const READ_LIMITED = [/^\/api\/(games|suggest)\/$/, /^\/search\/$/]; // matched against the path without language prefix
-const NO_CACHE = [/^\/api\/(play|rate|report|cron|admin)\b/, /^\/admin\b/, /^\/random\//];
+const NO_CACHE = [/^\/api\/(play|rate|report|cron|admin)\b/, /^\/admin\b/, /^(\/[a-z]{2}(-[a-z]{4})?)?\/random\//];
 const PARAMS: Record<string, string[]> = {
   '/api/games/': ['cat', 'sub', 'theme', 'q', 'device', 'players', 'mode', 'style', 'controls', 'sort', 'page', 'lang'],
   '/api/suggest/': ['q', 'lang'],

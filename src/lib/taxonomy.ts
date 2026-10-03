@@ -172,6 +172,10 @@ export const BRAND_TERMS = [
   'bluey', 'toca', 'hollow knight', 'silksong', 'baby hazel', 'my little pony', 'sailor moon', 'pj masks', 'teen titans',
   'gumball', 'adventure time', 'tom and jerry', 'scooby', 'simpsons', 'call of duty', 'counter strike', 'cs go', 'valorant',
   'overwatch', 'zuma', 'bejeweled', 'tetris', 'fall guys', 'sims',
+  // added 2026-10-03 (SEO audit: trademarked titles found published)
+  'resident evil', 'mortal kombat', 'street fighter', 'tekken', 'nintendo', 'playstation', 'xbox', 'kirby', 'yoshi', 'luigi',
+  'bowser', 'hot wheels', 'transformers', 'cocomelon', 'garten of banban', 'clash of clans', 'clash royale', 'brawl stars',
+  'pou', 'bluey', 'smurf', 'teletubbies', 'thomas the tank', 'paw patrol', 'barbie',
 ];
 
 /** Adult / gambling signals in a title or tags → editorial review, never auto-published. */

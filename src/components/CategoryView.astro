@@ -48,7 +48,7 @@ const ld = [{
   mainEntity: {
     '@type': 'ItemList',
     numberOfItems: p.games.length,
-    itemListElement: p.games.slice(0, 24).map((g, i) => ({ '@type': 'ListItem', position: (p.page - 1) * SITE.pageSize + i + 1, url: canonical(gamePath(g.slug)), name: g.title })),
+    itemListElement: p.games.map((g, i) => ({ '@type': 'ListItem', position: (p.page - 1) * SITE.pageSize + i + 1, url: canonical(gamePath(g.slug)), name: g.title })),
   },
 }];
 const pageTitle = p.page > 1 ? t('cat.titlePage', { title: p.title.split(' – ')[0]!, n: p.page }) : p.title;

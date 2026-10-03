@@ -82,7 +82,8 @@ const PLANS: Array<[string, string, Array<string | number>]> = [
   ['category page', "SELECT g.id FROM game_categories gc JOIN games g ON g.id = gc.game_id WHERE gc.category_id = 1 AND gc.published = 1 ORDER BY gc.rank_score DESC, gc.game_id LIMIT 48", []],
   ['featured', "SELECT id FROM games WHERE status = 'published' ORDER BY rank_score DESC, id DESC LIMIT 36", []],
   ['newest', "SELECT id FROM games WHERE status = 'published' ORDER BY added_at DESC, id DESC LIMIT 96", []],
-  ['directory', "SELECT id FROM games WHERE dir_seq > 100 AND dir_seq <= 148 AND status = 'published' ORDER BY dir_seq DESC LIMIT 48", []],
+  ['directory A–Z', "SELECT id FROM games WHERE status = 'published' AND (title_norm, id) >= ('m', 0) ORDER BY title_norm, id LIMIT 42", []],
+  ['neighbours', "SELECT gc.game_id FROM game_categories gc WHERE gc.category_id = 1 AND gc.game_id > 500 AND gc.published = 1 ORDER BY gc.game_id LIMIT 6", []],
   ['game by slug', "SELECT id FROM games WHERE slug = 'x' LIMIT 1", []],
   ['search', "SELECT g.id FROM games_fts f JOIN games g ON g.id = f.rowid WHERE games_fts MATCH '\"car\"*' AND g.status = 'published' LIMIT 8", []],
 ];

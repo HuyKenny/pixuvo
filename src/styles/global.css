@@ -1526,11 +1526,12 @@ body {
     display: block;
   }
 }
-.filterside h2 {
+.filterside .fs-title {
   font-size: 19px;
+  font-weight: 900;
   margin: 0 4px 8px;
 }
-.filterside h3 {
+.filterside .fs-group {
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -1716,6 +1717,9 @@ body {
 }
 .section-head a {
   font-weight: 800;
+}
+.new-badge::before {
+  content: attr(data-badge); /* decoration, kept out of the heading text */
 }
 .new-badge {
   display: inline-grid;

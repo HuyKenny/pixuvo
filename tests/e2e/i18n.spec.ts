@@ -76,6 +76,7 @@ test.describe('localised pages', () => {
     await expect(page.locator('[data-result-count]')).not.toContainText('games');
     // Filter options are rendered by the browser from facets.json: their category names must be localised too.
     await page.setViewportSize({ width: 1440, height: 900 });
+    await page.waitForLoadState('networkidle'); // the sidebar options are rendered after facets.json arrives
     const side = await page.locator('.list-layout').innerText();
     for (const en of ['Motorcycle', 'Car\n', 'Racing games']) expect(side, en).not.toContain(en);
     const api = await page.request.get('/api/games/?cat=racing&lang=cs');

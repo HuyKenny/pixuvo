@@ -5,6 +5,6 @@ export const GET: APIRoute = () => {
   // they carry "noindex" and crawlers have to be able to read it.
   const body = import.meta.env.PUBLIC_NOINDEX === '1'
     ? 'User-agent: *\nDisallow: /\n'
-    : ['User-agent: *', 'Disallow: /admin/', 'Disallow: /api/', 'Disallow: /random/', '', 'Sitemap: https://pixuvo.com/sitemap.xml', ''].join('\n');
+    : ['User-agent: *', 'Disallow: /admin/', 'Disallow: /api/', 'Disallow: /random/', 'Disallow: /*/random/', '', 'Sitemap: https://pixuvo.com/sitemap.xml', ''].join('\n');
   return new Response(body, { headers: { 'content-type': 'text/plain; charset=utf-8' } });
 };

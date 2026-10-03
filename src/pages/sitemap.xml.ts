@@ -5,13 +5,18 @@ import { OTHER_LANGS } from '../i18n/locales';
 export const prerender = false;
 export const GET: APIRoute = async () => {
   const db = q();
-  const [r] = await db.all<{ maxid: number | null; last: string | null; catlast: string | null }>(
-    "SELECT (SELECT max(id) FROM games WHERE status = 'published') AS maxid, (SELECT max(updated_at) FROM games WHERE status = 'published') AS last, (SELECT max(updated_at) FROM categories) AS catlast",
-  );
-  const parts = Math.max(1, Math.ceil((r?.maxid ?? 0) / GAMES_PER_SITEMAP));
+  // One entry per non-empty games-N part, with the newest change in it as lastmod (no empty parts → no 404 sitemaps).
+  const [[r], parts] = await Promise.all([
+    db.all<{ last: string | null; catlast: string | null }>(
+      "SELECT (SELECT max(updated_at) FROM games WHERE status = 'published') AS last, (SELECT max(updated_at) FROM categories) AS catlast",
+    ),
+    db.all<{ part: number; last: string | null }>(
+      `SELECT (id - 1) / ${GAMES_PER_SITEMAP} + 1 AS part, max(updated_at) AS last FROM games WHERE status = 'published' GROUP BY part ORDER BY part`,
+    ),
+  ]);
   const loc = (n: string, lastmod?: string | null) => `<sitemap><loc>https://pixuvo.com/sitemaps/${n}.xml</loc>${lastmod ? `<lastmod>${day(lastmod)}</lastmod>` : ''}</sitemap>`;
-  const items = [loc('pages'), loc('categories', r?.catlast), ...Array.from({ length: parts }, (_, i) => loc(`games-${i + 1}`))];
-  for (const lang of OTHER_LANGS) items.push(loc(`${lang}-pages`), loc(`${lang}-categories`, r?.catlast));
+  const items = [loc('pages', r?.last), loc('categories', r?.catlast), ...parts.map((x) => loc(`games-${x.part}`, x.last))];
+  for (const lang of OTHER_LANGS) items.push(loc(`${lang}-pages`, r?.last), loc(`${lang}-categories`, r?.catlast));
   // Localised game pages are noindex (publisher texts are English only), so they have no sitemaps.
   return xml(`<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${items.join('')}</sitemapindex>`);
 };

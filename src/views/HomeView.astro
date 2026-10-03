@@ -74,7 +74,7 @@ const ld = [
         {snapshot.home.gameOfDay && <GameOfDay game={snapshot.home.gameOfDay} />}
 
         <section class="section" aria-labelledby="new-h">
-          <div class="section-head"><h2 id="new-h"><span class="new-badge">{t('badge.new')}</span>{t('home.newGames')}</h2><a href="/new-games/">{t('nav.viewAll')}</a></div>
+          <div class="section-head"><h2 id="new-h"><span class="new-badge" data-badge={t('badge.new')} aria-hidden="true"></span>{t('home.newGames')}</h2><a href="/new-games/">{t('nav.viewAll')}</a></div>
           <GameGrid games={snapshot.home.newest.slice(0, 12)} label={t('home.newLabel')} />
         </section>
       </div>

@@ -8,7 +8,7 @@ import Tag from './Tag.astro';
 import ControlsVisual from './ControlsVisual.astro';
 import RecommendedList from './RecommendedList.astro';
 import type { GameDetail } from '../lib/types';
-import { canonical, categoryPath, gamePath } from '../lib/site';
+import { canonical, categoryPath, gamePath, largeImage } from '../lib/site';
 import { useI18n } from '../i18n';
 import { truncate } from '../lib/text';
 import { parseControls } from '../lib/controls';
@@ -43,20 +43,10 @@ const controls = parseControls(g.instructions);
 const tones = ['violet', 'blue', 'teal', 'orange', 'pink', 'green'] as const;
 const sideList = g.related.slice(0, 5);
 const moreCat = g.related.slice(5, 11);
-const similar = g.related.slice(11, 17);
+// "More like this": the id chain through the whole category, so every game is linked from another game page.
+const similar = g.neighbors?.length ? g.neighbors : g.related.slice(11, 17);
 const topCat = g.related.slice(17, 23);
 const devices = g.mobile ? t('game.devicesAll') : t('game.devicesDesktop');
-// "Good to know": questions answered ONLY from real data (nothing is asked when the answer is unknown).
-const lower = (s: string) => s.toLocaleLowerCase(i.tag);
-const keyName = (r: (typeof controls)[number]) => r.device === 'keys' ? (r.keys.join('') === '↑←↓→' ? t('game.keyArrows') : r.keys.join('') === 'WASD' ? 'W A S D' : r.keys.join(' ')) : r.device === 'mouse' ? t('game.keyMouse', { gesture: lower(t(`ctl.${r.gesture ?? 'Click'}`)) }) : t('game.keyTouch', { gesture: lower(t(`ctl.${r.gesture ?? 'Tap'}`)) });
-const controlText = controls.slice(0, 4).map((r) => (r.action ? t('game.keyTo', { key: keyName(r), action: lower(t(`ctl.${r.action}`)) }) : keyName(r))).join(', ');
-const faq: Array<{ q: string; a: string }> = [
-  { q: t('game.faqFreeQ', { title: g.title }), a: t('game.faqFreeA', { title: g.title }) + (g.inAppPurchases ? ` ${t('game.faqFreeIap')}` : '') },
-  ...(g.mobile ? [{ q: t('game.faqMobileQ', { title: g.title }), a: t('game.faqMobileA') }] : []),
-  ...(g.players ? [{ q: t('game.faqPlayersQ'), a: g.players >= 2 ? t('game.faqPlayersMulti', { title: g.title, n: String(g.players) }) : t('game.faqPlayersSingle', { title: g.title }) }] : []),
-  ...(controlText ? [{ q: t('game.faqControlsQ', { title: g.title }), a: t('game.faqControlsA', { controls: controlText }) }] : []),
-  ...(g.categories.length ? [{ q: t('game.faqKindQ', { title: g.title }), a: t('game.faqKindA', { cats: g.categories.slice(0, 3).map(catName).join(', ') }) }] : []),
-];
 const intro = [
   cat ? t('game.introKind', { title: g.title, ...i.catGames(cat.slug, catName(cat)) }) : '',
   t('game.introFree'),
@@ -65,7 +55,7 @@ const intro = [
   controls.length ? t('game.introControls') : '',
 ].filter(Boolean).join(['ja', 'zh-hans', 'zh-hant'].includes(i.lang) ? '' : ' '); // CJK sentences are not separated by spaces
 const ld = [{
-  '@context': 'https://schema.org', '@type': 'VideoGame', name: g.title, url: canonical(path), image: g.thumb,
+  '@context': 'https://schema.org', '@type': 'VideoGame', name: g.title, url: canonical(path), image: largeImage(g.thumb),
   ...(description ? { description: truncate(description, 500) } : {}),
   inLanguage: i.tag,
   genre: g.categories.filter((c) => c.slug !== '2-player' && c.slug !== 'multiplayer').map((c) => c.name).slice(0, 4),
@@ -73,13 +63,15 @@ const ld = [{
   playMode: g.players && g.players >= 2 ? 'MultiPlayer' : g.players === 1 ? 'SinglePlayer' : undefined,
   ...(g.releaseDate ? { datePublished: g.releaseDate } : {}),
   offers: { '@type': 'Offer', price: 0, priceCurrency: 'USD' },
-}, ...(faq.length >= 3 ? [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }] : [])];
+  // Real votes on Pixuvo only, shown as "% liked" (0–100), and only with enough votes to mean something.
+  ...(liked !== null ? { aggregateRating: { '@type': 'AggregateRating', ratingValue: liked, bestRating: 100, worstRating: 0, ratingCount: votes } } : {}),
+}];
 // The game starts on page open: warm up the partner's frame host.
 const FRAME_HOST: Record<string, string> = { GameMonetize: 'https://html5.gamemonetize.co', GamePix: 'https://play.gamepix.com', Playgama: 'https://playgama.com' };
 const frameHost = g.providerName ? FRAME_HOST[g.providerName] : undefined;
 const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait, fit, ...(cat ? { cat: cat.slug } : {}) };
 ---
-<Base title={t('game.title', { title: g.title })} description={desc} path={path} ogImage={g.thumb} jsonLd={ld} noindex={localised} alternates={['en']} ga={{ page_type: 'game', game_slug: g.slug, game_title: g.title.slice(0, 90), ...(cat ? { game_category: cat.slug } : {}), ...(g.providerName ? { provider: g.providerName } : {}) }}>
+<Base title={t('game.title', { title: g.title })} description={desc} path={path} ogImage={largeImage(g.thumb)} jsonLd={ld} noindex={localised} alternates={['en']} ga={{ page_type: 'game', game_slug: g.slug, game_title: g.title.slice(0, 90), ...(cat ? { game_category: cat.slug } : {}), ...(g.providerName ? { provider: g.providerName } : {}) }}>
   {frameHost && <link slot="head" rel="preconnect" href={frameHost} />}
   <div class="wrap game-page">
     <Breadcrumbs items={crumbs} />
@@ -169,12 +161,6 @@ const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait,
               </section>
             )}
           </div>
-        )}
-        {faq.length >= 3 && (
-          <section class="panel faq" aria-labelledby="faq-h">
-            <h2 id="faq-h"><span class="panel-ico" aria-hidden="true">💡</span>{t('game.goodToKnow')}</h2>
-            {faq.map((f) => <details><summary>{f.q}</summary><p>{f.a}</p></details>)}
-          </section>
         )}
       </div>
 

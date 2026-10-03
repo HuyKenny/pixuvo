@@ -184,13 +184,13 @@ const base = {
   'cat.pagesLabel': '{games}: pages',
 
   // ── Directory / lists ───────────────────────────────────────────────────
-  'dir.title': 'All Free Online Games – Newest First',
+  'dir.title': 'All Free Online Games A–Z',
   'dir.titlePage': 'All Games – Page {n}',
-  'dir.description': 'Every game on Pixuvo, newest additions first. {count} free browser games, no downloads.',
-  'dir.descriptionPage': 'Every game on Pixuvo, newest additions first – page {n}. {count} free browser games, no downloads.',
+  'dir.description': 'Every game on Pixuvo from A to Z: {count} free browser games, no downloads.',
+  'dir.descriptionPage': 'Every game on Pixuvo from A to Z – page {n}. {count} free browser games, no downloads.',
   'dir.h1': 'All games',
   'dir.h1Page': 'All games – page {n}',
-  'dir.lead': 'Every game on Pixuvo, newest additions first. Looking for something specific? Try',
+  'dir.lead': 'Every game on Pixuvo from A to Z. Looking for something specific? Try',
   'dir.leadCategories': 'categories',
   'dir.leadOr': 'or search.',
   'dir.emptyTitle': 'No games on this page',

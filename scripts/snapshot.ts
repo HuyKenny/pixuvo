@@ -9,7 +9,7 @@
  */
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { parseArgs } from 'node:util';
-import { categoryGames, computeFacets, gamesByIds, getCategories, getGamesBatch, getLandings, getSetting, landingGames, topGames, type Q } from '../src/lib/catalog.ts';
+import { NEIGHBORS, categoryGames, computeFacets, gamesByIds, getCategories, getGamesBatch, getLandings, getSetting, landingGames, topGames, type Q } from '../src/lib/catalog.ts';
 import { MIN_CATEGORY_GAMES, THEMES } from '../src/lib/taxonomy.ts';
 import type { GameCard, GameDetail } from '../src/lib/types.ts';
 import { loadConfig } from './lib/env.ts';
@@ -72,6 +72,26 @@ for (const d of details) {
   const start = others.length ? d.id % others.length : 0;
   d.related = [...others.slice(start), ...others.slice(0, start)].slice(0, 24);
 }
+// Neighbours (next games of the primary category by id, wrapping): one id list per category, cards in batches.
+const catIdBySlug = new Map(categories.map((c) => [c.slug, c.id]));
+const idsByCat = new Map<number, number[]>();
+for (const catId of new Set(details.map((d) => (d.primaryCategory ? catIdBySlug.get(d.primaryCategory.slug) : undefined)).filter((x): x is number => !!x))) {
+  idsByCat.set(catId, (await q.all<{ game_id: number }>('SELECT game_id FROM game_categories WHERE category_id = ? AND published = 1 ORDER BY game_id', [catId])).map((r) => r.game_id));
+}
+const neighborIds = new Map<number, number[]>();
+for (const d of details) {
+  const ids = d.primaryCategory ? idsByCat.get(catIdBySlug.get(d.primaryCategory.slug) ?? -1) : undefined;
+  if (!ids?.length) continue;
+  let i = ids.findIndex((x) => x > d.id);
+  if (i < 0) i = 0;
+  const out: number[] = [];
+  for (let k = 0; out.length < NEIGHBORS && k < ids.length; k++) { const id = ids[(i + k) % ids.length]!; if (id !== d.id) out.push(id); }
+  neighborIds.set(d.id, out);
+}
+const allNeighborIds = [...new Set([...neighborIds.values()].flat())];
+const neighborCards = new Map<number, GameCard>();
+for (let i = 0; i < allNeighborIds.length; i += 90) for (const g of await gamesByIds(q, allNeighborIds.slice(i, i + 90))) neighborCards.set(g.id, g);
+for (const d of details) d.neighbors = (neighborIds.get(d.id) ?? []).map((id) => neighborCards.get(id)).filter((g): g is NonNullable<typeof g> => !!g);
 
 mkdirSync(values.out!, { recursive: true });
 const site = {

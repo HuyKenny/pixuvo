@@ -42,7 +42,8 @@ const gaContext = JSON.stringify({ ...ga, page_type: pageType, language: lang })
 const preview = import.meta.env.PUBLIC_NOINDEX === '1';
 const robots = noindex || preview ? 'noindex, follow' : 'index, follow, max-image-preview:large';
 const fullTitle = title.includes('Pixuvo') ? title : `${title} | Pixuvo`;
-const canonicalUrl = path ? abs(path) : null;
+// No canonical on noindex pages: "noindex" + a self-canonical send mixed signals.
+const canonicalUrl = path && !(noindex || preview) ? abs(path) : null;
 ---
 <!doctype html>
 <html lang={i.tag} dir={i.dir} data-lang={lang} data-lp={lang === 'en' ? '' : `/${lang}`}>

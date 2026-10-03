@@ -90,38 +90,39 @@ export async function gamesByIds(q: Q, ids: number[]): Promise<GameCard[]> {
 }
 
 /**
- * /games/ directory: every published game, newest additions first, always full pages.
- * Page boundaries (dir_seq of every 48th published game) are precomputed into
- * site_settings.dir_bounds by DIR_BOUNDS_STMT whenever statuses change, so page N
- * is a keyset read of 48 index rows instead of an OFFSET scan.
+ * /games/ directory: every published game A–Z, always full and stable pages (new games slot in alphabetically
+ * instead of shifting every page each day). Page boundaries — the (title_norm, id) of every 42nd published game — are
+ * precomputed into site_settings.dir_bounds by DIR_BOUNDS_SQL whenever statuses change, so page N is a keyset
+ * read of 42 index rows instead of an OFFSET scan.
  */
 export const DIR_BOUNDS_SQL = `INSERT INTO site_settings (key, value, updated_at)
-  SELECT 'dir_bounds', coalesce(json_group_array(dir_seq), '[]'), datetime('now') FROM (
-    SELECT dir_seq FROM (SELECT dir_seq, row_number() OVER (ORDER BY dir_seq DESC) AS rn FROM games WHERE status = 'published')
-     WHERE (rn - 1) % ${SITE.pageSize} = 0 ORDER BY dir_seq DESC)
+  SELECT 'dir_bounds', coalesce(json_group_array(json_array(title_norm, id)), '[]'), datetime('now') FROM (
+    SELECT title_norm, id FROM (SELECT title_norm, id, row_number() OVER (ORDER BY title_norm, id) AS rn FROM games WHERE status = 'published')
+     WHERE (rn - 1) % ${SITE.pageSize} = 0 ORDER BY title_norm, id)
   WHERE true -- SQLite needs a WHERE before ON CONFLICT in INSERT … SELECT (parser ambiguity)
   ON CONFLICT(key) DO UPDATE SET value = excluded.value, updated_at = excluded.updated_at`;
 
-export function parseBounds(raw: string | null): number[] {
+export type DirBound = [string, number];
+export function parseBounds(raw: string | null): DirBound[] {
   try {
     const a = JSON.parse(raw ?? '[]') as unknown;
-    return Array.isArray(a) ? a.filter((x): x is number => Number.isInteger(x)) : [];
+    return Array.isArray(a) ? a.filter((x): x is DirBound => Array.isArray(x) && typeof x[0] === 'string' && Number.isInteger(x[1])) : [];
   } catch {
     return [];
   }
 }
 
-export async function directoryPage(q: Q, bounds: number[], total: number, page: number, pageSize: number = SITE.pageSize): Promise<Paged<GameCard>> {
+export async function directoryPage(q: Q, bounds: DirBound[], total: number, page: number, pageSize: number = SITE.pageSize): Promise<Paged<GameCard>> {
   const start = bounds[page - 1];
   const rows =
     start !== undefined
       ? await q.all<CardRow>(
-          `SELECT ${CARD_COLS} FROM games g ${CARD_JOIN} WHERE g.status = 'published' AND g.dir_seq <= ? ORDER BY g.dir_seq DESC LIMIT ?`,
-          [start, pageSize],
+          `SELECT ${CARD_COLS} FROM games g ${CARD_JOIN} WHERE g.status = 'published' AND (g.title_norm, g.id) >= (?, ?) ORDER BY g.title_norm, g.id LIMIT ?`,
+          [start[0], start[1], pageSize],
         )
-      : // Bounds not computed yet: correct but slower OFFSET read on the (status, dir_seq) index.
+      : // Bounds not computed yet: correct but slower OFFSET read on the (status, title_norm, id) index.
         await q.all<CardRow>(
-          `SELECT ${CARD_COLS} FROM games g ${CARD_JOIN} WHERE g.status = 'published' ORDER BY g.dir_seq DESC LIMIT ? OFFSET ?`,
+          `SELECT ${CARD_COLS} FROM games g ${CARD_JOIN} WHERE g.status = 'published' ORDER BY g.title_norm, g.id LIMIT ? OFFSET ?`,
           [pageSize, (page - 1) * pageSize],
         );
   const pages = Math.max(1, bounds.length || Math.ceil(total / pageSize));
@@ -455,7 +456,7 @@ export async function getGame(q: Q, slug: string): Promise<GameLookup> {
     ),
     q.all<CategoryRef>('SELECT t.slug, t.name FROM game_tags gt JOIN tags t ON t.id = gt.tag_id WHERE gt.game_id = ? LIMIT 12', [r.id]),
   ]);
-  const related = await relatedGames(q, r.id, r.primary_category_id, 24);
+  const [related, neighbors] = await Promise.all([relatedGames(q, r.id, r.primary_category_id, 24), neighborGames(q, r.id, r.primary_category_id)]);
   let controls: string[] = [];
   try {
     controls = r.controls_inferred ? (JSON.parse(r.controls_inferred) as string[]).filter((x) => typeof x === 'string') : [];
@@ -486,6 +487,7 @@ export async function getGame(q: Q, slug: string): Promise<GameLookup> {
       height: r.height,
       inAppPurchases: inAppPurchases(r.restrictions),
       related,
+      neighbors,
     },
   };
 }
@@ -506,6 +508,21 @@ export async function relatedGames(q: Q, gameId: number, categoryId: number | nu
   let rows = await run(offset);
   if (rows.length < Math.min(limit, 6) && offset > 0) rows = await run(0);
   return rows.map(toCard);
+}
+
+/**
+ * Next games of the same category by id (wrapping around): a chain through the WHOLE category, so every game is
+ * linked from another game page, not only the top-ranked ones. Index-only reads on the (category_id, game_id) key.
+ */
+export const NEIGHBORS = 6;
+export async function neighborGames(q: Q, gameId: number, categoryId: number | null, limit = NEIGHBORS): Promise<GameCard[]> {
+  if (!categoryId) return [];
+  const sql = (cmp: string) =>
+    `SELECT ${CARD_COLS} FROM game_categories gc JOIN games g ON g.id = gc.game_id ${CARD_JOIN}
+      WHERE gc.category_id = ? AND gc.game_id ${cmp} ? AND gc.published = 1 ORDER BY gc.game_id LIMIT ?`;
+  const after = await q.all<CardRow>(sql('>'), [categoryId, gameId, limit]);
+  const wrap = after.length < limit ? await q.all<CardRow>(sql('<'), [categoryId, gameId, limit - after.length]) : [];
+  return [...after, ...wrap].map(toCard);
 }
 
 export async function getSetting(q: Q, key: string): Promise<string | null> {

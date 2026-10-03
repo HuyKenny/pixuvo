@@ -4,8 +4,8 @@ import { gamePath } from '../lib/site';
 import Icon from './Icon.astro';
 import { cardBadge } from '../lib/plays';
 import { useI18n } from '../i18n';
-interface Props { game: GameCard; eager?: boolean; badge?: string | undefined }
-const { game, eager = false, badge: given } = Astro.props;
+interface Props { game: GameCard; eager?: boolean; /** Highest fetch priority (only the first 1–2 images of a page). */ priority?: boolean; badge?: string | undefined }
+const { game, eager = false, priority = false, badge: given } = Astro.props;
 const i = await useI18n(Astro);
 const badge = given ?? cardBadge(game, i.t);
 const catName = game.cat ? i.cat(game.catSlug ?? '', game.cat) : null;
@@ -14,7 +14,7 @@ const meta = [catName, game.players && game.players >= 2 ? i.t('card.players', {
 <article class="card" data-game-id={game.id}>
   <a class="card-link" href={gamePath(game.slug)}>
     <span class="card-media">
-      <img class="card-thumb" src={game.thumb} alt="" width="320" height="240" loading={eager ? 'eager' : 'lazy'} decoding="async" fetchpriority={eager ? 'high' : 'auto'} referrerpolicy="no-referrer" />
+      <img class="card-thumb" src={game.thumb} alt={game.title} width="320" height="240" loading={eager ? 'eager' : 'lazy'} decoding="async" fetchpriority={priority ? 'high' : 'auto'} referrerpolicy="no-referrer" />
       <span class="card-play" aria-hidden="true"><Icon name="play" size={22} /></span>
       {badge && <span class="card-badge">{badge}</span>}
     </span>

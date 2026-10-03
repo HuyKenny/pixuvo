@@ -16,12 +16,13 @@ const groups = [
 ];
 ---
 <aside class="filterside" aria-label={t('home.findGame')}>
-  <h2>{t('home.findGame')}</h2>
-  <h3>{t('home.genre')}</h3>
+  {/* Not headings: this sidebar comes before the page's H1 in the source. */}
+  <p class="fs-title">{t('home.findGame')}</p>
+  <p class="fs-group">{t('home.genre')}</p>
   <ul>{genres.map((g) => <li><a href={categoryPath(g.slug)}><img src={categoryIcon(g.slug)} alt="" width="22" height="22" loading="lazy" />{i.cat(g.slug, g.name)}</a></li>)}</ul>
   {groups.map((g) => (
     <>
-      <h3>{g.title}</h3>
+      <p class="fs-group">{g.title}</p>
       <ul>{g.opts.map(([frag, emoji, label]) => <li><a href={`/games/#${frag}`}><span class="fs-emoji" aria-hidden="true">{emoji}</span>{label}</a></li>)}</ul>
     </>
   ))}
