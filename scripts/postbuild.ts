@@ -34,9 +34,11 @@ for (const f of walk(SERVER)) {
   if (f.includes('/.prerender/')) continue;
   const st = statSync(f);
   serverBytes += st.size;
-  if (/\.m?js$/.test(f) && st.size > 200_000) {
+  if (/\.m?js$/.test(f)) {
     const txt = readFileSync(f, 'utf8');
-    if (txt.includes('"categoryPages"') || txt.includes('"maxDirSeq"')) errors.push(`Worker bundle contains the catalog snapshot: ${f}`);
+    if (st.size > 200_000 && (txt.includes('"categoryPages"') || txt.includes('"maxDirSeq"'))) errors.push(`Worker bundle contains the catalog snapshot: ${f}`);
+    // Long-form content (src/i18n/content/*.json) is for prerendered pages only.
+    if (/"land":\s*\{|"faq":\s*\[\s*\{\s*"q"/.test(txt)) errors.push(`Worker bundle contains long-form content: ${f}`);
   }
 }
 if (existsSync(join(SERVER, '.prerender'))) errors.push('dist/server/.prerender left behind after build');

@@ -58,7 +58,7 @@ export const POST: APIRoute = async ({ request, params, locals }) => {
       break;
     }
     case 'landing':
-      r = await A.saveLanding(db, actor, { slug: s('slug'), h1: s('h1'), title: s('title'), description: s('description'), intro: s('intro'), all: f.getAll('all').map(String), status: s('status'), indexable: f.get('indexable') === '1' });
+      r = await A.saveLanding(db, actor, { slug: s('slug'), h1: s('h1'), title: s('title'), description: s('description'), intro: s('intro'), all: f.getAll('all').map(String), keepFilter: s('keep_filter') === '1', status: s('status'), indexable: f.get('indexable') === '1' });
       break;
     case 'redirect':
       r = await A.addRedirect(db, actor, s('old'), s('target'));

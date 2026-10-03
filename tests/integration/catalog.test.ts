@@ -82,7 +82,7 @@ describe('catalog queries', () => {
   });
   it('landing intersections return only games in all categories', async () => {
     const cats = await getCategories(q);
-    const r = await landingGames(q, cats, ['racing', '2-player'], 50);
+    const r = await landingGames(q, cats, { all: ['racing', '2-player'], any: [], themes: [], tags: [], top: false }, 50);
     expect(r.items.map((g) => g.title)).toEqual(['Super Car Drift']);
     expect(r.total).toBe(1);
   });

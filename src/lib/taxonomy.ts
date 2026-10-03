@@ -245,3 +245,39 @@ export const SEARCH_SYNONYMS: Record<string, string[]> = {
   colouring: ['coloring'],
   puzzles: ['puzzle'],
 };
+
+/**
+ * Curated cross-links between pages a visitor (and a crawler) should move between: categories and landings
+ * (both live at /{slug}-games/). Shown under "Related" next to the automatic sibling/landing links.
+ */
+export const RELATED: Record<string, string[]> = {
+  racing: ['car', 'driving', 'motorcycle', 'drift', '2-player-racing', 'parking'],
+  car: ['racing', 'driving', 'parking', 'drift', 'truck', '2-player-racing'],
+  driving: ['car', 'parking', 'truck', 'bus', 'racing'],
+  motorcycle: ['racing', 'car', 'driving', 'stickman'],
+  puzzle: ['brain', 'match-3', 'mahjong', 'word', 'jigsaw', '2048', 'memory', 'math'],
+  action: ['fighting', 'shooting', 'stickman', 'ninja', 'platformer', 'boys'],
+  shooting: ['sniper', 'first-person-shooter', 'zombie', 'tank', 'multiplayer-shooting', '2-player-shooting'],
+  sports: ['football', 'basketball', 'golf', 'pool', '2-player-sports', '2-player-football'],
+  arcade: ['snake', 'bubble-shooter', 'runner', 'retro', 'clicker', 'platformer'],
+  casual: ['idle', 'clicker', 'match-3', 'coloring', 'kids'],
+  adventure: ['escape', 'platformer', 'horror', 'animal'],
+  'dress-up': ['girls', 'princess', 'cooking', 'coloring'],
+  cooking: ['dress-up', 'girls', 'kids'],
+  educational: ['kids', 'brain', 'math', 'word', 'memory', 'quiz'],
+  '2-player': ['2-player-racing', '2-player-sports', '2-player-football', '2-player-fighting', '2-player-shooting', 'multiplayer', 'io'],
+  multiplayer: ['io', '2-player', 'multiplayer-shooting'],
+  io: ['multiplayer', 'snake', '2-player'],
+  fighting: ['2-player-fighting', 'stickman', 'action', 'ninja'],
+  football: ['2-player-football', 'sports', 'basketball'],
+  basketball: ['sports', 'football', '2-player-sports'],
+  coloring: ['kids', 'dress-up', 'educational'],
+  math: ['brain', 'educational', 'puzzle'],
+  word: ['brain', 'educational', 'quiz'],
+  memory: ['brain', 'kids', 'puzzle'],
+  horror: ['halloween', 'zombie', 'escape'],
+  zombie: ['shooting', 'horror', 'halloween'],
+  snake: ['io', 'arcade'],
+  clicker: ['idle', 'casual'],
+  idle: ['clicker', 'tycoon', 'casual'],
+};

@@ -2,6 +2,7 @@
  * Sitemaps contain only indexable canonical URLs with real lastmod dates.
  *   pages / categories / games-N             English
  *   {lang}-pages / {lang}-categories          every language, with hreflang alternates (xhtml:link)
+ *   {lang}-games-1                           localised game pages with Pixuvo's own text (hero games; the rest are noindex)
  */
 import type { APIRoute } from 'astro';
 import { getLandings } from '../../lib/catalog';
@@ -31,9 +32,17 @@ export const GET: APIRoute = async ({ params }) => {
   const lang = m[1] ?? DEFAULT_LANG;
   if (lang !== DEFAULT_LANG && !OTHER_LANGS.includes(lang)) return new Response('Not found', { status: 404 });
   const kind = m[3] ? 'games' : m[2]!;
-  // Localised game pages are noindex: games sitemaps exist only in English.
-  if (kind === 'games' && lang !== DEFAULT_LANG) return new Response('Not found', { status: 404 });
   const db = q();
+  if (kind === 'games' && lang !== DEFAULT_LANG) {
+    // Only localised pages with their own text are indexable; there are a few hundred per language at most.
+    if (m[3] !== '1') return new Response('Not found', { status: 404 });
+    const rows = await db.all<{ slug: string; updated_at: string }>(
+      "SELECT g.slug, e.updated_at FROM game_editorial e JOIN games g ON g.id = e.game_id WHERE e.lang = ? AND g.status = 'published' ORDER BY g.id LIMIT 5000",
+      [lang],
+    );
+    if (!rows.length) return new Response('Not found', { status: 404 });
+    return urlset(rows.map((r) => url(lang, `/games/${r.slug}/`, day(r.updated_at), false)));
+  }
   if (kind === 'pages') {
     const [r] = await db.all<{ last: string | null }>("SELECT max(added_at) AS last FROM games WHERE status = 'published'");
     return urlset(STATIC_PAGES.map(([p, d]) => url(lang, p, d || day(r?.last), true)), true);

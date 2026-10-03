@@ -185,18 +185,18 @@ export async function setReportStatus(db: D1Q, actor: string, id: number, status
   return { ok: true, message: `Report ${id} ${status}.` };
 }
 
-export async function saveLanding(db: D1Q, actor: string, f: { slug: string; h1: string; title: string; description: string; intro: string; all: string[]; status: string; indexable: boolean }): Promise<ActionResult> {
+export async function saveLanding(db: D1Q, actor: string, f: { slug: string; h1: string; title: string; description: string; intro: string; all: string[]; status: string; indexable: boolean; /** Theme/union landings: their filter is set in migrations and kept as is. */ keepFilter?: boolean }): Promise<ActionResult> {
   if (!/^[a-z0-9-]{3,60}$/.test(f.slug)) return { ok: false, message: 'Slug must be 3–60 lowercase letters, digits or dashes.' };
   if (CATEGORIES.some((c) => c.slug === f.slug)) return { ok: false, message: 'Slug collides with a category.' };
   const all = f.all.filter((s) => CATEGORIES.some((c) => c.slug === s)).slice(0, 3);
-  if (all.length < 2) return { ok: false, message: 'Pick at least two categories to intersect.' };
+  if (!f.keepFilter && all.length < 2) return { ok: false, message: 'Pick at least two categories to intersect.' };
   if (!['draft', 'published'].includes(f.status)) return { ok: false, message: 'Invalid status.' };
   const t = (s: string, n: number) => htmlToText(s, n);
   await db.batch([
     { sql: `INSERT INTO seo_landings (slug, h1, title, description, intro, filter, status, indexable, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
             ON CONFLICT(slug) DO UPDATE SET h1 = excluded.h1, title = excluded.title, description = excluded.description, intro = excluded.intro,
-              filter = excluded.filter, status = excluded.status, indexable = excluded.indexable, updated_at = excluded.updated_at`,
-      params: [f.slug, t(f.h1, 90), t(f.title, 70), t(f.description, 170), t(f.intro, 600), JSON.stringify({ all }), f.status, f.indexable ? 1 : 0, now()] },
+              filter = CASE WHEN ? = 1 THEN seo_landings.filter ELSE excluded.filter END, status = excluded.status, indexable = excluded.indexable, updated_at = excluded.updated_at`,
+      params: [f.slug, t(f.h1, 90), t(f.title, 70), t(f.description, 170), t(f.intro, 600), JSON.stringify({ all }), f.status, f.indexable ? 1 : 0, now(), f.keepFilter ? 1 : 0] },
     audit(actor, 'landing.save', 'landing', f.slug, { all, status: f.status }),
     bump,
   ]);

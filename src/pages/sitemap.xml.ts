@@ -17,6 +17,8 @@ export const GET: APIRoute = async () => {
   const loc = (n: string, lastmod?: string | null) => `<sitemap><loc>https://pixuvo.com/sitemaps/${n}.xml</loc>${lastmod ? `<lastmod>${day(lastmod)}</lastmod>` : ''}</sitemap>`;
   const items = [loc('pages', r?.last), loc('categories', r?.catlast), ...parts.map((x) => loc(`games-${x.part}`, x.last))];
   for (const lang of OTHER_LANGS) items.push(loc(`${lang}-pages`, r?.last), loc(`${lang}-categories`, r?.catlast));
-  // Localised game pages are noindex (publisher texts are English only), so they have no sitemaps.
+  // Localised game pages are indexable only with Pixuvo's own text (hero games): one sitemap per language that has some.
+  const ed = await db.all<{ lang: string; last: string | null }>('SELECT lang, max(updated_at) AS last FROM game_editorial GROUP BY lang');
+  for (const e of ed) if (OTHER_LANGS.includes(e.lang)) items.push(loc(`${e.lang}-games-1`, e.last));
   return xml(`<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${items.join('')}</sitemapindex>`);
 };

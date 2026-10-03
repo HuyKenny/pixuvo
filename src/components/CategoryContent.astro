@@ -1,0 +1,38 @@
+---
+/**
+ * Long-form content under the game grid of a category / landing (page 1 only, prerendered):
+ * "About …" (native intro), "Types of …" (subcategories with their one-line blurb) and an FAQ.
+ * Plain visible text — no FAQPage markup (FAQ rich results are limited to gov/health sites).
+ */
+import { useI18n } from '../i18n';
+import type { Block } from '../i18n/content';
+import { paragraphs } from '../lib/paragraphs';
+import { categoryPath } from '../lib/site';
+interface Props { block?: Block | undefined; games: { games: string; gamesLc: string }; subs?: Array<{ slug: string; name: string; blurb: string }> | undefined }
+const { block, games, subs = [] } = Astro.props;
+const i = await useI18n(Astro);
+const t = i.t;
+const types = subs.map((s) => ({ href: categoryPath(s.slug), name: i.catGames(s.slug, s.name).games, blurb: i.catBlurb(s.slug, s.blurb) }));
+---
+{(block || types.length > 0) && (
+  <section class="seo-content" aria-labelledby="about-cat-h">
+    {block && (
+      <>
+        <h2 id="about-cat-h">{t('cat.aboutH2', games)}</h2>
+        {paragraphs(block.intro).map((p) => <p>{p}</p>)}
+      </>
+    )}
+    {types.length > 0 && (
+      <>
+        <h2 id={block ? undefined : 'about-cat-h'}>{t('cat.typesH2', games)}</h2>
+        <ul class="seo-types">{types.map((x) => <li><a href={x.href}>{x.name}</a>{x.blurb && <span> – {x.blurb}</span>}</li>)}</ul>
+      </>
+    )}
+    {block?.faq && block.faq.length > 0 && (
+      <>
+        <h2>{t('cat.faqH2', games)}</h2>
+        <div class="seo-faq">{block.faq.map((f) => <details><summary>{f.q}</summary><p>{f.a}</p></details>)}</div>
+      </>
+    )}
+  </section>
+)}

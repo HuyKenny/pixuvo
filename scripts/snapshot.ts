@@ -9,7 +9,7 @@
  */
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { parseArgs } from 'node:util';
-import { NEIGHBORS, categoryGames, computeFacets, gamesByIds, getCategories, getGamesBatch, getLandings, getSetting, landingGames, topGames, type Q } from '../src/lib/catalog.ts';
+import { NEIGHBORS, parseEditorial, categoryGames, computeFacets, gamesByIds, getCategories, getGamesBatch, getLandings, getSetting, landingGames, topGames, type Q } from '../src/lib/catalog.ts';
 import { MIN_CATEGORY_GAMES, THEMES } from '../src/lib/taxonomy.ts';
 import type { GameCard, GameDetail } from '../src/lib/types.ts';
 import { loadConfig } from './lib/env.ts';
@@ -44,7 +44,7 @@ const facets = await computeFacets(q, categories);
 
 const landings = [];
 for (const l of await getLandings(q)) {
-  const r = await landingGames(q, categories, l.all, 96);
+  const r = await landingGames(q, categories, l, 96);
   if (r.total >= l.minGames) landings.push({ ...l, count: r.total, games: r.items });
   else console.warn(`landing ${l.slug}: only ${r.total} games (< ${l.minGames}) — not published`);
 }
@@ -63,8 +63,17 @@ const playsYesterday = Number((await q.all<{ n: number | null }>("SELECT sum(pla
 // Static detail pages: the best-ranked games, plus everything already on the homepage.
 const N = Math.max(0, Math.min(15_000, Number(values.games)));
 const idRows = await q.all<{ id: number }>(`SELECT id FROM games WHERE status = 'published' ORDER BY rank_score DESC, id DESC LIMIT ?`, [N]);
-const wanted = [...new Set([...idRows.map((r) => r.id), ...featured.map((g) => g.id), ...newest.map((g) => g.id)])];
+// Hero games (Pixuvo's own texts) are always prerendered in English.
+const heroRows = await q.all<{ game_id: number }>("SELECT DISTINCT e.game_id FROM game_editorial e JOIN games g ON g.id = e.game_id WHERE g.status = 'published'");
+const wanted = [...new Set([...idRows.map((r) => r.id), ...heroRows.map((r) => r.game_id), ...featured.map((g) => g.id), ...newest.map((g) => g.id)])];
 const details: GameDetail[] = await getGamesBatch(q, wanted);
+const edRows = await q.all<{ game_id: number; lang: string; summary: string; how_to: string; tips_json: string; faq_json: string }>('SELECT game_id, lang, summary, how_to, tips_json, faq_json FROM game_editorial');
+for (const d of details) {
+  const mine = edRows.filter((r) => r.game_id === d.id);
+  const en = mine.find((r) => r.lang === 'en');
+  d.editorial = en ? parseEditorial(en) : null;
+  d.editorialLangs = mine.map((r) => r.lang);
+}
 // Related games for static pages: same primary category (its top list), never the game itself, rotated by id.
 for (const d of details) {
   const pool = (d.primaryCategory ? categoryPages[d.primaryCategory.slug] : featured) ?? featured;

@@ -1,5 +1,5 @@
 /** Data loaders for on-demand routes (pages decide redirect / 404; views only render). */
-import { categoryGames, clampPage, getGame, type GameLookup } from '../lib/catalog';
+import { categoryGames, clampPage, gameEditorial, getGame, type GameLookup } from '../lib/catalog';
 import { categoriesCached, q } from '../lib/server/db';
 import { MIN_CATEGORY_GAMES } from '../lib/taxonomy';
 import { SITE, categoryPath } from '../lib/site';
@@ -19,8 +19,13 @@ export async function loadCategoryPage(cat: string, n: string): Promise<{ kind: 
   return { kind: 'ok', data: { c, cats, parent, page, res } };
 }
 
-/** Game detail (the same English record for every language; the page localises around it). */
-export async function loadGame(slug: string): Promise<GameLookup> {
+/** Game detail (the same English record for every language) plus Pixuvo's own text in the page language, if any. */
+export async function loadGame(slug: string, lang: string): Promise<GameLookup> {
   if (!/^[a-z0-9-]{1,90}$/.test(slug)) return { kind: 'missing' };
-  return getGame(q(), slug);
+  const res = await getGame(q(), slug);
+  if (res.kind !== 'ok') return res;
+  const ed = await gameEditorial(q(), res.game.id, lang);
+  res.game.editorial = ed.editorial;
+  res.game.editorialLangs = ed.langs;
+  return res;
 }

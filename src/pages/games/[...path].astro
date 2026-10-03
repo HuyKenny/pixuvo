@@ -3,7 +3,7 @@ export const prerender = false;
 import GamePage from '../../components/GamePage.astro';
 import { loadGame } from '../../views/loaders';
 import { gamePath } from '../../lib/site';
-const res = await loadGame(Astro.params.path ?? '');
+const res = await loadGame(Astro.params.path ?? '', 'en');
 if (res.kind === 'redirect') return Astro.redirect(gamePath(res.slug), 301);
 if (res.kind !== 'ok') return Astro.rewrite('/404/');
 ---

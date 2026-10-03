@@ -23,8 +23,8 @@ const plays = (await db.all<{ game_id: number; p7: number; p3: number; prev: num
           sum(CASE WHEN day < date('now', '-3 day') AND day >= date('now', '-10 day') THEN play_clicks ELSE 0 END) AS prev
      FROM aggregate_metrics WHERE game_id > 0 AND day >= date('now', '-10 day') GROUP BY game_id`,
 )).rows;
-const current = new Map((await db.all<{ id: number; plays_7d: number; quality_score: number | null; rating_up: number; rating_down: number; rank_score: number }>(
-  "SELECT id, plays_7d, quality_score, rating_up, rating_down, rank_score FROM games WHERE status = 'published' AND (plays_7d > 0 OR rating_up + rating_down > 0)",
+const current = new Map((await db.all<{ id: number; plays_7d: number; quality_score: number | null; rating_up: number; rating_down: number; rank_score: number; search_volume: number }>(
+  "SELECT id, plays_7d, quality_score, rating_up, rating_down, rank_score, search_volume FROM games WHERE status = 'published' AND (plays_7d > 0 OR rating_up + rating_down > 0 OR search_volume > 0)",
 )).rows.map((r) => [r.id, r]));
 const byId = new Map(plays.map((p) => [p.game_id, p]));
 const ids = new Set([...current.keys(), ...byId.keys()]);
@@ -34,11 +34,11 @@ for (const id of ids) {
   const cur = current.get(id);
   let g = cur;
   if (!g) {
-    const r = (await db.all<{ id: number; plays_7d: number; quality_score: number | null; rating_up: number; rating_down: number; rank_score: number }>('SELECT id, plays_7d, quality_score, rating_up, rating_down, rank_score FROM games WHERE id = ?', [id])).rows[0];
+    const r = (await db.all<{ id: number; plays_7d: number; quality_score: number | null; rating_up: number; rating_down: number; rank_score: number; search_volume: number }>('SELECT id, plays_7d, quality_score, rating_up, rating_down, rank_score, search_volume FROM games WHERE id = ?', [id])).rows[0];
     if (!r) continue;
     g = r;
   }
-  const rank = rankScore({ qualityScore: g.quality_score, plays7d: p7, ratingUp: g.rating_up, ratingDown: g.rating_down });
+  const rank = rankScore({ qualityScore: g.quality_score, plays7d: p7, ratingUp: g.rating_up, ratingDown: g.rating_down, searchVolume: g.search_volume });
   if (g.plays_7d === p7 && Math.abs(g.rank_score - rank) < 1e-6) continue;
   updates.push({ sql: 'UPDATE games SET plays_7d = ?, rank_score = ? WHERE id = ?', params: [p7, rank, id] });
   updates.push({ sql: 'UPDATE game_categories SET rank_score = ? WHERE game_id = ?', params: [rank, id] });

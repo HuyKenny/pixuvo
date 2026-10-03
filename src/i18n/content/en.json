@@ -1,0 +1,2011 @@
+{
+ "home": {
+  "h2": "Free online games for kids and the whole family",
+  "intro": "Pixuvo is a free games portal for kids aged about 6 to 15 and their families. There are more than 45,000 browser games here, from puzzles and racing to dress-up and sports. You don't need an account, you don't sign up and you don't download anything: pick a game, press play and it starts right in the web page. Pixuvo doesn't make the games itself; they come from partner publishers, and new ones are added every day.\n\nFinding something to play is easy. Browse by category, open the 2 player section when a friend or sibling sits next to you, or check the new games and the popular lists, which are based on what people really play. Save any game you like to your favorites. Favorites and recently played games are saved in this browser on this device, so there's no login to remember. Many games also work on phones and tablets – each game page shows it.\n\nParents can find a separate page that explains how Pixuvo handles safety, including that games with violent, adult or gambling wording are held for manual review before they appear. Not sure where to start? Puzzle fans can try Drop Planets or Merge Royal, young learners like Kobadoo Numbers, racers can jump into Moto X3M: Spooky Land, and dress-up fans enjoy Aidol K-pop Adventure."
+ },
+ "cat": {
+  "2-player": {
+   "intro": "Grab a friend, a sibling or a parent, and sit down at the same keyboard. 2 player games are made for exactly that – two people, one game, and lots of laughing. Pixuvo has more than 1,400 of them.\n\nIn most 2 player games, both players share one computer. One person usually controls a character with WASD, and the other with the arrow keys. Some games are competitive duels and races, where you try to beat each other; Red Hands - 2 Player Game, Gun and Guys, Geometri Tag Wars - 2 Players and Racing Ball 3D are listed near the top. Others are cooperative, where you work together as a team. Adventures of Two Kittens II, Cute Sheep Skyblock and Lava Ladder Leap are more games to try together. Calm thinking games like Tic Tac Toe Pro - Multiplayer & Challenge are great for younger kids, and Kids: Cute Pairs is another gentle pick. A few 2 player games also have online modes.\n\nBefore you start, decide who gets which keys – the game's start screen usually shows the controls. Co-op games are a great choice when one player is younger, because you win together. Shared keyboard games work best on a computer; plenty of them work on phones and tablets as well – the game page says so.",
+   "faq": [
+    {
+     "q": "How do you play 2 player games on one keyboard?",
+     "a": "Usually one player uses the WASD keys and the other the arrow keys. The controls are shown on the game's start screen or in its description."
+    },
+    {
+     "q": "What are good 2 player games for kids?",
+     "a": "Good ones to start with: Tic Tac Toe Pro is calm and simple, and Kids: Cute Pairs, Adventures of Two Kittens II, Red Hands - 2 Player Game and Racing Ball 3D."
+    },
+    {
+     "q": "Are there 2 player games where you work together?",
+     "a": "Yes, co-op games let you solve levels as a team instead of playing against each other. They are perfect when one player is younger or new to games – the game description says whether a game is co-op."
+    },
+    {
+     "q": "Can I play 2 player games online with a friend?",
+     "a": "Some 2 player games have online modes, but most are made for two people on the same device. The game page says which when the publisher provides it."
+    },
+    {
+     "q": "Are there 2 player card or board games?",
+     "a": "Yes, games like Tic Tac Toe Pro are easy two-player picks, and our board, chess and card sections have many more games you can play in turns."
+    }
+   ]
+  },
+  "2048": {
+   "intro": "Two plus two makes four, four plus four makes eight… and if you keep merging long enough, you reach 2048. That is the whole idea of this famous number puzzle, and it is much harder than it sounds. Pixuvo has more than 200 free 2048 games, from the classic grid to 3D cubes and merge races.\n\nIn the original game, numbered tiles sit on a 4×4 grid. Each time you slide in one direction, every tile moves, and two tiles with the same number merge into one with double the value. After every move a new small tile appears, so the board slowly fills up. If you want the classic version, 2048 Classic Puzzle - Challenge is a good one to start with. Other games take the merging idea in new directions, from 3D cubes to races and .io arenas – Chain Cube 2048 3D, Snake 2048.io, Jelly Run in 2048, Merge Grabber Race to 2048 and Merge Royal are a few to try.\n\nThe best-known strategy is to pick one corner and keep your biggest tile there. Slide mostly in two directions and only use the third when you must, so big numbers stay in a neat line. 2048 is also a sneaky way to practice doubling numbers. Use the arrow keys on a computer or swipe on a touch screen – many games also work on phones and tablets, and the game page shows it.",
+   "faq": [
+    {
+     "q": "How do you play 2048?",
+     "a": "Slide all tiles up, down, left or right. Two tiles with the same number merge into one with double the value, and the goal is to create a 2048 tile before the board fills up."
+    },
+    {
+     "q": "What is the best strategy for 2048?",
+     "a": "Keep your largest tile in one corner and build a chain of decreasing numbers next to it. Avoid swiping in the direction that pulls the big tile out of its corner."
+    },
+    {
+     "q": "Is 2048 good for learning math?",
+     "a": "It practices doubling and powers of two (2, 4, 8, 16 and so on) in a playful way, and it trains planning ahead."
+    },
+    {
+     "q": "Are there 3D versions of 2048?",
+     "a": "Yes, the category also has 3D takes on the merging idea. Chain Cube 2048 3D and Merge Cubes are two to try."
+    },
+    {
+     "q": "Can I play 2048 on my phone?",
+     "a": "2048 is played with simple swipes, so many versions work on phones and tablets. Check the game page to see if mobile is supported."
+    }
+   ]
+  },
+  "action": {
+   "intro": "Your heart beats a little faster, the screen fills with enemies and you have about half a second to decide what to do. That rush is why kids keep coming back to action games. Pixuvo has more than 6,500 of them, from silly stickman battles to arena brawls, and every one runs right in your browser with no download and no account.\n\nAction is a big family, so it helps to know the branches. Fighting games put you in one-on-one duels and arena scraps, while ninja games swap brute force for sneaking, jumping across rooftops and throwing shuriken. Outside those two, you will find tower defense mixes, survival waves and physics battles where the funniest move often wins. Good first picks listed near the top are Stickman Warriors, Sumo Shove and Knockback Knights.\n\nNew to the genre? Start with a game that has short rounds, so a loss only costs you a minute. Most action games on a computer use the arrow keys or WASD to move and the space bar or mouse to attack, and the game page usually lists the controls. Many of them also run on phones and tablets – each game page tells you if it does. Some fighting games include cartoon violence, so parents can check our parents page for how we review games.",
+   "faq": [
+    {
+     "q": "What are action games?",
+     "a": "Action games are built around fast reflexes and quick decisions: dodging, jumping, fighting and reacting to what happens on screen. Most have short rounds, so they are easy to pick up and hard to put down."
+    },
+    {
+     "q": "What are good action games for beginners?",
+     "a": "Pick games with short rounds and simple controls, so you learn the moves fast and a lost round only costs you a minute. To get going, try Sumo Shove and Stickman Warriors."
+    },
+    {
+     "q": "Can two players play action games on one computer?",
+     "a": "Many can. In a lot of 2 player action games one player uses WASD and the other uses the arrow keys on the same keyboard; the game page says when a game is for two players."
+    },
+    {
+     "q": "Are action games too violent for kids?",
+     "a": "Most browser action games use cartoon or stickman-style fighting rather than realistic violence. Games with violent wording are held for manual review, and our parents page explains how we check games."
+    },
+    {
+     "q": "Do I need to download anything to play?",
+     "a": "No. Every action game on Pixuvo runs in your web browser – just click and play, with no sign-up."
+    }
+   ]
+  },
+  "adventure": {
+   "intro": "Every good adventure starts with a question: what is behind that door, over that hill or at the end of this story? Adventure games let you find out. Pixuvo has more than 8,500 free adventure games where you explore new places, solve problems and keep going until the journey is complete.\n\nAdventure is one of the widest genres on the site. Some games are about exploring and crafting, others mix in action and fights, and some let you roam freely across a big map. Idle adventures keep progressing even when you only play a few minutes at a time. Right now Dungeon Master - Cult & Craft, Samurai Brawling, Horse Simulator 3D and Merge Mine - Idle Clicker sit near the top of the list. And if you love tricky rooms and hidden clues, the escape games subcategory is full of locked doors waiting for you to work out the way out.\n\nHow do you choose? Think about what you enjoy most. If you like stories, look for games with levels or chapters. If you like freedom, pick an open map you can wander. If you have only a short break, an idle or merge adventure fits best. Most use the mouse or arrow keys, and the game page explains the controls. Lots of these games work on a phone or tablet too; check the game page to be sure. Your favorites are saved in this browser, so you can come back to a long adventure later.",
+   "faq": [
+    {
+     "q": "What are adventure games?",
+     "a": "Adventure games are about exploring, solving problems and following a goal or story through many places or levels. They are usually less about speed and more about curiosity."
+    },
+    {
+     "q": "How do you play adventure games?",
+     "a": "Explore everything, talk to characters or click on objects, and collect items that might help later. If you get stuck, go back to places you have already visited – the answer is often there."
+    },
+    {
+     "q": "What are good adventure games for kids?",
+     "a": "Not sure where to begin? Pick Horse Simulator 3D and Dungeon Master - Cult & Craft. For a puzzle twist, try the escape games subcategory."
+    },
+    {
+     "q": "Can I save my progress in adventure games?",
+     "a": "Many games keep their own progress in your browser, and Pixuvo saves your favorites and recently played games on this device. Use the same browser to pick up where you left off."
+    },
+    {
+     "q": "Are adventure games free on Pixuvo?",
+     "a": "Yes, every adventure game on Pixuvo is free to play in your browser, with no account or download."
+    }
+   ]
+  },
+  "arcade": {
+   "intro": "Insert coin, press start, beat the high score – that simple loop has kept people playing since arcade machines appeared in the early 1970s. Today you do not need a pocket full of quarters. Pixuvo has more than 12,000 free arcade games you can start in one click in your browser.\n\nWhat makes a game feel \"arcade\"? Short rounds, easy controls, rising difficulty and a score that makes you want one more try. Inside this huge category you will find runner games where you keep moving and dodge obstacles, retro games inspired by the pixel era, snake games where you grow longer with every snack, and bubble shooter games where you aim and match colors. There are also quick party games for two friends, such as 12 MiniBattles - Two Players.\n\nTo find your favorite type, try a few different ones for a couple of minutes each – Epic Duck, Buba Jump, Popcorn Race 3D and Gelatino are listed near the top. Most arcade games need only one or two keys, the mouse or a tap, so they are perfect for a short break. Playing on a tablet? Many games support it, and the game page shows which ones. Popular lists on Pixuvo are based on real plays, so they are a good shortcut to what other kids enjoy right now.",
+   "faq": [
+    {
+     "q": "What are arcade games?",
+     "a": "Arcade games are quick, easy-to-learn games built around score, timing and getting better each try. The name comes from coin-operated machines in game arcades."
+    },
+    {
+     "q": "When did arcade games come out?",
+     "a": "Coin-operated video arcade games became popular in the early 1970s, and the golden age of arcades followed in the late 1970s and early 1980s. Many browser games today still use the same pick-up-and-play idea."
+    },
+    {
+     "q": "What are some arcade games I can play for free?",
+     "a": "Try Epic Duck, Buba Jump or Popcorn Race 3D on Pixuvo – they run in the browser for free. The runner, retro, snake and bubble shooter subcategories have thousands more."
+    },
+    {
+     "q": "Are there 2 player arcade games?",
+     "a": "Yes. Many arcade-style games are made for two players – 12 MiniBattles - Two Players is one to try – and the game page shows when a game supports two players."
+    },
+    {
+     "q": "Can I play arcade games on a phone or tablet?",
+     "a": "Many arcade games use simple taps, so they often work on phones and tablets. Check the game page to see if mobile is supported."
+    }
+   ]
+  },
+  "archery": {
+   "intro": "Pull back the string, check the wind, and let go. Archery is one of the oldest sports in the world, and on screen it is all about one satisfying moment: the arrow flying in an arc and hitting exactly where you aimed. Pixuvo has more than 140 archery games, from calm target practice to silly stickman duels.\n\nMost of them fall into a few groups. Target and challenge games ask you to hit bullseyes, apples or moving objects while the distance and wind keep changing. Duel games put two archers on opposite sides, and the better shot wins – Two Archers Bow Duel is one to try. Then there are puzzle-style archery games, where finding the right path matters more than fast hands, and adventure-style games where your bow keeps creatures away. Archer vs Monsters, Archery Quest, Archer 2023, Arrow Clash and Tricky Arrow are more games to try.\n\nNew to the bow? Start with a target game to learn how high to aim for far shots, then try a duel against a friend or the computer. On a computer you usually aim with the mouse; on phones and tablets you drag and release with a finger, which feels a lot like pulling a real bowstring. The game page shows whether a game works on touch screens.",
+   "faq": [
+    {
+     "q": "How do you aim in archery games?",
+     "a": "In most games you click or touch, drag backward to pull the string, and let go to shoot. The longer you pull, the stronger the shot, and for far targets you aim a little higher because the arrow drops as it flies."
+    },
+    {
+     "q": "Can two players play archery games together?",
+     "a": "Yes, some archery games are made for two players, such as duel games where two archers face each other. Check the game page to see whether a game is for one or two players."
+    },
+    {
+     "q": "Why does my arrow miss when I aim straight at the target?",
+     "a": "Many archery games add gravity and wind, so the arrow curves on its way. Watch the wind arrow or number on the screen and aim slightly against it."
+    },
+    {
+     "q": "Are archery games good for younger kids?",
+     "a": "Target and puzzle archery games are simple to learn and focus on aiming rather than fighting. Parents can read the game description first or visit our parents page for more tips."
+    },
+    {
+     "q": "Are these games free to play?",
+     "a": "Yes. Every game on Pixuvo is free, with no account and nothing to download – it opens right in your web browser."
+    }
+   ]
+  },
+  "basketball": {
+   "intro": "Swish! There is something special about the sound of a perfect shot, and basketball games let you chase that feeling again and again. Pixuvo has more than 300 of them, and most are easy to learn: aim, choose the power, release.\n\nShooting games are a big group: you flick or aim the ball toward the hoop and try to score from different spots. Dunk and trick-shot games turn it into a physics puzzle, where you bounce, drop or sling the ball into the basket, and runner games add moving and dodging. Good ones to start with are Perfect Shot, Basket Sniper, Chill Dunk and Drop Dunks, and Sling Dunk, BasketBall Runner, Basketball Beans and Incredible Basketball are more to try.\n\nA good way to start is a calm shooting game, because it teaches the arc of the shot – usually a high, soft throw goes in more often than a flat, hard one. After that, dunk puzzles are a nice challenge for thinkers. Basketball games work great with a mouse, and since many use a simple swipe or drag, they are also fun on phones and tablets; check the game page to see if a game supports mobile.",
+   "faq": [
+    {
+     "q": "How long are basketball games?",
+     "a": "A real NBA game has four quarters of 12 minutes, and school games are usually shorter. Browser basketball games are quick – a round often takes just a minute or two, so they are perfect for short breaks."
+    },
+    {
+     "q": "How do you shoot in online basketball games?",
+     "a": "Usually you drag or swipe from the ball toward the hoop and let go. A higher arc tends to drop in more often, and many games show a helper line while you are learning."
+    },
+    {
+     "q": "What are dunk games?",
+     "a": "Dunk games are often basketball puzzles where you have to get the ball into the hoop with bounces, drops or slingshots instead of a normal shot. Drop Dunks and Sling Dunk are two to try."
+    },
+    {
+     "q": "Are there basketball games for two players?",
+     "a": "Some basketball games have a two-player mode on one keyboard, and the game page says when a game supports it. Look in our 2 player section for more games to play with a friend."
+    },
+    {
+     "q": "Are these games free to play?",
+     "a": "Yes. Every basketball game on Pixuvo is free to play in the browser, with no sign-up."
+    }
+   ]
+  },
+  "block": {
+   "intro": "Drop the piece, fill the row, clear the line – and make room for the next one. Block puzzles are some of the most satisfying games around, because every cleared row feels like tidying up. Pixuvo offers more than 1,100 free block puzzle games for your browser.\n\nBlock puzzles come in a few main styles. In grid puzzles, you drag shapes onto a board and clear full rows and columns, and many grid puzzles have no timer pushing you. In falling-block games, pieces drop from the top and you rotate them into place before they land. Then there are sliding puzzles, where you move blocks out of the way to free one piece, and color puzzles, where you line up matching pieces. 10x10! Block Puzzle Classic, Wood Block Puzzle - Block Game, Block Crush Challenge, TenTrix, Block Buster, Unlock Block - Puzzle and Color Lines are all listed near the top.\n\nIf you are just starting, pick a grid puzzle without a timer so you can think about each move. A smart habit is to keep space open for the long and awkward shapes, because those are the ones that end your game. Falling-block games are faster and great for practicing quick decisions. Most block puzzles need only a mouse or a tap, and lots of these games work on a phone or tablet too; check the game page to be sure. Explore more brain teasers in the puzzle category.",
+   "faq": [
+    {
+     "q": "How do you play block puzzle games?",
+     "a": "You place blocks of different shapes on a grid and clear lines by filling complete rows or columns. The game ends when no more pieces fit."
+    },
+    {
+     "q": "What is the best strategy for block puzzles?",
+     "a": "Keep the board as open as possible and leave room for large or long pieces. Clearing several lines at once often gives bonus points."
+    },
+    {
+     "q": "Are there falling-block games here?",
+     "a": "Yes. Falling-block games follow the classic idea of rotating pieces as they drop and clearing full lines. Grid puzzles are calmer because pieces do not fall."
+    },
+    {
+     "q": "Which block puzzle is good for beginners?",
+     "a": "A grid puzzle without a timer is a calm start, because you can think at your own pace. Wood Block Puzzle - Block Game and 10x10! A good one to start with is Block Puzzle Classic."
+    },
+    {
+     "q": "Can I play block puzzles on my phone?",
+     "a": "Block puzzles are played by dragging or tapping, so many work well on phones and tablets. The game page shows if mobile is supported."
+    }
+   ]
+  },
+  "board": {
+   "intro": "Family game night does not need a cupboard full of boxes. Board games on Pixuvo bring classic tabletop games to the screen, and there are more than 700 of them, from quick tic-tac-toe rounds to long, thoughtful chess matches.\n\nChess has its own section, with lots of versions. Battleship games like TRZ Battleship and Intergalactic Battleship are about guessing where the enemy ships are hidden. Tic Tac Toe Multiplayer X O is the classic three-in-a-row game that everyone knows. BattleBox, Unno Game, Shape Defense and Mahjong Street Cafe are more games listed near the top, and tile games like mahjong belong here too.\n\nBoard games are perfect for playing together. Many can be played by two people on the same device, taking turns, and some have online modes too – the game page says which. Playing against the computer is a great way to learn the rules before challenging a friend or a parent. Board games are turn-based, so there is no rush, and they usually need only clicks or taps. That makes them comfortable on computers, tablets and many phones – you can see on the game page whether a phone or tablet will work.",
+   "faq": [
+    {
+     "q": "What board games can I play online here?",
+     "a": "You will find chess, battleship, tic-tac-toe and many other tabletop ideas brought to the screen. Chess has its own section with lots of versions."
+    },
+    {
+     "q": "Can two people play board games on one device?",
+     "a": "Yes, many board games let two players take turns on the same computer or tablet. Some also offer online play; the game page shows which modes a game has."
+    },
+    {
+     "q": "How do you play battleship?",
+     "a": "Each player hides ships on a grid and then takes turns guessing squares to hit the other player's ships. The first to sink the whole enemy fleet wins."
+    },
+    {
+     "q": "Are board games good for kids?",
+     "a": "Board games teach turn-taking, planning and following rules, and they are great for playing together as a family. Starting against the computer is an easy way to learn."
+    },
+    {
+     "q": "Are these games free to play?",
+     "a": "Yes. All board games on Pixuvo are free to play in the browser, with no account."
+    }
+   ]
+  },
+  "bubble-shooter": {
+   "intro": "Aim, shoot, match three of the same color – and watch the whole cluster pop. Bubble shooter games are one of the most relaxing ways to play, yet a single clever shot that drops half the board feels amazing. Pixuvo offers more than 750 free bubble shooter games in your browser.\n\nThe rules are simple. Bubbles hang at the top of the screen, and you fire one bubble at a time from the bottom. When three or more of the same color touch, they burst, and any bubbles hanging below them fall too. Bubble Shooter and Bubble Shooter POP are easy places to start. Other games add new themes and twists to the same idea – try Space Bubbles Must Die!, Bobble Space Shooter, Pixel Bubble Shooter or Ball Burst.\n\nTwo tricks help a lot. First, bounce shots off the side walls to reach bubbles you cannot hit directly. Second, aim for bubbles that hold up big groups, because dropping a cluster scores more than popping a few at a time. Bubble shooters need only a mouse or a finger, so they are easy for younger kids and comfortable on touch screens, and lots of these games work on a phone or tablet too; check the game page to be sure. Bubble shooters are part of the arcade category.",
+   "faq": [
+    {
+     "q": "How do you play bubble shooter?",
+     "a": "Aim and shoot colored bubbles at the group at the top. When three or more of the same color touch, they pop, and anything hanging below them falls."
+    },
+    {
+     "q": "What is the trick to winning bubble shooter?",
+     "a": "Use wall bounces to reach hard spots and aim for bubbles that hold up large groups. Dropping a big cluster clears the board faster than popping small sets."
+    },
+    {
+     "q": "Are bubble shooter games good for young kids?",
+     "a": "Yes, they are calm, colorful and need only a mouse or a tap. They also practice color matching and aiming."
+    },
+    {
+     "q": "Can I play bubble shooter on my phone?",
+     "a": "Bubble shooters are played by tapping or dragging, so many work well on phones and tablets. Whether a game runs on mobile is listed on its page."
+    },
+    {
+     "q": "Is classic Bubble Shooter on Pixuvo?",
+     "a": "Yes, Bubble Shooter and Bubble Shooter POP are both in this category, along with hundreds of variations."
+    }
+   ]
+  },
+  "building": {
+   "intro": "Stack it, connect it, make it stand. Building games are for kids who like creating things and seeing a plan turn into something real on screen. Pixuvo has more than 230 building games, from calm design puzzles to survival worlds.\n\nThere are a few main styles. Construction puzzles ask you to build something that actually works, like a road or a tall stack. Survival and craft builders usually start you with almost nothing: you gather wood and stone, then build shelters and tools. Factory games are about machines and production lines, idle builders keep growing while you play, and some games mix building with defending what you made. Road Designer, Stack Rocket, Woods of Nevia: Forest Survival, Idle Island: Build And Survive and Factory Builder are a few games to try.\n\nIf you like thinking and testing, start with a construction puzzle, where trial and error is part of the fun. If you like exploring, try a survival builder. Building games often take longer, so look for ones that save progress in the browser. A mouse is the most precise choice, but many also work on tablets – the game page shows it.",
+   "faq": [
+    {
+     "q": "What can you build in building games?",
+     "a": "Almost anything: roads, rockets, houses, factories, islands and whole towns. Each game has its own goal, from solving a design puzzle to growing a settlement."
+    },
+    {
+     "q": "Are there survival and crafting games here?",
+     "a": "Yes. Some building games let you gather resources and build up your own place step by step. Woods of Nevia: Forest Survival and Idle Island: Build And Survive are two to try."
+    },
+    {
+     "q": "Which building game is good for puzzle lovers?",
+     "a": "Construction puzzles are great for thinkers, because you need to plan your build so it works. Not sure where to begin? Pick Road Designer and Stack Rocket."
+    },
+    {
+     "q": "Do building games work on a tablet?",
+     "a": "Many do, though games where you place small pieces are easier with a mouse. The game page tells you whether it works on phones and tablets."
+    },
+    {
+     "q": "Are these games free to play?",
+     "a": "Yes. All building games on Pixuvo are free to play in your browser."
+    }
+   ]
+  },
+  "bus": {
+   "intro": "Next stop: fun. Bus games put you in the driver's seat of a big city bus, and your job is to get passengers where they need to go – safely and on time. Pixuvo has more than 350 free bus games to play in your browser.\n\nDriving a bus is all about patience and precision. It is long, so turns need extra space, and stopping exactly at the bus stop takes practice. Simulator-style games let you follow a route through town, while parking games test how well you can fit a big vehicle into a small space. Some bus games are puzzles about moving buses out of a crowded lot. A quick way in: City Bus Simulator Driving Games, Bus Driving Master 3D, Bus Parking City 3D, City Bus Parking and Bus Parking Out.\n\nIf you are new, start with a parking game and get used to how a long bus turns – the back wheels cut the corner tighter than the front ones. Then try a route simulator, where you must stop smoothly, open the doors and keep to the road. Most bus games use the arrow keys or WASD, with extra keys for doors or the brake listed on the game page. Playing on a tablet? Many games support it, and the game page shows which ones. Bus games are part of the driving category, along with truck and parking games.",
+   "faq": [
+    {
+     "q": "What do you do in bus games?",
+     "a": "You drive a bus along a route, stop at bus stops and pick up passengers, or park a long bus in a tight space. Some bus games are puzzles about moving buses out of a busy lot."
+    },
+    {
+     "q": "How do you turn a bus in bus games?",
+     "a": "Start the turn later and wider than in a car, because the back of the bus follows a tighter path. Go slowly so you do not hit the curb."
+    },
+    {
+     "q": "What is a good bus game for beginners?",
+     "a": "A parking game is a good way to learn how a long bus moves, and City Bus Parking is a good one to start with. When you feel ready, move on to a route simulator."
+    },
+    {
+     "q": "Can I play bus games on my phone?",
+     "a": "Many bus games have on-screen pedals and steering and work on phones and tablets. You can see on the game page whether a phone or tablet will work."
+    },
+    {
+     "q": "Are bus games free to play?",
+     "a": "Yes, all bus games on Pixuvo are free in your browser with no sign-up."
+    }
+   ]
+  },
+  "car": {
+   "intro": "From tiny karts to roaring supercars, from busy city streets to giant mega ramps – if it has four wheels, you will probably find it here. Pixuvo has more than 3,000 free car games for kids who love anything with an engine.\n\nCar games are not only about racing. Yes, there are plenty of races, but there are also stunt games where you launch off huge ramps, drift games where you slide around corners, parking games that test careful steering, and free-driving games where you simply cruise around. If you want battles on wheels, some car games add shooting too. Good ones to start with: Car Racing, Val d'Agri Race, Kart Racer Vs, Mega Ramps Car Racing Games 3D, Russian Car Drift 3D and Parking Solution.\n\nHow to pick? If you love speed, go for races and stunts. If you like thinking, parking puzzles are surprisingly tricky. If you want to explore, look for simulator-style driving games – the game description tells you what kind of map to expect. Most car games use the arrow keys or WASD, plus the space bar for the handbrake or boost, and the game page lists the controls. Playing on a tablet? Many games support it, and the game page shows which ones. For more speed, check out the racing category; for careful steering, try the driving category.",
+   "faq": [
+    {
+     "q": "What are some fun car games for kids?",
+     "a": "A quick way in: Kart Racer Vs, Car Racing, Mega Ramps Car Racing Games 3D and Parking Solution. Try a race, a stunt game and a parking game to see which style you like best."
+    },
+    {
+     "q": "Are there car games where you can drive anywhere?",
+     "a": "Yes, some car and driving simulator games have open maps where you cruise freely instead of following a track. The game description usually tells you."
+    },
+    {
+     "q": "Can car games teach you how to drive?",
+     "a": "Browser car games are made for fun and do not teach real traffic rules. Parking games can be a playful way to practice steering and judging space, though."
+    },
+    {
+     "q": "What keys do you use in car games?",
+     "a": "Most use the arrow keys or WASD to steer and accelerate, and often the space bar for the handbrake or boost. The game page lists the exact controls."
+    },
+    {
+     "q": "Can I play car games on a tablet?",
+     "a": "Many car games have touch buttons and work on phones and tablets. You can see on the game page whether a phone or tablet will work."
+    }
+   ]
+  },
+  "card": {
+   "intro": "Shuffle, deal, and see what lands in your hand. Card games combine a bit of luck with a lot of smart choices, and Pixuvo has more than 420 of them, from classic solitaire to fantasy battles with collectible cards.\n\nThe quiet favorite is solitaire, which has its own section – Ultimate Solitaire Classic is a good place to start. Color-matching games follow the familiar idea of playing a card that matches by color or number, and multiplayer versions let you play with others. Battle card games turn cards into heroes and monsters that fight on a board, and memory card games ask you to flip cards and remember where each pair is. 4 Colors PGS, Four Colors Multiplayer Monument Edition, Battle Card Monster, Emberdeck and Flip & Match are a few games to try.\n\nIf you are new to card games, try a memory game first – it is simple and great for younger kids. For older players, color-matching games teach quick decisions, and battle card games are all about building a good deck and planning a few turns ahead. Card games are usually played with clicks or taps, so they work comfortably on computers, tablets and many phones – the game page tells you whether it works on phones and tablets.",
+   "faq": [
+    {
+     "q": "What card games can kids play online?",
+     "a": "Solitaire, color-matching games, memory games and battle card games are all good choices for kids. Not sure where to begin? Pick Ultimate Solitaire Classic, 4 Colors PGS and Flip & Match."
+    },
+    {
+     "q": "What are 2 player card games I can play here?",
+     "a": "Some color-matching and battle card games have multiplayer or duel modes – Four Colors Multiplayer Monument Edition is one to check. The game page shows how many players a game supports."
+    },
+    {
+     "q": "What are battle card games?",
+     "a": "In battle card games, each card is a hero, monster or spell. You build a deck and play cards to defeat your opponent, so planning is just as important as luck."
+    },
+    {
+     "q": "Do card games involve real money?",
+     "a": "No. Card games on Pixuvo are just for fun, and any coins or chips in them are pretend. Games with gambling wording are held back for manual review."
+    },
+    {
+     "q": "Are these games free to play?",
+     "a": "Yes. All card games on Pixuvo are free and run in the browser without signing up."
+    }
+   ]
+  },
+  "casual": {
+   "intro": "Got five minutes before dinner? That is exactly what casual games are made for. They are short, light and easy to understand, so you can jump in, have fun and stop whenever you like. Pixuvo has more than 10,000 free casual games, all running in the browser with no sign-up.\n\nCasual games come in many flavors. Some are one-touch timing games where you tap to hop, float or dodge. Others are small physics puzzles, like Cut The Rope 2, where you cut ropes in the right order to feed a hungry little monster. You will also find satisfying break-and-smash games, quirky one-off ideas and quick number games. Nova Hop, Boost Balloon, Dodge the Bull, BreakIt and Master of Numbers are a few more to try. Many of these are \"hyper casual,\" meaning a single simple action repeated with rising difficulty.\n\nThe best way to choose is to look at the thumbnail and title and simply try one – if it does not click within a minute, there are thousands more. Casual games are great for younger kids, for winding down after homework and for grown-ups who want a quick break. Most need just a mouse click, the space bar or a tap, and many of them also run on phones and tablets – each game page tells you if it does. Save the ones you like to favorites, which stay in this browser.",
+   "faq": [
+    {
+     "q": "What are casual games?",
+     "a": "Casual games are simple, short games with easy rules that anyone can pick up in a minute. You can play for a few minutes and stop at any time."
+    },
+    {
+     "q": "What are hyper casual games?",
+     "a": "Hyper casual games are an even simpler kind of casual game, usually built on one action such as tapping, swiping or timing a jump, repeated as the game gets harder."
+    },
+    {
+     "q": "What casual games are good for younger kids?",
+     "a": "One-touch games and gentle physics puzzles like Cut The Rope 2 are easy to understand, and Boost Balloon is another good one to start with. They need only a click or a tap."
+    },
+    {
+     "q": "Can I play casual games on a tablet?",
+     "a": "Many casual games are made for touch, so lots of them work on phones and tablets. Check the game page to see if it runs on your device."
+    },
+    {
+     "q": "Do I need an account to play?",
+     "a": "No. Casual games on Pixuvo are free, and your favorites and recently played games are saved in your browser without an account."
+    }
+   ]
+  },
+  "chess": {
+   "intro": "Sixteen pieces each, sixty-four squares, and endless possibilities. Chess has been played for well over a thousand years, and it is still one of the best games for learning to think ahead. Pixuvo's chess section has 35 chess games and variants.\n\nIf you want the classic game, start with Classic Chess Duel, ChessT or Chess Online. Chess Online and Chess Multiplayer Online are worth a look when you want a human opponent – the game page shows the available modes – and Checkmate Game and Chess of the Middle Ages are more to try. You can also travel around the world: Shogi Japanese Chess and Xiangqi Chinese Chess Duel are the Japanese and Chinese cousins of chess, with different pieces and rules. Chess Ops and Pawn Chess are two more games in the section.\n\nJust learning? Play against the computer first, if the game offers it, and learn how each piece moves before you worry about tricky plans. A good beginner habit is to ask before every move: \"What is my opponent threatening?\" Chess is turn-based, so there is no hurry, and it works well with a mouse or a finger. Many chess games run on tablets and phones too – you can see on the game page whether a phone or tablet will work.",
+   "faq": [
+    {
+     "q": "How many possible chess games are there?",
+     "a": "So many that nobody can count them all: mathematicians estimate the number of possible chess games is far larger than the number of atoms in the known universe. That is why no two games are ever quite the same."
+    },
+    {
+     "q": "Can I play chess online against another person?",
+     "a": "Some chess games have online modes for playing against other people – Chess Multiplayer Online is one to check, and the game page shows the available modes. You can also play against the computer or with a friend on the same device in many chess games."
+    },
+    {
+     "q": "What is the best way for kids to learn chess?",
+     "a": "Start with how each piece moves, then play full games against the computer at an easy level. Checkmate puzzles, where you look for the winning move, are great practice too."
+    },
+    {
+     "q": "What are Shogi and Xiangqi?",
+     "a": "They are the Japanese and Chinese versions of chess. Both have their own pieces and rules, and you can try them in Shogi Japanese Chess and Xiangqi Chinese Chess Duel."
+    },
+    {
+     "q": "Are these games free to play?",
+     "a": "Yes. Every chess game on Pixuvo is free and opens in your browser without signing up."
+    }
+   ]
+  },
+  "clicker": {
+   "intro": "Click once, earn a coin. Click a hundred times, buy an upgrade that clicks for you. That simple loop is why clicker games are so popular – Pixuvo has more than 2,300 of them, and they are easy to start for any age.\n\nClickers come in all kinds of themes. Some are pure classics where you tap one big object, others are about mining for resources, and some add merging or calm, satisfying effects. There are also case-opening clickers, where you open virtual boxes to collect items – it is just pretend, with no real money involved. Good ones to start with: Snail Clicker, Mantis Clicker, Candy Clicker 2, MineClicker and Lotl Spa.\n\nThe trick to any clicker is choosing upgrades well. Early on, buy upgrades that make each click stronger; later, focus on automatic helpers that earn while you rest your finger. Clicker games work with just a mouse, a touchpad or a finger, so they are among the easiest games to play on phones and tablets – whether a game runs on mobile is listed on its page. If you like clickers, you might also enjoy our idle games.",
+   "faq": [
+    {
+     "q": "What are clicker games?",
+     "a": "Clicker games are games where you click or tap to earn points or coins, then spend them on upgrades that help you earn faster. They are also called incremental games."
+    },
+    {
+     "q": "How do you get better at clicker games?",
+     "a": "Buy upgrades that boost every click first, then switch to automatic helpers. Upgrading what earns the most for the price is usually the smartest choice."
+    },
+    {
+     "q": "What is the difference between clicker and idle games?",
+     "a": "In a clicker you earn mostly by clicking yourself, while idle games keep earning on their own. Many games start as clickers and turn into idle games once you unlock helpers."
+    },
+    {
+     "q": "Can I play clicker games on my phone?",
+     "a": "Yes, many clicker games only need taps, so they work nicely on phones and tablets. You can see on the game page whether a phone or tablet will work."
+    },
+    {
+     "q": "Are these games free to play?",
+     "a": "Yes. All clicker games on Pixuvo are free to play in the browser, and any coins or items inside them are pretend."
+    }
+   ]
+  },
+  "coloring": {
+   "intro": "A blank page, a box of colors and no rules about staying inside the lines. Coloring and drawing games are the digital version of a coloring book – except you never run out of crayons. Pixuvo has more than 1,500 of them.\n\nColoring books are the heart of the section. Butterfly Coloring Pages Kids and Mandala Coloring Book offer pictures to color any way you like, and some books feature favorite characters, like Italian Brainrot Coloring. Color-by-number games, such as Color Pixels - Coloring by Numbers, show which color goes where, so the picture appears step by step – very relaxing. Then there are drawing puzzles, where your line is the solution, like Draw The Path - Puzzle. Poly Art, Wall Painter and Creative Puzzle are more creative picks to try.\n\nFor younger kids, coloring pages with big areas are the best start, while older kids often enjoy detailed mandalas or pixel art. Drawing games are a calm activity after a busy day, and no one will ever tell you that the sky has to be blue. They work beautifully with a finger on a tablet, and many also run on phones and computers – each game page shows if touch screens are supported.",
+   "faq": [
+    {
+     "q": "Are there free online coloring pages for kids?",
+     "a": "Yes, there are many coloring books, like Butterfly Coloring Pages Kids and Mandala Coloring Book, that you can color right in the browser for free."
+    },
+    {
+     "q": "What is color by number?",
+     "a": "In color-by-number games, each area has a number that matches a color. You fill them in one by one, and the picture appears as you go – great for relaxing."
+    },
+    {
+     "q": "Can I draw my own pictures?",
+     "a": "Some games let you draw freely, while others use drawing as a puzzle, like Draw The Path - Puzzle. Check the game description to see which kind it is."
+    },
+    {
+     "q": "Are coloring games good on a tablet?",
+     "a": "Yes, coloring with a finger on a tablet feels natural, and many coloring games support touch screens. Each game page shows if touch screens are supported."
+    },
+    {
+     "q": "Can I print or save my coloring?",
+     "a": "Some coloring games have a save button, but not all of them. If yours does not, you can take a screenshot of your finished picture."
+    }
+   ]
+  },
+  "cooking": {
+   "intro": "Orders are coming in, the grill is hot, and the customers are hungry. Cooking games put you in the kitchen, and with almost 900 of them on Pixuvo, you can make everything from burgers and pizza to tacos and steak.\n\nThere are two main kinds. Restaurant and time-management games are fast: customers arrive, you prepare their orders and serve them before they lose patience. These are all about speed and good organization. Recipe games are slower and more creative – you choose ingredients and prepare the food step by step, the way you would at home. Some games mix both and let you run a café or restaurant and make it grow. Good ones to start with are Burger Restaurant Simulator 3D, Pizza Maker food Cooking Games, Yummy Taco, Marmot Diner Dash and Taste City, and Multiplayer Cooking Coop is one to try with a friend.\n\nYounger kids usually enjoy recipe games most, because there is no timer. For restaurant games, a good trick is to prepare popular items before customers ask for them. Cooking games are played with clicks, drags or taps, so many work nicely on tablets and phones – check the game page to see if it runs on your device. And if a game makes you hungry, maybe it is time to cook something real with a grown-up!",
+   "faq": [
+    {
+     "q": "What are good cooking games for kids?",
+     "a": "Younger kids usually like calm recipe games, while older kids often enjoy fast restaurant games. To get going, try Pizza Maker food Cooking Games, Yummy Taco and Marmot Diner Dash."
+    },
+    {
+     "q": "Where can I play free online cooking games?",
+     "a": "Right here – every cooking game on Pixuvo is free and opens in your browser with no sign-up or download."
+    },
+    {
+     "q": "What is a restaurant time-management game?",
+     "a": "It is a cooking game where customers arrive with orders and you have to cook and serve quickly. Planning ahead and serving in the right order helps you earn more."
+    },
+    {
+     "q": "Can we cook together in a cooking game?",
+     "a": "Some games are made for teamwork – Multiplayer Cooking Coop is one to check. The game page shows whether a game supports more than one player."
+    },
+    {
+     "q": "Can I play cooking games on a tablet?",
+     "a": "Yes, many cooking games use simple taps and drags and work well on tablets and phones. Each game page shows if touch screens are supported."
+    }
+   ]
+  },
+  "dress-up": {
+   "intro": "Pick an outfit, try a new hairstyle, add accessories, and create a look that is all yours. Dress-up games are about creativity and style, and with more than 2,800 of them, there is plenty to explore.\n\nFashion and makeover games are the classics: you choose clothes, makeup and accessories for a character or a special event, and some add nail designs or a K-pop theme. A quick way in: Doll Queen Designer, Anime Girl Fashion Make Up, Model Wedding - Girl Games and Aidol K-pop Adventure. The section also includes care games, where you look after cute characters, pets or babies. Baby Panda Care, Funny Kitty Care, Stacky Dash Nail, Funny Rescue Gardener and Funny Rescue Carpenter are more picks to try.\n\nThere is no wrong answer in dress-up games – the fun is in experimenting. Try matching colors one day and wild combinations the next, then take a screenshot of your favorite look. Dress-up games are loved by many kids of every gender, and anyone can enjoy styling and designing. They need only clicks or taps, so most are easy to play on tablets and phones; you can see on the game page whether a phone or tablet will work.",
+   "faq": [
+    {
+     "q": "What are dress-up games?",
+     "a": "Dress-up games let you choose clothes, hairstyles, makeup and accessories for a character. Some also include caring for pets or babies, decorating, or designing your own outfits."
+    },
+    {
+     "q": "Are there dress-up games for boys?",
+     "a": "Yes – dress-up games are for everyone. Styling, designing and caring games are enjoyed by kids of every gender, and many have themes like jobs, K-pop or animals."
+    },
+    {
+     "q": "Which dress-up games are good for younger kids?",
+     "a": "Care games are usually simple and sweet, so they are a gentle start. To get going, try Baby Panda Care, Funny Kitty Care and Doll Queen Designer."
+    },
+    {
+     "q": "Can I save my outfit?",
+     "a": "It depends on the game. If there is no save button, you can take a screenshot of your favorite look."
+    },
+    {
+     "q": "Are these games free to play?",
+     "a": "Yes. All dress-up games on Pixuvo are free to play in the browser, with no account needed."
+    }
+   ]
+  },
+  "drift": {
+   "intro": "Turn in, tap the brake, and let the back of the car slide around the corner in a cloud of smoke. Drifting is one of the coolest skills in car games, and these games are built around it. Pixuvo offers more than 650 free drift games in the browser.\n\nIn most drift games you earn points for how long and how sideways you slide, and keeping a drift going from one corner to the next builds a combo. Some games stick to classic sliding on a track with different kinds of cars, while others mix drifting with chases or unusual vehicles. GT Drift Most Wanted, Bimmer Drifting Legends, Vaz Drifting Legends, Get Drifty, Drift Cops 3D and Drift Bus are a few games to try.\n\nDrifting takes practice, so do not worry if you spin out at first. The basic idea is to enter a corner with speed, start the slide with the handbrake or a quick turn, and then gently steer the other way to stay in control. Small steering moves work better than big ones. Most drift games use the arrow keys or WASD with the space bar as the handbrake; the game page lists the controls. On a phone or tablet? Many games run there too; look for it on the game page. Drift games are part of the racing category.",
+   "faq": [
+    {
+     "q": "What is drifting in car games?",
+     "a": "Drifting means sliding the car sideways through a corner while staying in control. Drift games give points for long, stylish slides."
+    },
+    {
+     "q": "How do you drift in drift games?",
+     "a": "Go into a corner with speed, start the slide with the handbrake (often the space bar) and steer gently the opposite way to hold it. Small, smooth steering is the key."
+    },
+    {
+     "q": "What drift game should I try first?",
+     "a": "Get Drifty and GT Drift Most Wanted are listed near the top of the category. Start with short practice runs and work up to longer drifts."
+    },
+    {
+     "q": "Can I play drift games on my phone?",
+     "a": "Many drift games have touch controls and run on phones and tablets. The game page shows if mobile is supported."
+    },
+    {
+     "q": "Are drift games free?",
+     "a": "Yes, every drift game on Pixuvo is free to play in the browser with no download."
+    }
+   ]
+  },
+  "driving": {
+   "intro": "Racing is about being first. Driving is about being good at it: steering smoothly, braking at the right moment and getting where you need to go in one piece. Pixuvo has more than 2,500 free driving games for kids who love being behind the wheel.\n\nThis category is home to several kinds of driving. Parking games challenge you to fit a car into a tight space without scratching it. Truck games put you in charge of heavy vehicles, cargo and bumpy roads. Bus games ask you to stop at the right places and pick up passengers. There are also highway and endless-road games, where you weave through traffic, and stunt games with ramps and big jumps. Final Freeway, Final Freeway 2R, Road Fury, Truck Simulator Stunt Extreme and Italian Brainrot Extreme Driver are easy places to start.\n\nIf you want a calm challenge, start with a parking game – it teaches you how the car turns. If you prefer speed, try a highway game, where the goal is to keep driving as long as you can without crashing. Most driving games use the arrow keys or WASD, with the space bar to brake. Many of them also run on phones and tablets – each game page tells you if it does. Remember that games are for fun: real driving needs lessons and road rules. For pure speed, head to the racing category.",
+   "faq": [
+    {
+     "q": "What are driving games?",
+     "a": "Driving games are about controlling a vehicle well – steering, braking, parking and following a route. They are usually calmer than racing games."
+    },
+    {
+     "q": "Do driving games teach you how to drive a car?",
+     "a": "No, browser driving games are just for fun and do not replace real lessons or road rules. They can help kids get a feel for steering and judging distance."
+    },
+    {
+     "q": "What driving game should I try first?",
+     "a": "A parking game is a great start because it teaches how the car turns. Final Freeway and Road Fury are good ones to try next."
+    },
+    {
+     "q": "What kinds of vehicles can I drive?",
+     "a": "Cars, trucks, buses and more. Check the parking, truck and bus subcategories to find them quickly."
+    },
+    {
+     "q": "Can I play driving games on my phone?",
+     "a": "Many driving games have on-screen pedals and steering, and work on phones and tablets. Each game page shows if touch screens are supported."
+    }
+   ]
+  },
+  "educational": {
+   "intro": "Learning sticks better when it is fun. Educational games mix play with real skills like reading, counting, caring for your body or understanding nature. Pixuvo has more than 1,300 games that teach something along the way.\n\nFor the youngest players, there are games with first words, letters and simple counting. Health and care games teach good habits like brushing your teeth, nature games look at the environment in a playful way, and cooking games practice following steps in the right order. Puzzles train patience and attention. Good ones to start with include My First 100 Words, App For Kids - Edu games, Doctor Teeth, Save The Planet and Yummy Cupcake. For more practice in one area, our math and memory games are great companions.\n\nHow to choose? Think about what your child is learning right now – letters, numbers, words or habits – and pick a game that matches. Short sessions of 10 to 15 minutes, followed by a little chat about what they discovered, work well. Most educational games use simple clicks or taps, so they are easy on tablets and phones too – each game page shows if touch screens are supported.",
+   "faq": [
+    {
+     "q": "What are the best educational games for kids?",
+     "a": "It depends on age: preschoolers can start with simple word and letter games – My First 100 Words is a good one to start with – while older kids might enjoy logic puzzles, quizzes, and our math and memory games."
+    },
+    {
+     "q": "Do educational games actually help kids learn?",
+     "a": "Good educational games make practice fun, which helps kids repeat skills more often. They work best alongside reading, school and talking with grown-ups, not instead of them."
+    },
+    {
+     "q": "Are there educational games for preschoolers?",
+     "a": "Yes. Simple word, letter and coloring games suit young children, especially with a parent nearby – My First 100 Words and App For Kids - Edu games are two to try."
+    },
+    {
+     "q": "Can my child play educational games on a tablet?",
+     "a": "Many educational games use simple taps and work well on tablets. Check the game page to see if it runs on your device."
+    },
+    {
+     "q": "Are these games free to play?",
+     "a": "Yes. All educational games on Pixuvo are free, with no account and nothing to install."
+    }
+   ]
+  },
+  "escape": {
+   "intro": "The door is locked, the key is missing and there is a strange code scratched on the wall. Escape games hand you a puzzle box and one goal: get out. Pixuvo offers more than 2,000 free escape games, from classic escape rooms to obby-style runs and prison breaks.\n\nThe classic type is the point-and-click escape room. You click around the scene, collect items, combine them and crack codes. Some are door-by-door series where each new room gets a little harder. Prison break games add a story about sneaking past guards, and obby escapes are more about jumping across an obstacle course than finding clues, so they suit kids who prefer moving to thinking. 100 Doors - Escape from Prison, Knock and Run. To get going, try 100 Doors Escape, Prison Jail Escaping Game and Cool Escape Obby Man.\n\nThe golden rule of escape games: look at everything twice. Click corners, open drawers, zoom in on pictures and remember any numbers or colors you see, because they usually unlock something later. A notepad next to the keyboard really helps. Most escape rooms need only a mouse or a finger, which makes them friendly for touch screens, and lots of these games work on a phone or tablet too; check the game page to be sure. Escape games are part of the bigger adventure category if you want more exploring.",
+   "faq": [
+    {
+     "q": "How do escape room games work?",
+     "a": "You are stuck in a room and must find hidden items, combine them and solve codes or puzzles to open the exit. Most are played by clicking or tapping on objects."
+    },
+    {
+     "q": "What are good escape games for beginners?",
+     "a": "Door-by-door series usually start easy and get harder slowly, so they are a good way to learn how escape puzzles think. 100 Doors - Escape from Prison is a good one to start with."
+    },
+    {
+     "q": "What should I do if I get stuck in an escape game?",
+     "a": "Click every corner again, check your inventory and try combining items. Writing down numbers, colors and symbols you have seen often reveals the solution."
+    },
+    {
+     "q": "What is an obby escape game?",
+     "a": "An obby is an obstacle course. In obby escape games you reach the exit by running and jumping over obstacles instead of solving clues."
+    },
+    {
+     "q": "Can I play escape games on my phone?",
+     "a": "Escape rooms mostly need only taps, so many work well on phones and tablets. Each game page shows if touch screens are supported."
+    }
+   ]
+  },
+  "farming": {
+   "intro": "Plant the seeds, water them, and come back for the harvest. Farming games are cozy and calm, which is why many kids (and parents) love them after a busy day. Pixuvo has more than 240 farming games.\n\nMost of them mix a few activities. Crop games are about planting, watering and picking vegetables, fruit or flowers. Animal games let you feed and care for chickens, cows or pets. Tractor games put you in the driver's seat to plow and carry loads, and some farming games are little worlds where you farm, build and trade at your own speed. Garden Master, Happy Farm, Tractor Simulator Farming Game, A day in the countryside and Island Farm Cat Gardener are a few games to try.\n\nIf you want something relaxing, start with a garden game where nothing can go wrong. If you like driving, try a tractor simulator. Farming games often reward coming back regularly, and some save your farm in the browser on the device you use. Most need only clicks or taps, so they are easy to play on tablets and phones too – the game page tells you whether it works on phones and tablets.",
+   "faq": [
+    {
+     "q": "What are farming games?",
+     "a": "Farming games let you grow crops, care for animals and sometimes drive tractors. They are usually calm and focus on building up your farm over time."
+    },
+    {
+     "q": "Which farming games are good for younger kids?",
+     "a": "Gentle garden and animal games are a good start, and many farming games have little time pressure, which suits younger players. Good ones to start with: Garden Master, Happy Farm and Island Farm Cat Gardener."
+    },
+    {
+     "q": "Are there tractor games here?",
+     "a": "Yes – Tractor Simulator Farming Game is one to try, and you can find more vehicles in our driving and truck sections."
+    },
+    {
+     "q": "Will my farm be saved?",
+     "a": "Many farming games save your progress in the browser on the same device. If you clear browser data or use another device, you may have to start again."
+    },
+    {
+     "q": "Are these games free to play?",
+     "a": "Yes. Every farming game on Pixuvo is free and runs in the browser without sign-up."
+    }
+   ]
+  },
+  "fighting": {
+   "intro": "One-on-one duels, crowded arenas and knockout punches – fighting games are about reading your opponent and striking first. Pixuvo collects more than 1,000 free fighting games you can play in the browser, and many of them are made for two players sharing one keyboard.\n\nNot every fighting game feels the same. Stickman fighters keep the graphics simple so all the attention goes to timing your kicks and combos; Stickman Warriors and Stickman Street Fighting 3D are good examples. Arena and party fighters are sillier, with more shoving and bouncing than serious combat. Then there are merge-and-battle games, which mix merging with battles – a nice choice for kids who prefer planning over button mashing. Sumo Shove, Knockback Knights and Gladiators Merge and Fight are more games to try.\n\nA good way to improve is to learn just two or three moves well instead of pressing everything at once. Blocking at the right moment often wins more fights than attacking. On a computer, check the game page for the control layout before you start, especially in 2 player mode. Plenty of them work on phones and tablets as well – the game page says so. If you want more fast reflex games, the wider action category is the next stop.",
+   "faq": [
+    {
+     "q": "What are the best fighting games for kids?",
+     "a": "Party-style fighters are a lighthearted start, and simple stickman fighters are a good next step. Sumo Shove, Knockback Knights and Stickman Warriors are easy places to start."
+    },
+    {
+     "q": "Can I play fighting games with a friend on the same computer?",
+     "a": "Yes, many fighting games have a 2 player mode on one keyboard, usually WASD for one player and the arrow keys for the other. The game page shows when two players are supported."
+    },
+    {
+     "q": "How do I get better at fighting games?",
+     "a": "Learn a few moves really well, practice blocking and watch what your opponent does before you attack. Short practice rounds help more than one long session."
+    },
+    {
+     "q": "What is a stickman fighting game?",
+     "a": "It is a fighting game where the characters are simple stick figures. Because the graphics are simple, the fun comes from timing, combos and physics."
+    },
+    {
+     "q": "Are fighting games free on Pixuvo?",
+     "a": "Yes, all fighting games on Pixuvo are free to play in the browser with no account and nothing to install."
+    }
+   ]
+  },
+  "first-person-shooter": {
+   "intro": "In a first-person shooter, you do not watch the hero – you are the hero. The camera sits right behind your eyes, so every corner you turn and every target you spot feels close and real. Pixuvo has more than 150 free first-person shooter (FPS) games that play straight in the browser.\n\nFPS games usually come in a few flavors: mission games with objectives to complete level by level, battleground games on larger maps, and arena shooters built on fast rounds and quick aim. Games listed near the top include Frontline Assault: Battleground Fire Max Shooting, Commando Force 2, Strykon and Battle Shot Elite, plus FPS Sniper Shooting: Production Facility, Border Battleground, Battleops and Vexon. If you want something lighter, look for cartoon-style shooters that keep things goofy rather than gritty.\n\nFPS games are easiest with a mouse and keyboard: WASD to move, the mouse to look and aim, left click to fire and often right click to aim down the sights. A tip for beginners is to keep your crosshair at head height while you walk, so you need less movement to aim when something appears. Check the game page for controls; some games also work on phones and tablets, and the game page shows it. Many FPS games are realistic in style and better suited to older kids – games with violent wording are held for manual review, and our parents page explains how we check them. More shooters wait in the shooting category.",
+   "faq": [
+    {
+     "q": "What is a first-person shooter?",
+     "a": "A first-person shooter (FPS) is a shooting game where you see the world through your character's eyes. You usually only see your hands and weapon on the screen."
+    },
+    {
+     "q": "What are the controls for FPS games?",
+     "a": "Most use WASD to move, the mouse to look around, left click to shoot and right click to aim down the sights. The game page lists the exact controls."
+    },
+    {
+     "q": "Which FPS game is best for beginners?",
+     "a": "Look for mission-based games with short levels, so you can learn step by step. Cartoon-style shooters are a lighter choice for younger players."
+    },
+    {
+     "q": "Can I play FPS games without downloading anything?",
+     "a": "Yes, FPS games on Pixuvo run directly in the web browser, with no download or install."
+    },
+    {
+     "q": "Are FPS games suitable for kids?",
+     "a": "It depends on the game – some are cartoony, others are realistic war games better for older kids. Parents can read our parents page to see how games are reviewed."
+    }
+   ]
+  },
+  "football": {
+   "intro": "One kick, one goal, and the crowd goes wild. Football (called soccer in the US) is the most popular sport on the planet, and Pixuvo has more than 590 football games you can play right in your browser.\n\nThe most common type is the penalty and free kick game. You aim, choose the power and try to beat the goalkeeper or a wall of defenders and score with one perfect shot. Headball games are fast, funny one-on-one matches where big-headed players jump and head the ball, and they are often great for two players. Running games add dodging and dribbling. Curve Kick, Penalty Challenge, Power Free Kick, Soccer Dash and Anime Headball are easy places to start.\n\nIf you are new, start with a penalty game, because it teaches aim and power with just the mouse or a swipe. When you want a real opponent, try a headball match with a friend on the same keyboard. Most football games are quick, so you can play a whole match in a few minutes. Many also work on phones and tablets – the game page shows it.",
+   "faq": [
+    {
+     "q": "How long are soccer games?",
+     "a": "A real professional match lasts 90 minutes, played in two halves of 45 minutes. Browser football games are much shorter: a penalty round or a headball match usually takes just a few minutes."
+    },
+    {
+     "q": "Is this football or soccer?",
+     "a": "It is soccer – the game played with a round ball and goals. In most of the world it is called football, which is why the section has that name."
+    },
+    {
+     "q": "What are headball games?",
+     "a": "They are one-on-one matches with cartoon players who have giant heads. You jump, kick and head the ball into the goal, and many can be played by two people on one keyboard – the game page shows when two players are supported."
+    },
+    {
+     "q": "Which football game is best for practicing penalties?",
+     "a": "Penalty Challenge, Shoot Up Penalty Kicks and Penalty Shoot Pro World Cup are good ones to start with, and Curve Kick and Power Free Kick are more to try."
+    },
+    {
+     "q": "Can I play football games on a tablet?",
+     "a": "Many football games use simple swipes to shoot, so they work nicely on tablets and phones. Each game page shows if touch screens are supported."
+    }
+   ]
+  },
+  "golf": {
+   "intro": "Tap, roll, and watch the ball curve toward the hole. Golf games are some of the most relaxing games on Pixuvo – no timer chasing you, just you, the ball and a tricky course. There are almost 100 of them, so you can try something new every day.\n\nMini golf is a great place to start. Courses have ramps, walls, windmills and funny obstacles, and the goal is to get the ball in with as few strokes as possible. Little Golf, Golf Mini, Mini Golf 2 and Mini Golf 18 For Kids are good places to start. Golf Orbit, Golf - World Challenge, Sunny Golf, Tap & Putt and Oh My Golf are more to try. Some golf games are calm putting puzzles, others are about long, powerful drives.\n\nRemember the main rule: fewer strokes is better. The number you are trying to beat is called \"par\". Before each shot, look at where the ball will bounce off the walls, and use small, soft taps when you are close. Golf games usually need only a mouse or a finger, which makes them great on tablets and phones too – you can see on the game page whether a phone or tablet will work.",
+   "faq": [
+    {
+     "q": "What is a good mini golf game for kids?",
+     "a": "Mini Golf 18 For Kids, Little Golf and Golf Mini are good ones to start with, and Mini Golf 2 is another to try. When you are just learning, look for short holes and clear aiming lines."
+    },
+    {
+     "q": "What does \"par\" mean in golf?",
+     "a": "Par is the number of strokes a good player should need to finish a hole. Taking fewer strokes than par is great, and taking more means you can try to improve next time."
+    },
+    {
+     "q": "How do I hit the ball the right distance?",
+     "a": "In most golf games you drag or hold to set the power and release to shoot. Use short, soft shots near the hole – too much power is the most common reason for missing."
+    },
+    {
+     "q": "Can I play golf games on my phone or tablet?",
+     "a": "Many golf games use one tap or a simple drag, so they work well on touch screens. The game page tells you whether it works on phones and tablets."
+    },
+    {
+     "q": "Are these games free to play?",
+     "a": "Yes. All golf games on Pixuvo are free, with no sign-up and nothing to download."
+    }
+   ]
+  },
+  "hidden-object": {
+   "intro": "Somewhere in this messy room is a key, a teacup and a tiny golden bird. Can you spot them before time runs out? Hidden object games are all about sharp eyes and patience, and Pixuvo has more than 300 of them to play free in your browser.\n\nMost games give you a list of items and a detailed picture full of clutter. You click each object once you find it, and some games add hints, timers or bonus points for finding things fast. Find-the-difference games like Italian Brainrot: Find the Difference show two almost identical pictures and ask you to spot what changed. Longer hidden object adventures link many scenes into a mystery, and a few have a spooky atmosphere, so they are better for older kids. Hidden Objects Lost Island 2, Hidden Object Emily's Case and Hidden Objects Vacation in Brazil are a few to try.\n\nHere is a tip: do not stare at the whole picture at once. Scan it in sections, like reading a page from left to right, and look for shapes instead of colors. Use hints when you are really stuck rather than clicking randomly, since many games take points away for wrong clicks. A mouse or a finger is all you need, and plenty of them work on phones and tablets as well – the game page says so. Hidden object games live inside the puzzle category.",
+   "faq": [
+    {
+     "q": "What is a hidden object game?",
+     "a": "It is a puzzle game where you search a busy picture for a list of items. Some versions ask you to spot the differences between two pictures instead."
+    },
+    {
+     "q": "How do you get better at hidden object games?",
+     "a": "Scan the picture in small sections and look for the outline of each item, not just its color. Save hints for when you are truly stuck."
+    },
+    {
+     "q": "Are hidden object games good for kids?",
+     "a": "They train attention, patience and observation. Some story games have spooky themes, so younger kids may prefer lighter find-the-difference games."
+    },
+    {
+     "q": "What is the difference between hidden object and spot the difference games?",
+     "a": "Hidden object games give you a list of things to find in one scene, while spot the difference games show two pictures and ask what changed. Both are in this category."
+    },
+    {
+     "q": "Can I play hidden object games on a tablet?",
+     "a": "Yes, many work well with a finger on phones and tablets. Whether a game runs on mobile is listed on its page."
+    }
+   ]
+  },
+  "horror": {
+   "intro": "Creaky doors, dark hallways, and something moving in the shadows. This section is for players who like a little thrill and a good jump scare – the kind of spooky fun many kids enjoy around Halloween or at a sleepover. Pixuvo has more than 200 horror games.\n\nMany of them are spooky adventures and escape games, where you explore creepy places, find clues and try to get out. Some use funny meme characters, and others lean on classic spooky themes like dolls, graveyards and haunted houses. The malevolent mansion of evil, Exhibit of Sorrows, Cursed Dreams, Floppa Scary Horror and Scary Doll are easy places to start.\n\nNot everyone likes being scared, and that is completely fine. Horror games can include jump scares, scary sounds and dark pictures, so they are better for older kids, and parents should take a look before younger children play. Playing with the lights on, or together with a friend, helps! Games with violent or adult wording are held for manual review before they appear, and our parents page explains more. Many horror games work best on a computer with headphones; each game page shows if touch screens are supported.",
+   "faq": [
+    {
+     "q": "Are horror games OK for kids?",
+     "a": "It depends on the child. Many games here are mild spooky adventures, but some have jump scares and dark pictures, so they are better for older kids, and parents should check first. Our parents page has more tips."
+    },
+    {
+     "q": "What is the least scary horror game here?",
+     "a": "Games built around funny meme characters are often more silly than scary. Still, every game is different, so try a game together first if you are unsure."
+    },
+    {
+     "q": "What is a jump scare?",
+     "a": "A jump scare is a sudden picture or loud sound that makes you jump. It is a trick many horror games use, so turning the volume down can make a game less intense."
+    },
+    {
+     "q": "Are there escape room horror games?",
+     "a": "Yes, many horror games are about exploring spooky places and solving puzzles to escape. The malevolent mansion of evil and Exhibit of Sorrows are two horror games to look at."
+    },
+    {
+     "q": "Are these games free to play?",
+     "a": "Yes. All horror games on Pixuvo are free, and they run in the browser with no sign-up."
+    }
+   ]
+  },
+  "idle": {
+   "intro": "Here is a game style that keeps playing even when you take your hands off the keyboard. In idle games, your mines, workers or factories keep producing while you wait, and when you come back, there is a pile of coins ready for the next upgrade. Pixuvo has 250 idle games.\n\nThe idea is always similar: start small, earn, upgrade, grow faster. The setting is what makes each one different: you might dig deeper and deeper, turn a few trees into a whole forest business, gather resources to grow a base or a kingdom, or merge cars and race them. Drill to the Core, Lumberjack Idle, Idle Craft 3D, Dominations Idle and Idle Merge Car and Race are a few games listed near the top, and Little Commander - Red vs Blue and Frozenventure are more worth a look.\n\nIdle games are great for players who like seeing progress without fast reflexes. They are also easy to fit around other things: check in, buy a few upgrades, and come back later. A simple tip – upgrade whatever earns the most per coin spent. Many idle games save progress in the browser on the device you use, so stick to the same device. They need only clicks or taps, so they often work well on phones and tablets; whether a game runs on mobile is listed on its page.",
+   "faq": [
+    {
+     "q": "What is an idle game?",
+     "a": "An idle game is a game where your progress keeps going even when you are not actively playing. You buy upgrades that earn coins automatically, then use those coins to grow even faster."
+    },
+    {
+     "q": "What is the difference between idle and clicker games?",
+     "a": "In clicker games you earn mainly by clicking yourself, while idle games earn on their own over time. Many games mix both: you click at the start and things become automatic later."
+    },
+    {
+     "q": "Does an idle game keep earning when I close the page?",
+     "a": "Some idle games count the time you were away and give you coins when you return, but not all of them do. It depends on the game."
+    },
+    {
+     "q": "Which idle games should I try first?",
+     "a": "Good ones to start with: Drill to the Core, Lumberjack Idle and Idle Merge Car and Race. Try a few for a couple of minutes and keep the one whose theme you like best."
+    },
+    {
+     "q": "Are these games free to play?",
+     "a": "Yes. All idle games on Pixuvo are free to play, with no account needed."
+    }
+   ]
+  },
+  "io": {
+   "intro": "Start tiny, grow huge, and try not to get eaten. That is the spirit of .io games, a style of browser game where many players jump into the same arena and compete in quick rounds. Pixuvo has more than 1,800 games in the .io style.\n\nThe name comes from the \".io\" web address used by early hits like Agar.io and Slither.io. Since then, \".io\" has become a label for any simple, fast arena game you can join in seconds. In snake and worm games you eat and grow longer, in blob games you get bigger and stronger by collecting things and outsmarting others, and there are party styles with races, battles and hide-and-seek. Worm Hunt - Snake game iO zone, Blob Wars, Evo Pit, Diep.io, Hide N Seek.io and Fallingman.io are a few games to try.\n\nThe best thing about .io games is how quick they are: if you lose, you start a new round in seconds. Learn by watching bigger players and staying near the edges at first. Most .io games are played with a mouse or arrow keys, and some work on phones and tablets too – the game page shows it. Many .io games are online, so remind kids never to share personal information with other players.",
+   "faq": [
+    {
+     "q": "What does .io mean in games?",
+     "a": "\".io\" is originally a web address ending, like .com. It became a game label after early hits such as Agar.io and Slither.io, so today it means simple, fast arena games you can join in seconds."
+    },
+    {
+     "q": "What are .io games?",
+     "a": "They are quick browser games where you compete in an arena, usually by growing bigger, collecting points or outlasting other players. Each round is short, so you can play again right away."
+    },
+    {
+     "q": "What are some good .io games to start with?",
+     "a": "Worm Hunt - Snake game iO zone, Diep.io, Hide N Seek.io and Fallingman.io are good ones to start with. Rounds are short, so trying a few is easy."
+    },
+    {
+     "q": "Are .io games played against real people?",
+     "a": "Many .io games are online with other players, while some use computer opponents. Parents can check a game first and remind kids not to share personal information."
+    },
+    {
+     "q": "Are these games free to play?",
+     "a": "Yes. All .io games on Pixuvo are free and open in your browser without an account."
+    }
+   ]
+  },
+  "jigsaw": {
+   "intro": "There is nothing quite like clicking the last piece into place and seeing the whole picture appear. Online jigsaw games give you that feeling without losing pieces under the sofa. Pixuvo has more than 1,500 free jigsaw puzzles to play in the browser.\n\nThe pictures cover almost anything kids like: animals in Animal Explorer Puzzle and Axolotl Jigsaw Picture Puzzle, aliens in Small Aliens - Jigsaw, seasonal scenes in Halloween Puzzle, and sports in Gymnastics Jigsaw Jam. Puzzles for Kids and Jigsaw Sort are more to try, and some games twist the classic idea, so you can switch styles when you want something new.\n\nThe trick that real puzzle fans use works online too: start with the edges and corners, then sort the rest by color. Many games let you pick how many pieces you want, so begin with a small number and move up as you get faster. Some also show a ghost image of the finished picture in the background – a great help for beginners. Jigsaws are calm and quiet, which makes them nice for winding down or for playing side by side with a parent. You need only a mouse or a finger to drag pieces, and lots of these games work on a phone or tablet too; check the game page to be sure. For more brain games, visit the full puzzle category.",
+   "faq": [
+    {
+     "q": "What are good jigsaw puzzles for young kids?",
+     "a": "Puzzles for Kids and animal puzzles like Animal Explorer Puzzle are a friendly choice. Pick a small number of pieces when the game lets you. They are a gentle start for younger children."
+    },
+    {
+     "q": "How do you solve a jigsaw puzzle faster?",
+     "a": "Build the border first, then group the remaining pieces by color or pattern. Look at the finished picture often to know where each part belongs."
+    },
+    {
+     "q": "Can I choose how many pieces a jigsaw has?",
+     "a": "Many jigsaw games let you pick the number of pieces before you start. Begin small and try more pieces once you get quicker."
+    },
+    {
+     "q": "Do online jigsaw puzzles work on tablets?",
+     "a": "Dragging pieces with a finger works nicely on touch screens, and many jigsaws run on phones and tablets. The game page shows if mobile is supported."
+    },
+    {
+     "q": "Are jigsaw games free on Pixuvo?",
+     "a": "Yes, all jigsaw puzzles on Pixuvo are free to play in the browser with no sign-up."
+    }
+   ]
+  },
+  "mahjong": {
+   "intro": "Find two matching tiles, click them, and watch them disappear. Mahjong solitaire is calm, colorful and great for training your eyes. Pixuvo has almost 300 mahjong games.\n\nMost of them follow the same simple rule: you may only remove a pair of matching tiles if each tile is free – nothing on top of it and at least one side open. The goal is to clear the whole layout. Some versions keep the traditional tiles, while others use fresh themes and pictures. Mahjong Connect games work a bit differently: tiles are flat on the board, and you can match two if they can be linked with a line that turns no more than twice. Others add stacking or sorting twists. Good ones to start with: Mahjong Classical, Mahjong Garden, Mahjong Sweet Connection, Mahjong Pair Up and Mahjong Tower.\n\nA good beginner strategy is to clear tiles from the tallest stacks and the long rows first, because they block the most other tiles. Use hints if the game has them – there is no shame in learning! Mahjong is played with clicks or taps and has no time pressure in most versions, so it works on computers, tablets and many phones; whether a game runs on mobile is listed on its page.",
+   "faq": [
+    {
+     "q": "How do you play mahjong solitaire?",
+     "a": "Click two matching tiles that are free – not covered and open on the left or right side – to remove them. You win when the whole layout is cleared."
+    },
+    {
+     "q": "What is the difference between mahjong and Mahjong Connect?",
+     "a": "In mahjong solitaire, tiles are stacked in layers. In Mahjong Connect the tiles lie flat, and you can match two if a line with no more than two turns can join them."
+    },
+    {
+     "q": "Is this the same as the Chinese mahjong game?",
+     "a": "Not quite. The traditional game is usually played by four people with tiles, while mahjong solitaire is a one-player matching puzzle that uses the same tile pictures."
+    },
+    {
+     "q": "What should I do when there are no more matches?",
+     "a": "Use a hint or shuffle if the game offers one, or restart. Next time, try to clear the tallest stacks first so fewer tiles stay blocked."
+    },
+    {
+     "q": "Are these games free to play?",
+     "a": "Yes. Every mahjong game on Pixuvo is free to play in the browser."
+    }
+   ]
+  },
+  "match-3": {
+   "intro": "Swap two candies, line up three, and pop! Match 3 games are easy to understand in seconds, yet they keep getting more interesting with every level. Pixuvo has more than 2,300 of them.\n\nThe rule is the same everywhere: swap neighboring pieces to make a row of three or more of the same kind. Match four or five and you usually get special pieces that clear whole rows or blow up an area. Candy and shiny jewels are the classic themes, but you will also find ocean, food and other settings, and some games mix the formula with something new, like merging or decorating. A quick way in: Candy Match Saga 2, Sweet Blast, Super Candy Jewels, Gemcrafter and Ocean Crash.\n\nStarting out? Look for matches near the bottom of the board first, because the pieces that fall down can create extra combos by themselves. Save special pieces for when you really need them. Match 3 games are perfect for short breaks and work great with a mouse or a finger, so many are a good fit for tablets and phones – whether a game runs on mobile is listed on its page.",
+   "faq": [
+    {
+     "q": "What is a match 3 game?",
+     "a": "It is a puzzle game where you swap pieces to line up three or more of the same kind. Matched pieces disappear, new ones fall in, and you try to reach each level's goal."
+    },
+    {
+     "q": "How do you make special pieces in match 3 games?",
+     "a": "In most games, matching four or five pieces at once creates a special piece that can clear a row, a column or a whole area."
+    },
+    {
+     "q": "Are there candy-themed match 3 games?",
+     "a": "Yes, candy is one of the classic match 3 themes, and this category has lots of sweet-looking boards. Candy Match Saga 2 and Sweet Blast are two to try."
+    },
+    {
+     "q": "Why should I match at the bottom first?",
+     "a": "Matches at the bottom make everything above them fall, which often creates free bonus matches. Matches at the top only move a few pieces."
+    },
+    {
+     "q": "Are these games free to play?",
+     "a": "Yes. All match 3 games on Pixuvo are free to play, with no sign-up."
+    }
+   ]
+  },
+  "math": {
+   "intro": "Who says math has to be worksheets? In math games, the right answer makes something happen: a fighter lands a punch, a monster gets fed, a race car speeds ahead. Pixuvo has more than 700 free math games that turn numbers into a challenge kids actually want to play.\n\nThe games cover lots of skills. Arithmetic games practice adding, subtracting, multiplying and dividing. Battle-style games turn sums into a duel, where quick mental math gives you the edge. Number puzzles such as 2048 are less about speed and more about logic. A quick way in: Kobadoo Arithmetic, Kids Math Online, Math Fight Club, Math Battle and Number Sums. Many games let you pick the type of problem or the difficulty, which makes them useful for younger and older kids alike.\n\nFor the best results, choose a game that matches what you are learning right now – a first-grader adding small numbers needs something different from a sixth-grader working on times tables. Short, regular sessions of ten minutes help more than one long one. Parents and teachers can sit next to kids and turn it into a friendly competition. Most math games are played with a mouse, keyboard or a tap on the answer, and playing on a tablet? Many games support it, and the game page shows which ones. More brain games live in the puzzle category.",
+   "faq": [
+    {
+     "q": "Do math games really help kids learn?",
+     "a": "Math games give lots of quick practice and instant feedback, which helps facts like times tables stick. They work best alongside schoolwork, in short regular sessions."
+    },
+    {
+     "q": "What are good math games for practicing times tables?",
+     "a": "Look for games that let you choose multiplication and start slowly before you speed up. Math Fight Club, Math Battle and Kobadoo Arithmetic are easy places to start."
+    },
+    {
+     "q": "Are there math games for younger kids?",
+     "a": "Yes, many math games start with simple adding and counting, and many let you choose the difficulty. To get going, try Kids Math Online and Kobadoo Arithmetic."
+    },
+    {
+     "q": "What math skills can kids practice here?",
+     "a": "Addition, subtraction, multiplication, division, number logic and mental math speed. Number puzzles such as 2048 also train number sense."
+    },
+    {
+     "q": "Can kids play math games on a tablet?",
+     "a": "Many math games are tap-to-answer, so they work well on phones and tablets. Whether a game runs on mobile is listed on its page."
+    }
+   ]
+  },
+  "maze": {
+   "intro": "Left, right, dead end, back again – and then suddenly the exit is right in front of you. Maze games are one of the oldest puzzles in the world, and they are still great fun on a screen. Pixuvo has more than 190 free maze games to solve in your browser.\n\nNot every maze is drawn on paper. Some are classic top-down labyrinths where you guide a character to the exit. Others are ball-rolling puzzles, where you steer a ball through tricky paths and try not to drop it into holes, and some add their own path-finding twists. Right now Maze Escape Hero, Maze Evolution HTML, MarbleMaze2, Roll Ball: Hole Puzzle, Maze Control HD and Snake Way sit near the top of the list.\n\nA trick explorers have used for a long time: keep one hand on the wall. If you always follow the same wall, left or right, you will eventually reach the exit of a simple maze. Another tip is to look at the maze from the exit backward before you move. Maze games are great for younger children because they practice planning and spatial thinking without being stressful. You usually move with the arrow keys or by dragging with the mouse or a finger, and on a phone or tablet? Many games run there too; look for it on the game page. More logic games are waiting in the puzzle category.",
+   "faq": [
+    {
+     "q": "What is the trick to solving a maze?",
+     "a": "In many simple mazes you can follow one wall all the time, always keeping it on the same side, until you reach the exit. Planning from the exit backward also helps."
+    },
+    {
+     "q": "Are maze games good for kids?",
+     "a": "Yes, they practice planning, patience and spatial thinking. Small, simple mazes are a gentle start for younger kids."
+    },
+    {
+     "q": "What is a marble maze game?",
+     "a": "In a marble maze you roll a ball through the paths and try not to drop it into holes. A quick way in: MarbleMaze2 and Roll Ball: Hole Puzzle."
+    },
+    {
+     "q": "How do you control maze games?",
+     "a": "Most use the arrow keys, the mouse or dragging with a finger. The game page lists the controls for each game."
+    },
+    {
+     "q": "Are maze games free on Pixuvo?",
+     "a": "Yes, every maze game on Pixuvo is free and runs in your browser with no sign-up."
+    }
+   ]
+  },
+  "memory": {
+   "intro": "Flip a card, remember what it was, flip another… was the matching one in the corner or in the middle? Memory games are simple to start and a real workout for your brain. Pixuvo has more than 600 free memory games to play in your browser.\n\nThe classic is the card-matching game: all cards lie face down and you turn two at a time to find pairs. Sequence games test a different kind of memory – you watch a pattern of colors or sounds and repeat it, and the pattern gets longer each round. Other games train memory for numbers and positions, and spot-the-difference games mix memory with careful looking. Good ones to start with: Memory Cards, Funny Animals Memory Game, Flag Memory Match, Kobadoo Numbers, Three Cups Game and The Kitchen - Spot the differences.\n\nTo get better, try saying what you see quietly in your head (\"cat, top left\") – words help pictures stick. Start with fewer cards and add more as you improve. Memory games are great for all ages and a fun choice for parents and kids to play in turns. They need only a mouse or a tap, and plenty of them work on phones and tablets as well – the game page says so. More thinking games are in the puzzle category.",
+   "faq": [
+    {
+     "q": "Do memory games improve memory?",
+     "a": "They give your working memory regular practice, especially when the games get harder step by step. Playing short sessions often works better than one long session."
+    },
+    {
+     "q": "What are good memory games for kids?",
+     "a": "Card-matching games are easy to learn, and sequence games are a fun step up. Good ones to start with: Funny Animals Memory Game, Memory Cards and Flag Memory Match."
+    },
+    {
+     "q": "How do you win a memory card game?",
+     "a": "Remember the position of every card you flip, even if it was not a match. Naming cards in your head, like \"dog, second row\", makes them easier to recall."
+    },
+    {
+     "q": "Can parents and kids play memory games together?",
+     "a": "Yes, card-matching games are easy to play in turns on the same screen. They are a nice way to share a few minutes of play."
+    },
+    {
+     "q": "Are memory games free?",
+     "a": "Yes, all memory games on Pixuvo are free in the browser with no sign-up."
+    }
+   ]
+  },
+  "motorcycle": {
+   "intro": "Two wheels, one rider and a ramp that looks way too high – motorcycle games are a mix of speed, balance and daring stunts. Pixuvo has more than 700 free motorcycle games, from dirt-bike courses to highway racing.\n\nA favorite style is the stunt bike game, where each level is an obstacle course full of jumps, loops and traps. You lean forward and back to keep your rider balanced, and landing on two wheels is the whole challenge. Moto X3M: Spooky Land is a good one to start with. Motocross games take you onto muddy dirt tracks, road racers are all about speed on asphalt, and if you prefer pedaling, BMX and mountain bike games bring bicycles into the mix. Stunt Extreme, Impossible Bike Stunt Ride, Motocross Racing, Real Motor Race Master and BMX Kid are more games to try.\n\nFor stunt games, the most important tip is balance: lean back to lift the front wheel on jumps, lean forward to stop yourself from flipping, and try to land with both wheels at once. Many stunt levels are short, so retrying is quick. Most use the arrow keys, sometimes with extra keys to lean. Playing on a tablet? Many games support it, and the game page shows which ones. Motorcycle games are part of the bigger racing category.",
+   "faq": [
+    {
+     "q": "What are the best motorcycle games for kids?",
+     "a": "Moto X3M: Spooky Land is a good one to start with if you like stunt courses, and Motocross Racing, Stunt Extreme and BMX Kid are more to try."
+    },
+    {
+     "q": "How do you keep your balance in bike stunt games?",
+     "a": "Lean back when you take off from a ramp and lean forward if the bike starts to flip backward. Try to land on both wheels at the same time."
+    },
+    {
+     "q": "What is the difference between motocross and road racing games?",
+     "a": "Motocross games happen on bumpy dirt tracks with jumps, while road racing games are about top speed on asphalt, often through traffic."
+    },
+    {
+     "q": "What controls do motorcycle games use?",
+     "a": "Usually the arrow keys to speed up, brake and lean. The game page lists the controls for each game."
+    },
+    {
+     "q": "Can I play motorcycle games on a tablet?",
+     "a": "Many motorcycle games have touch buttons and work on phones and tablets. The game page tells you whether it works on phones and tablets."
+    }
+   ]
+  },
+  "multiplayer": {
+   "intro": "Games are often more fun with other people, and that is what this section is all about. Multiplayer is not a genre but a way to play: you share the game with friends, family or other players online. Pixuvo has more than 800 multiplayer games.\n\nThere are two main ways to play. Local multiplayer means everyone plays on the same device – often one keyboard, with one player on WASD and the other on the arrow keys. Online multiplayer connects you with other players over the internet. Games listed near the top include Bunny Boy Online, MultiPlayer Pong, Tanknarok, Obby Football Soccer 3D and Mage Royale. You will find all sorts of game types here, from team battles and bomber games to sports and action games. Some shooter-style games are aimed at older kids.\n\nFor a family game night, local games on one screen are the easiest: no setup, just sit together and play. For online games, it is a good idea for parents to check how a game works first and to remind kids never to share personal information with other players. The game page says whether a game is local or online when the publisher provides it, and our parents page has more tips.",
+   "faq": [
+    {
+     "q": "What are the best multiplayer games to play with friends?",
+     "a": "Good ones to start with include MultiPlayer Pong, Tanknarok, Obby Football Soccer 3D and Mage Royale. The game page shows whether a game is played on one device or online."
+    },
+    {
+     "q": "What is the difference between local and online multiplayer?",
+     "a": "Local multiplayer means everyone plays on the same device, often sharing one keyboard. Online multiplayer connects you with other players over the internet."
+    },
+    {
+     "q": "Can we play multiplayer games on one computer?",
+     "a": "Yes, many games let two players share one keyboard, usually WASD for one player and the arrow keys for the other. Our 2 player section has even more of these."
+    },
+    {
+     "q": "Are online multiplayer games safe for kids?",
+     "a": "Parents should check a game before kids play online and remind them never to share personal information. Our parents page explains more about safety on Pixuvo."
+    },
+    {
+     "q": "Are these games free to play?",
+     "a": "Yes. All multiplayer games on Pixuvo are free to play in the browser, without creating an account."
+    }
+   ]
+  },
+  "music": {
+   "intro": "Tap to the beat, jump on the rhythm, or build your own song. Music games are for everyone who cannot keep their feet still when a good tune comes on. Pixuvo has almost 200 of them.\n\nRhythm games are a big group. You press keys or tap at the right moment as notes fly by, and in some games your character hops along with the beat. Friday Night Funkin'-style games, often called FNF, are a well-known kind where you win music battles by hitting arrows in time. Creative games let you make your own sounds by combining beats, voices and instruments into a song, and some help you explore real instruments. A quick way in: Tile Jumper 3D, FNF - House, Beat Maker Pro, Robot Band, Musical Instruments and Singing Blob.\n\nTurn the sound on – music games need it! Headphones help if others are around. For rhythm games, start at an easy speed and focus on the beat, not the screen. Keyboard rhythm games feel best on a computer, while tap-based music games work well on tablets and phones; you can see on the game page whether a phone or tablet will work.",
+   "faq": [
+    {
+     "q": "What are rhythm games?",
+     "a": "Rhythm games ask you to press keys or tap the screen in time with the music. The better your timing, the higher your score."
+    },
+    {
+     "q": "What is FNF?",
+     "a": "FNF stands for Friday Night Funkin', a rhythm game where you win music battles by pressing arrow keys in time with the song. There are many fan-made games in this style."
+    },
+    {
+     "q": "Can I make my own music in these games?",
+     "a": "Yes, beat-maker games let you mix beats, voices and instruments into your own little song. Beat Maker Pro is a good one to start with."
+    },
+    {
+     "q": "Do I need sound to play music games?",
+     "a": "Yes, most music games are much easier and more fun with sound on. Headphones are a good idea if others are nearby."
+    },
+    {
+     "q": "Are these games free to play?",
+     "a": "Yes. All music games on Pixuvo are free to play in the browser."
+    }
+   ]
+  },
+  "ninja": {
+   "intro": "Silent steps on a rooftop, a quick leap over a gap, a shuriken flying through the air – ninja games turn you into a fast, sneaky hero. Pixuvo has more than 250 free ninja games that run straight in your browser.\n\nThe idea behind most of them is agility. Instead of standing in one place and fighting, you jump, dash and wall-climb through levels, and timing matters more than strength. Some games are side-scrolling platformers where you run across roofs, and others are survival games where the goal is to stay alive as long as you can. If you enjoy swords and story, samurai-style adventures are here too, though some have a darker look and suit older kids best. Rooftop Ninja, Ninja Survival, Samurai. A quick way in: Shoguns Betrayal and Ashen Ninja - Rust and Katana.\n\nNew ninjas should start with a platformer, because you learn jump timing first and fighting later. Most ninja games use the arrow keys or WASD to move and one key to jump or throw, and the controls are listed on the game page. Plenty of them work on phones and tablets as well – the game page says so. When you want bigger battles, the fighting games category is close by, and the full action category has thousands more games built on fast reflexes.",
+   "faq": [
+    {
+     "q": "What are ninja games?",
+     "a": "Ninja games are action games where you play a quick, stealthy hero who jumps, climbs, sneaks and uses weapons like shuriken or a katana. Agility and timing matter more than strength."
+    },
+    {
+     "q": "Which ninja game should I try first?",
+     "a": "Start with a platformer and get used to the jump timing – Rooftop Ninja is a good one to start with, and Ninja Survival is another to try."
+    },
+    {
+     "q": "What is the difference between ninja and samurai games?",
+     "a": "Ninja games usually focus on speed, sneaking and acrobatics, while samurai games are more about sword duels and honor-themed stories. Pixuvo lists both kinds here."
+    },
+    {
+     "q": "Are ninja games suitable for younger kids?",
+     "a": "Many ninja platformers are cartoon-style and easy to enjoy, but some samurai adventures have a darker look. Parents can read our parents page to see how games are reviewed."
+    },
+    {
+     "q": "Can I play ninja games on a tablet?",
+     "a": "Many games also work on phones and tablets. Check the game page – it shows whether a game supports touch screens."
+    }
+   ]
+  },
+  "parking": {
+   "intro": "Reverse a little, turn the wheel, check the mirror… and slide perfectly between the lines. Parking games turn one of the trickiest parts of driving into a puzzle you can win. Pixuvo has more than 550 free parking games to play in the browser.\n\nThere are two very different kinds. Driving-style parking games let you steer the car yourself and park it in a marked space without hitting walls or other cars. Puzzle-style parking games show you a crowded lot from above, and you must figure out in which order to move the cars so everyone can get out. Parking Jam 3D, Parkings Jaam, Unblock Car Parking, Car Parking 12, Underground Parking and Ultimate Car Parking Challenge are a few games listed near the top, and the game description tells you which kind each one is.\n\nIf you like steering, start with an early level of a driving-style game and go slowly – speed is the enemy of good parking. Use small movements, stop often and use the camera view if the game has one. If you prefer logic, puzzle parking games are great because there is no time pressure in many levels and you can plan every move. Driving parking games use the arrow keys or WASD, while puzzle ones need only a click or tap. Playing on a tablet? Many games support it, and the game page shows which ones. Parking games are part of the driving category.",
+   "faq": [
+    {
+     "q": "What is a parking jam game?",
+     "a": "It is a puzzle where cars are packed into a parking lot and you choose the order to drive them out without crashing. The game description tells you whether a parking game is this kind of puzzle."
+    },
+    {
+     "q": "How do you get better at parking games?",
+     "a": "Drive slowly, use small steering movements and stop to check your angle. Switching to a top-down camera, if the game has one, makes tight spots much easier."
+    },
+    {
+     "q": "Which parking game is good for beginners?",
+     "a": "Puzzle-style parking jams are easy to start, because you just tap the cars. If you want to steer yourself, take the first levels slowly."
+    },
+    {
+     "q": "Can I play parking games on my phone?",
+     "a": "Puzzle parking games need only taps, and many driving parking games have touch controls, so lots of them work on phones and tablets. The game page shows if mobile is supported."
+    },
+    {
+     "q": "Are parking games free?",
+     "a": "Yes, all parking games on Pixuvo are free to play in the browser with no account."
+    }
+   ]
+  },
+  "platformer": {
+   "intro": "Run, jump, miss the ledge, try again – and finally make it. That feeling is the heart of platformer games, one of the oldest and most loved game styles. Pixuvo has more than 1,700 platformers, from gentle adventures to tough challenges.\n\nClassic adventure platformers send you through levels full of gaps, enemies and coins. Puzzle platformers make you think before you jump, with levels that hide a trick. Then there are hard platformers, made for players who love a real challenge and do not mind falling a lot. A quick way in: Super Willie World, Super Onion Boy 2, Red Ball Rolling 2, The Floor Is Lying, The Black And White and Snail Odyssey - Hardest Game.\n\nNew players should start with an adventure platformer where levels are short and checkpoints are close. Learn the jump: most games let you jump higher by holding the button longer. On a computer you usually move with the arrow keys or WASD and jump with the up arrow, W or space. Some platformers have on-screen buttons for phones and tablets, but many feel best with a keyboard – each game page shows if touch screens are supported.",
+   "faq": [
+    {
+     "q": "What is a platformer game?",
+     "a": "A platformer is a game where you run and jump between platforms, avoiding gaps, traps and enemies to reach the end of each level."
+    },
+    {
+     "q": "What are good platformer games for beginners?",
+     "a": "Look for platformers with short levels and close checkpoints, and save the hardest ones for later. You could start with Super Willie World, Super Onion Boy 2 and Red Ball Rolling 2."
+    },
+    {
+     "q": "What keys do you use in platformer games?",
+     "a": "Most use the arrow keys or WASD to move, and the up arrow, W or space to jump. The controls are usually shown on the game's start screen."
+    },
+    {
+     "q": "Can I play platformers on a phone?",
+     "a": "Some platformers have touch buttons and work on phones and tablets, but many are easiest with a keyboard. Whether a game runs on mobile is listed on its page."
+    },
+    {
+     "q": "Are these games free to play?",
+     "a": "Yes. Every platformer on Pixuvo is free and opens instantly in your browser."
+    }
+   ]
+  },
+  "pool": {
+   "intro": "Chalk the cue, line up the shot, and think one ball ahead. Pool and billiards games are calm, clever and a little bit like geometry homework that is actually fun. Pixuvo has more than 360 of them.\n\nThe best-known version is 8-ball pool: one player takes the solid balls, the other the stripes, and whoever pockets all of theirs and then the black 8-ball wins. Try 8-Ball Pool Pro, PoolClub or Billiard King for classic tables. There are other styles too. Three-cushion billiards is played on a table without pockets, where the cue ball has to touch three cushions, and Russian pyramid uses big balls and tight pockets – 3 Cushion Billards and Billiards 3D Russian Pyramid are two to try. Simply Billiards, Pooking Master and 8 Ball Pool Free are more good tables to try.\n\nIf you are just starting, pick a game that shows an aiming line. It helps you see how the ball will bounce off the cushions. Then practice soft shots – hitting too hard is the most common mistake. On a computer you aim with the mouse; on a tablet or phone you drag with your finger. Many pool games support touch screens, and the game page tells you which ones do.",
+   "faq": [
+    {
+     "q": "What is the difference between pool and billiards?",
+     "a": "Billiards is the family name for cue sports, and pool is one popular type of it, played on a table with six pockets. Some billiards games, like 3-cushion billiards, have no pockets at all."
+    },
+    {
+     "q": "How do you play 8-ball pool?",
+     "a": "One player gets the solid balls and the other the stripes. You pocket all of your group and then the black 8-ball to win, but sinking the 8-ball too early loses the game."
+    },
+    {
+     "q": "Can I play pool against a friend?",
+     "a": "Yes, many pool games let two players take turns on the same device, and some offer online matches. The game page shows which modes a game has."
+    },
+    {
+     "q": "Why does my cue ball keep going into the pocket?",
+     "a": "You are probably hitting too hard. Use less power and watch the aiming line to see where the cue ball will roll after it hits."
+    },
+    {
+     "q": "Do pool games work on phones?",
+     "a": "Many pool games use drag-to-aim controls that work well on phones and tablets. The game page tells you whether it works on phones and tablets."
+    }
+   ]
+  },
+  "puzzle": {
+   "intro": "Some games test your fingers; puzzle games test your brain. Fitting blocks into place, spotting the pattern, finding the shortest path – there is a special kind of joy in the moment a tricky level suddenly makes sense. Pixuvo has more than 15,000 free puzzle games, the biggest category on the site.\n\nBecause it is so big, the puzzle section is split into smaller groups. Jigsaw games let you put pictures back together; 2048 games are about sliding and merging number tiles; hidden object games ask you to search a busy scene; block puzzles have you fit and clear shapes; maze games challenge you to find the way through; math games turn sums into a race; and memory games train you to remember and match. Games listed near the top include Drop Planets, Merge Royal, Seat the Guests, Memory Cards, Flag Memory Match, Kobadoo Arithmetic and Math Fight Club.\n\nIf you are new to puzzles, begin with games that have short levels and get harder slowly, like a memory match or an easy jigsaw. Older kids who love a challenge can try logic and merge games, which reward thinking several moves ahead. Most puzzles need only a mouse or a tap, so they are comfortable on any device, and playing on a tablet? Many games support it, and the game page shows which ones.",
+   "faq": [
+    {
+     "q": "Are puzzle games good for your brain?",
+     "a": "Puzzle games make you plan, spot patterns, remember and try again after mistakes, which is great practice for thinking skills. They are also a calm way to spend screen time."
+    },
+    {
+     "q": "What are good puzzle games for beginners?",
+     "a": "Memory matching games like Memory Cards, easy jigsaws and gentle merge games are a great start. They have short levels that get harder slowly."
+    },
+    {
+     "q": "What kinds of puzzle games are there?",
+     "a": "Pixuvo groups them into jigsaw, 2048, hidden object, block, maze, math and memory games, plus many logic puzzles that do not fit one box."
+    },
+    {
+     "q": "Where can I play puzzle games for free?",
+     "a": "Right here on Pixuvo – more than 15,000 puzzle games run free in your browser with no download or sign-up."
+    },
+    {
+     "q": "Can I play puzzle games on a phone or tablet?",
+     "a": "Most puzzles need only taps, so many work well on phones and tablets. Check the game page to see if it runs on your device."
+    }
+   ]
+  },
+  "quiz": {
+   "intro": "How many flags can you name? Do you know your shapes, colors and emojis? Quiz games turn your knowledge into a challenge, and with more than 330 of them on Pixuvo, there is always something new to test yourself on.\n\nSome quizzes are about learning facts like flags, shapes or emojis, and trivia games mix questions from many topics. Other quizzes test your eyes and attention instead of facts, and some add a word-puzzle twist. The Kobadoo series is a good place to start – Kobadoo Flags, Kobadoo Shapes and Kobadoo Emojis are all listed near the top – and Fight Trivia, WhatQuiz, How Many Mice and CrossWord are more to try.\n\nQuiz games are fun alone, but even better with family. Take turns answering, or race to shout the answer before the timer runs out. If a topic is new to you, do not worry about getting things wrong – that is how you learn. Most quiz games need only clicks or taps, so they work well on computers, tablets and many phones; each game page shows if touch screens are supported.",
+   "faq": [
+    {
+     "q": "What are good quiz games for kids?",
+     "a": "To get going, try The Kobadoo games, like Kobadoo Flags and Kobadoo Shapes,. Older kids might also try Fight Trivia or WhatQuiz."
+    },
+    {
+     "q": "Is there a flag quiz?",
+     "a": "Yes – Kobadoo Flags is one to try. Flag quizzes are a fun way to learn geography."
+    },
+    {
+     "q": "Can we play quiz games as a family?",
+     "a": "Yes! Take turns answering or play as a team on one screen. Quiz games are a great way to learn new facts together."
+    },
+    {
+     "q": "Do quiz games help kids learn?",
+     "a": "Quizzes are a fun way to practice facts and remember them better. Getting answers wrong is part of the learning."
+    },
+    {
+     "q": "Are these games free to play?",
+     "a": "Yes. All quiz games on Pixuvo are free to play in your browser, with no account."
+    }
+   ]
+  },
+  "racing": {
+   "intro": "Three, two, one – go! Racing games are about the thrill of speed and the joy of crossing the finish line first. Pixuvo has more than 5,000 free racing games, so whether you want to race cars, ride a dirt bike or smash into other drivers, there is a track waiting for you.\n\nThe category splits into a few lanes. Car games cover everything from city cars to supercars and karts. Drift games are about sliding sideways through corners in style. Good ones to start with: Motorcycle games bring ramps, flips and balance, and Moto X3M: Spooky Land and Motocross Racing. Beyond those, you will find chase games, demolition derbies and quick races – Endless Car Chase, Demolition Derby Life, BMG! CrashDay 2025 and Mini Car Racing are a few to try.\n\nWhich race should you try first? If you are new, choose a game with short tracks or levels, so you can learn the controls before longer races. Stunt bike games are great if you like puzzles too, because every jump has to be timed just right. On a computer most racers use the arrow keys or WASD, and some 2 player games split the keyboard between two drivers. Plenty of them work on phones and tablets as well – the game page says so. Looking for slower, more careful steering? The driving category has parking, truck and bus games.",
+   "faq": [
+    {
+     "q": "What are the best racing games for kids?",
+     "a": "A quick way in: Moto X3M: Spooky Land, Motocross Racing and Mini Car Racing. If you are new, look for games with short levels and simple controls."
+    },
+    {
+     "q": "Can racing games improve your driving?",
+     "a": "Racing games can train reaction time and hand-eye coordination, but they are not the same as real driving and do not teach road rules. They are for fun, not driving lessons."
+    },
+    {
+     "q": "Are there racing games for two players on one computer?",
+     "a": "Yes, some racing games let two players share a keyboard, one with WASD and the other with the arrow keys. The game page shows when two players are supported."
+    },
+    {
+     "q": "What is the difference between racing and driving games?",
+     "a": "Racing games are about speed and winning against the clock or other racers. Driving games focus on careful steering, like parking a car or delivering cargo with a truck."
+    },
+    {
+     "q": "Can I play racing games on my phone?",
+     "a": "Many racing games have on-screen buttons or tilt controls and work on phones and tablets. You can see on the game page whether a phone or tablet will work."
+    }
+   ]
+  },
+  "retro": {
+   "intro": "Chunky pixels, beeping sound effects and simple rules that are surprisingly hard to master – retro games bring back the style of early home computers and arcade cabinets. Pixuvo has more than 550 free retro games, playable in your browser with no emulator and nothing to install.\n\nRetro does not mean old and boring. Many of these games are brand-new creations that borrow ideas from the classic era. You will find space games, adventures, dungeon crawls and even pinball, and many of them show how much fun one simple idea can be. Good ones to start with: Pixeroids, Star Wing, Shadoworld Adventure, Jungle Game, Dunjun, 3D Pinball - Space Cadet and Boing Bang.\n\nFor a first try, pick something with a single goal you understand in ten seconds, like dodging asteroids or bouncing a ball. Retro games are great for parents and kids to play together, because grown-ups often recognize the style and can share a few tricks. Most use only the arrow keys and one or two buttons, which makes them easy on a keyboard. Plenty of them work on phones and tablets as well – the game page says so. Retro games are part of the arcade category, so more score-chasing classics are just one click away.",
+   "faq": [
+    {
+     "q": "What are retro games?",
+     "a": "Retro games use the look and ideas of older video games – pixel art, simple sounds and clear arcade-style rules. Some are remakes, while many are new games made in the old style."
+    },
+    {
+     "q": "Can I play retro games in my browser without an emulator?",
+     "a": "Yes. Retro games on Pixuvo run directly in the web browser, so there is nothing to download or install."
+    },
+    {
+     "q": "Is there a pinball game on Pixuvo?",
+     "a": "Yes, 3D Pinball - Space Cadet is listed in the retro category and plays right in the browser."
+    },
+    {
+     "q": "Are retro games good for playing with parents?",
+     "a": "Very much so. Many parents remember this style of game, and the simple controls make it easy to take turns and compare scores."
+    },
+    {
+     "q": "What controls do retro games use?",
+     "a": "Most use the arrow keys plus one or two buttons, like the space bar. The game page lists the exact controls."
+    }
+   ]
+  },
+  "runner": {
+   "intro": "Run, jump, slide, repeat – and do not hit the wall. Runner games keep you moving forward while the world rushes toward you, and every second you survive adds to your distance or score. Pixuvo has more than 2,000 free runner games to play in the browser.\n\nThere are a few kinds worth knowing. Endless runners never finish: the track goes on and the speed creeps up until you make a mistake, so the challenge is beating your own best run. Level runners have a finish line, and often a twist on the way, like gates that change your crowd or items to collect. Lane runners let you switch between a few lanes to dodge trains, barriers and gaps. Then there are odd and funny ones with unusual heroes. A quick way in: Popcorn Race 3D, Spider Evolution Runner Game, Subway Princess Run, 3D laane runner and Runner Soldiers.\n\nRunner games are easy to start because they usually need just a few keys: arrows to switch lanes, up to jump, down to slide, or a single tap or swipe on a touch screen. Lots of these games work on a phone or tablet too; check the game page to be sure. A tip from experienced runners: look further ahead than the next obstacle, so you have time to react. Runners are part of the arcade category, where you can find more quick score-chasing games.",
+   "faq": [
+    {
+     "q": "What is an endless runner game?",
+     "a": "An endless runner is a game where your character keeps running automatically and the track never ends. You dodge obstacles as the speed increases and try to beat your best distance."
+    },
+    {
+     "q": "What are the best runner games to start with?",
+     "a": "Popcorn Race 3D, Subway Princess Run and 3D laane runner are easy places to start. Most runners are easy to learn in the first minute."
+    },
+    {
+     "q": "How do you get better at runner games?",
+     "a": "Look ahead instead of at your character, so you see obstacles earlier. Stay calm when the speed rises and make small, early moves rather than last-second jumps."
+    },
+    {
+     "q": "Can I play runner games with swipes on my phone?",
+     "a": "Many runner games support swipes and taps, and lots of them work on phones and tablets. The game page shows if a game runs on mobile."
+    },
+    {
+     "q": "Are runner games free?",
+     "a": "Yes, all runner games on Pixuvo are free to play in the browser without signing up."
+    }
+   ]
+  },
+  "shooting": {
+   "intro": "Steady hands, a sharp eye and good timing – shooting games are, at heart, all about aim. Pixuvo has more than 4,000 free shooting games, from target practice and space shooters to big team battles, all running in the browser.\n\nShooting games are often called \"shooters,\" and they come in several styles. Sniper games are about patience and one perfect long-range shot. Zombie games are about surviving waves of slow-moving undead. First-person shooters show the action through your hero's eyes, as in Commando Force 2, Strykon and Battle Shot Elite. Tank games swap soldiers for armored vehicles and big cannons, and archery games bring bows and arrows. Good ones to start with: Outside those groups, there are flying shooters, stickman battles and more – Fractal Combat X, Stickman Prison Counter Assault, Trap the Convoy and Quarantine Zombies.\n\nIf you want to get better, focus on two things: aim before you shoot, and keep moving so you are harder to hit. Many shooters let you adjust mouse sensitivity, and lowering it often makes aiming steadier. On a computer, most use WASD to move and the mouse to aim and fire. Playing on a tablet? Many games support it, and the game page shows which ones. Some shooters are realistic and better for older kids; games with violent wording are held for manual review, and our parents page explains how we check games, so families can choose what fits them.",
+   "faq": [
+    {
+     "q": "What are shooting games called?",
+     "a": "They are usually called shooters. Common types include first-person shooters (FPS), third-person shooters, top-down shooters, shoot 'em ups and sniper games."
+    },
+    {
+     "q": "How do you get better at shooting games?",
+     "a": "Take a moment to aim before firing, keep moving so you are harder to hit, and try a lower mouse sensitivity for steadier aim. Short practice sessions help too."
+    },
+    {
+     "q": "What does ADS mean in shooting games?",
+     "a": "ADS means \"aim down sights\": you look through the gun's sight to aim more precisely, usually by holding the right mouse button."
+    },
+    {
+     "q": "Are shooting games OK for kids?",
+     "a": "It depends on the game and the family. Many browser shooters are cartoon-style, while others are more realistic; games with violent wording are reviewed manually, and our parents page explains how."
+    },
+    {
+     "q": "Can I play shooting games on a phone?",
+     "a": "Some shooters have touch controls and work on phones and tablets, but many play best with a mouse and keyboard. The game page tells you whether it works on phones and tablets."
+    }
+   ]
+  },
+  "simulation": {
+   "intro": "Ever wanted to drive a bus, run a supermarket or design your own roads? Simulation games let you try jobs and worlds you cannot try in real life. With more than 3,100 of them, there is a lot to explore.\n\nSimulations come in many flavors. Tycoon games put you in charge of a business that grows step by step. Farming games are about planting, harvesting and caring for animals, and building games let you construct anything from roads to rockets. Then there are job and driving simulators, and sandbox games where you set up the scene and watch what happens. Good ones to start with: Garden Master, Road Designer, Stack Rocket, Bus Driver Simulator 3D and Supermarket Simulator Dream Store.\n\nNot sure where to begin? Ask yourself what you would like to be for a day. A shop owner? Try a store or tycoon game. A farmer? Head to farming. A builder? Try the building games. Simulation games are often longer than arcade games, and many save your progress in the browser on the device you play on. Bigger 3D simulators run best on a computer, while lighter ones also work on phones and tablets – the game page shows which.",
+   "faq": [
+    {
+     "q": "What are simulation games?",
+     "a": "Simulation games copy something from real life, like driving, running a shop or farming, and let you try it yourself. Some are realistic, others are playful and silly."
+    },
+    {
+     "q": "What kinds of simulation games are there?",
+     "a": "On Pixuvo you will find tycoon, farming and building games, plus driving, job and sandbox simulators. Each main type has its own section."
+    },
+    {
+     "q": "Does my progress get saved in simulation games?",
+     "a": "Many simulation games save progress in your browser on the same device, but it depends on the game. If you clear your browser data or switch devices, the progress may be gone."
+    },
+    {
+     "q": "Can I play simulation games on a phone?",
+     "a": "Lighter simulation games often work on phones and tablets, while big 3D simulators run best on a computer. Each game page shows if touch screens are supported."
+    },
+    {
+     "q": "Are these games free to play?",
+     "a": "Yes. Every simulation game on Pixuvo is free and runs in the browser without downloading."
+    }
+   ]
+  },
+  "snake": {
+   "intro": "Eat, grow, and whatever you do, do not bite your own tail. Snake is one of the simplest game ideas ever made, and that is exactly why it is still so popular. Pixuvo has more than 250 free snake games, from the classic grid version to big online arenas full of other players' worms.\n\nThe classic style is all about planning: your snake moves on its own, you only steer, and every snack makes you longer, so the board fills up and you have to leave yourself an escape route. The .io style is different. You slither around a large arena with other snakes, and if their head touches your body, they are out – so being big is good, but being clever is better. Worms Zone, Gusano.io Good ones to start with: Worms Snake Game, Color Snake 3D Online, Snake Arena 2 and Snake Frenzy Color Clash.\n\nBeginners should start slow: stay near the edges early on, make wide turns and avoid crowds in arena games until you have grown. On a computer you steer with the arrow keys or the mouse; on touch screens you usually swipe or drag. Lots of these games work on a phone or tablet too; check the game page to be sure. Snake games belong to the arcade category, where more quick high-score games are waiting.",
+   "faq": [
+    {
+     "q": "How do you play snake games?",
+     "a": "You steer a snake that keeps moving, eat food to grow longer and avoid crashing into walls or your own tail. In arena versions you also avoid other players' snakes."
+    },
+    {
+     "q": "What is an .io snake game?",
+     "a": "It is a snake game in a big shared arena, often online with other players. Worms Zone and Gusano.io Worms Snake Game are two to try."
+    },
+    {
+     "q": "What is a good snake game strategy?",
+     "a": "Make wide turns, leave yourself an open path and do not chase food into tight spaces. In arena games, grow carefully before you try to trap others."
+    },
+    {
+     "q": "Can I play snake games on my phone?",
+     "a": "Many snake games use swipes or dragging, so they work well on touch screens. The game page shows if mobile is supported."
+    },
+    {
+     "q": "What is snakes and ladders?",
+     "a": "Snakes and ladders is a classic board game where you roll a die, climb up ladders and slide down snakes. Snake n Ladders Game is listed in this category, and its game page explains how it plays."
+    }
+   ]
+  },
+  "sniper": {
+   "intro": "Breathe in, line up the crosshair, wait for the right moment… and take the shot. Sniper games are the patient side of shooting: instead of running and gunning, you look through a scope and make one precise long-range shot count. Pixuvo has more than 150 free sniper games in the browser.\n\nMost sniper games give you a mission and a scene to scan. You zoom in through the scope, find the right target and fire before you are spotted or before time runs out. Some add a puzzle element, where finding the right target is part of the challenge, and others take you to places like the Wild West or outer space. Good ones to start with: Courageous Sniper, Ghost Sniper, Sniper Shot, West Frontier Sharpshooter 3D and Sniper Wars Find the Criminal.\n\nThe secret to good sniping is patience. Watch where targets move before you shoot, and in games with wind or distance, aim slightly ahead or above. Scanning the whole scene first often shows you the best angle. Sniper games use the mouse to aim and zoom on a computer, which is why they play best with a mouse, though Playing on a tablet? Many games support it, and the game page shows which ones. Some sniper games are realistic and suit older kids better; parents can read our parents page to see how games are reviewed. Sniper games are part of the shooting category.",
+   "faq": [
+    {
+     "q": "What are sniper games?",
+     "a": "Sniper games are shooting games about long-range precision. You aim through a scope, pick the right target and make each shot count."
+    },
+    {
+     "q": "How do you aim better in sniper games?",
+     "a": "Take your time, watch how targets move and fire when they slow down. In games with wind or distance, aim slightly ahead or above the target."
+    },
+    {
+     "q": "Are there sniper games without realistic violence?",
+     "a": "Some sniper games use cartoon targets, aliens or puzzles instead of realistic scenes, and the game description usually gives you an idea. Parents can check our parents page for how we review games."
+    },
+    {
+     "q": "Do sniper games work on tablets?",
+     "a": "Some do, but sniper games usually play best with a mouse for precise aiming. You can see on the game page whether a phone or tablet will work."
+    },
+    {
+     "q": "Are sniper games free on Pixuvo?",
+     "a": "Yes, every sniper game on Pixuvo is free to play in your browser with no download."
+    }
+   ]
+  },
+  "solitaire": {
+   "intro": "Just you, a deck of cards and a quiet few minutes. Solitaire, also called patience, is one of the classic computer card games, and Pixuvo has more than 120 versions of it.\n\nKlondike is the classic most people picture: seven columns of cards, building down in alternating colors and moving aces to the top to sort each suit. Klondike Solitaire 4 Suits and Klondike Kings Solitaire are two to try. Spider Solitaire uses two decks and asks you to build full runs from king to ace, and TriPeaks is faster: you clear three pyramids of cards by picking cards one higher or lower than the open card. Ultimate Solitaire Classic, Spider Solitaire Classic Ver, Tripeaks Solitaire Classic and Solitaire Holiday are more games listed near the top.\n\nBeginners should start with Klondike using one-card draw, which is easier to win. A useful tip: always try to uncover face-down cards first, and do not rush to empty a column unless you have a king ready. Solitaire works with clicks, drags or taps, and many versions run well on tablets and phones – check the game page to see if it runs on your device.",
+   "faq": [
+    {
+     "q": "How do you play Klondike solitaire?",
+     "a": "Build down the seven columns in alternating colors, like a red 6 on a black 7, and move cards to the four foundation piles from ace to king. You win when every card is sorted by suit."
+    },
+    {
+     "q": "What is the difference between Klondike, Spider and TriPeaks?",
+     "a": "Klondike uses one deck and alternating colors, Spider uses two decks and full king-to-ace runs, and TriPeaks is about clearing card pyramids one step higher or lower. TriPeaks is the quickest to learn."
+    },
+    {
+     "q": "Is every solitaire game winnable?",
+     "a": "No, some deals cannot be solved, even by the best players. If you get stuck, start a new game – that is part of solitaire."
+    },
+    {
+     "q": "Can I play solitaire on my phone?",
+     "a": "Many solitaire games support taps and drags and work well on phones and tablets. Each game page shows if touch screens are supported."
+    },
+    {
+     "q": "Are these games free to play?",
+     "a": "Yes. All solitaire games on Pixuvo are free, with no sign-up and no download."
+    }
+   ]
+  },
+  "sports": {
+   "intro": "No stadium tickets needed: the scoreboard is right in your browser. Pixuvo has more than 2,300 sports games, and they are great for short breaks because one match, one penalty or one round usually takes just a few minutes.\n\nThe biggest groups have their own pages. Football games (soccer) cover penalties, free kicks and quick matches. Basketball games are about shooting hoops and dunking. Pool and billiards games test your angles, and golf games range from relaxing mini golf to long drives. You will also find parkour-style stunts and plenty of funny physics sports that do not exist in real life.\n\nGames listed near the top include Curve Kick, Swipy Basketball, Golf Orbit, Billiards on Ice and Ragdoll Mega Dunk. How to choose? If you want something quick, try a one-button shooting game like a penalty or hoop challenge. If you like playing against someone, look for games that say \"2 player\" – many let two people share one keyboard. Most sports games use the mouse or simple swipes, so they are easy to try on a tablet or phone too; the game page shows which ones work on mobile.",
+   "faq": [
+    {
+     "q": "What are the best sports games for kids?",
+     "a": "Short, simple games are a great start: Curve Kick and Penalty Kick Wiz for football, Swipy Basketball for hoops and Golf Orbit for golf. They teach the timing and aiming that harder sports games build on."
+    },
+    {
+     "q": "Which sports can I play here?",
+     "a": "Football (soccer), basketball, pool and billiards, and golf have their own sections, and there are many other sports and stunt games mixed in the main list."
+    },
+    {
+     "q": "Can two players play sports games on one computer?",
+     "a": "Yes, many sports games have a two-player mode where one person uses WASD and the other the arrow keys. The game page tells you when a game supports two players."
+    },
+    {
+     "q": "Can I play sports games on my phone?",
+     "a": "Many sports games use swipes or taps and work well on phones and tablets. The game page tells you whether it works on phones and tablets."
+    },
+    {
+     "q": "Are these games free to play?",
+     "a": "Yes. All sports games on Pixuvo are free and open in your browser without signing up or downloading anything."
+    }
+   ]
+  },
+  "strategy": {
+   "intro": "Think first, act second. Strategy games reward kids who like planning, because the smartest move wins rather than the fastest finger. Pixuvo has more than 1,000 strategy games, and many can be played at your own pace.\n\nA big subgroup is tower defense, where you place towers along a path to stop waves of enemies. Castle and war games let you build an army or protect your walls. Others are closer to puzzles, where you need to figure out the right order of moves, and some bigger games have bases and units to manage. Not sure where to begin? Pick Empire Tower Defense - Zombie Fortress, King Rugni Tower Defense, Defend the Castle, Castel War 3D, Tower Crush and Babel Tower.\n\nIf you have not played strategy games before, tower defense is the friendliest place to start, because the rules are clear and every level teaches one new idea. After that, try a castle game where you also manage resources. Most strategy games are played with a mouse, which makes a computer the most comfortable choice, though many also work on tablets. The game page shows whether a game supports touch screens.",
+   "faq": [
+    {
+     "q": "What are strategy games?",
+     "a": "Strategy games are games where planning matters most. You decide what to build, where to put your units or which move to make, and good decisions win more than quick reactions."
+    },
+    {
+     "q": "Which strategy games are easy for beginners?",
+     "a": "Tower defense games are a great first step because each level introduces one new idea. Defend the Castle is another good one to start with."
+    },
+    {
+     "q": "Are strategy games good for kids' thinking skills?",
+     "a": "Many strategy games ask you to plan ahead, manage resources and learn from mistakes, which are useful skills. Like any game, they are best enjoyed in reasonable doses."
+    },
+    {
+     "q": "Do strategy games work on tablets?",
+     "a": "Many do, especially turn-based and tower defense games, but some bigger games are easier with a mouse. The game page tells you whether it works on phones and tablets."
+    },
+    {
+     "q": "Are these games free to play?",
+     "a": "Yes, every strategy game on Pixuvo is free and opens in your browser without an account."
+    }
+   ]
+  },
+  "tank": {
+   "intro": "Heavy armor, a rotating turret and a cannon that shakes the screen – tank games let you command one of the toughest machines on the battlefield. Pixuvo offers more than 250 free tank games in the browser.\n\nTank games come in several shapes. Battle games put you in the driver's seat of a tank, arena games keep the fights small and fast, and strategy and tower defense games are more about planning where to place units than about aiming. Right now Tiger Tank, Tanks Blitz, Steel Skirmish, Micro Tank Battle, Age of Tanks Warriors: TD War, Paper Panzer and Tanks 2D War and Heroes sit near the top of the list.\n\nThe key skill in many tank games is controlling two things at once: the tank's body moves one way while the turret aims another. Practice driving in a circle while keeping the cannon on target. Use walls and hills as cover, and remember that your shell flies in an arc in many side-view games, so aim higher for far targets. Most tank games use WASD or the arrow keys to drive and the mouse to aim, and plenty of them work on phones and tablets as well – the game page says so. Tank games are part of the shooting category, and many of them also suit fans of strategy.",
+   "faq": [
+    {
+     "q": "What are tank games?",
+     "a": "Tank games put you in charge of armored vehicles that drive, aim and fire cannons. Some are fast battles, others are strategy and tower defense games."
+    },
+    {
+     "q": "How do you aim in tank games?",
+     "a": "In most top-down tank games you drive with WASD and aim the turret with the mouse. In side-view games, shells fly in an arc, so you aim higher for distant targets."
+    },
+    {
+     "q": "Are there tank strategy games?",
+     "a": "Yes, some tank games are strategy or tower defense games, where planning and placing units matter more than just shooting. Age of Tanks Warriors: TD War is one to try."
+    },
+    {
+     "q": "Can two players play tank games together?",
+     "a": "Some tank games have a 2 player mode on one keyboard, and some are online. The game page says which when the publisher provides it."
+    },
+    {
+     "q": "Are tank games free to play?",
+     "a": "Yes, all tank games on Pixuvo are free in the browser with no sign-up."
+    }
+   ]
+  },
+  "tower-defense": {
+   "intro": "Enemies are marching down the road, and only your towers stand in their way. That is the whole idea of tower defense, a classic strategy style. Pixuvo has more than 280 tower defense games to choose from.\n\nEach game follows the same core loop: enemies come in waves along a path, you place towers or heroes next to it, and every enemy you stop gives you coins for more and better towers. What changes is the setting: castles and kingdoms, tanks, zombies that can be a little spooky, or funny meme characters. King Rugni Tower Defense, Tower Siege, Age of Tanks Warriors: TD War, Zombi Defense and Brainrot Tower Defense are a few games listed near the top, and Hot Barrel Cats, Lilliput War, Limited Defense and Ashen Watch are more to explore. Some tower defense games also add heroes you can move around the map.\n\nBeginner tip: put your first towers where the path bends, because enemies stay in range longer there. Mix tower types – some are fast, others hit hard or slow enemies down – and upgrade before you spread out too thin. Tower defense games are usually played with mouse clicks, so they suit computers best, but many also work fine with taps on a tablet. Whether a game runs on mobile is listed on its page.",
+   "faq": [
+    {
+     "q": "What is a tower defense game?",
+     "a": "It is a strategy game where enemies walk along a path in waves and you build towers next to it to stop them. Defeating enemies earns money for more towers and upgrades."
+    },
+    {
+     "q": "Where should I place my towers?",
+     "a": "Corners and bends are the best spots, because enemies stay in range for longer there. Build a few strong towers early and upgrade them before you spread out."
+    },
+    {
+     "q": "What is a good first tower defense game?",
+     "a": "King Rugni Tower Defense and Tower Siege are good ones to start with, and Brainrot Tower Defense is another one to try."
+    },
+    {
+     "q": "Can I play tower defense games on a tablet?",
+     "a": "Many tower defense games only need taps to place towers, so they work on tablets and phones. Each game page shows if touch screens are supported."
+    },
+    {
+     "q": "Are these games free to play?",
+     "a": "Yes. All tower defense games on Pixuvo are free to play in your browser, with no sign-up."
+    }
+   ]
+  },
+  "truck": {
+   "intro": "Big wheels, a heavy load and a road full of bumps – truck games are for kids who like their vehicles large and loud. Pixuvo has more than 700 free truck games that run in the browser.\n\nDriving a truck feels very different from driving a car. It is slower to speed up, harder to stop and wider on every turn, so careful driving matters more than raw speed. Some truck games are about delivering cargo without dropping it; others take you off-road through mud and hills, put you in army vehicles or send big trucks onto stunt tracks. There are farm and city jobs too, and even calm puzzle and memory games with trucks. Right now Offroad Masters Challenge, Army Truck Driving, Truck Simulator Stunt Extreme, 3D city tractor garbage sim and Draw Truck Endless sit near the top of the list.\n\nA tip for every truck driver: brake early. Heavy vehicles need more space to stop, and on hills it is easy to roll back or tip over if you rush. Take wide turns and go slowly over bumps when you carry cargo. Most truck games use the arrow keys or WASD, and the game page lists any extra keys. Plenty of them work on phones and tablets as well – the game page says so. Truck games are part of the driving category, next to bus and parking games.",
+   "faq": [
+    {
+     "q": "What are truck games?",
+     "a": "Truck games let you drive big vehicles such as trucks, army trucks and tractors. Many are about delivering cargo, climbing off-road hills or doing stunts."
+    },
+    {
+     "q": "How do you drive well in truck games?",
+     "a": "Brake early, take wide turns and slow down on bumps, especially when carrying cargo. Trucks are heavy, so they need more space than cars."
+    },
+    {
+     "q": "What is an off-road truck game?",
+     "a": "It is a truck game set on dirt roads, mud and hills instead of smooth streets. Offroad Masters Challenge is one to try."
+    },
+    {
+     "q": "Are there truck games for younger kids?",
+     "a": "Yes, some truck games are simple puzzles or memory games without fast driving – Army Trucks Memory is one to try. Driving games with short levels are a good next step."
+    },
+    {
+     "q": "Can I play truck games on a tablet?",
+     "a": "Many truck games have touch controls and run on phones and tablets. You can see on the game page whether a phone or tablet will work."
+    }
+   ]
+  },
+  "tycoon": {
+   "intro": "Start with one burger stand and end with a whole restaurant chain. Tycoon games are about growing something from almost nothing, and the fun is watching numbers, shops and buildings get bigger. Pixuvo has more than 340 tycoon games.\n\nThe basic loop is simple: earn money, spend it on upgrades, earn even more. What you manage changes from game to game: a restaurant, a shipyard, a tech company, a police station or even a fantasy world. To get going, try Burger Restaurant Simulator 3D, Shipbuilding Tycoon, Silicon Valley - Idle Tycoon, My Mini Police and Dinosaur World. Many tycoon games are also \"idle\", which means your business keeps earning while you take a break.\n\nTycoon games are a gentle way to learn how saving and spending works: buying the cheapest upgrade right away is not always the best choice. A good tip is to upgrade whatever earns the most first. They work well with a mouse, and many lighter ones run on tablets and phones too – check the game page to see if it runs on your device.",
+   "faq": [
+    {
+     "q": "What is a tycoon game?",
+     "a": "A tycoon game lets you run and grow a business, like a restaurant, a shipyard or a theme park. You earn money, buy upgrades and expand step by step."
+    },
+    {
+     "q": "What is the difference between tycoon and idle games?",
+     "a": "Tycoon games are about managing a business, while idle games keep earning even when you stop clicking. Many games are both, like Silicon Valley - Idle Tycoon."
+    },
+    {
+     "q": "Which tycoon game should I try first?",
+     "a": "A restaurant tycoon is easy to understand, because everyone knows how a restaurant works. Burger Restaurant Simulator 3D and Dinosaur World are easy places to start."
+    },
+    {
+     "q": "Do tycoon games teach anything about money?",
+     "a": "In a playful way, yes: you learn that saving up for a better upgrade can pay off more than spending right away. The numbers are pretend, of course."
+    },
+    {
+     "q": "Are these games free to play?",
+     "a": "Yes. All tycoon games on Pixuvo are free to play, with no account and no download."
+    }
+   ]
+  },
+  "word": {
+   "intro": "Letters scattered on the screen, and somewhere in them a hidden word. Word games are puzzles for anyone who likes reading, spelling or just figuring things out, and Pixuvo has more than 340 of them.\n\nThere is a word game for almost every kind of player. Word search and fill-in games ask you to spot words hidden in a grid, crossword games give you clues and squares to fill, and hangman is the classic guessing game. Anagram and letter-building games have you make words from a set of letters, picture-matching games help younger kids link words with pictures, and typing games train speed. Right now Fillwords: Find All the Words, Crossword Quest 3D, Wordquest Hangman, Rise of Words, Lexora, Match Pictures to Words 3D and Speed Typer sit near the top of the list.\n\nWord games are a sneaky way to grow your vocabulary, because every new word you find sticks a little better. If you are new, start with a picture or word-search game, then move to anagrams and crosswords when you want a bigger challenge. Typing games are easiest with a real keyboard, while most other word games work with taps and swipes on tablets and phones – whether a game runs on mobile is listed on its page.",
+   "faq": [
+    {
+     "q": "What are good word games for kids?",
+     "a": "Younger kids can start with picture-matching games, word searches are good spelling practice, and hangman is a fun guessing game for any age. A quick way in: Match Pictures to Words 3D, Fillwords: Find All the Words and Wordquest Hangman."
+    },
+    {
+     "q": "Can word games help with spelling and vocabulary?",
+     "a": "Yes, finding and building words again and again helps you remember how they are spelled and what they mean. They are a fun extra, not a replacement for school practice."
+    },
+    {
+     "q": "How do you play hangman?",
+     "a": "You guess a hidden word one letter at a time. Each wrong guess adds a part to the picture, and you try to find the word before the picture is finished."
+    },
+    {
+     "q": "Are the word games in English?",
+     "a": "It depends on the game. Many use English words, and some let you pick another language in the game menu – the game description usually tells you."
+    },
+    {
+     "q": "Is there a typing game to practice speed?",
+     "a": "Yes – Speed Typer is one to try. Typing games work best with a real keyboard."
+    }
+   ]
+  },
+  "zombie": {
+   "intro": "They are slow, they are clumsy, and there are a lot of them. Zombie games are about surviving the undead horde, and the best ones mix shooting with planning, building and a good dose of humor. Pixuvo has more than 800 free zombie games for the browser.\n\nThe zombie world has more variety than you might think. Survival games are about holding out as long as you can, often wave after wave. Some games play with the idea that zombies are clumsy, while others lean more toward action shooting. Not sure where to begin? Pick Quarantine Zombies, Zombie Can't Jump, Zombie Hunter Survival, Guns'n'Glory Zombies, Zombie World and Zombie Killer.\n\nThe best survival tip: never let yourself get surrounded. Keep moving, use corners and doorways so zombies come from one direction, and upgrade your weapons or defenses between waves when the game allows it. Most zombie games use WASD to move and the mouse to aim, or simple taps on touch screens. Plenty of them work on phones and tablets as well – the game page says so. Zombie games can be spooky or gory, so they are usually better for older kids; games with violent wording are held for manual review, and our parents page explains how. Zombie games are part of the shooting category.",
+   "faq": [
+    {
+     "q": "What are zombie games?",
+     "a": "Zombie games are about surviving against crowds of undead creatures. Most mix shooting with strategy, like upgrading weapons or building defenses."
+    },
+    {
+     "q": "How do you survive longer in zombie games?",
+     "a": "Keep moving, avoid getting surrounded and use doorways or corners so zombies come from one side. Spend coins on upgrades between waves."
+    },
+    {
+     "q": "Are zombie games too scary for kids?",
+     "a": "Some are cartoony and funny, while others are spooky or gory, so they suit older kids best. Our parents page explains how games are reviewed."
+    },
+    {
+     "q": "What zombie game should I try first?",
+     "a": "To get going, try Quarantine Zombies and Zombie Hunter Survival. Pick a game with short waves first, so you can learn the controls."
+    },
+    {
+     "q": "Can I play zombie games on my phone?",
+     "a": "Many zombie games have touch controls and work on phones and tablets. Whether a game runs on mobile is listed on its page."
+    }
+   ]
+  }
+ },
+ "land": {
+  "2-player-racing": {
+   "intro": "Racing is more fun when the car next to you is driven by your brother, sister or best friend. This page collects more than 200 racing games made for two players, so you can settle who is faster without waiting for anyone online.\n\nMost of these games are played on one keyboard: one player steers with W, A, S and D, the other with the arrow keys. Some use a split screen, so each driver gets half of the monitor, while others put both cars on the same track. A few are online duels instead – the game page tells you which type it is when the publisher provides that information. You'll find classic circuit races, stunt games with huge ramps, off-road challenges, drift battles and even car football where the cars push a giant ball.\n\nGood first picks are Offroad Masters Challenge, Mega Ramp Stunt Racing 3D, Noob vs Pro : Drift Tag and Rocketcar Cup. Tip: sit so both players can reach the keyboard comfortably, and agree on the controls before the countdown starts. Many games also work on tablets – check the game page.",
+   "faq": [
+    {
+     "q": "How do two players race on one computer?",
+     "a": "Most 2 player racing games split the keyboard: one driver uses W, A, S, D and the other uses the arrow keys. Some games show a split screen, others put both cars on one shared track."
+    },
+    {
+     "q": "Are there online 2 player racing games too?",
+     "a": "Yes, a few games let you race someone online instead of on the same keyboard. The game page says which mode a game uses when the publisher shares that detail."
+    },
+    {
+     "q": "What kinds of 2 player racing games are there?",
+     "a": "You'll find track races, stunt and ramp games, off-road driving, drift battles and car soccer games where you score goals with cars."
+    },
+    {
+     "q": "Can I play 2 player racing games on a phone?",
+     "a": "Some of them work on phones and tablets, but sharing one keyboard is usually easiest on a computer. Each game page shows which devices it supports."
+    },
+    {
+     "q": "Do I need to download anything?",
+     "a": "No. Every game runs in your web browser, with no download, no install and no sign-up."
+    }
+   ]
+  },
+  "2-player-sports": {
+   "intro": "Friendly rivalry is what sports are all about, and these more than 250 games let you take it to the screen. Grab a friend, share the keyboard and play a match where the score really matters – because the other player is sitting right next to you.\n\nA big group is football (soccer): penalty duels, headball and short matches with goals at both ends. There's also volleyball, basketball, pool and billiards, and fun mixes such as car soccer where vehicles push the ball. On many games one player uses W, A, S and D and the other uses the arrow keys; a few are online matches against other players. The game page tells you which kind it is when the publisher includes that information.\n\nWant a quick start? You could start with VOLLEY CLASH, Basketball League, 8 Ball Pool 2D and Toy Soccer Cup. Turn-based sports like pool are great for younger kids who are still learning the keys, because nobody has to react in a split second. Matches are usually short, so you can play \"best of three\" and swap who picks the next game.",
+   "faq": [
+    {
+     "q": "What sports can two players play here?",
+     "a": "Football (soccer), volleyball, basketball, pool and billiards, and car soccer games. The list grows as new games are added."
+    },
+    {
+     "q": "How do I play a sports game against my friend on one keyboard?",
+     "a": "In most 2 player sports games one player uses W, A, S, D and the other uses the arrow keys. The controls are usually shown before the match starts."
+    },
+    {
+     "q": "Which 2 player sports games are best for younger kids?",
+     "a": "Turn-based games like 8 Ball Pool 2D are a good start because there is no rush. Simple football and volleyball duels with one or two keys are also easy to learn."
+    },
+    {
+     "q": "Can I play against someone online?",
+     "a": "Some sports games have online matches. The game page shows the mode when the publisher provides it."
+    },
+    {
+     "q": "Are these sports games free?",
+     "a": "Yes, they are free to play in your browser with no account and no download."
+    }
+   ]
+  },
+  "2-player-shooting": {
+   "intro": "Two players, one keyboard and a score to beat – that's the idea behind this collection of more than 150 shooting games for two. Some are head-to-head duels where you try to outplay each other, others are co-op games where you team up against waves of enemies.\n\nYou'll find platform duels where players knock each other off the map, tank battles, car battles and zombie defense games. In most of them one player moves with W, A, S, D and the other uses the arrow keys, with an extra key or two for firing. A few are online games instead of same-keyboard ones; the game page says which when the publisher provides it.\n\nGames listed near the top include Gun Mayhem Original, Car Battle, Tanks of War Halloween, Zombie swarm and BlockCraft Together. If you're new, start with a co-op game so both players learn the controls together before switching to duels. Parents who want to check what is on Pixuvo can read the page for parents, which explains how games with violent wording are reviewed.",
+   "faq": [
+    {
+     "q": "What are good 2 player shooting games to play with a friend?",
+     "a": "Gun Mayhem Original, Car Battle, Tanks of War Halloween and Zombie swarm are easy places to start. The game page shows whether a game is a duel or co-op when the publisher provides it."
+    },
+    {
+     "q": "Are there co-op shooting games, not just duels?",
+     "a": "Yes. Some games let both players fight on the same side against computer enemies, which is a nice way to learn the controls together."
+    },
+    {
+     "q": "What are the controls for 2 player shooting games?",
+     "a": "Usually one player uses W, A, S, D plus a fire key and the other uses the arrow keys plus another fire key. Each game shows its own controls at the start."
+    },
+    {
+     "q": "Are these shooting games OK for kids?",
+     "a": "Many are cartoon-style, but every game is different. Games with violent wording are held for manual review, and parents can read more on the page for parents."
+    }
+   ]
+  },
+  "2-player-football": {
+   "intro": "Kick-off with a friend sitting right beside you! This page gathers more than 80 football (soccer) games for two players, from penalty shootouts to fast one-on-one matches with big heads and bouncy balls.\n\nThere are a few main styles. Headball games give each player one character who jumps and kicks next to the goal. Car soccer games swap players for cars that bump a giant ball. Table-style games, like air hockey or flick soccer, let you aim and shoot in turns. Most are played on one keyboard, with one player on W, A, S, D and the other on the arrow keys, and some are online matches. The game page says which mode a game uses when the publisher shares it.\n\nTo get going, Head Ball Challenge, Soccer Duel, Rocketcar Cup and Coin Flick Soccer are good ones to start with, and Rumble Stars Football - Online Soccer Game is one to check if you want to play online. Matches are short, so play first to three goals and swap sides. Headball is easy to learn – usually just moving, jumping and kicking – which makes it a great first pick for younger kids.",
+   "faq": [
+    {
+     "q": "What is headball?",
+     "a": "Headball is a style of football game where each player controls one big-headed character next to their goal. You move, jump and kick to get the ball past the other player."
+    },
+    {
+     "q": "How do two people play football on one keyboard?",
+     "a": "One player usually uses W, A, S, D and the other uses the arrow keys, with one extra key each for kicking. The controls appear before the match starts."
+    },
+    {
+     "q": "Can I play soccer online against other players?",
+     "a": "Yes, some games, like Rumble Stars Football - Online Soccer Game, have online matches. Most others are played side by side on one computer."
+    },
+    {
+     "q": "Which 2 player football game is easiest for little kids?",
+     "a": "Turn-based flick games are the easiest because nobody has to be fast – Coin Flick Soccer is one to try. Headball games are also simple, with only a few keys."
+    },
+    {
+     "q": "Is football the same as soccer here?",
+     "a": "Yes. These are soccer games – the sport called football in most of the world."
+    }
+   ]
+  },
+  "2-player-fighting": {
+   "intro": "Who is the champion of your house? Settle it here with more than 90 fighting games built for two players on one computer. Every match is short, fast and easy to restart, so the loser can always ask for a rematch.\n\nThese games come in a few flavors. Stickman fights use simple stick figures that flip, punch and kick across the screen. Arena brawlers try to push the other player out of the ring or off a platform. Reaction games like the red hands game test who is quicker, and some games are boxing or wrestling-style duels. Usually one player uses W, A, S, D and the other the arrow keys; a few games also support online play, which the game page shows when the publisher provides it.\n\nA quick way in: For a first round, Stickman: Fighter 3D, Stickman Dragon Fighting, Two Player Red Hands Game, Boxing Gang Stars and Neon Slimes. Before you start, agree how many rounds you'll play. Many fights here are cartoon-style, and games with violent wording are reviewed by hand before they appear on Pixuvo.",
+   "faq": [
+    {
+     "q": "What are the best 2 player fighting games for kids?",
+     "a": "A quick way in: Cartoon-style games are a great start – Neon Slimes, Two Player Red Hands Game and Boxing Gang Stars. Stickman fighting games are another easy choice, because the characters are simple stick figures."
+    },
+    {
+     "q": "Can two players fight on the same keyboard?",
+     "a": "Yes, that's how most of these games work: one player uses W, A, S, D and the other the arrow keys, each with a few attack keys."
+    },
+    {
+     "q": "What is the red hands game?",
+     "a": "It's a reflex game for two: one player tries to slap the other's hands, and the other tries to pull them away in time. It's quick and funny, and the game page shows the controls."
+    },
+    {
+     "q": "Are there stickman fighting games for two players?",
+     "a": "Yes, for example Stickman: Fighter 3D and Stickman Dragon Fighting. You'll find more on the stickman games page."
+    }
+   ]
+  },
+  "multiplayer-shooting": {
+   "intro": "Some shooting games are better with real people on the other side. This page lists more than 250 multiplayer shooting games where you play with or against other players, either online or on the same computer.\n\nThe main types are .io arena games, where many players share one big map and try to grow or survive the longest; team battles with tanks, helicopters or cars; pixel-style blocky shooters; and hide-and-seek games where one side hides and the other searches. Some games put two to four people on one keyboard, while others connect you with players online – the game page says which when the publisher provides it.\n\nGood places to start are Tanknarok, Paint or Seek: Chameleon Hide Online, Guardz IO and Helicopter And Tank Battle vehicle wars. In online games you meet players you don't know, so use a nickname, never share personal details and stop playing if someone is unkind. Parents can read more on the Pixuvo page for parents, including how games with violent wording are reviewed.",
+   "faq": [
+    {
+     "q": "What does multiplayer mean in these games?",
+     "a": "It means you play with other people, not just the computer. Some games are online with players from anywhere, others let friends play on the same computer."
+    },
+    {
+     "q": "What are .io shooting games?",
+     "a": ".io games put lots of players in one shared arena. You usually start small, collect points and try to stay in the game as long as possible."
+    },
+    {
+     "q": "Can I play multiplayer shooting games with a friend in the same room?",
+     "a": "Yes, some games let two or more people play on one keyboard. Check the game page to see if a game is local or online."
+    },
+    {
+     "q": "How can kids stay safe in online multiplayer games?",
+     "a": "Use a made-up nickname, never share your real name, school or address, and tell a parent if someone is mean. The page for parents explains more."
+    },
+    {
+     "q": "Do I need an account to play online?",
+     "a": "Not on Pixuvo – you just open the game and play in your browser. Some games may ask you to type a nickname."
+    }
+   ]
+  },
+  "kids": {
+   "intro": "Little hands, big curiosity: this corner of Pixuvo is for younger children and families who want calm, colorful games that teach a little and entertain a lot. It holds more than 3,500 games picked from the educational, coloring and family sections.\n\nLearning games help children practice first words, numbers, shapes and simple math. Coloring and drawing games include coloring pages, paint-by-number and diamond painting, which are relaxing and don't need reading. Pretend-play games let kids be a dentist, a doctor or a painter for a few minutes. Most use just a mouse click or a tap, which makes them easy for children who are new to computers.\n\nYou could start with For first steps, My First 100 Words, Master of Numbers, Butterfly Coloring Pages Kids, Diamond Painting by Number and Doctor Teeth. Parents: games are free with no sign-up, and there's a page for parents explaining how Pixuvo reviews games. Some games include ads from the game's publisher, so younger children may need help now and then. Many games also work on tablets – the game page shows it.",
+   "faq": [
+    {
+     "q": "What are good online games for young kids?",
+     "a": "You could start with Learning and coloring games are a gentle start – My First 100 Words, Master of Numbers and Butterfly Coloring Pages Kids. Look for games with simple clicks or taps and no time pressure."
+    },
+    {
+     "q": "What are the best memory games for kids?",
+     "a": "Card-matching games are the classic choice: you flip two cards and try to find pairs. Try Memory Cards or Flag Memory Match, and see the brain games page for more."
+    },
+    {
+     "q": "Are video games good for kids?",
+     "a": "In small doses, games that involve counting, words, colors or problem-solving can be a fun way to practice skills. Short sessions and playing together work best."
+    },
+    {
+     "q": "Can my child play on a tablet?",
+     "a": "Many kids games work on tablets and phones because they only need taps. Each game page shows which devices are supported."
+    },
+    {
+     "q": "Do kids need an account to play?",
+     "a": "No. There's no sign-up and no download – games open right in the browser."
+    }
+   ]
+  },
+  "girls": {
+   "intro": "Fashion shows, pizza ovens and dream weddings – these are the games many girls love, gathered in one place. Of course, every game here is for everyone, so anyone who likes styling, cooking or caring for others is welcome. There are more than 3,700 games in this collection.\n\nDress-up games let you mix outfits, hairstyles and accessories, from K-pop looks to anime styles and wedding dresses. Makeover and nail salon games are about colors, patterns and careful little details. Cooking games put you behind the counter of a burger stand or a pizza place, where you follow recipes and serve customers. You'll also find care games, where you look after pets or help characters out.\n\nTo start, Aidol K-pop Adventure, Anime Girl Fashion Make Up, Pizza Maker food Cooking Games, Burger Restaurant Simulator 3D and Funny Kitty Care are good ones to try. Most of these games are played with the mouse or by tapping, so they're relaxed and easy. If you like one kind of game best, open the dress-up, cooking or princess pages for even more.",
+   "faq": [
+    {
+     "q": "What are the best games for girls?",
+     "a": "Dress-up, makeover and cooking games are a good place to start – Aidol K-pop Adventure and Pizza Maker food Cooking Games are listed near the top. But every game on Pixuvo is for everyone, so try anything that looks fun."
+    },
+    {
+     "q": "What are fun games for girls when you're bored?",
+     "a": "Quick dress-up and nail salon games, cooking games and pet care games are great when you have a few minutes. Most only need clicks or taps."
+    },
+    {
+     "q": "Are there fashion games for girls who love fashion?",
+     "a": "Yes, lots. Fashion dress-up games let you design outfits, choose accessories and create whole looks – see Anime Girl Fashion Make Up or the princess games page."
+    },
+    {
+     "q": "Can I play these games on a phone or tablet?",
+     "a": "Many of them work on phones and tablets because they use simple taps. The game page shows which devices each game supports."
+    }
+   ]
+  },
+  "boys": {
+   "intro": "Speed, battles and big challenges – that's what you'll find in these more than 10,000 racing, fighting and shooting games. Many boys love them, but every game here is for everyone, so anyone who likes action is welcome.\n\nRacing games range from motorbike stunt tracks to car chases and truck driving. Fighting games include stickman battles, arena brawls and one-on-one duels. Shooting games cover zombie survival, tank and convoy battles, and missions where you aim carefully and complete objectives. Some are quick arcade games you can finish in a minute, others have levels you unlock one by one.\n\nTo get started, try Moto X3M: Spooky Land for stunt bike racing, or Sumo Shove, Knockback Knights, Stickman Warriors, Quarantine Zombies and Trap the Convoy, which are all listed near the top. Most of these games use the keyboard (arrows or W, A, S, D) and sometimes the mouse for aiming. Want to play with a friend? Check the 2 player racing, 2 player fighting and 2 player shooting pages. Parents can read how Pixuvo reviews games with violent wording on the page for parents.",
+   "faq": [
+    {
+     "q": "What are good games for boys to start with?",
+     "a": "Moto X3M: Spooky Land, Stickman Warriors and Quarantine Zombies are listed near the top. But every game on Pixuvo is for everyone, so try anything that looks fun."
+    },
+    {
+     "q": "Are there games for boys that two people can play?",
+     "a": "Yes. The 2 player racing, fighting and shooting pages have games where two players share one keyboard."
+    },
+    {
+     "q": "Are these action games suitable for kids?",
+     "a": "Many are cartoon-style action, but every game is different. Games with violent, adult or gambling wording are held for manual review, and parents can find more details on the page for parents."
+    },
+    {
+     "q": "Do I need a keyboard to play?",
+     "a": "Many action games are easiest with a keyboard, but some also work on phones and tablets with touch controls. The game page shows it."
+    },
+    {
+     "q": "Can girls play games for boys too?",
+     "a": "Of course. Every game on Pixuvo is for everyone – this page simply groups racing, fighting and shooting games."
+    }
+   ]
+  },
+  "brain": {
+   "intro": "Ready to give your brain a workout? These more than 4,500 games are all about thinking: remembering, counting, finding words and solving puzzles. They're a good choice when you want to play something that also feels a little bit like practice.\n\nMemory games ask you to remember cards, pictures or where a ball is hidden. Math games turn adding, subtracting and multiplying into races and battles. Quiz games test what you know about flags, shapes or emojis, and word games have you build words, solve crosswords or guess letters. On top of that come logic puzzles, where you figure out how to fix, connect or move things in the right order.\n\nSome good starting points listed near the top are Kobadoo Numbers, Kobadoo Arithmetic, Kobadoo Flags, Memory Cards, Flag Memory Match, Three Cups Game and Math Fight Club. Try a few different types to find out which kind of thinking you enjoy most. Most brain games need no fast reflexes, just a mouse or a tap, so they work well for younger players and grown-ups who want to play together.",
+   "faq": [
+    {
+     "q": "Are brain games good for your brain?",
+     "a": "Brain games are a fun way to practice memory, counting, words and logic. Like any game, they work best in short sessions alongside other activities."
+    },
+    {
+     "q": "What are the best memory games for kids?",
+     "a": "Card-matching games are the classic choice for kids. Good ones to start with: Memory Cards, Flag Memory Match and Three Cups Game."
+    },
+    {
+     "q": "Are there math games for kids?",
+     "a": "Yes. A quick way in: The math section has more than 700 of them – Kobadoo Numbers, Kobadoo Arithmetic and Math Fight Club."
+    },
+    {
+     "q": "What kinds of brain games are there?",
+     "a": "You'll find memory games, math games, quizzes, word games and logic puzzles. Each type trains a slightly different skill."
+    },
+    {
+     "q": "Can I play brain games on a tablet?",
+     "a": "Many brain games use simple taps, so they often work on tablets and phones. The game page shows which devices are supported."
+    }
+   ]
+  },
+  "stickman": {
+   "intro": "A circle for a head, a few lines for arms and legs – and somehow stickman characters can fight, run, jump, sneak and solve puzzles. This page collects more than 650 stickman games in every style you can imagine.\n\nStickman fighting games are a big group: quick battles where simple stick figures punch, kick and use special moves. There are also stickman shooting and archery games, boss battle games, defense games where you protect your base, and puzzle games where a stickman has to sneak, escape or steal something clever. Some stickman games are made for two or even four players.\n\nStickman Mega Boss Battles!, to get going, try Stickman Battle 1-4 Players, Stickman Guys Defense, DOP Stickman and Stickman Thief Puzzle. If you'd rather think than fight, look for the puzzle ones. Because the characters are so simple, the games are easy to understand. Most use the keyboard or mouse; some work with touch on phones and tablets, which the game page shows.",
+   "faq": [
+    {
+     "q": "What are stickman games?",
+     "a": "They are games where the characters are simple stick figures. Stickman games can be fighting, shooting, puzzle, defense or adventure games."
+    },
+    {
+     "q": "Can more than one person play stickman games?",
+     "a": "Yes, some can – the game page shows how many players a game supports. Stickman Battle 1-4 Players is one to check."
+    },
+    {
+     "q": "Are there stickman puzzle games, not just fighting?",
+     "a": "Yes. Some stickman games are about thinking rather than fighting – DOP Stickman and Stickman Thief Puzzle are two to try."
+    },
+    {
+     "q": "Why do kids like stickman games?",
+     "a": "The simple characters make the games easy to understand, so you can jump straight into the action."
+    },
+    {
+     "q": "Are stickman games free?",
+     "a": "Yes, all stickman games on Pixuvo are free to play in your browser, with no download."
+    }
+   ]
+  },
+  "unblocked": {
+   "intro": "Many people search for \"unblocked games\" when they simply want games that open in a normal web page without installing anything. That is exactly how Pixuvo works: all of its more than 45,000 games run in your web browser, with nothing to download, no app to install, no browser extension and no sign-up.\n\nTo be clear about what this page is not: Pixuvo is not a tool for getting around school or network filters, and it doesn't try to bypass them. Schools, workplaces and parents decide which websites are allowed on their computers and networks, and those rules should be respected. If a site is blocked at school, it's best to play at home or during a break when games are allowed. Pixuvo is a regular website, so whether it opens on a given network depends on how that network is set up.\n\nThis page lists popular games from across the whole site, based on real plays, so it's a good place to find something quick. Good ones to start with: Drop Planets, Merge Royal, Epic Duck, Kobadoo Numbers, Kobadoo Flags and Three Cups Game. Favorites you mark are saved in this browser on this device.",
+   "faq": [
+    {
+     "q": "What are unblocked games?",
+     "a": "People usually mean browser games that run in a normal web page, with no download, install or extension. Pixuvo games work this way, but they don't bypass any filters."
+    },
+    {
+     "q": "Can I use Pixuvo to get around a school filter?",
+     "a": "No. Pixuvo doesn't bypass school or network filters. Schools and parents decide what is allowed, so please follow their rules."
+    },
+    {
+     "q": "What games can I play without downloading anything?",
+     "a": "Every game on Pixuvo opens straight in your browser. A quick way in: Drop Planets, Merge Royal and Epic Duck."
+    },
+    {
+     "q": "Do these games need Flash or a plugin?",
+     "a": "No. The games run in a modern web browser without Flash, plugins or extensions."
+    },
+    {
+     "q": "Are the games free?",
+     "a": "Yes, they are free, and you don't need an account. Some games may show ads from their publishers."
+    }
+   ]
+  },
+  "animal": {
+   "intro": "Kittens, sharks, chicks, dogs and even dinosaurs – animals star in more than 2,700 games on this page. Some let you care for pets, some turn animals into heroes, and some are simply silly fun with a furry or feathery main character.\n\nPet care games are about feeding, washing and looking after animals, which younger kids especially enjoy. Rescue games give you a puzzle to solve to save a trapped cat or another animal in trouble. Arcade games let you play as an animal: flap as a bird, swim as a shark or hop as a little chick. There are also dinosaur adventures and animal jigsaw puzzles.\n\nFor gentle play, Save kitten and Funny Rescue Pet are good ones to start with, and Tiny Chick, Shadobirds, Big Shark and Dino Squad Battle Mission are more games listed near the top. Most animal games use simple clicks, taps or arrow keys, so they suit a wide range of ages. Many also work on phones and tablets – the game page shows it.",
+   "faq": [
+    {
+     "q": "What are good animal games for kids?",
+     "a": "To get going, try Gentle rescue and pet care games are a nice start for younger kids – Save kitten and Funny Rescue Pet. Big Shark and Dino Squad Battle Mission are more to try."
+    },
+    {
+     "q": "Are there pet care games?",
+     "a": "Yes, there are games where you feed, wash and look after pets. You'll also find more on the games for girls page, which includes care games like Funny Kitty Care."
+    },
+    {
+     "q": "Are there dinosaur games?",
+     "a": "Yes, dinosaurs appear in many animal games, from adventures to puzzles – Dino Squad Battle Mission is one to try."
+    },
+    {
+     "q": "Can I play animal games on a tablet?",
+     "a": "Many animal games use taps or simple clicks, so they often work on tablets. Each game page shows supported devices."
+    }
+   ]
+  },
+  "princess": {
+   "intro": "Crowns, ball gowns and a little bit of magic: this page brings together more than 650 princess games. Here you can be the stylist, the designer and the makeup artist for royal characters – and decide what a princess should look like today.\n\nMost princess games are dress-up games. You choose dresses, hairstyles, shoes and jewelry, and then show off the final look. Makeover games add makeup, face paint or nail designs, and some even let you design tattoos or punk outfits for a princess who isn't so traditional. You'll also find friend-group games where several characters get ready for a party together, and a few adventure games with princess heroines.\n\nGood starting points are Princess Nail Salon, Princess Look Like A Supermodel, Princess Punk Fashion - Tattoo Desgin and Bff Witchy Transformation. Princess games are played mostly with mouse clicks or taps, so there's no rush – take your time with every detail. Like every game on Pixuvo, they're for everyone. Looking for more styling? Try the dress-up category or the games for girls page.",
+   "faq": [
+    {
+     "q": "What are princess games?",
+     "a": "They are games about princesses, mostly dress-up and makeover games where you pick outfits, hair, makeup and accessories."
+    },
+    {
+     "q": "What can I do in princess dress-up games?",
+     "a": "You can choose dresses, shoes, jewelry and hairstyles, try makeup or nail designs, and create a complete look."
+    },
+    {
+     "q": "Are there princess games for younger kids?",
+     "a": "Yes. Many princess games use simple clicks and have no time limit, so younger kids can play at their own pace."
+    },
+    {
+     "q": "Can I play princess games on a phone?",
+     "a": "Many dress-up games work well with taps on phones and tablets. The game page shows which devices are supported."
+    },
+    {
+     "q": "Do princess games cost anything?",
+     "a": "No, they are free to play in your browser, with no download and no sign-up."
+    }
+   ]
+  },
+  "space": {
+   "intro": "Three, two, one, liftoff! More than 650 games on this page take place among stars, planets and alien worlds. Whether you want to defend Earth, build a galaxy or just fly as far as you can, space is a great setting for adventure.\n\nSpace shooters are the classic type: you pilot a ship and blast asteroids or alien invaders. Defense games ask you to protect a planet or a farm from aliens, often with a funny twist. Merge and puzzle games let you combine small planets into bigger ones, and arcade games challenge you to dodge, fly and collect stars. Some strategy games let you explore and build in space.\n\nGood ones to start with: To begin, Protect the Earth, Dogs vs Aliens, Farmers vs Aliens, Merge Planets Deluxe, Galaxy Pop and Star Rush. If you are new, start with a calm puzzle and move on to faster games once you know the controls. Space shooters usually use the arrow keys or the mouse, while merge games work well with taps. If you love these, the shooting and arcade categories have even more.",
+   "faq": [
+    {
+     "q": "What are good space games for kids?",
+     "a": "Calm merge puzzles and quick arcade games are an easy start. Merge Planets Deluxe, Dogs vs Aliens and Star Rush are easy places to start."
+    },
+    {
+     "q": "Are there space shooter games?",
+     "a": "Yes, in space shooters you fly a ship and shoot asteroids or alien invaders. Stars Strike and Alien War are two to try."
+    },
+    {
+     "q": "What are planet merge games?",
+     "a": "In merge games you drop or combine small planets to make bigger ones. Merge Planets Deluxe is one to try."
+    },
+    {
+     "q": "Can I play space games on my phone?",
+     "a": "Many space games, especially merge and arcade games, work with touch. Each game page shows which devices it supports."
+    }
+   ]
+  },
+  "christmas": {
+   "intro": "Snowflakes, presents and a very busy Santa – Christmas games are a cozy way to get into the holiday mood. This collection has more than 750 winter and Christmas games, and they're here all year round, so you can play even when it's warm outside.\n\nMany Christmas games are about helping Santa: delivering gifts down chimneys, racing his sleigh or protecting the presents. Clicker games let you decorate a Christmas tree or build a giant holiday collection, one click at a time. There are also holiday dress-up games with festive outfits, winter puzzles and match-3 games, and arcade games set in snowy villages.\n\nChimney Express, Santa Rush Down, Christmas Tree Clicker, Santa Clicker and Christmas Adventures are a few games listed near the top, so they are an easy place to start. Christmas games make a nice family activity during the holidays, because many are short and easy enough for kids and grown-ups to take turns. Most use simple clicks, taps or arrow keys.",
+   "faq": [
+    {
+     "q": "What are fun Christmas games to play online?",
+     "a": "Quick Santa games and calm clicker games are both fun picks. You could start with Chimney Express, Santa Rush Down and Christmas Tree Clicker."
+    },
+    {
+     "q": "Are there Christmas games the whole family can play?",
+     "a": "Yes. Many Christmas games are short and simple, so kids and adults can take turns and compare scores."
+    },
+    {
+     "q": "Can I play Christmas games outside the holiday season?",
+     "a": "Yes, the Christmas games stay on Pixuvo all year, so you can play them any time."
+    },
+    {
+     "q": "Are there Christmas dress-up games?",
+     "a": "Yes, there are holiday dress-up games with festive outfits."
+    },
+    {
+     "q": "Are Christmas games free?",
+     "a": "Yes, they're free to play in your browser with no download or sign-up."
+    }
+   ]
+  },
+  "halloween": {
+   "intro": "Pumpkins, candy, friendly ghosts and cute little monsters – most Halloween games are spooky in a fun way, not a scary one. This page has more than 550 of them, ready to play whenever you feel like a bit of Halloween spirit, not just in October.\n\nYou'll find Halloween versions of many favorite game types. Merge games let you combine spooky items into new ones, falling-block and candy-drop puzzles test your timing, and jumping and riding games test your reflexes. Dress-up and nail games let you create costumes and Halloween manicures, and there are a few action games with monster characters too.\n\nSpooky Merge, Halloween Merge Game, Halloween Candy Drop, Falling Blocks - Halloween Challenge, Halloween Hop and Fashion Girl Halloween Boutique are easy places to start. Most Halloween games use clicks, taps or arrow keys, so they're easy for younger kids. If you want something truly spooky, older players can look at the horror category, while many games on this page are about costumes, candy and cartoon monsters.",
+   "faq": [
+    {
+     "q": "Are Halloween games scary?",
+     "a": "Many aren't. A lot of the games on this page are about pumpkins, candy, costumes and cartoon monsters, but some can be a little spooky, so check a game first if you are unsure."
+    },
+    {
+     "q": "What are good Halloween games for kids?",
+     "a": "Spooky Merge, Halloween Candy Drop and Halloween Hop are good ones to start with, and Fashion Girl Halloween Boutique is one to try if you like styling."
+    },
+    {
+     "q": "Are there Halloween dress-up games?",
+     "a": "Yes, there are Halloween costume and nail games, such as Fashion Girl Halloween Boutique and Crazy Halloween Nail Doctor."
+    },
+    {
+     "q": "Can I play Halloween games all year?",
+     "a": "Yes, the Halloween games stay on Pixuvo all year round."
+    }
+   ]
+  }
+ }
+}

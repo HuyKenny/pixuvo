@@ -3611,3 +3611,14 @@ body.is-fullscreen .bottom-nav {
 
 /* Japanese: wrap between phrases, not inside words (Chrome 119+; other browsers ignore it). */
 :root[lang='ja'] { word-break: auto-phrase; }
+
+/* Long-form SEO content under game grids (category/landing page 1, homepage). */
+.seo-content { max-width: 860px; margin: 40px 0 8px; color: var(--ink-2); line-height: 1.65; }
+.seo-content h2 { font-size: 22px; margin: 28px 0 10px; }
+.seo-content p { margin: 0 0 12px; }
+.seo-types { margin: 0; padding-inline-start: 20px; display: grid; gap: 6px; }
+.seo-types a { font-weight: 800; }
+.seo-faq details { border: 1px solid var(--border); border-radius: 12px; padding: 10px 14px; margin: 8px 0; background: var(--card); }
+.seo-faq summary { font-weight: 800; cursor: pointer; min-height: 28px; }
+.seo-faq details p { margin: 8px 0 0; }
+.tips { margin: 0; padding-inline-start: 20px; display: grid; gap: 6px; line-height: 1.55; }

@@ -12,6 +12,7 @@ import MoodTiles from '../components/MoodTiles.astro';
 import { snapshot } from '../lib/snapshot';
 import { SITE, categoryPath } from '../lib/site';
 import { useI18n } from '../i18n';
+import { loadContent, paragraphs } from '../i18n/content';
 import { MIN_CATEGORY_GAMES } from '../lib/taxonomy';
 import { uiIcon } from '../lib/category-icons';
 
@@ -25,6 +26,7 @@ const tiles = TILE.map((s) => live.find((c) => c.slug === s)).filter((c): c is (
 const twoPlayer = snapshot.categoryPages['2-player']?.slice(0, 12) ?? [];
 const total = snapshot.published;
 const i = await useI18n(Astro);
+const home = (await loadContent(i.lang)).home;
 const t = i.t;
 const ld = [
   { '@context': 'https://schema.org', '@type': 'WebSite', name: 'Pixuvo', url: SITE.url + '/',
@@ -104,6 +106,13 @@ const ld = [
         <GameGrid games={s.games.slice(0, 7)} label={t('cat.gamesLabel', i.catGames(s.slug, s.name))} row />
       </section>
     ))}
+    {home && (
+      <section class="seo-content" aria-labelledby="home-about-h">
+        <h2 id="home-about-h">{home.h2}</h2>
+        {paragraphs(home.intro).map((p) => <p>{p}</p>)}
+        <p><a href="/parents/">{t('nav.parents')} →</a></p>
+      </section>
+    )}
   </div>
 </Base>
 <script>

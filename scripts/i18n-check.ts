@@ -17,6 +17,52 @@ const PLURAL = /_(zero|one|two|few|many|other)$/;
 const vars = (s: string) => [...new Set([...s.matchAll(/\{(\w+)\}/g)].map((m) => (m[1] === 'gamesLc' ? 'games' : m[1])))].sort().join(',');
 const tags = (s: string) => [...s.matchAll(/<\/?([a-z0-9]+)[^>]*>/gi)].map((m) => m[0].startsWith('</') ? `/${m[1]}` : m[1]).join(' ');
 
+// ── Long-form content (src/i18n/content/<lang>.json) and hero texts (data/editorial/<lang>.json) ──
+// Every language must cover what English covers. Length is compared to English in characters (CJK/Thai need fewer).
+type Block = { intro?: string; faq?: Array<{ q?: string; a?: string }> };
+type ContentFile = { home?: { h2?: string; intro?: string }; cat?: Record<string, Block>; land?: Record<string, Block> };
+type Editorial = Record<string, { summary?: string; how_to?: string; tips?: string[]; faq?: Array<{ q?: string; a?: string }> }>;
+const readJson = <T>(f: string): T | null => (existsSync(f) ? (JSON.parse(readFileSync(f, 'utf8')) as T) : null);
+const enContent = readJson<ContentFile>('src/i18n/content/en.json');
+const enEditorial = readJson<Editorial>('data/editorial/en.json');
+const DENSE = new Set(['ja', 'ko', 'zh-hans', 'zh-hant', 'th']);
+function checkLongForm(lang: string): string[] {
+  const errs: string[] = [];
+  const minRatio = lang === 'en' ? 1 : DENSE.has(lang) ? 0.2 : 0.55;
+  const tooShort = (txt: string | undefined, ref: string | undefined) => !txt?.trim() || (ref ? txt.length < ref.length * minRatio : false);
+  const leftovers = (txt: string) => /\{[a-zA-Z]+\}|TODO|lorem|\[\[/i.test(txt);
+  if (enContent) {
+    const c = lang === 'en' ? enContent : readJson<ContentFile>(`src/i18n/content/${lang}.json`);
+    if (!c) errs.push(`missing src/i18n/content/${lang}.json`);
+    else {
+      if (enContent.home && (tooShort(c.home?.intro, enContent.home.intro) || !c.home?.h2?.trim())) errs.push('content: home missing/too short');
+      for (const kind of ['cat', 'land'] as const) {
+        for (const [slug, ref] of Object.entries(enContent[kind] ?? {})) {
+          const b = c[kind]?.[slug];
+          if (!b) { errs.push(`content: missing ${kind}.${slug}`); continue; }
+          if (tooShort(b.intro, ref.intro)) errs.push(`content: ${kind}.${slug} intro too short`);
+          if (lang === 'en' && (b.intro ?? '').split(/\s+/).length < 140) errs.push(`content: ${kind}.${slug} intro under 140 words`);
+          if ((b.faq ?? []).filter((f) => f.q?.trim() && f.a?.trim()).length < 3) errs.push(`content: ${kind}.${slug} needs ≥ 3 FAQ`);
+          if (leftovers(JSON.stringify(b))) errs.push(`content: ${kind}.${slug} has placeholders/TODO`);
+        }
+      }
+    }
+  }
+  if (enEditorial) {
+    const e = lang === 'en' ? enEditorial : readJson<Editorial>(`data/editorial/${lang}.json`);
+    if (e) {
+      for (const [slug, ref] of Object.entries(enEditorial)) {
+        const x = e[slug];
+        if (!x) { errs.push(`editorial: missing ${slug}`); continue; }
+        if (tooShort(x.summary, ref.summary)) errs.push(`editorial: ${slug} summary too short`);
+        if ((x.faq ?? []).length < Math.min(3, (ref.faq ?? []).length)) errs.push(`editorial: ${slug} FAQ incomplete`);
+        if (leftovers(JSON.stringify(x))) errs.push(`editorial: ${slug} has placeholders/TODO`);
+      }
+    }
+  }
+  return errs;
+}
+
 const langs = process.argv.slice(2).length ? process.argv.slice(2) : OTHER_LANGS;
 let bad = 0;
 for (const lang of langs) {
@@ -66,7 +112,11 @@ for (const lang of langs) {
       if (tr.html && /href="(?!\/|mailto:|https:)/.test(tr.html)) errs.push(`docs: ${doc} odd href`);
     }
   }
+  errs.push(...checkLongForm(lang));
   if (errs.length) bad++;
   console.log(`${lang}: ${errs.length ? `${errs.length} problems\n  ${errs.slice(0, 30).join('\n  ')}` : 'OK'}`);
 }
+// English long-form content and editorial texts must be complete too.
+const enErrs = checkLongForm('en');
+if (enErrs.length) { bad++; console.log(`en (long-form): ${enErrs.length} problems\n  ${enErrs.slice(0, 30).join('\n  ')}`); }
 process.exit(bad ? 1 : 0);

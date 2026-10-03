@@ -10,6 +10,7 @@ import RecommendedList from './RecommendedList.astro';
 import type { GameDetail } from '../lib/types';
 import { canonical, categoryPath, gamePath, largeImage } from '../lib/site';
 import { useI18n } from '../i18n';
+import { paragraphs } from '../lib/paragraphs';
 import { truncate } from '../lib/text';
 import { parseControls } from '../lib/controls';
 import { categoryIcon } from '../lib/category-icons';
@@ -22,14 +23,19 @@ const t = i.t;
 // Publisher texts are English and are shown only on English pages. Other languages get a short intro written
 // from known facts (category, players, devices), and the page stays noindex (templated text = thin duplicates).
 const localised = i.lang !== 'en';
-const description = localised ? '' : g.description;
-const instructions = localised ? '' : g.instructions;
+// Hero games carry Pixuvo's own text per language: it replaces the partner text, and a localised page that has it
+// is indexable with hreflang between the languages that have it.
+const ed = g.editorial ?? null;
+const edLangs = g.editorialLangs ?? [];
+const indexable = !localised || !!ed;
+const description = ed ? '' : localised ? '' : g.description;
+const instructions = ed ? ed.howTo : localised ? '' : g.instructions;
 const catName = (c: { slug: string; name: string }) => i.cat(c.slug, c.name);
 const path = gamePath(g.slug);
 const cat = g.primaryCategory;
 const crumbs = [{ name: t('nav.home'), href: '/' }, ...(cat ? [{ name: t('game.categoryGames', i.catGames(cat.slug, catName(cat))), href: categoryPath(cat.slug) }] : [{ name: t('nav.allGames'), href: '/games/' }]), { name: g.title, href: path }];
 const tail = t('game.tail', { title: g.title });
-const short = description ? truncate(description.replace(/\s+/g, ' ').trim(), 150) : '';
+const short = ed ? truncate(ed.summary.replace(/\s+/g, ' ').trim(), 155) : description ? truncate(description.replace(/\s+/g, ' ').trim(), 150) : '';
 // Partner blurbs can be a few words ("A one-touch race, fly, crash"): pad them to a useful snippet.
 const desc = short.length >= 70 ? short : short ? truncate(`${short.replace(/[.!]?$/, '.')} ${tail}`, 158) : `${tail} ${t('game.tailNoDesc')}`;
 const portrait = g.orientation === 'portrait' || (!!g.width && !!g.height && g.height > g.width * 1.1);
@@ -56,7 +62,7 @@ const intro = [
 ].filter(Boolean).join(['ja', 'zh-hans', 'zh-hant'].includes(i.lang) ? '' : ' '); // CJK sentences are not separated by spaces
 const ld = [{
   '@context': 'https://schema.org', '@type': 'VideoGame', name: g.title, url: canonical(path), image: largeImage(g.thumb),
-  ...(description ? { description: truncate(description, 500) } : {}),
+  ...(ed ? { description: truncate(ed.summary, 500) } : description ? { description: truncate(description, 500) } : {}),
   inLanguage: i.tag,
   genre: g.categories.filter((c) => c.slug !== '2-player' && c.slug !== 'multiplayer').map((c) => c.name).slice(0, 4),
   gamePlatform: 'Web browser', applicationCategory: 'Game', operatingSystem: 'Any',
@@ -71,7 +77,7 @@ const FRAME_HOST: Record<string, string> = { GameMonetize: 'https://html5.gamemo
 const frameHost = g.providerName ? FRAME_HOST[g.providerName] : undefined;
 const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait, fit, ...(cat ? { cat: cat.slug } : {}) };
 ---
-<Base title={t('game.title', { title: g.title })} description={desc} path={path} ogImage={largeImage(g.thumb)} jsonLd={ld} noindex={localised} alternates={['en']} ga={{ page_type: 'game', game_slug: g.slug, game_title: g.title.slice(0, 90), ...(cat ? { game_category: cat.slug } : {}), ...(g.providerName ? { provider: g.providerName } : {}) }}>
+<Base title={t('game.title', { title: g.title })} description={desc} path={path} ogImage={largeImage(g.thumb)} jsonLd={ld} noindex={!indexable} alternates={['en', ...edLangs.filter((l) => l !== 'en')]} ga={{ page_type: 'game', game_slug: g.slug, game_title: g.title.slice(0, 90), ...(cat ? { game_category: cat.slug } : {}), ...(g.providerName ? { provider: g.providerName } : {}) }}>
   {frameHost && <link slot="head" rel="preconnect" href={frameHost} />}
   <div class="wrap game-page">
     <Breadcrumbs items={crumbs} />
@@ -137,7 +143,7 @@ const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait,
 
         <section class="panel" aria-labelledby="about-h">
           <h2 id="about-h"><span class="panel-ico" aria-hidden="true">📄</span>{t('game.about', { title: g.title })}</h2>
-          {localised ? <div class="prose"><p>{intro}</p></div> : description ? <div class="prose"><p>{description}</p></div> : <p class="note">{t('game.noDescription')}</p>}
+          {ed ? <div class="prose">{paragraphs(ed.summary).map((p) => <p>{p}</p>)}</div> : localised ? <div class="prose"><p>{intro}</p></div> : description ? <div class="prose"><p>{description}</p></div> : <p class="note">{t('game.noDescription')}</p>}
           <div class="tag-row">
             {g.categories.map((c, idx) => <Tag href={categoryPath(c.slug)} tone={tones[idx % tones.length]!} small>{catName(c)}</Tag>)}
             {styleLabel && <Tag tone="orange" small>{styleLabel}</Tag>}
@@ -151,7 +157,7 @@ const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait,
             {instructions && (
               <section class="panel" aria-labelledby="howto-h">
                 <h2 id="howto-h"><span class="panel-ico" aria-hidden="true">🎮</span>{t('game.howTo')}</h2>
-                <div class="prose"><p>{instructions}</p></div>
+                <div class="prose">{paragraphs(instructions).map((p) => <p>{p}</p>)}</div>
               </section>
             )}
             {controls.length > 0 && (
@@ -161,6 +167,18 @@ const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait,
               </section>
             )}
           </div>
+        )}
+        {ed && ed.tips.length > 0 && (
+          <section class="panel" aria-labelledby="tips-h">
+            <h2 id="tips-h"><span class="panel-ico" aria-hidden="true">💡</span>{t('game.tipsH2', { title: g.title })}</h2>
+            <ul class="tips">{ed.tips.map((x) => <li>{x}</li>)}</ul>
+          </section>
+        )}
+        {ed && ed.faq.length > 0 && (
+          <section class="panel faq" aria-labelledby="faq-h">
+            <h2 id="faq-h"><span class="panel-ico" aria-hidden="true">❓</span>{t('game.faqH2', { title: g.title })}</h2>
+            {ed.faq.map((f) => <details><summary>{f.q}</summary><p>{f.a}</p></details>)}
+          </section>
         )}
       </div>
 

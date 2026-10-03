@@ -3,6 +3,8 @@ import Base from '../layouts/Base.astro';
 import GameGrid from './GameGrid.astro';
 import Pagination from './Pagination.astro';
 import Breadcrumbs from './Breadcrumbs.astro';
+import CategoryContent from './CategoryContent.astro';
+import type { Block } from '../i18n/content';
 import FilterPanel from './FilterPanel.astro';
 import FilterSide from './FilterSide.astro';
 import CategoryBar from './CategoryBar.astro';
@@ -29,6 +31,8 @@ interface Props {
   indexable?: boolean;
   filterable?: boolean;
   related?: Array<{ href: string; name: string }>;
+  /** Long-form content for page 1 (prerendered views only). */
+  content?: { block?: Block | undefined; subs?: Array<{ slug: string; name: string; blurb: string }> } | undefined;
 }
 const p = Astro.props;
 const i = await useI18n(Astro);
@@ -79,12 +83,13 @@ const filterable = p.filterable !== false;
         <div id="game-pager"><Pagination page={p.page} pages={p.pages} href={(n) => categoryPath(p.slug, n)} label={t('cat.pagesLabel', gv)} /></div>
       </div>
     </div>
-    {subs.length > 0 && filterable && (
+    {subs.length > 0 && filterable && !(p.page === 1 && p.content?.subs?.length) && (
       <section class="section" aria-labelledby="sub-h">
         <div class="section-head"><h2 id="sub-h">{t('cat.explore', gv)}</h2></div>
         <div class="chips">{subs.map((s) => <a class="chip" href={categoryPath(s.slug)}><img src={categoryIcon(s.slug)} alt="" width="22" height="22" loading="lazy" />{t('cat.subGames', i.catGames(s.slug, s.name))} <span class="count">{i.approx(s.count)}</span></a>)}</div>
       </section>
     )}
+    {p.page === 1 && p.content && <CategoryContent block={p.content.block} games={gv} subs={p.content.subs} />}
     {p.related && p.related.length > 0 && (
       <section class="section" aria-labelledby="rel-h">
         <div class="section-head"><h2 id="rel-h">{t('cat.related')}</h2></div>

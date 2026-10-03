@@ -5,7 +5,7 @@ import { loadGame } from '../../../views/loaders';
 import { validLang } from '../../../views/guard';
 const lang = Astro.params.lang!;
 if (!validLang(lang)) return Astro.rewrite('/404/');
-const res = await loadGame(Astro.params.path ?? '');
+const res = await loadGame(Astro.params.path ?? '', lang);
 if (res.kind === 'redirect') return Astro.redirect(`/${lang}/games/${res.slug}/`, 301);
 if (res.kind !== 'ok') return Astro.rewrite(`/${lang}/404/`);
 ---

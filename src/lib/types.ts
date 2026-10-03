@@ -53,6 +53,10 @@ export interface GameDetail extends GameCard {
   related: GameCard[];
   /** Next games of the primary category by id (chain through the whole category, see neighborGames). */
   neighbors?: GameCard[];
+  /** Pixuvo's own text for this game in the page language (hero games), see migrations/0009. */
+  editorial?: GameEditorial | null;
+  /** Languages that have editorial text (hreflang + indexability of localised pages). */
+  editorialLangs?: string[];
 }
 
 export type ListSort = 'featured' | 'new' | 'az';
@@ -63,4 +67,11 @@ export interface Paged<T> {
   pageSize: number;
   total: number;
   pages: number;
+}
+
+export interface GameEditorial {
+  summary: string;
+  howTo: string;
+  tips: string[];
+  faq: Array<{ q: string; a: string }>;
 }

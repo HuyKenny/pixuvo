@@ -11,7 +11,7 @@ const redirects = await db.all<{ old_slug: string; slug: string }>('SELECT r.old
 ---
 <Admin title="SEO landings & redirects">
   <p class="note">Landing pages are curated intersections of categories (e.g. racing ∩ 2 player). They appear only with at least their minimum number of real games, after the next catalog publish.</p>
-  {[...landings, { slug: '', h1: '', title: '', description: '', intro: '', all: [], indexable: true, minGames: 24 }].map((l) => (
+  {[...landings, { slug: '', h1: '', title: '', description: '', intro: '', all: [] as string[], any: [] as string[], themes: [] as string[], tags: [] as string[], top: false, indexable: true, minGames: 24 }].map((l) => (
     <details class="panel" style="margin-top:10px" open={!l.slug}>
       <summary><b>{l.slug ? `/${l.slug}-games/` : 'New landing'}</b> {l.slug && <span class:list={['pill', status.get(l.slug)]}>{status.get(l.slug)}</span>}</summary>
       <form method="post" action="/api/admin/landing/" style="display:grid;gap:8px;margin-top:8px">
@@ -21,7 +21,9 @@ const redirects = await db.all<{ old_slug: string; slug: string }>('SELECT r.old
         <label class="field">Title<input type="text" name="title" value={l.title} required maxlength="70" /></label>
         <label class="field">Meta description<input type="text" name="description" value={l.description} required maxlength="170" /></label>
         <label class="field">Intro<textarea name="intro" rows="3">{l.intro}</textarea></label>
-        <div class="opt-row">{CATEGORIES.map((c) => <label class="opt"><input type="checkbox" name="all" value={c.slug} checked={l.all.includes(c.slug)} /><span>{c.name}</span></label>)}</div>
+        {l.slug && !l.all.length
+          ? <p class="note"><input type="hidden" name="keep_filter" value="1" />Theme landing — filter (any: {l.any.join(', ') || '–'}; themes: {l.themes.join(', ') || '–'}; tags: {l.tags.join(', ') || '–'}{l.top ? '; whole catalog' : ''}) is set in a migration and kept when saving.</p>
+          : <div class="opt-row">{CATEGORIES.map((c) => <label class="opt"><input type="checkbox" name="all" value={c.slug} checked={l.all.includes(c.slug)} /><span>{c.name}</span></label>)}</div>}
         <div class="row"><label class="field">Status<select name="status"><option selected={status.get(l.slug) === 'published'}>published</option><option selected={status.get(l.slug) !== 'published'}>draft</option></select></label>
           <label><input type="checkbox" name="indexable" value="1" checked={l.indexable} /> indexable</label><button class="btn btn-primary">Save</button></div>
       </form>

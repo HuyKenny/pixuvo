@@ -5,7 +5,7 @@
  */
 import { MIN_CATEGORY_GAMES, SEARCH_SYNONYMS, THEMES, THEME_SLUGS, type ThemeDef } from './taxonomy';
 import { normTitle } from './text';
-import type { CategoryInfo, CategoryRef, GameCard, GameDetail, ListSort, Paged } from './types';
+import type { GameEditorial, CategoryInfo, CategoryRef, GameCard, GameDetail, ListSort, Paged } from './types';
 import { SITE } from './site';
 
 export type Param = string | number | null;
@@ -525,6 +525,33 @@ export async function neighborGames(q: Q, gameId: number, categoryId: number | n
   return [...after, ...wrap].map(toCard);
 }
 
+/** Pixuvo's own texts for a game: the row for `lang` (or null) and every language that has one. */
+export async function gameEditorial(q: Q, gameId: number, lang: string): Promise<{ editorial: GameEditorial | null; langs: string[] }> {
+  const rows = await q.all<{ lang: string; summary: string; how_to: string; tips_json: string; faq_json: string }>(
+    'SELECT lang, summary, how_to, tips_json, faq_json FROM game_editorial WHERE game_id = ? LIMIT 40',
+    [gameId],
+  );
+  const r = rows.find((x) => x.lang === lang);
+  return { editorial: r ? parseEditorial(r) : null, langs: rows.map((x) => x.lang) };
+}
+
+export function parseEditorial(r: { summary: string; how_to: string; tips_json: string; faq_json: string }): GameEditorial {
+  const arr = <T>(raw: string, ok: (x: unknown) => x is T): T[] => {
+    try {
+      const a = JSON.parse(raw) as unknown;
+      return Array.isArray(a) ? a.filter(ok).slice(0, 8) : [];
+    } catch {
+      return [];
+    }
+  };
+  return {
+    summary: r.summary,
+    howTo: r.how_to,
+    tips: arr(r.tips_json, (x): x is string => typeof x === 'string' && x.length > 0),
+    faq: arr(r.faq_json, (x): x is { q: string; a: string } => !!x && typeof (x as { q?: unknown }).q === 'string' && typeof (x as { a?: unknown }).a === 'string'),
+  };
+}
+
 export async function getSetting(q: Q, key: string): Promise<string | null> {
   const [r] = await q.all<{ value: string }>('SELECT value FROM site_settings WHERE key = ? LIMIT 1', [key]);
   return r?.value ?? null;
@@ -537,29 +564,67 @@ export interface Landing {
   title: string;
   description: string;
   intro: string;
+  /** Games in ALL of these categories (intersection, e.g. racing + 2-player). */
   all: string[];
+  /** Games in ANY of these categories, plus games carrying a tag of these themes / these tags (union). */
+  any: string[];
+  themes: string[];
+  tags: string[];
+  /** No filter: the best games of the whole catalog (e.g. "unblocked games"). */
+  top: boolean;
   indexable: boolean;
   minGames: number;
 }
+
+const strList = (v: unknown, max: number) => (Array.isArray(v) ? v.filter((x): x is string => typeof x === 'string').slice(0, max) : []);
 
 export async function getLandings(q: Q, includeDrafts = false): Promise<Landing[]> {
   const rows = await q.all<{ slug: string; h1: string; title: string; description: string; intro: string; filter: string; indexable: number; min_games: number }>(
     `SELECT slug, h1, title, description, intro, filter, indexable, min_games FROM seo_landings ${includeDrafts ? '' : "WHERE status = 'published'"} ORDER BY slug LIMIT 500`,
   );
   return rows.map((r) => {
-    let all: string[] = [];
+    let f: Record<string, unknown> = {};
     try {
-      const f = JSON.parse(r.filter) as { all?: unknown };
-      all = Array.isArray(f.all) ? f.all.filter((x): x is string => typeof x === 'string').slice(0, 3) : [];
+      f = JSON.parse(r.filter) as Record<string, unknown>;
     } catch {
-      all = [];
+      f = {};
     }
-    return { slug: r.slug, h1: r.h1, title: r.title, description: r.description, intro: r.intro, all, indexable: r.indexable === 1, minGames: r.min_games };
+    return {
+      slug: r.slug, h1: r.h1, title: r.title, description: r.description, intro: r.intro,
+      all: strList(f.all, 3), any: strList(f.any, 8), themes: strList(f.themes, 4).filter((t) => THEME_SLUGS.includes(t)), tags: strList(f.tags, 8), top: f.top === true,
+      indexable: r.indexable === 1, minGames: r.min_games,
+    };
   });
 }
 
+/** Category slugs a landing is built from (for "related" links in both directions). */
+export const landingCategories = (l: Pick<Landing, 'all' | 'any'>): string[] => [...l.all, ...l.any];
+
+/** The games of a landing, best first (runs offline in the snapshot, so a few extra reads do not matter). */
+export async function landingGames(q: Q, cats: CategoryInfo[], l: Pick<Landing, 'all' | 'any' | 'themes' | 'tags' | 'top'>, limit: number): Promise<{ items: GameCard[]; total: number }> {
+  if (l.all.length) return intersectionGames(q, cats, l.all, limit);
+  if (l.top) {
+    const [n] = await q.all<{ n: number }>("SELECT count(*) AS n FROM games WHERE status = 'published'");
+    return { items: await topGames(q, 'featured', limit), total: n?.n ?? 0 };
+  }
+  const catIds = l.any.map((s) => cats.find((c) => c.slug === s)?.id).filter((x): x is number => !!x);
+  const tags = [...new Set([...l.tags, ...l.themes.flatMap((t) => THEMES.find((x) => x.slug === t)?.tags ?? [])])];
+  const parts: string[] = [];
+  const params: Param[] = [];
+  if (catIds.length) { parts.push(`SELECT game_id FROM game_categories WHERE published = 1 AND category_id IN (${catIds.map(() => '?').join(',')})`); params.push(...catIds); }
+  if (tags.length) { parts.push(`SELECT gt.game_id FROM game_tags gt JOIN tags t ON t.id = gt.tag_id WHERE t.slug IN (${tags.map(() => '?').join(',')})`); params.push(...tags); }
+  if (!parts.length) return { items: [], total: 0 };
+  const ids = `SELECT DISTINCT game_id FROM (${parts.join(' UNION ')})`;
+  const rows = await q.all<CardRow>(
+    `SELECT ${CARD_COLS} FROM games g ${CARD_JOIN} WHERE g.id IN (${ids}) AND g.status = 'published' ORDER BY g.rank_score DESC, g.id DESC LIMIT ?`,
+    [...params, limit],
+  );
+  const cnt = await q.all<{ n: number }>(`SELECT count(*) AS n FROM games g WHERE g.id IN (${ids}) AND g.status = 'published'`, params);
+  return { items: rows.map(toCard), total: cnt[0]?.n ?? 0 };
+}
+
 /** Games that are in ALL listed categories (2–3 way intersection), best first. */
-export async function landingGames(q: Q, cats: CategoryInfo[], slugs: string[], limit: number): Promise<{ items: GameCard[]; total: number }> {
+async function intersectionGames(q: Q, cats: CategoryInfo[], slugs: string[], limit: number): Promise<{ items: GameCard[]; total: number }> {
   const ids = slugs.map((s) => cats.find((c) => c.slug === s)?.id).filter((x): x is number => !!x);
   if (ids.length !== slugs.length || ids.length < 1) return { items: [], total: 0 };
   // Drive from the smallest category.
