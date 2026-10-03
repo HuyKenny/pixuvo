@@ -1,7 +1,7 @@
 import { beforeAll, describe, expect, it } from 'vitest';
 import { runImport } from '../../scripts/import/pipeline.ts';
 import { gamemonetize } from '../../scripts/import/adapters/gamemonetize.ts';
-import { ALL_FACETS, categoryGames, computeFacets, directoryPage, filterGames, getCategories, getGame, landingGames, parseFilters, relatedGames, searchGames, suggest } from '../../src/lib/catalog.ts';
+import { ALL_FACETS, DIR_BOUNDS_SQL, parseBounds, categoryGames, computeFacets, directoryPage, filterGames, getCategories, getGame, landingGames, parseFilters, relatedGames, searchGames, suggest } from '../../src/lib/catalog.ts';
 import { asQ, freshDb, GM_CONFIG, gmFeed, gmItem } from '../helpers.ts';
 
 const db = freshDb();
@@ -86,10 +86,19 @@ describe('catalog queries', () => {
     expect(r.items.map((g) => g.title)).toEqual(['Super Car Drift']);
     expect(r.total).toBe(1);
   });
-  it('directory pages cover the catalog by dir_seq', async () => {
-    const p = await directoryPage(q, 25, 1, 10);
-    expect(p.items).toHaveLength(10);
-    expect(p.pages).toBe(3);
+  it('directory pages are always full even with unpublished games in between', async () => {
+    await db.batch([{ sql: "UPDATE games SET status = 'hidden' WHERE title IN ('Racing Filler 3', 'Racing Filler 7', 'Racing Filler 12')" }]);
+    // Same statement the importer/admin run; page size here is the site's 48, so use 10 via a local copy.
+    await db.batch([{ sql: DIR_BOUNDS_SQL.replace(/% \d+ = 0/, '% 10 = 0') }]);
+    const bounds = parseBounds((await db.all<{ value: string }>("SELECT value FROM site_settings WHERE key = 'dir_bounds'")).rows[0]!.value);
+    expect(bounds).toHaveLength(3); // 22 published games → 10 + 10 + 2
+    const p1 = await directoryPage(q, bounds, 22, 1, 10);
+    const p2 = await directoryPage(q, bounds, 22, 2, 10);
+    const p3 = await directoryPage(q, bounds, 22, 3, 10);
+    expect([p1.items.length, p2.items.length, p3.items.length]).toEqual([10, 10, 2]);
+    expect(new Set([...p1.items, ...p2.items, ...p3.items].map((g) => g.id)).size).toBe(22);
+    expect(p1.pages).toBe(3);
+    await db.batch([{ sql: "UPDATE games SET status = 'published' WHERE title IN ('Racing Filler 3', 'Racing Filler 7', 'Racing Filler 12')" }]);
   });
   it('game lookup handles ok / redirect / gone / missing; related excludes itself', async () => {
     const ok = await getGame(q, 'car-rush');

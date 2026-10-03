@@ -5,7 +5,7 @@
 import { CATEGORIES } from '../taxonomy';
 import { htmlToText, cleanTitle } from '../text';
 import type { D1Q } from './db';
-import type { Param } from '../catalog';
+import { DIR_BOUNDS_SQL, type Param } from '../catalog';
 
 export type ActionResult = { ok: true; message: string } | { ok: false; message: string };
 type Stmt = { sql: string; params?: Param[] };
@@ -15,6 +15,7 @@ const audit = (actor: string, action: string, type: string, id: string | number,
   sql: 'INSERT INTO admin_audit_log (at, actor, action, target_type, target_id, details) VALUES (?, ?, ?, ?, ?, ?)',
   params: [now(), actor, action, type, String(id), JSON.stringify(details).slice(0, 4000)],
 });
+const dirBounds: Stmt = { sql: DIR_BOUNDS_SQL };
 const bump: Stmt = { sql: "UPDATE site_settings SET value = CAST(CAST(value AS INTEGER) + 1 AS TEXT), updated_at = datetime('now') WHERE key = 'data_version'" };
 const recount = (gameIds: number[]): Stmt => ({
   sql: `UPDATE categories SET game_count = (SELECT count(*) FROM game_categories gc WHERE gc.category_id = categories.id AND gc.published = 1)
@@ -38,6 +39,7 @@ export async function setGameStatus(db: D1Q, actor: string, ids: number[], statu
               ON CONFLICT(game_id, field) DO UPDATE SET value = excluded.value, updated_by = excluded.updated_by, updated_at = excluded.updated_at`, params: [id, status, actor, now()] })),
     recount(clean),
     audit(actor, 'game.status', 'game', clean.join(','), { status }),
+    dirBounds,
     bump,
   ]);
   return { ok: true, message: `${clean.length} game(s) set to ${status}.` };
@@ -130,6 +132,7 @@ export async function updateProvider(db: D1Q, actor: string, id: string, f: { pu
                AND id IN (SELECT game_id FROM game_sources WHERE provider_id = ?) AND NOT ${otherUsable}`, params: [now(), id, id] },
       { sql: `UPDATE game_categories SET published = 0 WHERE published = 1 AND game_id IN (SELECT id FROM games WHERE review_reason = 'provider_disabled')` },
       { sql: `UPDATE categories SET game_count = (SELECT count(*) FROM game_categories gc WHERE gc.category_id = categories.id AND gc.published = 1)` },
+      dirBounds,
     ]);
   } else {
     await db.batch([
@@ -137,6 +140,7 @@ export async function updateProvider(db: D1Q, actor: string, id: string, f: { pu
                AND id IN (SELECT game_id FROM game_sources WHERE provider_id = ?)`, params: [now(), id] },
       { sql: `UPDATE game_categories SET published = 1 WHERE published = 0 AND game_id IN (SELECT game_id FROM game_sources WHERE provider_id = ?) AND (SELECT status FROM games WHERE id = game_categories.game_id) = 'published'`, params: [id] },
       { sql: `UPDATE categories SET game_count = (SELECT count(*) FROM game_categories gc WHERE gc.category_id = categories.id AND gc.published = 1)` },
+      dirBounds,
     ]);
   }
   return { ok: true, message: `Provider ${id} updated. Plays are checked immediately; listings ${usable ? 'restored' : 'hidden'} (static pages follow with the next publish).` };
@@ -165,6 +169,7 @@ export async function mergeGames(db: D1Q, actor: string, keep: number, dup: numb
     // Bulk callers recount once at the end instead of after every merge.
     ...(opts.recount === false ? [] : [{ sql: `UPDATE categories SET game_count = (SELECT count(*) FROM game_categories gc WHERE gc.category_id = categories.id AND gc.published = 1)` }]),
     audit(actor, 'game.merge', 'game', keep, { merged: dup, candidateId, oldSlug: d.slug }),
+    dirBounds,
     bump,
   ]);
   return { ok: true, message: `Merged “${d.slug}” into game ${keep}; /games/${d.slug}/ now redirects (301).` };

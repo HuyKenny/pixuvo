@@ -1,3 +1,4 @@
+import { DIR_BOUNDS_SQL } from '../src/lib/catalog.ts';
 /**
  * Bulk editorial pass over the review queues (same SQL as the admin actions, audited):
  *  1. games held only because a partner TAG said "adult" (title clean) → published
@@ -65,6 +66,7 @@ for (const c of cands) {
   if ((merged + rejected) % 200 === 0) process.stdout.write(`\r${merged} merged, ${rejected} rejected`);
 }
 if (!dry && merged) await db.batch([
+  { sql: DIR_BOUNDS_SQL },
   { sql: 'UPDATE categories SET game_count = (SELECT count(*) FROM game_categories gc WHERE gc.category_id = categories.id AND gc.published = 1)' },
   { sql: "INSERT INTO site_settings (key, value, updated_at) VALUES ('published_count', (SELECT CAST(count(*) AS TEXT) FROM games WHERE status='published'), datetime('now')) ON CONFLICT(key) DO UPDATE SET value=excluded.value, updated_at=excluded.updated_at" },
 ]);

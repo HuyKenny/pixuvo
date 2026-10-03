@@ -16,6 +16,7 @@ import {
 } from '../../src/lib/taxonomy.ts';
 import { contentWords, dedupeKey, hashString, inferControls, isDistinctiveTitle, jaccard, normTitle, shingles, slugify, stableStringify } from '../../src/lib/text.ts';
 import { rankScore } from '../../src/lib/rank.ts';
+import { DIR_BOUNDS_SQL } from '../../src/lib/catalog.ts';
 import type { SqlDb, SqlValue, Stmt } from './db.ts';
 import type { ProviderAdapter, SourceItem } from './types.ts';
 
@@ -584,6 +585,7 @@ export async function refreshOutputs(db: SqlDb, now: string) {
     { sql: "UPDATE categories SET game_count = (SELECT count(*) FROM game_categories gc WHERE gc.category_id = categories.id AND gc.published = 1), updated_at=?", params: [now] },
     { sql: "INSERT INTO site_settings (key, value, updated_at) VALUES ('published_count', (SELECT CAST(count(*) AS TEXT) FROM games WHERE status='published'), ?) ON CONFLICT(key) DO UPDATE SET value=excluded.value, updated_at=excluded.updated_at", params: [now] },
     { sql: "INSERT INTO site_settings (key, value, updated_at) VALUES ('max_dir_seq', (SELECT CAST(coalesce(max(dir_seq),0) AS TEXT) FROM games), ?) ON CONFLICT(key) DO UPDATE SET value=excluded.value, updated_at=excluded.updated_at", params: [now] },
+    { sql: DIR_BOUNDS_SQL },
     { sql: "UPDATE site_settings SET value = CAST(CAST(value AS INTEGER) + 1 AS TEXT), updated_at=? WHERE key='data_version'", params: [now] },
   ]);
 }

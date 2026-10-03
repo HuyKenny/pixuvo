@@ -1,13 +1,15 @@
 ---
 export const prerender = false;
 import DirectoryView from '../../../components/DirectoryView.astro';
-import { clampPage, getSetting } from '../../../lib/catalog';
+import { clampPage, getSetting, parseBounds } from '../../../lib/catalog';
 import { q } from '../../../lib/server/db';
 import { SITE } from '../../../lib/site';
 const page = clampPage(Astro.params.n ?? '', 5000);
 if (page === null) return Astro.rewrite('/404/');
 if (page === 1) return Astro.redirect('/games/', 301);
-const maxSeq = Number((await getSetting(q(), 'max_dir_seq')) ?? 0);
-if (page > Math.ceil(maxSeq / SITE.pageSize)) return Astro.rewrite('/404/');
+const db = q();
+const [boundsRaw, published] = await Promise.all([getSetting(db, 'dir_bounds'), getSetting(db, 'published_count')]);
+const bounds = parseBounds(boundsRaw);
+if (page > (bounds.length || Math.ceil(Number(published ?? 0) / SITE.pageSize))) return Astro.rewrite('/404/');
 ---
 <DirectoryView page={page} />

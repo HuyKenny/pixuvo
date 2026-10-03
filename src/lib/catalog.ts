@@ -88,16 +88,43 @@ export async function gamesByIds(q: Q, ids: number[]): Promise<GameCard[]> {
   return clean.map((id) => byId.get(id)).filter((x): x is GameCard => !!x);
 }
 
-/** /games/ directory: newest additions first, paged by dir_seq ranges (O(page) reads, deterministic). */
-export async function directoryPage(q: Q, maxSeq: number, page: number, pageSize: number = SITE.pageSize): Promise<Paged<GameCard>> {
-  const hi = maxSeq - (page - 1) * pageSize;
-  const lo = hi - pageSize;
-  const rows = await q.all<CardRow>(
-    `SELECT ${CARD_COLS} FROM games g ${CARD_JOIN} WHERE g.dir_seq > ? AND g.dir_seq <= ? AND g.status = 'published' ORDER BY g.dir_seq DESC LIMIT ?`,
-    [lo, hi, pageSize],
-  );
-  const pages = Math.max(1, Math.ceil(maxSeq / pageSize));
-  return { items: rows.map(toCard), page, pageSize, total: maxSeq, pages };
+/**
+ * /games/ directory: every published game, newest additions first, always full pages.
+ * Page boundaries (dir_seq of every 48th published game) are precomputed into
+ * site_settings.dir_bounds by DIR_BOUNDS_STMT whenever statuses change, so page N
+ * is a keyset read of 48 index rows instead of an OFFSET scan.
+ */
+export const DIR_BOUNDS_SQL = `INSERT INTO site_settings (key, value, updated_at)
+  SELECT 'dir_bounds', coalesce(json_group_array(dir_seq), '[]'), datetime('now') FROM (
+    SELECT dir_seq FROM (SELECT dir_seq, row_number() OVER (ORDER BY dir_seq DESC) AS rn FROM games WHERE status = 'published')
+     WHERE (rn - 1) % ${SITE.pageSize} = 0 ORDER BY dir_seq DESC)
+  WHERE true -- SQLite needs a WHERE before ON CONFLICT in INSERT … SELECT (parser ambiguity)
+  ON CONFLICT(key) DO UPDATE SET value = excluded.value, updated_at = excluded.updated_at`;
+
+export function parseBounds(raw: string | null): number[] {
+  try {
+    const a = JSON.parse(raw ?? '[]') as unknown;
+    return Array.isArray(a) ? a.filter((x): x is number => Number.isInteger(x)) : [];
+  } catch {
+    return [];
+  }
+}
+
+export async function directoryPage(q: Q, bounds: number[], total: number, page: number, pageSize: number = SITE.pageSize): Promise<Paged<GameCard>> {
+  const start = bounds[page - 1];
+  const rows =
+    start !== undefined
+      ? await q.all<CardRow>(
+          `SELECT ${CARD_COLS} FROM games g ${CARD_JOIN} WHERE g.status = 'published' AND g.dir_seq <= ? ORDER BY g.dir_seq DESC LIMIT ?`,
+          [start, pageSize],
+        )
+      : // Bounds not computed yet: correct but slower OFFSET read on the (status, dir_seq) index.
+        await q.all<CardRow>(
+          `SELECT ${CARD_COLS} FROM games g ${CARD_JOIN} WHERE g.status = 'published' ORDER BY g.dir_seq DESC LIMIT ? OFFSET ?`,
+          [pageSize, (page - 1) * pageSize],
+        );
+  const pages = Math.max(1, bounds.length || Math.ceil(total / pageSize));
+  return { items: rows.map(toCard), page, pageSize, total, pages };
 }
 
 // ── Filters (client state lives in the URL fragment; this is the JSON API behind it) ──

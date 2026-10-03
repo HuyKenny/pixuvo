@@ -6,15 +6,15 @@ import Breadcrumbs from './Breadcrumbs.astro';
 import FilterPanel from './FilterPanel.astro';
 import FilterSide from './FilterSide.astro';
 import CategoryBar from './CategoryBar.astro';
-import { directoryPage, getSetting } from '../lib/catalog';
+import { directoryPage, getSetting, parseBounds } from '../lib/catalog';
 import { categoriesCached, q } from '../lib/server/db';
 import { MIN_CATEGORY_GAMES } from '../lib/taxonomy';
 import { approxCount } from '../lib/format';
 interface Props { page: number }
 const { page } = Astro.props;
 const db = q();
-const [maxSeq, published] = await Promise.all([getSetting(db, 'max_dir_seq'), getSetting(db, 'published_count')]);
-const res = await directoryPage(db, Number(maxSeq ?? 0), page);
+const [boundsRaw, published] = await Promise.all([getSetting(db, 'dir_bounds'), getSetting(db, 'published_count')]);
+const res = await directoryPage(db, parseBounds(boundsRaw), Number(published ?? 0), page);
 const cats = (await categoriesCached(db)).filter((c) => c.nav && c.count >= MIN_CATEGORY_GAMES);
 const href = (n: number) => (n > 1 ? `/games/page/${n}/` : '/games/');
 ---

@@ -8,6 +8,7 @@
  */
 import { parseArgs } from 'node:util';
 import { rankScore } from '../src/lib/rank.ts';
+import { DIR_BOUNDS_SQL } from '../src/lib/catalog.ts';
 import { loadConfig } from './lib/env.ts';
 import { openTarget } from './lib/target.ts';
 
@@ -58,6 +59,7 @@ const now = new Date().toISOString();
 await db.batch([
   { sql: "INSERT INTO site_settings (key, value, updated_at) VALUES ('list:popular', ?, ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value, updated_at = excluded.updated_at", params: [JSON.stringify(popular), now] },
   { sql: "INSERT INTO site_settings (key, value, updated_at) VALUES ('list:trending', ?, ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value, updated_at = excluded.updated_at", params: [JSON.stringify(trending), now] },
+  { sql: DIR_BOUNDS_SQL },
   { sql: "DELETE FROM aggregate_metrics WHERE day < date('now', '-120 day')" },
   { sql: "DELETE FROM reports WHERE created_at < datetime('now', '-365 day')" },
   { sql: "DELETE FROM import_runs WHERE started_at < datetime('now', '-180 day')" },
