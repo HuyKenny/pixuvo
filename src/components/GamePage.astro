@@ -19,16 +19,17 @@ interface Props { game: GameDetail }
 const { game: g } = Astro.props;
 const i = await useI18n(Astro);
 const t = i.t;
-// Translated publisher texts (machine translation, see scripts/translate.ts) when this language has them.
-const description = g.translation?.description ?? g.description;
-const instructions = g.translation?.instructions ?? g.instructions;
-const untranslated = i.lang !== 'en' && !g.translation;
+// Publisher texts are English and are shown only on English pages. Other languages get a short intro written
+// from known facts (category, players, devices), and the page stays noindex (templated text = thin duplicates).
+const localised = i.lang !== 'en';
+const description = localised ? '' : g.description;
+const instructions = localised ? '' : g.instructions;
 const catName = (c: { slug: string; name: string }) => i.cat(c.slug, c.name);
 const path = gamePath(g.slug);
 const cat = g.primaryCategory;
-const crumbs = [{ name: t('nav.home'), href: '/' }, ...(cat ? [{ name: t('game.categoryGames', { name: catName(cat) }), href: categoryPath(cat.slug) }] : [{ name: t('nav.allGames'), href: '/games/' }]), { name: g.title, href: path }];
+const crumbs = [{ name: t('nav.home'), href: '/' }, ...(cat ? [{ name: t('game.categoryGames', i.catGames(cat.slug, catName(cat))), href: categoryPath(cat.slug) }] : [{ name: t('nav.allGames'), href: '/games/' }]), { name: g.title, href: path }];
 const tail = t('game.tail', { title: g.title });
-const short = description && !untranslated ? truncate(description.replace(/\s+/g, ' ').trim(), 150) : '';
+const short = description ? truncate(description.replace(/\s+/g, ' ').trim(), 150) : '';
 // Partner blurbs can be a few words ("A one-touch race, fly, crash"): pad them to a useful snippet.
 const desc = short.length >= 70 ? short : short ? truncate(`${short.replace(/[.!]?$/, '.')} ${tail}`, 158) : `${tail} ${t('game.tailNoDesc')}`;
 const portrait = g.orientation === 'portrait' || (!!g.width && !!g.height && g.height > g.width * 1.1);
@@ -56,10 +57,17 @@ const faq: Array<{ q: string; a: string }> = [
   ...(controlText ? [{ q: t('game.faqControlsQ', { title: g.title }), a: t('game.faqControlsA', { controls: controlText }) }] : []),
   ...(g.categories.length ? [{ q: t('game.faqKindQ', { title: g.title }), a: t('game.faqKindA', { cats: g.categories.slice(0, 3).map(catName).join(', ') }) }] : []),
 ];
+const intro = [
+  cat ? t('game.introKind', { title: g.title, ...i.catGames(cat.slug, catName(cat)) }) : '',
+  t('game.introFree'),
+  g.players ? (g.players >= 2 ? t('game.introPlayersN', { n: g.players }) : t('game.introPlayers1')) : '',
+  g.mobile ? t('game.introDevicesAll') : t('game.introDesktop'),
+  controls.length ? t('game.introControls') : '',
+].filter(Boolean).join(['ja', 'zh-hans', 'zh-hant'].includes(i.lang) ? '' : ' '); // CJK sentences are not separated by spaces
 const ld = [{
   '@context': 'https://schema.org', '@type': 'VideoGame', name: g.title, url: canonical(path), image: g.thumb,
-  ...(description && !untranslated ? { description: truncate(description, 500) } : {}),
-  inLanguage: untranslated ? 'en' : i.tag,
+  ...(description ? { description: truncate(description, 500) } : {}),
+  inLanguage: i.tag,
   genre: g.categories.filter((c) => c.slug !== '2-player' && c.slug !== 'multiplayer').map((c) => c.name).slice(0, 4),
   gamePlatform: 'Web browser', applicationCategory: 'Game', operatingSystem: 'Any',
   playMode: g.players && g.players >= 2 ? 'MultiPlayer' : g.players === 1 ? 'SinglePlayer' : undefined,
@@ -71,7 +79,7 @@ const FRAME_HOST: Record<string, string> = { GameMonetize: 'https://html5.gamemo
 const frameHost = g.providerName ? FRAME_HOST[g.providerName] : undefined;
 const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait, fit, ...(cat ? { cat: cat.slug } : {}) };
 ---
-<Base title={t('game.title', { title: g.title })} description={desc} path={path} ogImage={g.thumb} jsonLd={ld} noindex={untranslated} alternates={['en', ...(g.translatedLangs ?? [])]} ga={{ page_type: 'game', game_slug: g.slug, game_title: g.title.slice(0, 90), ...(cat ? { game_category: cat.slug } : {}), ...(g.providerName ? { provider: g.providerName } : {}) }}>
+<Base title={t('game.title', { title: g.title })} description={desc} path={path} ogImage={g.thumb} jsonLd={ld} noindex={localised} alternates={['en']} ga={{ page_type: 'game', game_slug: g.slug, game_title: g.title.slice(0, 90), ...(cat ? { game_category: cat.slug } : {}), ...(g.providerName ? { provider: g.providerName } : {}) }}>
   {frameHost && <link slot="head" rel="preconnect" href={frameHost} />}
   <div class="wrap game-page">
     <Breadcrumbs items={crumbs} />
@@ -137,8 +145,7 @@ const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait,
 
         <section class="panel" aria-labelledby="about-h">
           <h2 id="about-h"><span class="panel-ico" aria-hidden="true">📄</span>{t('game.about', { title: g.title })}</h2>
-          {description ? <div class="prose" lang={untranslated ? 'en' : undefined}><p>{description}</p></div> : <p class="note">{t('game.noDescription')}</p>}
-          {description && i.lang !== 'en' && <p class="note mt-note">{untranslated ? t('game.originalText') : t('game.autoTranslated')}</p>}
+          {localised ? <div class="prose"><p>{intro}</p></div> : description ? <div class="prose"><p>{description}</p></div> : <p class="note">{t('game.noDescription')}</p>}
           <div class="tag-row">
             {g.categories.map((c, idx) => <Tag href={categoryPath(c.slug)} tone={tones[idx % tones.length]!} small>{catName(c)}</Tag>)}
             {styleLabel && <Tag tone="orange" small>{styleLabel}</Tag>}
@@ -152,7 +159,7 @@ const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait,
             {instructions && (
               <section class="panel" aria-labelledby="howto-h">
                 <h2 id="howto-h"><span class="panel-ico" aria-hidden="true">🎮</span>{t('game.howTo')}</h2>
-                <div class="prose" lang={untranslated ? 'en' : undefined}><p>{instructions}</p></div>
+                <div class="prose"><p>{instructions}</p></div>
               </section>
             )}
             {controls.length > 0 && (
@@ -209,8 +216,8 @@ const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait,
 
     {moreCat.length > 0 && cat && (
       <section class="section strip" aria-labelledby="more-h">
-        <div class="section-head"><h2 id="more-h"><img src={categoryIcon(cat.slug)} alt="" width="30" height="30" loading="lazy" />{t('game.moreCat', { name: catName(cat) })}</h2><a href={categoryPath(cat.slug)}>{t('nav.seeAll')}</a></div>
-        <GameGrid games={moreCat} label={t('game.moreCatLabel', { name: catName(cat) })} />
+        <div class="section-head"><h2 id="more-h"><img src={categoryIcon(cat.slug)} alt="" width="30" height="30" loading="lazy" />{t('game.moreCat', i.catGames(cat.slug, catName(cat)))}</h2><a href={categoryPath(cat.slug)}>{t('nav.seeAll')}</a></div>
+        <GameGrid games={moreCat} label={t('game.moreCatLabel', i.catGames(cat.slug, catName(cat)))} />
       </section>
     )}
     {(similar.length > 0 || topCat.length > 0) && (
@@ -223,8 +230,8 @@ const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait,
         )}
         {topCat.length > 0 && cat && (
           <section class="section" aria-labelledby="top-h">
-            <div class="section-head"><h2 id="top-h"><img src="/icons/cat/ui-popular.webp" alt="" width="28" height="28" loading="lazy" />{t('game.topCat', { name: catName(cat) })}</h2><a href={categoryPath(cat.slug)}>{t('nav.seeAll')}</a></div>
-            <GameGrid games={topCat} label={t('game.topCatLabel', { name: catName(cat) })} compact />
+            <div class="section-head"><h2 id="top-h"><img src="/icons/cat/ui-popular.webp" alt="" width="28" height="28" loading="lazy" />{t('game.topCat', i.catGames(cat.slug, catName(cat)))}</h2><a href={categoryPath(cat.slug)}>{t('nav.seeAll')}</a></div>
+            <GameGrid games={topCat} label={t('game.topCatLabel', i.catGames(cat.slug, catName(cat)))} compact />
           </section>
         )}
       </div>

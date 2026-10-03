@@ -62,6 +62,11 @@ export interface I18n {
   /** Category / theme display names. */
   cat: (slug: string, fallback?: string) => string;
   catBlurb: (slug: string, fallback?: string) => string;
+  /**
+   * Template variables for a category's "… games" phrase: {games} as a label/heading ("Závodní hry") and
+   * {gamesLc} for the middle of a sentence ("závodní hry"; German keeps its capitals, English is all lower case).
+   */
+  catGames: (slug: string, fallback?: string) => { games: string; gamesLc: string };
 }
 
 export async function i18nFor(lang: Lang): Promise<I18n> {
@@ -89,6 +94,13 @@ export async function i18nFor(lang: Lang): Promise<I18n> {
     },
     cat: (slug, fallback) => (has(`catn.${slug}`) ? t(`catn.${slug}`) : has(`theme.${slug}`) ? t(`theme.${slug}`) : fallback ?? slug),
     catBlurb: (slug, fallback) => (has(`catb.${slug}`) ? t(`catb.${slug}`) : fallback ?? ''),
+    catGames: (slug, fallback) => {
+      const games = has(`catg.${slug}`) ? t(`catg.${slug}`) : fallback ?? slug;
+      // An acronym at the start ("FPS", ".IO") keeps its capitals.
+      const acronym = /^\P{L}*\p{Lu}{2}/u.test(games);
+      const gamesLc = lang === 'en' ? games.replace(/\p{L}+/gu, (w) => (/^\p{Lu}{2,}$/u.test(w) ? w : w.toLocaleLowerCase('en'))) : lang === 'de' || acronym ? games : games.charAt(0).toLocaleLowerCase(loc.tag) + games.slice(1);
+      return { games, gamesLc };
+    },
   };
 }
 

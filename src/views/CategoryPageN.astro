@@ -8,7 +8,8 @@ const { c, cats, parent, page, res } = Astro.props.data;
 const i = await useI18n(Astro);
 const t = i.t;
 const name = i.cat(c.slug, c.name);
+const gv = i.catGames(c.slug, name);
 ---
-<CategoryView slug={c.slug} name={name} h1={t('cat.h1', { name })} title={t('cat.title', { name })}
-  description={t('cat.descriptionShort', { name: i.lang === 'en' ? name.toLowerCase() : name })} intro={i.catBlurb(c.slug, c.blurb)} games={res.items} total={c.count}
+<CategoryView slug={c.slug} name={name} h1={t('cat.h1', gv)} title={t('cat.title', gv)}
+  description={t('cat.descriptionShort', gv)} intro={i.catBlurb(c.slug, c.blurb)} games={res.items} total={c.count}
   page={page} pages={res.pages} category={c} categories={cats} parent={parent} />

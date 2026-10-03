@@ -13,7 +13,8 @@ const enDocs = JSON.parse(readFileSync('src/i18n/docs/en.json', 'utf8')) as Reco
 /** Keys that may legitimately be empty in some languages (punctuation). */
 const OPTIONAL = new Set(['new.leadEnd']);
 const PLURAL = /_(zero|one|two|few|many|other)$/;
-const vars = (s: string) => [...s.matchAll(/\{(\w+)\}/g)].map((m) => m[1]).sort().join(',');
+// {games} and {gamesLc} are two spellings of the same phrase: a translation may use either.
+const vars = (s: string) => [...new Set([...s.matchAll(/\{(\w+)\}/g)].map((m) => (m[1] === 'gamesLc' ? 'games' : m[1])))].sort().join(',');
 const tags = (s: string) => [...s.matchAll(/<\/?([a-z0-9]+)[^>]*>/gi)].map((m) => m[0].startsWith('</') ? `/${m[1]}` : m[1]).join(' ');
 
 const langs = process.argv.slice(2).length ? process.argv.slice(2) : OTHER_LANGS;
@@ -30,6 +31,15 @@ for (const lang of langs) {
     if (m) { bases.add(k.slice(0, -m[0].length)); continue; }
     if (!(k in d) || (!d[k]?.trim() && !OPTIONAL.has(k))) errs.push(`missing ${k}`);
     else if (vars(d[k]!) !== vars(v)) errs.push(`placeholders ${k}: ${vars(d[k]!)} ≠ ${vars(v)}`);
+  }
+  // Menu entries must stay distinguishable (e.g. "Popular" and "Favorites" both became "Oblíbené" once).
+  const NAV = ['nav.home', 'nav.categories', 'nav.new', 'nav.popular', 'nav.twoPlayer', 'nav.favorites', 'nav.recent', 'nav.search'];
+  const seen = new Map<string, string>();
+  for (const k of NAV) {
+    const v = d[k]?.trim().toLocaleLowerCase();
+    if (!v) continue;
+    if (seen.has(v)) errs.push(`duplicate menu label "${d[k]}": ${seen.get(v)} = ${k}`);
+    else seen.set(v, k);
   }
   for (const b of bases) {
     const ref = (en as Record<string, string>)[`${b}_other`]!;

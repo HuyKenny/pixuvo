@@ -17,7 +17,6 @@ env:
   CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
   CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
   CF_D1_DATABASE_ID: ${{ secrets.CF_D1_DATABASE_ID }}
-  CF_I18N_DATABASE_ID: ${{ secrets.CF_I18N_DATABASE_ID }}
   GAMEPIX_SID: ${{ secrets.GAMEPIX_SID }}
   PLAYGAMA_CLID: ${{ secrets.PLAYGAMA_CLID }}
   GAMEMONETIZE_FEED_URL: ${{ secrets.GAMEMONETIZE_FEED_URL }}
@@ -36,18 +35,13 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm test
       - name: Migrations (restore bookmark is printed first)
-        run: pnpm exec tsx scripts/db-backup.ts && pnpm exec wrangler d1 migrations apply pixuvo-production --remote && pnpm exec wrangler d1 migrations apply pixuvo-i18n --remote
+        run: pnpm exec tsx scripts/db-backup.ts && pnpm exec wrangler d1 migrations apply pixuvo-production --remote
       - name: Import partner catalogs (daily write budget 90 000 rows)
         if: github.event_name == 'workflow_dispatch'
         run: pnpm exec tsx scripts/import/cli.ts --target remote --budget 90000 --json import-report.json
       - name: Metrics (popular / trending / ranks)
         if: github.event_name == 'workflow_dispatch'
         run: pnpm exec tsx scripts/metrics.ts --target remote
-      - name: Translate new/changed descriptions of the top games (small daily budget; backfill runs elsewhere)
-        if: github.event_name == 'workflow_dispatch'
-        continue-on-error: true
-        timeout-minutes: 10
-        run: pnpm exec tsx scripts/translate.ts --top 3000 --max-usd 0.3 --max-pairs 1500 --concurrency 6
       - name: Publish (skips when nothing changed)
         run: pnpm exec tsx scripts/publish.ts --target remote --deploy
       - name: Free-tier report

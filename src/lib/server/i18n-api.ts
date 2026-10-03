@@ -30,7 +30,7 @@ export async function categoryHits(raw: string, lang: string, cats: CategoryInfo
     const names = [fold(local), fold(c.name)];
     const words = names.flatMap((n) => n.split(/[\s&/,-]+/));
     const score = names.some((n) => n === query) ? 3 : words.some((w) => w.startsWith(query)) ? 2 : names.some((n) => n.includes(query)) ? 1 : 0;
-    if (score) out.push({ kind: 'category', slug: c.slug, title: i.t('home.sectionGames', { name: local }), thumb: `/icons/cat/${c.slug}.webp`, cat: i.t('search.categoryHit'), catSlug: null, score });
+    if (score) out.push({ kind: 'category', slug: c.slug, title: i.t('home.sectionGames', i.catGames(c.slug, local)), thumb: `/icons/cat/${c.slug}.webp`, cat: i.t('search.categoryHit'), catSlug: null, score });
   }
   return out.sort((a, b) => b.score - a.score).slice(0, limit).map(({ score: _s, ...x }) => x);
 }

@@ -123,12 +123,15 @@ allow-forms allow-pointer-lock allow-orientation-lock`, no top navigation) — v
 * **Detection:** only `/` runs the Worker first (`assets.run_worker_first: ["/"]`, custom entry `src/worker.ts`):
   cookie `pixuvo_lang` → `Accept-Language` → Cloudflare country → English; bots always get English; 302 with
   `Vary: Accept-Language, Cookie`. Deep pages never redirect — a bar offers the visitor's language (`LangOffer`).
-* **SEO:** hreflang for all languages + x-default on listing/info pages; game pages list only languages with a translated
-  description, and a localised game page without one is `noindex`. Sitemaps: `{code}-pages`, `{code}-categories`
-  (with xhtml alternates) and `{code}-games-N` (translated games only).
-* **Game descriptions:** machine translation by `scripts/translate.ts` into the separate D1 `pixuvo-i18n`
-  (binding `I18N`, read with one query per game page; missing table/DB never breaks a page). Model
-  `@cf/mistralai/mistral-small-3.1-24b-instruct` on Workers AI — chosen over m2m100 after a side-by-side test
-  (m2m100 dropped sentences). Labelled "automatic translation" on the page.
+* **SEO:** hreflang for all languages + x-default on listing/info pages. Sitemaps: `{code}-pages` and
+  `{code}-categories` (with xhtml alternates); game sitemaps are English only.
+* **Game pages:** partner descriptions are English and are **not translated** (owner decision 2026-10-03). A localised
+  game page shows a short native intro built from facts (`game.intro*`: category, players, devices, controls) plus
+  the localised controls/FAQ, and is `noindex, follow` (templated text would be 22 thin duplicates).
+* **Category phrases:** `catn.<slug>` is the short label (chips, menus), `catg.<slug>` the whole "… games" phrase
+  ("Závodní hry", "Rennspiele"). Templates take `{games}` (heading form) or `{gamesLc}` (mid-sentence form) so no
+  language has to inflect a bare adjective. `i18n.catGames(slug)` returns both.
+* **Native quality:** every language was reviewed by a native-copywriter pass (address form, local search phrases,
+  punctuation). `scripts/i18n-audit.ts` crawls the localised pages and lists English words left outside game titles.
 * **Search:** game titles stay English; category names are matched in every language (suggest + search page),
   e.g. "závod" → Racing games.

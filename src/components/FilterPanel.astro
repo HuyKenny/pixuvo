@@ -20,12 +20,13 @@ interface Props {
 const { category, name, total, subs = [], links = [] } = Astro.props;
 const i = await useI18n(Astro);
 const t = i.t;
+const gv = category ? i.catGames(category, name) : { games: name, gamesLc: name };
 ---
 <div class="finder" data-filters data-category={category ?? ''} data-total={total} data-subs={JSON.stringify(subs.map((s) => ({ slug: s.slug, name: s.name })))}>
   <form class="finder-search" role="search" data-filter-search>
-    <label class="sr-only" for="finder-q">{t('filter.searchIn', { name })}</label>
+    <label class="sr-only" for="finder-q">{t('filter.searchIn', gv)}</label>
     <Icon name="search" size={20} />
-    <input id="finder-q" type="search" name="q" placeholder={t('filter.searchInPlaceholder', { name })} maxlength="60" autocomplete="off" enterkeyhint="search" />
+    <input id="finder-q" type="search" name="q" placeholder={t('filter.searchInPlaceholder', gv)} maxlength="60" autocomplete="off" enterkeyhint="search" />
     <button type="button" class="finder-clear" data-filter-qclear hidden aria-label={t('filter.clearSearch')}><Icon name="x" size={18} /></button>
   </form>
   <div class="finder-chips" role="group" aria-label={t('a11y.quickFilters')}>

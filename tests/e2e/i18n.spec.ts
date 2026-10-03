@@ -1,4 +1,3 @@
-import { readFileSync } from 'node:fs';
 import { expect, test } from '@playwright/test';
 
 const BROWSER_UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140 Safari/537.36';
@@ -50,19 +49,17 @@ test.describe('localised pages', () => {
   test('unknown language codes are 404', async ({ request }) => {
     for (const p of ['/xx/search/?q=car', '/en/new-games/', '/xx/games/page/2/']) expect((await request.get(p)).status(), p).toBe(404);
   });
-  test('game page: translated description is indexable, untranslated is noindex', async ({ request }) => {
-    const id = Number(readFileSync('tmp/e2e-translated-game.txt', 'utf8'));
-    const list = (await (await request.get('/api/games/?sort=featured')).json()) as { items: Array<{ id: number; slug: string }> };
-    const translated = list.items.find((g) => g.id === id);
-    const other = list.items.find((g) => g.id !== id)!;
-    if (translated) {
-      const html = await (await request.get(`/cs/games/${translated.slug}/`)).text();
-      expect(html).toContain('Testovací český popis hry.');
-      expect(html).toMatch(/<meta name="robots" content="index/);
-    }
-    const html2 = await (await request.get(`/cs/games/${other.slug}/`)).text();
-    expect(html2).toMatch(/<meta name="robots" content="noindex/);
-    expect(html2).toMatch(/<html lang="cs"/);
+  test('localised game page: native intro instead of the English publisher text, noindex', async ({ request }) => {
+    const list = (await (await request.get('/api/games/?sort=featured')).json()) as { items: Array<{ slug: string }> };
+    const slug = list.items[0]!.slug;
+    const en = await (await request.get(`/games/${slug}/`)).text();
+    const html = await (await request.get(`/cs/games/${slug}/`)).text();
+    expect(html).toMatch(/<html lang="cs"/);
+    expect(html).toMatch(/<meta name="robots" content="noindex/);
+    expect(html).toContain('zdarma');
+    const enDesc = /<div class="prose"><p>([^<]{40,})/.exec(en)?.[1];
+    if (enDesc) expect(html).not.toContain(enDesc.slice(0, 40));
+    expect(en).toMatch(/<meta name="robots" content="index/);
   });
   test('language switcher keeps the page and remembers the choice', async ({ page, context }) => {
     await page.goto('/racing-games/');

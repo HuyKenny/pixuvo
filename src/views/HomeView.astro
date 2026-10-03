@@ -100,8 +100,8 @@ const ld = [
 
     {snapshot.home.sections.filter((s) => ['racing', 'action', 'puzzle', 'sports'].includes(s.slug)).map((s) => (
       <section class="section" aria-labelledby={`sec-${s.slug}`}>
-        <div class="section-head"><h2 id={`sec-${s.slug}`}><img src={`/icons/cat/${s.slug}.webp`} alt="" width="30" height="30" loading="lazy" />{t('home.sectionGames', { name: i.cat(s.slug, s.name) })}</h2><a href={categoryPath(s.slug)}>{t('home.sectionAll', { count: i.approx(s.count) })}</a></div>
-        <GameGrid games={s.games.slice(0, 7)} label={t('cat.gamesLabel', { name: i.cat(s.slug, s.name) })} row />
+        <div class="section-head"><h2 id={`sec-${s.slug}`}><img src={`/icons/cat/${s.slug}.webp`} alt="" width="30" height="30" loading="lazy" />{t('home.sectionGames', i.catGames(s.slug, s.name))}</h2><a href={categoryPath(s.slug)}>{t('home.sectionAll', { count: i.approx(s.count) })}</a></div>
+        <GameGrid games={s.games.slice(0, 7)} label={t('cat.gamesLabel', i.catGames(s.slug, s.name))} row />
       </section>
     ))}
   </div>

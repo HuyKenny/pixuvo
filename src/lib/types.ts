@@ -51,10 +51,6 @@ export interface GameDetail extends GameCard {
   /** Declared by the partner (Playgama); false when unknown. */
   inAppPurchases: boolean;
   related: GameCard[];
-  /** Machine translation of the publisher texts in the page language (null = not translated yet). */
-  translation?: { description: string; instructions: string } | null;
-  /** Languages that have a translated description (for hreflang). */
-  translatedLangs?: string[];
 }
 
 export type ListSort = 'featured' | 'new' | 'az';

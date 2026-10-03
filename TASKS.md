@@ -63,7 +63,7 @@ Legend: ✅ implemented + tested · 🟡 implemented, partly verified · ⛔ blo
 - ✅ 23 languages, every UI string through `t()`, completeness/plural/placeholder check (unit test).
 - ✅ Homepage detection + remembered choice + offer bar; hreflang, canonical, sitemaps per language (e2e + verify:launch).
 - ✅ RTL (Arabic) without overflow at 360–1440 px (e2e).
-- 🟡 Machine-translated game descriptions: top 3 000 in progress; daily sync keeps them current.
+- ✅ Localised game pages: native intro from facts, no machine translation (owner decision), noindex.
 
 ## Out of V1
 - ➖ Accounts, chat, comments, own multiplayer, payments, virtual currency, cloud saves.

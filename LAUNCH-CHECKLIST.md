@@ -44,9 +44,9 @@ State: 2026-10-03. ✅ done and verified · ⚠️ done with a known caveat · �
 ## Languages (2026-10-03)
 - ✅ 23 languages live (EN at the root, 22 under `/{code}/`, Arabic RTL); homepage detection cookie → browser → country → EN,
   bots stay on EN; hreflang + x-default, per-language sitemaps. Screenshots cs/ja/ar/th desktop + mobile, no overflow.
-- ⚠️ Game descriptions: machine translation in progress (top 3 000 games, ≈ $10). Localised game pages stay `noindex`
-  until translated. Whole catalog (≈ $170–180) waits for the owner's approval.
-- ⚠️ UI translations were written by AI — a native-speaker review of the biggest markets (es, pt, de, fr) is recommended.
+- ✅ Game descriptions stay English (owner decision); localised game pages show a native intro and are `noindex`.
+- ✅ Native-copywriter review of all languages (address form, local search phrases, punctuation); `i18n-audit` clean.
+- ⚠️ The review was done by AI writing as a native copywriter — a human native check of the biggest markets is still a good idea.
 - ⛔ Owner: submit the sitemap index again after the language sitemaps appear (same URL, nothing to change).
 
 ## Legal (texts are drafts to be reviewed, not legal advice)

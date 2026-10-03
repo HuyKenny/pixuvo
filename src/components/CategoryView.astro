@@ -35,6 +35,8 @@ const i = await useI18n(Astro);
 const t = i.t;
 const path = categoryPath(p.slug, p.page);
 const subs = p.category ? p.categories.filter((c) => c.parent === p.category!.slug && c.count >= MIN_CATEGORY_GAMES).sort((a, b) => b.count - a.count) : [];
+// The whole "… games" phrase (grammatical in every language); landings use their own heading.
+const gv = p.category ? i.catGames(p.category.slug, p.name) : { games: p.name, gamesLc: p.name };
 const crumbs = [{ name: t('nav.home'), href: '/' }, { name: t('nav.categories'), href: '/categories/' }];
 if (p.parent) crumbs.push({ name: i.cat(p.parent.slug, p.parent.name), href: categoryPath(p.parent.slug) });
 crumbs.push({ name: p.page > 1 ? `${p.name} – ${t('cat.pageSuffix', { n: p.page })}` : p.name, href: path });
@@ -65,7 +67,7 @@ const filterable = p.filterable !== false;
       </div>
     </div>
     {subs.length > 0 && !filterable && (
-      <nav aria-label={t('cat.subcategories', { name: p.name })}><div class="chips">
+      <nav aria-label={t('cat.subcategories', gv)}><div class="chips">
         {subs.map((s) => <a class="chip" href={categoryPath(s.slug)}><img src={categoryIcon(s.slug)} alt="" width="22" height="22" loading="lazy" />{i.cat(s.slug, s.name)} <span class="count">{i.approx(s.count)}</span></a>)}
       </div></nav>
     )}
@@ -73,14 +75,14 @@ const filterable = p.filterable !== false;
       {filterable && <FilterSide />}
       <div class="list-main">
         {filterable && <FilterPanel category={p.category?.slug ?? null} name={p.name} total={p.total} subs={subs.map((s) => ({ slug: s.slug, name: i.cat(s.slug, s.name), count: s.count }))} />}
-        <GameGrid games={p.games} id="game-grid" eagerCount={p.page === 1 ? 4 : 0} label={t('cat.gamesLabel', { name: p.name })} />
-        <div id="game-pager"><Pagination page={p.page} pages={p.pages} href={(n) => categoryPath(p.slug, n)} label={t('cat.pagesLabel', { name: p.name })} /></div>
+        <GameGrid games={p.games} id="game-grid" eagerCount={p.page === 1 ? 4 : 0} label={t('cat.gamesLabel', gv)} />
+        <div id="game-pager"><Pagination page={p.page} pages={p.pages} href={(n) => categoryPath(p.slug, n)} label={t('cat.pagesLabel', gv)} /></div>
       </div>
     </div>
     {subs.length > 0 && filterable && (
       <section class="section" aria-labelledby="sub-h">
-        <div class="section-head"><h2 id="sub-h">{t('cat.explore', { name: p.name })}</h2></div>
-        <div class="chips">{subs.map((s) => <a class="chip" href={categoryPath(s.slug)}><img src={categoryIcon(s.slug)} alt="" width="22" height="22" loading="lazy" />{t('cat.subGames', { name: i.cat(s.slug, s.name) })} <span class="count">{i.approx(s.count)}</span></a>)}</div>
+        <div class="section-head"><h2 id="sub-h">{t('cat.explore', gv)}</h2></div>
+        <div class="chips">{subs.map((s) => <a class="chip" href={categoryPath(s.slug)}><img src={categoryIcon(s.slug)} alt="" width="22" height="22" loading="lazy" />{t('cat.subGames', i.catGames(s.slug, s.name))} <span class="count">{i.approx(s.count)}</span></a>)}</div>
       </section>
     )}
     {p.related && p.related.length > 0 && (

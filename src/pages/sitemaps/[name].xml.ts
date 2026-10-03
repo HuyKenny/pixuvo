@@ -2,12 +2,10 @@
  * Sitemaps contain only indexable canonical URLs with real lastmod dates.
  *   pages / categories / games-N             English
  *   {lang}-pages / {lang}-categories          every language, with hreflang alternates (xhtml:link)
- *   {lang}-games-N                           localised game pages that have a translated description
  */
 import type { APIRoute } from 'astro';
 import { getLandings } from '../../lib/catalog';
 import { categoriesCached, q } from '../../lib/server/db';
-import { getEnv } from '../../lib/server/env';
 import { GAMES_PER_SITEMAP, day, esc, xml } from '../../lib/server/sitemap';
 import { MIN_CATEGORY_GAMES } from '../../lib/taxonomy';
 import { DEFAULT_LANG, LOCALES, OTHER_LANGS, localePath } from '../../i18n/locales';
@@ -33,6 +31,8 @@ export const GET: APIRoute = async ({ params }) => {
   const lang = m[1] ?? DEFAULT_LANG;
   if (lang !== DEFAULT_LANG && !OTHER_LANGS.includes(lang)) return new Response('Not found', { status: 404 });
   const kind = m[3] ? 'games' : m[2]!;
+  // Localised game pages are noindex: games sitemaps exist only in English.
+  if (kind === 'games' && lang !== DEFAULT_LANG) return new Response('Not found', { status: 404 });
   const db = q();
   if (kind === 'pages') {
     const [r] = await db.all<{ last: string | null }>("SELECT max(added_at) AS last FROM games WHERE status = 'published'");
@@ -55,12 +55,6 @@ export const GET: APIRoute = async ({ params }) => {
     "SELECT id, slug, updated_at FROM games WHERE id > ? AND id <= ? AND status = 'published' ORDER BY id LIMIT ?",
     [lo, hi, GAMES_PER_SITEMAP],
   );
-  let list = rows;
-  if (lang !== DEFAULT_LANG) {
-    const t = await getEnv().I18N?.prepare('SELECT game_id FROM game_translations WHERE lang = ? AND game_id > ? AND game_id <= ?').bind(lang, lo, hi).all<{ game_id: number }>();
-    const ids = new Set((t?.results ?? []).map((x) => x.game_id));
-    list = rows.filter((r) => ids.has(r.id));
-  }
-  if (!list.length) return new Response('Not found', { status: 404 });
-  return urlset(list.map((r) => url(lang, `/games/${r.slug}/`, day(r.updated_at), false)));
+  if (!rows.length) return new Response('Not found', { status: 404 });
+  return urlset(rows.map((r) => url(lang, `/games/${r.slug}/`, day(r.updated_at), false)));
 };

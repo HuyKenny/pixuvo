@@ -11,6 +11,9 @@ for (const width of [360, 390, 768, 1440]) {
     }
     await page.goto('/racing-games/');
     await page.locator('#game-grid a.card-link').first().click();
+    // Wait for the game page itself; evaluating mid-navigation sees no document.
+    await page.waitForURL(/\/games\/[a-z0-9-]+\/$/);
+    await page.waitForLoadState('domcontentloaded');
     expect(await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)).toBeLessThanOrEqual(0);
     // The game starts by itself and fills the stage.
     const stage = (await page.locator('#stage').boundingBox())!;

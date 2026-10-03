@@ -97,16 +97,14 @@ must go back too.
 * Common failures: `D1_ERROR` (check migrations), 503 on vote/report (Turnstile or rate limiter not configured),
   503 on admin (Access not configured), 401 on cron (secret mismatch).
 
-## Translations
+## Translations (UI only)
 
 ```bash
-pnpm exec tsx scripts/translate.ts --dry-run --top 3000            # how many game-language pairs are missing
-pnpm exec tsx scripts/translate.ts --top 3000 --max-usd 10 --concurrency 8   # backfill (resumable, idempotent)
 pnpm exec tsx scripts/i18n-check.ts                                 # validate UI translation files
+pnpm exec tsx scripts/i18n-audit.ts [--base http://localhost:8799]  # English left on localised pages
 pnpm exec tsx scripts/i18n-export.ts                                # English source for translators (tmp/i18n/)
 ```
-* The daily sync translates new/changed descriptions of the top 3 000 games with a $0.30 cap.
-* Spend per run is in `translate_runs` (pixuvo-i18n). Measured: ≈ 14 neurons per game-language pair
-  ≈ $0.00016; top 3 000 games × 22 languages ≈ $10.
 * A new UI string: add it to `src/i18n/messages/en.ts`, then add it to every `messages/<code>.json`
-  (the check fails until all languages have it).
+  (the check fails until all languages have it). Write it natively, not word for word.
+* Game descriptions are not translated (owner decision 2026-10-03). `scripts/translate.ts` and the D1 `pixuvo-i18n`
+  (13 191 translations of 600 games from the first run, ≈ $2.10) are kept but unused — nothing reads them.

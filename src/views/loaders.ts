@@ -4,7 +4,6 @@ import { categoriesCached, q } from '../lib/server/db';
 import { MIN_CATEGORY_GAMES } from '../lib/taxonomy';
 import { SITE, categoryPath } from '../lib/site';
 import type { CategoryInfo, Paged, GameCard } from '../lib/types';
-import { getTranslation } from '../lib/server/i18n-db';
 
 export type CategoryPageData = { c: CategoryInfo; cats: CategoryInfo[]; parent: CategoryInfo | null; page: number; res: Paged<GameCard> };
 export async function loadCategoryPage(cat: string, n: string): Promise<{ kind: 'ok'; data: CategoryPageData } | { kind: 'redirect'; to: string } | { kind: 'missing' }> {
@@ -20,13 +19,8 @@ export async function loadCategoryPage(cat: string, n: string): Promise<{ kind: 
   return { kind: 'ok', data: { c, cats, parent, page, res } };
 }
 
-/** Game detail for a language: English record + the machine translation of its texts (if any). */
-export async function loadGame(slug: string, lang: string): Promise<GameLookup> {
+/** Game detail (the same English record for every language; the page localises around it). */
+export async function loadGame(slug: string): Promise<GameLookup> {
   if (!/^[a-z0-9-]{1,90}$/.test(slug)) return { kind: 'missing' };
-  const res = await getGame(q(), slug);
-  if (res.kind !== 'ok') return res;
-  const tr = await getTranslation(res.game.id, lang);
-  res.game.translation = tr.translation;
-  res.game.translatedLangs = tr.langs;
-  return res;
+  return getGame(q(), slug);
 }

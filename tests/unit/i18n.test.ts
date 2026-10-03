@@ -2,7 +2,7 @@ import { execFileSync } from 'node:child_process';
 import { describe, expect, it } from 'vitest';
 import { detectLang, fromAcceptLanguage, fromCountry, isBot, langFromPath, localePath, stripLocale, LOCALES } from '../../src/i18n/locales.ts';
 import { localiseHtml } from '../../src/i18n/links.ts';
-import { makeT } from '../../src/i18n/index.ts';
+import { i18nFor, makeT } from '../../src/i18n/index.ts';
 
 describe('language detection', () => {
   it('uses the browser language first, with q-weights', () => {
@@ -80,5 +80,22 @@ describe('translations', () => {
   it('has 23 languages with unique codes', () => {
     expect(LOCALES).toHaveLength(23);
     expect(new Set(LOCALES.map((l) => l.code)).size).toBe(23);
+  });
+});
+
+describe('category "… games" phrases', () => {
+  it('gives a heading form and a mid-sentence form', async () => {
+    const en = await i18nFor('en');
+    expect(en.catGames('racing')).toEqual({ games: 'Racing Games', gamesLc: 'racing games' });
+    const cs = await i18nFor('cs');
+    expect(cs.catGames('racing').gamesLc).toBe(cs.catGames('racing').games.charAt(0).toLocaleLowerCase('cs') + cs.catGames('racing').games.slice(1));
+  });
+  it('keeps German capitals and leading acronyms', async () => {
+    const de = await i18nFor('de');
+    expect(de.catGames('racing').gamesLc).toBe(de.catGames('racing').games);
+    for (const lang of ['en', 'cs', 'hu', 'tr'] as const) {
+      const g = (await i18nFor(lang)).catGames('first-person-shooter');
+      expect(g.gamesLc, lang).not.toMatch(/(^|\s)f[A-Z]/);
+    }
   });
 });
