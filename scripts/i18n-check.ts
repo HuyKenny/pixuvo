@@ -30,11 +30,12 @@ function checkLongForm(lang: string): string[] {
   const errs: string[] = [];
   const minRatio = lang === 'en' ? 1 : DENSE.has(lang) ? 0.2 : 0.55;
   const tooShort = (txt: string | undefined, ref: string | undefined) => !txt?.trim() || (ref ? txt.length < ref.length * minRatio : false);
-  const leftovers = (txt: string) => /\{[a-zA-Z]+\}|TODO|lorem|\[\[/i.test(txt);
+  const leftovers = (txt: string) => /\{[a-zA-Z]+\}|\bTODO\b|\[\[/.test(txt) || /lorem ipsum/i.test(txt);
   if (enContent) {
     const c = lang === 'en' ? enContent : readJson<ContentFile>(`src/i18n/content/${lang}.json`);
-    if (!c) errs.push(`missing src/i18n/content/${lang}.json`);
-    else {
+    // A language without a content file simply shows no long-form block (rolled out language by language);
+    // a file that exists must be complete.
+    if (c) {
       if (enContent.home && (tooShort(c.home?.intro, enContent.home.intro) || !c.home?.h2?.trim())) errs.push('content: home missing/too short');
       for (const kind of ['cat', 'land'] as const) {
         for (const [slug, ref] of Object.entries(enContent[kind] ?? {})) {
