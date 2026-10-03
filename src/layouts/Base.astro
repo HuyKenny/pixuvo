@@ -4,7 +4,10 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import ConsentBanner from '../components/ConsentBanner.astro';
 import BottomNav from '../components/BottomNav.astro';
+import LangOffer from '../components/LangOffer.astro';
 import { SITE, canonical as abs } from '../lib/site';
+import { clientDict, useI18n } from '../i18n';
+import { LOCALES, locale, localePath, stripLocale } from '../i18n/locales';
 
 interface Props {
   title: string;
@@ -20,12 +23,21 @@ interface Props {
   next?: string | null;
   /** Analytics context sent with every GA4 event on this page (page_type, game_slug, game_category, provider…). */
   ga?: Record<string, string>;
+  /** Languages that have an indexable version of this page (hreflang). Default: all. */
+  alternates?: string[] | undefined;
 }
-const { title, description, path, noindex = false, ogImage, ogType = 'website', jsonLd = [], query, prev, next, ga } = Astro.props;
+const { title, description, path: neutralPath, noindex = false, ogImage, ogType = 'website', jsonLd = [], query, prev, next, ga, alternates } = Astro.props;
+const i = await useI18n(Astro);
+const { lang } = i;
+// Pages pass language-neutral paths; canonical / prev / next point to this language's version.
+const path = neutralPath ? localePath(lang, stripLocale(neutralPath)) : null;
+const altLangs = noindex || !neutralPath ? [] : LOCALES.filter((l) => !alternates || alternates.includes(l.code));
+const altPath = neutralPath ? stripLocale(neutralPath) : '/';
+const clientI18n = JSON.stringify(await clientDict(lang)).replace(/</g, '\\u003c');
 // Page type for analytics, from the URL when the page does not say.
-const urlPath = Astro.url.pathname;
+const urlPath = stripLocale(Astro.url.pathname);
 const pageType = ga?.page_type ?? (urlPath === '/' ? 'home' : urlPath.startsWith('/search') ? 'search' : /^\/(popular|trending|new)-games\//.test(urlPath) ? 'list' : /^\/[a-z0-9-]+-games\//.test(urlPath) ? 'category' : urlPath.startsWith('/games/') ? 'directory' : 'info');
-const gaContext = JSON.stringify({ ...ga, page_type: pageType });
+const gaContext = JSON.stringify({ ...ga, page_type: pageType, language: lang });
 // Preview builds (workers.dev) are never indexable.
 const preview = import.meta.env.PUBLIC_NOINDEX === '1';
 const robots = noindex || preview ? 'noindex, follow' : 'index, follow, max-image-preview:large';
@@ -33,7 +45,7 @@ const fullTitle = title.includes('Pixuvo') ? title : `${title} | Pixuvo`;
 const canonicalUrl = path ? abs(path) : null;
 ---
 <!doctype html>
-<html lang="en">
+<html lang={i.tag} dir={i.dir} data-lang={lang} data-lp={lang === 'en' ? '' : `/${lang}`}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -41,14 +53,17 @@ const canonicalUrl = path ? abs(path) : null;
     <meta name="description" content={description} />
     <meta name="robots" content={robots} />
     {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
-    {prev && <link rel="prev" href={abs(prev)} />}
-    {next && <link rel="next" href={abs(next)} />}
+    {prev && <link rel="prev" href={abs(localePath(lang, stripLocale(prev)))} />}
+    {next && <link rel="next" href={abs(localePath(lang, stripLocale(next)))} />}
+    {altLangs.length > 1 && altLangs.map((l) => <link rel="alternate" hreflang={l.tag} href={abs(localePath(l.code, altPath))} />)}
+    {altLangs.length > 1 && <link rel="alternate" hreflang="x-default" href={abs(altPath)} />}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/favicon.ico" sizes="32x32" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#141a46" />
     <meta property="og:site_name" content="Pixuvo" />
+    <meta property="og:locale" content={locale(lang).og} />
     <meta property="og:type" content={ogType} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
@@ -63,9 +78,11 @@ const canonicalUrl = path ? abs(path) : null;
     {/* Instant navigation: PREFETCH only (never prerender — a prerendered game page would start the game and count a play). */}
     <script type="speculationrules" set:html={JSON.stringify({ prefetch: [{ where: { and: [{ href_matches: '/*' }, { not: { href_matches: ['/random/*', '/api/*', '/admin/*', '/*\\?*'] } }] }, eagerness: 'moderate' }] })} />
     <slot name="head" />
+    <script type="application/json" id="i18n" set:html={clientI18n} />
   </head>
   <body data-ga={gaContext}>
     <Header query={query} />
+    <LangOffer />
     <main id="main" tabindex="-1">
       <slot />
     </main>

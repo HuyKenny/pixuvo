@@ -1,0 +1,7 @@
+---
+export const prerender = true;
+import CategoriesView from '../../../views/CategoriesView.astro';
+import { langPaths } from '../../../views/paths';
+export const getStaticPaths = langPaths;
+---
+<CategoriesView />

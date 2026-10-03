@@ -1,0 +1,44 @@
+{
+ "about": {
+  "title": "关于 Pixuvo",
+  "h1": "关于 Pixuvo",
+  "description": "Pixuvo 是一个免费网页游戏平台：游戏来自获得授权的分发合作伙伴，经过分类整理，让你快速找到下一款心爱的游戏。",
+  "html": "<p><strong>{tagline}</strong> Pixuvo 把免费网页游戏集中在一个地方，并分类整理，让你几秒钟就能找到想玩的游戏。{subline}</p>\n<h2>游戏从哪里来</h2>\n<p>游戏不是我们制作的。它们由独立开发者创作，并由游戏分发合作伙伴（目前为 GameMonetize、GamePix 和 Playgama）发行，这些合作伙伴允许 Pixuvo 这样的发布方嵌入游戏。游戏在合作伙伴的服务器上运行，显示在我们页面中的框架里。你在游戏内看到的广告由合作伙伴投放。</p>\n<p>目前游戏库中共有 {count} 款游戏。分类、标签和玩家人数来自合作伙伴提供的信息；遇到不清楚的信息，我们宁可不写，也不会去猜。</p>\n<h2>Pixuvo 不做的事</h2>\n<ul>\n<li>没有账号、聊天或付费。收藏和游戏记录只保存在你的浏览器里。给家庭的更多信息：<a href=\"/parents/\">家长须知</a>。</li>\n<li>不提供游戏下载或安装程序。</li>\n<li>Pixuvo 页面上没有广告。Google Analytics 只有在你允许后才会运行，详见<a href=\"/privacy/\">隐私政策</a>。</li>\n</ul>\n<h2>图像与字体</h2>\n<p>吉祥物 Pixu 和标志是我们自己的作品。分类图标采用 Microsoft 的 <a href=\"https://github.com/microsoft/fluentui-emoji\" rel=\"noopener\">Fluent Emoji</a>（MIT 许可证），界面图标来自 <a href=\"https://lucide.dev\" rel=\"noopener\">Lucide</a>（ISC 许可证），标题字体为 <a href=\"https://fonts.google.com/specimen/Nunito\" rel=\"noopener\">Nunito</a>（SIL Open Font License）。游戏名称和图片归其开发者所有。</p>\n<h2>谁在运营 Pixuvo</h2>\n<p>Pixuvo 由 {operatorName} 运营，地址：{address}，公司识别号（IČO）：{companyId}。联系方式：<a href=\"mailto:{email}\">{email}</a>。</p>"
+ },
+ "contact": {
+  "title": "联系我们",
+  "h1": "联系 Pixuvo",
+  "description": "如何联系 Pixuvo 团队：咨询问题、反馈游戏故障、商务合作和法律通知。",
+  "html": "<div class=\"card-like\">\n<p><strong>电子邮件：</strong> <a href=\"mailto:{email}\">{email}</a></p>\n<p><strong>运营方：</strong> {operatorName}<br />{address}<br />公司识别号（IČO）：{companyId} · 捷克数据信箱（datová schránka）：{dataBox} · {vat}</p>\n</div>\n<h2>游戏无法正常运行</h2>\n<p>请使用游戏页面上的<strong>报告问题</strong>按钮，这样我们就能准确知道你说的是哪款游戏、哪个页面。</p>\n<h2>版权和商标通知</h2>\n<p>请按照<a href=\"/copyright/\">版权通知流程</a>操作。</p>\n<h2>游戏开发者和分发商</h2>\n<p>游戏通过分发合作伙伴来到 Pixuvo。如果你是这里所列某款游戏的开发者，并希望修改或移除它，请写信给我们，并附上该游戏的网址。</p>"
+ },
+ "parents": {
+  "title": "家长须知 – Pixuvo 对孩子安全吗？",
+  "h1": "家长须知",
+  "description": "Pixuvo 如何让游戏时间简单又安全：没有账号，没有聊天，我们的页面上没有广告，游戏上线前经过检查，游戏内购买会明确标注。",
+  "html": "<p>Pixuvo 是一个面向儿童和家庭的免费网页游戏合集。下面清楚说明你的孩子在这里会接触到什么，以及不会接触到什么。</p>\n<h2>Pixuvo 没有的东西</h2>\n<ul>\n<li><strong>没有账号，也没有聊天。</strong>孩子无法在 Pixuvo 上给陌生人发消息，也从不需要输入姓名、电子邮件或密码。</li>\n<li><strong>Pixuvo 页面上没有广告。</strong>游戏来自分发合作伙伴（GameMonetize、GamePix、Playgama），他们可能会在游戏内显示简短广告，例如在游戏开始前。</li>\n<li><strong>没有下载或安装程序。</strong>游戏在浏览器中运行。</li>\n</ul>\n<h2>游戏如何上架 Pixuvo</h2>\n<ul>\n<li>每款游戏都来自获得授权的分发合作伙伴。标题和标签中涉及成人内容、赌博、博彩或亲吻的游戏会被自动拦下，未经审核绝不会发布。</li>\n<li>提到第三方品牌（例如知名系列作品）的游戏，会先被拦下，等我们检查后再决定。</li>\n<li>任何人都可以用游戏下方的<strong>报告问题</strong>按钮举报游戏；每一份报告我们都会看。</li>\n</ul>\n<h2>游戏内购买</h2>\n<p>Pixuvo 本身不出售任何东西。部分合作伙伴的游戏提供可选的游戏内购买；当合作伙伴声明这一点时，游戏页面会显示<strong>💳 游戏内购买</strong>。合作伙伴并不总会说明，所以我们建议在浏览器或设备设置中保持开启购买审批。</p>\n<h2>隐私</h2>\n<p>收藏和最近玩过的游戏只保存在孩子的浏览器里。使用统计（Google Analytics）只有在有人于隐私设置中允许后才会运行；不开启它，所有功能也都能正常使用。详情请看：<a href=\"/privacy/\">隐私政策</a>和 <a href=\"/cookies/\">Cookie</a>。</p>\n<h2>有疑问或遇到问题？</h2>\n<p>请写信到 <a href=\"mailto:{email}\">{email}</a>，每一封邮件我们都会回复。</p>"
+ },
+ "cookies": {
+  "title": "Cookie 与本地存储",
+  "h1": "Cookie 与本地存储",
+  "description": "Pixuvo 使用哪些浏览器存储，哪些是可选的，以及如何更改你的选择。",
+  "html": "<p>未经你同意，Pixuvo 页面<strong>不会设置任何 Cookie</strong>。我们只会为你使用的功能使用浏览器的本地存储：</p>\n<table>\n<thead><tr><th>键名</th><th>用途</th><th>类型</th></tr></thead>\n<tbody>\n<tr><td><code>pixuvo:favorites</code></td><td>你用爱心标记的游戏</td><td>你所使用的功能所必需</td></tr>\n<tr><td><code>pixuvo:recent</code></td><td>最近玩过的列表</td><td>功能所必需</td></tr>\n<tr><td><code>pixuvo:vote:&lt;id&gt;</code></td><td>记住你的喜欢/不喜欢</td><td>功能所必需</td></tr>\n<tr><td><code>pixuvo:consent</code></td><td>你的隐私设置</td><td>必需</td></tr>\n<tr><td><code>pixuvo_lang</code>（Cookie，1 年）</td><td>记住你选择的语言</td><td>你所使用的功能所必需</td></tr>\n<tr><td><code>pixuvo:src:&lt;id&gt;</code>（会话存储）</td><td>在一次访问中保持同一个游戏版本</td><td>必需</td></tr>\n<tr><td><code>_ga</code>、<code>_ga_XESJS34X9Z</code>（Cookie，Google Analytics）</td><td>区分不同访问，用于使用统计；最长 2 年</td><td><strong>可选——仅在你同意后使用</strong></td></tr>\n</tbody>\n</table>\n<h2>可选技术</h2>\n<p><strong>统计分析（Google Analytics 4）</strong>只有在你允许后才会运行。广告功能、Google 信号和广告个性化均已关闭。我们的页面上<strong>没有任何广告</strong>。你可以随时查看或更改你的选择——撤回同意后，统计分析会停止，其 Cookie 也会被删除：</p>\n<p><button type=\"button\" class=\"btn btn-primary\" data-consent-open>打开隐私设置</button></p>\n<h2>游戏内部</h2>\n<p>当你打开某款游戏的页面时，游戏会从我们的合作伙伴那里加载（列表页只加载封面图片）。在游戏框架内，合作伙伴及其广告服务商可能会使用 Cookie 或类似技术，并可能显示他们自己的同意提示。这些情况适用他们的政策；你也可以在浏览器中屏蔽第三方 Cookie。</p>\n<h2>防垃圾信息保护</h2>\n<p>当你投票或报告问题时，Cloudflare Turnstile 可能会检查你的浏览器，以区分真人和机器人。它只会在那一刻加载。</p>"
+ },
+ "privacy": {
+  "title": "隐私政策",
+  "h1": "隐私政策",
+  "description": "Pixuvo 处理哪些个人数据、为什么处理、保存多久，以及你在 GDPR 下享有的权利。",
+  "html": "<h2>数据控制者</h2>\n<p>{operatorName}，地址：{address}，公司识别号（IČO）：{companyId}（以下称“我们”）。隐私事务联系方式：<a href=\"mailto:{email}\">{email}</a>。</p>\n<h2>我们处理什么数据，以及原因</h2>\n<table>\n<thead><tr><th>数据</th><th>目的</th><th>法律依据（GDPR）</th><th>保存期限</th></tr></thead>\n<tbody>\n<tr><td>由我们的托管服务商 Cloudflare 处理的 IP 地址和请求数据（浏览器、所请求的页面）</td><td>提供网站服务、安全防护、防止滥用和访问频率限制</td><td>正当利益，第 6 条第 1 款 (f) 项</td><td>服务商的短期日志；我们不会在数据库中保存 IP 地址</td></tr>\n<tr><td>在你投票或报告问题时，由你的 IP 地址和一个密钥生成的单向哈希值</td><td>确保每位访客只能投一票，并阻止垃圾信息</td><td>正当利益，第 6 条第 1 款 (f) 项</td><td>投票：在游戏上架期间保存。报告：最长 12 个月</td></tr>\n<tr><td>你发送的问题报告内容</td><td>修复你报告的问题</td><td>正当利益，第 6 条第 1 款 (f) 项</td><td>最长 12 个月</td></tr>\n<tr><td>你发给我们的电子邮件</td><td>回复你</td><td>正当利益／应你的要求采取的措施</td><td>在沟通所需期间内保存，最长 3 年</td></tr>\n<tr><td>通过 Google Analytics 4 收集的使用统计——浏览的页面、开始的游戏、设备和浏览器类型、大致所在国家；通过 <code>_ga</code> Cookie 设置</td><td>了解孩子们使用哪些游戏和页面，以便改进游戏库</td><td><strong>同意</strong>，第 6 条第 1 款 (a) 项——仅在你允许“统计分析”时</td><td>按 Google Analytics 中设置的数据保留期限（我们采用最短的标准期限）；除非你撤回同意，Cookie 最长保存 2 年</td></tr>\n<tr><td>每款游戏的每日游玩总数（不含个人数据）</td><td>为热门游戏排名，找出无法运行的游戏</td><td>—</td><td>汇总统计数据</td></tr>\n</tbody>\n</table>\n<p>收藏、最近玩过的游戏、你的投票和隐私设置<strong>只保存在你浏览器的本地存储中</strong>。我们永远不会收到这些列表。</p>\n<p><strong>Google Analytics</strong> 只有在你于<a href=\"/cookies/\">隐私设置</a>中允许“统计分析”后才会运行。它由 Google Ireland Limited（Gordon House, Barrow Street, Dublin 4, Ireland）作为我们的数据处理者提供；数据可能会依据欧盟－美国数据隐私框架（EU–US Data Privacy Framework）传输给位于美国的 Google LLC。我们已关闭广告功能、Google 信号和广告个性化，并且不会发送姓名、电子邮件或用户 ID。你可以随时在隐私设置中撤回同意；之后我们会停止统计分析，并删除 <code>_ga</code> Cookie。Pixuvo 页面上<strong>没有任何广告</strong>。</p>\n<p>Pixuvo 也面向儿童。如果你未满 15 岁，请在允许可选的统计分析之前先询问父母；不开启它，你也可以使用所有功能。</p>\n<h2>来自合作伙伴的游戏</h2>\n<p>当你打开游戏页面时，游戏会从我们的分发合作伙伴（GameMonetize、GamePix 或 Playgama，每个游戏页面上都会注明）那里加载。从那一刻起，合作伙伴及其合作的广告公司会收到你的 IP 地址和设备信息等数据，并可能在游戏框架内使用 Cookie 或类似技术。他们作为独立的数据控制者，按照各自的隐私政策行事，这些政策可在其网站上查阅。仅列出游戏的页面（首页、分类、搜索）除封面图片外，不会从游戏合作伙伴处加载任何内容。</p>\n<h2>数据处理者与数据传输</h2>\n<p>Cloudflare, Inc. 为网站、数据库和防垃圾信息保护（Turnstile）提供托管服务。Cloudflare 可能会依据欧盟－美国数据隐私框架和标准合同条款，在欧盟以外处理数据。</p>\n<h2>儿童</h2>\n<p>Pixuvo 是面向大众的网站，不会向任何人索取个人信息。部分游戏可能会吸引儿童；家长应查看孩子所玩的游戏。如上所述，游戏和游戏内广告由合作伙伴提供。</p>\n<h2>你的权利</h2>\n<p>你可以写信至 <a href=\"mailto:{email}\">{email}</a>，要求查阅、更正、删除、限制处理、反对处理以及数据可携带。由于我们只保存哈希值，可能需要你提供一些细节（游戏、日期）才能找到相关记录。你可以向捷克个人数据保护办公室（Úřad pro ochranu osobních údajů，www.uoou.cz）或你所在地的监管机构提出投诉。</p>"
+ },
+ "terms": {
+  "title": "使用条款",
+  "h1": "使用条款",
+  "description": "使用免费网页游戏平台 Pixuvo 的规则。",
+  "html": "<h2>1. 服务</h2>\n<p>Pixuvo（{siteUrl}）由 {operatorName} 运营，地址：{address}，公司识别号：{companyId}。Pixuvo 列出由第三方开发、通过分发合作伙伴提供的免费网页游戏。使用 Pixuvo 是免费的，无需注册账号。</p>\n<h2>2. 第三方游戏</h2>\n<p>游戏在合作伙伴的服务器上运行，可能包含由合作伙伴投放的广告。我们会认真挑选和介绍游戏，但我们无法控制游戏的内容、可用性或运行方式，也不保证任何游戏都能使用或能在你的设备上运行。如果游戏提供存档功能，存档由游戏本身处理，而不是由 Pixuvo 处理。</p>\n<h2>3. 合理使用</h2>\n<p>请勿试图干扰服务，以损害服务的频率抓取数据，绕过其安全措施，或提交违法、恶意或误导性的报告或投票。</p>\n<h2>4. 知识产权</h2>\n<p>游戏、名称和图片归各自的所有者所有。Pixuvo 的名称、标志和网站设计归运营方所有。如果你认为某些内容侵犯了你的权利，请参阅<a href=\"/copyright/\">版权</a>。</p>\n<h2>5. 责任</h2>\n<p>Pixuvo 按“现状”提供。在法律允许的范围内，对于第三方游戏或服务暂时无法使用所造成的损害，我们不承担责任。本条款的任何内容均不限制你作为消费者依据强制性法律所享有的权利。</p>\n<h2>6. 条款变更与适用法律</h2>\n<p>我们可能会更新本条款；上方的日期表示最新版本。本条款受捷克法律管辖。联系方式：<a href=\"mailto:{email}\">{email}</a>。</p>"
+ },
+ "copyright": {
+  "title": "版权和商标通知",
+  "h1": "版权和商标通知",
+  "description": "如何告知 Pixuvo 有内容侵犯了你的版权或商标。",
+  "html": "<p>Pixuvo 嵌入由分发合作伙伴提供的游戏，并不托管游戏文件。我们尊重知识产权，并会迅速处理有效的通知。标题中使用第三方品牌的游戏，在 Pixuvo 上线前会先经过人工审核。</p>\n<h2>如何发送通知</h2>\n<p>请发送电子邮件至 <a href=\"mailto:{email}?subject=Copyright%20notice\">{email}</a>，并提供：</p>\n<ol>\n<li>相关游戏或页面在 Pixuvo 上的网址；</li>\n<li>你认为被侵权的作品或商标的说明；</li>\n<li>你的姓名、联系方式，以及你与权利人的关系；</li>\n<li>一份声明，说明你善意地相信该使用未经授权，并且通知中的信息准确无误。</li>\n</ol>\n<p>你也可以在任何游戏页面上使用<strong>报告问题 → 版权或商标问题</strong>；正式通知请使用电子邮件。</p>\n<h2>接下来会怎样</h2>\n<p>我们会及时审核通知。通知有效时，我们会在 Pixuvo 上移除或停用该游戏，并告知分发合作伙伴。从 Pixuvo 移除游戏，并不会将其从合作伙伴的游戏库或其他网站中移除。</p>"
+ }
+}

@@ -1,0 +1,11 @@
+---
+import Base from '../layouts/Base.astro';
+import { useI18n } from '../i18n';
+const { t } = await useI18n(Astro);
+---
+<Base title={t('nf.title')} description={t('nf.description')} path={null} noindex>
+  <div class="wrap">
+    <div class="page-head"><h1>{t('nf.title')}</h1><p class="lead">{t('nf.lead')}</p></div>
+    <p class="btn-row"><a class="btn btn-primary" href="/random/" rel="nofollow">{t('nf.random')}</a> <a class="btn btn-ghost" href="/">{t('nf.home')}</a> <a class="btn btn-ghost" href="/categories/">{t('nf.categories')}</a></p>
+  </div>
+</Base>

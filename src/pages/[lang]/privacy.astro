@@ -1,0 +1,7 @@
+---
+export const prerender = true;
+import DocView from '../../views/DocView.astro';
+import { langPaths } from '../../views/paths';
+export const getStaticPaths = langPaths;
+---
+<DocView doc="privacy" />

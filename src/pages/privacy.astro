@@ -1,37 +1,5 @@
 ---
 export const prerender = true;
-import Doc from '../layouts/Doc.astro';
-import { SITE } from '../lib/site';
+import DocView from '../views/DocView.astro';
 ---
-<Doc title="Privacy Policy" h1="Privacy policy" description="What personal data Pixuvo processes, why, for how long, and your rights under the GDPR." path="/privacy/" updated="2 October 2026">
-  <h2>Controller</h2>
-  <p>{SITE.operator.name}, {SITE.operator.address}, company ID (IČO) {SITE.operator.companyId} (“we”). Contact for privacy matters: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.</p>
-
-  <h2>What we process and why</h2>
-  <table>
-    <thead><tr><th>Data</th><th>Purpose</th><th>Legal basis (GDPR)</th><th>Retention</th></tr></thead>
-    <tbody>
-      <tr><td>IP address and request data (browser, page requested) handled by our hosting provider Cloudflare</td><td>Delivering the website, security, abuse and rate limiting</td><td>Legitimate interest, Art. 6(1)(f)</td><td>Short-lived provider logs; we do not store IP addresses in our database</td></tr>
-      <tr><td>A one-way hash derived from your IP address and a secret, when you vote or report a problem</td><td>Allow one vote per visitor and stop spam</td><td>Legitimate interest, Art. 6(1)(f)</td><td>Votes: while the game is listed. Reports: up to 12 months</td></tr>
-      <tr><td>The text of a problem report you send</td><td>Fixing the problem you reported</td><td>Legitimate interest, Art. 6(1)(f)</td><td>Up to 12 months</td></tr>
-      <tr><td>E-mails you send us</td><td>Answering you</td><td>Legitimate interest / steps at your request</td><td>As long as needed for the conversation, at most 3 years</td></tr>
-      <tr><td>Usage statistics via Google Analytics 4 — pages viewed, games started, device and browser type, approximate country; set with the <code>_ga</code> cookies</td><td>Understanding which games and pages kids use, so we can improve the catalog</td><td><strong>Consent</strong>, Art. 6(1)(a) — only if you allow “Analytics”</td><td>Data retention set in Google Analytics (we use the shortest standard period); cookies up to 2 years unless you withdraw consent</td></tr>
-      <tr><td>Daily totals of plays per game (no personal data)</td><td>Ranking popular games, finding broken ones</td><td>—</td><td>Aggregated statistics</td></tr>
-    </tbody>
-  </table>
-  <p>Favorites, recently played games, your votes and your privacy choice are stored <strong>only in your browser’s local storage</strong>. We never receive that list.</p>
-  <p><strong>Google Analytics</strong> runs only after you allow “Analytics” in the <a href="/cookies/">privacy choices</a>. It is provided by Google Ireland Limited (Gordon House, Barrow Street, Dublin 4, Ireland) as our processor; data may be transferred to Google LLC in the USA under the EU–US Data Privacy Framework. We switched off advertising features, Google signals and ad personalisation, and we send no names, e-mails or user IDs. You can withdraw consent at any time in the privacy choices; we then stop analytics and delete the <code>_ga</code> cookies. We show <strong>no advertising</strong> on Pixuvo pages.</p>
-  <p>Pixuvo is meant for children too. If you are under 15, please ask a parent before allowing optional analytics; you can use every feature without it.</p>
-
-  <h2>Games from partners</h2>
-  <p>When you open a game page, the game is loaded from our distribution partner (GameMonetize, GamePix or Playgama, named on each game page). From that moment the partner, and the advertising companies it works with, receive data such as your IP address and device information and may use cookies or similar technologies inside the game frame. They act as independent controllers under their own privacy policies, available on their websites. Pages that only list games (home, categories, search) load nothing from the game partners except cover images.</p>
-
-  <h2>Processors and transfers</h2>
-  <p>Cloudflare, Inc. hosts the website, database and spam protection (Turnstile). Cloudflare may process data outside the EU under the EU–US Data Privacy Framework and Standard Contractual Clauses.</p>
-
-  <h2>Children</h2>
-  <p>Pixuvo is a general-audience website and does not ask anyone for personal information. Some games may appeal to children; parents should review the games their children play. Games and in-game advertising are provided by partners, as described above.</p>
-
-  <h2>Your rights</h2>
-  <p>You can ask for access, rectification, erasure, restriction, objection and data portability by writing to <a href={`mailto:${SITE.email}`}>{SITE.email}</a>. Because we store only hashes, we may need details (game, date) to find a record. You may lodge a complaint with the Czech Office for Personal Data Protection (Úřad pro ochranu osobních údajů, www.uoou.cz) or your local authority.</p>
-</Doc>
+<DocView doc="privacy" />

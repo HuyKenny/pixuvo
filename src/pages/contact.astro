@@ -1,17 +1,5 @@
 ---
 export const prerender = true;
-import Doc from '../layouts/Doc.astro';
-import { SITE } from '../lib/site';
+import DocView from '../views/DocView.astro';
 ---
-<Doc title="Contact" h1="Contact Pixuvo" description="How to reach the Pixuvo team: questions, broken games, partnership and legal notices." path="/contact/" updated="2 October 2026">
-  <div class="card-like">
-    <p><strong>E-mail:</strong> <a href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
-    <p><strong>Operator:</strong> {SITE.operator.name}<br />{SITE.operator.address}<br />Company ID (IČO): {SITE.operator.companyId} · Czech data box: {SITE.operator.dataBox} · {SITE.operator.vat}</p>
-  </div>
-  <h2>A game does not work</h2>
-  <p>Use the <strong>Report issue</strong> button on the game page — it tells us exactly which game and page you mean.</p>
-  <h2>Copyright and trademark notices</h2>
-  <p>Please follow the <a href="/copyright/">copyright notice procedure</a>.</p>
-  <h2>Game developers and distributors</h2>
-  <p>Games reach Pixuvo through distribution partners. If you are the developer of a game listed here and want it changed or removed, write to us with the game’s URL.</p>
-</Doc>
+<DocView doc="contact" />

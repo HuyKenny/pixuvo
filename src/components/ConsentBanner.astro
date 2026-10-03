@@ -7,6 +7,8 @@
  * `whenConsented()` in src/scripts/consent.ts — never directly.
  */
 import { SITE } from '../lib/site';
+import { useI18n } from '../i18n';
+const { t } = await useI18n(Astro);
 // Build-time override (tests); otherwise analytics is offered whenever a GA4 id is configured.
 const raw = import.meta.env.PUBLIC_CONSENT_CATEGORIES ?? (SITE.ga4 ? 'analytics' : '');
 const active = raw.split(',').map((s: string) => s.trim()).filter(Boolean);
@@ -15,24 +17,24 @@ const ads = active.includes('ads');
 ---
 <section class="consent" id="consent" hidden aria-labelledby="consent-title" data-consent data-active={active.join(',')} role="dialog" aria-modal="false">
   <p class="consent-text">
-    <strong id="consent-title">🍪 Privacy choices</strong>
+    <strong id="consent-title">{t('consent.title')}</strong>
     {active.length > 0
-      ? <>May we count which games are played? (Google Analytics, no ads.) Your favorites stay on this device. <a href="/cookies/">Cookie details</a> · <button type="button" class="link-btn consent-settings" data-consent-settings>Settings</button></>
-      : <>Pixuvo runs no analytics or ads on its pages. Favorites and history stay on this device; games come from partners who handle their own ads. <a href="/cookies/">More</a></>}
+      ? <>{t('consent.ask')} <a href="/cookies/">{t('consent.details')}</a> · <button type="button" class="link-btn consent-settings" data-consent-settings>{t('consent.settings')}</button></>
+      : <>{t('consent.noTracking')} <a href="/cookies/">{t('consent.more')}</a></>}
   </p>
   <div class="row">
-    {active.length > 0 && <button type="button" class="btn btn-ghost" data-consent-action="reject">No thanks</button>}
-    {active.length > 0 && <button type="button" class="btn btn-primary" data-consent-action="accept">OK</button>}
-    {active.length === 0 && <button type="button" class="btn btn-primary" data-consent-action="close">Close</button>}
+    {active.length > 0 && <button type="button" class="btn btn-ghost" data-consent-action="reject">{t('consent.reject')}</button>}
+    {active.length > 0 && <button type="button" class="btn btn-primary" data-consent-action="accept">{t('consent.accept')}</button>}
+    {active.length === 0 && <button type="button" class="btn btn-primary" data-consent-action="close">{t('consent.close')}</button>}
   </div>
   {active.length > 0 && (
     <details data-consent-details>
-      <summary class="sr-only">Settings</summary>
-      <label><input type="checkbox" checked disabled /> <span><strong>Necessary</strong> — favorites, history and this choice, stored only in your browser.</span></label>
-      <label><input type="checkbox" name="analytics" disabled={!analytics} /> <span><strong>Analytics</strong> — Google Analytics counts visits and which games are played. No ads, no profiles, no Google signals.</span></label>
-      {ads && <label><input type="checkbox" name="ads" /> <span><strong>Advertising on Pixuvo pages</strong> — ads around the game area.</span></label>}
-      <p class="consent-fine">A game loads from our partner when you open its page; partners show their own ads inside games and handle their own consent.</p>
-      <button type="button" class="btn btn-ghost" data-consent-action="save">Save choices</button>
+      <summary class="sr-only">{t('consent.settings')}</summary>
+      <label><input type="checkbox" checked disabled /> <span><strong>{t('consent.necessary')}</strong> {t('consent.necessaryText')}</span></label>
+      <label><input type="checkbox" name="analytics" disabled={!analytics} /> <span><strong>{t('consent.analytics')}</strong> {t('consent.analyticsText')}</span></label>
+      {ads && <label><input type="checkbox" name="ads" /> <span><strong>{t('consent.ads')}</strong> {t('consent.adsText')}</span></label>}
+      <p class="consent-fine">{t('consent.partner')}</p>
+      <button type="button" class="btn btn-ghost" data-consent-action="save">{t('consent.save')}</button>
     </details>
   )}
 </section>

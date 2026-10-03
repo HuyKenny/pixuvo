@@ -1,9 +1,11 @@
 ---
 /** Desktop filter column (≥ 1180px), same groups as the phone sheet — rendered by src/scripts/filters.ts. */
+import { useI18n } from '../i18n';
+const { t } = await useI18n(Astro);
 ---
 <aside class="filterside list-side" aria-labelledby="side-filter-h">
-  <div class="side-head"><h2 id="side-filter-h">Find a game</h2><button type="button" class="link-btn" data-filter-clear>Reset</button></div>
+  <div class="side-head"><h2 id="side-filter-h">{t('home.findGame')}</h2><button type="button" class="link-btn" data-filter-clear>{t('filter.reset')}</button></div>
   <form class="filter-form side-form" data-filter-form>
-    <div data-filter-groups><p class="note">Loading filters…</p></div>
+    <div data-filter-groups><p class="note">{t('filter.loading')}</p></div>
   </form>
 </aside>

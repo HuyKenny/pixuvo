@@ -1,19 +1,5 @@
 ---
 export const prerender = true;
-import Doc from '../layouts/Doc.astro';
-import { SITE } from '../lib/site';
+import DocView from '../views/DocView.astro';
 ---
-<Doc title="Terms of Use" h1="Terms of use" description="The rules for using Pixuvo, a free browser game portal." path="/terms/" updated="2 October 2026">
-  <h2>1. The service</h2>
-  <p>Pixuvo ({SITE.url}) is operated by {SITE.operator.name}, {SITE.operator.address}, company ID {SITE.operator.companyId}. Pixuvo lists free browser games that are developed by third parties and provided through distribution partners. Using Pixuvo is free and requires no account.</p>
-  <h2>2. Third-party games</h2>
-  <p>Games run on partners’ servers and may contain advertising served by the partner. We select and describe games carefully but we do not control their content, availability or how they work, and we do not guarantee that any game will be available or work on your device. Saved progress, if a game offers it, is handled by the game itself, not by Pixuvo.</p>
-  <h2>3. Acceptable use</h2>
-  <p>Do not attempt to disrupt the service, scrape it at a rate that harms it, bypass its security, or submit unlawful, abusive or misleading reports or votes.</p>
-  <h2>4. Intellectual property</h2>
-  <p>Games, names and images belong to their respective owners. The Pixuvo name, logo and site design belong to the operator. See <a href="/copyright/">Copyright</a> if you believe something infringes your rights.</p>
-  <h2>5. Liability</h2>
-  <p>Pixuvo is provided “as is”. To the extent permitted by law, we are not liable for damage arising from third-party games or from temporary unavailability. Nothing in these terms limits rights you have as a consumer under mandatory law.</p>
-  <h2>6. Changes and law</h2>
-  <p>We may update these terms; the date above shows the latest version. These terms are governed by Czech law. Contact: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.</p>
-</Doc>
+<DocView doc="terms" />

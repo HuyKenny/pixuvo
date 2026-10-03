@@ -2,9 +2,11 @@
 import type { GameCard as Card } from '../lib/types';
 import GameCard from './GameCard.astro';
 import { rankBadge } from '../lib/plays';
+import { useI18n } from '../i18n';
+const { t } = await useI18n(Astro);
 interface Props { games: Card[]; eagerCount?: number; id?: string; wide?: boolean; compact?: boolean; label?: string; /** One full row: extra cards are hidden where fewer columns fit. */ row?: boolean; /** Leaderboard: medal/place + real plays this week on each card. */ ranked?: boolean }
 const { games, eagerCount = 0, id, wide = false, compact = false, label, row = false, ranked = false } = Astro.props;
 ---
 <div class:list={['grid', { 'grid-wide': wide, 'grid-compact': compact, 'grid-row': row, 'grid-ranked': ranked }]} id={id} role="list" aria-label={label}>
-  {games.map((g, i) => <div role="listitem"><GameCard game={g} eager={i < eagerCount} badge={ranked ? rankBadge(i, g.plays7d) : undefined} /></div>)}
+  {games.map((g, i) => <div role="listitem"><GameCard game={g} eager={i < eagerCount} badge={ranked ? rankBadge(i, g.plays7d, t) : undefined} /></div>)}
 </div>

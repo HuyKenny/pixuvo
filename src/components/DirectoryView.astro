@@ -9,30 +9,32 @@ import CategoryBar from './CategoryBar.astro';
 import { directoryPage, getSetting, parseBounds } from '../lib/catalog';
 import { categoriesCached, q } from '../lib/server/db';
 import { MIN_CATEGORY_GAMES } from '../lib/taxonomy';
-import { approxCount } from '../lib/format';
+import { useI18n } from '../i18n';
 interface Props { page: number }
 const { page } = Astro.props;
+const i = await useI18n(Astro);
+const t = i.t;
 const db = q();
 const [boundsRaw, published] = await Promise.all([getSetting(db, 'dir_bounds'), getSetting(db, 'published_count')]);
 const res = await directoryPage(db, parseBounds(boundsRaw), Number(published ?? 0), page);
 const cats = (await categoriesCached(db)).filter((c) => c.nav && c.count >= MIN_CATEGORY_GAMES);
 const href = (n: number) => (n > 1 ? `/games/page/${n}/` : '/games/');
 ---
-<Base title={page > 1 ? `All Games – Page ${page}` : 'All Free Online Games – Newest First'} description={`Every game on Pixuvo, newest additions first${page > 1 ? ` – page ${page}` : ''}. ${approxCount(Number(published ?? 0))} free browser games, no downloads.`}
+<Base title={page > 1 ? t('dir.titlePage', { n: page }) : t('dir.title')} description={page > 1 ? t('dir.descriptionPage', { n: page, count: i.approx(Number(published ?? 0)) }) : t('dir.description', { count: i.approx(Number(published ?? 0)) })}
   path={href(page)} prev={page > 1 ? href(page - 1) : null} next={page < res.pages ? href(page + 1) : null}>
   <div class="wrap">
     <CategoryBar categories={cats} />
-    <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: page > 1 ? `All games – page ${page}` : 'All games', href: href(page) }]} />
+    <Breadcrumbs items={[{ name: t('nav.home'), href: '/' }, { name: page > 1 ? t('dir.h1Page', { n: page }) : t('dir.h1'), href: href(page) }]} />
     <div class="page-head">
-      <h1>All games{page > 1 && ` – page ${page}`}</h1>
-      <p class="lead">Every game on Pixuvo, newest additions first. Looking for something specific? Try <a href="/categories/">categories</a> or search.</p>
+      <h1>{page > 1 ? t('dir.h1Page', { n: page }) : t('dir.h1')}</h1>
+      <p class="lead">{t('dir.lead')} <a href="/categories/">{t('dir.leadCategories')}</a> {t('dir.leadOr')}</p>
     </div>
     <div class="list-layout">
       <FilterSide />
       <div class="list-main">
-        <FilterPanel category={null} name="all games" total={Number(published ?? 0)} links={cats.filter((c) => c.kind === 'genre').slice(0, 12).map((c) => ({ slug: c.slug, name: c.name }))} />
-        {res.items.length ? <GameGrid games={res.items} eagerCount={page === 1 ? 4 : 0} label="All games" id="game-grid" /> : <div class="empty-state"><strong>No games on this page</strong>Games listed here were removed from the catalog. <a href="/games/">Back to the first page</a>.</div>}
-        <div id="game-pager"><Pagination page={page} pages={res.pages} href={href} label="All games pages" /></div>
+        <FilterPanel category={null} name={t('dir.filterName')} total={Number(published ?? 0)} links={cats.filter((c) => c.kind === 'genre').slice(0, 12).map((c) => ({ slug: c.slug, name: i.cat(c.slug, c.name) }))} />
+        {res.items.length ? <GameGrid games={res.items} eagerCount={page === 1 ? 4 : 0} label={t('dir.label')} id="game-grid" /> : <div class="empty-state"><strong>{t('dir.emptyTitle')}</strong>{t('dir.emptyText')} <a href="/games/">{t('dir.backFirst')}</a>.</div>}
+        <div id="game-pager"><Pagination page={page} pages={res.pages} href={href} label={t('dir.pages')} /></div>
       </div>
     </div>
   </div>

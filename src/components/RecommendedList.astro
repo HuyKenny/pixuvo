@@ -4,12 +4,14 @@ import { gamePath } from '../lib/site';
 import Tag from './Tag.astro';
 interface Props { games: GameCard[] }
 const { games } = Astro.props;
+import { useI18n } from '../i18n';
+const i = await useI18n(Astro);
 ---
 <ul class="reclist">
   {games.map((g) => (
     <li><a href={gamePath(g.slug)}>
       <img src={g.thumb} alt="" width="128" height="96" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
-      <span><strong>{g.title}</strong>{g.cat && <Tag tone="violet" small>{g.cat}</Tag>}</span>
+      <span><strong>{g.title}</strong>{g.cat && <Tag tone="violet" small>{i.cat(g.catSlug ?? '', g.cat)}</Tag>}</span>
     </a></li>
   ))}
 </ul>

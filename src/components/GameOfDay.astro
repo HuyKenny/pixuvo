@@ -4,15 +4,17 @@ import Icon from './Icon.astro';
 import type { GameCard } from '../lib/types';
 interface Props { game: GameCard }
 const { game: g } = Astro.props;
+import { useI18n } from '../i18n';
+const i = await useI18n(Astro);
 ---
 <section class="gotd" aria-labelledby="gotd-h">
   <a class="gotd-card" href={`/games/${g.slug}/`}>
     <img class="gotd-img" src={g.thumb} alt="" width="320" height="240" loading="lazy" referrerpolicy="no-referrer" />
     <span class="gotd-text">
-      <span class="gotd-kicker" id="gotd-h">⭐ Game of the Day</span>
+      <span class="gotd-kicker" id="gotd-h">{i.t('home.gotd')}</span>
       <strong>{g.title}</strong>
-      {g.cat && <small>{g.cat}</small>}
-      <span class="gotd-btn"><Icon name="play" size={18} /> Play now</span>
+      {g.cat && <small>{i.cat(g.catSlug ?? '', g.cat)}</small>}
+      <span class="gotd-btn"><Icon name="play" size={18} /> {i.t('home.playNow')}</span>
     </span>
   </a>
 </section>

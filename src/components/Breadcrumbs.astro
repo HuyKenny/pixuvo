@@ -1,14 +1,16 @@
 ---
 import { canonical } from '../lib/site';
+import { useI18n } from '../i18n';
+const { t, lp } = await useI18n(Astro);
 interface Props { items: Array<{ name: string; href?: string }> }
 const { items } = Astro.props;
 const ld = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
-  itemListElement: items.map((it, i) => ({ '@type': 'ListItem', position: i + 1, name: it.name, ...(it.href ? { item: canonical(it.href) } : {}) })),
+  itemListElement: items.map((it, i) => ({ '@type': 'ListItem', position: i + 1, name: it.name, ...(it.href ? { item: canonical(lp(it.href)) } : {}) })),
 };
 ---
-<nav class="breadcrumbs" aria-label="Breadcrumb">
+<nav class="breadcrumbs" aria-label={t('a11y.breadcrumb')}>
   <ol>
     {items.map((it, i) => <li>{it.href && i < items.length - 1 ? <a href={it.href}>{it.name}</a> : <span aria-current="page">{it.name}</span>}</li>)}
   </ol>

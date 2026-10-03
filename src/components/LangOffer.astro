@@ -1,0 +1,51 @@
+---
+/**
+ * Offer bar on deep pages: when the browser language differs from the page
+ * language and that version exists, suggest it (in the target language). Never
+ * redirects; hidden for bots (needs JS) and after dismissing.
+ */
+import { LOCALES } from '../i18n/locales';
+const offers = Object.fromEntries(LOCALES.map((l) => [l.code, { offer: l.offer, go: l.go }]));
+---
+<div class="lang-offer" data-lang-offer data-offers={JSON.stringify(offers)} hidden role="region" aria-label="Language">
+  <span data-offer-text></span>
+  <a class="btn btn-primary btn-sm" data-offer-go data-keep-href href="/">→</a>
+  <button type="button" class="icon-btn" data-offer-close aria-label="×">×</button>
+</div>
+<script>
+  import { fromAcceptLanguage, langFromPath, localePath, stripLocale, LANG_COOKIE } from '../i18n/locales';
+  const box = document.querySelector<HTMLElement>('[data-lang-offer]');
+  if (box) {
+    const page = langFromPath(location.pathname);
+    let dismissed = false;
+    try {
+      dismissed = sessionStorage.getItem('pixuvo:lang-offer') === '1' || document.cookie.includes(`${LANG_COOKIE}=`);
+    } catch {
+      dismissed = false;
+    }
+    const want = fromAcceptLanguage((navigator.languages ?? [navigator.language]).join(','));
+    if (!dismissed && want && want !== page && !location.pathname.startsWith('/search')) {
+      const offers = JSON.parse(box.dataset.offers ?? '{}') as Record<string, { offer: string; go: string }>;
+      const o = offers[want];
+      if (o) {
+        box.querySelector('[data-offer-text]')!.textContent = o.offer;
+        const go = box.querySelector<HTMLAnchorElement>('[data-offer-go]')!;
+        go.textContent = o.go;
+        go.href = localePath(want, stripLocale(location.pathname)) + location.search + location.hash;
+        go.lang = want;
+        box.hidden = false;
+        go.addEventListener('click', () => {
+          document.cookie = `${LANG_COOKIE}=${want}; Max-Age=31536000; Path=/; SameSite=Lax; Secure`;
+        });
+      }
+    }
+    box.querySelector('[data-offer-close]')?.addEventListener('click', () => {
+      box.hidden = true;
+      try {
+        sessionStorage.setItem('pixuvo:lang-offer', '1');
+      } catch {
+        /* ignore */
+      }
+    });
+  }
+</script>

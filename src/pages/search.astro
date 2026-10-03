@@ -1,32 +1,5 @@
 ---
 export const prerender = false;
-import Base from '../layouts/Base.astro';
-import GameGrid from '../components/GameGrid.astro';
-import Pagination from '../components/Pagination.astro';
-import { clampPage, searchGames } from '../lib/catalog';
-import { q } from '../lib/server/db';
-import { SITE } from '../lib/site';
-const raw = (Astro.url.searchParams.get('q') ?? '').trim().slice(0, 80);
-const page = clampPage(Astro.url.searchParams.get('page') ?? '1', 20) ?? 1;
-const res = raw ? await searchGames(q(), raw, SITE.pageSize, (page - 1) * SITE.pageSize) : null;
-const pages = res ? Math.min(20, Math.max(1, Math.ceil(res.total / SITE.pageSize))) : 1;
-const href = (n: number) => `/search/?q=${encodeURIComponent(raw)}${n > 1 ? `&page=${n}` : ''}`;
+import SearchView from '../views/SearchView.astro';
 ---
-<Base title={raw ? `Search: ${raw}` : 'Search games'} description="Search free online games on Pixuvo." path={null} noindex query={raw}>
-  <div class="wrap">
-    <div class="page-head">
-      <h1>{raw ? <>Results for “{raw}”</> : 'Search games'}</h1>
-      {res && <p class="lead">{res.total === 0 ? 'No games found.' : `${res.capped ? `${res.total}+` : res.total} ${res.total === 1 ? 'game' : 'games'} found.`}</p>}
-    </div>
-    {!raw && (
-      <form action="/search/" method="get" role="search" style="max-width:560px">
-        <label class="field">Game name, genre or keyword<input type="search" name="q" maxlength="80" required /></label>
-        <button class="btn btn-primary" type="submit" style="margin-top:10px">Search</button>
-      </form>
-    )}
-    {raw && res === null && <div class="empty-state"><strong>Please type at least 2 letters or numbers</strong>Then press Enter.</div>}
-    {res && res.items.length > 0 && <GameGrid games={res.items} eagerCount={4} label="Search results" />}
-    {res && res.items.length === 0 && <div class="empty-state"><strong>No games match “{raw}”</strong>Check the spelling, try a shorter word, or <a href="/categories/">browse categories</a>.</div>}
-    {res && <Pagination page={page} pages={pages} href={href} label="Search result pages" />}
-  </div>
-</Base>
+<SearchView />

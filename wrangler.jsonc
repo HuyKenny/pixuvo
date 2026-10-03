@@ -11,9 +11,11 @@
   // pixuvo.com is served by this Worker; www.pixuvo.com is a zone Redirect Rule (301 → apex), so it never hits the Worker.
   "routes": [{ "pattern": "pixuvo.com", "custom_domain": true }],
   "preview_urls": false,
-  "assets": { "binding": "ASSETS", "directory": "./dist/client", "html_handling": "auto-trailing-slash", "not_found_handling": "none" },
+  "assets": { "binding": "ASSETS", "directory": "./dist/client", "html_handling": "auto-trailing-slash", "not_found_handling": "none", "run_worker_first": ["/"] },
   "d1_databases": [
-    { "binding": "DB", "database_name": "pixuvo-production", "database_id": "7191a68f-d043-434d-8166-fcca9c5b8d55", "migrations_dir": "migrations" }
+    { "binding": "DB", "database_name": "pixuvo-production", "database_id": "7191a68f-d043-434d-8166-fcca9c5b8d55", "migrations_dir": "migrations" },
+    // Machine translations of game texts (scripts/translate.ts); optional for the site — pages fall back to English.
+    { "binding": "I18N", "database_name": "pixuvo-i18n", "database_id": "39781e8b-70fd-42d7-bfa9-9842d2a1b162", "migrations_dir": "migrations-i18n" }
   ],
   // Workers Rate Limiting API (per colo, best effort) per IP: 20 writes/min, 60 plays/min, 180 cache-missed reads/min.
   "ratelimits": [

@@ -1,5 +1,6 @@
 import { track } from './analytics';
 import { store } from './store';
+import { tr } from './i18n';
 
 function sync(root: ParentNode = document) {
   const favs = new Set(store.favorites().map((g) => g.id));
@@ -7,7 +8,7 @@ function sync(root: ParentNode = document) {
     const on = favs.has(Number(b.dataset.fav));
     b.setAttribute('aria-pressed', String(on));
     const title = b.dataset.title ?? 'game';
-    if (b.dataset.favLabel !== 'static') b.setAttribute('aria-label', on ? `Remove ${title} from favorites` : `Add ${title} to favorites`);
+    if (b.dataset.favLabel !== 'static') b.setAttribute('aria-label', on ? tr('c.removeFav', { title }) : tr('c.addFav', { title }));
   });
 }
 

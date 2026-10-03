@@ -1,22 +1,9 @@
 ---
 export const prerender = false;
-import CategoryView from '../../../components/CategoryView.astro';
-import { categoryGames, clampPage } from '../../../lib/catalog';
-import { categoriesCached, q } from '../../../lib/server/db';
-import { MIN_CATEGORY_GAMES } from '../../../lib/taxonomy';
-import { SITE, categoryPath } from '../../../lib/site';
-
-const { cat, n } = Astro.params;
-const page = clampPage(n ?? '', SITE.maxCategoryPages);
-const db = q();
-const cats = await categoriesCached(db);
-const c = cats.find((x) => x.slug === cat && x.count >= MIN_CATEGORY_GAMES);
-if (!c || page === null) return Astro.rewrite("/404/");
-if (page === 1) return Astro.redirect(categoryPath(c.slug), 301);
-const res = await categoryGames(db, c, 'featured', page);
-if (page > res.pages || res.items.length === 0) return Astro.rewrite("/404/");
-const parent = c.parent ? cats.find((x) => x.slug === c.parent) ?? null : null;
+import CategoryPageN from '../../../views/CategoryPageN.astro';
+import { loadCategoryPage } from '../../../views/loaders';
+const r = await loadCategoryPage(Astro.params.cat ?? '', Astro.params.n ?? '');
+if (r.kind === 'missing') return Astro.rewrite('/404/');
+if (r.kind === 'redirect') return Astro.redirect(r.to, 301);
 ---
-<CategoryView slug={c.slug} name={c.name} h1={`${c.name} Games`} title={`${c.name} Games – Play Free Online, No Downloads`}
-  description={`Play free ${c.name.toLowerCase()} games online in your browser.`} intro={c.blurb} games={res.items} total={c.count}
-  page={page} pages={res.pages} category={c} categories={cats} parent={parent} />
+<CategoryPageN data={r.data} />

@@ -2,6 +2,7 @@
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { homedir } from 'node:os';
 import { join } from 'node:path';
+import Database from 'better-sqlite3';
 
 function parseEnvFile(file: string): Record<string, string> {
   const out: Record<string, string> = {};
@@ -26,9 +27,25 @@ export function loadConfig(): Record<string, string | undefined> {
   return cfg;
 }
 
-export function localD1File(root = process.cwd()): string | null {
-  const dir = join(root, '.wrangler/state/v3/d1/miniflare-D1DatabaseObject');
+/**
+ * Local wrangler D1 files are named by hashes, and there are two databases (catalog + i18n),
+ * so pick the file by its tables: "pixuvo-production" has `games`, "pixuvo-i18n" has `game_translations`.
+ */
+export function localD1File(root = process.cwd(), name: 'pixuvo-production' | 'pixuvo-i18n' = 'pixuvo-production', stateDir = '.wrangler/state'): string | null {
+  const dir = join(root, stateDir, 'v3/d1/miniflare-D1DatabaseObject');
   if (!existsSync(dir)) return null;
-  const f = readdirSync(dir).find((x) => x.endsWith('.sqlite') && x !== 'metadata.sqlite');
-  return f ? join(dir, f) : null;
+  const want = name === 'pixuvo-i18n' ? 'game_translations' : 'games';
+  for (const f of readdirSync(dir)) {
+    if (!f.endsWith('.sqlite') || f === 'metadata.sqlite') continue;
+    const path = join(dir, f);
+    try {
+      const db = new Database(path, { readonly: true, fileMustExist: true });
+      const hit = db.prepare("SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = ?").get(want);
+      db.close();
+      if (hit) return path;
+    } catch {
+      /* not a database we can read */
+    }
+  }
+  return null;
 }

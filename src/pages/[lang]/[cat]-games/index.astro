@@ -1,0 +1,10 @@
+---
+export const prerender = true;
+import CategoryLandingView from '../../../views/CategoryLandingView.astro';
+import { categoryLandingPaths, withLangs } from '../../../views/paths';
+export function getStaticPaths() {
+  return withLangs(categoryLandingPaths());
+}
+const { kind, slug } = Astro.props as { kind: 'category' | 'landing'; slug: string };
+---
+<CategoryLandingView kind={kind} slug={slug} />

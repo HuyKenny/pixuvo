@@ -1,0 +1,7 @@
+---
+export const prerender = true;
+import PersonalList from '../../components/PersonalList.astro';
+import { langPaths } from '../../views/paths';
+export const getStaticPaths = langPaths;
+---
+<PersonalList kind="recent" />

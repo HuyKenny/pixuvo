@@ -2,9 +2,10 @@
 import type { CategoryInfo, GameCard } from '../lib/types';
 import { categoryPath } from '../lib/site';
 import { categoryIcon } from '../lib/category-icons';
-import { approxCount } from '../lib/format';
+import { useI18n } from '../i18n';
 interface Props { tiles: Array<{ cat: CategoryInfo; cover: GameCard | undefined }> }
 const { tiles } = Astro.props;
+const i = await useI18n(Astro);
 ---
 <ul class="cattiles">
   {tiles.map(({ cat, cover }) => (
@@ -14,8 +15,8 @@ const { tiles } = Astro.props;
           {cover && <img src={cover.thumb} alt="" width="320" height="240" loading="lazy" decoding="async" referrerpolicy="no-referrer" />}
           <img class="cattile-icon" src={categoryIcon(cat.slug)} alt="" width="48" height="48" loading="lazy" />
         </span>
-        <strong>{cat.name}</strong>
-        <small>{approxCount(cat.count)} games</small>
+        <strong>{i.cat(cat.slug, cat.name)}</strong>
+        <small>{i.t('cattile.games', { count: i.approx(cat.count) })}</small>
       </a>
     </li>
   ))}

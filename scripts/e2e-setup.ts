@@ -4,8 +4,8 @@
  * test-mode build (fixture iframe instead of partner games, consent test script).
  */
 import { execSync } from 'node:child_process';
-import { readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
-import { join } from 'node:path';
+import { readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { localD1File } from './lib/env.ts';
 import { SqliteDb } from './import/db.ts';
 import { runImport } from './import/pipeline.ts';
 import { gamemonetize } from './import/adapters/gamemonetize.ts';
@@ -14,8 +14,9 @@ import { gamepix } from './import/adapters/gamepix.ts';
 const STATE = 'tmp/e2e-state';
 rmSync(STATE, { recursive: true, force: true });
 execSync(`pnpm exec wrangler d1 migrations apply pixuvo-production --local --persist-to ${STATE}`, { stdio: 'inherit', env: { ...process.env, CI: '1' } });
-const dir = join(STATE, 'v3/d1/miniflare-D1DatabaseObject');
-const file = join(dir, readdirSync(dir).find((f) => f.endsWith('.sqlite') && f !== 'metadata.sqlite')!);
+execSync(`pnpm exec wrangler d1 migrations apply pixuvo-i18n --local --persist-to ${STATE}`, { stdio: 'inherit', env: { ...process.env, CI: '1' } });
+const file = localD1File(process.cwd(), 'pixuvo-production', STATE)!;
+const i18nFile = localD1File(process.cwd(), 'pixuvo-i18n', STATE)!;
 const db = new SqliteDb(file);
 const cfg = { GAMEMONETIZE_FEED_URL: 'https://gamemonetize.com/feed.php?format=0', GAMEPIX_SID: 'M7X08' };
 const gm = JSON.parse(readFileSync('tests/fixtures/gm-sample.json', 'utf8'));
@@ -24,7 +25,13 @@ const now = new Date('2026-10-01T12:00:00Z');
 const r1 = await runImport(db, gamemonetize, { dryRun: false, budgetRows: 1e7, config: cfg, minCompleteItems: 1, now, fetchJson: async (u) => (new URL(u).searchParams.get('page') === '1' ? gm : []) });
 const r2 = await runImport(db, gamepix, { dryRun: false, budgetRows: 1e7, config: cfg, minCompleteItems: 1, now, fetchJson: async () => gp });
 console.log(`e2e catalog: ${r1.inserted} + ${r2.inserted} games (${r2.attached} attached)`);
+// One fixture translation so e2e can check translated game pages (cs) without calling an AI model.
+const firstId = (db.db.prepare("SELECT id FROM games WHERE status = 'published' ORDER BY rank_score DESC, id DESC LIMIT 1").get() as { id: number }).id;
 db.close();
+const tdb = new SqliteDb(i18nFile);
+tdb.db.prepare("INSERT OR REPLACE INTO game_translations (game_id, lang, description, instructions, source_hash, model, updated_at) VALUES (?, 'cs', 'Testovací český popis hry.', 'Ovládání šipkami.', 'fixture', 'fixture', '2026-10-03')").run(firstId);
+tdb.close();
+writeFileSync('tmp/e2e-translated-game.txt', String(firstId));
 execSync(`pnpm exec tsx scripts/snapshot.ts --target sqlite:${file} --games 60`, { stdio: 'inherit' });
 execSync('pnpm exec astro build && pnpm exec tsx scripts/postbuild.ts', {
   stdio: 'inherit',

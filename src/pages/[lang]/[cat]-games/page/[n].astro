@@ -1,0 +1,12 @@
+---
+export const prerender = false;
+import CategoryPageN from '../../../../views/CategoryPageN.astro';
+import { loadCategoryPage } from '../../../../views/loaders';
+import { validLang } from '../../../../views/guard';
+const lang = Astro.params.lang!;
+if (!validLang(lang)) return Astro.rewrite('/404/');
+const r = await loadCategoryPage(Astro.params.cat ?? '', Astro.params.n ?? '');
+if (r.kind === 'missing') return Astro.rewrite(`/${lang}/404/`);
+if (r.kind === 'redirect') return Astro.redirect(`/${lang}${r.to}`, 301);
+---
+<CategoryPageN data={r.data} />

@@ -23,9 +23,10 @@ interface CardRow {
   plays_7d: number | null;
   added_at: string | null;
   cat: string | null;
+  cat_slug?: string | null;
 }
 
-const CARD_COLS = 'g.id, g.slug, g.title, g.thumb_url, g.mobile_friendly, g.players_max, g.plays_7d, g.added_at, pc.name AS cat';
+const CARD_COLS = 'g.id, g.slug, g.title, g.thumb_url, g.mobile_friendly, g.players_max, g.plays_7d, g.added_at, pc.name AS cat, pc.slug AS cat_slug';
 const CARD_JOIN = 'LEFT JOIN categories pc ON pc.id = g.primary_category_id';
 
 /** The whole catalog was imported at launch, so "NEW" only counts games added after it (and within 7 days). */
@@ -37,7 +38,7 @@ export function isNewGame(addedAt: string | null, now = Date.now()): boolean {
 
 export function toCard(r: CardRow): GameCard {
   // Real plays on Pixuvo in the last 7 days (scripts/metrics.ts); omitted when zero to keep payloads small.
-  return { id: r.id, slug: r.slug, title: r.title, thumb: r.thumb_url, cat: r.cat, mobile: r.mobile_friendly === 1, players: r.players_max, ...(r.plays_7d ? { plays7d: r.plays_7d } : {}), ...(isNewGame(r.added_at) ? { isNew: true } : {}) };
+  return { id: r.id, slug: r.slug, title: r.title, thumb: r.thumb_url, cat: r.cat, catSlug: r.cat_slug ?? null, mobile: r.mobile_friendly === 1, players: r.players_max, ...(r.plays_7d ? { plays7d: r.plays_7d } : {}), ...(isNewGame(r.added_at) ? { isNew: true } : {}) };
 }
 
 // ── Categories ──────────────────────────────────────────────────────────────
@@ -369,7 +370,7 @@ export async function searchGames(q: Q, raw: string, limit: number, offset = 0):
   return { items: rows.map(toCard), total: Math.min(n, CAP), capped: n > CAP };
 }
 
-export async function suggest(q: Q, raw: string): Promise<Array<{ slug: string; title: string; thumb: string; cat: string | null }>> {
+export async function suggest(q: Q, raw: string): Promise<Array<{ slug: string; title: string; thumb: string; cat: string | null; catSlug: string | null }>> {
   const fq = buildFtsQuery(raw);
   if (!fq) return [];
   const rows = await q.all<CardRow>(
@@ -378,7 +379,7 @@ export async function suggest(q: Q, raw: string): Promise<Array<{ slug: string; 
       ORDER BY (g.title_norm = ?) DESC, (g.title_norm LIKE ?) DESC, bm25(games_fts, 10.0, 6.0, 3.0, 1.0) LIMIT 8`,
     [fq.match, fq.norm, fq.norm.slice(0, 40) + '%'],
   );
-  return rows.map((r) => ({ slug: r.slug, title: r.title, thumb: r.thumb_url, cat: r.cat }));
+  return rows.map((r) => ({ slug: r.slug, title: r.title, thumb: r.thumb_url, cat: r.cat, catSlug: r.cat_slug ?? null }));
 }
 
 // ── Game detail ─────────────────────────────────────────────────────────────

@@ -1,0 +1,7 @@
+---
+export const prerender = false;
+import SearchView from '../../views/SearchView.astro';
+import { validLang } from '../../views/guard';
+if (!validLang(Astro.params.lang)) return Astro.rewrite('/404/');
+---
+<SearchView />

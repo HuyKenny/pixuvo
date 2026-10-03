@@ -53,7 +53,7 @@ test('phones: tab bar, big touch targets, full-width game', async ({ page }) => 
   await page.goto('/');
   await expect(page.locator('.bottom-nav')).toBeVisible();
   const SEL = '.bottom-nav a, .qchip, .catpill, .chip, a.tag, .filter-pill, .action-btn, .fav-btn, .breadcrumbs a, .site-footer a, .site-footer button, .section-head a, .btn, .btn-more, .search-field button, .menu-btn';
-  for (const p of ['/', '/racing-games/', '/categories/']) {
+  for (const p of ['/', '/racing-games/', '/categories/', '/cs/', '/de/racing-games/', '/ar/']) {
     await page.goto(p);
     const small = await page.$$eval(SEL, (els) => els
       .filter((e) => { const r = e.getBoundingClientRect(); return r.width > 0 && r.height > 0 && getComputedStyle(e).visibility !== 'hidden'; })

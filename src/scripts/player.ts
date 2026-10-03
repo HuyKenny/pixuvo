@@ -9,6 +9,9 @@
  * - Cross-origin iframe = opaque: we do not claim "loaded" or track playtime.
  * - Leaving the page removes the iframe so sound stops.
  */
+import { lp, pageLang, tr } from './i18n';
+// Server error texts are English; other languages show the translated generic message.
+const srvMsg = (m: string | undefined) => (pageLang() === 'en' ? m : undefined);
 import { store } from './store';
 import { track } from './analytics';
 
@@ -51,7 +54,7 @@ if (stage && data) {
 
   async function play() {
     playBtn.disabled = true;
-    setMsg('Loading game…');
+    setMsg(tr('c.loadingGame'));
     let pinned: string | null = null;
     try {
       pinned = sessionStorage.getItem(pinKey);
@@ -67,13 +70,13 @@ if (stage && data) {
       });
     } catch {
       showPlay();
-      setMsg('Could not reach Pixuvo. Check your connection and try again.');
+      setMsg(tr('c.noConnection'));
       return;
     }
     const body = (await res.json().catch(() => ({}))) as Partial<PlayResponse> & { error?: string };
     if (!res.ok || !body.embedUrl) {
       if (res.status >= 500 || res.status === 429) showPlay(); // worth another try
-      setMsg(`${escapeText(body.error ?? 'This game is not available right now.')} <a href="/">Find another game</a>.`);
+      setMsg(`${escapeText(srvMsg(body.error) ?? tr('c.unavailable'))} <a href="${lp('/')}">${escapeText(tr('c.findAnother'))}</a>.`);
       return;
     }
     try {
@@ -103,7 +106,7 @@ if (stage && data) {
     f.focus({ preventScroll: true });
     // We cannot see inside a cross-origin game; offer help instead of a fake progress bar.
     const help = document.querySelector<HTMLElement>('[data-share-status]');
-    if (help) help.innerHTML = '<span class="help-row"><span>Game not starting?</span><button type="button" class="mini-btn" data-retry>↻ Reload the game</button></span>';
+    if (help) help.innerHTML = `<span class="help-row"><span>${escapeText(tr('c.notStarting'))}</span><button type="button" class="mini-btn" data-retry>${escapeText(tr('c.reload'))}</button></span>`;
     fitToScreen();
   }
 
@@ -226,14 +229,14 @@ if (stage && data) {
 
   // Share
   document.querySelector('[data-share]')?.addEventListener('click', async () => {
-    const url = `https://pixuvo.com/games/${data.slug}/`;
+    const url = `https://pixuvo.com${lp(`/games/${data.slug}/`)}`;
     const status = document.querySelector<HTMLElement>('[data-share-status]');
     try {
       track('share', { method: 'share' in navigator ? 'native' : 'copy_link', content_type: 'game', item_id: data.slug });
       if (navigator.share) await navigator.share({ title: data.title, url });
       else {
         await navigator.clipboard.writeText(url);
-        if (status) status.textContent = 'Link copied to clipboard.';
+        if (status) status.textContent = tr('c.linkCopied');
       }
     } catch {
       if (status) status.textContent = url;
@@ -327,7 +330,7 @@ function setupRating(g: GameData) {
     const res = await fetch('/api/rate/', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ id: g.id, value, token }) }).catch(() => null);
     const body = (await res?.json().catch(() => ({}))) as { up?: number; down?: number; error?: string };
     if (!res || !res.ok) {
-      setStatus('err', body?.error ?? 'Could not save your vote.');
+      setStatus('err', srvMsg(body?.error) ?? tr('c.voteError'));
       return;
     }
     mine = value;
@@ -339,9 +342,9 @@ function setupRating(g: GameData) {
     paint();
     const votes = (body.up ?? 0) + (body.down ?? 0);
     const score = document.querySelector('[data-score]');
-    if (score && votes > 0) score.textContent = `${Math.round(((body.up ?? 0) / votes) * 100)}% liked · ${votes} vote${votes === 1 ? '' : 's'} on Pixuvo`;
+    if (score && votes > 0) score.textContent = tr('c.score', { p: String(Math.round(((body.up ?? 0) / votes) * 100)), n: votes });
     {
-      setStatus('ok', value > 0 ? 'Thanks — glad you like it! 👍' : 'Thanks for telling us! 👎');
+      setStatus('ok', value > 0 ? tr('c.voteThanksUp') : tr('c.voteThanksDown'));
       track('rate_game', { rating: value > 0 ? 'like' : 'dislike' });
     }
   });
@@ -363,7 +366,7 @@ function setupReport(g: GameData) {
     e.preventDefault();
     const fd = new FormData(form);
     status.className = 'form-status';
-    status.textContent = 'Sending…';
+    status.textContent = tr('c.sending');
     const token = await turnstileToken(form.querySelector('[data-turnstile-slot]'));
     const res = await fetch('/api/report/', {
       method: 'POST',
@@ -373,11 +376,11 @@ function setupReport(g: GameData) {
     const body = (await res?.json().catch(() => ({}))) as { error?: string };
     if (!res || !res.ok) {
       status.className = 'form-status err';
-      status.textContent = body?.error ?? 'Could not send the report. Please e-mail info@pixuvo.com.';
+      status.textContent = srvMsg(body?.error) ?? tr('c.reportError');
       return;
     }
     status.className = 'form-status ok';
-    status.textContent = 'Thank you — your report was received.';
+    status.textContent = tr('c.reportThanks');
     track('report_issue', { reason: String(fd.get('reason') ?? '') });
     form.reset();
     setTimeout(() => dlg.close(), 1500);

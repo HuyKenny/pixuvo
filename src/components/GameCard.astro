@@ -3,10 +3,13 @@ import type { GameCard } from '../lib/types';
 import { gamePath } from '../lib/site';
 import Icon from './Icon.astro';
 import { cardBadge } from '../lib/plays';
+import { useI18n } from '../i18n';
 interface Props { game: GameCard; eager?: boolean; badge?: string | undefined }
 const { game, eager = false, badge: given } = Astro.props;
-const badge = given ?? cardBadge(game);
-const meta = [game.cat, game.players && game.players >= 2 ? `${game.players}+ players` : null].filter(Boolean).join(' · ');
+const i = await useI18n(Astro);
+const badge = given ?? cardBadge(game, i.t);
+const catName = game.cat ? i.cat(game.catSlug ?? '', game.cat) : null;
+const meta = [catName, game.players && game.players >= 2 ? i.t('card.players', { n: game.players }) : null].filter(Boolean).join(' · ');
 ---
 <article class="card" data-game-id={game.id}>
   <a class="card-link" href={gamePath(game.slug)}>
@@ -20,7 +23,7 @@ const meta = [game.cat, game.players && game.players >= 2 ? `${game.players}+ pl
       {meta && <span class="card-meta">{meta}</span>}
     </span>
   </a>
-  <button type="button" class="fav-btn" data-fav={game.id} data-slug={game.slug} data-title={game.title} data-thumb={game.thumb} aria-pressed="false" aria-label={`Add ${game.title} to favorites`}>
+  <button type="button" class="fav-btn" data-fav={game.id} data-slug={game.slug} data-title={game.title} data-thumb={game.thumb} aria-pressed="false" aria-label={i.t('card.addFav', { title: game.title })}>
     <Icon name="heart" />
   </button>
 </article>

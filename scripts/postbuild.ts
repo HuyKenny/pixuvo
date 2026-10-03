@@ -43,7 +43,9 @@ if (existsSync(join(SERVER, '.prerender'))) errors.push('dist/server/.prerender 
 
 const wr = JSON.parse(readFileSync(join(SERVER, 'wrangler.json'), 'utf8')) as Record<string, unknown>;
 const assetsCfg = (wr.assets ?? {}) as Record<string, unknown>;
-if (assetsCfg.run_worker_first) errors.push('assets.run_worker_first is set — every static request would invoke the Worker');
+// Only the homepage may start the Worker first (language detection); anything broader makes static files cost requests.
+const rwf = assetsCfg.run_worker_first;
+if (rwf && JSON.stringify(rwf) !== '["/"]') errors.push(`assets.run_worker_first = ${JSON.stringify(rwf)} — only ["/"] is allowed`);
 if (wr.images) errors.push('Cloudflare Images binding present in generated config');
 if (Array.isArray(wr.kv_namespaces) && wr.kv_namespaces.length) errors.push('KV namespace present (sessions?) in generated config');
 

@@ -12,17 +12,19 @@ import { getEnv } from './lib/server/env';
 import { clientIp } from './lib/server/http';
 import { SECURITY_HEADERS } from './lib/security';
 import { normTitle } from './lib/text';
+import { langFromPath, stripLocale } from './i18n/locales';
+import { localiseHtml } from './i18n/links';
 
-const READ_LIMITED = [/^\/api\/(games|suggest)\/$/, /^\/search\/$/];
+const READ_LIMITED = [/^\/api\/(games|suggest)\/$/, /^\/search\/$/]; // matched against the path without language prefix
 const NO_CACHE = [/^\/api\/(play|rate|report|cron|admin)\b/, /^\/admin\b/, /^\/random\//];
 const PARAMS: Record<string, string[]> = {
-  '/api/games/': ['cat', 'sub', 'theme', 'q', 'device', 'players', 'mode', 'style', 'controls', 'sort', 'page'],
-  '/api/suggest/': ['q'],
+  '/api/games/': ['cat', 'sub', 'theme', 'q', 'device', 'players', 'mode', 'style', 'controls', 'sort', 'page', 'lang'],
+  '/api/suggest/': ['q', 'lang'],
   '/search/': ['q', 'page'],
 };
 
 function cacheKey(url: URL, version: string): string | null {
-  const allowed = PARAMS[url.pathname] ?? [];
+  const allowed = PARAMS[stripLocale(url.pathname)] ?? [];
   const sp = new URLSearchParams();
   for (const k of allowed) {
     let v = url.searchParams.get(k);
@@ -46,8 +48,20 @@ function withHeaders(res: Response, url: URL, extra: Record<string, string> = {}
   return out;
 }
 
+/** Non-English pages: point internal links at the same language (also runs while prerendering). */
+async function localise(res: Response, pathname: string): Promise<Response> {
+  const lang = langFromPath(pathname);
+  if (lang === 'en' || !(res.headers.get('content-type') ?? '').includes('text/html')) return res;
+  const html = localiseHtml(await res.text(), lang);
+  const headers = new Headers(res.headers);
+  headers.delete('content-length');
+  return new Response(html, { status: res.status, statusText: res.statusText, headers });
+}
+
 export const onRequest = defineMiddleware(async (ctx, next) => {
   const url = ctx.url;
+  // Build time (prerendering): only localise links; no bindings, cache or headers here.
+  if (ctx.isPrerendered) return localise(await next(), url.pathname);
   const env = getEnv();
 
   if (url.pathname.startsWith('/admin') || url.pathname.startsWith('/api/admin')) {
@@ -77,14 +91,14 @@ export const onRequest = defineMiddleware(async (ctx, next) => {
   }
 
   // Cache misses on search/filter endpoints run D1 queries: limit them per IP (cache hits stay free).
-  if (READ_LIMITED.some((r) => r.test(url.pathname))) {
+  if (READ_LIMITED.some((r) => r.test(stripLocale(url.pathname)))) {
     const rl = getEnv().RL_READ;
     if (rl && !(await rl.limit({ key: clientIp(ctx.request) })).success) {
       return withHeaders(new Response(JSON.stringify({ error: 'Too many requests — please wait a moment.' }), { status: 429, headers: { 'content-type': url.pathname.startsWith('/api/') ? 'application/json' : 'text/plain; charset=utf-8', 'cache-control': 'no-store', 'retry-after': '30' } }), url);
     }
   }
 
-  const res = await next();
+  const res = await localise(await next(), url.pathname);
   const cc = res.headers.get('cache-control') ?? '';
   // Never store a response the route marked private.
   if (cache && key && res.status === 200 && !res.headers.has('set-cookie') && !/private|no-store/.test(cc)) {

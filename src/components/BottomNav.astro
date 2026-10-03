@@ -2,16 +2,19 @@
 /** Phone tab bar (hidden ≥ 900px). Icons + one word each, 56px tall plus the safe area. */
 import { uiIcon } from '../lib/category-icons';
 import Icon from './Icon.astro';
-const path = Astro.url.pathname;
+import { useI18n } from '../i18n';
+import { stripLocale } from '../i18n/locales';
+const { t } = await useI18n(Astro);
+const path = stripLocale(Astro.url.pathname);
 const tabs = [
-  { href: '/', label: 'Home', icon: uiIcon('controller') },
-  { href: '/categories/', label: 'Categories', icon: uiIcon('grid') },
-  { href: '/search/', label: 'Search', icon: '', search: true },
-  { href: '/favorites/', label: 'Favorites', icon: uiIcon('heart') },
-  { href: '/recently-played/', label: 'Recent', icon: uiIcon('clock') },
+  { href: '/', label: t('nav.home'), icon: uiIcon('controller') },
+  { href: '/categories/', label: t('nav.categories'), icon: uiIcon('grid') },
+  { href: '/search/', label: t('nav.search'), icon: '', search: true },
+  { href: '/favorites/', label: t('nav.favorites'), icon: uiIcon('heart') },
+  { href: '/recently-played/', label: t('nav.recent'), icon: uiIcon('clock') },
 ];
 ---
-<nav class="bottom-nav" aria-label="Quick menu">
+<nav class="bottom-nav" aria-label={t('a11y.quickMenu')}>
   {tabs.map((t) => (
     <a href={t.href} aria-current={path === t.href ? 'page' : undefined} data-focus-search={t.search ? '' : undefined}>
       {t.icon ? <img src={t.icon} alt="" width="26" height="26" /> : <span class="bn-ico"><Icon name="search" size={24} /></span>}

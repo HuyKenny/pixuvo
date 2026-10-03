@@ -9,7 +9,7 @@ import ControlsVisual from './ControlsVisual.astro';
 import RecommendedList from './RecommendedList.astro';
 import type { GameDetail } from '../lib/types';
 import { canonical, categoryPath, gamePath } from '../lib/site';
-import { fmtDate, plural } from '../lib/format';
+import { useI18n } from '../i18n';
 import { truncate } from '../lib/text';
 import { parseControls } from '../lib/controls';
 import { categoryIcon } from '../lib/category-icons';
@@ -17,40 +17,49 @@ import { MIN_PLAYS_SHOWN, playsLabel } from '../lib/plays';
 
 interface Props { game: GameDetail }
 const { game: g } = Astro.props;
+const i = await useI18n(Astro);
+const t = i.t;
+// Translated publisher texts (machine translation, see scripts/translate.ts) when this language has them.
+const description = g.translation?.description ?? g.description;
+const instructions = g.translation?.instructions ?? g.instructions;
+const untranslated = i.lang !== 'en' && !g.translation;
+const catName = (c: { slug: string; name: string }) => i.cat(c.slug, c.name);
 const path = gamePath(g.slug);
 const cat = g.primaryCategory;
-const crumbs = [{ name: 'Home', href: '/' }, ...(cat ? [{ name: `${cat.name} Games`, href: categoryPath(cat.slug) }] : [{ name: 'All games', href: '/games/' }]), { name: g.title, href: path }];
-const tail = `Play ${g.title} free in your browser on Pixuvo — no download.`;
-const short = g.description ? truncate(g.description.replace(/\s+/g, ' ').trim(), 150) : '';
+const crumbs = [{ name: t('nav.home'), href: '/' }, ...(cat ? [{ name: t('game.categoryGames', { name: catName(cat) }), href: categoryPath(cat.slug) }] : [{ name: t('nav.allGames'), href: '/games/' }]), { name: g.title, href: path }];
+const tail = t('game.tail', { title: g.title });
+const short = description && !untranslated ? truncate(description.replace(/\s+/g, ' ').trim(), 150) : '';
 // Partner blurbs can be a few words ("A one-touch race, fly, crash"): pad them to a useful snippet.
-const desc = short.length >= 70 ? short : short ? truncate(`${short.replace(/[.!]?$/, '.')} ${tail}`, 158) : `${tail} Free online game, no sign-up.`;
+const desc = short.length >= 70 ? short : short ? truncate(`${short.replace(/[.!]?$/, '.')} ${tail}`, 158) : `${tail} ${t('game.tailNoDesc')}`;
 const portrait = g.orientation === 'portrait' || (!!g.width && !!g.height && g.height > g.width * 1.1);
 // How the stage is sized on phones: portrait = full screen height, any = tall adaptive frame, landscape = 16:9.
 const fit = portrait ? 'portrait' : g.orientation === 'any' ? 'any' : 'landscape';
 const votes = g.ratingUp + g.ratingDown;
 const liked = votes >= 5 ? Math.round((g.ratingUp / votes) * 100) : null; // shown only with ≥ 5 real votes
-const players = g.players ? (g.players >= 2 ? `${g.players}+ players` : '1 player') : null;
-const styleLabel = g.visualStyle === 'pixel' ? 'Pixel art' : g.visualStyle?.toUpperCase() ?? null;
+const players = g.players ? (g.players >= 2 ? t('game.playersN', { n: g.players }) : t('game.players1')) : null;
+const styleLabel = g.visualStyle === 'pixel' ? t('game.styleRetro') : g.visualStyle?.toUpperCase() ?? null;
 const controls = parseControls(g.instructions);
 const tones = ['violet', 'blue', 'teal', 'orange', 'pink', 'green'] as const;
 const sideList = g.related.slice(0, 5);
 const moreCat = g.related.slice(5, 11);
 const similar = g.related.slice(11, 17);
 const topCat = g.related.slice(17, 23);
-const devices = g.mobile ? 'Desktop, Mobile, Tablet' : 'Desktop';
+const devices = g.mobile ? t('game.devicesAll') : t('game.devicesDesktop');
 // "Good to know": questions answered ONLY from real data (nothing is asked when the answer is unknown).
-const keyName = (r: (typeof controls)[number]) => r.device === 'keys' ? (r.keys.join('') === '↑←↓→' ? 'the arrow keys' : r.keys.join('') === 'WASD' ? 'W A S D' : r.keys.join(' ')) : r.device === 'mouse' ? `the mouse (${(r.gesture ?? 'click').toLowerCase()})` : `touch (${(r.gesture ?? 'tap').toLowerCase()})`;
-const controlText = controls.slice(0, 4).map((r) => `${keyName(r)}${r.action ? ` to ${r.action.toLowerCase()}` : ''}`).join(', ');
+const lower = (s: string) => s.toLocaleLowerCase(i.tag);
+const keyName = (r: (typeof controls)[number]) => r.device === 'keys' ? (r.keys.join('') === '↑←↓→' ? t('game.keyArrows') : r.keys.join('') === 'WASD' ? 'W A S D' : r.keys.join(' ')) : r.device === 'mouse' ? t('game.keyMouse', { gesture: lower(t(`ctl.${r.gesture ?? 'Click'}`)) }) : t('game.keyTouch', { gesture: lower(t(`ctl.${r.gesture ?? 'Tap'}`)) });
+const controlText = controls.slice(0, 4).map((r) => (r.action ? t('game.keyTo', { key: keyName(r), action: lower(t(`ctl.${r.action}`)) }) : keyName(r))).join(', ');
 const faq: Array<{ q: string; a: string }> = [
-  { q: `Is ${g.title} free?`, a: `Yes. You can play ${g.title} for free in your browser on Pixuvo — no download and no sign-up.${g.inAppPurchases ? ' The game itself offers optional in-game purchases.' : ''}` },
-  ...(g.mobile ? [{ q: `Can I play ${g.title} on a phone or tablet?`, a: 'Yes — the game’s publisher says it works on mobile devices.' }] : []),
-  ...(g.players ? [{ q: `How many players can play?`, a: g.players >= 2 ? `${g.title} can be played by ${g.players} or more players.` : `${g.title} is a single-player game.` }] : []),
-  ...(controlText ? [{ q: `How do I control ${g.title}?`, a: `Use ${controlText}. (From the game’s instructions.)` }] : []),
-  ...(g.categories.length ? [{ q: `What kind of game is ${g.title}?`, a: `It is listed under ${g.categories.slice(0, 3).map((c) => c.name).join(', ')} on Pixuvo.` }] : []),
+  { q: t('game.faqFreeQ', { title: g.title }), a: t('game.faqFreeA', { title: g.title }) + (g.inAppPurchases ? ` ${t('game.faqFreeIap')}` : '') },
+  ...(g.mobile ? [{ q: t('game.faqMobileQ', { title: g.title }), a: t('game.faqMobileA') }] : []),
+  ...(g.players ? [{ q: t('game.faqPlayersQ'), a: g.players >= 2 ? t('game.faqPlayersMulti', { title: g.title, n: String(g.players) }) : t('game.faqPlayersSingle', { title: g.title }) }] : []),
+  ...(controlText ? [{ q: t('game.faqControlsQ', { title: g.title }), a: t('game.faqControlsA', { controls: controlText }) }] : []),
+  ...(g.categories.length ? [{ q: t('game.faqKindQ', { title: g.title }), a: t('game.faqKindA', { cats: g.categories.slice(0, 3).map(catName).join(', ') }) }] : []),
 ];
 const ld = [{
   '@context': 'https://schema.org', '@type': 'VideoGame', name: g.title, url: canonical(path), image: g.thumb,
-  ...(g.description ? { description: truncate(g.description, 500) } : {}),
+  ...(description && !untranslated ? { description: truncate(description, 500) } : {}),
+  inLanguage: untranslated ? 'en' : i.tag,
   genre: g.categories.filter((c) => c.slug !== '2-player' && c.slug !== 'multiplayer').map((c) => c.name).slice(0, 4),
   gamePlatform: 'Web browser', applicationCategory: 'Game', operatingSystem: 'Any',
   playMode: g.players && g.players >= 2 ? 'MultiPlayer' : g.players === 1 ? 'SinglePlayer' : undefined,
@@ -62,7 +71,7 @@ const FRAME_HOST: Record<string, string> = { GameMonetize: 'https://html5.gamemo
 const frameHost = g.providerName ? FRAME_HOST[g.providerName] : undefined;
 const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait, fit, ...(cat ? { cat: cat.slug } : {}) };
 ---
-<Base title={`${g.title} – Play Free Online`} description={desc} path={path} ogImage={g.thumb} jsonLd={ld} ga={{ page_type: 'game', game_slug: g.slug, game_title: g.title.slice(0, 90), ...(cat ? { game_category: cat.slug } : {}), ...(g.providerName ? { provider: g.providerName } : {}) }}>
+<Base title={t('game.title', { title: g.title })} description={desc} path={path} ogImage={g.thumb} jsonLd={ld} noindex={untranslated} alternates={['en', ...(g.translatedLangs ?? [])]} ga={{ page_type: 'game', game_slug: g.slug, game_title: g.title.slice(0, 90), ...(cat ? { game_category: cat.slug } : {}), ...(g.providerName ? { provider: g.providerName } : {}) }}>
   {frameHost && <link slot="head" rel="preconnect" href={frameHost} />}
   <div class="wrap game-page">
     <Breadcrumbs items={crumbs} />
@@ -74,47 +83,47 @@ const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait,
             <h1>{g.title}</h1>
             <p class="game-rating">
               {liked !== null
-                ? <><span class="liked-ico" aria-hidden="true">👍</span><strong>{liked}% liked</strong> <span>({plural(votes, 'vote')} on Pixuvo)</span></>
-                : <span class="muted">Not rated yet</span>}
-              {(g.plays7d ?? 0) >= MIN_PLAYS_SHOWN && <span class="game-plays">▶ Played {playsLabel(g.plays7d!)}× this week</span>}
+                ? <><span class="liked-ico" aria-hidden="true">👍</span><strong>{t('game.liked', { p: String(liked) })}</strong> <span>{t('game.votes', { n: votes })}</span></>
+                : <span class="muted">{t('game.notRated')}</span>}
+              {(g.plays7d ?? 0) >= MIN_PLAYS_SHOWN && <span class="game-plays">{t('game.playedWeek', { n: playsLabel(g.plays7d!) })}</span>}
             </p>
           </div>
-          <div class="game-tags">{g.categories.slice(0, 3).map((c, i) => <Tag href={categoryPath(c.slug)} tone={tones[i % tones.length]!}>{c.name}</Tag>)}{g.mobile && <Tag tone="green">📱 Works on mobile</Tag>}{g.inAppPurchases && <Tag tone="orange">💳 In-game purchases</Tag>}</div>
+          <div class="game-tags">{g.categories.slice(0, 3).map((c, idx) => <Tag href={categoryPath(c.slug)} tone={tones[idx % tones.length]!}>{catName(c)}</Tag>)}{g.mobile && <Tag tone="green">{t('game.mobile')}</Tag>}{g.inAppPurchases && <Tag tone="orange">{t('game.iap')}</Tag>}</div>
         </header>
 
         <div class:list={['stage', { portrait }]} id="stage" data-fit={fit} data-game={JSON.stringify(data)}>
           <div class="stage-poster" data-poster>
             <img class="bg" src={g.thumb} alt="" width="320" height="240" referrerpolicy="no-referrer" />
             <div class="inner">
-              <img class="cover" src={g.thumb} alt={`${g.title} cover image`} width="320" height="240" fetchpriority="high" referrerpolicy="no-referrer" />
-              <button type="button" class="play-btn" data-play hidden><Icon name="play" /> Play Now</button>
-              <p class="stage-msg" data-stage-msg><span class="loader" aria-hidden="true"></span>Loading game…</p>
-              <noscript><p class="stage-msg">Turn on JavaScript to play this game.</p></noscript>
+              <img class="cover" src={g.thumb} alt={t('game.cover', { title: g.title })} width="320" height="240" fetchpriority="high" referrerpolicy="no-referrer" />
+              <button type="button" class="play-btn" data-play hidden><Icon name="play" /> {t('game.playNow')}</button>
+              <p class="stage-msg" data-stage-msg><span class="loader" aria-hidden="true"></span>{t('game.loading')}</p>
+              <noscript><p class="stage-msg">{t('game.noJs')}</p></noscript>
             </div>
           </div>
         </div>
-        <button type="button" class="btn btn-primary exit-expanded" data-exit-expanded><Icon name="x" size={22} /> Exit</button>
+        <button type="button" class="btn btn-primary exit-expanded" data-exit-expanded><Icon name="x" size={22} /> {t('game.exit')}</button>
         {fit === 'landscape' && (
           <p class="rotate-hint" data-rotate-hint hidden>
             <span class="rotate-ico" aria-hidden="true">📱↻</span>
-            <span>Turn your phone sideways or tap <strong>Fullscreen</strong> for a bigger game.</span>
-            <button type="button" class="icon-btn" data-rotate-close aria-label="Hide this tip"><Icon name="x" size={18} /></button>
+            <span set:html={t('game.rotate', { fullscreen: `<strong>${t('game.fullscreen')}</strong>` })} />
+            <button type="button" class="icon-btn" data-rotate-close aria-label={t('game.hideTip')}><Icon name="x" size={18} /></button>
           </p>
         )}
-        <div class="game-actions" aria-label="Game actions">
-          <button type="button" class="action-btn action-main" data-fullscreen><Icon name="maximize" size={20} /> <span>Fullscreen</span></button>
-          <button type="button" class="action-btn vote-btn" data-vote="1" aria-pressed="false"><Icon name="up" size={20} /> <span>Like</span></button>
-          <button type="button" class="action-btn vote-btn" data-vote="-1" aria-pressed="false"><Icon name="down" size={20} /> <span>Dislike</span></button>
-          <button type="button" class="action-btn" data-fav={g.id} data-slug={g.slug} data-title={g.title} data-thumb={g.thumb} aria-pressed="false" data-fav-label="static"><Icon name="heart" size={20} /> <span>Favorite</span></button>
-          <button type="button" class="action-btn" data-share><Icon name="share" size={20} /> <span>Share</span></button>
-          <button type="button" class="action-btn" data-report-open><Icon name="flag" size={20} /> <span>Report Issue</span></button>
+        <div class="game-actions" aria-label={t('a11y.gameActions')}>
+          <button type="button" class="action-btn action-main" data-fullscreen><Icon name="maximize" size={20} /> <span>{t('game.fullscreen')}</span></button>
+          <button type="button" class="action-btn vote-btn" data-vote="1" aria-pressed="false"><Icon name="up" size={20} /> <span>{t('game.like')}</span></button>
+          <button type="button" class="action-btn vote-btn" data-vote="-1" aria-pressed="false"><Icon name="down" size={20} /> <span>{t('game.dislike')}</span></button>
+          <button type="button" class="action-btn" data-fav={g.id} data-slug={g.slug} data-title={g.title} data-thumb={g.thumb} aria-pressed="false" data-fav-label="static"><Icon name="heart" size={20} /> <span>{t('game.favorite')}</span></button>
+          <button type="button" class="action-btn" data-share><Icon name="share" size={20} /> <span>{t('game.share')}</span></button>
+          <button type="button" class="action-btn" data-report-open><Icon name="flag" size={20} /> <span>{t('game.report')}</span></button>
         </div>
         <p class="form-status quick-status" data-rate-status aria-live="polite"></p>
         <div data-turnstile-slot data-quick-ts></div>
         <p class="note" data-share-status aria-live="polite"></p>
         {sideList.length > 0 && (
-          <nav class="playnext" aria-label="Play next">
-            <h2 class="playnext-h">▶ Play next</h2>
+          <nav class="playnext" aria-label={t('game.playNext')}>
+            <h2 class="playnext-h">{t('game.playNext')}</h2>
             <div class="playnext-row">
               {g.related.slice(0, 8).map((r) => (
                 <a href={`/games/${r.slug}/`} class="playnext-card">
@@ -127,27 +136,28 @@ const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait,
         )}
 
         <section class="panel" aria-labelledby="about-h">
-          <h2 id="about-h"><span class="panel-ico" aria-hidden="true">📄</span>About {g.title}</h2>
-          {g.description ? <div class="prose"><p>{g.description}</p></div> : <p class="note">The publisher has not provided a description for this game yet.</p>}
+          <h2 id="about-h"><span class="panel-ico" aria-hidden="true">📄</span>{t('game.about', { title: g.title })}</h2>
+          {description ? <div class="prose" lang={untranslated ? 'en' : undefined}><p>{description}</p></div> : <p class="note">{t('game.noDescription')}</p>}
+          {description && i.lang !== 'en' && <p class="note mt-note">{untranslated ? t('game.originalText') : t('game.autoTranslated')}</p>}
           <div class="tag-row">
-            {g.categories.map((c, i) => <Tag href={categoryPath(c.slug)} tone={tones[i % tones.length]!} small>{c.name}</Tag>)}
+            {g.categories.map((c, idx) => <Tag href={categoryPath(c.slug)} tone={tones[idx % tones.length]!} small>{catName(c)}</Tag>)}
             {styleLabel && <Tag tone="orange" small>{styleLabel}</Tag>}
-            {g.inAppPurchases && <Tag tone="orange" small>💳 In-game purchases</Tag>}
-            {g.controls.map((c) => <Tag tone="pink" small>{c[0]!.toUpperCase() + c.slice(1)}</Tag>)}
+            {g.inAppPurchases && <Tag tone="orange" small>{t('game.iap')}</Tag>}
+            {g.controls.map((c) => <Tag tone="pink" small>{t(`c.${c}`)}</Tag>)}
           </div>
         </section>
 
-        {(g.instructions || controls.length > 0) && (
+        {(instructions || controls.length > 0) && (
           <div class="howto-row">
-            {g.instructions && (
+            {instructions && (
               <section class="panel" aria-labelledby="howto-h">
-                <h2 id="howto-h"><span class="panel-ico" aria-hidden="true">🎮</span>How to Play</h2>
-                <div class="prose"><p>{g.instructions}</p></div>
+                <h2 id="howto-h"><span class="panel-ico" aria-hidden="true">🎮</span>{t('game.howTo')}</h2>
+                <div class="prose" lang={untranslated ? 'en' : undefined}><p>{instructions}</p></div>
               </section>
             )}
             {controls.length > 0 && (
               <section class="panel" aria-labelledby="controls-h">
-                <h2 id="controls-h"><span class="panel-ico" aria-hidden="true">⚙️</span>Controls</h2>
+                <h2 id="controls-h"><span class="panel-ico" aria-hidden="true">⚙️</span>{t('game.controls')}</h2>
                 <ControlsVisual rows={controls} />
               </section>
             )}
@@ -155,7 +165,7 @@ const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait,
         )}
         {faq.length >= 3 && (
           <section class="panel faq" aria-labelledby="faq-h">
-            <h2 id="faq-h"><span class="panel-ico" aria-hidden="true">💡</span>Good to know</h2>
+            <h2 id="faq-h"><span class="panel-ico" aria-hidden="true">💡</span>{t('game.goodToKnow')}</h2>
             {faq.map((f) => <details><summary>{f.q}</summary><p>{f.a}</p></details>)}
           </section>
         )}
@@ -164,32 +174,32 @@ const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait,
       <aside class="game-side">
         {sideList.length > 0 && (
           <section class="panel" aria-labelledby="recg-h">
-            <div class="panel-head"><h2 id="recg-h">Recommended Games</h2>{cat && <a href={categoryPath(cat.slug)}>See all</a>}</div>
+            <div class="panel-head"><h2 id="recg-h">{t('game.recommended')}</h2>{cat && <a href={categoryPath(cat.slug)}>{t('nav.seeAll')}</a>}</div>
             <RecommendedList games={sideList} />
           </section>
         )}
         <section class="panel" aria-labelledby="facts-h">
-          <h2 id="facts-h"><span class="panel-ico" aria-hidden="true">ℹ️</span>Game Details</h2>
+          <h2 id="facts-h"><span class="panel-ico" aria-hidden="true">ℹ️</span>{t('game.details')}</h2>
           <dl class="facts">
-            {cat && (<><dt>Category</dt><dd><a href={categoryPath(cat.slug)}><img src={categoryIcon(cat.slug)} alt="" width="20" height="20" />{cat.name}</a></dd></>)}
-            {players && (<><dt>Players</dt><dd>{players}</dd></>)}
-            {g.releaseDate && (<><dt>Released</dt><dd>{fmtDate(g.releaseDate)}</dd></>)}
-            <dt>Platform</dt><dd>Web browser</dd>
-            {g.technology && (<><dt>Technology</dt><dd>{g.technology === 'html5' ? 'HTML5' : g.technology === 'webgl' ? 'WebGL' : 'Unity'}</dd></>)}
-            <dt>Devices</dt><dd>{devices}{!g.mobile && <span class="note"> (mobile not stated)</span>}</dd>
-            {g.inAppPurchases && (<><dt>Purchases</dt><dd>💳 Optional in-game purchases (declared by the publisher)</dd></>)}
-            {styleLabel && (<><dt>Style</dt><dd>{styleLabel}</dd></>)}
-            <dt>Added</dt><dd>{fmtDate(g.addedAt)}</dd>
-            {g.providerName && (<><dt>Provider</dt><dd>{g.providerName}</dd></>)}
+            {cat && (<><dt>{t('game.fCategory')}</dt><dd><a href={categoryPath(cat.slug)}><img src={categoryIcon(cat.slug)} alt="" width="20" height="20" />{catName(cat)}</a></dd></>)}
+            {players && (<><dt>{t('game.fPlayers')}</dt><dd>{players}</dd></>)}
+            {g.releaseDate && (<><dt>{t('game.fReleased')}</dt><dd>{i.date(g.releaseDate)}</dd></>)}
+            <dt>{t('game.fPlatform')}</dt><dd>{t('game.fPlatformValue')}</dd>
+            {g.technology && (<><dt>{t('game.fTech')}</dt><dd>{g.technology === 'html5' ? 'HTML5' : g.technology === 'webgl' ? 'WebGL' : 'Unity'}</dd></>)}
+            <dt>{t('game.fDevices')}</dt><dd>{devices}{!g.mobile && <span class="note"> {t('game.mobileNotStated')}</span>}</dd>
+            {g.inAppPurchases && (<><dt>{t('game.fPurchases')}</dt><dd>{t('game.purchasesValue')}</dd></>)}
+            {styleLabel && (<><dt>{t('game.fStyle')}</dt><dd>{styleLabel}</dd></>)}
+            <dt>{t('game.fAdded')}</dt><dd>{i.date(g.addedAt)}</dd>
+            {g.providerName && (<><dt>{t('game.fProvider')}</dt><dd>{g.providerName}</dd></>)}
           </dl>
         </section>
         <section class="panel" aria-labelledby="rate-h">
-          <h2 id="rate-h">Did you like it?</h2>
+          <h2 id="rate-h">{t('game.didYouLike')}</h2>
           <div class="rating" data-rating data-up={g.ratingUp} data-down={g.ratingDown}>
-            <button type="button" class="action-btn" data-vote="1" aria-pressed="false"><Icon name="up" size={20} /> <span>Like</span></button>
-            <button type="button" class="action-btn" data-vote="-1" aria-pressed="false"><Icon name="down" size={20} /> <span>Dislike</span></button>
+            <button type="button" class="action-btn" data-vote="1" aria-pressed="false"><Icon name="up" size={20} /> <span>{t('game.like')}</span></button>
+            <button type="button" class="action-btn" data-vote="-1" aria-pressed="false"><Icon name="down" size={20} /> <span>{t('game.dislike')}</span></button>
           </div>
-          <p class="score" data-score>{votes > 0 ? `${Math.round((g.ratingUp / votes) * 100)}% liked · ${plural(votes, 'vote')} on Pixuvo` : 'Not rated yet — be the first!'}</p>
+          <p class="score" data-score>{votes > 0 ? t('game.scoreLine', { p: String(Math.round((g.ratingUp / votes) * 100)), n: votes }) : t('game.notRatedFirst')}</p>
           <div data-turnstile-slot></div>
           <p class="form-status" data-rate-status aria-live="polite"></p>
         </section>
@@ -199,22 +209,22 @@ const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait,
 
     {moreCat.length > 0 && cat && (
       <section class="section strip" aria-labelledby="more-h">
-        <div class="section-head"><h2 id="more-h"><img src={categoryIcon(cat.slug)} alt="" width="30" height="30" loading="lazy" />More {cat.name} Games</h2><a href={categoryPath(cat.slug)}>See all</a></div>
-        <GameGrid games={moreCat} label={`More ${cat.name} games`} />
+        <div class="section-head"><h2 id="more-h"><img src={categoryIcon(cat.slug)} alt="" width="30" height="30" loading="lazy" />{t('game.moreCat', { name: catName(cat) })}</h2><a href={categoryPath(cat.slug)}>{t('nav.seeAll')}</a></div>
+        <GameGrid games={moreCat} label={t('game.moreCatLabel', { name: catName(cat) })} />
       </section>
     )}
     {(similar.length > 0 || topCat.length > 0) && (
       <div class="split">
         {similar.length > 0 && (
           <section class="section" aria-labelledby="sim-h">
-            <div class="section-head"><h2 id="sim-h"><img src="/icons/cat/ui-controller.webp" alt="" width="28" height="28" loading="lazy" />Similar Games</h2></div>
-            <GameGrid games={similar} label="Similar games" compact />
+            <div class="section-head"><h2 id="sim-h"><img src="/icons/cat/ui-controller.webp" alt="" width="28" height="28" loading="lazy" />{t('game.similar')}</h2></div>
+            <GameGrid games={similar} label={t('game.similar')} compact />
           </section>
         )}
         {topCat.length > 0 && cat && (
           <section class="section" aria-labelledby="top-h">
-            <div class="section-head"><h2 id="top-h"><img src="/icons/cat/ui-popular.webp" alt="" width="28" height="28" loading="lazy" />Top {cat.name} Games</h2><a href={categoryPath(cat.slug)}>See all</a></div>
-            <GameGrid games={topCat} label={`Top ${cat.name} games`} compact />
+            <div class="section-head"><h2 id="top-h"><img src="/icons/cat/ui-popular.webp" alt="" width="28" height="28" loading="lazy" />{t('game.topCat', { name: catName(cat) })}</h2><a href={categoryPath(cat.slug)}>{t('nav.seeAll')}</a></div>
+            <GameGrid games={topCat} label={t('game.topCatLabel', { name: catName(cat) })} compact />
           </section>
         )}
       </div>
@@ -223,27 +233,27 @@ const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait,
 
   <dialog id="report-dialog" aria-labelledby="report-h">
     <form method="dialog" data-report-form>
-      <h2 id="report-h">Report a problem</h2>
-      <p class="note" style="margin:0">Tell us what is wrong with <strong>{g.title}</strong>. We read every report.</p>
-      <label class="field">What happened?
+      <h2 id="report-h">{t('report.title')}</h2>
+      <p class="note" style="margin:0">{t('report.intro', { title: g.title })}</p>
+      <label class="field">{t('report.what')}
         <select name="reason" required>
-          <option value="not_loading">The game does not load</option>
-          <option value="broken_controls">Controls do not work</option>
-          <option value="inappropriate">Inappropriate content</option>
-          <option value="copyright">Copyright or trademark problem</option>
-          <option value="other">Something else</option>
+          <option value="not_loading">{t('report.notLoading')}</option>
+          <option value="broken_controls">{t('report.controls')}</option>
+          <option value="inappropriate">{t('report.inappropriate')}</option>
+          <option value="copyright">{t('report.copyright')}</option>
+          <option value="other">{t('report.other')}</option>
         </select>
       </label>
-      <label class="field">Details (optional)
-        <textarea name="message" maxlength="1000" placeholder="Browser, device, what you saw…"></textarea>
+      <label class="field">{t('report.details')}
+        <textarea name="message" maxlength="1000" placeholder={t('report.placeholder')}></textarea>
       </label>
       <div data-turnstile-slot></div>
       <p class="form-status" data-report-status aria-live="polite"></p>
       <div style="display:flex;gap:8px;justify-content:flex-end">
-        <button type="button" class="btn btn-ghost" data-report-cancel>Cancel</button>
-        <button type="submit" class="btn btn-primary" value="send">Send report</button>
+        <button type="button" class="btn btn-ghost" data-report-cancel>{t('report.cancel')}</button>
+        <button type="submit" class="btn btn-primary" value="send">{t('report.send')}</button>
       </div>
-      <p class="note" style="margin:0">For legal notices see <a href="/copyright/">Copyright</a>.</p>
+      <p class="note" style="margin:0">{t('report.legal')} <a href="/copyright/">{t('nav.copyright')}</a>.</p>
     </form>
   </dialog>
 </Base>

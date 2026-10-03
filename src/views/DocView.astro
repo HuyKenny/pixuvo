@@ -1,0 +1,29 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { useI18n } from '../i18n';
+import { BINDING_EN, DOC_UPDATED, docText, type DocKey } from '../i18n/docs';
+import { SITE } from '../lib/site';
+import { snapshot } from '../lib/snapshot';
+interface Props { doc: DocKey }
+const { doc } = Astro.props;
+const i = await useI18n(Astro);
+const { text, translated } = await docText(i.lang, doc);
+const vars: Record<string, string> = {
+  email: SITE.email, operatorName: SITE.operator.name, address: SITE.operator.address, companyId: SITE.operator.companyId,
+  dataBox: SITE.operator.dataBox, vat: SITE.operator.vat, siteUrl: SITE.url, tagline: i.t('site.tagline'), subline: i.t('site.subline'),
+  count: i.approx(snapshot.published),
+};
+const html = text.html.replace(/\{(\w+)\}/g, (m, k: string) => vars[k] ?? m);
+const path = `/${doc}/`;
+---
+<Base title={text.title} description={text.description} path={path} alternates={undefined}>
+  <div class="wrap">
+    <Breadcrumbs items={[{ name: i.t('nav.home'), href: '/' }, { name: text.h1, href: path }]} />
+    <article class="doc" lang={translated || i.lang === 'en' ? undefined : 'en'}>
+      <div class="page-head"><h1>{text.h1}</h1><p class="lead">{i.t('doc.updated', { date: i.date(DOC_UPDATED) ?? DOC_UPDATED })}</p></div>
+      {translated && BINDING_EN.includes(doc) && <p class="note doc-binding">{i.t('doc.englishBinding')} <a href={path} data-keep-href>{i.t('doc.readEnglish')}</a></p>}
+      <Fragment set:html={html} />
+    </article>
+  </div>
+</Base>

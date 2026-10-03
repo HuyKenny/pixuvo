@@ -3,15 +3,17 @@
 import type { GameCard } from '../lib/types';
 interface Props { picks: GameCard[] }
 const { picks } = Astro.props;
+import { useI18n } from '../i18n';
+const { t } = await useI18n(Astro);
 const moods = [
-  { href: '/puzzle-games/#theme=brain', emoji: '🧠', label: 'Train your brain', tone: 'teal' },
-  { href: '/racing-games/', emoji: '🏎️', label: 'Speed & racing', tone: 'orange' },
-  { href: '/2-player-games/', emoji: '👥', label: 'Play with a friend', tone: 'blue' },
-  { href: '/action-games/', emoji: '💥', label: 'Action!', tone: 'pink' },
-  { href: '/casual-games/', emoji: '😌', label: 'Chill & relax', tone: 'green' },
+  { href: '/puzzle-games/#theme=brain', emoji: '🧠', label: t('mood.brain'), tone: 'teal' },
+  { href: '/racing-games/', emoji: '🏎️', label: t('mood.racing'), tone: 'orange' },
+  { href: '/2-player-games/', emoji: '👥', label: t('mood.friend'), tone: 'blue' },
+  { href: '/action-games/', emoji: '💥', label: t('mood.action'), tone: 'pink' },
+  { href: '/casual-games/', emoji: '😌', label: t('mood.chill'), tone: 'green' },
 ];
 ---
-<nav class="moods" aria-label="What do you feel like playing?">
+<nav class="moods" aria-label={t('a11y.moods')}>
   {moods.map((m) => <a class={`mood mood-${m.tone}`} href={m.href}><span class="mood-emoji" aria-hidden="true">{m.emoji}</span><span>{m.label}</span></a>)}
-  {picks[0] && <a class="mood mood-violet" href={`/games/${picks[0].slug}/`} data-random-game={JSON.stringify(picks.map((g) => g.slug))}><span class="mood-emoji" aria-hidden="true">🎲</span><span>Surprise me!</span></a>}
+  {picks[0] && <a class="mood mood-violet" href={`/games/${picks[0].slug}/`} data-random-game={JSON.stringify(picks.map((g) => g.slug))}><span class="mood-emoji" aria-hidden="true">🎲</span><span>{t('mood.surprise')}</span></a>}
 </nav>

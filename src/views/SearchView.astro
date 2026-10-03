@@ -1,0 +1,42 @@
+---
+import Base from '../layouts/Base.astro';
+import GameGrid from '../components/GameGrid.astro';
+import Pagination from '../components/Pagination.astro';
+import { clampPage, searchGames } from '../lib/catalog';
+import { categoriesCached, q } from '../lib/server/db';
+import { categoryHits } from '../lib/server/i18n-api';
+import { categoryIcon } from '../lib/category-icons';
+import { SITE } from '../lib/site';
+import { useI18n } from '../i18n';
+const i = await useI18n(Astro);
+const t = i.t;
+const raw = (Astro.url.searchParams.get('q') ?? '').trim().slice(0, 80);
+const page = clampPage(Astro.url.searchParams.get('page') ?? '1', 20) ?? 1;
+const res = raw ? await searchGames(q(), raw, SITE.pageSize, (page - 1) * SITE.pageSize) : null;
+const hits = raw ? await categoryHits(raw, i.lang, await categoriesCached(q()), 4) : [];
+const pages = res ? Math.min(20, Math.max(1, Math.ceil(res.total / SITE.pageSize))) : 1;
+const href = (n: number) => `/search/?q=${encodeURIComponent(raw)}${n > 1 ? `&page=${n}` : ''}`;
+---
+<Base title={raw ? t('search.titleQuery', { q: raw }) : t('search.title')} description={t('search.description')} path={null} noindex query={raw}>
+  <div class="wrap">
+    <div class="page-head">
+      <h1>{raw ? t('search.resultsFor', { q: raw }) : t('search.title')}</h1>
+      {res && <p class="lead">{res.total === 0 ? t('search.none') : res.capped ? t('search.foundCapped', { n: String(res.total) }) : t('search.found', { n: res.total })}</p>}
+    </div>
+    {hits.length > 0 && (
+      <nav class="chips search-cats" aria-label={t('search.categoryHit')}>
+        {hits.map((h) => <a class="chip" href={`/${h.slug}-games/`}><img src={categoryIcon(h.slug)} alt="" width="22" height="22" />{h.title}</a>)}
+      </nav>
+    )}
+    {!raw && (
+      <form action="/search/" method="get" role="search" style="max-width:560px">
+        <label class="field">{t('search.field')}<input type="search" name="q" maxlength="80" required /></label>
+        <button class="btn btn-primary" type="submit" style="margin-top:10px">{t('search.submit')}</button>
+      </form>
+    )}
+    {raw && res === null && <div class="empty-state"><strong>{t('search.tooShortTitle')}</strong>{t('search.tooShortText')}</div>}
+    {res && res.items.length > 0 && <GameGrid games={res.items} eagerCount={4} label={t('search.resultsLabel')} />}
+    {res && res.items.length === 0 && <div class="empty-state"><strong>{t('search.noMatchTitle', { q: raw })}</strong>{t('search.noMatchText')} <a href="/categories/">{t('search.browseCategories')}</a>.</div>}
+    {res && <Pagination page={page} pages={pages} href={href} label={t('search.pages')} />}
+  </div>
+</Base>

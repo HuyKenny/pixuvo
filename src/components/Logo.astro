@@ -1,8 +1,10 @@
 ---
 interface Props { size?: number; word?: boolean }
 const { size = 38, word = true } = Astro.props;
+import { useI18n } from '../i18n';
+const { t } = await useI18n(Astro);
 ---
-<a href="/" class="logo" aria-label="Pixuvo home">
+<a href="/" class="logo" aria-label={t('a11y.logoHome')}>
   <svg width={size} height={size} viewBox="0 0 32 32" aria-hidden="true" focusable="false">
     <rect width="32" height="32" rx="9" fill="#6a35f2" />
     <rect x="9" y="7.5" width="4.5" height="17" rx="1.4" fill="#fff" />

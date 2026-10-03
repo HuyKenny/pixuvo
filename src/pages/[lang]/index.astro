@@ -1,0 +1,7 @@
+---
+export const prerender = true;
+import HomeView from '../../views/HomeView.astro';
+import { langPaths } from '../../views/paths';
+export const getStaticPaths = langPaths;
+---
+<HomeView />

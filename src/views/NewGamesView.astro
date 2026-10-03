@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';
+import GameGrid from '../components/GameGrid.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { topGames } from '../lib/catalog';
+import { q } from '../lib/server/db';
+import { useI18n } from '../i18n';
+const { t } = await useI18n(Astro);
+const games = await topGames(q(), 'new', 96);
+---
+<Base title={t('new.title')} description={t('new.description')} path="/new-games/">
+  <div class="wrap">
+    <Breadcrumbs items={[{ name: t('nav.home'), href: '/' }, { name: t('new.h1'), href: '/new-games/' }]} />
+    <div class="page-head"><h1>{t('new.h1')}</h1><p class="lead">{t('new.lead')} <a href="/games/">{t('new.leadLink')}</a>{t('new.leadEnd')}</p></div>
+    <GameGrid games={games} eagerCount={7} label={t('home.newLabel')} />
+  </div>
+</Base>

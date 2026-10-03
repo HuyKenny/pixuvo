@@ -1,0 +1,40 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { snapshot } from '../lib/snapshot';
+import { MIN_CATEGORY_GAMES } from '../lib/taxonomy';
+import { categoryPath } from '../lib/site';
+import { useI18n } from '../i18n';
+const live = snapshot.categories.filter((c) => c.count >= MIN_CATEGORY_GAMES);
+const genres = live.filter((c) => c.kind === 'genre').sort((a, b) => b.count - a.count);
+const modes = live.filter((c) => c.kind === 'mode');
+const subsOf = (slug: string) => live.filter((c) => c.parent === slug);
+const i = await useI18n(Astro);
+const t = i.t;
+const landName = (l: { slug: string; h1: string }) => (i.lang !== 'en' && i.t(`land.${l.slug}.h1`) !== `land.${l.slug}.h1` ? i.t(`land.${l.slug}.h1`) : l.h1);
+const landDesc = (l: { slug: string; description: string }) => (i.lang !== 'en' && i.t(`land.${l.slug}.description`) !== `land.${l.slug}.description` ? i.t(`land.${l.slug}.description`) : l.description);
+---
+<Base title={t('cats.title')} description={t('cats.description', { n: String(live.length) })} path="/categories/">
+  <div class="wrap">
+    <Breadcrumbs items={[{ name: t('nav.home'), href: '/' }, { name: t('nav.categories'), href: '/categories/' }]} />
+    <div class="page-head"><h1>{t('cats.h1')}</h1><p class="lead">{t('cats.lead')}</p></div>
+    <section class="category-group" aria-labelledby="modes-h">
+      <h2 id="modes-h">{t('cats.ways')}</h2>
+      <div class="cat-grid">
+        {modes.map((c) => <a class="cat-tile" href={categoryPath(c.slug)}><strong>{i.cat(c.slug, c.name)} <span class="n">{i.approx(c.count)}</span></strong><p>{i.catBlurb(c.slug, c.blurb)}</p></a>)}
+        {snapshot.landings.map((l) => <a class="cat-tile" href={categoryPath(l.slug)}><strong>{landName(l)} <span class="n">{i.approx(l.count)}</span></strong><p>{landDesc(l).split(/[.。]/)[0]}.</p></a>)}
+      </div>
+    </section>
+    <section class="category-group" aria-labelledby="genres-h">
+      <h2 id="genres-h">{t('cats.genres')}</h2>
+      <div class="cat-grid">
+        {genres.map((c) => (
+          <div class="cat-tile">
+            <a href={categoryPath(c.slug)} style="color:inherit;text-decoration:none"><strong>{i.cat(c.slug, c.name)} <span class="n">{i.approx(c.count)}</span></strong><p>{i.catBlurb(c.slug, c.blurb)}</p></a>
+            {subsOf(c.slug).length > 0 && <div class="subs">{subsOf(c.slug).map((s) => <a href={categoryPath(s.slug)}>{i.cat(s.slug, s.name)}</a>)}</div>}
+          </div>
+        ))}
+      </div>
+    </section>
+  </div>
+</Base>

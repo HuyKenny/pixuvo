@@ -9,6 +9,7 @@
  * Filtered results are paged with numbered links (#…&page=2); the desktop sidebar and the
  * phone bottom sheet are two views of the same groups and stay in sync.
  */
+import { pageLang, tr } from './i18n';
 import { cardHtml, esc, type ClientCard } from './cards';
 import { track } from './analytics';
 
@@ -36,12 +37,13 @@ interface Opt { v: string; label: string; ico?: string | undefined; img?: string
 interface Group { key: Key; legend: string; radio?: boolean; hint?: string; opts: Opt[] }
 
 const LABELS: Record<string, string> = {
-  'sort:featured': 'Best', 'sort:new': 'Newest', 'sort:az': 'A–Z', 'device:mobile': 'Works on mobile', 'players:1': '1 player', 'players:2': '2+ players',
-  'mode:local': 'Same device', 'mode:online': 'Online', 'style:2d': '2D', 'style:3d': '3D', 'style:pixel': 'Pixel art',
-  'controls:keyboard': 'Keyboard', 'controls:mouse': 'Mouse', 'controls:touch': 'Touch',
+  'sort:featured': tr('c.sortBest'), 'sort:new': tr('c.sortNewest'), 'sort:az': tr('c.sortAz'), 'device:mobile': tr('c.mobile'), 'players:1': tr('c.p1'), 'players:2': tr('c.p2'),
+  'mode:local': tr('c.sameDevice'), 'mode:online': tr('c.online'), 'style:2d': tr('c.style2d'), 'style:3d': tr('c.style3d'), 'style:pixel': tr('c.pixel'),
+  'controls:keyboard': tr('c.keyboard'), 'controls:mouse': tr('c.mouse'), 'controls:touch': tr('c.touch'),
 };
-const NF = new Intl.NumberFormat('en-US'); // one formatter: toLocaleString builds a new one per call
+const NF = new Intl.NumberFormat(document.documentElement.lang || 'en'); // one formatter: toLocaleString builds a new one per call
 const nf = (n: number) => NF.format(n);
+const themeName = (slug: string, fallback: string) => { const v = tr(`theme.${slug}`); return v === `theme.${slug}` ? fallback : v; };
 const syncFavs = () => (window as unknown as { pixuvoSyncFavs?: () => void }).pixuvoSyncFavs?.();
 
 const bar = document.querySelector<HTMLElement>('[data-filters]');
@@ -110,14 +112,14 @@ if (bar && forms.length && gridEl) {
   function groups(): Group[] {
     const f = facets;
     const has = (n: number | undefined) => !f || (n ?? 0) >= MIN;
-    const g: Group[] = [{ key: 'sort', legend: 'Sort by', radio: true, opts: [{ v: 'featured', label: 'Best', ico: '⭐' }, { v: 'new', label: 'Newest', ico: '🆕' }, { v: 'az', label: 'A–Z', ico: '🔤' }] }];
+    const g: Group[] = [{ key: 'sort', legend: tr('c.sortBy'), radio: true, opts: [{ v: 'featured', label: tr('c.sortBest'), ico: '⭐' }, { v: 'new', label: tr('c.sortNewest'), ico: '🆕' }, { v: 'az', label: tr('c.sortAz'), ico: '🔤' }] }];
     const subOpts = (f?.sub ?? subs.map((x) => ({ ...x, n: undefined as number | undefined }))).map((x) => ({ v: x.slug, label: x.name, img: `/icons/cat/${x.slug}.webp`, n: x.n }));
-    if (subOpts.length) g.push({ key: 'sub', legend: 'Type', opts: subOpts });
-    if (f) g.push({ key: 'theme', legend: 'Theme', opts: f.theme.map((t) => { const m = themeMeta.find((x) => x.slug === t.slug); return { v: t.slug, label: m?.name ?? t.slug, ico: m?.emoji, n: t.n }; }) });
-    g.push({ key: 'players', legend: 'Players', opts: [{ v: '1', label: '1 player', ico: '👤', n: f?.players['1'] }, { v: '2', label: '2+ players', ico: '👥', n: f?.players['2'] }] });
-    g.push({ key: 'device', legend: 'Device', hint: 'As declared by the game’s publisher.', opts: [{ v: 'mobile', label: 'Works on mobile', ico: '📱', n: f?.device }] });
-    g.push({ key: 'controls', legend: 'Controls', hint: 'From the game’s own instructions — not a guarantee.', opts: [{ v: 'keyboard', label: 'Keyboard', ico: '⌨️', n: f?.controls.keyboard }, { v: 'mouse', label: 'Mouse', ico: '🖱️', n: f?.controls.mouse }, { v: 'touch', label: 'Touch', ico: '👆', n: f?.controls.touch }] });
-    g.push({ key: 'style', legend: 'Look', opts: [{ v: '2d', label: '2D', ico: '🟦', n: f?.style['2d'] }, { v: '3d', label: '3D', ico: '🧊', n: f?.style['3d'] }, { v: 'pixel', label: 'Pixel art', ico: '👾', n: f?.style.pixel }] });
+    if (subOpts.length) g.push({ key: 'sub', legend: tr('c.type'), opts: subOpts });
+    if (f) g.push({ key: 'theme', legend: tr('c.theme'), opts: f.theme.map((t) => { const m = themeMeta.find((x) => x.slug === t.slug); return { v: t.slug, label: themeName(t.slug, m?.name ?? t.slug), ico: m?.emoji, n: t.n }; }) });
+    g.push({ key: 'players', legend: tr('c.playersLegend'), opts: [{ v: '1', label: tr('c.p1'), ico: '👤', n: f?.players['1'] }, { v: '2', label: tr('c.p2'), ico: '👥', n: f?.players['2'] }] });
+    g.push({ key: 'device', legend: tr('c.device'), hint: tr('c.deviceHint'), opts: [{ v: 'mobile', label: tr('c.mobile'), ico: '📱', n: f?.device }] });
+    g.push({ key: 'controls', legend: tr('c.controls'), hint: tr('c.controlsHint'), opts: [{ v: 'keyboard', label: tr('c.keyboard'), ico: '⌨️', n: f?.controls.keyboard }, { v: 'mouse', label: tr('c.mouse'), ico: '🖱️', n: f?.controls.mouse }, { v: 'touch', label: tr('c.touch'), ico: '👆', n: f?.controls.touch }] });
+    g.push({ key: 'style', legend: tr('c.look'), opts: [{ v: '2d', label: tr('c.style2d'), ico: '🟦', n: f?.style['2d'] }, { v: '3d', label: tr('c.style3d'), ico: '🧊', n: f?.style['3d'] }, { v: 'pixel', label: tr('c.pixel'), ico: '👾', n: f?.style.pixel }] });
     const s = readHash();
     // Hide options without enough games, but never one that is selected (it must stay removable).
     return g.map((x) => ({ ...x, opts: x.radio ? x.opts : x.opts.filter((o) => has(o.n) || s[x.key]?.includes(o.v)) })).filter((x) => x.opts.length > 0);
@@ -132,7 +134,7 @@ if (bar && forms.length && gridEl) {
       .join('')));
   }
   const label = (k: Key, v: string) =>
-    k === 'q' ? `“${v}”` : k === 'sub' ? subs.find((x) => x.slug === v)?.name ?? v : k === 'theme' ? themeMeta.find((x) => x.slug === v)?.name ?? v : LABELS[`${k}:${v}`] ?? v;
+    k === 'q' ? `“${v}”` : k === 'sub' ? subs.find((x) => x.slug === v)?.name ?? v : k === 'theme' ? themeName(v, themeMeta.find((x) => x.slug === v)?.name ?? v) : LABELS[`${k}:${v}`] ?? v;
 
   function syncUI(s: State) {
     forms.forEach((f) => f.querySelectorAll<HTMLInputElement>('input').forEach((i) => {
@@ -141,18 +143,18 @@ if (bar && forms.length && gridEl) {
     const n = activeCount(s);
     badge.textContent = String(n);
     badge.hidden = n === 0;
-    if (sortLabel) sortLabel.textContent = LABELS[`sort:${s.sort?.[0] ?? 'featured'}`] ?? 'Best';
+    if (sortLabel) sortLabel.textContent = LABELS[`sort:${s.sort?.[0] ?? 'featured'}`] ?? tr('c.sortBest');
     bar!.querySelectorAll<HTMLElement>('[data-quick]').forEach((c) => c.setAttribute('aria-pressed', String(!!s[c.dataset.quick as Key]?.includes(c.dataset.value!))));
     if (qInput && document.activeElement !== qInput) qInput.value = s.q?.[0] ?? '';
     if (qClear) qClear.hidden = !(qInput?.value);
     const pills = KEYS.filter((k) => !META.includes(k)).flatMap((k) => (s[k] ?? []).map((v) => [k, v] as const));
     activeBox.innerHTML = pills
-      .map(([k, v]) => `<button type="button" class="filter-pill" data-remove-filter="${k}" data-value="${esc(v)}">${esc(label(k, v))}<span aria-hidden="true">×</span><span class="sr-only"> — remove filter</span></button>`)
-      .join('') + (pills.length ? '<button type="button" class="link-btn" data-filter-clear>Clear all</button>' : '');
+      .map(([k, v]) => `<button type="button" class="filter-pill" data-remove-filter="${k}" data-value="${esc(v)}">${esc(label(k, v))}<span aria-hidden="true">×</span><span class="sr-only"> — ${esc(tr('c.removeFilter'))}</span></button>`)
+      .join('') + (pills.length ? `<button type="button" class="link-btn" data-filter-clear>${esc(tr('c.clearFilters'))}</button>` : '');
   }
   function pagerHtml(page: number, pages: number): string {
     const b = (p: number, text: string, cur = false) =>
-      cur ? `<li><span aria-current="page">${text}</span></li>` : `<li><a href="#" data-filter-page="${p}"${text === String(p) ? '' : ` aria-label="${text === '‹' ? 'Previous' : 'Next'} page"`}>${text}</a></li>`;
+      cur ? `<li><span aria-current="page">${text}</span></li>` : `<li><a href="#" data-filter-page="${p}"${text === String(p) ? '' : ` aria-label="${esc(text === '‹' ? tr('c.previous') : tr('c.next'))}"`}>${text}</a></li>`;
     const nums = new Set([1, pages, page - 2, page - 1, page, page + 1, page + 2].filter((p) => p >= 1 && p <= pages));
     const out: string[] = [];
     if (page > 1) out.push(b(page - 1, '‹'));
@@ -163,7 +165,7 @@ if (bar && forms.length && gridEl) {
       last = p;
     }
     if (page < pages) out.push(b(page + 1, '›'));
-    return `<nav aria-label="Filtered results pages"><ul class="pagination">${out.join('')}</ul></nav>`;
+    return `<nav aria-label="${esc(tr('c.filteredPages'))}"><ul class="pagination">${out.join('')}</ul></nav>`;
   }
 
   // ── Fetching ─────────────────────────────────────────────────────────────
@@ -175,6 +177,7 @@ if (bar && forms.length && gridEl) {
     if (!category && !s.sort && !isFiltered(s)) qs.set('sort', 'new');
     qs.delete('page');
     if (page > 1) qs.set('page', String(page));
+    if (pageLang() !== 'en') qs.set('lang', pageLang());
     return qs;
   };
   type Res = { items: ClientCard[]; total: number; capped: boolean; page: number; pages: number };
@@ -183,7 +186,8 @@ if (bar && forms.length && gridEl) {
     if (!res.ok) throw new Error(String(res.status));
     return (await res.json()) as Res;
   }
-  const countText = (d: Res) => `${d.capped ? `${nf(d.total)}+` : nf(d.total)} ${d.total === 1 ? 'game' : 'games'}`;
+  const countText = (d: Res) => (d.capped ? tr('c.gamesCapped', { n: d.total }) : tr('c.games', { n: d.total }));
+  const showText = (d: Res) => (d.capped ? tr('c.showCapped', { n: d.total }) : tr('c.showGames', { n: d.total }));
 
   async function apply() {
     const s = readHash();
@@ -192,8 +196,8 @@ if (bar && forms.length && gridEl) {
       ctrl?.abort();
       grid.innerHTML = originalGrid;
       if (pager) pager.innerHTML = originalPager;
-      count.textContent = `${nf(total)} games`;
-      if (showCount) showCount.textContent = `Show ${nf(total)} games`;
+      count.textContent = tr('c.games', { n: total });
+      if (showCount) showCount.textContent = tr('c.showGames', { n: total });
       syncFavs();
       return;
     }
@@ -204,14 +208,14 @@ if (bar && forms.length && gridEl) {
       const data = await load(s, Number(s.page?.[0] ?? '1'), ctrl.signal);
       grid.innerHTML = data.items.length
         ? data.items.map((g) => cardHtml(g)).join('')
-        : `<div class="empty-state" role="listitem"><span class="empty-ico" aria-hidden="true">🔍</span><strong>No games match all of these</strong>Remove one of the filters above, or <button type="button" class="link-btn" data-filter-clear>clear all filters</button>.</div>`;
+        : `<div class="empty-state" role="listitem"><span class="empty-ico" aria-hidden="true">🔍</span><strong>${esc(tr('c.emptyTitle'))}</strong>${esc(tr('c.emptyText'))} <button type="button" class="link-btn" data-filter-clear>${esc(tr('c.clearFilters'))}</button></div>`;
       count.textContent = countText(data);
-      if (showCount) showCount.textContent = data.total ? `Show ${countText(data)}` : 'No games — change filters';
+      if (showCount) showCount.textContent = data.total ? showText(data) : tr('c.noGamesChange');
       if (pager) pager.innerHTML = data.pages > 1 ? pagerHtml(data.page, data.pages) : '';
       syncFavs();
     } catch (e) {
       if ((e as Error).name === 'AbortError') return;
-      grid.innerHTML = `<div class="empty-state" role="listitem"><strong>Could not load games</strong>Please check your connection and try again. <button type="button" class="link-btn" data-filter-retry>Retry</button></div>`;
+      grid.innerHTML = `<div class="empty-state" role="listitem"><strong>${esc(tr('c.loadError'))}</strong>${esc(tr('c.loadErrorText'))} <button type="button" class="link-btn" data-filter-retry>${esc(tr('c.retry'))}</button></div>`;
     } finally {
       grid.classList.remove('loading-veil');
     }
@@ -348,6 +352,6 @@ if (bar && forms.length && gridEl) {
       }
     }));
   bar.querySelectorAll<HTMLElement>('a[data-quick]').forEach((a) => a.setAttribute('role', 'button'));
-  if (showCount) showCount.textContent = `Show ${nf(total)} games`;
+  if (showCount) showCount.textContent = tr('c.showGames', { n: total });
   if (location.hash.length > 1) apply();
 }

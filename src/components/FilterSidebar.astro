@@ -5,17 +5,20 @@ import { categoryIcon } from '../lib/category-icons';
 import { categoryPath } from '../lib/site';
 interface Props { genres: CategoryInfo[] }
 const { genres } = Astro.props;
+import { useI18n } from '../i18n';
+const i = await useI18n(Astro);
+const t = i.t;
 const groups = [
-  { title: 'Players', opts: [['players=1', '👤', '1 Player'], ['players=2', '👥', '2+ Players'], ['mode=online', '🌐', 'Online']] },
-  { title: 'Device', opts: [['device=mobile', '📱', 'Works on mobile']] },
-  { title: 'Controls', opts: [['controls=keyboard', '⌨️', 'Keyboard'], ['controls=mouse', '🖱️', 'Mouse'], ['controls=touch', '👆', 'Touch']] },
-  { title: 'Style', opts: [['style=2d', '🟦', '2D'], ['style=3d', '🧊', '3D'], ['style=pixel', '👾', 'Pixel']] },
+  { title: t('home.players'), opts: [['players=1', '👤', t('home.p1')], ['players=2', '👥', t('home.p2')], ['mode=online', '🌐', t('home.online')]] },
+  { title: t('home.device'), opts: [['device=mobile', '📱', t('home.quickMobile')]] },
+  { title: t('home.controls'), opts: [['controls=keyboard', '⌨️', t('home.keyboard')], ['controls=mouse', '🖱️', t('home.quickMouse')], ['controls=touch', '👆', t('home.quickTouch')]] },
+  { title: t('home.style'), opts: [['style=2d', '🟦', '2D'], ['style=3d', '🧊', '3D'], ['style=pixel', '👾', t('home.pixel')]] },
 ];
 ---
-<aside class="filterside" aria-label="Find a game">
-  <h2>Find a game</h2>
-  <h3>Genre</h3>
-  <ul>{genres.map((g) => <li><a href={categoryPath(g.slug)}><img src={categoryIcon(g.slug)} alt="" width="22" height="22" loading="lazy" />{g.name}</a></li>)}</ul>
+<aside class="filterside" aria-label={t('home.findGame')}>
+  <h2>{t('home.findGame')}</h2>
+  <h3>{t('home.genre')}</h3>
+  <ul>{genres.map((g) => <li><a href={categoryPath(g.slug)}><img src={categoryIcon(g.slug)} alt="" width="22" height="22" loading="lazy" />{i.cat(g.slug, g.name)}</a></li>)}</ul>
   {groups.map((g) => (
     <>
       <h3>{g.title}</h3>

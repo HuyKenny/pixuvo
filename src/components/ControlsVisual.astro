@@ -2,6 +2,9 @@
 import type { ControlRow } from '../lib/controls';
 interface Props { rows: ControlRow[] }
 const { rows } = Astro.props;
+import { useI18n } from '../i18n';
+const { t } = await useI18n(Astro);
+const tw = (w?: string) => (w ? t(`ctl.${w}`) : '');
 const isArrows = (k: string[]) => k.join('') === '↑←↓→';
 const isWasd = (k: string[]) => k.join('') === 'WASD';
 const keysOnly = rows.length > 0 && rows.every((r) => r.device === 'keys');
@@ -23,11 +26,11 @@ const keysOnly = rows.length > 0 && rows.every((r) => r.device === 'keys');
         )}
       </span>
       <span class="control-text">
-        <strong>{r.action ?? (r.device === 'keys' ? 'Press' : r.gesture)}</strong>
-        <small>{r.device === 'keys' ? (isArrows(r.keys) ? 'Arrow keys' : isWasd(r.keys) ? 'W A S D keys' : `${r.keys.join(' ')} key`) : r.device === 'mouse' ? `Mouse · ${r.gesture}` : `Touch · ${r.gesture}`}</small>
+        <strong>{r.action ? tw(r.action) : r.device === 'keys' ? t('ctl.press') : tw(r.gesture)}</strong>
+        <small>{r.device === 'keys' ? (isArrows(r.keys) ? t('ctl.arrows') : isWasd(r.keys) ? t('ctl.wasd') : t('ctl.key', { keys: r.keys.join(' ') })) : r.device === 'mouse' ? t('ctl.mouse', { gesture: tw(r.gesture) }) : t('ctl.touch', { gesture: tw(r.gesture) })}</small>
       </span>
     </li>
   ))}
 </ul>
-<p class="note">From the game's instructions.</p>
-{keysOnly && <p class="kb-note">⌨️ This game may need a keyboard — it might not work on a phone.</p>}
+<p class="note">{t('ctl.fromInstructions')}</p>
+{keysOnly && <p class="kb-note">{t('ctl.keyboardOnly')}</p>}

@@ -1,19 +1,20 @@
 ---
-import { approxCount } from '../lib/format';
+import { useI18n } from '../i18n';
 import { uiIcon } from '../lib/category-icons';
 interface Props { games: number; categories: number; playsYesterday?: number }
 const { games, categories, playsYesterday = 0 } = Astro.props;
 // Real game starts yesterday (each visitor counts once per game); shown only when it is a meaningful number.
 const played = playsYesterday >= 50;
+const { t, approx, n } = await useI18n(Astro);
 const items = [
-  { icon: uiIcon('controller'), big: `${approxCount(games)}`, small: 'Games', note: 'and counting' },
-  { icon: uiIcon('grid'), big: `${categories}`, small: 'Categories', note: 'something for everyone' },
+  { icon: uiIcon('controller'), big: approx(games), small: t('home.statGames'), note: t('home.statGamesNote') },
+  { icon: uiIcon('grid'), big: n(categories), small: t('home.statCategories'), note: t('home.statCategoriesNote') },
   played
-    ? { icon: uiIcon('lightning'), big: playsYesterday.toLocaleString('en-US'), small: 'Plays', note: 'yesterday on Pixuvo' }
-    : { icon: uiIcon('lightning'), big: 'Play', small: 'Instantly', note: 'starts in one click' },
-  { icon: uiIcon('cloud'), big: 'No', small: 'Download', note: 'works in your browser' },
+    ? { icon: uiIcon('lightning'), big: n(playsYesterday), small: t('home.statPlays'), note: t('home.statPlaysNote') }
+    : { icon: uiIcon('lightning'), big: t('home.statPlay'), small: t('home.statInstantly'), note: t('home.statInstantlyNote') },
+  { icon: uiIcon('cloud'), big: t('home.statNo'), small: t('home.statDownload'), note: t('home.statDownloadNote') },
 ];
 ---
-<ul class="statcards" aria-label="Why Pixuvo">
+<ul class="statcards" aria-label={t('a11y.whyPixuvo')}>
   {items.map((i) => <li><img src={i.icon} alt="" width="44" height="44" /><span><strong>{i.big} <em>{i.small}</em></strong><small>{i.note}</small></span></li>)}
 </ul>

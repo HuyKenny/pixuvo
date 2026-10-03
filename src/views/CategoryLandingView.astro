@@ -1,0 +1,43 @@
+---
+/** Page 1 of a category or a curated SEO landing, from the build snapshot (prerendered for every language). */
+import CategoryView from '../components/CategoryView.astro';
+import { snapshot } from '../lib/snapshot';
+import { MIN_CATEGORY_GAMES } from '../lib/taxonomy';
+import { SITE, categoryPath } from '../lib/site';
+import { useI18n } from '../i18n';
+interface Props { kind: 'category' | 'landing'; slug: string }
+const { kind, slug } = Astro.props;
+const i = await useI18n(Astro);
+const t = i.t;
+const cats = snapshot.categories;
+const tl = (key: string, fallback: string) => (i.t(key) !== key ? i.t(key) : fallback);
+let view;
+if (kind === 'category') {
+  const c = cats.find((x) => x.slug === slug)!;
+  const name = i.cat(c.slug, c.name);
+  const blurb = i.catBlurb(c.slug, c.blurb);
+  const parent = c.parent ? cats.find((x) => x.slug === c.parent) ?? null : null;
+  const siblings = cats.filter((x) => x.parent === (c.parent ?? '__none__') && x.slug !== c.slug && x.count >= MIN_CATEGORY_GAMES).slice(0, 8);
+  const lands = snapshot.landings.filter((l) => l.all.includes(c.slug));
+  view = {
+    slug, name, h1: t('cat.h1', { name }),
+    title: c.kind === 'mode' ? t('cat.titleMode', { name }) : t('cat.title', { name }),
+    description: t('cat.description', { name: i.lang === 'en' ? name.toLowerCase() : name, blurb }),
+    intro: blurb,
+    games: snapshot.categoryPages[slug] ?? [], total: c.count, page: 1,
+    pages: Math.min(SITE.maxCategoryPages, Math.max(1, Math.ceil(c.count / SITE.pageSize))),
+    category: c, categories: cats, parent,
+    related: [...lands.map((l) => ({ href: categoryPath(l.slug), name: tl(`land.${l.slug}.h1`, l.h1) })), ...siblings.map((s) => ({ href: categoryPath(s.slug), name: t('cat.subGames', { name: i.cat(s.slug, s.name) }) }))],
+  };
+} else {
+  const l = snapshot.landings.find((x) => x.slug === slug)!;
+  const h1 = tl(`land.${l.slug}.h1`, l.h1);
+  view = {
+    slug, name: h1, h1, title: tl(`land.${l.slug}.title`, l.title), description: tl(`land.${l.slug}.description`, l.description), intro: tl(`land.${l.slug}.intro`, l.intro),
+    games: l.games.slice(0, SITE.pageSize * 2), total: l.count, page: 1, pages: 1, category: null, categories: cats, parent: null,
+    indexable: l.indexable, filterable: false,
+    related: l.all.map((s) => cats.find((c) => c.slug === s)).filter((c) => !!c).map((c) => ({ href: categoryPath(c!.slug), name: t('cat.allOf', { name: i.cat(c!.slug, c!.name) }) })),
+  };
+}
+---
+<CategoryView {...view} />

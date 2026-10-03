@@ -9,7 +9,7 @@ import CategoryBar from './CategoryBar.astro';
 import { categoryIcon } from '../lib/category-icons';
 import type { CategoryInfo, GameCard } from '../lib/types';
 import { SITE, categoryPath, canonical, gamePath } from '../lib/site';
-import { approxCount } from '../lib/format';
+import { useI18n } from '../i18n';
 import { MIN_CATEGORY_GAMES } from '../lib/taxonomy';
 
 interface Props {
@@ -31,11 +31,13 @@ interface Props {
   related?: Array<{ href: string; name: string }>;
 }
 const p = Astro.props;
+const i = await useI18n(Astro);
+const t = i.t;
 const path = categoryPath(p.slug, p.page);
 const subs = p.category ? p.categories.filter((c) => c.parent === p.category!.slug && c.count >= MIN_CATEGORY_GAMES).sort((a, b) => b.count - a.count) : [];
-const crumbs = [{ name: 'Home', href: '/' }, { name: 'Categories', href: '/categories/' }];
-if (p.parent) crumbs.push({ name: p.parent.name, href: categoryPath(p.parent.slug) });
-crumbs.push({ name: p.page > 1 ? `${p.name} – page ${p.page}` : p.name, href: path });
+const crumbs = [{ name: t('nav.home'), href: '/' }, { name: t('nav.categories'), href: '/categories/' }];
+if (p.parent) crumbs.push({ name: i.cat(p.parent.slug, p.parent.name), href: categoryPath(p.parent.slug) });
+crumbs.push({ name: p.page > 1 ? `${p.name} – ${t('cat.pageSuffix', { n: p.page })}` : p.name, href: path });
 const ld = [{
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
@@ -47,10 +49,10 @@ const ld = [{
     itemListElement: p.games.slice(0, 24).map((g, i) => ({ '@type': 'ListItem', position: (p.page - 1) * SITE.pageSize + i + 1, url: canonical(gamePath(g.slug)), name: g.title })),
   },
 }];
-const pageTitle = p.page > 1 ? `${p.title.split(' – ')[0]} – Page ${p.page}` : p.title;
+const pageTitle = p.page > 1 ? t('cat.titlePage', { title: p.title.split(' – ')[0]!, n: p.page }) : p.title;
 const filterable = p.filterable !== false;
 ---
-<Base title={pageTitle} description={p.page > 1 ? `${p.description} Page ${p.page}.` : p.description} path={path} noindex={p.indexable === false} ga={{ page_type: 'category', game_category: p.category?.slug ?? p.slug }}
+<Base title={pageTitle} description={p.page > 1 ? `${p.description} (${t('cat.pageSuffix', { n: p.page })})` : p.description} path={path} noindex={p.indexable === false} ga={{ page_type: 'category', game_category: p.category?.slug ?? p.slug }}
   prev={p.page > 1 ? categoryPath(p.slug, p.page - 1) : null} next={p.page < p.pages ? categoryPath(p.slug, p.page + 1) : null} jsonLd={ld}>
   <div class="wrap">
     <CategoryBar categories={p.categories.filter((c) => c.nav && c.count >= MIN_CATEGORY_GAMES)} current={p.category?.slug ?? p.parent?.slug} />
@@ -58,32 +60,32 @@ const filterable = p.filterable !== false;
     <div class="page-head page-head-icon">
       <img src={categoryIcon(p.category?.slug ?? p.slug)} alt="" width="56" height="56" />
       <div>
-      <h1>{p.h1}{p.page > 1 && <span> – page {p.page}</span>}</h1>
-      {p.page === 1 && <p class="lead">{p.intro} {approxCount(p.total)} games.</p>}
+      <h1>{p.h1}{p.page > 1 && <span> – {t('cat.pageSuffix', { n: p.page })}</span>}</h1>
+      {p.page === 1 && <p class="lead">{p.intro} {t('cat.introCount', { count: i.approx(p.total) })}</p>}
       </div>
     </div>
     {subs.length > 0 && !filterable && (
-      <nav aria-label={`${p.name} subcategories`}><div class="chips">
-        {subs.map((s) => <a class="chip" href={categoryPath(s.slug)}><img src={categoryIcon(s.slug)} alt="" width="22" height="22" loading="lazy" />{s.name} <span class="count">{approxCount(s.count)}</span></a>)}
+      <nav aria-label={t('cat.subcategories', { name: p.name })}><div class="chips">
+        {subs.map((s) => <a class="chip" href={categoryPath(s.slug)}><img src={categoryIcon(s.slug)} alt="" width="22" height="22" loading="lazy" />{i.cat(s.slug, s.name)} <span class="count">{i.approx(s.count)}</span></a>)}
       </div></nav>
     )}
     <div class:list={[{ 'list-layout': filterable }]}>
       {filterable && <FilterSide />}
       <div class="list-main">
-        {filterable && <FilterPanel category={p.category?.slug ?? null} name={p.name} total={p.total} subs={subs.map((s) => ({ slug: s.slug, name: s.name, count: s.count }))} />}
-        <GameGrid games={p.games} id="game-grid" eagerCount={p.page === 1 ? 4 : 0} label={`${p.name} games`} />
-        <div id="game-pager"><Pagination page={p.page} pages={p.pages} href={(n) => categoryPath(p.slug, n)} label={`${p.name} pages`} /></div>
+        {filterable && <FilterPanel category={p.category?.slug ?? null} name={p.name} total={p.total} subs={subs.map((s) => ({ slug: s.slug, name: i.cat(s.slug, s.name), count: s.count }))} />}
+        <GameGrid games={p.games} id="game-grid" eagerCount={p.page === 1 ? 4 : 0} label={t('cat.gamesLabel', { name: p.name })} />
+        <div id="game-pager"><Pagination page={p.page} pages={p.pages} href={(n) => categoryPath(p.slug, n)} label={t('cat.pagesLabel', { name: p.name })} /></div>
       </div>
     </div>
     {subs.length > 0 && filterable && (
       <section class="section" aria-labelledby="sub-h">
-        <div class="section-head"><h2 id="sub-h">Explore {p.name} games</h2></div>
-        <div class="chips">{subs.map((s) => <a class="chip" href={categoryPath(s.slug)}><img src={categoryIcon(s.slug)} alt="" width="22" height="22" loading="lazy" />{s.name} games <span class="count">{approxCount(s.count)}</span></a>)}</div>
+        <div class="section-head"><h2 id="sub-h">{t('cat.explore', { name: p.name })}</h2></div>
+        <div class="chips">{subs.map((s) => <a class="chip" href={categoryPath(s.slug)}><img src={categoryIcon(s.slug)} alt="" width="22" height="22" loading="lazy" />{t('cat.subGames', { name: i.cat(s.slug, s.name) })} <span class="count">{i.approx(s.count)}</span></a>)}</div>
       </section>
     )}
     {p.related && p.related.length > 0 && (
       <section class="section" aria-labelledby="rel-h">
-        <div class="section-head"><h2 id="rel-h">Related</h2></div>
+        <div class="section-head"><h2 id="rel-h">{t('cat.related')}</h2></div>
         <div class="chips">{p.related.map((r) => <a class="chip" href={r.href}>{r.name}</a>)}</div>
       </section>
     )}

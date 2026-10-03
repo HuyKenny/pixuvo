@@ -103,3 +103,32 @@ closed. Public writes (votes, reports) need Turnstile and the Workers rate-limit
 refuses the write. CSP allows only the partner frame and image hosts and Turnstile; `frame-ancestors 'none'`.
 The partner iframe is sandboxed (`allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox
 allow-forms allow-pointer-lock allow-orientation-lock`, no top navigation) — verified to work with both partners.
+
+## Languages (i18n, 2026-10-03)
+
+23 languages: English at the root, the others under `/{code}/` — es fr pt de it nl pl cs sk hu ro uk ru tr ar
+(right-to-left) id vi th ja ko zh-hans zh-hant. Slugs stay English, so every page maps 1:1 between languages.
+
+* **Strings:** `src/i18n/messages/en.ts` is the key source (≈ 620 keys incl. category, theme and landing texts);
+  `messages/<code>.json` hold the translations, `src/i18n/docs/<code>.json` the info/legal pages
+  (privacy/terms/copyright show "English version is legally binding"). `scripts/i18n-check.ts` (also a unit test)
+  fails on missing keys, wrong plural forms (Intl.PluralRules) or changed placeholders/HTML.
+  Components call `await useI18n(Astro)` — the language comes from the URL. Browser scripts read only the `c.*`/`theme.*`
+  keys embedded in `<script id="i18n">`.
+* **Links:** components keep writing `/games/x/`; the middleware (also during prerendering) rewrites internal links of
+  non-English pages to `/{code}/…` (`src/i18n/links.ts`). The language switcher is exempt (`data-keep-href`).
+* **Routes:** `src/pages/[lang]/…` mirror the English routes and reuse the same views (`src/views/*`). Prerendered per
+  language: home, categories, category page 1 + landings, info pages, favorites/recent shells. Game pages and page 2+
+  are on demand.
+* **Detection:** only `/` runs the Worker first (`assets.run_worker_first: ["/"]`, custom entry `src/worker.ts`):
+  cookie `pixuvo_lang` → `Accept-Language` → Cloudflare country → English; bots always get English; 302 with
+  `Vary: Accept-Language, Cookie`. Deep pages never redirect — a bar offers the visitor's language (`LangOffer`).
+* **SEO:** hreflang for all languages + x-default on listing/info pages; game pages list only languages with a translated
+  description, and a localised game page without one is `noindex`. Sitemaps: `{code}-pages`, `{code}-categories`
+  (with xhtml alternates) and `{code}-games-N` (translated games only).
+* **Game descriptions:** machine translation by `scripts/translate.ts` into the separate D1 `pixuvo-i18n`
+  (binding `I18N`, read with one query per game page; missing table/DB never breaks a page). Model
+  `@cf/mistralai/mistral-small-3.1-24b-instruct` on Workers AI — chosen over m2m100 after a side-by-side test
+  (m2m100 dropped sentences). Labelled "automatic translation" on the page.
+* **Search:** game titles stay English; category names are matched in every language (suggest + search page),
+  e.g. "závod" → Racing games.

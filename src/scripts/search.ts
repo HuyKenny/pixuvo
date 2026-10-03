@@ -4,6 +4,7 @@
  * screen readers. The plain form submit to /search/ works without it.
  */
 import { esc } from './cards';
+import { lp, pageLang, tr } from './i18n';
 
 const form = document.querySelector<HTMLFormElement>('form[data-search]');
 const input = form?.querySelector<HTMLInputElement>('[data-search-input]');
@@ -14,7 +15,7 @@ if (form && input && list) {
   let timer: number | undefined;
   let ctrl: AbortController | null = null;
   let active = -1;
-  let items: Array<{ slug: string; title: string; thumb: string; cat: string | null }> = [];
+  let items: Array<{ slug: string; title: string; thumb: string; cat: string | null; kind?: 'category' }> = [];
 
   const close = () => {
     list.hidden = true;
@@ -24,19 +25,19 @@ if (form && input && list) {
   };
   const render = (q: string) => {
     if (!items.length) {
-      list.innerHTML = `<li><a class="s-all" href="/search/?q=${encodeURIComponent(q)}">No quick matches — search all games</a></li>`;
+      list.innerHTML = `<li><a class="s-all" href="${lp('/search/')}?q=${encodeURIComponent(q)}">${esc(tr('c.noQuick'))}</a></li>`;
     } else {
       list.innerHTML =
         items
           .map(
             (g, i) =>
-              `<li><a id="sg-${i}" role="option" aria-selected="false" href="/games/${esc(g.slug)}/"><img src="${esc(g.thumb)}" alt="" width="56" height="42" loading="lazy" referrerpolicy="no-referrer"><span><span class="s-title">${esc(g.title)}</span><br><span class="s-cat">${esc(g.cat ?? '')}</span></span></a></li>`,
+              `<li><a id="sg-${i}" role="option" aria-selected="false" href="${g.kind === 'category' ? lp(`/${esc(g.slug)}-games/`) : lp(`/games/${esc(g.slug)}/`)}"><img src="${esc(g.thumb)}" alt="" width="56" height="42" loading="lazy" referrerpolicy="no-referrer"><span><span class="s-title">${esc(g.title)}</span><br><span class="s-cat">${esc(g.cat ?? '')}</span></span></a></li>`,
           )
-          .join('') + `<li><a class="s-all" href="/search/?q=${encodeURIComponent(q)}">See all results for “${esc(q)}”</a></li>`;
+          .join('') + `<li><a class="s-all" href="${lp('/search/')}?q=${encodeURIComponent(q)}">${esc(tr('c.seeAll', { q }))}</a></li>`;
     }
     list.hidden = false;
     input.setAttribute('aria-expanded', 'true');
-    if (status) status.textContent = items.length ? `${items.length} suggestions available` : 'No suggestions';
+    if (status) status.textContent = items.length ? tr('c.suggestions', { n: items.length }) : tr('c.noSuggestions');
   };
   const highlight = (i: number) => {
     const opts = list.querySelectorAll<HTMLAnchorElement>('[role="option"]');
@@ -58,7 +59,7 @@ if (form && input && list) {
       ctrl?.abort();
       ctrl = new AbortController();
       try {
-        const res = await fetch(`/api/suggest/?q=${encodeURIComponent(q.slice(0, 80))}`, { signal: ctrl.signal, headers: { accept: 'application/json' } });
+        const res = await fetch(`/api/suggest/?q=${encodeURIComponent(q.slice(0, 80))}&lang=${pageLang()}`, { signal: ctrl.signal, headers: { accept: 'application/json' } });
         if (!res.ok) throw new Error(String(res.status));
         const data = (await res.json()) as { items?: typeof items };
         if (input.value.trim() !== q) return;

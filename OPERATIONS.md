@@ -96,3 +96,17 @@ must go back too.
 * `pnpm exec wrangler tail -c dist/server/wrangler.json` for live tail.
 * Common failures: `D1_ERROR` (check migrations), 503 on vote/report (Turnstile or rate limiter not configured),
   503 on admin (Access not configured), 401 on cron (secret mismatch).
+
+## Translations
+
+```bash
+pnpm exec tsx scripts/translate.ts --dry-run --top 3000            # how many game-language pairs are missing
+pnpm exec tsx scripts/translate.ts --top 3000 --max-usd 10 --concurrency 8   # backfill (resumable, idempotent)
+pnpm exec tsx scripts/i18n-check.ts                                 # validate UI translation files
+pnpm exec tsx scripts/i18n-export.ts                                # English source for translators (tmp/i18n/)
+```
+* The daily sync translates new/changed descriptions of the top 3 000 games with a $0.30 cap.
+* Spend per run is in `translate_runs` (pixuvo-i18n). Measured: ≈ 14 neurons per game-language pair
+  ≈ $0.00016; top 3 000 games × 22 languages ≈ $10.
+* A new UI string: add it to `src/i18n/messages/en.ts`, then add it to every `messages/<code>.json`
+  (the check fails until all languages have it).

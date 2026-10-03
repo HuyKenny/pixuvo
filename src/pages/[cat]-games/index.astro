@@ -1,41 +1,10 @@
 ---
 export const prerender = true;
-import CategoryView from '../../components/CategoryView.astro';
-import { snapshot } from '../../lib/snapshot';
-import { MIN_CATEGORY_GAMES } from '../../lib/taxonomy';
-import { SITE, categoryPath } from '../../lib/site';
-
+import CategoryLandingView from '../../views/CategoryLandingView.astro';
+import { categoryLandingPaths } from '../../views/paths';
 export function getStaticPaths() {
-  const cats = snapshot.categories.filter((c) => c.count >= MIN_CATEGORY_GAMES).map((c) => ({ params: { cat: c.slug }, props: { kind: 'category' as const, slug: c.slug } }));
-  const lands = snapshot.landings.map((l) => ({ params: { cat: l.slug }, props: { kind: 'landing' as const, slug: l.slug } }));
-  return [...cats, ...lands];
+  return categoryLandingPaths();
 }
 const { kind, slug } = Astro.props as { kind: 'category' | 'landing'; slug: string };
-const cats = snapshot.categories;
-let view;
-if (kind === 'category') {
-  const c = cats.find((x) => x.slug === slug)!;
-  const parent = c.parent ? cats.find((x) => x.slug === c.parent) ?? null : null;
-  const siblings = cats.filter((x) => x.parent === (c.parent ?? '__none__') && x.slug !== c.slug && x.count >= MIN_CATEGORY_GAMES).slice(0, 8);
-  const lands = snapshot.landings.filter((l) => l.all.includes(c.slug));
-  view = {
-    slug, name: c.name, h1: `${c.name} Games`,
-    title: c.kind === 'mode' ? `${c.name} Games – Play Free Online With Friends` : `${c.name} Games – Play Free Online, No Downloads`,
-    description: `Play free ${c.name.toLowerCase()} games online in your browser. ${c.blurb} No downloads or sign-up.`,
-    intro: c.blurb,
-    games: snapshot.categoryPages[slug] ?? [], total: c.count, page: 1,
-    pages: Math.min(SITE.maxCategoryPages, Math.max(1, Math.ceil(c.count / SITE.pageSize))),
-    category: c, categories: cats, parent,
-    related: [...lands.map((l) => ({ href: categoryPath(l.slug), name: l.h1 })), ...siblings.map((s) => ({ href: categoryPath(s.slug), name: `${s.name} games` }))],
-  };
-} else {
-  const l = snapshot.landings.find((x) => x.slug === slug)!;
-  view = {
-    slug, name: l.h1.replace(/ Games$/, ''), h1: l.h1, title: l.title, description: l.description, intro: l.intro,
-    games: l.games.slice(0, SITE.pageSize * 2), total: l.count, page: 1, pages: 1, category: null, categories: cats, parent: null,
-    indexable: l.indexable, filterable: false,
-    related: l.all.map((s) => cats.find((c) => c.slug === s)).filter((c) => !!c).map((c) => ({ href: categoryPath(c!.slug), name: `All ${c!.name.toLowerCase()} games` })),
-  };
-}
 ---
-<CategoryView {...view} />
+<CategoryLandingView kind={kind} slug={slug} />

@@ -2,8 +2,10 @@
 /** Pixu — the Pixuvo mascot driving a kart. Original artwork (inline SVG, no external assets). */
 interface Props { class?: string }
 const { class: cls } = Astro.props;
+import { useI18n } from '../i18n';
+const { t } = await useI18n(Astro);
 ---
-<svg class={cls} viewBox="0 0 420 340" role="img" aria-label="Pixu, the Pixuvo mascot, racing a kart" xmlns="http://www.w3.org/2000/svg">
+<svg class={cls} viewBox="0 0 420 340" role="img" aria-label={t('a11y.mascot')} xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="px-body" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9b6bff" /><stop offset="1" stop-color="#5a28e0" /></linearGradient>
     <linearGradient id="px-kart" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff5d5d" /><stop offset="1" stop-color="#d42a4a" /></linearGradient>

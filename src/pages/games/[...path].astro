@@ -1,18 +1,10 @@
 ---
 export const prerender = false;
 import GamePage from '../../components/GamePage.astro';
-import { getGame } from '../../lib/catalog';
-import { q } from '../../lib/server/db';
+import { loadGame } from '../../views/loaders';
 import { gamePath } from '../../lib/site';
-
-const path = Astro.params.path ?? '';
-if (!/^[a-z0-9-]{1,90}$/.test(path)) return Astro.rewrite('/404/');
-const res = await getGame(q(), path);
+const res = await loadGame(Astro.params.path ?? '', 'en');
 if (res.kind === 'redirect') return Astro.redirect(gamePath(res.slug), 301);
-if (res.kind === 'gone') {
-  Astro.response.status = 410;
-  return Astro.rewrite('/404/');
-}
-if (res.kind === 'missing') return Astro.rewrite('/404/');
+if (res.kind !== 'ok') return Astro.rewrite('/404/');
 ---
 <GamePage game={res.game} />

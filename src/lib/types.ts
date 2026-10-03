@@ -3,8 +3,10 @@ export interface GameCard {
   slug: string;
   title: string;
   thumb: string;
-  /** Primary category name, if any. */
+  /** Primary category name (English), if any. */
   cat: string | null;
+  /** Primary category slug (for translated names). */
+  catSlug?: string | null;
   mobile: boolean;
   players: number | null;
   /** Times the game was started on Pixuvo in the last 7 days (counted once per visitor and day). */
@@ -49,6 +51,10 @@ export interface GameDetail extends GameCard {
   /** Declared by the partner (Playgama); false when unknown. */
   inAppPurchases: boolean;
   related: GameCard[];
+  /** Machine translation of the publisher texts in the page language (null = not translated yet). */
+  translation?: { description: string; instructions: string } | null;
+  /** Languages that have a translated description (for hreflang). */
+  translatedLangs?: string[];
 }
 
 export type ListSort = 'featured' | 'new' | 'az';

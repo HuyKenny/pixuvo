@@ -1,16 +1,5 @@
 ---
 export const prerender = false;
-import Base from '../layouts/Base.astro';
-import GameGrid from '../components/GameGrid.astro';
-import Breadcrumbs from '../components/Breadcrumbs.astro';
-import { topGames } from '../lib/catalog';
-import { q } from '../lib/server/db';
-const games = await topGames(q(), 'new', 96);
+import NewGamesView from '../views/NewGamesView.astro';
 ---
-<Base title="New Games – Latest Free Online Games" description="The newest free online games added to Pixuvo. Fresh browser games every day, no downloads." path="/new-games/">
-  <div class="wrap">
-    <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'New games', href: '/new-games/' }]} />
-    <div class="page-head"><h1>New games</h1><p class="lead">The latest games added to Pixuvo, newest first. For the complete list see <a href="/games/">all games</a>.</p></div>
-    <GameGrid games={games} eagerCount={7} label="New games" />
-  </div>
-</Base>
+<NewGamesView />

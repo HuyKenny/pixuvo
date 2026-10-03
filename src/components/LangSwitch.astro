@@ -1,0 +1,28 @@
+---
+/** Language switcher: plain links to the same page in every language (crawlable), remembers the choice. */
+import { useI18n } from '../i18n';
+import { LOCALES, localePath, stripLocale } from '../i18n/locales';
+interface Props { variant?: 'header' | 'footer' }
+const { variant = 'header' } = Astro.props;
+const i = await useI18n(Astro);
+const here = stripLocale(Astro.url.pathname);
+const current = LOCALES.find((l) => l.code === i.lang)!;
+const id = `lang-${variant}`;
+---
+<details class:list={['langswitch', `langswitch-${variant}`]}>
+  <summary aria-label={i.t('lang.switch')}><span aria-hidden="true">🌐</span><span class="ls-code">{current.code === 'en' ? 'EN' : current.code.split('-')[0]!.toUpperCase()}</span><span class="ls-name">{current.name}</span></summary>
+  <ul class="ls-list" id={id} role="list">
+    {LOCALES.map((l) => (
+      <li><a data-keep-href data-set-lang={l.code} href={localePath(l.code, here)} hreflang={l.tag} lang={l.tag} aria-current={l.code === i.lang ? 'true' : undefined}>{l.name}</a></li>
+    ))}
+  </ul>
+</details>
+<script>
+  import { LANG_COOKIE } from '../i18n/locales';
+  document.addEventListener('click', (e) => {
+    const a = (e.target as Element).closest<HTMLAnchorElement>('a[data-set-lang]');
+    if (!a) return;
+    document.cookie = `${LANG_COOKIE}=${a.dataset.setLang}; Max-Age=31536000; Path=/; SameSite=Lax; Secure`;
+    a.href += location.search + location.hash;
+  });
+</script>

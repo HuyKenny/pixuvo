@@ -1,17 +1,21 @@
 ---
 import Logo from './Logo.astro';
+import LangSwitch from './LangSwitch.astro';
 import { SITE } from '../lib/site';
+import { useI18n } from '../i18n';
+const { t } = await useI18n(Astro);
 const year = new Date().getUTCFullYear();
 ---
 <footer class="site-footer">
   <div class="wrap footer-row">
-    <div class="footer-brand"><Logo size={30} /><span>Play more games. Every day.</span></div>
-    <nav aria-label="Footer">
-      <a href="/">Home</a><a href="/categories/">Categories</a><a href="/new-games/">New Games</a><a href="/popular-games/">Popular</a><a href="/2-player-games/">2 Player</a><a href="/games/">All Games</a>
+    <div class="footer-brand"><Logo size={30} /><span>{t('site.footerSlogan')}</span></div>
+    <nav aria-label={t('a11y.footerNav')}>
+      <a href="/">{t('nav.home')}</a><a href="/categories/">{t('nav.categories')}</a><a href="/new-games/">{t('nav.newGames')}</a><a href="/popular-games/">{t('nav.popular')}</a><a href="/2-player-games/">{t('nav.twoPlayer')}</a><a href="/games/">{t('nav.allGamesTitle')}</a>
     </nav>
+    <LangSwitch variant="footer" />
   </div>
   <div class="wrap footer-fine">
-    <nav aria-label="Legal"><a href="/parents/">For parents</a><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/cookies/">Cookies</a><a href="/terms/">Terms</a><a href="/copyright/">Copyright</a><button type="button" class="link-btn footer-link" data-consent-open>Privacy choices</button></nav>
-    <span>© {year} Pixuvo · Games by their developers and partners · <a href={`mailto:${SITE.email}`}>{SITE.email}</a></span>
+    <nav aria-label={t('a11y.legalNav')}><a href="/parents/">{t('nav.parents')}</a><a href="/about/">{t('nav.about')}</a><a href="/contact/">{t('nav.contact')}</a><a href="/privacy/">{t('nav.privacy')}</a><a href="/cookies/">{t('nav.cookies')}</a><a href="/terms/">{t('nav.terms')}</a><a href="/copyright/">{t('nav.copyright')}</a><button type="button" class="link-btn footer-link" data-consent-open>{t('nav.privacyChoices')}</button></nav>
+    <span>© {year} Pixuvo · {t('site.footerCredit')} · <a href={`mailto:${SITE.email}`}>{SITE.email}</a></span>
   </div>
 </footer>
