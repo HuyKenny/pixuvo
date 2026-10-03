@@ -3516,6 +3516,9 @@ body.is-fullscreen .bottom-nav {
 /* Home order on every width: hero → quick filters → continue → moods → featured → game of the day → rest */
 .home-main > * { order: 5; }
 .home-main > #recent-section { order: 0; }
+/* Continue Playing sits above the hero, and .section only has a top margin — without this they touch. */
+.home-main > #recent-section:not([hidden]) { margin-bottom: 24px; }
+@media (max-width: 699.98px) { .home-main > #recent-section:not([hidden]) { margin-bottom: 16px; } }
 .home-main > .hero-row { order: 1; }
 .home-main > .quickrow { order: 2; }
 .home-main > .moods { order: 3; }
