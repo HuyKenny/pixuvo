@@ -3381,8 +3381,14 @@ body.is-fullscreen .bottom-nav {
   }
 }
 @media (min-width: 1100px) {
+  /* Buttons size to their label (long translations like "Celá obrazovka" stay on one line) and wrap as a row. */
   .game-actions {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .game-actions .action-btn {
+    flex: 1 1 auto;
+    white-space: nowrap;
   }
 }
 .vote-btn[aria-pressed='true'][data-vote='1'] {
