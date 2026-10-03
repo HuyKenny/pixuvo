@@ -68,3 +68,13 @@ requests in 24 h (above the free 100 k). These projects would not fit a Free acc
 
 Minutes are shared across the HuyKenny repos (2 000/month). Expected: daily sync ≈ 6–8 min (GameMonetize paging
 with 8 s pauses ≈ 3 min, build ≈ 2 min), CI per push ≈ 5 min.
+
+## Workers AI (game description translations)
+
+Model `@cf/mistralai/mistral-small-3.1-24b-instruct`, $0.011 per 1 000 neurons. Measured 2026-10-03 on the first
+2 087 game-language pairs: $0.33 ≈ **$0.00016 per pair** (description + how-to-play, ~14 neurons).
+* Top 3 000 games × 22 languages ≈ 66 000 pairs ≈ **$10** (one-off backfill, cap `--max-usd 10`).
+* Whole catalog (~45 000 games) ≈ $170–180 — not started; needs the owner's approval.
+* Daily sync: new/changed descriptions in the top 3 000, cap $0.30/run.
+* Storage: separate D1 `pixuvo-i18n` (~0.5 KB per pair → top 3 000 ≈ 35 MB; whole catalog ≈ 0.5 GB, still under
+  the 10 GB D1 limit and away from the main DB's size).

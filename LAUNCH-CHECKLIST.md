@@ -1,6 +1,6 @@
 # Launch checklist
 
-State: 2026-10-02. ✅ done and verified · ⚠️ done with a known caveat · ⛔ external blocker (needs the owner).
+State: 2026-10-03. ✅ done and verified · ⚠️ done with a known caveat · ⛔ external blocker (needs the owner).
 
 ## Site and infrastructure
 - ✅ pixuvo.com served by the `pixuvo` Worker (custom domain); WEDOS placeholder A/AAAA records for the apex removed
@@ -15,7 +15,7 @@ State: 2026-10-02. ✅ done and verified · ⚠️ done with a known caveat · �
 - ✅ Worker secrets: Turnstile, cron secret, IP-hash salt, Access team/audience. Rate-limit bindings active.
 - ✅ Admin behind Cloudflare Access (`/admin`, `/api/admin`, allow h@huy.cz and huy.kenny@gmail.com) + JWT check in code.
 - ✅ info@pixuvo.com → h@huy.cz (Cloudflare Email Routing, MX/SPF/DKIM records created).
-- ✅ `verify:launch` 28/28 on production.
+- ✅ `verify:launch` 35/35 on production (incl. language checks).
 - ✅ Daily sync: Worker Cron Trigger 03:20 UTC → GitHub workflow (fine-grained token, Actions on this repo only); first dispatched run 2026-10-02.
 
 ## Catalog and partners
@@ -40,6 +40,14 @@ State: 2026-10-02. ✅ done and verified · ⚠️ done with a known caveat · �
   Perplexity-User). The portfolio rule from 23 Sept says AI search should pass — owner to decide; Pixuvo's own rules
   are appended after it and allow all regular crawlers.
 - ⛔ Submit `https://pixuvo.com/sitemap.xml` in Google Search Console / Bing / Seznam once the property exists.
+
+## Languages (2026-10-03)
+- ✅ 23 languages live (EN at the root, 22 under `/{code}/`, Arabic RTL); homepage detection cookie → browser → country → EN,
+  bots stay on EN; hreflang + x-default, per-language sitemaps. Screenshots cs/ja/ar/th desktop + mobile, no overflow.
+- ⚠️ Game descriptions: machine translation in progress (top 3 000 games, ≈ $10). Localised game pages stay `noindex`
+  until translated. Whole catalog (≈ $170–180) waits for the owner's approval.
+- ⚠️ UI translations were written by AI — a native-speaker review of the biggest markets (es, pt, de, fr) is recommended.
+- ⛔ Owner: submit the sitemap index again after the language sitemaps appear (same URL, nothing to change).
 
 ## Legal (texts are drafts to be reviewed, not legal advice)
 - ✅ About, Contact, Privacy, Cookies, Terms, Copyright pages with the real operator: Ha Duy Huy, Bartáková 36,

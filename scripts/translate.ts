@@ -9,7 +9,7 @@
  * - Idempotent: a (game, lang) pair is skipped while the English source hash is unchanged.
  * - Budget: stops before the estimated spend (Workers AI neurons × $0.011 / 1 000) or pair cap is reached.
  * - Model: @cf/mistralai/mistral-small-3.1-24b-instruct (measured 2026-10-03: better than m2m100 on our texts,
- *   ~7 neurons per game-language pair ≈ $0.00008).
+ *   ~14 neurons per game-language pair ≈ $0.00016).
  */
 import { parseArgs } from 'node:util';
 import { loadConfig } from './lib/env.ts';
