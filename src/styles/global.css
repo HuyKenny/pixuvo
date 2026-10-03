@@ -3599,3 +3599,6 @@ body.is-fullscreen .bottom-nav {
 .mt-note { margin-top: 6px; }
 .doc-binding { padding: 10px 14px; background: #f3f0ff; border-radius: 10px; }
 .search-cats { margin: 4px 0 16px; }
+
+/* Japanese: wrap between phrases, not inside words (Chrome 119+; other browsers ignore it). */
+:root[lang='ja'] { word-break: auto-phrase; }
