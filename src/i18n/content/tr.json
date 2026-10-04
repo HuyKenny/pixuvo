@@ -1,0 +1,2011 @@
+{
+ "home": {
+  "h2": "Çocuklar ve tüm aile için ücretsiz online oyunlar",
+  "intro": "Pixuvo, yaklaşık 6–15 yaş arası çocuklar ve aileleri için ücretsiz bir oyun portalıdır. Burada bulmacadan yarışa, giydirmeden spora kadar 45.000’den fazla tarayıcı oyunu var. Hesap açman, kayıt olman ya da bir şey indirmen gerekmez: bir oyun seç, oyna düğmesine bas, oyun doğrudan web sayfasında başlasın. Pixuvo oyunları kendisi yapmaz; oyunlar iş ortağı yayıncılardan gelir ve her gün yenileri eklenir.\n\nOynayacak bir şey bulmak çok kolay. Kategorilere göz at, yanında bir arkadaşın ya da kardeşin varsa 2 kişilik oyunlar bölümünü aç ya da insanların gerçekten oynadıklarına göre hazırlanan yeni ve popüler oyun listelerine bak. Beğendiğin her oyunu favorilerine ekleyebilirsin. Favoriler ve son oynanan oyunlar bu cihazdaki bu tarayıcıya kaydedilir, yani hatırlaman gereken bir giriş bilgisi yok. Birçok oyun telefon ve tablette de çalışır – her oyun sayfasında bu bilgi yer alır.\n\nEbeveynler için Pixuvo’nun güvenliği nasıl ele aldığını anlatan ayrı bir sayfa var; örneğin şiddet, yetişkin içerik ya da kumar çağrıştıran ifadeler içeren oyunlar yayına girmeden önce elle incelenir. Nereden başlayacağını bilmiyor musun? Bulmaca sevenler Drop Planets ya da Merge Royal’ı deneyebilir, küçük öğrenciler Kobadoo Numbers’ı sever, yarış tutkunları Moto X3M: Spooky Land’e atlayabilir, giydirme hayranları da Aidol K-pop Adventure ile eğlenir."
+ },
+ "cat": {
+  "2-player": {
+   "intro": "Bir arkadaşını, kardeşini ya da anneni babanı yanına çağır ve aynı klavyenin başına geçin. İki kişilik oyunlar tam da bunun için yapılır: iki oyuncu, tek oyun ve bol kahkaha. Pixuvo’da bu türden 1.400’den fazla oyun var.\n\nBu oyunların çoğunda iki oyuncu aynı bilgisayarı paylaşır. Genelde biri karakterini W, A, S, D tuşlarıyla, diğeri ok tuşlarıyla yönetir. Bazıları birbirinizi yenmeye çalıştığınız düellolar ve yarışlardır; listenin üst sıralarında Red Hands - 2 Player Game, Gun and Guys, Geometri Tag Wars - 2 Players ve Racing Ball 3D var. Bazılarında ise rakip değil, takım arkadaşısınız ve birlikte çalışırsınız. Adventures of Two Kittens II, Cute Sheep Skyblock ve Lava Ladder Leap birlikte deneyebileceğiniz oyunlardan birkaçı. Tic Tac Toe Pro - Multiplayer & Challenge gibi sakin düşünme oyunları küçük çocuklar için harika, Kids: Cute Pairs da yumuşak bir başka seçim. Birkaç oyunda online mod da bulunur.\n\nBaşlamadan önce hangi tuşların kime ait olduğuna karar verin – oyunun başlangıç ekranı genellikle kontrolleri gösterir. Oyunculardan biri daha küçükse birlikte oynanan oyunlar çok iyi bir seçimdir, çünkü beraber kazanırsınız. Tek klavyede oynanan oyunlar en iyi bilgisayarda çalışır; birçoğu telefon ve tablette de açılır – oyun sayfasında yazar.",
+   "faq": [
+    {
+     "q": "Tek klavyede iki kişi nasıl oynar?",
+     "a": "Genelde bir oyuncu W, A, S, D tuşlarını, diğeri ok tuşlarını kullanır. Kontroller oyunun başlangıç ekranında ya da açıklamasında gösterilir."
+    },
+    {
+     "q": "Çocuklar için iyi iki kişilik oyunlar hangileri?",
+     "a": "Tic Tac Toe Pro sakin ve basittir; Kids: Cute Pairs, Adventures of Two Kittens II, Red Hands - 2 Player Game ve Racing Ball 3D de ilk deneme için iyi seçimler."
+    },
+    {
+     "q": "Birlikte çalıştığınız iki kişilik oyunlar var mı?",
+     "a": "Evet, iş birliğine dayalı oyunlarda birbirinize karşı oynamak yerine bölümleri takım olarak geçersiniz. Oyunculardan biri daha küçükse ya da oyunlara yeniyse birebirdir – oyunun takım oyunu olup olmadığı açıklamasında yazar."
+    },
+    {
+     "q": "Bir arkadaşımla online olarak oynayabilir miyim?",
+     "a": "Bazı oyunlarda online mod var, ama çoğu aynı cihazdaki iki kişi için yapılmıştır. Yayıncı bu bilgiyi verdiyse hangisi olduğu oyun sayfasında yazar."
+    },
+    {
+     "q": "İki kişiyle oynanan kart ya da masa oyunları var mı?",
+     "a": "Evet, Tic Tac Toe Pro gibi oyunlar kolay iki kişilik seçimlerdir; masa, satranç ve kart bölümlerimizde sırayla oynayabileceğiniz çok daha fazla oyun bulursun."
+    }
+   ]
+  },
+  "2048": {
+   "intro": "İki artı iki dört eder, dört artı dört sekiz… ve yeterince uzun birleştirmeye devam edersen 2048’e ulaşırsın. Bu ünlü sayı bulmacasının bütün fikri bu, ama göründüğünden çok daha zordur. Pixuvo’da klasik ızgaradan 3D küplere ve birleştirme yarışlarına kadar 200’den fazla ücretsiz 2048 oyunu var.\n\nOrijinal oyunda numaralı kareler 4×4’lük bir ızgarada durur. Her kaydırdığında bütün kareler aynı yöne gider ve aynı sayıyı taşıyan iki kare, değeri iki katı olan tek bir kareye dönüşür. Her hamleden sonra yeni küçük bir kare belirir, böylece tahta yavaş yavaş dolar. Klasik sürümü istiyorsan 2048 Classic Puzzle - Challenge iyi bir başlangıç. Diğer oyunlar birleştirme fikrini 3D küplere, yarışlara ve .io arenalarına taşıyor – Chain Cube 2048 3D, Snake 2048.io, Jelly Run in 2048, Merge Grabber Race to 2048 ve Merge Royal denemeye değer.\n\nEn bilinen taktik, bir köşe seçip en büyük kareni hep orada tutmaktır. Çoğunlukla iki yöne kaydır, üçüncüyü sadece mecbur kalınca kullan; böylece büyük sayılar düzgün bir sıra halinde kalır. 2048 aynı zamanda sayıları ikiye katlamayı çaktırmadan çalıştırır. Bilgisayarda ok tuşlarını kullan, dokunmatik ekranda parmağını kaydır – birçok oyun telefon ve tablette de çalışır, oyun sayfası bunu gösterir.",
+   "faq": [
+    {
+     "q": "2048 nasıl oynanır?",
+     "a": "Bütün kareleri yukarı, aşağı, sola ya da sağa kaydırırsın. Aynı sayıdaki iki kare birleşip değeri iki katı olan tek bir kare olur; amaç tahta dolmadan 2048 karesini yapmaktır."
+    },
+    {
+     "q": "2048 için en iyi taktik nedir?",
+     "a": "En büyük kareni bir köşede tut ve yanına giderek küçülen sayılardan bir zincir kur. Büyük kareyi köşesinden çekip çıkaracak yöne kaydırmaktan kaçın."
+    },
+    {
+     "q": "2048 matematik öğrenmeye yardımcı olur mu?",
+     "a": "Oyun ikiye katlamayı ve ikinin kuvvetlerini (2, 4, 8, 16 ve devamı) eğlenceli bir şekilde çalıştırır, ayrıca ileriyi planlamayı geliştirir."
+    },
+    {
+     "q": "2048’in 3D sürümleri var mı?",
+     "a": "Evet, bu kategoride birleştirme fikrinin 3D yorumları da var. Chain Cube 2048 3D ve Merge Cubes denemeye değer iki oyun."
+    },
+    {
+     "q": "2048’i telefonda oynayabilir miyim?",
+     "a": "2048 basit kaydırmalarla oynandığı için birçok sürümü telefon ve tablette çalışır. Mobil desteği olup olmadığını oyun sayfasından kontrol et."
+    }
+   ]
+  },
+  "action": {
+   "intro": "Kalbin biraz daha hızlı atar, ekran düşmanlarla dolar ve ne yapacağına karar vermek için yarım saniyen vardır. Çocukları aksiyon oyunlarına tekrar tekrar döndüren şey tam da bu heyecan. Pixuvo’da komik çöp adam savaşlarından arena kapışmalarına kadar 6.500’den fazla aksiyon oyunu var ve hepsi indirme ya da hesap gerektirmeden doğrudan tarayıcında çalışır.\n\nAksiyon büyük bir aile, bu yüzden dallarını bilmek işe yarar. Dövüş oyunları seni bire bir düellolara ve arena kavgalarına sokar; ninja oyunlarında ise kaba kuvvet yerine gizlice ilerlemek, çatılardan atlamak ve shuriken fırlatmak önemlidir. Bu ikisinin dışında kule savunması karışımları, hayatta kalma dalgaları ve en komik hareketin çoğu zaman kazandığı fizik savaşları bulursun. Listenin üst sıralarındaki iyi ilk seçimler Stickman Warriors, Sumo Shove ve Knockback Knights.\n\nBu türde yeni misin? Turları kısa olan bir oyunla başla, böylece kaybettiğinde sadece bir dakikan gider. Bilgisayardaki aksiyon oyunlarının çoğunda hareket için ok tuşları ya da W, A, S, D, saldırı için boşluk tuşu ya da fare kullanılır; oyun sayfasında kontroller genellikle yazar. Birçoğu telefon ve tablette de çalışır – her oyun sayfası bunu belirtir. Bazı dövüş oyunlarında çizgi film tarzı şiddet bulunur; ebeveynler oyunları nasıl incelediğimizi ebeveyn sayfamızda okuyabilir.",
+   "faq": [
+    {
+     "q": "Aksiyon oyunları nedir?",
+     "a": "Aksiyon oyunları hızlı refleksler ve çabuk kararlar üzerine kuruludur: kaçmak, zıplamak, dövüşmek ve ekranda olanlara tepki vermek. Çoğunun turları kısadır, bu yüzden başlaması kolay, bırakması zordur."
+    },
+    {
+     "q": "Yeni başlayanlar için iyi aksiyon oyunları hangileri?",
+     "a": "Turları kısa ve kontrolleri basit oyunlar seç; böylece hareketleri çabuk öğrenirsin ve kaybedilen bir tur sana sadece bir dakikaya mal olur. Başlamak için Sumo Shove ve Stickman Warriors’ı dene."
+    },
+    {
+     "q": "Tek bilgisayarda iki kişi aksiyon oyunu oynayabilir mi?",
+     "a": "Birçoğunda evet. İki kişilik aksiyon oyunlarının çoğunda bir oyuncu W, A, S, D tuşlarını, diğeri aynı klavyedeki ok tuşlarını kullanır; oyunun iki kişilik olup olmadığı oyun sayfasında yazar."
+    },
+    {
+     "q": "Aksiyon oyunları çocuklar için fazla şiddetli mi?",
+     "a": "Tarayıcıdaki aksiyon oyunlarının çoğu gerçekçi şiddet yerine çizgi film ya da çöp adam tarzı dövüş kullanır. Şiddet içeren ifadeler taşıyan oyunlar elle incelenmek üzere bekletilir; ebeveyn sayfamız oyunları nasıl kontrol ettiğimizi anlatır."
+    },
+    {
+     "q": "Oynamak için bir şey indirmem gerekiyor mu?",
+     "a": "Hayır. Pixuvo’daki her aksiyon oyunu web tarayıcında çalışır – tıkla ve oyna, kayıt yok."
+    }
+   ]
+  },
+  "adventure": {
+   "intro": "Her iyi macera bir soruyla başlar: O kapının ardında, o tepenin öbür yanında ya da bu hikâyenin sonunda ne var? Macera oyunları bunu öğrenmeni sağlar. Pixuvo’da yeni yerler keşfettiğin, sorunlar çözdüğün ve yolculuk bitene kadar devam ettiğin 8.500’den fazla ücretsiz macera oyunu var.\n\nMacera, sitedeki en geniş türlerden biri. Bazı oyunlar keşif ve üretim üzerine kurulu, bazıları aksiyon ve dövüşle karışık, bazıları da büyük bir haritada özgürce dolaşmana izin veriyor. Idle maceralar, her seferinde sadece birkaç dakika oynasan bile ilerlemeye devam eder. Şu anda listenin üst sıralarında Dungeon Master - Cult & Craft, Samurai Brawling, Horse Simulator 3D ve Merge Mine - Idle Clicker var. Zorlu odaları ve gizli ipuçlarını seviyorsan kaçış oyunları alt kategorisi, çıkış yolunu bulmanı bekleyen kilitli kapılarla dolu.\n\nNasıl seçmeli? En çok neyden hoşlandığını düşün. Hikâye seviyorsan bölümleri ya da kısımları olan oyunlara bak. Özgürlük seviyorsan dolaşabileceğin açık bir harita seç. Sadece kısa bir molan varsa idle ya da birleştirme macerası en iyisi. Çoğu fare ya da ok tuşlarıyla oynanır ve oyun sayfası kontrolleri açıklar. Bu oyunların birçoğu telefon ya da tablette de çalışır; emin olmak için oyun sayfasına bak. Favorilerin bu tarayıcıda kaydedilir, böylece uzun bir maceraya sonra geri dönebilirsin.",
+   "faq": [
+    {
+     "q": "Macera oyunları nedir?",
+     "a": "Macera oyunları keşfetmek, sorun çözmek ve birçok yer ya da bölüm boyunca bir hedefi veya hikâyeyi takip etmekle ilgilidir. Genellikle hızdan çok merak ön plandadır."
+    },
+    {
+     "q": "Macera oyunları nasıl oynanır?",
+     "a": "Her yeri keşfet, karakterlerle konuş ya da nesnelere tıkla ve sonra işe yarayabilecek eşyaları topla. Takılırsan daha önce gittiğin yerlere geri dön – cevap çoğu zaman oradadır."
+    },
+    {
+     "q": "Çocuklar için iyi macera oyunları hangileri?",
+     "a": "Nereden başlayacağını bilmiyor musun? Horse Simulator 3D ya da Dungeon Master - Cult & Craft’ı seç. Bulmaca tadında bir şey istersen kaçış oyunları alt kategorisine göz at."
+    },
+    {
+     "q": "Macera oyunlarında ilerlememi kaydedebilir miyim?",
+     "a": "Birçok oyun ilerlemeni kendi içinde tarayıcında saklar; Pixuvo da favorilerini ve son oynadığın oyunları bu cihazda kaydeder. Kaldığın yerden devam etmek için aynı tarayıcıyı kullan."
+    },
+    {
+     "q": "Pixuvo’daki macera oyunları ücretsiz mi?",
+     "a": "Evet, Pixuvo’daki her macera oyunu hesap açmadan ve indirme yapmadan tarayıcında ücretsiz oynanır."
+    }
+   ]
+  },
+  "arcade": {
+   "intro": "Jetonu at, başlat tuşuna bas, rekoru kır – bu basit döngü, salon oyun makineleri 1970’lerin başında ortaya çıktığından beri insanları ekrana bağlıyor. Bugün cebinin bozuk parayla dolu olmasına gerek yok. Pixuvo’da tarayıcında tek tıkla başlatabileceğin 12.000’den fazla ücretsiz arcade oyunu var.\n\nBir oyunu “arcade” yapan nedir? Kısa turlar, kolay kontroller, giderek artan zorluk ve “bir kez daha” dedirten bir skor. Bu dev kategoride sürekli koşup engellerden kaçtığın koşu oyunları, piksel döneminden ilham alan retro oyunlar, her lokmada uzadığın yılan oyunları ve nişan alıp renkleri eşleştirdiğin balon patlatma oyunları bulursun. 12 MiniBattles - Two Players gibi iki arkadaş için hızlı parti oyunları da var.\n\nEn sevdiğin türü bulmak için birkaçını ikişer üçer dakika dene – Epic Duck, Buba Jump, Popcorn Race 3D ve Gelatino listenin üst sıralarında. Arcade oyunlarının çoğu sadece bir iki tuş, fare ya da dokunma ister, bu yüzden kısa bir mola için biçilmiş kaftan. Tablette mi oynuyorsun? Birçok oyun destekliyor, hangilerinin desteklediği oyun sayfasında görünür. Pixuvo’daki popüler listeler gerçek oynanmalara dayanır, yani diğer çocukların şu an neyi sevdiğini görmenin kestirme yoludur.",
+   "faq": [
+    {
+     "q": "Arcade oyunları nedir?",
+     "a": "Arcade oyunları skor, zamanlama ve her denemede biraz daha iyileşme üzerine kurulu, hızlı ve kolay öğrenilen oyunlardır. Adını oyun salonlarındaki jetonlu makinelerden alır."
+    },
+    {
+     "q": "Arcade oyunları ne zaman çıktı?",
+     "a": "Jetonlu video oyun makineleri 1970’lerin başında popüler oldu; salon oyunlarının altın çağı ise 1970’lerin sonu ve 1980’lerin başıydı. Bugünkü birçok tarayıcı oyunu hâlâ aynı “aç ve oyna” fikrini kullanıyor."
+    },
+    {
+     "q": "Ücretsiz oynayabileceğim arcade oyunları hangileri?",
+     "a": "Pixuvo’da Epic Duck, Buba Jump ya da Popcorn Race 3D’yi dene – tarayıcıda ücretsiz çalışırlar. Koşu, retro, yılan ve balon patlatma alt kategorilerinde binlercesi daha var."
+    },
+    {
+     "q": "İki kişilik arcade oyunları var mı?",
+     "a": "Evet. Arcade tarzı birçok oyun iki oyuncu için yapılmıştır – 12 MiniBattles - Two Players bunlardan biri – ve oyunun iki oyuncuyu destekleyip desteklemediği oyun sayfasında görünür."
+    },
+    {
+     "q": "Arcade oyunlarını telefon ya da tablette oynayabilir miyim?",
+     "a": "Birçok arcade oyunu basit dokunuşlarla oynandığı için genellikle telefon ve tablette çalışır. Mobil desteği olup olmadığını oyun sayfasından kontrol et."
+    }
+   ]
+  },
+  "archery": {
+   "intro": "Kirişi ger, rüzgâra bak ve bırak. Okçuluk dünyanın en eski sporlarından biri ve ekranda her şey tek bir tatmin edici ana bağlı: okun bir yay çizerek uçması ve tam nişan aldığın yere saplanması. Pixuvo’da sakin hedef çalışmalarından komik çöp adam düellolarına kadar 140’tan fazla okçuluk oyunu var.\n\nBu oyunların çoğu birkaç gruba ayrılır. Hedef ve meydan okuma oyunlarında mesafe ve rüzgâr değişirken hedefin tam ortasını, elmaları ya da hareket eden nesneleri vurman gerekir. Düello oyunlarında iki okçu karşılıklı durur ve daha iyi nişancı kazanır – Two Archers Bow Duel’ı dene. Bir de hızlı ellerden çok doğru yolu bulmanın önemli olduğu bulmaca tarzı okçuluk oyunları ve yayınla yaratıkları uzak tuttuğun macera tarzı oyunlar var. Archer vs Monsters, Archery Quest, Archer 2023, Arrow Clash ve Tricky Arrow da denemeye değer.\n\nYaya yeni mi başlıyorsun? Uzak atışlarda ne kadar yukarı nişan alman gerektiğini öğrenmek için bir hedef oyunuyla başla, sonra bir arkadaşına ya da bilgisayara karşı düello dene. Bilgisayarda nişan genellikle fareyle alınır; telefon ve tablette parmağınla çekip bırakırsın, bu da gerçek bir yay kirişini germeye çok benzer. Oyunun dokunmatik ekranda çalışıp çalışmadığı oyun sayfasında gösterilir.",
+   "faq": [
+    {
+     "q": "Okçuluk oyunlarında nasıl nişan alınır?",
+     "a": "Çoğu oyunda tıklar ya da dokunur, kirişi germek için geriye sürükler ve atış için bırakırsın. Ne kadar uzun gerersen atış o kadar güçlü olur; uzak hedeflerde biraz daha yukarı nişan al, çünkü ok uçarken düşer."
+    },
+    {
+     "q": "İki oyuncu birlikte okçuluk oyunu oynayabilir mi?",
+     "a": "Evet, bazı okçuluk oyunları iki oyuncu için yapılmıştır; örneğin iki okçunun karşı karşıya geldiği düello oyunları. Oyunun bir mi iki kişilik mi olduğunu oyun sayfasından kontrol et."
+    },
+    {
+     "q": "Hedefe tam nişan almama rağmen okum neden ıskalıyor?",
+     "a": "Birçok okçuluk oyunu yerçekimi ve rüzgâr ekler, bu yüzden ok yolda kavis çizer. Ekrandaki rüzgâr okunu ya da sayısını izle ve biraz ters yöne nişan al."
+    },
+    {
+     "q": "Okçuluk oyunları küçük çocuklar için uygun mu?",
+     "a": "Hedef ve bulmaca tarzı okçuluk oyunları kolay öğrenilir ve dövüşten çok nişan almaya odaklanır. Ebeveynler önce oyun açıklamasını okuyabilir ya da daha fazla ipucu için ebeveyn sayfamıza bakabilir."
+    },
+    {
+     "q": "Bu oyunlar ücretsiz mi?",
+     "a": "Evet. Pixuvo’daki her oyun ücretsizdir; hesap açman ya da bir şey indirmen gerekmez – oyun doğrudan web tarayıcında açılır."
+    }
+   ]
+  },
+  "basketball": {
+   "intro": "Fileden tertemiz geçen kusursuz bir atışın sesinde özel bir şey vardır ve basketbol oyunları o hissi tekrar tekrar yaşatır. Pixuvo’da bu türden 300’den fazla oyun var ve çoğu kolay öğrenilir: nişan al, gücü seç, bırak.\n\nŞut oyunları büyük bir grup: topu potaya doğru fırlatır ya da nişan alır, farklı noktalardan sayı atmaya çalışırsın. Smaç ve hünerli atış oyunları işi bir fizik bulmacasına çevirir; topu sektirir, düşürür ya da sapanla potaya gönderirsin. Koşu oyunları ise hareket etmeyi ve engellerden kaçmayı ekler. Perfect Shot, Basket Sniper, Chill Dunk ve Drop Dunks iyi ilk seçimler; Sling Dunk, BasketBall Runner, Basketball Beans ve Incredible Basketball da denemeye değer.\n\nBaşlamak için sakin bir şut oyunu iyidir, çünkü atışın kavisini öğretir – yüksek ve yumuşak bir atış, düz ve sert bir atıştan genelde daha sık girer. Sonrasında smaç bulmacaları düşünmeyi sevenler için güzel bir meydan okuma. Basketbol oyunları fareyle harika oynanır ve birçoğu basit bir kaydırma ya da sürükleme kullandığı için telefon ve tablette de eğlencelidir; mobil desteği olup olmadığını oyun sayfasından kontrol et.",
+   "faq": [
+    {
+     "q": "Bir basketbol maçı ne kadar sürer?",
+     "a": "Gerçek bir NBA maçı 12’şer dakikalık dört çeyrekten oluşur, okul maçları genelde daha kısadır. Tarayıcıdaki basketbol oyunları ise hızlıdır – bir tur çoğu zaman bir iki dakika sürer, bu yüzden kısa molalar için idealdir."
+    },
+    {
+     "q": "Online basketbol oyunlarında nasıl şut atılır?",
+     "a": "Genellikle toptan potaya doğru sürükler ya da kaydırır ve bırakırsın. Daha yüksek bir kavis genelde daha sık girer ve birçok oyun öğrenirken yardımcı bir çizgi gösterir."
+    },
+    {
+     "q": "Smaç oyunları nedir?",
+     "a": "Smaç oyunları çoğu zaman topu normal bir şut yerine sektirerek, düşürerek ya da sapanla potaya sokman gereken basketbol bulmacalarıdır. Drop Dunks ve Sling Dunk denemeye değer iki oyun."
+    },
+    {
+     "q": "İki kişilik basketbol oyunları var mı?",
+     "a": "Bazı basketbol oyunlarında tek klavyede iki kişilik mod bulunur ve oyun sayfası bunu belirtir. Bir arkadaşınla oynayacak daha fazla oyun için 2 kişilik bölümümüze bak."
+    },
+    {
+     "q": "Bu oyunlar ücretsiz mi?",
+     "a": "Evet. Pixuvo’daki her basketbol oyunu kayıt olmadan tarayıcıda ücretsiz oynanır."
+    }
+   ]
+  },
+  "block": {
+   "intro": "Parçayı bırak, sırayı doldur, satırı temizle – ve sıradaki için yer aç. Blok bulmacaları en tatmin edici oyunlardan biridir, çünkü temizlenen her sıra ortalığı toplamak gibi hissettirir. Pixuvo’da tarayıcında oynayabileceğin 1.100’den fazla ücretsiz blok bulmaca oyunu var.\n\nBlok bulmacalarının birkaç ana tarzı var. Izgara bulmacalarında şekilleri tahtaya sürükler, dolu satır ve sütunları temizlersin; birçoğunda seni sıkıştıran bir süre de yoktur. Düşen blok oyunlarında parçalar yukarıdan iner ve yere değmeden önce onları döndürüp yerine oturtursun. Bir de tek bir parçayı kurtarmak için blokları kenara çektiğin kaydırma bulmacaları ve eşleşen parçaları yan yana dizdiğin renk bulmacaları var. 10x10! Block Puzzle Classic, Wood Block Puzzle - Block Game, Block Crush Challenge, TenTrix, Block Buster, Unlock Block - Puzzle ve Color Lines listenin üst sıralarında.\n\nYeni başlıyorsan, her hamleyi düşünebilmek için süresiz bir ızgara bulmacası seç. Akıllıca bir alışkanlık, uzun ve garip şekiller için hep boş yer bırakmaktır, çünkü oyunu bitirenler genelde onlardır. Düşen blok oyunları daha hızlıdır ve çabuk karar vermeyi çalıştırmak için harikadır. Blok bulmacalarının çoğu sadece fare ya da dokunma ister ve birçoğu telefon ya da tablette de çalışır; emin olmak için oyun sayfasına bak. Daha fazla zekâ oyunu bulmaca kategorisinde seni bekliyor.",
+   "faq": [
+    {
+     "q": "Blok bulmaca oyunları nasıl oynanır?",
+     "a": "Farklı şekillerdeki blokları bir ızgaraya yerleştirir, satır ya da sütunları tamamen doldurarak temizlersin. Hiçbir parça sığmayınca oyun biter."
+    },
+    {
+     "q": "Blok bulmacalarında en iyi taktik nedir?",
+     "a": "Tahtayı olabildiğince açık tut ve büyük ya da uzun parçalar için yer bırak. Aynı anda birkaç satırı temizlemek çoğu zaman bonus puan getirir."
+    },
+    {
+     "q": "Burada düşen blok oyunları var mı?",
+     "a": "Evet. Düşen blok oyunları, parçaları inerken döndürüp dolu satırları temizleme şeklindeki klasik fikri izler. Izgara bulmacaları daha sakindir, çünkü parçalar düşmez."
+    },
+    {
+     "q": "Yeni başlayanlar için hangi blok bulmacası iyi?",
+     "a": "Süresiz bir ızgara bulmacası sakin bir başlangıçtır, çünkü kendi hızında düşünebilirsin. Wood Block Puzzle - Block Game ve 10x10! Block Puzzle Classic başlamak için iyi seçimler."
+    },
+    {
+     "q": "Blok bulmacalarını telefonda oynayabilir miyim?",
+     "a": "Blok bulmacaları sürükleyerek ya da dokunarak oynandığı için birçoğu telefon ve tablette iyi çalışır. Mobil desteği oyun sayfasında gösterilir."
+    }
+   ]
+  },
+  "board": {
+   "intro": "Aile oyun gecesi için dolap dolusu kutuya gerek yok. Pixuvo’daki masa oyunları klasik oyunları ekrana taşıyor ve hızlı XOX turlarından uzun, düşündürücü satranç maçlarına kadar 700’den fazla seçenek var.\n\nSatrancın kendine ait, birçok sürüm içeren bir bölümü var. TRZ Battleship ve Intergalactic Battleship gibi amiral battı oyunları, düşman gemilerinin nerede saklandığını tahmin etmeye dayanır. Tic Tac Toe Multiplayer X O ise herkesin bildiği klasik üçü yan yana getirme oyunu. BattleBox, Unno Game, Shape Defense ve Mahjong Street Cafe de listenin üst sıralarında; mahjong gibi taş oyunları da buraya dahil.\n\nMasa oyunları birlikte oynamak için birebirdir. Birçoğu aynı cihazda iki kişiyle sırayla oynanabilir, bazılarında online mod da var – hangisi olduğu oyun sayfasında yazar. Bilgisayara karşı oynamak, bir arkadaşına ya da annene babana meydan okumadan önce kuralları öğrenmenin harika bir yoludur. Masa oyunları sırayla oynandığı için acele yoktur ve genellikle sadece tıklama ya da dokunma yeterlidir. Bu da onları bilgisayarda, tablette ve birçok telefonda rahat oynanır kılar – telefonda ya da tablette çalışıp çalışmadığını oyun sayfasında görebilirsin.",
+   "faq": [
+    {
+     "q": "Burada hangi masa oyunlarını online oynayabilirim?",
+     "a": "Satranç, amiral battı, XOX ve ekrana taşınmış daha birçok klasik oyun bulursun. Satrancın birçok sürüm içeren kendi bölümü var."
+    },
+    {
+     "q": "Tek cihazda iki kişi masa oyunu oynayabilir mi?",
+     "a": "Evet, birçok masa oyunu iki oyuncunun aynı bilgisayar ya da tablette sırayla oynamasına izin verir. Bazıları online oyun da sunar; oyunun hangi modları olduğu oyun sayfasında gösterilir."
+    },
+    {
+     "q": "Amiral battı nasıl oynanır?",
+     "a": "Her oyuncu gemilerini bir ızgaraya gizler, sonra sırayla kareler tahmin ederek rakibin gemilerini vurmaya çalışır. Düşman filosunun tamamını ilk batıran kazanır."
+    },
+    {
+     "q": "Masa oyunları çocuklar için faydalı mı?",
+     "a": "Masa oyunları sıra beklemeyi, plan yapmayı ve kurallara uymayı öğretir; ailece birlikte oynamak için de harikadır. Bilgisayara karşı başlamak, kuralları öğrenmenin kolay bir yoludur."
+    },
+    {
+     "q": "Bu oyunlar ücretsiz mi?",
+     "a": "Evet. Pixuvo’daki tüm masa oyunları hesap gerektirmeden tarayıcıda ücretsiz oynanır."
+    }
+   ]
+  },
+  "bubble-shooter": {
+   "intro": "Nişan al, fırlat, aynı renkten üçünü buluştur – ve bütün kümenin patlayışını izle. Balon patlatma oyunları oynamanın en rahatlatıcı yollarından biridir; yine de tahtanın yarısını düşüren tek bir zekice atış insanı havalara uçurur. Pixuvo’da tarayıcında oynayabileceğin 750’den fazla ücretsiz balon patlatma oyunu var.\n\nKurallar basit. Balonlar ekranın üst kısmında asılı durur ve sen alttan her seferinde bir balon fırlatırsın. Aynı renkten üç ya da daha fazla balon birbirine değince patlar ve onlara tutunan balonlar da aşağı düşer. Bubble Shooter ve Bubble Shooter POP başlamak için kolay seçimler. Diğer oyunlar aynı fikre yeni temalar ve sürprizler ekliyor – Space Bubbles Must Die!, Bobble Space Shooter, Pixel Bubble Shooter ya da Ball Burst’ü dene.\n\nİki püf noktası çok işe yarar. Birincisi, doğrudan vuramadığın balonlara ulaşmak için atışı yan duvarlardan sektir. İkincisi, büyük grupları tutan balonlara nişan al, çünkü bir kümeyi düşürmek birkaç balonu tek tek patlatmaktan daha çok puan getirir. Bu oyunlar sadece fare ya da parmak ister; bu yüzden küçük çocuklar için kolaydır ve dokunmatik ekranlarda rahat oynanır. Birçoğu telefon ya da tablette de çalışır; emin olmak için oyun sayfasına bak. Balon patlatma oyunları arcade kategorisinin bir parçasıdır.",
+   "faq": [
+    {
+     "q": "Balon patlatma nasıl oynanır?",
+     "a": "Renkli balonlara nişan alıp yukarıdaki gruba fırlatırsın. Aynı renkten üç ya da daha fazlası birbirine değince patlar ve altlarında asılı olan her şey düşer."
+    },
+    {
+     "q": "Balon patlatmada kazanmanın püf noktası nedir?",
+     "a": "Zor yerlere ulaşmak için duvardan sektirmeyi kullan ve büyük grupları tutan balonlara nişan al. Büyük bir kümeyi düşürmek tahtayı küçük grupları patlatmaktan daha hızlı temizler."
+    },
+    {
+     "q": "Balon patlatma oyunları küçük çocuklar için uygun mu?",
+     "a": "Evet, sakin ve renklidirler ve sadece fare ya da dokunma gerektirirler. Ayrıca renk eşleştirmeyi ve nişan almayı çalıştırırlar."
+    },
+    {
+     "q": "Balon patlatmayı telefonda oynayabilir miyim?",
+     "a": "Bu oyunlar dokunarak ya da sürükleyerek oynandığı için birçoğu telefon ve tablette iyi çalışır. Oyunun mobilde çalışıp çalışmadığı sayfasında yazar."
+    },
+    {
+     "q": "Klasik Bubble Shooter Pixuvo’da var mı?",
+     "a": "Evet, Bubble Shooter ve Bubble Shooter POP yüzlerce farklı sürümle birlikte bu kategoride."
+    }
+   ]
+  },
+  "building": {
+   "intro": "Üst üste koy, birleştir, ayakta durmasını sağla. İnşa etme oyunları bir şeyler yaratmayı ve bir planın ekranda gerçeğe dönüşmesini izlemeyi seven çocuklar için. Pixuvo’da sakin tasarım bulmacalarından hayatta kalma dünyalarına kadar 230’dan fazla inşaat oyunu var.\n\nBirkaç ana tarz var. İnşaat bulmacaları gerçekten işe yarayan bir şey kurmanı ister; bir yol ya da yüksek bir kule gibi. Hayatta kalma ve üretim oyunları seni genelde neredeyse sıfırdan başlatır: odun ve taş toplar, sonra barınak ve aletler yaparsın. Fabrika oyunları makineler ve üretim hatlarıyla ilgilidir, idle inşa oyunları sen oynarken büyümeye devam eder, bazı oyunlar da inşa etmeyi yaptığın şeyi savunmakla birleştirir. Road Designer, Stack Rocket, Woods of Nevia: Forest Survival, Idle Island: Build And Survive ve Factory Builder denemeye değer oyunlardan birkaçı.\n\nDüşünmeyi ve denemeyi seviyorsan, deneme yanılmanın eğlencenin parçası olduğu bir inşaat bulmacasıyla başla. Keşfetmeyi seviyorsan bir hayatta kalma oyunu dene. Bu oyunlar genelde daha uzun sürer, bu yüzden ilerlemeyi tarayıcıda kaydedenlere bak. En hassas seçim faredir, ama birçoğu tablette de çalışır – oyun sayfası bunu gösterir.",
+   "faq": [
+    {
+     "q": "İnşa etme oyunlarında neler yapabilirsin?",
+     "a": "Neredeyse her şeyi: yollar, roketler, evler, fabrikalar, adalar ve koca kasabalar. Her oyunun kendi hedefi var; bir tasarım bulmacasını çözmekten bir yerleşimi büyütmeye kadar."
+    },
+    {
+     "q": "Burada hayatta kalma ve üretim oyunları var mı?",
+     "a": "Evet. Bazı oyunlarda kaynak toplar ve kendi yerini adım adım kurarsın. Woods of Nevia: Forest Survival ve Idle Island: Build And Survive denemeye değer iki oyun."
+    },
+    {
+     "q": "Bulmaca sevenler için hangi oyun iyi?",
+     "a": "İnşaat bulmacaları düşünmeyi sevenler için harikadır, çünkü yapını işe yarayacak şekilde planlaman gerekir. Nereden başlayacağını bilmiyor musun? Road Designer ya da Stack Rocket’ı seç."
+    },
+    {
+     "q": "İnşa etme oyunları tablette çalışır mı?",
+     "a": "Birçoğu çalışır, ama küçük parçalar yerleştirdiğin oyunlar fareyle daha kolaydır. Oyunun telefon ve tablette çalışıp çalışmadığı oyun sayfasında yazar."
+    },
+    {
+     "q": "Bu oyunlar ücretsiz mi?",
+     "a": "Evet. Pixuvo’daki tüm inşa etme oyunları tarayıcında ücretsiz oynanır."
+    }
+   ]
+  },
+  "bus": {
+   "intro": "Sıradaki durak: eğlence. Otobüs oyunları seni koca bir şehir otobüsünün direksiyonuna oturtur ve görevin yolcuları gidecekleri yere güvenle ve zamanında ulaştırmaktır. Pixuvo’da tarayıcında oynayabileceğin 350’den fazla ücretsiz otobüs oyunu var.\n\nOtobüs kullanmak sabır ve hassasiyet ister. Otobüs uzundur, bu yüzden dönüşlerde fazladan yer gerekir ve tam durakta durmak pratik ister. Simülasyon tarzı oyunlarda şehirde bir hat boyunca ilerlersin, park etme oyunları ise büyük bir aracı ne kadar dar bir yere sığdırabildiğini sınar. Bazı oyunlar da kalabalık bir otoparktan otobüsleri çıkarmaya dayanan bulmacalardır. Hızlı bir başlangıç için: City Bus Simulator Driving Games, Bus Driving Master 3D, Bus Parking City 3D, City Bus Parking ve Bus Parking Out.\n\nYeniysen bir park oyunuyla başla ve uzun bir otobüsün nasıl döndüğüne alış – arka tekerlekler köşeyi öndekilerden daha dar alır. Sonra yumuşakça durman, kapıları açman ve yolda kalman gereken bir hat simülasyonu dene. Çoğu oyun ok tuşları ya da W, A, S, D ile oynanır; kapılar ya da fren için ek tuşlar oyun sayfasında yazar. Tablette mi oynuyorsun? Birçok oyun destekliyor, hangilerinin desteklediği oyun sayfasında görünür. Otobüs oyunları; kamyon ve park etme oyunlarıyla birlikte sürüş kategorisinin bir parçasıdır.",
+   "faq": [
+    {
+     "q": "Otobüs oyunlarında ne yapılır?",
+     "a": "Bir hat boyunca otobüs sürer, duraklarda durup yolcu alır ya da uzun bir otobüsü dar bir yere park edersin. Bazı oyunlar kalabalık bir otoparktan otobüsleri çıkarmaya dayanan bulmacalardır."
+    },
+    {
+     "q": "Otobüs oyunlarında otobüs nasıl döndürülür?",
+     "a": "Dönüşe arabaya göre daha geç ve daha geniş başla, çünkü otobüsün arkası daha dar bir yol izler. Kaldırıma çarpmamak için yavaş git."
+    },
+    {
+     "q": "Yeni başlayanlar için hangi otobüs oyunu iyi?",
+     "a": "Park etme oyunu, uzun bir otobüsün nasıl hareket ettiğini öğrenmenin iyi bir yoludur – önce City Bus Parking’i dene. Kendini hazır hissedince bir hat simülasyonuna geç."
+    },
+    {
+     "q": "Otobüs oyunlarını telefonda oynayabilir miyim?",
+     "a": "Birçok otobüs oyununda ekranda pedal ve direksiyon bulunur ve telefon ile tablette çalışır. Telefonda ya da tablette çalışıp çalışmadığını oyun sayfasında görebilirsin."
+    },
+    {
+     "q": "Otobüs oyunları ücretsiz mi?",
+     "a": "Evet, Pixuvo’daki tüm otobüs oyunları kayıt olmadan tarayıcında ücretsizdir."
+    }
+   ]
+  },
+  "car": {
+   "intro": "Minik kartlardan kükreyen süper arabalara, kalabalık şehir sokaklarından dev rampalara kadar – dört tekerleği varsa büyük ihtimalle burada bulursun. Pixuvo’da motorlu her şeye bayılan çocuklar için 3.000’den fazla ücretsiz araba oyunu var.\n\nAraba oyunları sadece yarıştan ibaret değil. Evet, bol bol yarış var, ama dev rampalardan uçtuğun akrobasi oyunları, virajlarda kaydığın drift oyunları, dikkatli direksiyon isteyen park etme oyunları ve sadece etrafta dolaştığın serbest sürüş oyunları da var. Tekerlekler üstünde savaş istiyorsan bazı oyunlar ateş etmeyi de ekliyor. Car Racing, Val d'Agri Race, Kart Racer Vs, Mega Ramps Car Racing Games 3D, Russian Car Drift 3D ve Parking Solution denemeye değer birkaç oyun.\n\nNasıl seçmeli? Hızı seviyorsan yarış ve akrobasi oyunlarına yönel. Düşünmeyi seviyorsan park etme bulmacaları şaşırtıcı derecede zorlayıcı. Keşfetmek istiyorsan simülasyon tarzı sürüş oyunlarına bak – oyun açıklaması nasıl bir harita beklemen gerektiğini söyler. Çoğu oyun ok tuşları ya da W, A, S, D ile, el freni veya nitro için de boşluk tuşuyla oynanır; kontroller oyun sayfasında yazar. Tablette mi oynuyorsun? Birçok oyun destekliyor, hangilerinin desteklediği oyun sayfasında görünür. Daha fazla hız için yarış kategorisine, dikkatli sürüş için sürüş kategorisine göz at.",
+   "faq": [
+    {
+     "q": "Çocuklar için eğlenceli araba oyunları hangileri?",
+     "a": "Kart Racer Vs, Car Racing, Mega Ramps Car Racing Games 3D ve Parking Solution başlamak için iyi bir karışım. Hangi tarzı daha çok sevdiğini görmek için bir yarış, bir akrobasi ve bir park oyunu dene."
+    },
+    {
+     "q": "İstediğin yere gidebildiğin araba oyunları var mı?",
+     "a": "Evet, bazı araba ve sürüş simülasyonlarında bir pisti takip etmek yerine özgürce dolaştığın açık haritalar var. Oyun açıklaması genelde bunu belirtir."
+    },
+    {
+     "q": "Araba oyunları araba kullanmayı öğretir mi?",
+     "a": "Tarayıcıdaki araba oyunları eğlence için yapılmıştır ve gerçek trafik kurallarını öğretmez. Yine de park etme oyunları direksiyon kullanmayı ve mesafe tahmin etmeyi oyun gibi çalıştırmanın bir yolu olabilir."
+    },
+    {
+     "q": "Araba oyunlarında hangi tuşlar kullanılır?",
+     "a": "Çoğunda direksiyon ve gaz için ok tuşları ya da W, A, S, D, el freni veya nitro için de genellikle boşluk tuşu kullanılır. Tam kontroller oyun sayfasında yazar."
+    },
+    {
+     "q": "Araba oyunlarını tablette oynayabilir miyim?",
+     "a": "Birçok araba oyununda dokunmatik tuşlar var ve telefon ile tablette çalışır. Telefonda ya da tablette çalışıp çalışmadığını oyun sayfasında görebilirsin."
+    }
+   ]
+  },
+  "card": {
+   "intro": "Karıştır, dağıt ve eline ne geldiğine bak. Kart oyunları biraz şansı bolca akıllı seçimle birleştirir ve Pixuvo’da klasik solitaire’den koleksiyon kartlarıyla oynanan fantastik savaşlara kadar 420’den fazla kart oyunu var.\n\nSessiz favori solitaire; kendine ait bir bölümü var ve Ultimate Solitaire Classic başlamak için iyi bir yer. Renk eşleştirme oyunları, rengi ya da sayısı tutan bir kart atma şeklindeki tanıdık fikri izler; çok oyunculu sürümlerde başkalarıyla oynarsın. Savaş kartı oyunları kartları bir tahtada çarpışan kahramanlara ve canavarlara dönüştürür, hafıza kartı oyunları ise kartları çevirip her çiftin nerede olduğunu hatırlamanı ister. 4 Colors PGS, Four Colors Multiplayer Monument Edition, Battle Card Monster, Emberdeck ve Flip & Match denemeye değer birkaç oyun.\n\nKart oyunlarına yeniysen önce bir hafıza oyunu dene – basittir ve küçük çocuklar için harikadır. Daha büyükler için renk eşleştirme oyunları çabuk karar vermeyi öğretir; savaş kartı oyunlarında ise her şey iyi bir deste kurmak ve birkaç tur sonrasını planlamakla ilgilidir. Kart oyunları genelde tıklayarak ya da dokunarak oynanır, bu yüzden bilgisayarda, tablette ve birçok telefonda rahat çalışır – telefon ve tablette çalışıp çalışmadığı oyun sayfasında yazar.",
+   "faq": [
+    {
+     "q": "Çocuklar hangi kart oyunlarını online oynayabilir?",
+     "a": "Solitaire, renk eşleştirme, hafıza ve savaş kartı oyunları çocuklar için iyi seçimlerdir. Nereden başlayacağını bilmiyor musun? Ultimate Solitaire Classic, 4 Colors PGS ya da Flip & Match’i seç."
+    },
+    {
+     "q": "Burada iki kişiyle oynanan kart oyunları var mı?",
+     "a": "Bazı renk eşleştirme ve savaş kartı oyunlarında çok oyunculu ya da düello modu var – Four Colors Multiplayer Monument Edition’a göz atabilirsin. Oyunun kaç oyuncuyu desteklediği oyun sayfasında gösterilir."
+    },
+    {
+     "q": "Savaş kartı oyunları nedir?",
+     "a": "Bu oyunlarda her kart bir kahraman, canavar ya da büyüdür. Bir deste kurar ve rakibini yenmek için kartlarını oynarsın; bu yüzden planlama şans kadar önemlidir."
+    },
+    {
+     "q": "Kart oyunlarında gerçek para var mı?",
+     "a": "Hayır. Pixuvo’daki kart oyunları tamamen eğlence içindir ve içlerindeki jetonlar ya da fişler sanaldır. Kumar çağrıştıran ifadeler içeren oyunlar elle incelenmek üzere bekletilir."
+    },
+    {
+     "q": "Bu oyunlar ücretsiz mi?",
+     "a": "Evet. Pixuvo’daki tüm kart oyunları ücretsizdir ve kayıt olmadan tarayıcıda çalışır."
+    }
+   ]
+  },
+  "casual": {
+   "intro": "Akşam yemeğinden önce beş dakikan mı var? Kolay oyunlar tam bunun için yapılır. Kısa, hafif ve anlaşılırdırlar; hemen başlar, eğlenir ve istediğin an bırakırsın. Pixuvo’da hepsi kayıt olmadan tarayıcıda çalışan 10.000’den fazla ücretsiz kolay oyun var.\n\nBu oyunların pek çok çeşidi var. Bazıları zıplamak, süzülmek ya da kaçmak için dokunduğun tek tuşlu zamanlama oyunlarıdır. Bazıları küçük fizik bulmacalarıdır; örneğin Cut The Rope 2’de aç küçük bir canavarı doyurmak için ipleri doğru sırayla kesersin. Ayrıca kırıp döktüğün tatmin edici oyunlar, sıra dışı fikirler ve hızlı sayı oyunları da bulursun. Nova Hop, Boost Balloon, Dodge the Bull, BreakIt ve Master of Numbers denemeye değer birkaç oyun daha. Bunların çoğu “hyper casual” oyunlardır, yani zorluk arttıkça tekrarlanan tek bir basit hareketten oluşur.\n\nSeçmenin en iyi yolu, küçük resme ve ada bakıp birini denemektir – bir dakika içinde ısınamazsan binlercesi daha var. Bu oyunlar küçük çocuklar için, ödevden sonra kafa dağıtmak için ve kısa bir mola isteyen yetişkinler için harika. Çoğu sadece bir fare tıklaması, boşluk tuşu ya da dokunma ister ve birçoğu telefon ile tablette de çalışır – her oyun sayfası bunu belirtir. Beğendiklerini favorilerine ekle; favoriler bu tarayıcıda kalır.",
+   "faq": [
+    {
+     "q": "Kolay (casual) oyunlar nedir?",
+     "a": "Bunlar herkesin bir dakikada kapabileceği, kuralları basit kısa oyunlardır. Birkaç dakika oynayıp istediğin an bırakabilirsin."
+    },
+    {
+     "q": "Hyper casual oyunlar nedir?",
+     "a": "Hyper casual oyunlar daha da basit bir türdür; genelde dokunmak, kaydırmak ya da zıplamayı zamanlamak gibi tek bir harekete dayanır ve oyun zorlaştıkça bu hareket tekrarlanır."
+    },
+    {
+     "q": "Küçük çocuklar için hangi kolay oyunlar iyi?",
+     "a": "Tek dokunuşlu oyunlar ve Cut The Rope 2 gibi yumuşak fizik bulmacaları kolay anlaşılır; Boost Balloon da başlamak için iyi bir seçim. Sadece bir tıklama ya da dokunma yeterlidir."
+    },
+    {
+     "q": "Bu oyunları tablette oynayabilir miyim?",
+     "a": "Birçoğu dokunmatik ekran için yapılmıştır, bu yüzden çoğu telefon ve tablette çalışır. Cihazında çalışıp çalışmadığını oyun sayfasından kontrol et."
+    },
+    {
+     "q": "Oynamak için hesap gerekiyor mu?",
+     "a": "Hayır. Pixuvo’daki oyunlar ücretsizdir; favorilerin ve son oynadığın oyunlar hesap olmadan tarayıcında kaydedilir."
+    }
+   ]
+  },
+  "chess": {
+   "intro": "Her iki taraf için on altı taş, altmış dört kare ve sonsuz olasılık. Satranç bin yılı aşkın süredir oynanıyor ve ileriyi düşünmeyi öğrenmek için hâlâ en iyi oyunlardan biri. Pixuvo’nun satranç bölümünde 35 satranç oyunu ve çeşidi var.\n\nKlasik oyunu istiyorsan Classic Chess Duel, ChessT ya da Chess Online ile başla. Karşına gerçek bir rakip istediğinde Chess Online ve Chess Multiplayer Online’a göz at – mevcut modlar oyun sayfasında gösterilir; Checkmate Game ve Chess of the Middle Ages da denemeye değer. Dünyayı da gezebilirsin: Shogi Japanese Chess ve Xiangqi Chinese Chess Duel, satrancın farklı taşları ve kuralları olan Japon ve Çinli kuzenleri. Chess Ops ve Pawn Chess de bu bölümdeki iki oyun daha.\n\nYeni mi öğreniyorsun? Oyun sunuyorsa önce bilgisayara karşı oyna ve karmaşık planları düşünmeden önce her taşın nasıl gittiğini öğren. Yeni başlayanlar için iyi bir alışkanlık, her hamleden önce şunu sormaktır: “Rakibim neyi tehdit ediyor?” Satranç sırayla oynandığı için acele yoktur ve fareyle ya da parmakla rahat oynanır. Birçok satranç oyunu tablet ve telefonda da çalışır – telefonda ya da tablette çalışıp çalışmadığını oyun sayfasında görebilirsin.",
+   "faq": [
+    {
+     "q": "Kaç farklı satranç oyunu oynanabilir?",
+     "a": "O kadar çok ki kimse hepsini sayamaz: matematikçiler olası satranç oyunlarının sayısının bilinen evrendeki atom sayısından çok daha büyük olduğunu tahmin ediyor. Bu yüzden hiçbir oyun bir diğerinin tıpatıp aynısı olmaz."
+    },
+    {
+     "q": "Başka bir kişiye karşı online satranç oynayabilir miyim?",
+     "a": "Bazı satranç oyunlarında başka insanlara karşı oynayabileceğin online modlar var – Chess Multiplayer Online’a göz atabilirsin, mevcut modlar oyun sayfasında gösterilir. Birçok oyunda bilgisayara karşı ya da aynı cihazda bir arkadaşınla da oynayabilirsin."
+    },
+    {
+     "q": "Çocuklar satrancı en iyi nasıl öğrenir?",
+     "a": "Önce her taşın nasıl gittiğini öğren, sonra kolay seviyede bilgisayara karşı tam oyunlar oyna. Kazandıran hamleyi aradığın mat bulmacaları da harika bir alıştırmadır."
+    },
+    {
+     "q": "Shogi ve Xiangqi nedir?",
+     "a": "Bunlar satrancın Japon ve Çin versiyonlarıdır. İkisinin de kendine özgü taşları ve kuralları var; Shogi Japanese Chess ve Xiangqi Chinese Chess Duel’da deneyebilirsin."
+    },
+    {
+     "q": "Bu oyunlar ücretsiz mi?",
+     "a": "Evet. Pixuvo’daki her satranç oyunu ücretsizdir ve kayıt olmadan tarayıcında açılır."
+    }
+   ]
+  },
+  "clicker": {
+   "intro": "Bir kez tıkla, bir altın kazan. Yüz kez tıkla, senin yerine tıklayan bir yükseltme satın al. Tıklama oyunlarının bu kadar sevilmesinin sebebi bu basit döngü – Pixuvo’da bu türden 2.300’den fazla oyun var ve her yaş için başlaması kolay.\n\nTıklama oyunlarının her türlü teması var. Bazıları tek bir büyük nesneye dokunduğun saf klasikler, bazıları kaynak kazmakla ilgili, bazıları da birleştirme ya da sakin, keyifli efektler ekliyor. Eşya toplamak için sanal kutular açtığın kasa açma oyunları da var – hepsi oyun icabı, gerçek para yok. Başlamak için iyi seçimler: Snail Clicker, Mantis Clicker, Candy Clicker 2, MineClicker ve Lotl Spa.\n\nHer tıklama oyununun püf noktası yükseltmeleri iyi seçmektir. Başta her tıklamayı güçlendiren yükseltmeleri al; sonra parmağını dinlendirirken senin için kazanan otomatik yardımcılara odaklan. Bu oyunlar sadece fare, dokunmatik yüzey ya da parmakla çalışır, bu yüzden telefon ve tablette oynanması en kolay oyunlar arasındadır – oyunun mobilde çalışıp çalışmadığı sayfasında yazar. Bu tarzı seviyorsan idle oyunlarımızı da beğenebilirsin.",
+   "faq": [
+    {
+     "q": "Tıklama oyunları nedir?",
+     "a": "Puan ya da altın kazanmak için tıkladığın veya dokunduğun, sonra bunları daha hızlı kazanmanı sağlayan yükseltmelere harcadığın oyunlardır. Artımlı (incremental) oyunlar olarak da bilinirler."
+    },
+    {
+     "q": "Tıklama oyunlarında nasıl daha iyi olunur?",
+     "a": "Önce her tıklamayı güçlendiren yükseltmeleri al, sonra otomatik yardımcılara geç. Fiyatına göre en çok kazandıranı yükseltmek genelde en akıllıca seçimdir."
+    },
+    {
+     "q": "Tıklama oyunları ile idle oyunlar arasındaki fark nedir?",
+     "a": "Tıklama oyununda çoğunlukla kendin tıklayarak kazanırsın, idle oyunlar ise kendi kendine kazanmaya devam eder. Birçok oyun tıklamayla başlar ve yardımcıları açınca idle oyuna dönüşür."
+    },
+    {
+     "q": "Tıklama oyunlarını telefonda oynayabilir miyim?",
+     "a": "Evet, birçoğu sadece dokunma gerektirdiği için telefon ve tablette güzel çalışır. Telefonda ya da tablette çalışıp çalışmadığını oyun sayfasında görebilirsin."
+    },
+    {
+     "q": "Bu oyunlar ücretsiz mi?",
+     "a": "Evet. Pixuvo’daki tüm tıklama oyunları tarayıcıda ücretsiz oynanır ve içlerindeki altınlar ya da eşyalar sanaldır."
+    }
+   ]
+  },
+  "coloring": {
+   "intro": "Boş bir sayfa, bir kutu renk ve çizgilerin dışına taşmamak gibi bir kural yok. Boyama ve çizim oyunları boyama kitabının dijital hâlidir – üstelik boya kalemlerin hiç bitmez. Pixuvo’da bu türden 1.500’den fazla oyun var.\n\nBölümün kalbi boyama kitapları. Butterfly Coloring Pages Kids ve Mandala Coloring Book istediğin gibi boyayabileceğin resimler sunuyor; bazı kitaplarda Italian Brainrot Coloring gibi sevilen karakterler de var. Color Pixels - Coloring by Numbers gibi sayıyla boyama oyunları hangi rengin nereye gideceğini gösterir, böylece resim adım adım ortaya çıkar – çok rahatlatıcı. Bir de çizdiğin çizginin çözümün kendisi olduğu çizim bulmacaları var; Draw The Path - Puzzle gibi. Poly Art, Wall Painter ve Creative Puzzle denemeye değer başka yaratıcı seçimler.\n\nKüçük çocuklar için geniş alanlı boyama sayfaları en iyi başlangıçtır; daha büyük çocuklar genelde ayrıntılı mandalaları ya da piksel sanatını sever. Çizim oyunları yoğun bir günün ardından sakin bir etkinliktir ve kimse sana gökyüzünün mavi olması gerektiğini söylemez. Tablette parmakla harika çalışırlar, birçoğu telefon ve bilgisayarda da açılır – dokunmatik ekran desteği her oyun sayfasında gösterilir.",
+   "faq": [
+    {
+     "q": "Çocuklar için ücretsiz online boyama sayfaları var mı?",
+     "a": "Evet, Butterfly Coloring Pages Kids ve Mandala Coloring Book gibi doğrudan tarayıcıda ücretsiz boyayabileceğin birçok boyama kitabı var."
+    },
+    {
+     "q": "Sayıyla boyama nedir?",
+     "a": "Sayıyla boyama oyunlarında her alanın bir renge karşılık gelen bir numarası vardır. Alanları tek tek doldurursun ve resim ilerledikçe ortaya çıkar – rahatlamak için harika."
+    },
+    {
+     "q": "Kendi resimlerimi çizebilir miyim?",
+     "a": "Bazı oyunlar serbestçe çizmene izin verir, bazıları ise çizimi Draw The Path - Puzzle’daki gibi bir bulmaca olarak kullanır. Hangisi olduğunu oyun açıklamasından kontrol et."
+    },
+    {
+     "q": "Boyama oyunları tablette iyi çalışır mı?",
+     "a": "Evet, tablette parmakla boyamak çok doğal hissettirir ve birçok boyama oyunu dokunmatik ekranı destekler. Dokunmatik ekran desteği her oyun sayfasında gösterilir."
+    },
+    {
+     "q": "Boyadığım resmi yazdırabilir ya da kaydedebilir miyim?",
+     "a": "Bazı boyama oyunlarında kaydet düğmesi var, ama hepsinde yok. Seninkinde yoksa bitmiş resminin ekran görüntüsünü alabilirsin."
+    }
+   ]
+  },
+  "cooking": {
+   "intro": "Siparişler geliyor, ızgara kızgın ve müşteriler aç. Yemek yapma oyunları seni mutfağa sokar ve Pixuvo’daki yaklaşık 900 oyunla hamburgerden pizzaya, tacodan bifteğe kadar her şeyi pişirebilirsin.\n\nİki ana tür var. Restoran ve zaman yönetimi oyunları hızlıdır: müşteriler gelir, sen siparişlerini hazırlar ve sabırları tükenmeden servis edersin. Burada her şey hız ve iyi düzenle ilgilidir. Tarif oyunları daha yavaş ve daha yaratıcıdır – malzemeleri seçer ve yemeği evde yapar gibi adım adım hazırlarsın. Bazı oyunlar ikisini birleştirir ve bir kafe ya da restoran işletip büyütmene izin verir. Burger Restaurant Simulator 3D, Pizza Maker food Cooking Games, Yummy Taco, Marmot Diner Dash ve Taste City iyi ilk seçimler; Multiplayer Cooking Coop ise bir arkadaşınla deneyebileceğin bir oyun.\n\nKüçük çocuklar genelde tarif oyunlarını daha çok sever, çünkü süre yoktur. Restoran oyunlarında iyi bir püf noktası, çok istenen yemekleri müşteriler sipariş vermeden hazırlamaktır. Bu oyunlar tıklayarak, sürükleyerek ya da dokunarak oynanır, bu yüzden birçoğu tablet ve telefonda güzel çalışır – cihazında çalışıp çalışmadığını oyun sayfasından kontrol et. Bir oyun karnını acıktırırsa, belki de bir büyüğünle gerçekten bir şeyler pişirmenin zamanı gelmiştir!",
+   "faq": [
+    {
+     "q": "Çocuklar için iyi yemek yapma oyunları hangileri?",
+     "a": "Küçük çocuklar genelde sakin tarif oyunlarını, daha büyükler ise hızlı restoran oyunlarını sever. Başlamak için Pizza Maker food Cooking Games, Yummy Taco ve Marmot Diner Dash’i dene."
+    },
+    {
+     "q": "Ücretsiz online yemek oyunlarını nerede oynayabilirim?",
+     "a": "Tam burada – Pixuvo’daki her yemek yapma oyunu ücretsizdir ve kayıt ya da indirme olmadan tarayıcında açılır."
+    },
+    {
+     "q": "Restoran zaman yönetimi oyunu nedir?",
+     "a": "Müşterilerin siparişlerle geldiği ve hızlıca pişirip servis etmen gereken bir yemek oyunudur. İleriyi planlamak ve doğru sırayla servis yapmak daha çok kazanmanı sağlar."
+    },
+    {
+     "q": "Bir yemek oyununda birlikte yemek yapabilir miyiz?",
+     "a": "Bazı oyunlar takım çalışması için yapılmıştır – Multiplayer Cooking Coop’a göz atabilirsin. Oyunun birden fazla oyuncuyu destekleyip desteklemediği oyun sayfasında gösterilir."
+    },
+    {
+     "q": "Yemek yapma oyunlarını tablette oynayabilir miyim?",
+     "a": "Evet, birçoğu basit dokunma ve sürükleme kullanır ve tablet ile telefonda iyi çalışır. Dokunmatik ekran desteği her oyun sayfasında gösterilir."
+    }
+   ]
+  },
+  "dress-up": {
+   "intro": "Bir kıyafet seç, yeni bir saç modeli dene, aksesuar ekle ve tamamen sana ait bir görünüm yarat. Giydirme oyunları yaratıcılık ve tarzla ilgilidir ve 2.800’den fazla oyunla keşfedecek çok şey var.\n\nModa ve makyaj oyunları işin klasikleri: bir karakter ya da özel bir etkinlik için kıyafet, makyaj ve aksesuar seçersin; bazıları tırnak tasarımı ya da K-pop teması da ekler. Doll Queen Designer, Anime Girl Fashion Make Up, Model Wedding - Girl Games ya da Aidol K-pop Adventure’ı dene. Bu bölümde sevimli karakterlere, evcil hayvanlara ya da bebeklere baktığın bakım oyunları da var. Baby Panda Care, Funny Kitty Care, Stacky Dash Nail, Funny Rescue Gardener ve Funny Rescue Carpenter denemeye değer başka seçimler.\n\nGiydirme oyunlarında yanlış cevap yoktur – eğlence denemekte. Bir gün uyumlu renkler, ertesi gün çılgın kombinler dene, sonra en sevdiğin görünümün ekran görüntüsünü al. Bu oyunları her cinsiyetten pek çok çocuk sever; stil yaratmaktan ve tasarlamaktan herkes keyif alabilir. Sadece tıklama ya da dokunma gerektirdikleri için çoğu tablet ve telefonda kolayca oynanır; telefonda ya da tablette çalışıp çalışmadığını oyun sayfasında görebilirsin.",
+   "faq": [
+    {
+     "q": "Giydirme oyunları nedir?",
+     "a": "Bir karakter için kıyafet, saç modeli, makyaj ve aksesuar seçtiğin oyunlardır. Bazılarında evcil hayvanlara ya da bebeklere bakmak, dekorasyon yapmak veya kendi kıyafetlerini tasarlamak da var."
+    },
+    {
+     "q": "Erkekler için giydirme oyunları var mı?",
+     "a": "Evet – giydirme oyunları herkes için. Stil, tasarım ve bakım oyunlarını her cinsiyetten çocuk sever ve birçoğunda meslekler, K-pop ya da hayvanlar gibi temalar var."
+    },
+    {
+     "q": "Küçük çocuklar için hangi giydirme oyunları iyi?",
+     "a": "Bakım oyunları genelde basit ve tatlıdır, bu yüzden yumuşak bir başlangıçtır. Başlamak için Baby Panda Care, Funny Kitty Care ve Doll Queen Designer’ı dene."
+    },
+    {
+     "q": "Kıyafetimi kaydedebilir miyim?",
+     "a": "Oyuna bağlı. Kaydet düğmesi yoksa en sevdiğin görünümün ekran görüntüsünü alabilirsin."
+    },
+    {
+     "q": "Bu oyunlar ücretsiz mi?",
+     "a": "Evet. Pixuvo’daki tüm giydirme oyunları hesap gerektirmeden tarayıcıda ücretsiz oynanır."
+    }
+   ]
+  },
+  "drift": {
+   "intro": "Virajı al, frene hafifçe dokun ve arabanın arkasının bir duman bulutu içinde köşeden kaymasına izin ver. Drift, araba oyunlarındaki en havalı becerilerden biri ve bu oyunlar tamamen onun etrafında kurulu. Pixuvo’da tarayıcında oynayabileceğin 650’den fazla ücretsiz drift oyunu var.\n\nÇoğu drift oyununda ne kadar uzun ve ne kadar yan kaydığına göre puan kazanırsın; kaymayı bir virajdan diğerine taşımak da kombo oluşturur. Bazı oyunlar pistte farklı arabalarla klasik kaymaya sadık kalır, bazıları drifti kovalamacalarla ya da alışılmadık araçlarla karıştırır. GT Drift Most Wanted, Bimmer Drifting Legends, Vaz Drifting Legends, Get Drifty, Drift Cops 3D ve Drift Bus denemeye değer birkaç oyun.\n\nDrift pratik ister, bu yüzden başta dönüp durursan dert etme. Temel fikir şu: virajlara hızla gir, kaymayı el freniyle ya da ani bir dönüşle başlat, sonra kontrolü korumak için direksiyonu yumuşakça ters yöne çevir. Küçük direksiyon hareketleri büyüklerden daha iyi işler. Çoğu oyunda ok tuşları ya da W, A, S, D kullanılır, el freni de boşluk tuşudur; kontroller oyun sayfasında yazar. Telefonda ya da tablette misin? Birçok oyun orada da çalışır; oyun sayfasına bak. Drift oyunları yarış kategorisinin bir parçasıdır.",
+   "faq": [
+    {
+     "q": "Araba oyunlarında drift nedir?",
+     "a": "Drift, kontrolü kaybetmeden arabayı virajda yana kaydırmaktır. Bu oyunlar uzun ve havalı kaymalara puan verir."
+    },
+    {
+     "q": "Drift oyunlarında nasıl drift yapılır?",
+     "a": "Virajlara hızla gir, kaymayı el freniyle (çoğunlukla boşluk tuşu) başlat ve kaymayı sürdürmek için direksiyonu yumuşakça ters yöne çevir. İşin sırrı küçük ve akıcı direksiyon hareketleri."
+    },
+    {
+     "q": "İlk olarak hangi drift oyununu denemeliyim?",
+     "a": "Get Drifty ve GT Drift Most Wanted kategorinin üst sıralarında. Kısa alıştırma turlarıyla başla ve giderek daha uzun driftlere geç."
+    },
+    {
+     "q": "Drift oyunlarını telefonda oynayabilir miyim?",
+     "a": "Birçoğunda dokunmatik kontroller var ve telefon ile tablette çalışır. Mobil desteği oyun sayfasında gösterilir."
+    },
+    {
+     "q": "Drift oyunları ücretsiz mi?",
+     "a": "Evet, Pixuvo’daki her drift oyunu indirme gerektirmeden tarayıcıda ücretsiz oynanır."
+    }
+   ]
+  },
+  "driving": {
+   "intro": "Yarışta önemli olan birinci olmaktır. Sürüşte ise iyi olmak: direksiyonu yumuşak çevirmek, doğru anda frene basmak ve gideceğin yere tek parça varmak. Pixuvo’da direksiyon başına geçmeye bayılan çocuklar için 2.500’den fazla ücretsiz sürüş oyunu var.\n\nBu kategoride birkaç farklı sürüş türü var. Park etme oyunları bir arabayı çizdirmeden dar bir yere sığdırmanı ister. Kamyon oyunları seni ağır araçların, yüklerin ve engebeli yolların başına geçirir. Otobüs oyunlarında doğru yerlerde durup yolcu alırsın. Trafiğin arasından sıyrıldığın otoyol ve sonsuz yol oyunları ile rampalı, büyük atlayışlı akrobasi oyunları da var. Final Freeway, Final Freeway 2R, Road Fury, Truck Simulator Stunt Extreme ve Italian Brainrot Extreme Driver başlamak için kolay seçimler.\n\nSakin bir meydan okuma istiyorsan park etme oyunuyla başla – arabanın nasıl döndüğünü öğretir. Hızı tercih ediyorsan, amacın kaza yapmadan olabildiğince uzun sürmek olduğu bir otoyol oyunu dene. Çoğu oyunda ok tuşları ya da W, A, S, D kullanılır, fren için de boşluk tuşu. Birçoğu telefon ve tablette de çalışır – her oyun sayfası bunu belirtir. Unutma, oyunlar eğlence içindir: gerçek sürüş için ders ve trafik kuralları gerekir. Saf hız için yarış kategorisine geç.",
+   "faq": [
+    {
+     "q": "Sürüş oyunları nedir?",
+     "a": "Sürüş oyunları bir aracı iyi kontrol etmekle ilgilidir: direksiyon, fren, park etme ve bir rotayı takip etme. Genelde yarış oyunlarından daha sakindirler."
+    },
+    {
+     "q": "Sürüş oyunları araba kullanmayı öğretir mi?",
+     "a": "Hayır, tarayıcıdaki sürüş oyunları sadece eğlence içindir ve gerçek derslerin ya da trafik kurallarının yerini tutmaz. Yine de çocukların direksiyon ve mesafe tahmini konusunda fikir edinmesine yardımcı olabilirler."
+    },
+    {
+     "q": "İlk olarak hangi sürüş oyununu denemeliyim?",
+     "a": "Park etme oyunu harika bir başlangıçtır, çünkü arabanın nasıl döndüğünü öğretir. Sonrasında Final Freeway ve Road Fury’yi dene."
+    },
+    {
+     "q": "Hangi araçları kullanabilirim?",
+     "a": "Arabalar, kamyonlar, otobüsler ve daha fazlası. Hızlıca bulmak için park etme, kamyon ve otobüs alt kategorilerine bak."
+    },
+    {
+     "q": "Sürüş oyunlarını telefonda oynayabilir miyim?",
+     "a": "Birçoğunda ekranda pedal ve direksiyon var ve telefon ile tablette çalışır. Dokunmatik ekran desteği her oyun sayfasında gösterilir."
+    }
+   ]
+  },
+  "educational": {
+   "intro": "Eğlenceli olunca öğrenilen şey daha kalıcı olur. Eğitici oyunlar oyunu okuma, sayma, vücuduna bakma ya da doğayı anlama gibi gerçek becerilerle birleştirir. Pixuvo’da oynarken bir şeyler öğreten 1.300’den fazla oyun var.\n\nEn küçük oyuncular için ilk kelimeler, harfler ve basit saymayla ilgili oyunlar var. Sağlık ve bakım oyunları diş fırçalamak gibi iyi alışkanlıklar öğretir, doğa oyunları çevreye eğlenceli bir gözle bakar, yemek oyunları da adımları doğru sırayla izlemeyi çalıştırır. Bulmacalar sabrı ve dikkati geliştirir. My First 100 Words, App For Kids - Edu games, Doctor Teeth, Save The Planet ve Yummy Cupcake’i dene. Tek bir alanda daha fazla pratik için matematik ve hafıza oyunlarımız da harika tamamlayıcılar.\n\nNasıl seçmeli? Çocuğunun şu an ne öğrendiğini düşün – harfler, sayılar, kelimeler ya da alışkanlıklar – ve buna uyan bir oyun seç. 10–15 dakikalık kısa oturumlar ve ardından keşfettikleri üzerine küçük bir sohbet iyi sonuç verir. Eğitici oyunların çoğu basit tıklama ya da dokunmayla oynanır, bu yüzden tablet ve telefonda da kolaydır – dokunmatik ekran desteği her oyun sayfasında gösterilir.",
+   "faq": [
+    {
+     "q": "Çocuklar için en iyi eğitici oyunlar hangileri?",
+     "a": "Yaşa bağlı: okul öncesi çocuklar basit kelime ve harf oyunlarıyla başlayabilir – My First 100 Words iyi bir başlangıç – daha büyük çocuklar ise mantık bulmacalarını, bilgi yarışmalarını, matematik ve hafıza oyunlarımızı sevebilir."
+    },
+    {
+     "q": "Eğitici oyunlar çocukların öğrenmesine gerçekten yardımcı olur mu?",
+     "a": "İyi eğitici oyunlar pratiği eğlenceli hâle getirir, bu da çocukların becerileri daha sık tekrar etmesini sağlar. En iyi sonucu okumanın, okulun ve yetişkinlerle sohbetin yerine değil, yanında verirler."
+    },
+    {
+     "q": "Okul öncesi çocuklar için eğitici oyunlar var mı?",
+     "a": "Evet. Basit kelime, harf ve boyama oyunları küçük çocuklara uygundur, özellikle yanlarında bir ebeveyn varken – My First 100 Words ve App For Kids - Edu games denemeye değer iki oyun."
+    },
+    {
+     "q": "Çocuğum eğitici oyunları tablette oynayabilir mi?",
+     "a": "Birçoğu basit dokunuşlar kullanır ve tablette iyi çalışır. Cihazında çalışıp çalışmadığını oyun sayfasından kontrol et."
+    },
+    {
+     "q": "Bu oyunlar ücretsiz mi?",
+     "a": "Evet. Pixuvo’daki tüm eğitici oyunlar ücretsizdir; hesap gerekmez, bir şey yüklemek de gerekmez."
+    }
+   ]
+  },
+  "escape": {
+   "intro": "Kapı kilitli, anahtar kayıp ve duvara tuhaf bir şifre kazınmış. Kaçış oyunları eline bir bulmaca kutusu ve tek bir hedef verir: dışarı çık. Pixuvo’da klasik kaçış odalarından obby tarzı parkurlara ve hapishane kaçışlarına kadar 2.000’den fazla ücretsiz kaçış oyunu var.\n\nKlasik tür, tıkla ve keşfet tarzı kaçış odasıdır. Sahnede etrafa tıklar, eşyaları toplar, birleştirir ve şifreleri çözersin. Bazıları her yeni odanın biraz daha zorlaştığı kapı kapı ilerleyen serilerdir. Hapishane kaçışı oyunları gardiyanların yanından gizlice geçtiğin bir hikâye ekler; obby kaçışları ise ipucu bulmaktan çok engelli bir parkurda zıplamakla ilgilidir, bu yüzden düşünmektense hareket etmeyi seven çocuklara uyar. Denemeye değer olanlar arasında 100 Doors - Escape from Prison, Prison Jail Escaping Game, Cool Escape Obby Man ve Knock and Run. 100 Doors Escape var.\n\nKaçış oyunlarının altın kuralı: her şeye iki kez bak. Köşelere tıkla, çekmeceleri aç, resimlere yakından bak ve gördüğün sayıları ya da renkleri aklında tut, çünkü genelde sonra bir şeyin kilidini açarlar. Klavyenin yanında bir not defteri çok işe yarar. Kaçış odalarının çoğu sadece fare ya da parmak ister, bu da onları dokunmatik ekranlara uygun kılar; birçoğu telefon ya da tablette de çalışır, emin olmak için oyun sayfasına bak. Daha fazla keşif istersen kaçış oyunları, daha büyük macera kategorisinin bir parçasıdır.",
+   "faq": [
+    {
+     "q": "Kaçış odası oyunları nasıl işler?",
+     "a": "Bir odaya kapanmışsındır ve çıkışı açmak için gizli eşyaları bulman, birleştirmen ve şifreleri ya da bulmacaları çözmen gerekir. Çoğu nesnelere tıklayarak ya da dokunarak oynanır."
+    },
+    {
+     "q": "Yeni başlayanlar için iyi kaçış oyunları hangileri?",
+     "a": "Kapı kapı ilerleyen seriler genelde kolay başlar ve yavaş yavaş zorlaşır, bu yüzden kaçış bulmacalarının mantığını öğrenmek için iyidir. 100 Doors - Escape from Prison başlamak için iyi bir seçim."
+    },
+    {
+     "q": "Bir kaçış oyununda takılırsam ne yapmalıyım?",
+     "a": "Her köşeye yeniden tıkla, envanterine bak ve eşyaları birleştirmeyi dene. Gördüğün sayıları, renkleri ve sembolleri not etmek çoğu zaman çözümü ortaya çıkarır."
+    },
+    {
+     "q": "Obby kaçış oyunu nedir?",
+     "a": "Obby bir engel parkurudur. Obby kaçış oyunlarında çıkışa ipucu çözerek değil, engellerin üzerinden koşup zıplayarak ulaşırsın."
+    },
+    {
+     "q": "Kaçış oyunlarını telefonda oynayabilir miyim?",
+     "a": "Kaçış odaları çoğunlukla sadece dokunma gerektirdiği için birçoğu telefon ve tablette iyi çalışır. Dokunmatik ekran desteği her oyun sayfasında gösterilir."
+    }
+   ]
+  },
+  "farming": {
+   "intro": "Tohumları ek, sula ve hasat için geri gel. Çiftlik oyunları sıcak ve sakindir; bu yüzden birçok çocuk (ve ebeveyn) yoğun bir günün ardından onları çok sever. Pixuvo’da 240’tan fazla çiftlik oyunu var.\n\nBu oyunların çoğu birkaç etkinliği bir araya getirir. Ekin oyunlarında sebze, meyve ya da çiçek eker, sular ve toplarsın. Hayvan oyunlarında tavuklara, ineklere ya da evcil hayvanlara bakar, onları beslersin. Traktör oyunları seni toprağı sürmek ve yük taşımak için direksiyona geçirir; bazı çiftlik oyunları da kendi hızında tarım yaptığın, inşa ettiğin ve ticaret yaptığın küçük dünyalardır. Garden Master, Happy Farm, Tractor Simulator Farming Game, A day in the countryside ve Island Farm Cat Gardener denemeye değer birkaç oyun.\n\nRahatlatıcı bir şey istiyorsan hiçbir şeyin ters gidemeyeceği bir bahçe oyunuyla başla. Araç kullanmayı seviyorsan bir traktör simülasyonu dene. Çiftlik oyunları genelde düzenli geri gelmeyi ödüllendirir ve bazıları çiftliğini kullandığın cihazdaki tarayıcıda kaydeder. Çoğu sadece tıklama ya da dokunma ister, bu yüzden tablet ve telefonda da kolay oynanır – telefon ve tablette çalışıp çalışmadığı oyun sayfasında yazar.",
+   "faq": [
+    {
+     "q": "Çiftlik oyunları nedir?",
+     "a": "Ekin yetiştirdiğin, hayvanlara baktığın ve bazen traktör kullandığın oyunlardır. Genelde sakindirler ve çiftliğini zamanla büyütmeye odaklanırlar."
+    },
+    {
+     "q": "Küçük çocuklar için hangi çiftlik oyunları iyi?",
+     "a": "Yumuşak bahçe ve hayvan oyunları iyi bir başlangıçtır; birçok çiftlik oyununda süre baskısı da azdır, bu da küçük oyunculara uyar. Başlamak için iyi seçimler: Garden Master, Happy Farm ve Island Farm Cat Gardener."
+    },
+    {
+     "q": "Burada traktör oyunları var mı?",
+     "a": "Evet – Tractor Simulator Farming Game denemeye değer; daha fazla araç için sürüş ve kamyon bölümlerimize göz at."
+    },
+    {
+     "q": "Çiftliğim kaydedilecek mi?",
+     "a": "Birçok çiftlik oyunu ilerlemeni aynı cihazdaki tarayıcıda kaydeder. Tarayıcı verilerini silersen ya da başka bir cihaz kullanırsan baştan başlaman gerekebilir."
+    },
+    {
+     "q": "Bu oyunlar ücretsiz mi?",
+     "a": "Evet. Pixuvo’daki her çiftlik oyunu ücretsizdir ve kayıt olmadan tarayıcıda çalışır."
+    }
+   ]
+  },
+  "fighting": {
+   "intro": "Bire bir düellolar, kalabalık arenalar ve nakavt eden yumruklar – dövüş oyunları rakibini okumak ve önce davranmakla ilgilidir. Pixuvo’da tarayıcında oynayabileceğin 1.000’den fazla ücretsiz dövüş oyunu var ve birçoğu tek klavyeyi paylaşan iki oyuncu için yapılmış.\n\nHer dövüş oyunu aynı hissettirmez. Çöp adam dövüşlerinde grafikler basit tutulur, böylece bütün dikkat tekmelerini ve kombolarını zamanlamaya gider; Stickman Warriors ve Stickman Street Fighting 3D buna iyi örnekler. Arena ve parti dövüşleri daha komiktir; ciddi kavgadan çok itişip kakışma ve zıplama vardır. Bir de birleştirmeyi savaşlarla karıştıran birleştir ve savaş oyunları var – tuşlara rastgele basmaktansa plan yapmayı seven çocuklar için güzel bir seçim. Sumo Shove, Knockback Knights ve Gladiators Merge and Fight da denemeye değer.\n\nGelişmenin iyi bir yolu, her şeye aynı anda basmak yerine iki üç hareketi iyice öğrenmektir. Doğru anda savunma yapmak çoğu zaman saldırmaktan daha fazla dövüş kazandırır. Bilgisayarda başlamadan önce, özellikle iki kişilik modda, oyun sayfasından tuş düzenine bak. Birçoğu telefon ve tablette de çalışır – oyun sayfasında yazar. Daha fazla hızlı refleks oyunu istiyorsan bir sonraki durak daha geniş aksiyon kategorisi.",
+   "faq": [
+    {
+     "q": "Çocuklar için en iyi dövüş oyunları hangileri?",
+     "a": "Parti tarzı dövüşler eğlenceli bir başlangıç, basit çöp adam dövüşleri de iyi bir sonraki adım. Sumo Shove, Knockback Knights ve Stickman Warriors iyi örnekler."
+    },
+    {
+     "q": "Aynı bilgisayarda bir arkadaşımla dövüş oyunu oynayabilir miyim?",
+     "a": "Evet, birçok dövüş oyununda tek klavyede iki kişilik mod var; genelde bir oyuncu W, A, S, D tuşlarını, diğeri ok tuşlarını kullanır. Oyunun iki oyuncuyu destekleyip desteklemediği oyun sayfasında gösterilir."
+    },
+    {
+     "q": "Dövüş oyunlarında nasıl daha iyi olurum?",
+     "a": "Birkaç hareketi çok iyi öğren, savunma yapmayı çalış ve saldırmadan önce rakibinin ne yaptığını izle. Kısa alıştırma turları tek bir uzun oturumdan daha çok işe yarar."
+    },
+    {
+     "q": "Çöp adam dövüş oyunu nedir?",
+     "a": "Karakterlerin basit çöp adamlar olduğu bir dövüş oyunudur. Grafikler sade olduğu için eğlence zamanlamadan, kombolardan ve fizikten gelir."
+    },
+    {
+     "q": "Pixuvo’daki dövüş oyunları ücretsiz mi?",
+     "a": "Evet, Pixuvo’daki tüm dövüş oyunları tarayıcıda ücretsiz oynanır; hesap gerekmez, bir şey yüklemek de gerekmez."
+    }
+   ]
+  },
+  "first-person-shooter": {
+   "intro": "Birinci şahıs nişancı oyunlarında kahramanı izlemezsin – kahraman sensin. Kamera tam gözlerinin arkasında durur, bu yüzden döndüğün her köşe ve fark ettiğin her hedef yakın ve gerçek hissettirir. Pixuvo’da doğrudan tarayıcıda oynanan 150’den fazla ücretsiz FPS oyunu var.\n\nFPS oyunlarının genelde birkaç türü var: bölüm bölüm tamamlanacak hedefleri olan görev oyunları, daha büyük haritalarda geçen savaş alanı oyunları ve hızlı turlarla çabuk nişan almaya dayanan arena nişancı oyunları. Listenin üst sıralarında Frontline Assault: Battleground Fire Max Shooting, Commando Force 2, Strykon ve Battle Shot Elite ile FPS Sniper Shooting: Production Facility, Border Battleground, Battleops ve Vexon var. Daha hafif bir şey istiyorsan, işi sert değil şakacı tutan çizgi film tarzı nişancı oyunlarına bak.\n\nBu oyunlar en kolay fare ve klavyeyle oynanır: hareket için W, A, S, D, bakmak ve nişan almak için fare, ateş için sol tık ve genellikle nişangâhtan bakmak için sağ tık. Yeni başlayanlar için bir ipucu: yürürken nişangâhını baş hizasında tut, böylece bir şey ortaya çıktığında nişan almak için daha az hareket etmen gerekir. Kontroller için oyun sayfasına bak; bazı oyunlar telefon ve tablette de çalışır ve oyun sayfası bunu gösterir. Birçok FPS oyunu gerçekçi tarzdadır ve daha büyük çocuklara uygundur – şiddet içeren ifadeler taşıyan oyunlar elle incelenmek üzere bekletilir; ebeveyn sayfamız oyunları nasıl kontrol ettiğimizi anlatır. Daha fazla nişancı oyunu ateş etme kategorisinde seni bekliyor.",
+   "faq": [
+    {
+     "q": "Birinci şahıs nişancı (FPS) oyunu nedir?",
+     "a": "Dünyayı karakterinin gözünden gördüğün bir ateş etme oyunudur. Ekranda genelde sadece ellerini ve silahını görürsün."
+    },
+    {
+     "q": "FPS oyunlarının kontrolleri nelerdir?",
+     "a": "Çoğunda hareket için W, A, S, D, etrafa bakmak için fare, ateş etmek için sol tık ve nişangâhtan bakmak için sağ tık kullanılır. Tam kontroller oyun sayfasında yazar."
+    },
+    {
+     "q": "Yeni başlayanlar için hangi FPS oyunu en iyisi?",
+     "a": "Bölümleri kısa olan görev oyunlarına bak, böylece adım adım öğrenirsin. Çizgi film tarzı nişancı oyunları küçük oyuncular için daha hafif bir seçimdir."
+    },
+    {
+     "q": "FPS oyunlarını bir şey indirmeden oynayabilir miyim?",
+     "a": "Evet, Pixuvo’daki FPS oyunları indirme ya da kurulum gerektirmeden doğrudan web tarayıcısında çalışır."
+    },
+    {
+     "q": "FPS oyunları çocuklar için uygun mu?",
+     "a": "Oyuna bağlı – bazıları çizgi film tarzında, bazıları ise daha büyük çocuklara uygun gerçekçi savaş oyunları. Ebeveynler oyunların nasıl incelendiğini ebeveyn sayfamızda okuyabilir."
+    }
+   ]
+  },
+  "football": {
+   "intro": "Tek vuruş, tek gol ve tribünler ayağa kalkar. Futbol dünyanın en popüler sporu ve Pixuvo’da doğrudan tarayıcında oynayabileceğin 590’dan fazla futbol oyunu var.\n\nEn yaygın tür penaltı ve serbest vuruş oyunlarıdır. Nişan alır, gücü seçer ve tek bir kusursuz şutla kaleciyi ya da baraj yapan savunmacıları geçip gol atmaya çalışırsın. Kafa topu oyunları, koca kafalı oyuncuların zıplayıp topa kafa vurduğu hızlı ve komik bire bir maçlardır; çoğu zaman iki kişi için de harikadır. Koşu oyunları ise çalım atmayı ve kaçmayı ekler. Curve Kick, Penalty Challenge, Power Free Kick, Soccer Dash ve Anime Headball başlamak için kolay seçimler.\n\nYeniysen bir penaltı oyunuyla başla, çünkü sadece fare ya da parmak kaydırmasıyla nişan almayı ve gücü ayarlamayı öğretir. Gerçek bir rakip istediğinde aynı klavyede bir arkadaşınla kafa topu maçı yap. Futbol oyunlarının çoğu hızlıdır, yani bütün bir maçı birkaç dakikada oynayabilirsin. Birçoğu telefon ve tablette de çalışır – oyun sayfası bunu gösterir.",
+   "faq": [
+    {
+     "q": "Bir futbol maçı ne kadar sürer?",
+     "a": "Gerçek bir profesyonel maç 45’er dakikalık iki devreden oluşur ve toplam 90 dakika sürer. Tarayıcıdaki futbol oyunları çok daha kısadır: bir penaltı turu ya da kafa topu maçı genelde birkaç dakika sürer."
+    },
+    {
+     "q": "Burada hangi futbol var: Avrupa futbolu mu, Amerikan futbolu mu?",
+     "a": "Yuvarlak topla ve kalelerle oynanan futbol. ABD’de “soccer” denen bu oyun dünyanın çoğunda futbol olarak bilinir, bölümün adı da buradan gelir."
+    },
+    {
+     "q": "Kafa topu oyunları nedir?",
+     "a": "Dev kafalı çizgi film oyuncularıyla oynanan bire bir maçlardır. Zıplar, vurur ve topu kafayla kaleye sokarsın; birçoğu tek klavyede iki kişiyle oynanabilir – oyunun iki oyuncuyu destekleyip desteklemediği oyun sayfasında gösterilir."
+    },
+    {
+     "q": "Penaltı çalışmak için hangi futbol oyunu en iyisi?",
+     "a": "Penalty Challenge, Shoot Up Penalty Kicks ve Penalty Shoot Pro World Cup başlamak için iyi seçimler; Curve Kick ve Power Free Kick de denemeye değer."
+    },
+    {
+     "q": "Futbol oyunlarını tablette oynayabilir miyim?",
+     "a": "Birçok futbol oyununda şut basit bir kaydırmayla atılır, bu yüzden tablet ve telefonda güzel çalışır. Dokunmatik ekran desteği her oyun sayfasında gösterilir."
+    }
+   ]
+  },
+  "golf": {
+   "intro": "Hafifçe vur, yuvarla ve topun deliğe doğru kıvrılışını izle. Golf oyunları Pixuvo’daki en rahatlatıcı oyunlardan biridir – seni kovalayan bir süre yok, sadece sen, top ve zorlu bir parkur var. Yaklaşık 100 oyun olduğu için her gün yeni bir şey deneyebilirsin.\n\nMini golf başlamak için harika bir yer. Parkurlarda rampalar, duvarlar, yel değirmenleri ve komik engeller vardır; amaç topu olabildiğince az vuruşla deliğe sokmaktır. Little Golf, Golf Mini, Mini Golf 2 ve Mini Golf 18 For Kids iyi ilk parkurlar. Golf Orbit, Golf - World Challenge, Sunny Golf, Tap & Putt ve Oh My Golf da denemeye değer. Bazı golf oyunları sakin put bulmacalarıdır, bazıları ise uzun ve güçlü vuruşlarla ilgilidir.\n\nAna kuralı unutma: ne kadar az vuruş, o kadar iyi. Geçmeye çalıştığın sayıya “par” denir. Her vuruştan önce topun duvarlardan nereye seksineceğine bak, deliğe yaklaşınca da küçük, yumuşak vuruşlar yap. Golf oyunları genelde sadece fare ya da parmak ister, bu da onları tablet ve telefonda da harika kılar – telefonda ya da tablette çalışıp çalışmadığını oyun sayfasında görebilirsin.",
+   "faq": [
+    {
+     "q": "Çocuklar için iyi bir mini golf oyunu hangisi?",
+     "a": "Mini Golf 18 For Kids, Little Golf ve Golf Mini başlamak için iyi seçimler, Mini Golf 2 de denemeye değer. Yeni öğreniyorsan kısa delikleri ve net nişan çizgileri olan oyunlara bak."
+    },
+    {
+     "q": "Golfte “par” ne demek?",
+     "a": "Par, iyi bir oyuncunun bir deliği bitirmek için ihtiyaç duyması gereken vuruş sayısıdır. Par’dan az vuruş harikadır; daha fazlası ise bir dahaki sefere gelişmeye çalışabileceğin anlamına gelir."
+    },
+    {
+     "q": "Topu doğru mesafeye nasıl vururum?",
+     "a": "Çoğu golf oyununda gücü ayarlamak için sürükler ya da basılı tutar, vurmak için bırakırsın. Deliğin yakınında kısa ve yumuşak vuruşlar yap – ıskalamanın en yaygın nedeni fazla güçtür."
+    },
+    {
+     "q": "Golf oyunlarını telefonda ya da tablette oynayabilir miyim?",
+     "a": "Birçok golf oyunu tek dokunuş ya da basit bir sürükleme kullanır, bu yüzden dokunmatik ekranlarda iyi çalışır. Telefon ve tablette çalışıp çalışmadığı oyun sayfasında yazar."
+    },
+    {
+     "q": "Bu oyunlar ücretsiz mi?",
+     "a": "Evet. Pixuvo’daki tüm golf oyunları ücretsizdir; kayıt gerekmez, bir şey indirmek de gerekmez."
+    }
+   ]
+  },
+  "hidden-object": {
+   "intro": "Bu dağınık odanın bir yerinde bir anahtar, bir çay fincanı ve minicik altın bir kuş var. Süre dolmadan onları bulabilir misin? Gizli nesne oyunları keskin gözler ve sabırla ilgilidir; Pixuvo’da tarayıcında ücretsiz oynayabileceğin 300’den fazla oyun var.\n\nÇoğu oyun sana bir eşya listesi ve ıvır zıvırla dolu, ayrıntılı bir resim verir. Bulduğun her nesneye bir kez tıklarsın; bazı oyunlar ipuçları, süre ya da hızlı bulduğunda bonus puan ekler. Italian Brainrot: Find the Difference gibi farkı bul oyunları neredeyse aynı iki resim gösterir ve neyin değiştiğini bulmanı ister. Daha uzun gizli nesne maceraları birçok sahneyi bir gizeme bağlar; birkaçının ürkütücü bir havası vardır, bu yüzden daha büyük çocuklara daha uygundur. Hidden Objects Lost Island 2, Hidden Object Emily's Case ve Hidden Objects Vacation in Brazil denemeye değer birkaç oyun.\n\nBir ipucu: bütün resme birden bakma. Resmi bir sayfayı soldan sağa okur gibi bölüm bölüm tara ve renklerden çok şekillere odaklan. Rastgele tıklamak yerine gerçekten takıldığında ipucu kullan, çünkü birçok oyun yanlış tıklamalarda puan düşer. Tek ihtiyacın bir fare ya da parmak ve birçoğu telefon ile tablette de çalışır – oyun sayfasında yazar. Gizli nesne oyunları bulmaca kategorisinin içinde yer alır.",
+   "faq": [
+    {
+     "q": "Gizli nesne oyunu nedir?",
+     "a": "Kalabalık bir resimde bir listedeki eşyaları aradığın bir bulmaca oyunudur. Bazı sürümlerde bunun yerine iki resim arasındaki farkları bulman istenir."
+    },
+    {
+     "q": "Gizli nesne oyunlarında nasıl daha iyi olunur?",
+     "a": "Resmi küçük bölümler hâlinde tara ve her eşyanın sadece rengine değil, şekline de bak. İpuçlarını gerçekten takıldığın anlar için sakla."
+    },
+    {
+     "q": "Gizli nesne oyunları çocuklar için faydalı mı?",
+     "a": "Dikkati, sabrı ve gözlem gücünü geliştirirler. Bazı hikâyeli oyunların ürkütücü temaları var, bu yüzden küçük çocuklar daha hafif farkı bul oyunlarını tercih edebilir."
+    },
+    {
+     "q": "Gizli nesne ve farkı bul oyunları arasındaki fark nedir?",
+     "a": "Gizli nesne oyunlarında tek bir sahnede bulunacak şeylerin listesi verilir; farkı bul oyunlarında ise iki resim gösterilir ve neyin değiştiği sorulur. İkisi de bu kategoride."
+    },
+    {
+     "q": "Gizli nesne oyunlarını tablette oynayabilir miyim?",
+     "a": "Evet, birçoğu telefon ve tablette parmakla iyi çalışır. Oyunun mobilde çalışıp çalışmadığı sayfasında yazar."
+    }
+   ]
+  },
+  "horror": {
+   "intro": "Gıcırdayan kapılar, karanlık koridorlar ve gölgelerde kımıldayan bir şey. Bu bölüm biraz heyecan ve iyi bir “hoppala” anı seven oyuncular için – birçok çocuğun Cadılar Bayramı’nda ya da arkadaşlarıyla pijama partisinde keyif aldığı türden ürkütücü bir eğlence. Pixuvo’da 200’den fazla korku oyunu var.\n\nBunların çoğu ürkütücü yerleri keşfettiğin, ipuçları bulduğun ve dışarı çıkmaya çalıştığın gerilimli macera ve kaçış oyunlarıdır. Bazıları komik mem karakterleri kullanır, bazıları da oyuncak bebekler, mezarlıklar ve perili evler gibi klasik ürkütücü temalara yaslanır. The malevolent mansion of evil, Exhibit of Sorrows, Cursed Dreams, Floppa Scary Horror ve Scary Doll başlamak için kolay seçimler.\n\nHerkes korkmaktan hoşlanmaz ve bu tamamen normal. Korku oyunlarında ani korkutmalar, ürkütücü sesler ve karanlık görüntüler olabilir; bu yüzden daha büyük çocuklara daha uygundurlar ve küçük çocuklar oynamadan önce ebeveynlerin bir göz atması iyi olur. Işıklar açıkken ya da bir arkadaşınla birlikte oynamak işe yarar! Şiddet ya da yetişkin içeriği çağrıştıran ifadeler taşıyan oyunlar yayına girmeden önce elle incelenmek üzere bekletilir; ebeveyn sayfamız daha fazlasını anlatır. Birçok korku oyunu en iyi bilgisayarda ve kulaklıkla oynanır; dokunmatik ekran desteği her oyun sayfasında gösterilir.",
+   "faq": [
+    {
+     "q": "Korku oyunları çocuklar için uygun mu?",
+     "a": "Çocuğa bağlı. Buradaki birçok oyun hafif ürkütücü maceralardır, ama bazılarında ani korkutmalar ve karanlık görüntüler var; bu yüzden daha büyük çocuklara daha uygundurlar ve önce ebeveynlerin kontrol etmesi iyi olur. Ebeveyn sayfamızda daha fazla ipucu var."
+    },
+    {
+     "q": "Buradaki en az korkutucu korku oyunu hangisi?",
+     "a": "Komik mem karakterleri etrafında kurulan oyunlar çoğu zaman korkutucudan çok komiktir. Yine de her oyun farklıdır; emin değilsen önce bir oyunu birlikte deneyin."
+    },
+    {
+     "q": "Ani korkutma (jump scare) nedir?",
+     "a": "İnsanı yerinden sıçratan ani bir görüntü ya da yüksek bir sestir. Birçok korku oyunu bu numarayı kullanır, bu yüzden sesi kısmak oyunu daha az yoğun hâle getirebilir."
+    },
+    {
+     "q": "Kaçış odası tarzında korku oyunları var mı?",
+     "a": "Evet, birçok korku oyunu ürkütücü yerleri keşfetmek ve kaçmak için bulmacalar çözmek üzerine kurulu. The malevolent mansion of evil ve Exhibit of Sorrows göz atabileceğin iki oyun."
+    },
+    {
+     "q": "Bu oyunlar ücretsiz mi?",
+     "a": "Evet. Pixuvo’daki tüm korku oyunları ücretsizdir ve kayıt olmadan tarayıcıda çalışır."
+    }
+   ]
+  },
+  "idle": {
+   "intro": "İşte ellerini klavyeden çektiğinde bile oynamaya devam eden bir oyun tarzı. Idle oyunlarda madenlerin, işçilerin ya da fabrikaların sen beklerken üretmeye devam eder; geri döndüğünde bir sonraki yükseltme için seni bir yığın altın bekler. Pixuvo’da 250 idle oyun var.\n\nFikir hep benzer: küçük başla, kazan, yükselt, daha hızlı büyü. Her birini farklı kılan şey ortamdır: gittikçe daha derine kazabilir, birkaç ağacı koca bir orman işletmesine çevirebilir, bir üs ya da krallık büyütmek için kaynak toplayabilir veya arabaları birleştirip yarıştırabilirsin. Drill to the Core, Lumberjack Idle, Idle Craft 3D, Dominations Idle ve Idle Merge Car and Race listenin üst sıralarındaki oyunlardan birkaçı; Little Commander - Red vs Blue ve Frozenventure da göz atmaya değer.\n\nIdle oyunlar, hızlı refleksler gerekmeden ilerleme görmeyi seven oyuncular için harika. Başka işlerin arasına da kolayca sığarlar: uğra, birkaç yükseltme al, sonra tekrar gel. Basit bir ipucu – harcadığın altın başına en çok kazandıran şeyi yükselt. Birçok idle oyun ilerlemeni kullandığın cihazdaki tarayıcıda kaydeder, bu yüzden aynı cihazda kal. Sadece tıklama ya da dokunma istedikleri için genelde telefon ve tablette iyi çalışırlar; oyunun mobilde çalışıp çalışmadığı sayfasında yazar.",
+   "faq": [
+    {
+     "q": "Idle oyun nedir?",
+     "a": "Aktif olarak oynamadığında bile ilerlemenin devam ettiği bir oyundur. Otomatik altın kazandıran yükseltmeler alır, sonra o altınları daha da hızlı büyümek için kullanırsın."
+    },
+    {
+     "q": "Idle oyunlar ile tıklama oyunları arasındaki fark nedir?",
+     "a": "Tıklama oyunlarında çoğunlukla kendin tıklayarak kazanırsın, idle oyunlar ise zamanla kendi kendine kazanır. Birçok oyun ikisini karıştırır: başta tıklarsın, sonra işler otomatiğe bağlanır."
+    },
+    {
+     "q": "Sayfayı kapatınca idle oyun kazanmaya devam eder mi?",
+     "a": "Bazı idle oyunlar uzakta geçirdiğin süreyi hesaplar ve döndüğünde sana altın verir, ama hepsi böyle değildir. Oyuna bağlı."
+    },
+    {
+     "q": "İlk olarak hangi idle oyunları denemeliyim?",
+     "a": "Drill to the Core, Lumberjack Idle ve Idle Merge Car and Race başlamak için üç kolay seçim. Birkaçını ikişer dakika dene ve teması en çok hoşuna gideni seç."
+    },
+    {
+     "q": "Bu oyunlar ücretsiz mi?",
+     "a": "Evet. Pixuvo’daki tüm idle oyunlar ücretsizdir ve hesap gerekmez."
+    }
+   ]
+  },
+  "io": {
+   "intro": "Küçücük başla, kocaman ol ve yem olmamaya çalış. .io oyunlarının ruhu tam olarak bu: birçok oyuncunun aynı arenaya girip kısa turlarda yarıştığı bir tarayıcı oyunu türü. Pixuvo'da .io tarzında 1.800'den fazla oyun var.\n\nAdı, Agar.io ve Slither.io gibi ilk büyük hitlerin kullandığı “.io” uzantılı web adresinden geliyor. O günden beri “.io”, saniyeler içinde katılabileceğin basit ve hızlı arena oyunlarının etiketi oldu. Yılan ve solucan oyunlarında yiyip uzarsın, damla (blob) oyunlarında bir şeyler toplayıp rakiplerini alt ederek büyür ve güçlenirsin; yarışlı, savaşlı ve saklambaçlı parti oyunları da var. Denemek için birkaç oyun: Worm Hunt - Snake game iO zone, Blob Wars, Evo Pit, Diep.io, Hide N Seek.io ve Fallingman.io.\n\n.io oyunlarının en güzel yanı ne kadar hızlı olmaları: kaybedersen birkaç saniye içinde yeni bir tura başlarsın. Büyük oyuncuları izleyerek öğren ve başta kenarlara yakın dur. Çoğu .io oyunu fare ya da ok tuşlarıyla oynanır, bazıları telefon ve tablette de çalışır – oyun sayfasında yazıyor. Pek çok .io oyunu online oynanır; bu yüzden çocuklara diğer oyuncularla asla kişisel bilgi paylaşmamalarını hatırlatın.",
+   "faq": [
+    {
+     "q": "Oyunlarda .io ne anlama geliyor?",
+     "a": "“.io” aslında .com gibi bir web adresi uzantısı. Agar.io ve Slither.io gibi ilk hitlerden sonra bir oyun etiketine dönüştü; bugün saniyeler içinde katılabileceğin basit ve hızlı arena oyunları demek."
+    },
+    {
+     "q": ".io oyunları nedir?",
+     "a": "Bir arenada yarıştığın hızlı tarayıcı oyunlarıdır; genelde büyüyerek, puan toplayarak ya da diğer oyunculardan daha uzun hayatta kalarak kazanırsın. Her tur kısa sürdüğü için hemen yeniden oynayabilirsin."
+    },
+    {
+     "q": "Başlamak için hangi .io oyunları iyi?",
+     "a": "Worm Hunt - Snake game iO zone, Diep.io, Hide N Seek.io ve Fallingman.io ilk seçim için iyi. Turlar kısa olduğundan birkaçını denemek çok kolay."
+    },
+    {
+     "q": ".io oyunları gerçek kişilere karşı mı oynanır?",
+     "a": "Birçok .io oyunu diğer oyuncularla online oynanır, bazılarında ise bilgisayar rakipler vardır. Ebeveynler oyuna önce bir göz atabilir ve çocuklara kişisel bilgi paylaşmamalarını hatırlatabilir."
+    },
+    {
+     "q": "Bu oyunlar ücretsiz mi?",
+     "a": "Evet. Pixuvo'daki tüm .io oyunları ücretsizdir ve hesap açmadan tarayıcında açılır."
+    }
+   ]
+  },
+  "jigsaw": {
+   "intro": "Son parçayı yerine oturtup bütün resmin ortaya çıkmasını izlemek gibisi yok. Online yapboz oyunları sana bu hissi, parçalar koltuğun altında kaybolmadan yaşatır. Pixuvo'da tarayıcıda oynayabileceğin 1.500'den fazla ücretsiz yapboz var.\n\nResimler çocukların sevdiği hemen her şeyi kapsıyor: Animal Explorer Puzzle ve Axolotl Jigsaw Picture Puzzle'da hayvanlar, Small Aliens - Jigsaw'da uzaylılar, Halloween Puzzle'da mevsim manzaraları, Gymnastics Jigsaw Jam'de ise spor. Puzzles for Kids ve Jigsaw Sort da denenecekler arasında. Bazı oyunlar klasik fikre farklı bir dokunuş katıyor, yani yeni bir şey istediğinde tarz değiştirebilirsin.\n\nGerçek yapboz tutkunlarının hilesi online'da da işe yarar: önce kenarları ve köşeleri yap, sonra kalan parçaları renklerine göre ayır. Birçok oyun parça sayısını seçmene izin verir; az parçayla başla, hızlandıkça artır. Bazıları bitmiş resmin silik bir görüntüsünü arka planda gösterir – yeni başlayanlar için büyük bir yardım. Yapbozlar sakin ve sessizdir; gün sonunda dinlenmek ya da annenle babanla yan yana oynamak için harika. Parçaları sürüklemek için sadece fare ya da parmağın yeter ve bu oyunların çoğu telefonda veya tablette de çalışır; emin olmak için oyun sayfasına bak. Daha fazla zekâ oyunu için bulmaca kategorisinin tamamına göz at.",
+   "faq": [
+    {
+     "q": "Küçük çocuklar için hangi yapbozlar iyi?",
+     "a": "Puzzles for Kids ve Animal Explorer Puzzle gibi hayvanlı yapbozlar küçükler için sevimli ve yumuşak bir başlangıç. Oyun izin veriyorsa az parça seç."
+    },
+    {
+     "q": "Yapboz nasıl daha hızlı tamamlanır?",
+     "a": "Önce çerçeveyi kur, sonra kalan parçaları renge veya desene göre grupla. Her parçanın nereye ait olduğunu bilmek için bitmiş resme sık sık bak."
+    },
+    {
+     "q": "Yapbozun kaç parçalı olacağını seçebilir miyim?",
+     "a": "Birçok yapboz oyunu başlamadan önce parça sayısını seçmene izin verir. Az parçayla başla, hızlandıkça daha fazlasını dene."
+    },
+    {
+     "q": "Online yapbozlar tablette çalışır mı?",
+     "a": "Parçaları parmakla sürüklemek dokunmatik ekranlarda çok rahattır ve birçok yapboz telefon ve tablette çalışır. Mobil desteği olup olmadığını oyun sayfası gösterir."
+    },
+    {
+     "q": "Pixuvo'daki yapboz oyunları ücretsiz mi?",
+     "a": "Evet, Pixuvo'daki tüm yapbozlar tarayıcıda ücretsiz oynanır, kayıt gerekmez."
+    }
+   ]
+  },
+  "mahjong": {
+   "intro": "Birbirinin aynısı iki taşı bul, tıkla ve kaybolmalarını izle. Mahjong solitaire sakin, renkli ve gözlerini çalıştırmak için harika bir oyun. Pixuvo'da 300'e yakın mahjong oyunu var.\n\nÇoğu aynı basit kurala dayanır: eşleşen iki taşı ancak ikisi de serbestse kaldırabilirsin – üstünde başka taş olmayacak ve en az bir yanı açık olacak. Amaç bütün dizilimi temizlemek. Bazı sürümler geleneksel taşları kullanır, bazıları ise yeni temalar ve resimlerle gelir. Mahjong Connect oyunları biraz farklı işler: taşlar tahtada düz durur ve en fazla iki kez dönen bir çizgiyle bağlanabilen iki taşı eşleştirebilirsin. Diğerleri üst üste dizme ya da ayırma gibi farklı dokunuşlar ekler. Başlamak için iyi seçimler: Mahjong Classical, Mahjong Garden, Mahjong Sweet Connection, Mahjong Pair Up ve Mahjong Tower.\n\nYeni başlayanlar için iyi bir strateji, önce en yüksek yığınlardaki ve uzun sıralardaki taşları temizlemektir, çünkü en çok taşı onlar kapatır. Oyunda ipucu varsa kullan – öğrenmekte utanılacak bir şey yok! Mahjong tıklayarak ya da dokunarak oynanır ve çoğu sürümde süre baskısı yoktur; bu yüzden bilgisayarda, tablette ve birçok telefonda rahatça oynanır. Bir oyunun mobilde çalışıp çalışmadığı sayfasında yazıyor.",
+   "faq": [
+    {
+     "q": "Mahjong solitaire nasıl oynanır?",
+     "a": "Serbest olan – üstü kapalı olmayan ve sağ ya da sol yanı açık – birbirinin aynısı iki taşa tıklayarak onları kaldır. Bütün dizilimi temizlediğinde kazanırsın."
+    },
+    {
+     "q": "Mahjong ile Mahjong Connect arasındaki fark nedir?",
+     "a": "Mahjong solitaire'de taşlar katmanlar halinde üst üste dizilir. Mahjong Connect'te ise taşlar düz durur ve en fazla iki dönüşlü bir çizgiyle birleştirilebilen iki taşı eşleştirebilirsin."
+    },
+    {
+     "q": "Bu, Çin'in geleneksel mahjong oyunuyla aynı mı?",
+     "a": "Tam olarak değil. Geleneksel oyun genellikle dört kişiyle taşlarla oynanır; mahjong solitaire ise aynı taş resimlerini kullanan tek kişilik bir eşleştirme bulmacasıdır."
+    },
+    {
+     "q": "Eşleşme kalmadığında ne yapmalıyım?",
+     "a": "Oyunda varsa ipucu veya karıştır seçeneğini kullan ya da baştan başla. Bir dahaki sefere en yüksek yığınları önce temizlemeye çalış ki daha az taş kapalı kalsın."
+    },
+    {
+     "q": "Bu oyunlar ücretsiz mi?",
+     "a": "Evet. Pixuvo'daki her mahjong oyunu tarayıcıda ücretsiz oynanır."
+    }
+   ]
+  },
+  "match-3": {
+   "intro": "İki şekeri yer değiştir, üçünü yan yana getir ve patlat! 3'lü eşleştirme oyunları saniyeler içinde anlaşılır, ama her bölümde daha da ilginç hale gelir. Pixuvo'da bunlardan 2.300'den fazla var.\n\nKural her yerde aynı: yan yana duran parçaların yerini değiştirip aynı türden üç ya da daha fazlasını bir sıraya getir. Dört veya beş eşleştirirsen genelde bütün sıraları temizleyen ya da bir alanı patlatan özel parçalar kazanırsın. Şekerler ve parıl parıl mücevherler klasik temalardır, ama okyanus, yemek ve başka temalar da bulacaksın; bazı oyunlar formülü birleştirme ya da dekorasyon gibi yeni bir şeyle karıştırır. Hızlı bir başlangıç için: Candy Match Saga 2, Sweet Blast, Super Candy Jewels, Gemcrafter ve Ocean Crash.\n\nYeni mi başlıyorsun? Önce tahtanın altına yakın eşleşmelere bak, çünkü aşağı düşen parçalar kendiliğinden ekstra kombolar oluşturabilir. Özel parçaları gerçekten ihtiyacın olduğu ana sakla. 3'lü eşleştirme oyunları kısa molalar için mükemmeldir, fareyle ya da parmakla harika oynanır; bu yüzden birçoğu tablet ve telefona da çok uygun. Bir oyunun mobilde çalışıp çalışmadığı sayfasında yazıyor.",
+   "faq": [
+    {
+     "q": "3'lü eşleştirme oyunu nedir?",
+     "a": "Aynı türden üç ya da daha fazla parçayı yan yana getirmek için parçaların yerini değiştirdiğin bir bulmaca oyunudur. Eşleşen parçalar kaybolur, yenileri düşer ve her bölümün hedefine ulaşmaya çalışırsın."
+    },
+    {
+     "q": "3'lü eşleştirme oyunlarında özel parçalar nasıl yapılır?",
+     "a": "Çoğu oyunda aynı anda dört ya da beş parça eşleştirince bir sırayı, bir sütunu veya koca bir alanı temizleyebilen özel bir parça oluşur."
+    },
+    {
+     "q": "Şeker temalı 3'lü eşleştirme oyunları var mı?",
+     "a": "Evet, şeker klasik 3'lü eşleştirme temalarından biri ve bu kategoride tatlı görünümlü çok sayıda tahta var. Candy Match Saga 2 ve Sweet Blast denemek için iki iyi seçim."
+    },
+    {
+     "q": "Neden önce alttan eşleştirmeliyim?",
+     "a": "Alttaki eşleşmeler üstteki her şeyin düşmesini sağlar ve bu çoğu zaman bedava bonus eşleşmeler yaratır. Üstteki eşleşmeler ise sadece birkaç parçayı oynatır."
+    },
+    {
+     "q": "Bu oyunlar ücretsiz mi?",
+     "a": "Evet. Pixuvo'daki tüm 3'lü eşleştirme oyunları ücretsizdir, kayıt gerekmez."
+    }
+   ]
+  },
+  "math": {
+   "intro": "Matematik illa çalışma kâğıdı mı olmalı? Matematik oyunlarında doğru cevap bir şeyleri harekete geçirir: bir dövüşçü yumruğunu indirir, bir canavar karnını doyurur, bir yarış arabası öne fırlar. Pixuvo'da sayıları çocukların gerçekten oynamak istediği bir meydan okumaya dönüştüren 700'den fazla ücretsiz matematik oyunu var.\n\nOyunlar pek çok beceriyi kapsıyor. Aritmetik oyunlarında toplama, çıkarma, çarpma ve bölme alıştırması yaparsın. Düello tarzı oyunlar işlemleri bir kapışmaya çevirir; hızlı zihinden hesap sana üstünlük sağlar. 2048 gibi sayı bulmacaları ise hızdan çok mantıkla ilgilidir. Denemek için birkaç oyun: Kobadoo Arithmetic, Kids Math Online, Math Fight Club, Math Battle ve Number Sums. Birçok oyun işlem türünü veya zorluğu seçmene izin verir; bu da onları hem küçükler hem büyükler için kullanışlı kılar.\n\nEn iyi sonuç için şu anda öğrendiğin konuya uyan bir oyun seç – küçük sayıları toplayan bir birinci sınıf öğrencisinin ihtiyacı, çarpım tablosuyla uğraşan bir altıncı sınıf öğrencisinden farklıdır. On dakikalık kısa ve düzenli oturumlar tek bir uzun oturumdan daha çok işe yarar. Anne babalar ve öğretmenler çocukların yanına oturup bunu dostça bir yarışmaya çevirebilir. Çoğu matematik oyunu fare, klavye ya da cevaba dokunarak oynanır. Tablette mi oynuyorsun? Birçok oyun destekliyor; hangilerinin desteklediğini oyun sayfası gösterir. Daha fazla zekâ oyunu bulmaca kategorisinde.",
+   "faq": [
+    {
+     "q": "Matematik oyunları çocukların öğrenmesine gerçekten yardımcı olur mu?",
+     "a": "Matematik oyunları bol bol hızlı alıştırma ve anında geri bildirim sağlar; bu da çarpım tablosu gibi bilgilerin akılda kalmasına yardım eder. En iyi sonucu okul çalışmasıyla birlikte, kısa ve düzenli oturumlarda verir."
+    },
+    {
+     "q": "Çarpım tablosu çalışmak için hangi matematik oyunları iyi?",
+     "a": "Çarpmayı seçebildiğin ve önce yavaş başlayıp sonra hızlanan oyunlara bak. Math Fight Club, Math Battle ve Kobadoo Arithmetic başlamak için kolay seçenekler."
+    },
+    {
+     "q": "Küçük çocuklar için matematik oyunları var mı?",
+     "a": "Evet, birçok matematik oyunu basit toplama ve saymayla başlar, çoğunda zorluğu da seçebilirsin. Kids Math Online ve Kobadoo Arithmetic denemek için iki iyi oyun."
+    },
+    {
+     "q": "Çocuklar burada hangi matematik becerilerini çalışabilir?",
+     "a": "Toplama, çıkarma, çarpma, bölme, sayı mantığı ve zihinden hesap hızı. 2048 gibi sayı bulmacaları da sayı duygusunu geliştirir."
+    },
+    {
+     "q": "Çocuklar matematik oyunlarını tablette oynayabilir mi?",
+     "a": "Birçok matematik oyununda cevaba dokunman yeterli, bu yüzden telefon ve tablette iyi çalışırlar. Bir oyunun mobilde çalışıp çalışmadığı sayfasında yazıyor."
+    }
+   ]
+  },
+  "maze": {
+   "intro": "Sol, sağ, çıkmaz sokak, geri dön – ve birden çıkış tam önünde. Labirent oyunları dünyanın en eski bulmacalarından biri ve ekranda da hâlâ çok eğlenceli. Pixuvo'da tarayıcında çözebileceğin 190'dan fazla ücretsiz labirent oyunu var.\n\nHer labirent kâğıda çizilmez. Bazıları bir karakteri çıkışa götürdüğün, yukarıdan bakılan klasik labirentlerdir. Bazıları ise bir topu dolambaçlı yollarda yönlendirip deliklere düşürmemeye çalıştığın top yuvarlama bulmacalarıdır; bazılarında da kendine özgü yol bulma oyunları var. Şu anda listenin başında Maze Escape Hero, Maze Evolution HTML, MarbleMaze2, Roll Ball: Hole Puzzle, Maze Control HD ve Snake Way yer alıyor.\n\nKâşiflerin uzun zamandır kullandığı bir hile: bir elini hep duvarda tut. Hep aynı duvarı, sağı ya da solu takip edersen basit bir labirentin çıkışına er geç ulaşırsın. Bir başka ipucu da harekete geçmeden önce labirente çıkıştan geriye doğru bakmak. Labirent oyunları küçük çocuklar için harikadır, çünkü stres yaratmadan planlama ve uzamsal düşünme becerisi kazandırır. Genelde ok tuşlarıyla ya da fareyle veya parmağınla sürükleyerek hareket edersin. Telefonda ya da tablette misin? Birçok oyun orada da çalışır; oyun sayfasına bak. Daha fazla mantık oyunu bulmaca kategorisinde seni bekliyor.",
+   "faq": [
+    {
+     "q": "Labirent çözmenin hilesi nedir?",
+     "a": "Birçok basit labirentte bir duvarı hep aynı tarafında tutarak sürekli takip edersen çıkışa ulaşırsın. Çıkıştan geriye doğru plan yapmak da işe yarar."
+    },
+    {
+     "q": "Labirent oyunları çocuklar için iyi mi?",
+     "a": "Evet, planlama, sabır ve uzamsal düşünme çalıştırırlar. Küçük ve basit labirentler küçükler için yumuşak bir başlangıçtır."
+    },
+    {
+     "q": "Bilyeli labirent oyunu nedir?",
+     "a": "Bilyeli labirentte bir topu yollar boyunca yuvarlar ve deliklere düşürmemeye çalışırsın. Hızlı bir başlangıç için: MarbleMaze2 ve Roll Ball: Hole Puzzle."
+    },
+    {
+     "q": "Labirent oyunları nasıl kontrol edilir?",
+     "a": "Çoğu ok tuşlarıyla, fareyle ya da parmakla sürükleyerek oynanır. Her oyunun kontrolleri oyun sayfasında yazıyor."
+    },
+    {
+     "q": "Pixuvo'daki labirent oyunları ücretsiz mi?",
+     "a": "Evet, Pixuvo'daki her labirent oyunu ücretsizdir ve kayıt olmadan tarayıcında çalışır."
+    }
+   ]
+  },
+  "memory": {
+   "intro": "Bir kartı çevir, ne olduğunu aklında tut, bir başkasını çevir… eşi köşede miydi, yoksa ortada mı? Hafıza oyunlarına başlamak çok kolay ve beynin için gerçek bir antrenman. Pixuvo'da tarayıcında oynayabileceğin 600'den fazla ücretsiz hafıza oyunu var.\n\nKlasiği kart eşleştirme oyunudur: bütün kartlar ters durur ve çiftleri bulmak için her seferinde iki kart çevirirsin. Sıralama oyunları farklı bir hafıza türünü sınar – renklerden ya da seslerden oluşan bir diziyi izler ve tekrarlarsın, dizi de her turda uzar. Başka oyunlar sayılar ve konumlar için hafızayı çalıştırır; farkı bulma oyunları ise hafızayı dikkatli bakmayla birleştirir. Başlamak için iyi seçimler: Memory Cards, Funny Animals Memory Game, Flag Memory Match, Kobadoo Numbers, Three Cups Game ve The Kitchen - Spot the differences.\n\nDaha iyi olmak için gördüğünü içinden sessizce söylemeyi dene (“kedi, sol üst”) – kelimeler resimlerin akılda kalmasına yardım eder. Az kartla başla, geliştikçe kart ekle. Hafıza oyunları her yaşa uygundur ve anne babalarla çocukların sırayla oynaması için eğlenceli bir seçimdir. Sadece fare ya da dokunma yeter; birçoğu telefon ve tablette de çalışır – oyun sayfasında yazıyor. Daha fazla düşündüren oyun bulmaca kategorisinde.",
+   "faq": [
+    {
+     "q": "Hafıza oyunları hafızayı geliştirir mi?",
+     "a": "Çalışma belleğine düzenli alıştırma yaptırırlar, özellikle oyunlar adım adım zorlaştığında. Sık ve kısa oynamak, tek bir uzun oturumdan daha iyi sonuç verir."
+    },
+    {
+     "q": "Çocuklar için hangi hafıza oyunları iyi?",
+     "a": "Kart eşleştirme oyunları kolay öğrenilir, sıralama oyunları ise eğlenceli bir sonraki adım. Önce Funny Animals Memory Game, Memory Cards ya da Flag Memory Match'i dene."
+    },
+    {
+     "q": "Hafıza kartı oyunu nasıl kazanılır?",
+     "a": "Çevirdiğin her kartın yerini hatırla, eşleşmese bile. Kartlara içinden “köpek, ikinci sıra” gibi isimler vermek onları hatırlamayı kolaylaştırır."
+    },
+    {
+     "q": "Anne babalar ve çocuklar hafıza oyunlarını birlikte oynayabilir mi?",
+     "a": "Evet, kart eşleştirme oyunlarını aynı ekranda sırayla oynamak çok kolay. Birlikte birkaç dakika oyun oynamanın güzel bir yolu."
+    },
+    {
+     "q": "Hafıza oyunları ücretsiz mi?",
+     "a": "Evet, Pixuvo'daki tüm hafıza oyunları tarayıcıda ücretsizdir, kayıt gerekmez."
+    }
+   ]
+  },
+  "motorcycle": {
+   "intro": "İki tekerlek, bir sürücü ve fazlasıyla yüksek görünen bir rampa – motor oyunları hız, denge ve cesur akrobasilerin karışımıdır. Pixuvo'da arazi parkurlarından otoyol yarışlarına kadar 700'den fazla ücretsiz motor oyunu var.\n\nEn sevilen tarzlardan biri akrobasi motoru oyunlarıdır: her bölüm atlamalar, çemberler ve tuzaklarla dolu bir engel parkurudur. Sürücünü dengede tutmak için öne ve arkaya yatarsın; iki tekerlek üzerine inmek de işin bütün zorluğu. Moto X3M: Spooky Land bunun güzel bir örneği. Motokros oyunları seni çamurlu toprak pistlere götürür, yol yarışlarında ise asfaltta hız her şeydir; pedal çevirmeyi seviyorsan BMX ve dağ bisikleti oyunları bisikletleri de işin içine katar. Stunt Extreme, Impossible Bike Stunt Ride, Motocross Racing, Real Motor Race Master ve BMX Kid denenecek diğer oyunlar.\n\nAkrobasi oyunlarında en önemli ipucu denge: atlarken ön tekerleği kaldırmak için arkaya yaslan, takla atmamak için öne eğil ve iki tekerlekle aynı anda yere inmeye çalış. Birçok akrobasi bölümü kısadır, yani yeniden denemek çabuk olur. Çoğu ok tuşlarıyla oynanır, bazen yatmak için ek tuşlar da vardır. Tablette mi oynuyorsun? Birçok oyun destekliyor; hangilerinin desteklediğini oyun sayfası gösterir. Motor oyunları daha büyük yarış kategorisinin bir parçası.",
+   "faq": [
+    {
+     "q": "Çocuklar için en iyi motor oyunları hangileri?",
+     "a": "Akrobasi parkurlarını seviyorsan Moto X3M: Spooky Land başlamak için iyi bir oyun; Motocross Racing, Stunt Extreme ve BMX Kid de denemeye değer."
+    },
+    {
+     "q": "Motor akrobasi oyunlarında denge nasıl korunur?",
+     "a": "Rampadan havalanırken arkaya yaslan, motor geriye devrilmeye başlarsa öne eğil. İki tekerlekle aynı anda yere inmeye çalış."
+    },
+    {
+     "q": "Motokros ile yol yarışı oyunları arasındaki fark nedir?",
+     "a": "Motokros oyunları atlamalarla dolu engebeli toprak pistlerde geçer; yol yarışı oyunları ise asfaltta, çoğu zaman trafikte en yüksek hıza ulaşmakla ilgilidir."
+    },
+    {
+     "q": "Motor oyunlarında hangi kontroller kullanılır?",
+     "a": "Genelde hızlanmak, fren yapmak ve yatmak için ok tuşları. Her oyunun kontrolleri oyun sayfasında yazıyor."
+    },
+    {
+     "q": "Motor oyunlarını tablette oynayabilir miyim?",
+     "a": "Birçok motor oyununda dokunmatik düğmeler vardır ve telefon ve tablette çalışır. Oyunun telefon ve tablette çalışıp çalışmadığını oyun sayfası söyler."
+    }
+   ]
+  },
+  "multiplayer": {
+   "intro": "Oyunlar başkalarıyla oynanınca çoğu zaman daha eğlenceli olur ve bu bölüm tam olarak bununla ilgili. Çok oyunculu bir tür değil, bir oynama şekli: oyunu arkadaşlarınla, ailenle ya da online başka oyuncularla paylaşırsın. Pixuvo'da 800'den fazla çok oyunculu oyun var.\n\nİki temel oynama yolu var. Yerel çok oyunculu oyunlarda herkes aynı cihazda oynar – çoğu zaman tek klavyede, bir oyuncu WASD tuşlarıyla, diğeri ok tuşlarıyla. Online çok oyunculu oyunlar ise seni internet üzerinden başka oyuncularla buluşturur. Listenin üst sıralarında Bunny Boy Online, MultiPlayer Pong, Tanknarok, Obby Football Soccer 3D ve Mage Royale gibi oyunlar var. Takım savaşlarından bomba oyunlarına, spordan aksiyona kadar her türden oyun bulacaksın. Nişancı tarzı bazı oyunlar daha büyük çocuklara yöneliktir.\n\nAile oyun gecesi için en kolayı tek ekranda oynanan yerel oyunlar: kurulum yok, yan yana otur ve oyna. Online oyunlarda ebeveynlerin önce oyunun nasıl işlediğine bakması ve çocuklara diğer oyuncularla asla kişisel bilgi paylaşmamalarını hatırlatması iyi olur. Yayıncı bilgi verdiyse oyunun yerel mi online mı olduğu oyun sayfasında yazar; ebeveynler sayfamızda daha fazla ipucu var.",
+   "faq": [
+    {
+     "q": "Arkadaşlarla oynamak için en iyi çok oyunculu oyunlar hangileri?",
+     "a": "Başlamak için MultiPlayer Pong, Tanknarok, Obby Football Soccer 3D ve Mage Royale iyi seçimler. Oyunun tek cihazda mı yoksa online mı oynandığını oyun sayfası gösterir."
+    },
+    {
+     "q": "Yerel ve online çok oyunculu arasındaki fark ne?",
+     "a": "Yerel çok oyunculu oyunlarda herkes aynı cihazda, çoğu zaman tek klavyeyi paylaşarak oynar. Online çok oyunculu oyunlar seni internet üzerinden başka oyuncularla buluşturur."
+    },
+    {
+     "q": "Çok oyunculu oyunları tek bilgisayarda oynayabilir miyiz?",
+     "a": "Evet, birçok oyunda iki oyuncu tek klavyeyi paylaşabilir; genelde biri WASD, diğeri ok tuşlarını kullanır. 2 Kişilik Oyunlar bölümümüzde bunlardan çok daha fazlası var."
+    },
+    {
+     "q": "Online çok oyunculu oyunlar çocuklar için güvenli mi?",
+     "a": "Ebeveynler çocuklar online oynamadan önce oyuna bakmalı ve onlara asla kişisel bilgi paylaşmamalarını hatırlatmalı. Ebeveynler sayfamız Pixuvo'da güvenlik hakkında daha fazlasını anlatıyor."
+    },
+    {
+     "q": "Bu oyunlar ücretsiz mi?",
+     "a": "Evet. Pixuvo'daki tüm çok oyunculu oyunlar tarayıcıda ücretsiz oynanır, hesap açman gerekmez."
+    }
+   ]
+  },
+  "music": {
+   "intro": "Ritme göre dokun, müziğe göre zıpla ya da kendi şarkını yap. Müzik oyunları, güzel bir şarkı çalınca ayaklarını yerinde tutamayan herkes için. Pixuvo'da bunlardan 200'e yakın var.\n\nRitim oyunları büyük bir grup. Notalar akıp giderken doğru anda tuşa basar ya da ekrana dokunursun; bazı oyunlarda karakterin de ritme göre zıplar. Friday Night Funkin' tarzı oyunlar, kısaca FNF, bilinen bir türdür: okları zamanında vurarak müzik düellolarını kazanırsın. Yaratıcı oyunlarda ritimleri, sesleri ve enstrümanları birleştirip kendi şarkını yaparsın; bazıları gerçek enstrümanları tanımana da yardım eder. Hızlı bir başlangıç için: Tile Jumper 3D, FNF - House, Beat Maker Pro, Robot Band, Musical Instruments ve Singing Blob.\n\nSesi aç – müzik oyunları sessiz olmaz! Yanında başkaları varsa kulaklık iyi olur. Ritim oyunlarında kolay bir hızla başla ve ekrana değil ritme odaklan. Klavyeyle oynanan ritim oyunları en iyi bilgisayarda hissettirir, dokunarak oynanan müzik oyunları ise tablette ve telefonda rahat çalışır; telefon ya da tablette çalışıp çalışmadığını oyun sayfasında görebilirsin.",
+   "faq": [
+    {
+     "q": "Ritim oyunları nedir?",
+     "a": "Ritim oyunlarında müziğe uygun zamanda tuşlara basar ya da ekrana dokunursun. Zamanlaman ne kadar iyiyse puanın o kadar yüksek olur."
+    },
+    {
+     "q": "FNF ne demek?",
+     "a": "FNF, Friday Night Funkin'in kısaltması: şarkıyla aynı anda ok tuşlarına basarak müzik düellolarını kazandığın bir ritim oyunu. Bu tarzda hayranların yaptığı pek çok oyun var."
+    },
+    {
+     "q": "Bu oyunlarda kendi müziğimi yapabilir miyim?",
+     "a": "Evet, beat maker oyunlarında ritimleri, sesleri ve enstrümanları karıştırıp kendi küçük şarkını yapabilirsin. Başlamak için Beat Maker Pro iyi bir seçim."
+    },
+    {
+     "q": "Müzik oyunları için ses gerekli mi?",
+     "a": "Evet, çoğu müzik oyunu ses açıkken çok daha kolay ve eğlenceli. Yakında başkaları varsa kulaklık takmak iyi bir fikir."
+    },
+    {
+     "q": "Bu oyunlar ücretsiz mi?",
+     "a": "Evet. Pixuvo'daki tüm müzik oyunları tarayıcıda ücretsiz oynanır."
+    }
+   ]
+  },
+  "ninja": {
+   "intro": "Bir çatıda sessiz adımlar, bir boşluğun üstünden hızlı bir sıçrayış, havada süzülen bir shuriken – ninja oyunları seni hızlı ve sinsi bir kahramana dönüştürür. Pixuvo'da doğrudan tarayıcında çalışan 250'den fazla ücretsiz ninja oyunu var.\n\nÇoğunun ardındaki fikir çeviklik. Bir yerde durup dövüşmek yerine zıplar, atılır ve duvarlara tırmanarak bölümleri geçersin; burada zamanlama güçten daha önemli. Bazıları çatılarda koştuğun yandan kaydırmalı platform oyunları, bazıları ise olabildiğince uzun hayatta kalmaya çalıştığın hayatta kalma oyunları. Kılıç ve hikâye seviyorsan samuray macerası tarzı oyunlar da burada; ama bazılarının görünümü daha karanlık ve en çok büyük çocuklara uygun. Hızlı bir başlangıç için: Rooftop Ninja, Ninja Survival, Samurai. Shoguns Betrayal ve Ashen Ninja - Rust and Katana.\n\nYeni ninjalar bir platform oyunuyla başlamalı, çünkü önce zıplama zamanlamasını, sonra dövüşmeyi öğrenirsin. Çoğu ninja oyununda ok tuşları ya da WASD ile hareket eder, zıplamak veya fırlatmak için tek bir tuş kullanırsın; kontroller oyun sayfasında yazar. Birçoğu telefon ve tablette de çalışır – bunu da oyun sayfası söyler. Daha büyük kapışmalar istediğinde dövüş oyunları kategorisi hemen yanında, aksiyon kategorisinin tamamında ise hızlı reflekslere dayanan binlerce oyun daha var.",
+   "faq": [
+    {
+     "q": "Ninja oyunları nedir?",
+     "a": "Ninja oyunları; zıplayan, tırmanan, gizlice ilerleyen ve shuriken ya da katana gibi silahlar kullanan hızlı, sinsi bir kahramanı oynadığın aksiyon oyunlarıdır. Çeviklik ve zamanlama güçten daha önemlidir."
+    },
+    {
+     "q": "İlk olarak hangi ninja oyununu denemeliyim?",
+     "a": "Bir platform oyunuyla başla ve zıplama zamanlamasına alış – Rooftop Ninja güzel ve kolay bir seçim, Ninja Survival da denenebilir."
+    },
+    {
+     "q": "Ninja ve samuray oyunları arasındaki fark ne?",
+     "a": "Ninja oyunları genelde hıza, gizliliğe ve akrobasiye odaklanır; samuray oyunları ise daha çok kılıç düellolarıyla ve onur temalı hikâyelerle ilgilidir. Pixuvo ikisini de burada listeliyor."
+    },
+    {
+     "q": "Ninja oyunları küçük çocuklar için uygun mu?",
+     "a": "Birçok ninja platform oyunu çizgi film tarzında ve keyifle oynanıyor, ama bazı samuray maceralarının görünümü daha karanlık. Ebeveynler oyunların nasıl incelendiğini ebeveynler sayfamızda okuyabilir."
+    },
+    {
+     "q": "Ninja oyunlarını tablette oynayabilir miyim?",
+     "a": "Birçok oyun telefon ve tablette de çalışır. Oyun sayfasına bak – oyunun dokunmatik ekranı destekleyip desteklemediğini gösterir."
+    }
+   ]
+  },
+  "parking": {
+   "intro": "Biraz geri gel, direksiyonu çevir, aynaya bak… ve tam çizgilerin arasına kay. Park etme oyunları, araba kullanmanın en zor anlarından birini kazanılabilecek bir bulmacaya çevirir. Pixuvo'da tarayıcıda oynayabileceğin 550'den fazla ücretsiz park etme oyunu var.\n\nBirbirinden çok farklı iki türü var. Sürüş tarzı park oyunlarında arabayı kendin sürer ve duvarlara ya da diğer arabalara çarpmadan işaretli yere park edersin. Bulmaca tarzı park oyunları ise kalabalık bir otoparkı yukarıdan gösterir; herkesin çıkabilmesi için arabaları hangi sırayla hareket ettireceğini bulman gerekir. Listenin üst sıralarındaki oyunlardan birkaçı: Parking Jam 3D, Parkings Jaam, Unblock Car Parking, Car Parking 12, Underground Parking ve Ultimate Car Parking Challenge. Hangisinin hangi türden olduğunu oyun açıklaması söyler.\n\nDireksiyon çevirmeyi seviyorsan sürüş tarzı bir oyunun ilk bölümlerinden başla ve yavaş git – iyi park etmenin düşmanı hızdır. Küçük hareketler yap, sık sık dur ve oyunda varsa kamera görünümünü kullan. Mantık seviyorsan bulmaca tarzı park oyunları harika, çünkü birçok bölümde süre baskısı yok ve her hamleni planlayabilirsin. Sürüş tarzı park oyunları ok tuşları ya da WASD ile oynanır, bulmaca olanlar için tıklamak veya dokunmak yeter. Tablette mi oynuyorsun? Birçok oyun bunu destekliyor, hangileri olduğunu oyun sayfası gösterir. Park etme oyunları sürüş oyunları kategorisinin bir parçası.",
+   "faq": [
+    {
+     "q": "Parking jam oyunu nedir?",
+     "a": "Arabaların bir otoparka sıkıştırıldığı ve çarpışmadan çıkmaları için sırayı senin seçtiğin bir bulmaca. Bir park oyununun bu tür bir bulmaca olup olmadığını oyun açıklaması söyler."
+    },
+    {
+     "q": "Park etme oyunlarında nasıl daha iyi olunur?",
+     "a": "Yavaş sür, direksiyonu az az çevir ve açını kontrol etmek için dur. Oyunda varsa yukarıdan bakan kameraya geçmek dar yerleri çok kolaylaştırır."
+    },
+    {
+     "q": "Yeni başlayanlar için hangi park oyunu iyi?",
+     "a": "Bulmaca tarzı parking jam oyunlarına başlamak kolay, çünkü sadece arabalara dokunursun. Kendin sürmek istersen ilk bölümleri yavaş oyna."
+    },
+    {
+     "q": "Park etme oyunlarını telefonda oynayabilir miyim?",
+     "a": "Bulmaca tarzı park oyunları için dokunmak yeter, birçok sürüş tarzı park oyununun da dokunmatik kontrolleri var; bu yüzden pek çoğu telefon ve tablette çalışır. Mobil desteği olup olmadığını oyun sayfası gösterir."
+    },
+    {
+     "q": "Park etme oyunları ücretsiz mi?",
+     "a": "Evet, Pixuvo'daki tüm park etme oyunları tarayıcıda ücretsiz oynanır, hesap gerekmez."
+    }
+   ]
+  },
+  "platformer": {
+   "intro": "Koş, zıpla, kenarı ıskala, yeniden dene – ve sonunda başar. Bu his, en eski ve en sevilen oyun türlerinden biri olan platform oyunlarının kalbi. Pixuvo'da yumuşak maceralardan zorlu meydan okumalara kadar 1.700'den fazla platform oyunu var.\n\nKlasik macera platform oyunları seni boşluklarla, düşmanlarla ve altınlarla dolu bölümlere gönderir. Bulmaca platform oyunlarında zıplamadan önce düşünmen gerekir, çünkü bölümlerde bir hile saklıdır. Bir de gerçek bir meydan okumayı seven ve çok düşmekten yılmayan oyuncular için yapılmış zor platform oyunları var. Super Willie World, Super Onion Boy 2, Red Ball Rolling 2, The Floor Is Lying, The Black And White ya da Snail Odyssey - Hardest Game'i dene.\n\nYeni oyuncular bölümleri kısa ve kontrol noktaları yakın olan bir macera platform oyunuyla başlamalı. Zıplamayı öğren: çoğu oyunda tuşa daha uzun basarsan daha yükseğe zıplarsın. Bilgisayarda genelde ok tuşları ya da WASD ile hareket eder, yukarı ok, W veya boşluk tuşuyla zıplarsın. Bazı platform oyunlarında telefon ve tablet için ekranda butonlar var, ama birçoğu en iyi klavyeyle oynanır – dokunmatik ekranın desteklenip desteklenmediği her oyunun sayfasında yazar.",
+   "faq": [
+    {
+     "q": "Platform oyunu nedir?",
+     "a": "Platform oyunu, her bölümün sonuna ulaşmak için boşluklardan, tuzaklardan ve düşmanlardan kaçarak platformlar arasında koşup zıpladığın bir oyundur."
+    },
+    {
+     "q": "Yeni başlayanlar için iyi platform oyunları hangileri?",
+     "a": "Bölümleri kısa ve kontrol noktaları yakın olan platform oyunlarını seç, en zorlarını sonraya bırak. Super Willie World, Super Onion Boy 2 ve Red Ball Rolling 2 ile başlayabilirsin."
+    },
+    {
+     "q": "Platform oyunlarında hangi tuşlar kullanılır?",
+     "a": "Çoğunda hareket için ok tuşları ya da WASD, zıplamak için yukarı ok, W veya boşluk tuşu kullanılır. Kontroller genelde oyunun başlangıç ekranında gösterilir."
+    },
+    {
+     "q": "Platform oyunlarını telefonda oynayabilir miyim?",
+     "a": "Bazı platform oyunlarının dokunmatik butonları var ve telefon ile tablette çalışıyor, ama birçoğu en kolay klavyeyle oynanır. Oyunun mobilde çalışıp çalışmadığı sayfasında yazar."
+    },
+    {
+     "q": "Bu oyunlar ücretsiz mi?",
+     "a": "Evet. Pixuvo'daki her platform oyunu ücretsiz ve tarayıcında anında açılır."
+    }
+   ]
+  },
+  "pool": {
+   "intro": "Istakaya tebeşir sür, atışı hizala ve bir top ileriyi düşün. Bilardo oyunları sakin, akıllıca ve biraz da gerçekten eğlenceli bir geometri ödevi gibi. Pixuvo'da bunlardan 360'tan fazla var.\n\nEn bilinen türü 8 top bilardo: bir oyuncu düz renkli topları, diğeri çizgili topları alır; kendi toplarının hepsini ve ardından siyah 8 numaralı topu deliğe sokan kazanır. Klasik masalar için 8-Ball Pool Pro, PoolClub ya da Billiard King'i dene. Başka tarzlar da var. Üç bant bilardo deliksiz bir masada oynanır ve beyaz topun üç bantta değmesi gerekir; Rus piramidinde ise büyük toplar ve dar delikler kullanılır – 3 Cushion Billards ve Billiards 3D Russian Pyramid denenecek iki oyun. Simply Billiards, Pooking Master ve 8 Ball Pool Free de denemeye değer masalar.\n\nYeni başlıyorsan nişan çizgisi gösteren bir oyun seç. Topun bantlardan nasıl sekeceğini görmene yardım eder. Sonra yumuşak atışlar çalış – çok sert vurmak en sık yapılan hata. Bilgisayarda fareyle nişan alırsın, tablette ya da telefonda parmağınla sürüklersin. Birçok bilardo oyunu dokunmatik ekranı destekler; hangilerinin desteklediğini oyun sayfası söyler.",
+   "faq": [
+    {
+     "q": "Pool ile bilardo arasındaki fark ne?",
+     "a": "Bilardo, ıstakalı oyunların genel adı; pool ise altı delikli bir masada oynanan popüler bir türü. Üç bant bilardo gibi bazı bilardo oyunlarında hiç delik yoktur."
+    },
+    {
+     "q": "8 top bilardo nasıl oynanır?",
+     "a": "Bir oyuncu düz renkli topları, diğeri çizgili topları alır. Kazanmak için kendi grubunun hepsini ve ardından siyah 8 numaralı topu deliğe sokarsın; ama 8 numarayı erken sokarsan oyunu kaybedersin."
+    },
+    {
+     "q": "Arkadaşıma karşı bilardo oynayabilir miyim?",
+     "a": "Evet, birçok bilardo oyununda iki oyuncu aynı cihazda sırayla oynayabilir, bazıları online maç da sunar. Oyunun hangi modları olduğunu oyun sayfası gösterir."
+    },
+    {
+     "q": "Beyaz top neden sürekli deliğe giriyor?",
+     "a": "Muhtemelen çok sert vuruyorsun. Daha az güç kullan ve beyaz topun çarptıktan sonra nereye yuvarlanacağını görmek için nişan çizgisini izle."
+    },
+    {
+     "q": "Bilardo oyunları telefonda çalışır mı?",
+     "a": "Birçok bilardo oyununda sürükleyerek nişan alınır ve bu telefon ile tablette rahat çalışır. Telefon ve tablette çalışıp çalışmadığını oyun sayfası söyler."
+    }
+   ]
+  },
+  "puzzle": {
+   "intro": "Bazı oyunlar parmaklarını sınar, bulmaca oyunları ise beynini. Blokları yerine oturtmak, deseni fark etmek, en kısa yolu bulmak – zor bir bölümün birden anlam kazandığı anın kendine has bir keyfi var. Pixuvo'da 15.000'den fazla ücretsiz bulmaca oyunu var; sitedeki en büyük kategori bu.\n\nBu kadar büyük olduğu için bulmaca bölümü daha küçük gruplara ayrılmış. Yapboz oyunlarında resimleri yeniden birleştirirsin; 2048 oyunları numaralı karoları kaydırıp birleştirmekle ilgili; gizli nesne oyunları kalabalık bir sahnede arama yapmanı ister; blok bulmacalarda şekilleri yerleştirip temizlersin; labirent oyunları çıkış yolunu bulmanı ister; matematik oyunları toplamaları bir yarışa çevirir; hafıza oyunları ise hatırlamayı ve eşleştirmeyi çalıştırır. Listenin üst sıralarında Drop Planets, Merge Royal, Seat the Guests, Memory Cards, Flag Memory Match, Kobadoo Arithmetic ve Math Fight Club gibi oyunlar var.\n\nBulmacalarda yeniysen, hafıza eşleştirme ya da kolay bir yapboz gibi bölümleri kısa olan ve yavaş yavaş zorlaşan oyunlarla başla. Meydan okumayı seven büyük çocuklar, birkaç hamle ilerisini düşünmeyi ödüllendiren mantık ve birleştirme oyunlarını deneyebilir. Çoğu bulmaca için sadece fare ya da dokunmak yeter, bu yüzden her cihazda rahat oynanır. Tablette mi oynuyorsun? Birçok oyun bunu destekliyor, hangileri olduğunu oyun sayfası gösterir.",
+   "faq": [
+    {
+     "q": "Bulmaca oyunları beyne iyi gelir mi?",
+     "a": "Bulmaca oyunları plan yapmanı, desenleri fark etmeni, hatırlamanı ve hatalardan sonra yeniden denemeni sağlar; bu da düşünme becerileri için harika bir alıştırma. Ekran başında sakin vakit geçirmenin de güzel bir yolu."
+    },
+    {
+     "q": "Yeni başlayanlar için iyi bulmaca oyunları hangileri?",
+     "a": "Memory Cards gibi hafıza eşleştirme oyunları, kolay yapbozlar ve yumuşak birleştirme oyunları harika bir başlangıç. Bölümleri kısa ve yavaş yavaş zorlaşıyor."
+    },
+    {
+     "q": "Ne tür bulmaca oyunları var?",
+     "a": "Pixuvo bunları yapboz, 2048, gizli nesne, blok, labirent, matematik ve hafıza oyunları olarak gruplar; bir de tek bir kutuya sığmayan pek çok mantık bulmacası var."
+    },
+    {
+     "q": "Bulmaca oyunlarını ücretsiz nerede oynayabilirim?",
+     "a": "Tam burada, Pixuvo'da – 15.000'den fazla bulmaca oyunu indirme ve kayıt olmadan tarayıcında ücretsiz çalışır."
+    },
+    {
+     "q": "Bulmaca oyunlarını telefonda veya tablette oynayabilir miyim?",
+     "a": "Çoğu bulmaca için dokunmak yeter, bu yüzden pek çoğu telefon ve tablette iyi çalışır. Cihazında çalışıp çalışmadığını görmek için oyun sayfasına bak."
+    }
+   ]
+  },
+  "quiz": {
+   "intro": "Kaç bayrağın adını sayabilirsin? Şekilleri, renkleri ve emojileri biliyor musun? Bilgi yarışmaları bildiklerini bir meydan okumaya çevirir ve Pixuvo'da 330'dan fazlası olduğu için kendini sınayacak her zaman yeni bir şey var.\n\nBazı bilgi yarışmaları bayraklar, şekiller ya da emojiler gibi bilgileri öğrenmekle ilgili; genel kültür oyunları ise pek çok konudan soruları karıştırır. Diğerleri bilgiden çok gözünü ve dikkatini sınar, bazılarına da bir kelime bulmacası dokunuşu eklenmiş. Kobadoo serisi başlamak için iyi bir yer – Kobadoo Flags, Kobadoo Shapes ve Kobadoo Emojis listenin üst sıralarında – Fight Trivia, WhatQuiz, How Many Mice ve CrossWord da denenecekler arasında.\n\nBilgi yarışmaları tek başına da eğlenceli, ama aileyle daha da güzel. Sırayla cevap verin ya da süre bitmeden cevabı ilk kim bağıracak diye yarışın. Bir konu sana yeniyse yanlış yapmaktan korkma – öğrenmenin yolu bu. Çoğu bilgi yarışması için tıklamak ya da dokunmak yeter, bu yüzden bilgisayarda, tablette ve birçok telefonda rahat çalışır; dokunmatik ekranın desteklenip desteklenmediğini her oyunun sayfası gösterir.",
+   "faq": [
+    {
+     "q": "Çocuklar için iyi bilgi yarışmaları hangileri?",
+     "a": "Başlamak için Kobadoo Flags ve Kobadoo Shapes gibi Kobadoo oyunlarını dene. Büyük çocuklar Fight Trivia veya WhatQuiz'i de deneyebilir."
+    },
+    {
+     "q": "Bayrak bilgi yarışması var mı?",
+     "a": "Evet – Kobadoo Flags denenebilecek oyunlardan biri. Bayrak bilgi yarışmaları coğrafya öğrenmenin eğlenceli bir yolu."
+    },
+    {
+     "q": "Bilgi yarışmalarını aile olarak oynayabilir miyiz?",
+     "a": "Evet! Sırayla cevap verin ya da tek ekranda takım olarak oynayın. Bilgi yarışmaları birlikte yeni şeyler öğrenmenin harika bir yolu."
+    },
+    {
+     "q": "Bilgi yarışmaları çocukların öğrenmesine yardım eder mi?",
+     "a": "Bilgi yarışmaları, bilgileri tekrar etmenin ve daha iyi hatırlamanın eğlenceli bir yolu. Yanlış cevaplar da öğrenmenin bir parçası."
+    },
+    {
+     "q": "Bu oyunlar ücretsiz mi?",
+     "a": "Evet. Pixuvo'daki tüm bilgi yarışmaları tarayıcında ücretsiz oynanır, hesap gerekmez."
+    }
+   ]
+  },
+  "racing": {
+   "intro": "Üç, iki, bir – başla! Yarış oyunları hızın heyecanı ve bitiş çizgisini ilk geçmenin keyfiyle ilgili. Pixuvo'da 5.000'den fazla ücretsiz yarış oyunu var; ister araba yarıştırmak, ister arazi motoruna binmek, ister diğer sürücülere çarpmak iste, seni bekleyen bir pist mutlaka var.\n\nKategori birkaç şeride ayrılıyor. Araba oyunları şehir arabalarından süper arabalara ve go-kartlara kadar her şeyi kapsar. Drift oyunları virajlarda havalı bir şekilde yan kaymakla ilgili. Motor oyunları rampalar, taklalar ve denge getirir – Moto X3M: Spooky Land ve Motocross Racing ilk sürüş için iyi seçimler. Bunların dışında kovalamaca oyunları, çarpışma derbileri ve kısa yarışlar da var – Endless Car Chase, Demolition Derby Life, BMG! CrashDay 2025 ve Mini Car Racing denenecek birkaç oyun.\n\nİlk olarak hangi yarışı denemelisin? Yeniysen, uzun yarışlardan önce kontrolleri öğrenebilmek için pistleri ya da bölümleri kısa bir oyun seç. Bulmacaları da seviyorsan akrobatik motor oyunları harika, çünkü her atlayışın zamanlaması tam tutmalı. Bilgisayarda çoğu yarış oyunu ok tuşları ya da WASD ile oynanır, bazı 2 kişilik oyunlar da klavyeyi iki sürücü arasında paylaştırır. Birçoğu telefon ve tablette de çalışır – bunu oyun sayfası söyler. Daha yavaş ve dikkatli direksiyon mu arıyorsun? Sürüş oyunları kategorisinde park etme, kamyon ve otobüs oyunları var.",
+   "faq": [
+    {
+     "q": "Çocuklar için en iyi yarış oyunları hangileri?",
+     "a": "Moto X3M: Spooky Land, Motocross Racing ve Mini Car Racing güzel bir ilk tur olur. Yeniysen bölümleri kısa ve kontrolleri basit oyunlara bak."
+    },
+    {
+     "q": "Yarış oyunları araba kullanmayı geliştirir mi?",
+     "a": "Yarış oyunları tepki süresini ve el-göz koordinasyonunu çalıştırabilir, ama gerçek araba kullanmakla aynı şey değildir ve trafik kurallarını öğretmez. Ehliyet dersi için değil, eğlence için."
+    },
+    {
+     "q": "Tek bilgisayarda iki kişilik yarış oyunları var mı?",
+     "a": "Evet, bazı yarış oyunlarında iki oyuncu klavyeyi paylaşabilir; biri WASD, diğeri ok tuşlarını kullanır. İki oyuncunun desteklenip desteklenmediğini oyun sayfası gösterir."
+    },
+    {
+     "q": "Yarış oyunları ile sürüş oyunları arasındaki fark ne?",
+     "a": "Yarış oyunları hızla ve saate ya da diğer yarışçılara karşı kazanmakla ilgili. Sürüş oyunları ise araba park etmek ya da kamyonla yük taşımak gibi dikkatli direksiyon kullanmaya odaklanır."
+    },
+    {
+     "q": "Yarış oyunlarını telefonda oynayabilir miyim?",
+     "a": "Birçok yarış oyununda ekranda butonlar ya da eğme kontrolü var ve telefon ile tablette çalışıyor. Telefon ya da tablette çalışıp çalışmayacağını oyun sayfasında görebilirsin."
+    }
+   ]
+  },
+  "retro": {
+   "intro": "İri pikseller, bip bip ses efektleri ve ustalaşması şaşırtıcı derecede zor basit kurallar – retro oyunlar ilk ev bilgisayarlarının ve atari salonu makinelerinin tarzını geri getiriyor. Pixuvo'da tarayıcında emülatör olmadan, hiçbir şey kurmadan oynayabileceğin 550'den fazla ücretsiz retro oyun var.\n\nRetro, eski ve sıkıcı demek değil. Bu oyunların birçoğu klasik dönemden fikirler ödünç alan yepyeni yapımlar. Uzay oyunları, maceralar, zindan keşifleri ve hatta tilt (pinball) bulacaksın; birçoğu tek bir basit fikrin ne kadar eğlenceli olabileceğini gösteriyor. Başlamak için iyi seçimler: Pixeroids, Star Wing, Shadoworld Adventure, Jungle Game, Dunjun, 3D Pinball - Space Cadet ve Boing Bang.\n\nİlk deneme için, asteroitlerden kaçmak ya da bir topu sektirmek gibi on saniyede anlayacağın tek bir hedefi olan bir oyun seç. Retro oyunlar anne babalarla çocukların birlikte oynaması için harika, çünkü büyükler bu tarzı çoğu zaman tanır ve birkaç püf noktası paylaşabilir. Çoğu sadece ok tuşları ve bir iki butonla oynanır, bu yüzden klavyede kolaydır. Birçoğu telefon ve tablette de çalışır – bunu oyun sayfası söyler. Retro oyunlar arcade kategorisinin bir parçası, yani puan peşinde koşturan başka klasikler bir tık uzağında.",
+   "faq": [
+    {
+     "q": "Retro oyunlar nedir?",
+     "a": "Retro oyunlar eski video oyunlarının görünümünü ve fikirlerini kullanır – piksel grafikler, basit sesler ve net, arcade tarzı kurallar. Bazıları yeniden yapım, birçoğu ise eski tarzda yapılmış yeni oyunlar."
+    },
+    {
+     "q": "Retro oyunları tarayıcımda emülatör olmadan oynayabilir miyim?",
+     "a": "Evet. Pixuvo'daki retro oyunlar doğrudan web tarayıcısında çalışır, yani indirecek ya da kuracak hiçbir şey yok."
+    },
+    {
+     "q": "Pixuvo'da tilt (pinball) oyunu var mı?",
+     "a": "Evet, 3D Pinball - Space Cadet retro kategorisinde yer alıyor ve doğrudan tarayıcıda oynanıyor."
+    },
+    {
+     "q": "Retro oyunlar anne babayla oynamak için uygun mu?",
+     "a": "Kesinlikle. Birçok ebeveyn bu oyun tarzını hatırlıyor ve basit kontroller sayesinde sırayla oynamak ve puanları karşılaştırmak çok kolay."
+    },
+    {
+     "q": "Retro oyunlarda hangi kontroller kullanılır?",
+     "a": "Çoğunda ok tuşları ile boşluk tuşu gibi bir iki buton kullanılır. Kontrollerin tam listesi oyun sayfasında yazar."
+    }
+   ]
+  },
+  "runner": {
+   "intro": "Koş, zıpla, kay, tekrarla – ve duvara çarpma. Koşu oyunları dünya sana doğru hızla gelirken seni hep ileri götürür ve hayatta kaldığın her saniye mesafene ya da puanına eklenir. Pixuvo'da tarayıcıda oynayabileceğin 2.000'den fazla ücretsiz koşu oyunu var.\n\nBilmeye değer birkaç türü var. Sonsuz koşu oyunları hiç bitmez: yol devam eder ve sen bir hata yapana kadar hız yavaş yavaş artar, yani asıl mesele kendi rekorunu geçmek. Bölümlü koşu oyunlarının bir bitiş çizgisi vardır ve yolda çoğu zaman bir sürpriz bulunur; kalabalığını değiştiren kapılar ya da toplanacak eşyalar gibi. Şeritli koşu oyunlarında trenlerden, bariyerlerden ve boşluklardan kaçmak için birkaç şerit arasında geçiş yaparsın. Bir de sıra dışı kahramanları olan tuhaf ve komik oyunlar var. Hızlı bir başlangıç için: Popcorn Race 3D, Spider Evolution Runner Game, Subway Princess Run, 3D laane runner ve Runner Soldiers.\n\nKoşu oyunlarına başlamak kolay, çünkü genelde birkaç tuş yeter: şerit değiştirmek için oklar, zıplamak için yukarı, kaymak için aşağı ya da dokunmatik ekranda tek bir dokunuş veya kaydırma. Bu oyunların çoğu telefonda ya da tablette de çalışır; emin olmak için oyun sayfasına bak. Deneyimli koşuculardan bir ipucu: bir sonraki engelden daha ileriye bak ki tepki verecek zamanın olsun. Koşu oyunları arcade kategorisinin bir parçası; orada puan peşinde koşturan başka hızlı oyunlar da bulabilirsin.",
+   "faq": [
+    {
+     "q": "Sonsuz koşu oyunu nedir?",
+     "a": "Sonsuz koşu oyununda karakterin kendiliğinden koşmaya devam eder ve yol hiç bitmez. Hız artarken engellerden kaçar ve en iyi mesafeni geçmeye çalışırsın."
+    },
+    {
+     "q": "Başlamak için en iyi koşu oyunları hangileri?",
+     "a": "Popcorn Race 3D, Subway Princess Run ve 3D laane runner denemeye değer. Çoğu koşu oyunu ilk dakikada öğrenilir."
+    },
+    {
+     "q": "Koşu oyunlarında nasıl daha iyi olunur?",
+     "a": "Karakterine değil ileriye bak ki engelleri daha erken gör. Hız artınca sakin kal ve son saniye zıplayışları yerine erken ve küçük hareketler yap."
+    },
+    {
+     "q": "Koşu oyunlarını telefonda kaydırarak oynayabilir miyim?",
+     "a": "Birçok koşu oyunu kaydırma ve dokunmayı destekler, pek çoğu da telefon ve tablette çalışır. Oyunun mobilde çalışıp çalışmadığını oyun sayfası gösterir."
+    },
+    {
+     "q": "Koşu oyunları ücretsiz mi?",
+     "a": "Evet, Pixuvo'daki tüm koşu oyunları kayıt olmadan tarayıcıda ücretsiz oynanır."
+    }
+   ]
+  },
+  "shooting": {
+   "intro": "Sabit eller, keskin bir göz ve iyi zamanlama – silah oyunlarının özünde nişan almak var. Pixuvo'da hedef talimlerinden uzay nişancı oyunlarına ve büyük takım savaşlarına kadar 4.000'den fazla ücretsiz silah oyunu var; hepsi tarayıcıda çalışıyor.\n\nSilah oyunlarına çoğu zaman “nişancı oyunları” ya da İngilizcesiyle “shooter” denir ve birkaç tarzda gelirler. Keskin nişancı oyunları sabır ve tek bir kusursuz uzak atışla ilgili. Zombi oyunlarında ağır ağır ilerleyen ölü dalgalarına karşı hayatta kalmaya çalışırsın. FPS oyunları aksiyonu kahramanının gözünden gösterir; Commando Force 2, Strykon ve Battle Shot Elite'te olduğu gibi. Tank oyunlarında askerlerin yerini zırhlı araçlar ve büyük toplar alır, okçuluk oyunları ise yay ve ok getirir. Bu grupların dışında uçan nişancı oyunları, çöp adam savaşları ve daha fazlası var – Fractal Combat X, Stickman Prison Counter Assault, Trap the Convoy ve Quarantine Zombies denemeye değer.\n\nDaha iyi olmak istiyorsan iki şeye odaklan: ateş etmeden önce nişan al ve vurulması zor olman için hareket etmeye devam et. Birçok nişancı oyununda fare hassasiyetini ayarlayabilirsin; hassasiyeti düşürmek çoğu zaman nişanı daha sabit yapar. Bilgisayarda çoğu oyunda WASD ile hareket eder, fareyle nişan alıp ateş edersin. Tablette mi oynuyorsun? Birçok oyun bunu destekliyor, hangileri olduğunu oyun sayfası gösterir. Bazı silah oyunları gerçekçi ve büyük çocuklara daha uygun; şiddet içeren ifadeler taşıyan oyunlar elle incelenmek üzere bekletilir ve oyunları nasıl kontrol ettiğimizi ebeveynler sayfamız anlatır, böylece aileler kendilerine uygun olanı seçebilir.",
+   "faq": [
+    {
+     "q": "Silah oyunlarına ne ad verilir?",
+     "a": "Genelde nişancı oyunları ya da “shooter” denir. Yaygın türleri arasında birinci şahıs nişancı (FPS), üçüncü şahıs nişancı, yukarıdan bakışlı nişancı, shoot 'em up ve keskin nişancı oyunları var."
+    },
+    {
+     "q": "Silah oyunlarında nasıl daha iyi olunur?",
+     "a": "Ateş etmeden önce bir an nişan al, vurulması zor olman için hareket etmeye devam et ve daha sabit nişan için daha düşük bir fare hassasiyeti dene. Kısa alıştırmalar da işe yarar."
+    },
+    {
+     "q": "Silah oyunlarında ADS ne demek?",
+     "a": "ADS, “aim down sights” yani nişangâhtan nişan almak demek: daha hassas nişan almak için silahın nişangâhından bakarsın, genelde farenin sağ tuşunu basılı tutarak."
+    },
+    {
+     "q": "Silah oyunları çocuklar için uygun mu?",
+     "a": "Bu oyuna ve aileye bağlı. Birçok tarayıcı nişancı oyunu çizgi film tarzında, bazıları ise daha gerçekçi; şiddet içeren ifadeler taşıyan oyunlar elle incelenir ve bunun nasıl yapıldığını ebeveynler sayfamız anlatır."
+    },
+    {
+     "q": "Silah oyunlarını telefonda oynayabilir miyim?",
+     "a": "Bazı nişancı oyunlarının dokunmatik kontrolleri var ve telefon ile tablette çalışıyor, ama birçoğu en iyi fare ve klavyeyle oynanır. Telefon ve tablette çalışıp çalışmadığını oyun sayfası söyler."
+    }
+   ]
+  },
+  "simulation": {
+   "intro": "Hiç otobüs kullanmak, süpermarket işletmek ya da kendi yollarını tasarlamak istedin mi? Simülasyon oyunları gerçek hayatta deneyemeyeceğin meslekleri ve dünyaları denemeni sağlar. 3.100'den fazla oyunla keşfedilecek çok şey var.\n\nSimülasyonların pek çok çeşidi var. İşletme oyunlarında adım adım büyüyen bir işin başına geçersin. Çiftlik oyunları ekmek, hasat etmek ve hayvanlara bakmakla ilgili; inşaat oyunlarında yollardan roketlere kadar her şeyi yapabilirsin. Bir de meslek ve sürüş simülatörleri ile sahneyi kurup ne olacağını izlediğin serbest (sandbox) oyunlar var. Garden Master, Road Designer, Stack Rocket, Bus Driver Simulator 3D ve Supermarket Simulator Dream Store denenecek birkaç oyun.\n\nNereden başlayacağını bilmiyor musun? Kendine bir günlüğüne ne olmak isteyeceğini sor. Dükkân sahibi mi? Bir mağaza ya da işletme oyunu dene. Çiftçi mi? Çiftlik oyunlarına git. İnşaatçı mı? İnşaat oyunlarını dene. Simülasyon oyunları çoğu zaman arcade oyunlarından daha uzundur ve birçoğu ilerlemeni oynadığın cihazdaki tarayıcıya kaydeder. Büyük 3D simülatörler en iyi bilgisayarda çalışır, daha hafif olanlar ise telefon ve tablette de çalışır – hangileri olduğunu oyun sayfası gösterir.",
+   "faq": [
+    {
+     "q": "Simülasyon oyunları nedir?",
+     "a": "Simülasyon oyunları araba kullanmak, dükkân işletmek ya da çiftçilik gibi gerçek hayattan bir şeyi taklit eder ve kendin denemeni sağlar. Bazıları gerçekçi, bazıları ise eğlenceli ve şakacı."
+    },
+    {
+     "q": "Ne tür simülasyon oyunları var?",
+     "a": "Pixuvo'da işletme, çiftlik ve inşaat oyunlarının yanı sıra sürüş, meslek ve serbest (sandbox) simülatörleri bulacaksın. Her ana türün kendi bölümü var."
+    },
+    {
+     "q": "Simülasyon oyunlarında ilerlemem kaydedilir mi?",
+     "a": "Birçok simülasyon oyunu ilerlemeni aynı cihazdaki tarayıcına kaydeder, ama bu oyuna bağlı. Tarayıcı verilerini silersen ya da cihaz değiştirirsen ilerleme kaybolabilir."
+    },
+    {
+     "q": "Simülasyon oyunlarını telefonda oynayabilir miyim?",
+     "a": "Daha hafif simülasyon oyunları çoğu zaman telefon ve tablette çalışır, büyük 3D simülatörler ise en iyi bilgisayarda çalışır. Dokunmatik ekranın desteklenip desteklenmediğini her oyunun sayfası gösterir."
+    },
+    {
+     "q": "Bu oyunlar ücretsiz mi?",
+     "a": "Evet. Pixuvo'daki her simülasyon oyunu ücretsiz ve indirme olmadan tarayıcıda çalışır."
+    }
+   ]
+  },
+  "snake": {
+   "intro": "Ye, büyü ve ne yaparsan yap, kendi kuyruğunu ısırma. Yılan oyunu şimdiye kadar yapılmış en basit oyun fikirlerinden biri ve hâlâ bu kadar sevilmesinin sebebi de tam olarak bu. Pixuvo'da klasik ızgaralı versiyondan başka oyuncuların solucanlarıyla dolu büyük online arenalara kadar 250'den fazla ücretsiz yılan oyunu var.\n\nKlasik tarz tamamen planlamayla ilgili: yılanın kendi kendine ilerler, sen sadece yönünü değiştirirsin ve her yem seni uzatır; tahta doldukça kendine bir kaçış yolu bırakman gerekir. .io tarzı ise farklı. Büyük bir arenada başka yılanlarla birlikte kıvrılarak dolaşırsın ve onların kafası senin gövdene değerse oyun dışı kalırlar – yani büyük olmak iyi, ama akıllı olmak daha iyi. Worms Zone, Gusano.io Worms Snake Game, Color Snake 3D Online, Snake Arena 2 ve Snake Frenzy Color Clash denemeye değer.\n\nYeni başlayanlar yavaş başlamalı: başta kenarlara yakın dur, geniş dönüşler yap ve arena oyunlarında büyüyene kadar kalabalıktan uzak dur. Bilgisayarda ok tuşları ya da fareyle yön verirsin; dokunmatik ekranlarda genelde kaydırır ya da sürüklersin. Bu oyunların çoğu telefonda ya da tablette de çalışır; emin olmak için oyun sayfasına bak. Yılan oyunları arcade kategorisine ait; orada yüksek puan peşinde koşturan başka hızlı oyunlar da seni bekliyor.",
+   "faq": [
+    {
+     "q": "Yılan oyunları nasıl oynanır?",
+     "a": "Durmadan ilerleyen bir yılanı yönlendirir, uzamak için yem yer ve duvarlara ya da kendi kuyruğuna çarpmamaya çalışırsın. Arena versiyonlarında başka oyuncuların yılanlarından da kaçarsın."
+    },
+    {
+     "q": ".io yılan oyunu nedir?",
+     "a": "Çoğu zaman başka oyuncularla online oynanan, büyük ve ortak bir arenada geçen yılan oyunu. Worms Zone ve Gusano.io Worms Snake Game denenecek iki oyun."
+    },
+    {
+     "q": "Yılan oyununda iyi bir taktik ne?",
+     "a": "Geniş dönüşler yap, kendine açık bir yol bırak ve yemin peşinden dar yerlere girme. Arena oyunlarında başkalarını tuzağa düşürmeye çalışmadan önce dikkatlice büyü."
+    },
+    {
+     "q": "Yılan oyunlarını telefonda oynayabilir miyim?",
+     "a": "Birçok yılan oyunu kaydırma ya da sürükleme ile oynanır, bu yüzden dokunmatik ekranlarda rahat çalışır. Mobil desteği olup olmadığını oyun sayfası gösterir."
+    },
+    {
+     "q": "Yılan merdiven nedir?",
+     "a": "Yılan merdiven, zar atıp merdivenlerden yukarı çıktığın ve yılanlardan aşağı kaydığın klasik bir masa oyunu. Snake n Ladders Game bu kategoride yer alıyor ve nasıl oynandığını oyun sayfası anlatıyor."
+    }
+   ]
+  },
+  "sniper": {
+   "intro": "Nefes al, artıyı hizala, doğru anı bekle… ve atışı yap. Keskin nişancı oyunları silah oyunlarının sabırlı yüzü: koşup ateş etmek yerine dürbünden bakar ve tek bir hassas uzak atışı değerlendirirsin. Pixuvo'da tarayıcıda oynanan 150'den fazla ücretsiz keskin nişancı oyunu var.\n\nÇoğu keskin nişancı oyunu sana bir görev ve taranacak bir sahne verir. Dürbünle yakınlaştırır, doğru hedefi bulur ve fark edilmeden ya da süre bitmeden ateş edersin. Bazılarına bir bulmaca unsuru eklenmiş; doğru hedefi bulmak işin bir parçası. Bazıları ise seni Vahşi Batı'ya ya da uzaya götürür. Başlamak için iyi seçimler: Courageous Sniper, Ghost Sniper, Sniper Shot, West Frontier Sharpshooter 3D ve Sniper Wars Find the Criminal.\n\nİyi nişancılığın sırrı sabır. Ateş etmeden önce hedeflerin nereye hareket ettiğini izle; rüzgârın ya da mesafenin önemli olduğu oyunlarda biraz önüne veya üstüne nişan al. Önce tüm sahneyi taramak çoğu zaman en iyi açıyı gösterir. Bilgisayarda keskin nişancı oyunlarında fareyle nişan alır ve yakınlaştırırsın, bu yüzden en iyi fareyle oynanırlar. Tablette mi oynuyorsun? Birçok oyun bunu destekliyor, hangileri olduğunu oyun sayfası gösterir. Bazı keskin nişancı oyunları gerçekçi ve büyük çocuklara daha uygun; ebeveynler oyunların nasıl incelendiğini ebeveynler sayfamızda okuyabilir. Keskin nişancı oyunları silah oyunları kategorisinin bir parçası.",
+   "faq": [
+    {
+     "q": "Keskin nişancı oyunları nedir?",
+     "a": "Keskin nişancı oyunları uzak mesafeden hassas atışlarla ilgili silah oyunlarıdır. Dürbünden nişan alır, doğru hedefi seçer ve her atışı değerlendirirsin."
+    },
+    {
+     "q": "Keskin nişancı oyunlarında nasıl daha iyi nişan alınır?",
+     "a": "Acele etme, hedeflerin nasıl hareket ettiğini izle ve yavaşladıklarında ateş et. Rüzgârın ya da mesafenin olduğu oyunlarda hedefin biraz önüne veya üstüne nişan al."
+    },
+    {
+     "q": "Gerçekçi şiddet içermeyen keskin nişancı oyunları var mı?",
+     "a": "Bazı keskin nişancı oyunlarında gerçekçi sahneler yerine çizgi film hedefleri, uzaylılar ya da bulmacalar var; oyun açıklaması genelde bir fikir verir. Ebeveynler oyunları nasıl incelediğimizi ebeveynler sayfamızda görebilir."
+    },
+    {
+     "q": "Keskin nişancı oyunları tablette çalışır mı?",
+     "a": "Bazıları çalışır, ama keskin nişancı oyunları hassas nişan için genelde en iyi fareyle oynanır. Telefon ya da tablette çalışıp çalışmayacağını oyun sayfasında görebilirsin."
+    },
+    {
+     "q": "Pixuvo'da keskin nişancı oyunları ücretsiz mi?",
+     "a": "Evet, Pixuvo'daki her keskin nişancı oyunu indirme olmadan tarayıcında ücretsiz oynanır."
+    }
+   ]
+  },
+  "solitaire": {
+   "intro": "Sadece sen, bir deste kart ve sakin birkaç dakika. Sabır oyunu olarak da bilinen solitaire, bilgisayarın klasik kart oyunlarından biri ve Pixuvo'da 120'den fazla versiyonu var.\n\nÇoğu kişinin aklına gelen klasik Klondike: yedi sütun kart, renkleri sırayla değiştirerek aşağı doğru dizilir ve her rengi sıralamak için aslar yukarı taşınır. Klondike Solitaire 4 Suits ve Klondike Kings Solitaire denenecek iki oyun. Örümcek (Spider) Solitaire iki deste kullanır ve papazdan asa kadar tam seriler kurmanı ister; TriPeaks ise daha hızlıdır: açık karttan bir büyük ya da bir küçük kartları seçerek üç kart piramidini temizlersin. Ultimate Solitaire Classic, Spider Solitaire Classic Ver, Tripeaks Solitaire Classic ve Solitaire Holiday listenin üst sıralarındaki diğer oyunlar.\n\nYeni başlayanlar, kazanması daha kolay olan tek kart çekmeli Klondike ile başlamalı. İşe yarar bir ipucu: her zaman önce kapalı kartları açmaya çalış ve elinde hazır bir papaz yoksa bir sütunu boşaltmak için acele etme. Solitaire tıklayarak, sürükleyerek ya da dokunarak oynanır ve birçok versiyon tablette ve telefonda rahat çalışır – cihazında çalışıp çalışmadığını görmek için oyun sayfasına bak.",
+   "faq": [
+    {
+     "q": "Klondike solitaire nasıl oynanır?",
+     "a": "Yedi sütunu, siyah 7'nin üstüne kırmızı 6 gibi renkleri sırayla değiştirerek aşağı doğru diz ve kartları astan papaza kadar dört temel desteye taşı. Bütün kartlar renklerine göre sıralanınca kazanırsın."
+    },
+    {
+     "q": "Klondike, Spider ve TriPeaks arasındaki fark ne?",
+     "a": "Klondike tek deste ve sırayla değişen renklerle oynanır, Spider iki deste ve papazdan asa tam serilerle, TriPeaks ise bir büyük ya da bir küçük kartlarla kart piramitlerini temizlemekle ilgili. En hızlı öğrenileni TriPeaks."
+    },
+    {
+     "q": "Her solitaire oyunu kazanılabilir mi?",
+     "a": "Hayır, bazı dağıtımlar en iyi oyuncular tarafından bile çözülemez. Takılırsan yeni bir oyun başlat – bu da solitaire'in bir parçası."
+    },
+    {
+     "q": "Solitaire'i telefonda oynayabilir miyim?",
+     "a": "Birçok solitaire oyunu dokunmayı ve sürüklemeyi destekler, telefon ve tablette rahat çalışır. Dokunmatik ekranın desteklenip desteklenmediğini her oyunun sayfası gösterir."
+    },
+    {
+     "q": "Bu oyunlar ücretsiz mi?",
+     "a": "Evet. Pixuvo'daki tüm solitaire oyunları ücretsiz; kayıt da indirme de yok."
+    }
+   ]
+  },
+  "sports": {
+   "intro": "Stadyum bileti gerekmez: skor tabelası tam tarayıcında. Pixuvo'da 2.300'den fazla spor oyunu var ve kısa molalar için harikalar, çünkü bir maç, bir penaltı ya da bir tur genelde sadece birkaç dakika sürer.\n\nEn büyük grupların kendi sayfaları var. Futbol oyunları penaltıları, serbest vuruşları ve kısa maçları kapsar. Basketbol oyunları potaya atış ve smaçla ilgili. Bilardo oyunları açı hesabını sınar, golf oyunları ise rahatlatıcı mini golften uzun vuruşlara kadar uzanır. Parkur tarzı akrobasiler ve gerçek hayatta olmayan pek çok komik fizik sporu da bulacaksın.\n\nListenin üst sıralarında Curve Kick, Swipy Basketball, Golf Orbit, Billiards on Ice ve Ragdoll Mega Dunk gibi oyunlar var. Nasıl seçmeli? Hızlı bir şey istiyorsan penaltı ya da pota atışı gibi tek tuşla oynanan bir atış oyunu dene. Birine karşı oynamayı seviyorsan “2 kişilik” yazan oyunlara bak – birçoğunda iki kişi tek klavyeyi paylaşabilir. Çoğu spor oyunu fare ya da basit kaydırmalarla oynanır, bu yüzden tablette ya da telefonda da denemesi kolay; hangilerinin mobilde çalıştığını oyun sayfası gösterir.",
+   "faq": [
+    {
+     "q": "Çocuklar için en iyi spor oyunları hangileri?",
+     "a": "Kısa ve basit oyunlar harika bir başlangıç: futbol için Curve Kick ve Penalty Kick Wiz, basketbol için Swipy Basketball, golf için Golf Orbit. Daha zor spor oyunlarının üzerine kurulduğu zamanlamayı ve nişan almayı öğretirler."
+    },
+    {
+     "q": "Burada hangi sporları oynayabilirim?",
+     "a": "Futbol, basketbol, bilardo ve golfün kendi bölümleri var; ana listede de birçok başka spor ve akrobasi oyunu karışık olarak yer alıyor."
+    },
+    {
+     "q": "İki oyuncu tek bilgisayarda spor oyunu oynayabilir mi?",
+     "a": "Evet, birçok spor oyununda bir kişinin WASD, diğerinin ok tuşlarını kullandığı iki kişilik bir mod var. Oyunun iki oyuncuyu destekleyip desteklemediğini oyun sayfası söyler."
+    },
+    {
+     "q": "Spor oyunlarını telefonda oynayabilir miyim?",
+     "a": "Birçok spor oyunu kaydırma ya da dokunmayla oynanır ve telefon ile tablette rahat çalışır. Telefon ve tablette çalışıp çalışmadığını oyun sayfası söyler."
+    },
+    {
+     "q": "Bu oyunlar ücretsiz mi?",
+     "a": "Evet. Pixuvo'daki tüm spor oyunları ücretsiz ve kayıt olmadan, hiçbir şey indirmeden tarayıcında açılır."
+    }
+   ]
+  },
+  "strategy": {
+   "intro": "Önce düşün, sonra harekete geç. Strateji oyunları plan yapmayı seven çocukları ödüllendirir, çünkü en hızlı parmak değil en akıllı hamle kazanır. Pixuvo'da 1.000'den fazla strateji oyunu var ve birçoğu kendi hızında oynanabilir.\n\nBüyük bir alt grup kule savunma: düşman dalgalarını durdurmak için bir yol boyunca kuleler yerleştirirsin. Kale ve savaş oyunlarında ordu kurar ya da surlarını korursun. Bazıları bulmacaya daha yakın, hamlelerin doğru sırasını bulman gerekir; bazı büyük oyunlarda ise yönetilecek üsler ve birlikler var. Nereden başlayacağını bilmiyor musun? Empire Tower Defense - Zombie Fortress, King Rugni Tower Defense, Defend the Castle, Castel War 3D, Tower Crush ve Babel Tower'ı dene.\n\nDaha önce strateji oyunu oynamadıysan başlamak için en dostane yer kule savunma, çünkü kurallar net ve her bölüm yeni bir fikir öğretir. Ardından kaynakları da yönettiğin bir kale oyunu dene. Çoğu strateji oyunu fareyle oynanır, bu yüzden en rahat seçim bilgisayar; ama birçoğu tablette de çalışır. Oyunun dokunmatik ekranı destekleyip desteklemediğini oyun sayfası gösterir.",
+   "faq": [
+    {
+     "q": "Strateji oyunları nedir?",
+     "a": "Strateji oyunları planlamanın en önemli olduğu oyunlardır. Ne inşa edeceğine, birliklerini nereye koyacağına ya da hangi hamleyi yapacağına sen karar verirsin; iyi kararlar hızlı reflekslerden daha çok kazandırır."
+    },
+    {
+     "q": "Yeni başlayanlar için hangi strateji oyunları kolay?",
+     "a": "Kule savunma oyunları harika bir ilk adım, çünkü her bölüm yeni bir fikir tanıtır. Defend the Castle da başlamak için iyi bir seçim."
+    },
+    {
+     "q": "Strateji oyunları çocukların düşünme becerilerine iyi gelir mi?",
+     "a": "Birçok strateji oyunu ileriyi planlamanı, kaynakları yönetmeni ve hatalardan ders çıkarmanı ister; bunlar faydalı beceriler. Her oyun gibi en keyiflisi makul ölçüde oynamak."
+    },
+    {
+     "q": "Strateji oyunları tablette çalışır mı?",
+     "a": "Birçoğu çalışır, özellikle sıra tabanlı ve kule savunma oyunları; ama bazı büyük oyunlar fareyle daha kolay. Telefon ve tablette çalışıp çalışmadığını oyun sayfası söyler."
+    },
+    {
+     "q": "Bu oyunlar ücretsiz mi?",
+     "a": "Evet, Pixuvo'daki her strateji oyunu ücretsiz ve hesap açmadan tarayıcında açılır."
+    }
+   ]
+  },
+  "tank": {
+   "intro": "Ağır zırh, dönen bir taret ve ekranı sarsan bir top – tank oyunları savaş alanının en sağlam makinelerinden birinin komutasını sana verir. Pixuvo'da tarayıcıda oynanan 250'den fazla ücretsiz tank oyunu var.\n\nTank oyunlarının birkaç biçimi var. Savaş oyunlarında bir tankın sürücü koltuğuna oturursun, arena oyunlarında çatışmalar küçük ve hızlıdır, strateji ve kule savunma oyunları ise nişan almaktan çok birlikleri nereye yerleştireceğini planlamakla ilgili. Şu anda Tiger Tank, Tanks Blitz, Steel Skirmish, Micro Tank Battle, Age of Tanks Warriors: TD War, Paper Panzer ve Tanks 2D War and Heroes listenin üst sıralarında.\n\nBirçok tank oyunundaki temel beceri, aynı anda iki şeyi kontrol etmek: tankın gövdesi bir yöne giderken taret başka bir yöne nişan alır. Topu hedefte tutarken daire çizerek sürmeyi çalış. Duvarları ve tepeleri siper olarak kullan; yandan görünümlü birçok oyunda merminin kavis çizerek uçtuğunu unutma, uzak hedefler için daha yukarı nişan al. Çoğu tank oyununda WASD ya da ok tuşlarıyla sürer, fareyle nişan alırsın; birçoğu telefon ve tablette de çalışır – bunu oyun sayfası söyler. Tank oyunları silah oyunları kategorisinin bir parçası ve birçoğu strateji severlere de uygun.",
+   "faq": [
+    {
+     "q": "Tank oyunları nedir?",
+     "a": "Tank oyunlarında sürülen, nişan alan ve top ateşleyen zırhlı araçların komutası sende. Bazıları hızlı savaşlar, bazıları ise strateji ve kule savunma oyunları."
+    },
+    {
+     "q": "Tank oyunlarında nasıl nişan alınır?",
+     "a": "Yukarıdan bakışlı çoğu tank oyununda WASD ile sürer, tareti fareyle nişanlarsın. Yandan görünümlü oyunlarda mermiler kavis çizerek uçar, bu yüzden uzak hedefler için daha yukarı nişan alırsın."
+    },
+    {
+     "q": "Tank strateji oyunları var mı?",
+     "a": "Evet, bazı tank oyunları sadece ateş etmekten çok planlamanın ve birlik yerleştirmenin önemli olduğu strateji ya da kule savunma oyunları. Age of Tanks Warriors: TD War denenebilecek oyunlardan biri."
+    },
+    {
+     "q": "İki oyuncu tank oyunlarını birlikte oynayabilir mi?",
+     "a": "Bazı tank oyunlarında tek klavyede 2 kişilik mod var, bazıları ise online. Yayıncı bilgi verdiyse hangisinin olduğunu oyun sayfası söyler."
+    },
+    {
+     "q": "Tank oyunları ücretsiz mi?",
+     "a": "Evet, Pixuvo'daki tüm tank oyunları tarayıcıda ücretsiz, kayıt gerekmez."
+    }
+   ]
+  },
+  "tower-defense": {
+   "intro": "Düşmanlar yol boyunca ilerliyor ve önlerinde yalnızca senin kulelerin var. Klasik bir strateji tarzı olan kule savunmanın bütün fikri bu. Pixuvo'da seçebileceğin 280'den fazla kule savunma oyunu var.\n\nHer oyun aynı temel döngüyü izler: düşmanlar bir yol boyunca dalgalar hâlinde gelir, sen de yolun yanına kuleler ya da kahramanlar yerleştirirsin; durdurduğun her düşman sana daha çok ve daha iyi kule için altın kazandırır. Değişen şey ortam: kaleler ve krallıklar, tanklar, biraz ürkütücü olabilen zombiler ya da komik meme karakterleri. King Rugni Tower Defense, Tower Siege, Age of Tanks Warriors: TD War, Zombi Defense ve Brainrot Tower Defense listenin üst sıralarındaki oyunlardan birkaçı; Hot Barrel Cats, Lilliput War, Limited Defense ve Ashen Watch da keşfedilecekler arasında. Bazı kule savunma oyunlarında haritada hareket ettirebileceğin kahramanlar da var.\n\nYeni başlayanlar için ipucu: ilk kulelerini yolun kıvrıldığı yerlere koy, çünkü düşmanlar orada menzilde daha uzun kalır. Kule türlerini karıştır – bazıları hızlı, bazıları sert vurur ya da düşmanları yavaşlatır – ve çok dağılmadan önce yükselt. Kule savunma oyunları genelde fareyle tıklayarak oynanır, bu yüzden en çok bilgisayara uygun; ama birçoğu tablette dokunarak da rahat oynanır. Oyunun mobilde çalışıp çalışmadığı sayfasında yazar.",
+   "faq": [
+    {
+     "q": "Kule savunma oyunu nedir?",
+     "a": "Düşmanların bir yol boyunca dalgalar hâlinde yürüdüğü ve onları durdurmak için yolun yanına kuleler kurduğun bir strateji oyunu. Düşmanları yenmek daha fazla kule ve yükseltme için para kazandırır."
+    },
+    {
+     "q": "Kulelerimi nereye yerleştirmeliyim?",
+     "a": "En iyi yerler köşeler ve kıvrımlar, çünkü düşmanlar orada menzilde daha uzun kalır. Başta birkaç güçlü kule kur ve dağılmadan önce onları yükselt."
+    },
+    {
+     "q": "İlk kule savunma oyunu olarak hangisi iyi?",
+     "a": "Başlamak için King Rugni Tower Defense ve Tower Siege iyi seçimler; Brainrot Tower Defense de denenebilir."
+    },
+    {
+     "q": "Kule savunma oyunlarını tablette oynayabilir miyim?",
+     "a": "Birçok kule savunma oyununda kule yerleştirmek için dokunmak yeter, bu yüzden tablette ve telefonda çalışır. Dokunmatik ekranın desteklenip desteklenmediğini her oyunun sayfası gösterir."
+    },
+    {
+     "q": "Bu oyunlar ücretsiz mi?",
+     "a": "Evet. Pixuvo'daki tüm kule savunma oyunları tarayıcında ücretsiz oynanır, kayıt gerekmez."
+    }
+   ]
+  },
+  "truck": {
+   "intro": "Kocaman tekerlekler, ağır bir yük ve tümseklerle dolu bir yol – kamyon oyunları araçlarını büyük ve gürültülü seven çocuklar için. Pixuvo'da tarayıcıda çalışan 700'den fazla ücretsiz kamyon oyunu var.\n\nKamyon kullanmak araba kullanmaktan çok farklı hissettirir. Daha yavaş hızlanır, daha zor durur ve her virajda daha geniş döner; bu yüzden dikkatli sürmek hızdan daha önemli. Bazı kamyon oyunları yükü düşürmeden teslim etmekle ilgili; bazıları seni çamurlu ve tepelik arazilere götürür, askeri araçlara bindirir ya da büyük kamyonları akrobasi pistlerine gönderir. Çiftlik ve şehir işleri de var, hatta kamyonlu sakin bulmaca ve hafıza oyunları bile. Şu anda Offroad Masters Challenge, Army Truck Driving, Truck Simulator Stunt Extreme, 3D city tractor garbage sim ve Draw Truck Endless listenin üst sıralarında.\n\nHer kamyon şoförü için bir ipucu: erken fren yap. Ağır araçların durmak için daha fazla alana ihtiyacı var ve acele edersen yokuşlarda geri kaymak ya da devrilmek kolay. Geniş dönüşler yap ve yük taşırken tümseklerden yavaş geç. Çoğu kamyon oyunu ok tuşları ya da WASD ile oynanır, ek tuşlar oyun sayfasında yazar. Birçoğu telefon ve tablette de çalışır – bunu oyun sayfası söyler. Kamyon oyunları otobüs ve park etme oyunlarıyla birlikte sürüş oyunları kategorisinin bir parçası.",
+   "faq": [
+    {
+     "q": "Kamyon oyunları nedir?",
+     "a": "Kamyon oyunlarında kamyonlar, askeri kamyonlar ve traktörler gibi büyük araçları kullanırsın. Birçoğu yük teslim etmek, arazide tepeler tırmanmak ya da akrobasi yapmakla ilgili."
+    },
+    {
+     "q": "Kamyon oyunlarında nasıl iyi sürülür?",
+     "a": "Erken fren yap, geniş dönüşler yap ve özellikle yük taşırken tümseklerde yavaşla. Kamyonlar ağır, bu yüzden arabalardan daha fazla alana ihtiyaç duyarlar."
+    },
+    {
+     "q": "Arazi kamyonu oyunu nedir?",
+     "a": "Düz sokaklar yerine toprak yollarda, çamurda ve tepelerde geçen bir kamyon oyunu. Offroad Masters Challenge denenebilecek oyunlardan biri."
+    },
+    {
+     "q": "Küçük çocuklar için kamyon oyunları var mı?",
+     "a": "Evet, bazı kamyon oyunları hızlı sürüş içermeyen basit bulmaca ya da hafıza oyunları – Army Trucks Memory denenebilir. Bölümleri kısa olan sürüş oyunları da iyi bir sonraki adım."
+    },
+    {
+     "q": "Kamyon oyunlarını tablette oynayabilir miyim?",
+     "a": "Birçok kamyon oyununun dokunmatik kontrolleri var ve telefon ile tablette çalışıyor. Telefon ya da tablette çalışıp çalışmayacağını oyun sayfasında görebilirsin."
+    }
+   ]
+  },
+  "tycoon": {
+   "intro": "Tek bir hamburger tezgâhıyla başla, koca bir restoran zinciriyle bitir. İşletme oyunları neredeyse hiçten bir şey büyütmekle ilgili; keyfi de sayıların, dükkânların ve binaların büyüdüğünü izlemekte. Pixuvo'da 340'tan fazla işletme oyunu var.\n\nTemel döngü basit: para kazan, yükseltmelere harca, daha da fazla kazan. Yönettiğin şey oyundan oyuna değişir: bir restoran, bir tersane, bir teknoloji şirketi, bir polis karakolu ya da bir fantezi dünyası. Başlamak için Burger Restaurant Simulator 3D, Shipbuilding Tycoon, Silicon Valley - Idle Tycoon, My Mini Police ve Dinosaur World'ü dene. Birçok işletme oyunu aynı zamanda “idle” oyun; yani sen mola verirken işin para kazanmaya devam eder.\n\nİşletme oyunları biriktirmenin ve harcamanın nasıl işlediğini öğrenmenin yumuşak bir yolu: en ucuz yükseltmeyi hemen almak her zaman en iyi seçim değildir. İyi bir ipucu, önce en çok kazandıran şeyi yükseltmek. Fareyle rahat oynanırlar, daha hafif olanların birçoğu tablette ve telefonda da çalışır – cihazında çalışıp çalışmadığını görmek için oyun sayfasına bak.",
+   "faq": [
+    {
+     "q": "İşletme oyunu nedir?",
+     "a": "İşletme oyununda restoran, tersane ya da lunapark gibi bir işi yönetir ve büyütürsün. Para kazanır, yükseltmeler alır ve adım adım genişlersin."
+    },
+    {
+     "q": "İşletme oyunları ile idle oyunlar arasındaki fark ne?",
+     "a": "İşletme oyunları bir işi yönetmekle ilgili, idle oyunlar ise sen tıklamayı bıraksan bile kazanmaya devam eder. Silicon Valley - Idle Tycoon gibi birçok oyun ikisi birden."
+    },
+    {
+     "q": "İlk olarak hangi işletme oyununu denemeliyim?",
+     "a": "Restoran işletme oyunlarını anlamak kolay, çünkü herkes bir restoranın nasıl işlediğini bilir. Burger Restaurant Simulator 3D ve Dinosaur World denenecek iki oyun."
+    },
+    {
+     "q": "İşletme oyunları para hakkında bir şey öğretir mi?",
+     "a": "Oyun yoluyla evet: daha iyi bir yükseltme için biriktirmenin hemen harcamaktan daha kârlı olabileceğini öğrenirsin. Sayılar elbette hayalî."
+    },
+    {
+     "q": "Bu oyunlar ücretsiz mi?",
+     "a": "Evet. Pixuvo'daki tüm işletme oyunları ücretsiz; hesap da indirme de gerekmez."
+    }
+   ]
+  },
+  "word": {
+   "intro": "Ekrana dağılmış harfler ve bir yerlerinde saklı bir kelime. Kelime oyunları okumayı, hecelemeyi ya da sadece bir şeyleri çözmeyi seven herkes için bulmacalar ve Pixuvo'da bunlardan 340'tan fazla var.\n\nNeredeyse her oyuncu tipine göre bir kelime oyunu var. Kelime avı ve doldurma oyunları bir tabloda saklı kelimeleri bulmanı ister, çengel bulmaca oyunları ipuçları ve doldurulacak kareler verir, adam asmaca ise klasik tahmin oyunu. Anagram ve harf oyunlarında verilen harflerden kelimeler türetirsin, resim eşleştirme oyunları küçük çocukların kelimeleri resimlerle ilişkilendirmesine yardım eder, klavye oyunları ise hızı çalıştırır. Şu anda Fillwords: Find All the Words, Crossword Quest 3D, Wordquest Hangman, Rise of Words, Lexora, Match Pictures to Words 3D ve Speed Typer listenin üst sıralarında.\n\nKelime oyunları kelime dağarcığını büyütmenin sinsi bir yolu, çünkü bulduğun her yeni kelime aklında biraz daha iyi kalır. Yeniysen resimli bir oyunla ya da kelime avıyla başla, daha büyük bir meydan okuma istediğinde anagramlara ve çengel bulmacalara geç. Klavye oyunları en kolay gerçek bir klavyeyle oynanır, diğer kelime oyunlarının çoğu ise tablette ve telefonda dokunma ve kaydırmayla çalışır – oyunun mobilde çalışıp çalışmadığı sayfasında yazar.",
+   "faq": [
+    {
+     "q": "Çocuklar için iyi kelime oyunları hangileri?",
+     "a": "Küçük çocuklar resim eşleştirme oyunlarıyla başlayabilir, kelime avı iyi bir yazım alıştırması, adam asmaca da her yaşa uygun eğlenceli bir tahmin oyunu. Hızlı bir başlangıç için: Match Pictures to Words 3D, Fillwords: Find All the Words ve Wordquest Hangman."
+    },
+    {
+     "q": "Kelime oyunları yazım ve kelime dağarcığına yardım eder mi?",
+     "a": "Evet, kelimeleri tekrar tekrar bulmak ve oluşturmak nasıl yazıldıklarını ve ne anlama geldiklerini hatırlamana yardım eder. Okuldaki çalışmanın yerine geçmez, eğlenceli bir ek olur."
+    },
+    {
+     "q": "Adam asmaca nasıl oynanır?",
+     "a": "Gizli bir kelimeyi harf harf tahmin edersin. Her yanlış tahmin resme bir parça ekler; resim tamamlanmadan kelimeyi bulmaya çalışırsın."
+    },
+    {
+     "q": "Kelime oyunları Türkçe mi?",
+     "a": "Oyuna bağlı. Birçoğu İngilizce kelimeler kullanır, bazılarında ise oyun menüsünden başka bir dil seçebilirsin – oyun açıklaması genelde bunu söyler."
+    },
+    {
+     "q": "Hız çalışmak için bir klavye oyunu var mı?",
+     "a": "Evet – Speed Typer denenebilecek oyunlardan biri. Klavye oyunları en iyi gerçek bir klavyeyle oynanır."
+    }
+   ]
+  },
+  "zombie": {
+   "intro": "Yavaşlar, beceriksizler ve çok kalabalıklar. Zombi oyunları ölü sürüsüne karşı hayatta kalmakla ilgili; en iyileri ateş etmeyi planlama, inşa etme ve bolca mizahla karıştırır. Pixuvo'da tarayıcıda oynanan 800'den fazla ücretsiz zombi oyunu var.\n\nZombi dünyası sandığından daha çeşitli. Hayatta kalma oyunları, çoğu zaman dalga dalga gelen düşmanlara karşı olabildiğince uzun dayanmakla ilgili. Bazı oyunlar zombilerin beceriksizliğiyle oynar, bazıları ise daha çok aksiyonlu nişancılığa yönelir. Nereden başlayacağını bilmiyor musun? Quarantine Zombies, Zombie Can't Jump, Zombie Hunter Survival, Guns'n'Glory Zombies, Zombie World ve Zombie Killer'ı dene.\n\nEn iyi hayatta kalma ipucu: asla etrafının sarılmasına izin verme. Hareket etmeye devam et, zombilerin tek bir yönden gelmesi için köşeleri ve kapı aralıklarını kullan; oyun izin veriyorsa dalgalar arasında silahlarını ya da savunmanı yükselt. Çoğu zombi oyununda WASD ile hareket eder, fareyle nişan alırsın; dokunmatik ekranlarda ise basit dokunuşlar yeter. Birçoğu telefon ve tablette de çalışır – bunu oyun sayfası söyler. Zombi oyunları ürkütücü ya da kanlı olabilir, bu yüzden genelde büyük çocuklara daha uygun; şiddet içeren ifadeler taşıyan oyunlar elle incelenmek üzere bekletilir ve bunun nasıl yapıldığını ebeveynler sayfamız anlatır. Zombi oyunları silah oyunları kategorisinin bir parçası.",
+   "faq": [
+    {
+     "q": "Zombi oyunları nedir?",
+     "a": "Zombi oyunları ölü yaratık sürülerine karşı hayatta kalmakla ilgili. Çoğu ateş etmeyi silah yükseltmek ya da savunma kurmak gibi stratejiyle karıştırır."
+    },
+    {
+     "q": "Zombi oyunlarında nasıl daha uzun hayatta kalınır?",
+     "a": "Hareket etmeye devam et, etrafının sarılmasından kaçın ve zombilerin tek taraftan gelmesi için kapı aralıklarını ya da köşeleri kullan. Dalgalar arasında altınlarını yükseltmelere harca."
+    },
+    {
+     "q": "Zombi oyunları çocuklar için çok mu korkutucu?",
+     "a": "Bazıları çizgi film tarzında ve komik, bazıları ise ürkütücü ya da kanlı; bu yüzden en çok büyük çocuklara uygun. Oyunların nasıl incelendiğini ebeveynler sayfamız anlatır."
+    },
+    {
+     "q": "İlk olarak hangi zombi oyununu denemeliyim?",
+     "a": "Başlamak için Quarantine Zombies ve Zombie Hunter Survival'ı dene. Kontrolleri öğrenebilmek için önce dalgaları kısa bir oyun seç."
+    },
+    {
+     "q": "Zombi oyunlarını telefonda oynayabilir miyim?",
+     "a": "Birçok zombi oyununun dokunmatik kontrolleri var ve telefon ile tablette çalışıyor. Oyunun mobilde çalışıp çalışmadığı sayfasında yazar."
+    }
+   ]
+  }
+ },
+ "land": {
+  "2-player-fighting": {
+   "intro": "Evin şampiyonu kim? Bunu tek bilgisayarda iki oyuncu için yapılmış 90’dan fazla dövüş oyunuyla burada çözün. Her maç kısa, hızlı ve kolayca yeniden başlatılabilir; böylece kaybeden her zaman rövanş isteyebilir.\n\nBu oyunların birkaç farklı türü var. Stickman dövüşlerinde ekranda takla atan, yumruk ve tekme savuran basit çöp adamlar yer alır. Arena kapışmalarında rakibini ringin ya da platformun dışına itmeye çalışırsın. Kırmızı eller oyunu gibi refleks oyunları kimin daha hızlı olduğunu ölçer; bazı oyunlar da boks ya da güreş tarzı düellolardır. Genellikle bir oyuncu W, A, S, D tuşlarını, diğeri ok tuşlarını kullanır; birkaç oyun online oyunu da destekler ve yayıncı bilgi verdiyse bu, oyun sayfasında gösterilir.\n\nİlk raunt için Stickman: Fighter 3D, Stickman Dragon Fighting, Two Player Red Hands Game, Boxing Gang Stars ve Neon Slimes’ı dene. Başlamadan önce kaç raunt oynayacağınızda anlaşın. Buradaki dövüşlerin çoğu çizgi film tarzındadır ve şiddet çağrıştıran ifadeler içeren oyunlar Pixuvo’da yayına girmeden önce elle incelenir.",
+   "faq": [
+    {
+     "q": "Çocuklar için en iyi 2 kişilik dövüş oyunları hangileri?",
+     "a": "Çizgi film tarzı oyunlar harika bir başlangıçtır – Neon Slimes, Two Player Red Hands Game ya da Boxing Gang Stars’ı dene. Karakterler basit çöp adamlar olduğu için stickman dövüş oyunları da kolay bir seçimdir."
+    },
+    {
+     "q": "İki oyuncu aynı klavyede dövüşebilir mi?",
+     "a": "Evet, bu oyunların çoğu böyle çalışır: bir oyuncu W, A, S, D tuşlarını, diğeri ok tuşlarını kullanır ve her birinin birkaç saldırı tuşu vardır."
+    },
+    {
+     "q": "Kırmızı eller oyunu nedir?",
+     "a": "İki kişilik bir refleks oyunudur: Bir oyuncu diğerinin ellerine vurmaya çalışır, diğeri de ellerini zamanında çekmeye çalışır. Hızlı ve komiktir; kontroller oyun sayfasında gösterilir."
+    },
+    {
+     "q": "İki oyuncu için stickman dövüş oyunları var mı?",
+     "a": "Evet, örneğin Stickman: Fighter 3D ve Stickman Dragon Fighting. Daha fazlasını stickman oyunları sayfasında bulabilirsin."
+    }
+   ]
+  },
+  "2-player-football": {
+   "intro": "Başlama vuruşunu hemen yanında oturan arkadaşınla yap! Bu sayfada iki oyuncu için 80’den fazla futbol oyunu var: penaltı atışlarından büyük kafalı karakterler ve zıplayan toplarla oynanan hızlı bire bir maçlara kadar.\n\nBirkaç ana tarz var. Kafa futbolu oyunlarında her oyuncu kalesinin yanında zıplayıp şut çeken tek bir karakteri yönetir. Araba futbolu oyunlarında oyuncuların yerini dev bir topa çarpan arabalar alır. Hava hokeyi ya da fiske futbolu gibi masa tarzı oyunlarda sırayla nişan alıp şut çekersin. Çoğu tek klavyede oynanır, bir oyuncu W, A, S, D tuşlarında, diğeri ok tuşlarındadır; bazıları ise online maçlardır. Yayıncı paylaştıysa oyunun hangi modu kullandığı oyun sayfasında yazar.\n\nHead Ball Challenge, Soccer Duel, Rocketcar Cup ve Coin Flick Soccer başlamak için iyi oyunlar; online oynamak istersen Rumble Stars Football - Online Soccer Game’e göz at. Maçlar kısa sürer, o yüzden üç gole kadar oynayıp taraf değiştirin. Kafa futbolunu öğrenmek kolaydır – genellikle sadece hareket, zıplama ve şut vardır – bu da onu küçük çocuklar için harika bir ilk seçim yapar.",
+   "faq": [
+    {
+     "q": "Kafa futbolu nedir?",
+     "a": "Kafa futbolu, her oyuncunun kalesinin yanındaki büyük kafalı bir karakteri yönettiği bir futbol oyunu türüdür. Topu rakibinin kalesine sokmak için hareket eder, zıplar ve şut çekersin."
+    },
+    {
+     "q": "İki kişi tek klavyede nasıl futbol oynar?",
+     "a": "Genellikle bir oyuncu W, A, S, D tuşlarını, diğeri ok tuşlarını kullanır; şut için de her birinin bir ek tuşu olur. Kontroller maç başlamadan önce görünür."
+    },
+    {
+     "q": "Online olarak başka oyunculara karşı futbol oynayabilir miyim?",
+     "a": "Evet, Rumble Stars Football - Online Soccer Game gibi bazı oyunlarda online maçlar var. Diğerlerinin çoğu tek bilgisayarda yan yana oynanır."
+    },
+    {
+     "q": "Küçük çocuklar için en kolay 2 kişilik futbol oyunu hangisi?",
+     "a": "Kimsenin hızlı olması gerekmediği için sırayla oynanan fiske oyunları en kolayıdır – Coin Flick Soccer’ı deneyebilirsin. Sadece birkaç tuşla oynanan kafa futbolu oyunları da basittir."
+    },
+    {
+     "q": "Burada “football” ile “soccer” aynı şey mi?",
+     "a": "Evet. Bunlar futbol oyunları – oyun adlarında bazen İngilizce “soccer” olarak da geçer, ama kastedilen bildiğimiz futbol."
+    }
+   ]
+  },
+  "2-player-racing": {
+   "intro": "Yanındaki arabayı kardeşin ya da en yakın arkadaşın sürüyorsa yarış çok daha eğlenceli olur. Bu sayfada iki oyuncu için yapılmış 200’den fazla yarış oyunu var; böylece online birini beklemeden kimin daha hızlı olduğunu hemen ortaya çıkarabilirsiniz.\n\nBu oyunların çoğu tek klavyede oynanır: bir oyuncu W, A, S ve D tuşlarıyla, diğeri ok tuşlarıyla sürer. Bazılarında ekran bölünür ve her sürücüye monitörün yarısı düşer, bazılarında ise iki araba aynı pistte yarışır. Birkaçı da online düellodur – yayıncı bu bilgiyi verdiyse oyunun hangi türde olduğu oyun sayfasında yazar. Klasik pist yarışları, dev rampalı akrobasi oyunları, arazi parkurları, drift kapışmaları ve hatta arabaların dev bir topu ittiği araba futbolu seni bekliyor.\n\nİlk denemeler için Offroad Masters Challenge, Mega Ramp Stunt Racing 3D, Noob vs Pro : Drift Tag ve Rocketcar Cup iyi seçimler. İpucu: İki oyuncunun da klavyeye rahatça uzanabileceği şekilde oturun ve geri sayım başlamadan kontrollerde anlaşın. Birçok oyun tablette de çalışır – oyun sayfasına göz at.",
+   "faq": [
+    {
+     "q": "İki oyuncu tek bilgisayarda nasıl yarışır?",
+     "a": "2 kişilik yarış oyunlarının çoğunda klavye paylaşılır: bir sürücü W, A, S, D tuşlarını, diğeri ok tuşlarını kullanır. Bazı oyunlarda ekran bölünür, bazılarında iki araba aynı pistte yarışır."
+    },
+    {
+     "q": "Online 2 kişilik yarış oyunları da var mı?",
+     "a": "Evet, birkaç oyunda aynı klavye yerine online olarak biriyle yarışabilirsin. Yayıncı bu bilgiyi paylaştıysa oyunun hangi modu kullandığı oyun sayfasında yazar."
+    },
+    {
+     "q": "Ne tür 2 kişilik yarış oyunları var?",
+     "a": "Pist yarışları, akrobasi ve rampa oyunları, arazi sürüşü, drift kapışmaları ve arabalarla gol attığın araba futbolu oyunları bulabilirsin."
+    },
+    {
+     "q": "2 kişilik yarış oyunlarını telefonda oynayabilir miyim?",
+     "a": "Bazıları telefon ve tablette çalışır, ama tek klavyeyi paylaşmak genellikle bilgisayarda en kolayıdır. Her oyun sayfasında hangi cihazların desteklendiği yazar."
+    },
+    {
+     "q": "Bir şey indirmem gerekiyor mu?",
+     "a": "Hayır. Tüm oyunlar web tarayıcında çalışır; indirme, kurulum ve kayıt gerekmez."
+    }
+   ]
+  },
+  "2-player-shooting": {
+   "intro": "İki oyuncu, tek klavye ve geçilmesi gereken bir skor – iki kişilik bu 150’den fazla silah oyununun fikri tam olarak bu. Bazıları birbirinizi alt etmeye çalıştığınız kafa kafaya düellolar, bazıları ise düşman dalgalarına karşı omuz omuza savaştığınız takım oyunları.\n\nOyuncuların birbirini haritadan düşürmeye çalıştığı platform düelloları, tank savaşları, araba savaşları ve zombi savunma oyunları bulacaksın. Çoğunda bir oyuncu W, A, S, D ile hareket eder, diğeri ok tuşlarını kullanır; ateş etmek için de bir iki ek tuş vardır. Birkaçı aynı klavye yerine online oynanır; yayıncı bilgi verdiyse hangisi olduğu oyun sayfasında yazar.\n\nListenin üst sıralarındaki oyunlar arasında Gun Mayhem Original, Car Battle, Tanks of War Halloween, Zombie swarm ve BlockCraft Together var. Yeniysen önce bir takım oyunuyla başla; böylece iki oyuncu da kontrolleri birlikte öğrenir, sonra düellolara geçersiniz. Pixuvo’da neler olduğunu kontrol etmek isteyen ebeveynler, şiddet çağrıştıran ifadeler içeren oyunların nasıl incelendiğini anlatan ebeveyn sayfasını okuyabilir.",
+   "faq": [
+    {
+     "q": "Arkadaşla oynamak için iyi 2 kişilik silah oyunları hangileri?",
+     "a": "Gun Mayhem Original, Car Battle, Tanks of War Halloween ve Zombie swarm başlamak için kolay seçimler. Yayıncı bilgi verdiyse oyunun düello mu takım oyunu mu olduğu oyun sayfasında yazar."
+    },
+    {
+     "q": "Sadece düello değil, takım halinde oynanan silah oyunları da var mı?",
+     "a": "Evet. Bazı oyunlarda iki oyuncu aynı tarafta bilgisayar düşmanlarına karşı savaşır; bu, kontrolleri birlikte öğrenmenin güzel bir yoludur."
+    },
+    {
+     "q": "2 kişilik silah oyunlarının kontrolleri nasıl?",
+     "a": "Genellikle bir oyuncu W, A, S, D ve bir ateş tuşunu, diğeri ok tuşlarını ve başka bir ateş tuşunu kullanır. Her oyun kendi kontrollerini başta gösterir."
+    },
+    {
+     "q": "Bu silah oyunları çocuklar için uygun mu?",
+     "a": "Birçoğu çizgi film tarzındadır ama her oyun farklıdır. Şiddet çağrıştıran ifadeler içeren oyunlar elle incelenir; ebeveynler ayrıntıları ebeveyn sayfasında okuyabilir."
+    }
+   ]
+  },
+  "2-player-sports": {
+   "intro": "Sporun özü dostça rekabettir ve bu 250’den fazla oyun o rekabeti ekrana taşıyor. Bir arkadaşını yanına al, klavyeyi paylaşın ve skorun gerçekten önemli olduğu bir maç yapın – çünkü rakibin hemen yanında oturuyor.\n\nEn büyük grup futbol: penaltı düelloları, kafa futbolu ve iki tarafta da kale olan kısa maçlar. Bunların yanında voleybol, basketbol, bilardo ve araçların topu ittiği araba futbolu gibi eğlenceli karışımlar da var. Birçok oyunda bir oyuncu W, A, S ve D tuşlarını, diğeri ok tuşlarını kullanır; birkaçı ise başka oyunculara karşı online maçlardır. Yayıncı bu bilgiyi eklediyse oyunun hangi türde olduğu oyun sayfasında yazar.\n\nHızlı bir başlangıç mı istiyorsun? VOLLEY CLASH, Basketball League, 8 Ball Pool 2D ve Toy Soccer Cup’ı dene. Bilardo gibi sırayla oynanan sporlar, tuşları henüz öğrenen küçük çocuklar için harikadır, çünkü kimsenin bir anda tepki vermesi gerekmez. Maçlar genellikle kısa sürer; “üç maçta iki galibiyet” oynayıp bir sonraki oyunu kimin seçeceğini sırayla belirleyebilirsiniz.",
+   "faq": [
+    {
+     "q": "Burada iki kişi hangi sporları oynayabilir?",
+     "a": "Futbol, voleybol, basketbol, bilardo ve araba futbolu oyunları. Yeni oyunlar eklendikçe liste büyüyor."
+    },
+    {
+     "q": "Tek klavyede arkadaşıma karşı spor oyunu nasıl oynarım?",
+     "a": "2 kişilik spor oyunlarının çoğunda bir oyuncu W, A, S, D tuşlarını, diğeri ok tuşlarını kullanır. Kontroller genellikle maç başlamadan önce gösterilir."
+    },
+    {
+     "q": "Küçük çocuklar için en iyi 2 kişilik spor oyunları hangileri?",
+     "a": "8 Ball Pool 2D gibi sırayla oynanan oyunlar iyi bir başlangıçtır, çünkü acele etmek gerekmez. Bir iki tuşla oynanan basit futbol ve voleybol düelloları da kolayca öğrenilir."
+    },
+    {
+     "q": "Online olarak birine karşı oynayabilir miyim?",
+     "a": "Bazı spor oyunlarında online maçlar var. Yayıncı bu bilgiyi verdiyse mod oyun sayfasında gösterilir."
+    },
+    {
+     "q": "Bu spor oyunları ücretsiz mi?",
+     "a": "Evet, hesap açmadan ve bir şey indirmeden tarayıcında ücretsiz oynayabilirsin."
+    }
+   ]
+  },
+  "animal": {
+   "intro": "Yavru kediler, köpekbalıkları, civcivler, köpekler ve hatta dinozorlar – bu sayfadaki 2.700’den fazla oyunun yıldızı hayvanlar. Bazılarında evcil hayvanlara bakarsın, bazıları hayvanları kahramana dönüştürür, bazıları da tüylü ya da kanatlı bir ana karakterle sadece eğlenceli bir şaklabanlıktır.\n\nEvcil hayvan bakım oyunları hayvanları beslemek, yıkamak ve onlarla ilgilenmekle ilgilidir; özellikle küçük çocuklar bunları çok sever. Kurtarma oyunlarında mahsur kalmış bir kediyi ya da başı dertte başka bir hayvanı kurtarmak için bir bulmaca çözersin. Arcade oyunlarında bir hayvanı oynarsın: kuş olup kanat çırpar, köpekbalığı olup yüzer ya da küçük bir civciv olup zıplarsın. Dinozor maceraları ve hayvanlı yapbozlar da var.\n\nSakin bir oyun için Save kitten ve Funny Rescue Pet başlamak için iyi seçimler; Tiny Chick, Shadobirds, Big Shark ve Dino Squad Battle Mission da listenin üst sıralarındaki oyunlar. Hayvan oyunlarının çoğu basit tıklamalar, dokunuşlar ya da ok tuşlarıyla oynanır, bu yüzden geniş bir yaş aralığına uyar. Birçoğu telefon ve tablette de çalışır – oyun sayfasında bu bilgi yer alır.",
+   "faq": [
+    {
+     "q": "Çocuklar için iyi hayvan oyunları hangileri?",
+     "a": "Sakin kurtarma ve evcil hayvan bakım oyunları küçük çocuklar için güzel bir başlangıçtır – Save kitten ve Funny Rescue Pet’i dene. Big Shark ve Dino Squad Battle Mission da iyi seçimler."
+    },
+    {
+     "q": "Evcil hayvan bakım oyunları var mı?",
+     "a": "Evet, evcil hayvanları beslediğin, yıkadığın ve onlarla ilgilendiğin oyunlar var. Funny Kitty Care gibi bakım oyunlarını da içeren kız oyunları sayfasında daha fazlasını bulabilirsin."
+    },
+    {
+     "q": "Dinozor oyunları var mı?",
+     "a": "Evet, dinozorlar maceralardan bulmacalara kadar birçok hayvan oyununda karşına çıkar – Dino Squad Battle Mission denemeye değer."
+    },
+    {
+     "q": "Hayvan oyunlarını tablette oynayabilir miyim?",
+     "a": "Birçok hayvan oyunu dokunuş ya da basit tıklamalarla oynanır, bu yüzden genellikle tablette çalışır. Her oyun sayfasında desteklenen cihazlar yazar."
+    }
+   ]
+  },
+  "boys": {
+   "intro": "Hız, savaşlar ve büyük meydan okumalar – 10.000’den fazla yarış, dövüş ve silah oyununda seni bunlar bekliyor. Birçok erkek çocuk bu oyunlara bayılır, ama buradaki her oyun herkes için; aksiyonu seven herkes davetli.\n\nYarış oyunları motosiklet akrobasi parkurlarından araba kovalamacalarına ve kamyon sürmeye kadar uzanır. Dövüş oyunlarında stickman savaşları, arena kapışmaları ve bire bir düellolar var. Silah oyunları zombi hayatta kalma, tank ve konvoy savaşları ile dikkatlice nişan alıp hedefleri tamamladığın görevleri kapsar. Bazıları bir dakikada bitirebileceğin hızlı arcade oyunları, bazılarında ise bölümleri tek tek açarsın.\n\nBaşlamak için motosiklet akrobasisi isteyenler Moto X3M: Spooky Land’i denesin; Sumo Shove, Knockback Knights, Stickman Warriors, Quarantine Zombies ve Trap the Convoy da listenin üst sıralarında. Bu oyunların çoğu klavyeyle (ok tuşları ya da W, A, S, D) ve bazen nişan almak için fareyle oynanır. Bir arkadaşınla mı oynamak istiyorsun? 2 kişilik yarış, 2 kişilik dövüş ve 2 kişilik silah oyunları sayfalarına bak. Ebeveynler, Pixuvo’nun şiddet çağrıştıran ifadeler içeren oyunları nasıl incelediğini ebeveyn sayfasında okuyabilir.",
+   "faq": [
+    {
+     "q": "Başlamak için iyi erkek oyunları hangileri?",
+     "a": "Moto X3M: Spooky Land, Stickman Warriors ve Quarantine Zombies listenin üst sıralarında. Ama Pixuvo’daki her oyun herkes için, eğlenceli görünen her şeyi dene."
+    },
+    {
+     "q": "İki kişinin oynayabileceği erkek oyunları var mı?",
+     "a": "Evet. 2 kişilik yarış, dövüş ve silah oyunları sayfalarında iki oyuncunun tek klavyeyi paylaştığı oyunlar var."
+    },
+    {
+     "q": "Bu aksiyon oyunları çocuklar için uygun mu?",
+     "a": "Birçoğu çizgi film tarzı aksiyondur ama her oyun farklıdır. Şiddet, yetişkin içerik ya da kumar çağrıştıran ifadeler içeren oyunlar elle incelenir; ebeveynler ayrıntıları ebeveyn sayfasında bulabilir."
+    },
+    {
+     "q": "Oynamak için klavye gerekiyor mu?",
+     "a": "Birçok aksiyon oyunu klavyeyle en kolay oynanır, ama bazıları dokunmatik kontrollerle telefon ve tablette de çalışır. Oyun sayfasında bu bilgi yer alır."
+    },
+    {
+     "q": "Kızlar da erkek oyunlarını oynayabilir mi?",
+     "a": "Elbette. Pixuvo’daki her oyun herkes için – bu sayfa sadece yarış, dövüş ve silah oyunlarını bir araya getiriyor."
+    }
+   ]
+  },
+  "brain": {
+   "intro": "Beynini çalıştırmaya hazır mısın? Bu 4.500’den fazla oyunun hepsi düşünmekle ilgili: hatırlamak, saymak, kelime bulmak ve bulmaca çözmek. Biraz da alıştırma gibi hissettiren bir şey oynamak istediğinde iyi bir seçim.\n\nHafıza oyunları kartları, resimleri ya da topun nerede saklandığını hatırlamanı ister. Matematik oyunları toplama, çıkarma ve çarpmayı yarışlara ve savaşlara dönüştürür. Bilgi yarışmaları bayraklar, şekiller ya da emojiler hakkında ne bildiğini sınar; kelime oyunlarında kelime kurar, bulmaca çözer ya da harf tahmin edersin. Bunlara ek olarak, bir şeyleri doğru sırayla nasıl onaracağını, bağlayacağını ya da taşıyacağını bulduğun mantık bulmacaları var.\n\nListenin üst sıralarındaki iyi başlangıç noktaları Kobadoo Numbers, Kobadoo Arithmetic, Kobadoo Flags, Memory Cards, Flag Memory Match, Three Cups Game ve Math Fight Club. En çok hangi tür düşünmeden hoşlandığını bulmak için birkaç farklı türü dene. Zekâ oyunlarının çoğu hızlı refleks gerektirmez, sadece fare ya da dokunuş yeter; bu yüzden küçük oyuncular ve birlikte oynamak isteyen büyükler için de çok uygundur.",
+   "faq": [
+    {
+     "q": "Zekâ oyunları beyne iyi gelir mi?",
+     "a": "Zekâ oyunları hafızayı, saymayı, kelimeleri ve mantığı çalışmanın eğlenceli bir yoludur. Her oyun gibi, başka etkinliklerin yanında kısa oturumlarla oynandığında en iyi sonucu verir."
+    },
+    {
+     "q": "Çocuklar için en iyi hafıza oyunları hangileri?",
+     "a": "Kart eşleştirme oyunları çocuklar için klasik seçimdir. Memory Cards, Flag Memory Match ve Three Cups Game denemeye değer üç oyun."
+    },
+    {
+     "q": "Çocuklar için matematik oyunları var mı?",
+     "a": "Evet. Matematik bölümünde Kobadoo Numbers, Kobadoo Arithmetic ve Math Fight Club dahil 700’den fazla oyun var."
+    },
+    {
+     "q": "Ne tür zekâ oyunları var?",
+     "a": "Hafıza oyunları, matematik oyunları, bilgi yarışmaları, kelime oyunları ve mantık bulmacaları bulabilirsin. Her tür biraz farklı bir beceriyi çalıştırır."
+    },
+    {
+     "q": "Zekâ oyunlarını tablette oynayabilir miyim?",
+     "a": "Birçok zekâ oyunu basit dokunuşlarla oynanır, bu yüzden genellikle tablet ve telefonlarda çalışır. Oyun sayfasında hangi cihazların desteklendiği yazar."
+    }
+   ]
+  },
+  "christmas": {
+   "intro": "Kar taneleri, hediyeler ve çok meşgul bir Noel Baba – yılbaşı oyunları bayram havasına girmenin sıcacık bir yolu. Bu koleksiyonda 750’den fazla kış ve yılbaşı oyunu var ve bütün yıl burada duruyorlar; yani dışarısı sıcakken bile oynayabilirsin.\n\nBirçok yılbaşı oyunu Noel Baba’ya yardım etmekle ilgili: bacalardan hediye ulaştırmak, kızağıyla yarışmak ya da hediyeleri korumak. Tıklama oyunlarında bir yılbaşı ağacını süsler ya da her tıklamayla dev bir bayram koleksiyonu oluşturursun. Ayrıca bayram kıyafetleriyle giydirme oyunları, kış bulmacaları, 3’lü eşleştirme oyunları ve karlı köylerde geçen arcade oyunları da var.\n\nChimney Express, Santa Rush Down, Christmas Tree Clicker, Santa Clicker ve Christmas Adventures listenin üst sıralarındaki oyunlardan birkaçı, yani başlamak için kolay bir yer. Yılbaşı oyunları tatilde güzel bir aile etkinliği olur, çünkü birçoğu kısa ve çocuklarla büyüklerin sırayla oynayabileceği kadar kolay. Çoğu basit tıklamalar, dokunuşlar ya da ok tuşlarıyla oynanır.",
+   "faq": [
+    {
+     "q": "Online oynanacak eğlenceli yılbaşı oyunları hangileri?",
+     "a": "Hızlı Noel Baba oyunları da sakin tıklama oyunları da eğlenceli seçimler. Chimney Express, Santa Rush Down ve Christmas Tree Clicker ile başlayabilirsin."
+    },
+    {
+     "q": "Bütün ailenin oynayabileceği yılbaşı oyunları var mı?",
+     "a": "Evet. Birçok yılbaşı oyunu kısa ve basittir, bu yüzden çocuklar ve büyükler sırayla oynayıp skorlarını karşılaştırabilir."
+    },
+    {
+     "q": "Yılbaşı oyunlarını tatil dışında da oynayabilir miyim?",
+     "a": "Evet, yılbaşı oyunları bütün yıl Pixuvo’da kalır, yani istediğin zaman oynayabilirsin."
+    },
+    {
+     "q": "Yılbaşı giydirme oyunları var mı?",
+     "a": "Evet, bayram kıyafetleriyle oynanan yılbaşı giydirme oyunları var."
+    },
+    {
+     "q": "Yılbaşı oyunları ücretsiz mi?",
+     "a": "Evet, indirme ve kayıt olmadan tarayıcında ücretsiz oynayabilirsin."
+    }
+   ]
+  },
+  "girls": {
+   "intro": "Defileler, pizza fırınları ve rüya gibi düğünler – birçok kızın sevdiği oyunlar bir arada. Elbette buradaki her oyun herkes için; stil yapmayı, yemek pişirmeyi ya da başkalarına bakmayı seven herkes buraya davetli. Bu koleksiyonda 3.700’den fazla oyun var.\n\nGiydirme oyunlarında K-pop tarzından anime stiline ve gelinliklere kadar kıyafetleri, saç modellerini ve aksesuarları karıştırırsın. Makyaj ve tırnak salonu oyunları renkler, desenler ve küçük ince ayrıntılarla ilgilidir. Yemek yapma oyunları seni bir hamburger büfesinin ya da bir pizzacının tezgâhının arkasına geçirir; tarifleri izler ve müşterilere servis yaparsın. Evcil hayvanlara baktığın ya da karakterlere yardım ettiğin bakım oyunları da var.\n\nBaşlamak için Aidol K-pop Adventure, Anime Girl Fashion Make Up, Pizza Maker food Cooking Games, Burger Restaurant Simulator 3D ve Funny Kitty Care denemeye değer. Bu oyunların çoğu fareyle ya da dokunarak oynanır, bu yüzden rahat ve kolaydır. En çok bir türü seviyorsan daha fazlası için giydirme, yemek yapma ya da prenses sayfalarını aç.",
+   "faq": [
+    {
+     "q": "En iyi kız oyunları hangileri?",
+     "a": "Giydirme, makyaj ve yemek yapma oyunları iyi bir başlangıçtır – Aidol K-pop Adventure ve Pizza Maker food Cooking Games listenin üst sıralarında. Ama Pixuvo’daki her oyun herkes için, eğlenceli görünen her şeyi dene."
+    },
+    {
+     "q": "Canım sıkıldığında oynayabileceğim eğlenceli kız oyunları neler?",
+     "a": "Kısa giydirme ve tırnak salonu oyunları, yemek yapma oyunları ve evcil hayvan bakım oyunları birkaç dakikan olduğunda harikadır. Çoğu sadece tıklama ya da dokunuş ister."
+    },
+    {
+     "q": "Modayı seven kızlar için moda oyunları var mı?",
+     "a": "Evet, hem de çok. Moda giydirme oyunlarında kıyafet tasarlar, aksesuar seçer ve baştan sona bir görünüm oluşturursun – Anime Girl Fashion Make Up’a ya da prenses oyunları sayfasına bak."
+    },
+    {
+     "q": "Bu oyunları telefonda ya da tablette oynayabilir miyim?",
+     "a": "Birçoğu basit dokunuşlarla oynandığı için telefon ve tablette çalışır. Oyun sayfasında her oyunun hangi cihazları desteklediği yazar."
+    }
+   ]
+  },
+  "halloween": {
+   "intro": "Balkabakları, şekerler, dost canlısı hayaletler ve sevimli küçük canavarlar – Cadılar Bayramı oyunlarının çoğu korkutucu değil, eğlenceli bir şekilde ürkütücü. Bu sayfada bunlardan 550’den fazla var ve sadece ekimde değil, biraz Cadılar Bayramı havası istediğin her an oynamaya hazırlar.\n\nBirçok sevilen oyun türünün Cadılar Bayramı versiyonlarını bulacaksın. Birleştirme oyunlarında ürkütücü eşyaları birleştirip yenilerini yaparsın, düşen blok ve şeker bırakma bulmacaları zamanlamanı, zıplama ve sürüş oyunları ise reflekslerini sınar. Giydirme ve tırnak oyunlarında kostümler ve Cadılar Bayramı manikürleri oluşturursun; canavar karakterli birkaç aksiyon oyunu da var.\n\nSpooky Merge, Halloween Merge Game, Halloween Candy Drop, Falling Blocks - Halloween Challenge, Halloween Hop ve Fashion Girl Halloween Boutique başlamak için kolay seçimler. Cadılar Bayramı oyunlarının çoğu tıklama, dokunuş ya da ok tuşlarıyla oynanır, bu yüzden küçük çocuklar için de kolaydır. Gerçekten ürkütücü bir şey istersen büyük oyuncular korku kategorisine bakabilir; bu sayfadaki oyunların çoğu ise kostümler, şekerler ve çizgi film canavarlarıyla ilgili.",
+   "faq": [
+    {
+     "q": "Cadılar Bayramı oyunları korkutucu mu?",
+     "a": "Çoğu değil. Bu sayfadaki oyunların birçoğu balkabakları, şekerler, kostümler ve çizgi film canavarlarıyla ilgili, ama bazıları biraz ürkütücü olabilir; emin değilsen önce oyuna bir göz at."
+    },
+    {
+     "q": "Çocuklar için iyi Cadılar Bayramı oyunları hangileri?",
+     "a": "Spooky Merge, Halloween Candy Drop ve Halloween Hop başlamak için iyi oyunlar; stil yapmayı seviyorsan Fashion Girl Halloween Boutique’i dene."
+    },
+    {
+     "q": "Cadılar Bayramı giydirme oyunları var mı?",
+     "a": "Evet, Fashion Girl Halloween Boutique ve Crazy Halloween Nail Doctor gibi Cadılar Bayramı kostüm ve tırnak oyunları var."
+    },
+    {
+     "q": "Cadılar Bayramı oyunlarını bütün yıl oynayabilir miyim?",
+     "a": "Evet, Cadılar Bayramı oyunları bütün yıl Pixuvo’da kalır."
+    }
+   ]
+  },
+  "kids": {
+   "intro": "Küçük eller, büyük merak: Pixuvo’nun bu köşesi, az öğreten ama çok eğlendiren sakin ve rengârenk oyunlar arayan küçük çocuklar ve aileler için. Burada eğitici oyunlar, boyama ve aile bölümlerinden seçilmiş 3.500’den fazla oyun var.\n\nEğitici oyunlar çocukların ilk kelimeleri, sayıları, şekilleri ve basit matematiği çalışmasına yardımcı olur. Boyama ve çizim oyunlarında boyama sayfaları, sayılarla boyama ve elmas boyama var; bunlar rahatlatıcıdır ve okuma bilmeyi gerektirmez. Rol yapma oyunlarında çocuklar birkaç dakikalığına diş hekimi, doktor ya da ressam olur. Çoğu sadece bir fare tıklaması ya da dokunuşla oynanır, bu da onları bilgisayarla yeni tanışan çocuklar için kolay kılar.\n\nİlk adımlar için My First 100 Words, Master of Numbers, Butterfly Coloring Pages Kids, Diamond Painting by Number ve Doctor Teeth’i deneyin. Ebeveynler: Oyunlar ücretsizdir, kayıt gerekmez ve Pixuvo’nun oyunları nasıl incelediğini anlatan bir ebeveyn sayfası var. Bazı oyunlarda oyunun yayıncısına ait reklamlar bulunur, bu yüzden küçük çocukların zaman zaman yardıma ihtiyacı olabilir. Birçok oyun tablette de çalışır – oyun sayfasında bu bilgi yer alır.",
+   "faq": [
+    {
+     "q": "Küçük çocuklar için iyi online oyunlar hangileri?",
+     "a": "Eğitici ve boyama oyunları yumuşak bir başlangıçtır – My First 100 Words, Master of Numbers ve Butterfly Coloring Pages Kids ile başlayabilirsiniz. Basit tıklama ya da dokunuşla oynanan ve süre baskısı olmayan oyunları seçin."
+    },
+    {
+     "q": "Çocuklar için en iyi hafıza oyunları hangileri?",
+     "a": "Kart eşleştirme oyunları klasik seçimdir: İki kartı çevirip çiftleri bulmaya çalışırsın. Memory Cards ya da Flag Memory Match’i dene, daha fazlası için zekâ oyunları sayfasına bak."
+    },
+    {
+     "q": "Video oyunları çocuklar için faydalı mı?",
+     "a": "Az miktarda oynandığında sayma, kelimeler, renkler ya da problem çözme içeren oyunlar becerileri çalışmanın eğlenceli bir yolu olabilir. En iyisi kısa oturumlar ve birlikte oynamaktır."
+    },
+    {
+     "q": "Çocuğum tablette oynayabilir mi?",
+     "a": "Birçok çocuk oyunu sadece dokunuş gerektirdiği için tablet ve telefonlarda çalışır. Her oyun sayfasında hangi cihazların desteklendiği yazar."
+    },
+    {
+     "q": "Çocukların oynamak için hesaba ihtiyacı var mı?",
+     "a": "Hayır. Kayıt da indirme de yok – oyunlar doğrudan tarayıcıda açılır."
+    }
+   ]
+  },
+  "multiplayer-shooting": {
+   "intro": "Bazı silah oyunları, karşı tarafta gerçek insanlar olunca daha eğlencelidir. Bu sayfada online ya da aynı bilgisayarda başka oyuncularla birlikte veya onlara karşı oynadığın 250’den fazla çok oyunculu silah oyunu var.\n\nAna türler şunlar: birçok oyuncunun büyük bir haritayı paylaştığı ve büyümeye ya da en uzun süre hayatta kalmaya çalıştığı .io arena oyunları; tanklar, helikopterler ya da arabalarla oynanan takım savaşları; piksel tarzı bloklu nişancı oyunları ve bir tarafın saklanıp diğerinin aradığı saklambaç oyunları. Bazı oyunlarda iki ila dört kişi tek klavyeyi paylaşır, bazıları ise seni online oyuncularla buluşturur – yayıncı bilgi verdiyse hangisi olduğu oyun sayfasında yazar.\n\nBaşlamak için iyi seçimler: Tanknarok, Paint or Seek: Chameleon Hide Online, Guardz IO ve Helicopter And Tank Battle vehicle wars. Online oyunlarda tanımadığın oyuncularla karşılaşırsın; bu yüzden bir takma ad kullan, kişisel bilgilerini asla paylaşma ve biri kaba davranırsa oynamayı bırak. Ebeveynler, şiddet çağrıştıran ifadeler içeren oyunların nasıl incelendiği de dahil olmak üzere daha fazlasını Pixuvo’nun ebeveyn sayfasında okuyabilir.",
+   "faq": [
+    {
+     "q": "Bu oyunlarda çok oyunculu ne demek?",
+     "a": "Sadece bilgisayara karşı değil, başka insanlarla oynadığın anlamına gelir. Bazı oyunlar her yerden oyuncularla online oynanır, bazıları ise arkadaşlarınla aynı bilgisayarda oynamanı sağlar."
+    },
+    {
+     "q": ".io silah oyunları nedir?",
+     "a": ".io oyunları birçok oyuncuyu ortak bir arenada buluşturur. Genellikle küçük başlarsın, puan toplarsın ve oyunda olabildiğince uzun kalmaya çalışırsın."
+    },
+    {
+     "q": "Çok oyunculu silah oyunlarını aynı odadaki bir arkadaşımla oynayabilir miyim?",
+     "a": "Evet, bazı oyunlarda iki ya da daha fazla kişi tek klavyede oynayabilir. Oyunun yerel mi online mı olduğunu görmek için oyun sayfasına bak."
+    },
+    {
+     "q": "Çocuklar online çok oyunculu oyunlarda nasıl güvende kalır?",
+     "a": "Uydurma bir takma ad kullan, gerçek adını, okulunu ya da adresini asla paylaşma ve biri kötü davranırsa bir ebeveyne söyle. Ebeveyn sayfası daha fazlasını anlatıyor."
+    },
+    {
+     "q": "Online oynamak için hesap gerekiyor mu?",
+     "a": "Pixuvo’da gerekmez – oyunu açıp tarayıcında oynarsın. Bazı oyunlar bir takma ad yazmanı isteyebilir."
+    }
+   ]
+  },
+  "princess": {
+   "intro": "Taçlar, balo elbiseleri ve biraz da sihir: Bu sayfada 650’den fazla prenses oyunu bir arada. Burada kraliyet karakterlerinin stilisti, tasarımcısı ve makyaj sanatçısı olabilir, bugün bir prensesin nasıl görünmesi gerektiğine sen karar verebilirsin.\n\nPrenses oyunlarının çoğu giydirme oyunudur. Elbiseleri, saç modellerini, ayakkabıları ve takıları seçer, sonra ortaya çıkan görünümü sergilersin. Makyaj oyunlarına makyaj, yüz boyama ya da tırnak tasarımları eklenir; bazılarında pek de geleneksel olmayan bir prenses için dövme ya da punk kıyafetler bile tasarlayabilirsin. Birkaç karakterin birlikte partiye hazırlandığı arkadaş grubu oyunları ve prenses kahramanlı birkaç macera oyunu da bulacaksın.\n\nİyi başlangıç noktaları Princess Nail Salon, Princess Look Like A Supermodel, Princess Punk Fashion - Tattoo Desgin ve Bff Witchy Transformation. Prenses oyunları çoğunlukla fare tıklamaları ya da dokunuşlarla oynanır, yani acele yok – her ayrıntıya zaman ayır. Pixuvo’daki her oyun gibi bunlar da herkes için. Daha fazla stil mi arıyorsun? Giydirme oyunları kategorisini ya da kız oyunları sayfasını dene.",
+   "faq": [
+    {
+     "q": "Prenses oyunları nedir?",
+     "a": "Prensesler hakkındaki oyunlardır; çoğunlukla kıyafet, saç, makyaj ve aksesuar seçtiğin giydirme ve makyaj oyunlarıdır."
+    },
+    {
+     "q": "Prenses giydirme oyunlarında neler yapabilirim?",
+     "a": "Elbise, ayakkabı, takı ve saç modeli seçebilir, makyaj ya da tırnak tasarımları deneyebilir ve baştan sona bir görünüm oluşturabilirsin."
+    },
+    {
+     "q": "Küçük çocuklar için prenses oyunları var mı?",
+     "a": "Evet. Birçok prenses oyunu basit tıklamalarla oynanır ve süre sınırı yoktur, bu yüzden küçük çocuklar kendi hızlarında oynayabilir."
+    },
+    {
+     "q": "Prenses oyunlarını telefonda oynayabilir miyim?",
+     "a": "Birçok giydirme oyunu telefon ve tablette dokunuşlarla rahatça oynanır. Oyun sayfasında hangi cihazların desteklendiği yazar."
+    },
+    {
+     "q": "Prenses oyunları ücretli mi?",
+     "a": "Hayır, indirme ve kayıt olmadan tarayıcında ücretsiz oynayabilirsin."
+    }
+   ]
+  },
+  "space": {
+   "intro": "Üç, iki, bir, kalkış! Bu sayfadaki 650’den fazla oyun yıldızlar, gezegenler ve uzaylı dünyalar arasında geçiyor. İster Dünya’yı savunmak, ister bir galaksi kurmak, ister sadece olabildiğince uzağa uçmak iste, uzay macera için harika bir sahne.\n\nUzay nişancı oyunları klasik türdür: Bir gemiyi yönetir, asteroitleri ya da uzaylı istilacıları vurursun. Savunma oyunları, çoğu zaman komik bir sürprizle, bir gezegeni ya da bir çiftliği uzaylılardan korumanı ister. Birleştirme ve bulmaca oyunlarında küçük gezegenleri birleştirip daha büyüklerini yaparsın; arcade oyunlarında ise kaçar, uçar ve yıldız toplarsın. Bazı strateji oyunlarında uzayı keşfedip inşa edebilirsin.\n\nBaşlamak için Protect the Earth, Dogs vs Aliens, Farmers vs Aliens, Merge Planets Deluxe, Galaxy Pop ve Star Rush’ı dene. Yeniysen sakin bir bulmacayla başla, kontrolleri öğrendikten sonra daha hızlı oyunlara geç. Uzay nişancı oyunları genellikle ok tuşları ya da fareyle oynanır, birleştirme oyunları ise dokunuşla rahatça oynanır. Bunları seviyorsan silah ve arcade kategorilerinde çok daha fazlası var.",
+   "faq": [
+    {
+     "q": "Çocuklar için iyi uzay oyunları hangileri?",
+     "a": "Sakin birleştirme bulmacaları ve hızlı arcade oyunları kolay bir başlangıçtır. Merge Planets Deluxe, Dogs vs Aliens ve Star Rush iyi örnekler."
+    },
+    {
+     "q": "Uzay nişancı oyunları var mı?",
+     "a": "Evet, uzay nişancı oyunlarında bir gemi uçurur ve asteroitleri ya da uzaylı istilacıları vurursun. Stars Strike ve Alien War denemeye değer iki oyun."
+    },
+    {
+     "q": "Gezegen birleştirme oyunları nedir?",
+     "a": "Birleştirme oyunlarında küçük gezegenleri bırakır ya da birleştirerek daha büyüklerini yaparsın. Merge Planets Deluxe denemeye değer."
+    },
+    {
+     "q": "Uzay oyunlarını telefonumda oynayabilir miyim?",
+     "a": "Birçok uzay oyunu, özellikle birleştirme ve arcade oyunları, dokunmatik ekranla çalışır. Her oyun sayfasında hangi cihazları desteklediği yazar."
+    }
+   ]
+  },
+  "stickman": {
+   "intro": "Kafa için bir daire, kollar ve bacaklar için birkaç çizgi – ve nasıl oluyorsa stickman karakterler dövüşebiliyor, koşabiliyor, zıplayabiliyor, gizlice ilerleyebiliyor ve bulmaca çözebiliyor. Bu sayfada aklına gelebilecek her tarzda 650’den fazla stickman oyunu var.\n\nStickman dövüş oyunları büyük bir grup: basit çöp adamların yumruk, tekme ve özel hareketler kullandığı hızlı savaşlar. Bunların yanında stickman nişancı ve okçuluk oyunları, boss savaşları, üssünü koruduğun savunma oyunları ve bir çöp adamın gizlice ilerlemesi, kaçması ya da zekice bir şey çalması gereken bulmaca oyunları da var. Bazı stickman oyunları iki hatta dört oyuncu için yapılmış.\n\nBaşlamak için Stickman Mega Boss Battles!, Stickman Battle 1-4 Players, Stickman Guys Defense, DOP Stickman ve Stickman Thief Puzzle’ı dene. Dövüşmek yerine düşünmeyi tercih edersen bulmaca olanlara bak. Karakterler çok basit olduğu için oyunlar da kolay anlaşılır. Çoğu klavye ya da fareyle oynanır; bazıları telefon ve tablette dokunmatik olarak çalışır, oyun sayfasında bu bilgi yer alır.",
+   "faq": [
+    {
+     "q": "Stickman oyunları nedir?",
+     "a": "Karakterlerin basit çöp adamlar olduğu oyunlardır. Stickman oyunları dövüş, nişancı, bulmaca, savunma ya da macera oyunu olabilir."
+    },
+    {
+     "q": "Stickman oyunlarını birden fazla kişi oynayabilir mi?",
+     "a": "Evet, bazılarını – oyun sayfasında bir oyunun kaç oyuncuyu desteklediği yazar. Stickman Battle 1-4 Players’a göz atabilirsin."
+    },
+    {
+     "q": "Sadece dövüş değil, stickman bulmaca oyunları da var mı?",
+     "a": "Evet. Bazı stickman oyunları dövüşten çok düşünmekle ilgili – DOP Stickman ve Stickman Thief Puzzle denemeye değer iki oyun."
+    },
+    {
+     "q": "Çocuklar stickman oyunlarını neden sever?",
+     "a": "Basit karakterler oyunları kolay anlaşılır kılar, böylece hemen aksiyona dalabilirsin."
+    },
+    {
+     "q": "Stickman oyunları ücretsiz mi?",
+     "a": "Evet, Pixuvo’daki tüm stickman oyunlarını indirmeden tarayıcında ücretsiz oynayabilirsin."
+    }
+   ]
+  },
+  "unblocked": {
+   "intro": "Birçok kişi, hiçbir şey kurmadan normal bir web sayfasında açılan oyunlar istediğinde “unblocked games” ya da “engelsiz oyunlar” diye arama yapar. Pixuvo tam olarak böyle çalışır: 45.000’den fazla oyununun hepsi web tarayıcında çalışır; indirecek bir şey, kurulacak bir uygulama, tarayıcı eklentisi ve kayıt yoktur.\n\nBu sayfanın ne olmadığını da açıkça söyleyelim: Pixuvo, okul ya da ağ filtrelerini aşmak için bir araç değildir ve onları atlatmaya çalışmaz. Okullar, iş yerleri ve ebeveynler kendi bilgisayarlarında ve ağlarında hangi sitelere izin verileceğine karar verir ve bu kurallara uyulmalıdır. Bir site okulda engelliyse, en iyisi evde ya da oyunlara izin verilen bir teneffüste oynamaktır. Pixuvo normal bir web sitesidir, yani belirli bir ağda açılıp açılmaması o ağın nasıl ayarlandığına bağlıdır.\n\nBu sayfa, gerçek oynanmalara göre tüm sitedeki popüler oyunları listeler; hızlıca oynayacak bir şey bulmak için iyi bir yer. Başlamak için iyi oyunlar: Drop Planets, Merge Royal, Epic Duck, Kobadoo Numbers, Kobadoo Flags ve Three Cups Game. İşaretlediğin favoriler bu cihazdaki bu tarayıcıya kaydedilir.",
+   "faq": [
+    {
+     "q": "“Unblocked games” ne demek?",
+     "a": "Genellikle indirme, kurulum ya da eklenti gerektirmeden normal bir web sayfasında çalışan tarayıcı oyunları kastedilir. Pixuvo oyunları böyle çalışır, ama hiçbir filtreyi aşmaz."
+    },
+    {
+     "q": "Pixuvo’yu okul filtresini aşmak için kullanabilir miyim?",
+     "a": "Hayır. Pixuvo okul ya da ağ filtrelerini aşmaz. Neye izin verileceğine okullar ve ebeveynler karar verir, lütfen onların kurallarına uy."
+    },
+    {
+     "q": "Hiçbir şey indirmeden hangi oyunları oynayabilirim?",
+     "a": "Pixuvo’daki her oyun doğrudan tarayıcında açılır. Drop Planets, Merge Royal ve Epic Duck hızlıca deneyebileceğin oyunlar."
+    },
+    {
+     "q": "Bu oyunlar Flash ya da eklenti gerektiriyor mu?",
+     "a": "Hayır. Oyunlar modern bir web tarayıcısında Flash, eklenti ya da uzantı olmadan çalışır."
+    },
+    {
+     "q": "Oyunlar ücretsiz mi?",
+     "a": "Evet, ücretsizdir ve hesap açman gerekmez. Bazı oyunlarda yayıncılarına ait reklamlar görünebilir."
+    }
+   ]
+  }
+ }
+}
