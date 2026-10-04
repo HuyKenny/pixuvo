@@ -135,3 +135,22 @@ allow-forms allow-pointer-lock allow-orientation-lock`, no top navigation) — v
   punctuation). `scripts/i18n-audit.ts` crawls the localised pages and lists English words left outside game titles.
 * **Search:** game titles stay English; category names are matched in every language (suggest + search page),
   e.g. "závod" → Racing games.
+
+## SEO structure (audit 2026-10-03)
+
+* **Crawl paths:** every game is reachable by links — category pages go to the last page (guard 1 000), the pager links
+  ±3, nearby tens and every 100th page (`src/lib/pager.ts`), and each game page links the next games of its primary
+  category by id (`neighborGames`, a chain through the whole category). `/games/` is an A–Z directory with keyset pages
+  (`dir_bounds` = (title_norm, id) every 42nd game, migration 0007).
+* **Long-form content:** `src/i18n/content/<lang>.json` (home block, 64 categories, 17 landings: intro + FAQ), written
+  natively per language; loaded only by prerendered views (`CategoryLandingView`, `HomeView`), never in the Worker
+  (postbuild guard). Rendered by `CategoryContent.astro` (About / Types of / FAQ) under the grid on page 1.
+* **Landings** (`seo_landings`): category intersection (`all`), union (`any`), themes, tags or the whole catalog
+  (`top`); migration 0008 added kids, girls, boys, brain, stickman, unblocked, animal, princess, space, christmas,
+  halloween. Curated cross-links in `taxonomy.ts` `RELATED`.
+* **Hero games** (`data/hero-games.csv`, 280 games whose own title has real search demand): `games.search_volume` feeds
+  `rank_score`; Pixuvo's own text per language in `game_editorial` (migration 0009, source `data/editorial/<lang>.json`,
+  loaded by `scripts/editorial-import.ts`). It replaces the partner blurb; a localised game page with it is indexable,
+  has hreflang between the languages that have it and is listed in `{lang}-games-1.xml`.
+* **No templated FAQ/FAQPage** on game pages; `aggregateRating` only from ≥ 5 real votes. No canonical on noindex pages.
+* Redirects outside the Worker: zone rules 301 for missing trailing slash and for uppercase paths.

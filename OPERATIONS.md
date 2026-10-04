@@ -108,3 +108,16 @@ pnpm exec tsx scripts/i18n-export.ts                                # English so
   (the check fails until all languages have it). Write it natively, not word for word.
 * Game descriptions are not translated (owner decision 2026-10-03). `scripts/translate.ts` and the D1 `pixuvo-i18n`
   (13 191 translations of 600 games from the first run, ≈ $2.10) are kept but unused — nothing reads them.
+
+## SEO content
+
+```bash
+pnpm exec tsx scripts/i18n-check.ts                     # also validates content/<lang>.json and data/editorial/<lang>.json
+pnpm exec tsx scripts/editorial-import.ts --target remote   # hero texts + search demand → D1 (then publish)
+pnpm exec tsx scripts/hold-brands.ts --target remote --dry-run   # published titles naming a brand
+pnpm exec tsx scripts/i18n-audit.ts --langs cs,de        # English left on localised pages
+```
+* Search engines: GSC property `sc-domain:pixuvo.com` (service account is owner, sitemap submitted), Bing Webmaster
+  (sitemap submitted), IndexNow daily from the Pi cron (`bin/indexnow.py pixuvo --sitemap`, key file in `public/`).
+  Seznam Webmaster needs a key the owner creates at reporter.seznam.cz/wm.
+* Never set noindex on URLs that have GSC impressions (new site: deindexing, not crawl-budget savings).
