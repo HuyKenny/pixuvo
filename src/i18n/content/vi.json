@@ -1,0 +1,2011 @@
+{
+ "home": {
+  "h2": "Game online miễn phí cho bé và cả gia đình",
+  "intro": "Pixuvo là cổng game miễn phí dành cho các bạn nhỏ khoảng 6 đến 15 tuổi và gia đình. Ở đây có hơn 45.000 game trên trình duyệt, từ giải đố, đua xe đến thay đồ và thể thao. Bạn không cần tài khoản, không cần đăng ký và không phải tải gì: chọn game, bấm chơi là game chạy ngay trên trang web. Pixuvo không tự làm game; các game đến từ những nhà phát hành đối tác và mỗi ngày đều có game mới được thêm vào.\n\nTìm game để chơi rất dễ. Bạn có thể xem theo thể loại, mở mục game 2 người khi có bạn bè hay anh chị em ngồi cạnh, hoặc xem game mới và các danh sách game phổ biến – được xếp theo lượt chơi thật. Thích game nào, bạn cứ lưu vào mục yêu thích. Game yêu thích và game đã chơi gần đây được lưu trong trình duyệt này trên thiết bị này, nên chẳng cần nhớ mật khẩu nào cả. Nhiều game còn chơi được trên điện thoại và máy tính bảng – trang của từng game đều ghi rõ.\n\nPhụ huynh có một trang riêng giải thích cách Pixuvo đảm bảo an toàn, trong đó có việc các game có nội dung bạo lực, người lớn hoặc cờ bạc sẽ được kiểm duyệt thủ công trước khi xuất hiện. Chưa biết bắt đầu từ đâu? Bạn mê giải đố có thể thử Drop Planets hoặc Merge Royal, các bé đang học thì có Kobadoo Numbers, tay đua nhí có thể lao vào Moto X3M: Spooky Land, còn bạn thích thay đồ sẽ mê Aidol K-pop Adventure."
+ },
+ "cat": {
+  "2-player": {
+   "intro": "Rủ một người bạn, anh chị em hay bố mẹ rồi cùng ngồi vào một bàn phím. Game 2 người được làm ra chính là để như vậy – hai người, một game và thật nhiều tiếng cười. Pixuvo có hơn 1.400 game như thế.\n\nTrong phần lớn game 2 người, cả hai dùng chung một máy tính. Thường một người điều khiển nhân vật bằng WASD, người kia bằng phím mũi tên. Có game là đấu tay đôi và đua tốc độ, nơi hai bạn tìm cách thắng nhau; Red Hands - 2 Player Game, Gun and Guys, Geometri Tag Wars - 2 Players và Racing Ball 3D đang nằm gần đầu danh sách. Có game lại là chơi hợp tác, nơi hai bạn cùng làm việc như một đội. Adventures of Two Kittens II, Cute Sheep Skyblock và Lava Ladder Leap là những game khác để cùng nhau thử. Game tư duy nhẹ nhàng như Tic Tac Toe Pro - Multiplayer & Challenge rất hợp với các bé nhỏ tuổi, và Kids: Cute Pairs cũng là một lựa chọn dịu dàng. Một vài game 2 người còn có chế độ online.\n\nTrước khi bắt đầu, hãy thống nhất ai dùng phím nào – màn hình khởi động của game thường hiện phím điều khiển. Game hợp tác là lựa chọn tuyệt vời khi một người chơi còn nhỏ tuổi, vì hai bạn cùng nhau chiến thắng. Game dùng chung bàn phím chơi tốt nhất trên máy tính; nhiều game cũng chạy được trên điện thoại và máy tính bảng – trang game sẽ ghi rõ.",
+   "faq": [
+    {
+     "q": "Chơi game 2 người trên một bàn phím như thế nào?",
+     "a": "Thường một người dùng các phím WASD và người kia dùng phím mũi tên. Phím điều khiển được hiện trên màn hình khởi động của game hoặc trong phần mô tả."
+    },
+    {
+     "q": "Game 2 người nào hay cho trẻ em?",
+     "a": "Tic Tac Toe Pro nhẹ nhàng và đơn giản, còn Kids: Cute Pairs, Adventures of Two Kittens II, Red Hands - 2 Player Game và Racing Ball 3D cũng là những lựa chọn đầu tiên rất ổn."
+    },
+    {
+     "q": "Có game 2 người nào mà hai bạn cùng hợp tác không?",
+     "a": "Có, game hợp tác cho hai bạn cùng vượt màn như một đội thay vì đấu với nhau. Chúng rất hợp khi một người còn nhỏ hoặc mới chơi game – phần mô tả game cho biết game có chơi hợp tác hay không."
+    },
+    {
+     "q": "Tôi có thể chơi game 2 người online với bạn không?",
+     "a": "Một số game 2 người có chế độ online, nhưng phần lớn được làm cho hai người chơi trên cùng một thiết bị. Trang game ghi rõ khi nhà phát hành cung cấp thông tin."
+    },
+    {
+     "q": "Có trò chơi bài hay game bàn cờ cho 2 người không?",
+     "a": "Có, những game như Tic Tac Toe Pro là lựa chọn dễ chơi cho hai người, và các mục game bàn cờ, game cờ vua và trò chơi bài còn nhiều game để chơi theo lượt."
+    }
+   ]
+  },
+  "2048": {
+   "intro": "Hai cộng hai là bốn, bốn cộng bốn là tám… và nếu cứ gộp tiếp đủ lâu, bạn sẽ chạm tới 2048. Đó là toàn bộ ý tưởng của trò giải đố con số nổi tiếng này, và nó khó hơn bạn nghĩ nhiều. Pixuvo có hơn 200 game 2048 miễn phí, từ bảng ô cổ điển đến khối lập phương 3D và đường đua gộp số.\n\nTrong game gốc, các ô số nằm trên một bảng 4×4. Mỗi lần bạn trượt về một hướng, mọi ô đều di chuyển, và hai ô cùng số sẽ gộp thành một ô có giá trị gấp đôi. Sau mỗi lượt lại xuất hiện một ô nhỏ mới, nên bảng dần đầy lên. Nếu muốn chơi bản cổ điển, 2048 Classic Puzzle - Challenge là game tốt để bắt đầu. Các game khác đưa ý tưởng gộp số đi theo những hướng mới, từ khối 3D đến đường đua và đấu trường .io – Chain Cube 2048 3D, Snake 2048.io, Jelly Run in 2048, Merge Grabber Race to 2048 và Merge Royal là vài game nên thử.\n\nChiến thuật nổi tiếng nhất là chọn một góc và luôn giữ ô lớn nhất ở đó. Hãy trượt chủ yếu theo hai hướng và chỉ dùng hướng thứ ba khi bắt buộc, để các số lớn nằm thành một hàng gọn gàng. 2048 cũng là cách luyện nhân đôi con số mà không ai để ý. Dùng phím mũi tên trên máy tính hoặc vuốt trên màn hình cảm ứng – nhiều game cũng chơi được trên điện thoại và máy tính bảng, trang game sẽ ghi rõ.",
+   "faq": [
+    {
+     "q": "Chơi 2048 như thế nào?",
+     "a": "Trượt tất cả các ô lên, xuống, sang trái hoặc sang phải. Hai ô cùng số gộp thành một ô có giá trị gấp đôi, và mục tiêu là tạo ra ô 2048 trước khi bảng đầy."
+    },
+    {
+     "q": "Chiến thuật tốt nhất cho 2048 là gì?",
+     "a": "Giữ ô lớn nhất ở một góc và xếp một chuỗi số giảm dần bên cạnh nó. Tránh vuốt theo hướng kéo ô lớn ra khỏi góc."
+    },
+    {
+     "q": "2048 có giúp học toán không?",
+     "a": "Game giúp luyện phép nhân đôi và lũy thừa của 2 (2, 4, 8, 16, v.v.) một cách vui vẻ, đồng thời rèn khả năng tính trước."
+    },
+    {
+     "q": "Có phiên bản 2048 3D không?",
+     "a": "Có, thể loại này còn có các phiên bản 3D của ý tưởng gộp số. Chain Cube 2048 3D và Merge Cubes là hai game nên thử."
+    },
+    {
+     "q": "Tôi có thể chơi 2048 trên điện thoại không?",
+     "a": "2048 chỉ cần vuốt đơn giản, nên nhiều phiên bản chạy được trên điện thoại và máy tính bảng. Hãy xem trang game để biết có hỗ trợ di động không."
+    }
+   ]
+  },
+  "action": {
+   "intro": "Tim đập nhanh hơn một chút, màn hình đầy kẻ địch và bạn chỉ có chừng nửa giây để quyết định. Chính cảm giác hồi hộp đó khiến các bạn nhỏ cứ quay lại với game hành động. Pixuvo có hơn 6.500 game như vậy, từ những trận đấu người que ngộ nghĩnh đến hỗn chiến trong đấu trường, và game nào cũng chạy ngay trên trình duyệt, không cần tải, không cần tài khoản.\n\nHành động là một gia đình lớn, nên biết các nhánh của nó sẽ có ích. Game đối kháng đưa bạn vào những trận tay đôi và hỗn chiến trong đấu trường, còn game ninja thay sức mạnh cơ bắp bằng việc lén lút, nhảy qua các mái nhà và phóng phi tiêu. Ngoài hai nhánh đó, bạn sẽ gặp game kết hợp thủ thành, những đợt sinh tồn và trận chiến vật lý, nơi chiêu buồn cười nhất thường lại thắng. Những lựa chọn đầu tiên hay, nằm gần đầu danh sách, là Stickman Warriors, Sumo Shove và Knockback Knights.\n\nMới chơi thể loại này? Hãy bắt đầu với game có ván ngắn, để thua một ván cũng chỉ mất một phút. Phần lớn game hành động trên máy tính dùng phím mũi tên hoặc WASD để di chuyển và phím cách hoặc chuột để tấn công, và trang game thường liệt kê phím điều khiển. Nhiều game cũng chạy trên điện thoại và máy tính bảng – trang của từng game sẽ cho bạn biết. Một số game đối kháng có bạo lực kiểu hoạt hình, nên phụ huynh có thể xem trang dành cho phụ huynh để biết chúng tôi kiểm duyệt game thế nào.",
+   "faq": [
+    {
+     "q": "Game hành động là gì?",
+     "a": "Game hành động xoay quanh phản xạ nhanh và quyết định nhanh: né tránh, nhảy, chiến đấu và phản ứng với những gì diễn ra trên màn hình. Phần lớn có ván ngắn, nên dễ bắt đầu mà khó dừng lại."
+    },
+    {
+     "q": "Game hành động nào hay cho người mới chơi?",
+     "a": "Hãy chọn game có ván ngắn và điều khiển đơn giản, để bạn học chiêu nhanh và thua một ván cũng chỉ mất một phút. Để khởi động, hãy thử Sumo Shove và Stickman Warriors."
+    },
+    {
+     "q": "Hai người có thể chơi game hành động trên một máy tính không?",
+     "a": "Nhiều game được. Trong khá nhiều game hành động 2 người, một người dùng WASD và người kia dùng phím mũi tên trên cùng một bàn phím; trang game ghi rõ khi game dành cho hai người."
+    },
+    {
+     "q": "Game hành động có quá bạo lực với trẻ em không?",
+     "a": "Phần lớn game hành động trên trình duyệt dùng kiểu đánh nhau hoạt hình hoặc người que chứ không phải bạo lực chân thực. Các game có nội dung bạo lực được kiểm duyệt thủ công, và trang dành cho phụ huynh giải thích cách chúng tôi kiểm tra game."
+    },
+    {
+     "q": "Tôi có phải tải gì để chơi không?",
+     "a": "Không. Mọi game hành động trên Pixuvo đều chạy trên trình duyệt web – chỉ cần nhấp và chơi, không cần đăng ký."
+    }
+   ]
+  },
+  "adventure": {
+   "intro": "Mọi cuộc phiêu lưu hay đều bắt đầu bằng một câu hỏi: sau cánh cửa kia, bên kia ngọn đồi hay ở cuối câu chuyện này có gì? Game phiêu lưu cho bạn đi tìm câu trả lời. Pixuvo có hơn 8.500 game phiêu lưu miễn phí, nơi bạn khám phá những vùng đất mới, giải quyết vấn đề và tiếp tục cho đến khi hành trình kết thúc.\n\nPhiêu lưu là một trong những thể loại rộng nhất trên trang. Có game xoay quanh khám phá và chế tạo, có game pha thêm hành động và chiến đấu, và có game cho bạn tự do rong ruổi khắp một bản đồ lớn. Game phiêu lưu idle vẫn tiến triển ngay cả khi mỗi lần bạn chỉ chơi vài phút. Hiện tại Dungeon Master - Cult & Craft, Samurai Brawling, Horse Simulator 3D và Merge Mine - Idle Clicker đang nằm gần đầu danh sách. Còn nếu bạn mê những căn phòng hóc búa và manh mối ẩn giấu, thể loại con game thoát hiểm có đầy những cánh cửa khóa chờ bạn tìm lối ra.\n\nChọn thế nào đây? Hãy nghĩ xem bạn thích gì nhất. Nếu thích câu chuyện, hãy tìm game có màn chơi hoặc chương. Nếu thích tự do, hãy chọn một bản đồ mở để thỏa sức đi lại. Nếu chỉ có chút thời gian nghỉ, một game phiêu lưu idle hoặc gộp đồ là hợp nhất. Phần lớn dùng chuột hoặc phím mũi tên, và trang game có giải thích phím điều khiển. Rất nhiều game cũng chơi được trên điện thoại hoặc máy tính bảng; hãy xem trang game cho chắc. Game yêu thích của bạn được lưu trong trình duyệt này, nên bạn có thể quay lại một chuyến phiêu lưu dài sau.",
+   "faq": [
+    {
+     "q": "Game phiêu lưu là gì?",
+     "a": "Game phiêu lưu xoay quanh khám phá, giải quyết vấn đề và theo đuổi một mục tiêu hay câu chuyện qua nhiều địa điểm hoặc màn chơi. Chúng thường ít đòi hỏi tốc độ mà cần nhiều tò mò hơn."
+    },
+    {
+     "q": "Chơi game phiêu lưu như thế nào?",
+     "a": "Hãy khám phá mọi thứ, nói chuyện với nhân vật hoặc nhấp vào đồ vật, và thu thập những món có thể giúp ích về sau. Nếu bị kẹt, hãy quay lại những nơi đã đến – câu trả lời thường nằm ở đó."
+    },
+    {
+     "q": "Game phiêu lưu nào hay cho trẻ em?",
+     "a": "Chưa biết bắt đầu từ đâu? Hãy chọn Horse Simulator 3D hoặc Dungeon Master - Cult & Craft. Muốn thêm chút giải đố, hãy thử thể loại con game thoát hiểm."
+    },
+    {
+     "q": "Tôi có thể lưu tiến trình trong game phiêu lưu không?",
+     "a": "Nhiều game tự lưu tiến trình trong trình duyệt của bạn, và Pixuvo lưu game yêu thích cùng game đã chơi gần đây trên thiết bị này. Hãy dùng cùng một trình duyệt để chơi tiếp từ chỗ đã dừng."
+    },
+    {
+     "q": "Game phiêu lưu trên Pixuvo có miễn phí không?",
+     "a": "Có, mọi game phiêu lưu trên Pixuvo đều chơi miễn phí trên trình duyệt, không cần tài khoản hay tải về."
+    }
+   ]
+  },
+  "arcade": {
+   "intro": "Bỏ xu, bấm start, phá kỷ lục điểm – vòng lặp đơn giản ấy đã giữ chân người chơi từ khi máy arcade xuất hiện vào đầu những năm 1970. Ngày nay bạn không cần túi đầy xu nữa. Pixuvo có hơn 12.000 game arcade miễn phí mà bạn chỉ cần một cú nhấp là chơi được trên trình duyệt.\n\nĐiều gì khiến một game mang chất “arcade”? Ván ngắn, điều khiển dễ, độ khó tăng dần và điểm số khiến bạn muốn thử thêm lần nữa. Trong thể loại khổng lồ này, bạn sẽ thấy game chạy vô tận, nơi bạn liên tục di chuyển và né chướng ngại vật, game retro lấy cảm hứng từ thời đồ họa pixel, game rắn săn mồi nơi bạn dài thêm sau mỗi miếng ăn, và game bắn bóng nơi bạn ngắm và ghép màu. Còn có cả những game party nhanh cho hai người bạn, như 12 MiniBattles - Two Players.\n\nĐể tìm kiểu game yêu thích, hãy thử vài kiểu khác nhau, mỗi kiểu vài phút – Epic Duck, Buba Jump, Popcorn Race 3D và Gelatino đang nằm gần đầu danh sách. Phần lớn game arcade chỉ cần một hai phím, chuột hoặc một cú chạm, nên rất hợp cho giờ nghỉ ngắn. Chơi trên máy tính bảng? Nhiều game hỗ trợ, và trang game cho biết game nào. Các danh sách phổ biến trên Pixuvo được xếp theo lượt chơi thật, nên là lối tắt hay để biết các bạn khác đang thích gì.",
+   "faq": [
+    {
+     "q": "Game arcade là gì?",
+     "a": "Game arcade là những game nhanh, dễ học, xoay quanh điểm số, canh thời điểm và chơi giỏi hơn sau mỗi lần thử. Cái tên bắt nguồn từ những máy chơi game bỏ xu ở các khu trò chơi."
+    },
+    {
+     "q": "Game arcade ra đời từ khi nào?",
+     "a": "Game điện tử arcade bỏ xu trở nên phổ biến từ đầu những năm 1970, và thời hoàng kim của arcade kéo dài từ cuối những năm 1970 đến đầu những năm 1980. Nhiều game trên trình duyệt ngày nay vẫn dùng ý tưởng vào là chơi ngay như thế."
+    },
+    {
+     "q": "Có game arcade nào chơi miễn phí không?",
+     "a": "Hãy thử Epic Duck, Buba Jump hoặc Popcorn Race 3D trên Pixuvo – chúng chạy miễn phí trên trình duyệt. Các thể loại con chạy vô tận, retro, rắn săn mồi và bắn bóng còn hàng nghìn game khác."
+    },
+    {
+     "q": "Có game arcade 2 người không?",
+     "a": "Có. Nhiều game kiểu arcade được làm cho hai người – 12 MiniBattles - Two Players là một game nên thử – và trang game cho biết khi game hỗ trợ hai người chơi."
+    },
+    {
+     "q": "Tôi có thể chơi game arcade trên điện thoại hoặc máy tính bảng không?",
+     "a": "Nhiều game arcade chỉ cần chạm đơn giản, nên thường chạy được trên điện thoại và máy tính bảng. Hãy xem trang game để biết có hỗ trợ di động không."
+    }
+   ]
+  },
+  "archery": {
+   "intro": "Kéo dây cung, xem hướng gió và buông tay. Bắn cung là một trong những môn thể thao lâu đời nhất thế giới, và trên màn hình, mọi thứ xoay quanh một khoảnh khắc thật đã: mũi tên bay theo đường vòng cung và cắm đúng chỗ bạn nhắm. Pixuvo có hơn 140 game bắn cung, từ tập bắn bia nhẹ nhàng đến những màn đấu người que ngộ nghĩnh.\n\nPhần lớn chúng thuộc vài nhóm. Game bắn bia và thử thách yêu cầu bạn bắn trúng hồng tâm, quả táo hoặc vật thể đang di chuyển trong khi khoảng cách và gió liên tục thay đổi. Game đấu tay đôi đặt hai cung thủ ở hai phía, ai bắn giỏi hơn sẽ thắng – Two Archers Bow Duel là một game nên thử. Ngoài ra còn có game bắn cung kiểu giải đố, nơi tìm đúng đường bay quan trọng hơn tay nhanh, và game kiểu phiêu lưu, nơi cây cung giúp bạn đẩy lùi quái vật. Archer vs Monsters, Archery Quest, Archer 2023, Arrow Clash và Tricky Arrow là những game khác nên thử.\n\nMới cầm cung? Hãy bắt đầu với game bắn bia để học cách nhắm cao bao nhiêu cho những phát bắn xa, rồi thử đấu tay đôi với bạn hoặc với máy. Trên máy tính, bạn thường nhắm bằng chuột; trên điện thoại và máy tính bảng, bạn kéo rồi thả bằng ngón tay, cảm giác rất giống kéo dây cung thật. Trang game cho biết game có chơi được trên màn hình cảm ứng hay không.",
+   "faq": [
+    {
+     "q": "Nhắm bắn trong game bắn cung như thế nào?",
+     "a": "Trong phần lớn game, bạn nhấp hoặc chạm, kéo ngược về sau để căng dây và thả ra để bắn. Kéo càng lâu, phát bắn càng mạnh, và với mục tiêu xa bạn nhắm cao hơn một chút vì mũi tên rơi dần khi bay."
+    },
+    {
+     "q": "Hai người có thể chơi game bắn cung cùng nhau không?",
+     "a": "Có, một số game bắn cung được làm cho hai người, như game đấu tay đôi nơi hai cung thủ đối mặt nhau. Hãy xem trang game để biết game dành cho một hay hai người."
+    },
+    {
+     "q": "Vì sao tôi nhắm thẳng vào bia mà mũi tên vẫn trượt?",
+     "a": "Nhiều game bắn cung có thêm trọng lực và gió, nên mũi tên bay theo đường cong. Hãy để ý mũi tên hoặc con số chỉ gió trên màn hình và nhắm hơi ngược chiều gió."
+    },
+    {
+     "q": "Game bắn cung có hợp với các bé nhỏ tuổi không?",
+     "a": "Game bắn bia và bắn cung giải đố rất dễ học, tập trung vào việc nhắm chứ không phải chiến đấu. Phụ huynh có thể đọc phần mô tả game trước hoặc xem trang dành cho phụ huynh để có thêm gợi ý."
+    },
+    {
+     "q": "Các game này có miễn phí không?",
+     "a": "Có. Mọi game trên Pixuvo đều miễn phí, không cần tài khoản và không phải tải gì – game mở ngay trên trình duyệt web."
+    }
+   ]
+  },
+  "basketball": {
+   "intro": "Xoẹt! Âm thanh của một cú ném hoàn hảo có gì đó thật đặc biệt, và game bóng rổ cho bạn tìm lại cảm giác ấy hết lần này đến lần khác. Pixuvo có hơn 300 game bóng rổ, và phần lớn rất dễ học: nhắm, chọn lực, thả tay.\n\nGame ném rổ là một nhóm lớn: bạn búng hoặc nhắm bóng về phía rổ và cố ghi điểm từ nhiều vị trí khác nhau. Game úp rổ và ném bóng biểu diễn biến mọi thứ thành câu đố vật lý, nơi bạn nảy, thả hoặc bắn bóng vào rổ, còn game chạy thêm phần di chuyển và né tránh. Perfect Shot, Basket Sniper, Chill Dunk và Drop Dunks là những lựa chọn đầu tiên hay, còn Sling Dunk, BasketBall Runner, Basketball Beans và Incredible Basketball là những game khác nên thử.\n\nCách bắt đầu tốt là một game ném rổ nhẹ nhàng, vì nó dạy bạn đường bay của quả bóng – thường một cú ném cao và nhẹ vào rổ nhiều hơn cú ném thẳng và mạnh. Sau đó, câu đố úp rổ là thử thách thú vị cho người thích suy nghĩ. Game bóng rổ chơi rất tốt bằng chuột, và vì nhiều game chỉ cần vuốt hoặc kéo đơn giản, chúng cũng vui trên điện thoại và máy tính bảng; hãy xem trang game để biết game có hỗ trợ di động không.",
+   "faq": [
+    {
+     "q": "Một trận bóng rổ kéo dài bao lâu?",
+     "a": "Một trận NBA thật có bốn hiệp, mỗi hiệp 12 phút, còn các trận ở trường thường ngắn hơn. Game bóng rổ trên trình duyệt thì rất nhanh – một ván thường chỉ một hai phút, rất hợp cho giờ nghỉ ngắn."
+    },
+    {
+     "q": "Ném bóng trong game bóng rổ online như thế nào?",
+     "a": "Thường bạn kéo hoặc vuốt từ quả bóng về phía rổ rồi thả ra. Đường bay càng cao càng dễ vào rổ, và nhiều game có đường kẻ hỗ trợ khi bạn đang tập."
+    },
+    {
+     "q": "Game úp rổ là gì?",
+     "a": "Game úp rổ thường là câu đố bóng rổ, nơi bạn phải đưa bóng vào rổ bằng cách nảy, thả hoặc bắn ná thay vì ném bình thường. Drop Dunks và Sling Dunk là hai game nên thử."
+    },
+    {
+     "q": "Có game bóng rổ cho hai người không?",
+     "a": "Một số game bóng rổ có chế độ hai người trên một bàn phím, và trang game ghi rõ khi game hỗ trợ. Hãy xem mục game 2 người để có thêm game chơi cùng bạn."
+    },
+    {
+     "q": "Các game này có miễn phí không?",
+     "a": "Có. Mọi game bóng rổ trên Pixuvo đều chơi miễn phí trên trình duyệt, không cần đăng ký."
+    }
+   ]
+  },
+  "block": {
+   "intro": "Thả khối xuống, lấp đầy hàng, xóa dòng – và dọn chỗ cho khối tiếp theo. Game xếp khối thuộc hàng những game đã tay nhất, vì mỗi hàng được xóa giống như vừa dọn dẹp xong một góc nhà. Pixuvo có hơn 1.100 game xếp khối miễn phí trên trình duyệt.\n\nGame xếp khối có vài kiểu chính. Ở dạng bảng ô, bạn kéo các hình vào bảng và xóa những hàng, cột đã đầy, và nhiều game dạng này không có đồng hồ thúc giục. Ở game khối rơi, các khối rơi từ trên xuống và bạn xoay chúng vào đúng chỗ trước khi chạm đáy. Ngoài ra còn có câu đố trượt khối, nơi bạn dời các khối để giải phóng một khối, và câu đố màu sắc, nơi bạn xếp các khối cùng màu thành hàng. 10x10! Block Puzzle Classic, Wood Block Puzzle - Block Game, Block Crush Challenge, TenTrix, Block Buster, Unlock Block - Puzzle và Color Lines đều nằm gần đầu danh sách.\n\nNếu mới bắt đầu, hãy chọn game dạng bảng ô không có đồng hồ để bạn suy nghĩ kỹ từng nước. Một thói quen thông minh là luôn chừa chỗ cho những khối dài và khó xếp, vì chính chúng thường làm bạn thua. Game khối rơi nhanh hơn và rất hợp để luyện ra quyết định nhanh. Phần lớn game xếp khối chỉ cần chuột hoặc một cú chạm, và nhiều game cũng chơi được trên điện thoại hoặc máy tính bảng; hãy xem trang game cho chắc. Khám phá thêm các câu đố hại não trong thể loại game giải đố.",
+   "faq": [
+    {
+     "q": "Chơi game xếp khối như thế nào?",
+     "a": "Bạn đặt các khối nhiều hình dạng lên bảng ô và xóa dòng bằng cách lấp đầy trọn hàng hoặc cột. Game kết thúc khi không còn khối nào vừa chỗ."
+    },
+    {
+     "q": "Chiến thuật tốt nhất cho game xếp khối là gì?",
+     "a": "Giữ bảng càng thoáng càng tốt và chừa chỗ cho những khối lớn hoặc dài. Xóa nhiều dòng cùng lúc thường được điểm thưởng."
+    },
+    {
+     "q": "Ở đây có game khối rơi không?",
+     "a": "Có. Game khối rơi theo ý tưởng kinh điển: xoay các khối khi chúng rơi xuống và xóa những hàng đã đầy. Game dạng bảng ô nhẹ nhàng hơn vì các khối không rơi."
+    },
+    {
+     "q": "Game xếp khối nào hợp với người mới chơi?",
+     "a": "Game dạng bảng ô không có đồng hồ là khởi đầu nhẹ nhàng, vì bạn được suy nghĩ theo nhịp của mình. Wood Block Puzzle - Block Game và 10x10! Block Puzzle Classic là những game hay để bắt đầu."
+    },
+    {
+     "q": "Tôi có thể chơi game xếp khối trên điện thoại không?",
+     "a": "Game xếp khối chơi bằng cách kéo hoặc chạm, nên nhiều game chạy tốt trên điện thoại và máy tính bảng. Trang game cho biết có hỗ trợ di động không."
+    }
+   ]
+  },
+  "board": {
+   "intro": "Một buổi tối chơi game cùng gia đình không cần cả tủ đầy hộp cờ. Game bàn cờ trên Pixuvo đưa những trò chơi trên bàn kinh điển lên màn hình, với hơn 700 game, từ những ván cờ ca-rô chớp nhoáng đến những trận cờ vua dài và đầy suy tính.\n\nCờ vua có mục riêng với rất nhiều phiên bản. Game bắn tàu như TRZ Battleship và Intergalactic Battleship xoay quanh việc đoán xem tàu địch đang nấp ở đâu. Tic Tac Toe Multiplayer X O là trò xếp ba ô thẳng hàng kinh điển mà ai cũng biết. BattleBox, Unno Game, Shape Defense và Mahjong Street Cafe là những game khác nằm gần đầu danh sách, và các game quân bài như mạt chược cũng thuộc về đây.\n\nGame bàn cờ rất hợp để chơi cùng nhau. Nhiều game cho hai người chơi trên cùng một thiết bị, lần lượt từng lượt, và một số còn có chế độ online – trang game ghi rõ. Chơi với máy là cách tuyệt vời để học luật trước khi thách đấu bạn bè hay bố mẹ. Game bàn cờ chơi theo lượt nên không cần vội, và thường chỉ cần nhấp chuột hoặc chạm. Vì vậy chúng chơi thoải mái trên máy tính, máy tính bảng và nhiều điện thoại – trang game cho bạn biết có chơi được trên điện thoại hay máy tính bảng không.",
+   "faq": [
+    {
+     "q": "Ở đây có thể chơi những game bàn cờ online nào?",
+     "a": "Bạn sẽ thấy cờ vua, bắn tàu, cờ ca-rô và nhiều trò chơi trên bàn khác được đưa lên màn hình. Cờ vua có mục riêng với rất nhiều phiên bản."
+    },
+    {
+     "q": "Hai người có thể chơi game bàn cờ trên một thiết bị không?",
+     "a": "Có, nhiều game bàn cờ cho hai người chơi lần lượt trên cùng một máy tính hoặc máy tính bảng. Một số còn có chế độ online; trang game cho biết game có những chế độ nào."
+    },
+    {
+     "q": "Chơi bắn tàu như thế nào?",
+     "a": "Mỗi người giấu tàu của mình trên một bảng ô, rồi lần lượt đoán các ô để bắn trúng tàu của đối phương. Ai đánh chìm toàn bộ hạm đội địch trước sẽ thắng."
+    },
+    {
+     "q": "Game bàn cờ có tốt cho trẻ em không?",
+     "a": "Game bàn cờ dạy trẻ chờ đến lượt, lên kế hoạch và tuân theo luật chơi, lại rất hợp để cả gia đình chơi cùng. Bắt đầu bằng việc chơi với máy là cách dễ để học."
+    },
+    {
+     "q": "Các game này có miễn phí không?",
+     "a": "Có. Mọi game bàn cờ trên Pixuvo đều chơi miễn phí trên trình duyệt, không cần tài khoản."
+    }
+   ]
+  },
+  "bubble-shooter": {
+   "intro": "Ngắm, bắn, ghép ba quả cùng màu – và xem cả chùm bóng nổ tung. Game bắn bóng là một trong những cách chơi thư giãn nhất, vậy mà chỉ một cú bắn khéo làm rơi nửa màn chơi cũng đủ khiến bạn sướng rơn. Pixuvo có hơn 750 game bắn bóng miễn phí trên trình duyệt.\n\nLuật chơi rất đơn giản. Bóng treo ở phía trên màn hình, và bạn bắn từng quả từ phía dưới lên. Khi ba quả cùng màu trở lên chạm nhau, chúng nổ, và mọi quả treo bên dưới cũng rơi theo. Bubble Shooter và Bubble Shooter POP là những game dễ để bắt đầu. Các game khác thêm chủ đề và điểm mới lạ cho cùng ý tưởng ấy – hãy thử Space Bubbles Must Die!, Bobble Space Shooter, Pixel Bubble Shooter hoặc Ball Burst.\n\nHai mẹo nhỏ giúp ích rất nhiều. Thứ nhất, bắn bóng dội vào thành bên để chạm tới những quả không bắn thẳng được. Thứ hai, nhắm vào những quả đang giữ cả một chùm lớn, vì làm rơi cả chùm được nhiều điểm hơn bắn nổ từng nhóm nhỏ. Game bắn bóng chỉ cần chuột hoặc ngón tay, nên rất dễ với các bé nhỏ tuổi và thoải mái trên màn hình cảm ứng, và nhiều game cũng chơi được trên điện thoại hoặc máy tính bảng; hãy xem trang game cho chắc. Game bắn bóng thuộc thể loại game arcade.",
+   "faq": [
+    {
+     "q": "Chơi game bắn bóng như thế nào?",
+     "a": "Nhắm và bắn bóng màu vào cụm bóng phía trên. Khi ba quả cùng màu trở lên chạm nhau, chúng nổ, và mọi quả treo bên dưới sẽ rơi xuống."
+    },
+    {
+     "q": "Mẹo để thắng game bắn bóng là gì?",
+     "a": "Hãy bắn dội thành để chạm tới chỗ khó và nhắm vào những quả đang giữ cả chùm lớn. Làm rơi một chùm lớn dọn màn nhanh hơn là bắn nổ từng nhóm nhỏ."
+    },
+    {
+     "q": "Game bắn bóng có hợp với các bé nhỏ tuổi không?",
+     "a": "Có, game nhẹ nhàng, nhiều màu sắc và chỉ cần chuột hoặc một cú chạm. Game còn giúp luyện ghép màu và nhắm bắn."
+    },
+    {
+     "q": "Tôi có thể chơi game bắn bóng trên điện thoại không?",
+     "a": "Game bắn bóng chơi bằng cách chạm hoặc kéo, nên nhiều game chạy tốt trên điện thoại và máy tính bảng. Game có chạy trên di động hay không được ghi trên trang game."
+    },
+    {
+     "q": "Pixuvo có Bubble Shooter cổ điển không?",
+     "a": "Có, cả Bubble Shooter và Bubble Shooter POP đều nằm trong thể loại này, cùng hàng trăm biến thể khác."
+    }
+   ]
+  },
+  "building": {
+   "intro": "Xếp chồng lên, nối lại với nhau, làm sao cho đứng vững. Game xây dựng dành cho những bạn thích sáng tạo và muốn thấy một kế hoạch thành hình thật sự trên màn hình. Pixuvo có hơn 230 game xây dựng, từ câu đố thiết kế nhẹ nhàng đến thế giới sinh tồn.\n\nCó vài kiểu chính. Câu đố xây dựng yêu cầu bạn làm ra thứ gì đó hoạt động được, như một con đường hay một tòa tháp xếp chồng thật cao. Game sinh tồn và chế tạo thường cho bạn bắt đầu gần như tay trắng: bạn gom gỗ và đá, rồi dựng nơi trú ẩn và làm công cụ. Game nhà máy xoay quanh máy móc và dây chuyền sản xuất, game xây dựng idle vẫn phát triển trong lúc bạn chơi, và có game kết hợp xây dựng với bảo vệ những gì bạn đã làm ra. Road Designer, Stack Rocket, Woods of Nevia: Forest Survival, Idle Island: Build And Survive và Factory Builder là vài game nên thử.\n\nNếu thích suy nghĩ và thử nghiệm, hãy bắt đầu với một câu đố xây dựng, nơi thử sai cũng là một phần niềm vui. Nếu thích khám phá, hãy thử game xây dựng sinh tồn. Game xây dựng thường chơi lâu hơn, nên hãy tìm game có lưu tiến trình trong trình duyệt. Chuột là lựa chọn chính xác nhất, nhưng nhiều game cũng chạy được trên máy tính bảng – trang game sẽ ghi rõ.",
+   "faq": [
+    {
+     "q": "Trong game xây dựng có thể xây những gì?",
+     "a": "Gần như mọi thứ: đường sá, tên lửa, nhà cửa, nhà máy, hòn đảo và cả thị trấn. Mỗi game có mục tiêu riêng, từ giải một câu đố thiết kế đến phát triển một khu định cư."
+    },
+    {
+     "q": "Ở đây có game sinh tồn và chế tạo không?",
+     "a": "Có. Một số game xây dựng cho bạn thu thập tài nguyên và dựng nên nơi ở của riêng mình từng bước một. Woods of Nevia: Forest Survival và Idle Island: Build And Survive là hai game nên thử."
+    },
+    {
+     "q": "Game xây dựng nào hợp với người mê giải đố?",
+     "a": "Câu đố xây dựng rất hợp với người thích suy nghĩ, vì bạn phải tính toán công trình sao cho hoạt động được. Chưa biết bắt đầu từ đâu? Hãy chọn Road Designer hoặc Stack Rocket."
+    },
+    {
+     "q": "Game xây dựng có chơi được trên máy tính bảng không?",
+     "a": "Nhiều game được, dù những game phải đặt các chi tiết nhỏ sẽ dễ chơi hơn bằng chuột. Trang game cho bạn biết game có chạy trên điện thoại và máy tính bảng không."
+    },
+    {
+     "q": "Các game này có miễn phí không?",
+     "a": "Có. Mọi game xây dựng trên Pixuvo đều chơi miễn phí trên trình duyệt."
+    }
+   ]
+  },
+  "bus": {
+   "intro": "Điểm dừng tiếp theo: niềm vui. Game xe buýt đưa bạn vào ghế lái của một chiếc xe buýt thành phố to đùng, và nhiệm vụ của bạn là đưa hành khách đến nơi – an toàn và đúng giờ. Pixuvo có hơn 350 game xe buýt miễn phí để chơi trên trình duyệt.\n\nLái xe buýt cần kiên nhẫn và chính xác. Xe rất dài, nên khi rẽ cần thêm khoảng trống, và dừng đúng ngay trạm cũng phải luyện tập. Game kiểu mô phỏng cho bạn chạy theo tuyến qua thành phố, còn game đỗ xe thử xem bạn đưa một chiếc xe lớn vào chỗ hẹp giỏi đến đâu. Một số game xe buýt là câu đố đưa xe buýt ra khỏi bãi đỗ chật kín. Để vào game nhanh: City Bus Simulator Driving Games, Bus Driving Master 3D, Bus Parking City 3D, City Bus Parking và Bus Parking Out.\n\nNếu mới chơi, hãy bắt đầu với một game đỗ xe để quen với cách một chiếc xe buýt dài rẽ – bánh sau ôm cua gắt hơn bánh trước. Sau đó hãy thử game mô phỏng chạy tuyến, nơi bạn phải dừng xe êm, mở cửa và đi đúng làn đường. Phần lớn game xe buýt dùng phím mũi tên hoặc WASD, còn phím mở cửa hay phanh được ghi trên trang game. Chơi trên máy tính bảng? Nhiều game hỗ trợ, và trang game cho biết game nào. Game xe buýt thuộc thể loại game lái xe, cùng với game xe tải và game đỗ xe.",
+   "faq": [
+    {
+     "q": "Trong game xe buýt bạn làm gì?",
+     "a": "Bạn lái xe buýt theo tuyến, dừng ở các trạm và đón khách, hoặc đỗ một chiếc xe buýt dài vào chỗ hẹp. Một số game xe buýt là câu đố đưa xe ra khỏi bãi đỗ đông đúc."
+    },
+    {
+     "q": "Rẽ xe buýt trong game như thế nào?",
+     "a": "Hãy bắt đầu rẽ muộn hơn và rộng hơn so với ô tô, vì đuôi xe buýt đi theo đường vòng hẹp hơn. Đi chậm để không đâm vào lề đường."
+    },
+    {
+     "q": "Game xe buýt nào hay cho người mới chơi?",
+     "a": "Game đỗ xe là cách tốt để học cách một chiếc xe buýt dài di chuyển – hãy thử City Bus Parking trước. Khi thấy đã sẵn sàng, chuyển sang game mô phỏng chạy tuyến."
+    },
+    {
+     "q": "Tôi có thể chơi game xe buýt trên điện thoại không?",
+     "a": "Nhiều game xe buýt có bàn đạp và vô lăng trên màn hình, chạy được trên điện thoại và máy tính bảng. Trang game cho bạn biết có chơi được trên điện thoại hay máy tính bảng không."
+    },
+    {
+     "q": "Game xe buýt có miễn phí không?",
+     "a": "Có, mọi game xe buýt trên Pixuvo đều miễn phí trên trình duyệt, không cần đăng ký."
+    }
+   ]
+  },
+  "car": {
+   "intro": "Từ những chiếc xe kart tí hon đến siêu xe gầm rú, từ phố xá tấp nập đến những dốc nhảy khổng lồ – cứ thứ gì có bốn bánh là bạn gần như chắc chắn tìm thấy ở đây. Pixuvo có hơn 3.000 game ô tô miễn phí cho các bạn mê mọi thứ có động cơ.\n\nGame ô tô không chỉ có đua xe. Đúng là có rất nhiều cuộc đua, nhưng còn có game nhào lộn nơi bạn phóng qua những dốc nhảy khổng lồ, game drift nơi bạn trượt bánh qua các khúc cua, game đỗ xe thử độ cẩn thận khi đánh lái, và game lái tự do nơi bạn chỉ việc dạo quanh. Nếu muốn chiến đấu trên bánh xe, một số game ô tô có thêm cả bắn súng. Car Racing, Val d'Agri Race, Kart Racer Vs, Mega Ramps Car Racing Games 3D, Russian Car Drift 3D và Parking Solution là vài game nên thử.\n\nChọn thế nào? Nếu mê tốc độ, hãy chọn đua xe và nhào lộn. Nếu thích suy nghĩ, câu đố đỗ xe khó hơn bạn tưởng đấy. Nếu muốn khám phá, hãy tìm game lái xe kiểu mô phỏng – phần mô tả game cho biết bản đồ sẽ như thế nào. Phần lớn game ô tô dùng phím mũi tên hoặc WASD, cộng thêm phím cách để kéo phanh tay hoặc tăng tốc, và trang game liệt kê phím điều khiển. Chơi trên máy tính bảng? Nhiều game hỗ trợ, và trang game cho biết game nào. Muốn nhanh hơn nữa, hãy xem thể loại game đua xe; muốn luyện đánh lái cẩn thận, hãy thử thể loại game lái xe.",
+   "faq": [
+    {
+     "q": "Có game ô tô nào vui cho trẻ em?",
+     "a": "Kart Racer Vs, Car Racing, Mega Ramps Car Racing Games 3D và Parking Solution là bộ đôi đủ kiểu để bắt đầu. Hãy thử một game đua, một game nhào lộn và một game đỗ xe để xem bạn thích kiểu nào nhất."
+    },
+    {
+     "q": "Có game ô tô nào cho lái đi khắp nơi không?",
+     "a": "Có, một số game ô tô và mô phỏng lái xe có bản đồ mở để bạn tự do dạo quanh thay vì chạy theo đường đua. Phần mô tả game thường cho bạn biết."
+    },
+    {
+     "q": "Game ô tô có dạy lái xe được không?",
+     "a": "Game ô tô trên trình duyệt được làm để giải trí và không dạy luật giao thông thật. Tuy vậy, game đỗ xe có thể là cách vui để luyện đánh lái và ước lượng khoảng trống."
+    },
+    {
+     "q": "Game ô tô dùng những phím nào?",
+     "a": "Phần lớn dùng phím mũi tên hoặc WASD để đánh lái và tăng tốc, thường thêm phím cách để kéo phanh tay hoặc tăng tốc. Trang game liệt kê chính xác phím điều khiển."
+    },
+    {
+     "q": "Tôi có thể chơi game ô tô trên máy tính bảng không?",
+     "a": "Nhiều game ô tô có nút cảm ứng và chạy được trên điện thoại và máy tính bảng. Trang game cho bạn biết có chơi được trên điện thoại hay máy tính bảng không."
+    }
+   ]
+  },
+  "card": {
+   "intro": "Xào bài, chia bài và xem mình nhận được gì. Trò chơi bài kết hợp một chút may mắn với rất nhiều lựa chọn khôn ngoan, và Pixuvo có hơn 420 trò, từ solitaire kinh điển đến những trận chiến giả tưởng với thẻ bài sưu tầm.\n\nNgười bạn thầm lặng được yêu thích là solitaire, có hẳn mục riêng – Ultimate Solitaire Classic là nơi tốt để bắt đầu. Các trò ghép màu theo ý tưởng quen thuộc là đánh ra lá bài trùng màu hoặc trùng số, và phiên bản nhiều người chơi cho bạn chơi cùng người khác. Trò chơi bài chiến đấu biến các lá bài thành anh hùng và quái vật đánh nhau trên bàn, còn trò lật bài trí nhớ yêu cầu bạn lật bài và nhớ vị trí từng cặp. 4 Colors PGS, Four Colors Multiplayer Monument Edition, Battle Card Monster, Emberdeck và Flip & Match là vài trò nên thử.\n\nNếu mới làm quen với trò chơi bài, hãy thử trò lật bài trí nhớ trước – rất đơn giản và tuyệt vời cho các bé nhỏ tuổi. Với người chơi lớn hơn, trò ghép màu rèn khả năng quyết định nhanh, còn trò chơi bài chiến đấu là chuyện xây một bộ bài tốt và tính trước vài lượt. Trò chơi bài thường chơi bằng nhấp chuột hoặc chạm, nên chạy thoải mái trên máy tính, máy tính bảng và nhiều điện thoại – trang game cho bạn biết có chơi được trên điện thoại và máy tính bảng không.",
+   "faq": [
+    {
+     "q": "Trẻ em có thể chơi những trò chơi bài online nào?",
+     "a": "Solitaire, trò ghép màu, trò lật bài trí nhớ và trò chơi bài chiến đấu đều là lựa chọn tốt cho trẻ em. Chưa biết bắt đầu từ đâu? Hãy chọn Ultimate Solitaire Classic, 4 Colors PGS hoặc Flip & Match."
+    },
+    {
+     "q": "Ở đây có trò chơi bài 2 người nào?",
+     "a": "Một số trò ghép màu và trò chơi bài chiến đấu có chế độ nhiều người chơi hoặc đấu tay đôi – Four Colors Multiplayer Monument Edition là một trò nên xem. Trang game cho biết game hỗ trợ bao nhiêu người chơi."
+    },
+    {
+     "q": "Trò chơi bài chiến đấu là gì?",
+     "a": "Trong trò chơi bài chiến đấu, mỗi lá bài là một anh hùng, quái vật hay phép thuật. Bạn xây bộ bài và đánh bài để hạ đối thủ, nên lên kế hoạch cũng quan trọng như may mắn."
+    },
+    {
+     "q": "Trò chơi bài có dính đến tiền thật không?",
+     "a": "Không. Trò chơi bài trên Pixuvo chỉ để giải trí, và mọi đồng xu hay phỉnh trong game đều là giả. Các game có nội dung cờ bạc được giữ lại để kiểm duyệt thủ công."
+    },
+    {
+     "q": "Các game này có miễn phí không?",
+     "a": "Có. Mọi trò chơi bài trên Pixuvo đều miễn phí và chạy trên trình duyệt mà không cần đăng ký."
+    }
+   ]
+  },
+  "casual": {
+   "intro": "Còn năm phút trước bữa tối? Game giải trí được làm ra chính là cho những lúc như vậy. Chúng ngắn, nhẹ nhàng và dễ hiểu, nên bạn có thể vào chơi, vui một chút rồi dừng bất cứ lúc nào. Pixuvo có hơn 10.000 game giải trí miễn phí, tất cả đều chạy trên trình duyệt, không cần đăng ký.\n\nGame giải trí có rất nhiều kiểu. Có game canh thời điểm chỉ với một cú chạm, nơi bạn chạm để nhảy, bay lơ lửng hay né tránh. Có game là câu đố vật lý nhỏ, như Cut The Rope 2, nơi bạn cắt dây theo đúng thứ tự để cho một chú quái vật nhỏ đang đói ăn. Bạn còn tìm thấy những game đập phá đã tay, những ý tưởng độc lạ và game con số chơi nhanh. Nova Hop, Boost Balloon, Dodge the Bull, BreakIt và Master of Numbers là vài game khác nên thử. Nhiều game trong số này là “hyper casual”, tức là chỉ một thao tác đơn giản lặp đi lặp lại với độ khó tăng dần.\n\nCách chọn hay nhất là nhìn ảnh thu nhỏ và tên game rồi cứ thử – nếu sau một phút vẫn chưa thấy hợp, còn hàng nghìn game khác. Game giải trí rất hợp với các bé nhỏ tuổi, để thư giãn sau giờ làm bài tập và cho người lớn muốn nghỉ ngơi chốc lát. Phần lớn chỉ cần một cú nhấp chuột, phím cách hoặc một cú chạm, và nhiều game cũng chạy trên điện thoại và máy tính bảng – trang của từng game sẽ cho bạn biết. Hãy lưu những game bạn thích vào mục yêu thích, chúng sẽ được giữ trong trình duyệt này.",
+   "faq": [
+    {
+     "q": "Game giải trí là gì?",
+     "a": "Game giải trí là những game ngắn, đơn giản, luật chơi dễ mà ai cũng nắm được trong một phút. Bạn có thể chơi vài phút rồi dừng bất cứ lúc nào."
+    },
+    {
+     "q": "Game hyper casual là gì?",
+     "a": "Game hyper casual là kiểu game giải trí còn đơn giản hơn nữa, thường chỉ dựa trên một thao tác như chạm, vuốt hoặc canh thời điểm nhảy, lặp lại khi game ngày càng khó."
+    },
+    {
+     "q": "Game giải trí nào hợp với các bé nhỏ tuổi?",
+     "a": "Game một chạm và câu đố vật lý nhẹ nhàng như Cut The Rope 2 rất dễ hiểu, và Boost Balloon cũng là game hay để bắt đầu. Chúng chỉ cần một cú nhấp hoặc chạm."
+    },
+    {
+     "q": "Tôi có thể chơi game giải trí trên máy tính bảng không?",
+     "a": "Nhiều game giải trí được làm cho cảm ứng, nên rất nhiều game chạy được trên điện thoại và máy tính bảng. Hãy xem trang game để biết game có chạy trên thiết bị của bạn không."
+    },
+    {
+     "q": "Tôi có cần tài khoản để chơi không?",
+     "a": "Không. Game giải trí trên Pixuvo miễn phí, và game yêu thích cùng game đã chơi gần đây được lưu trong trình duyệt mà không cần tài khoản."
+    }
+   ]
+  },
+  "chess": {
+   "intro": "Mỗi bên mười sáu quân, sáu mươi tư ô và vô vàn khả năng. Cờ vua đã được chơi từ hơn một nghìn năm nay, và vẫn là một trong những trò hay nhất để học cách tính trước. Mục cờ vua của Pixuvo có 35 game cờ vua và biến thể.\n\nNếu muốn chơi cờ vua cổ điển, hãy bắt đầu với Classic Chess Duel, ChessT hoặc Chess Online. Chess Online và Chess Multiplayer Online rất đáng xem khi bạn muốn có đối thủ là người thật – trang game cho biết các chế độ chơi – còn Checkmate Game và Chess of the Middle Ages là những game khác nên thử. Bạn cũng có thể đi vòng quanh thế giới: Shogi Japanese Chess và Xiangqi Chinese Chess Duel là “anh em họ” Nhật Bản và Trung Quốc của cờ vua – ở Việt Nam gọi là cờ tướng – với quân cờ và luật chơi khác. Chess Ops và Pawn Chess là thêm hai game nữa trong mục này.\n\nMới học? Hãy chơi với máy trước nếu game có chế độ này, và học cách đi của từng quân trước khi lo đến những kế hoạch phức tạp. Một thói quen tốt cho người mới là trước mỗi nước đi hãy tự hỏi: “Đối thủ đang đe dọa điều gì?” Cờ vua chơi theo lượt nên không cần vội, và chơi tốt bằng chuột hoặc ngón tay. Nhiều game cờ vua cũng chạy trên máy tính bảng và điện thoại – trang game cho bạn biết có chơi được trên điện thoại hay máy tính bảng không.",
+   "faq": [
+    {
+     "q": "Có bao nhiêu ván cờ vua khác nhau có thể xảy ra?",
+     "a": "Nhiều đến mức không ai đếm hết được: các nhà toán học ước tính số ván cờ vua có thể xảy ra lớn hơn rất nhiều so với số nguyên tử trong vũ trụ mà ta biết. Vì vậy chẳng có hai ván cờ nào hoàn toàn giống nhau."
+    },
+    {
+     "q": "Tôi có thể chơi cờ vua online với người khác không?",
+     "a": "Một số game cờ vua có chế độ online để chơi với người khác – Chess Multiplayer Online là một game nên xem, và trang game cho biết các chế độ chơi. Trong nhiều game cờ vua, bạn cũng có thể chơi với máy hoặc với bạn trên cùng một thiết bị."
+    },
+    {
+     "q": "Cách tốt nhất để trẻ em học cờ vua là gì?",
+     "a": "Hãy bắt đầu với cách đi của từng quân, rồi chơi trọn ván với máy ở mức dễ. Các bài tập chiếu hết, nơi bạn tìm nước đi chiến thắng, cũng là cách luyện tập tuyệt vời."
+    },
+    {
+     "q": "Shogi và Xiangqi là gì?",
+     "a": "Đó là phiên bản cờ vua của Nhật Bản và Trung Quốc – Xiangqi chính là cờ tướng. Cả hai đều có quân cờ và luật chơi riêng, và bạn có thể thử trong Shogi Japanese Chess và Xiangqi Chinese Chess Duel."
+    },
+    {
+     "q": "Các game này có miễn phí không?",
+     "a": "Có. Mọi game cờ vua trên Pixuvo đều miễn phí và mở ngay trên trình duyệt, không cần đăng ký."
+    }
+   ]
+  },
+  "clicker": {
+   "intro": "Nhấp một lần, kiếm một đồng xu. Nhấp một trăm lần, mua nâng cấp để nó nhấp thay bạn. Vòng lặp đơn giản ấy là lý do game clicker được yêu thích đến vậy – Pixuvo có hơn 2.300 game clicker, và ở tuổi nào cũng dễ bắt đầu.\n\nGame clicker có đủ mọi chủ đề. Có game kinh điển thuần túy, nơi bạn chạm vào một vật to đùng, có game xoay quanh đào mỏ tìm tài nguyên, và có game thêm phần gộp đồ hoặc hiệu ứng nhẹ nhàng, đã mắt. Còn có clicker mở hộp, nơi bạn mở những chiếc hộp ảo để sưu tầm vật phẩm – tất cả chỉ là giả vờ, không dính đến tiền thật. Những game hay để bắt đầu: Snail Clicker, Mantis Clicker, Candy Clicker 2, MineClicker và Lotl Spa.\n\nBí quyết của mọi game clicker là chọn nâng cấp cho khéo. Lúc đầu, hãy mua nâng cấp giúp mỗi cú nhấp mạnh hơn; về sau, tập trung vào những trợ thủ tự động kiếm tiền trong lúc ngón tay bạn được nghỉ. Game clicker chỉ cần chuột, touchpad hoặc ngón tay, nên thuộc hàng game dễ chơi nhất trên điện thoại và máy tính bảng – game có chạy trên di động hay không được ghi trên trang game. Nếu thích clicker, có thể bạn cũng sẽ mê game idle của chúng tôi.",
+   "faq": [
+    {
+     "q": "Game clicker là gì?",
+     "a": "Game clicker là game mà bạn nhấp chuột hoặc chạm để kiếm điểm hay xu, rồi dùng chúng mua nâng cấp giúp kiếm nhanh hơn. Chúng còn được gọi là game incremental (game tăng dần)."
+    },
+    {
+     "q": "Làm sao để chơi game clicker giỏi hơn?",
+     "a": "Hãy mua nâng cấp tăng sức mạnh mỗi cú nhấp trước, rồi chuyển sang trợ thủ tự động. Nâng cấp thứ kiếm được nhiều nhất so với giá thường là lựa chọn khôn ngoan nhất."
+    },
+    {
+     "q": "Game clicker và game idle khác nhau thế nào?",
+     "a": "Trong game clicker, bạn kiếm chủ yếu bằng cách tự nhấp, còn game idle tự kiếm tiền. Nhiều game bắt đầu là clicker rồi trở thành game idle khi bạn mở khóa trợ thủ."
+    },
+    {
+     "q": "Tôi có thể chơi game clicker trên điện thoại không?",
+     "a": "Có, nhiều game clicker chỉ cần chạm, nên chạy rất tốt trên điện thoại và máy tính bảng. Trang game cho bạn biết có chơi được trên điện thoại hay máy tính bảng không."
+    },
+    {
+     "q": "Các game này có miễn phí không?",
+     "a": "Có. Mọi game clicker trên Pixuvo đều chơi miễn phí trên trình duyệt, và mọi đồng xu hay vật phẩm trong game đều là giả."
+    }
+   ]
+  },
+  "coloring": {
+   "intro": "Một trang giấy trắng, một hộp màu và không có luật phải tô gọn trong nét. Game tô màu và vẽ là phiên bản số của cuốn sách tô màu – chỉ khác là bút màu không bao giờ hết. Pixuvo có hơn 1.500 game như vậy.\n\nSách tô màu là trái tim của mục này. Butterfly Coloring Pages Kids và Mandala Coloring Book có những bức tranh để bạn tô theo ý thích, và một số cuốn có các nhân vật được yêu thích, như Italian Brainrot Coloring. Game tô màu theo số, như Color Pixels - Coloring by Numbers, chỉ cho bạn màu nào tô vào đâu, nên bức tranh hiện ra từng bước – rất thư giãn. Ngoài ra còn có câu đố vẽ, nơi nét vẽ của bạn chính là lời giải, như Draw The Path - Puzzle. Poly Art, Wall Painter và Creative Puzzle là những lựa chọn sáng tạo khác nên thử.\n\nVới các bé nhỏ tuổi, tranh tô màu có mảng lớn là khởi đầu tốt nhất, còn các bạn lớn hơn thường thích mandala chi tiết hoặc tranh pixel. Game vẽ là hoạt động nhẹ nhàng sau một ngày bận rộn, và chẳng ai bắt bạn bầu trời phải màu xanh. Chúng chơi tuyệt vời bằng ngón tay trên máy tính bảng, và nhiều game cũng chạy trên điện thoại và máy tính – trang của từng game cho biết có hỗ trợ màn hình cảm ứng không.",
+   "faq": [
+    {
+     "q": "Có tranh tô màu online miễn phí cho bé không?",
+     "a": "Có, có rất nhiều sách tô màu như Butterfly Coloring Pages Kids và Mandala Coloring Book để bé tô màu miễn phí ngay trên trình duyệt."
+    },
+    {
+     "q": "Tô màu theo số là gì?",
+     "a": "Trong game tô màu theo số, mỗi vùng có một con số ứng với một màu. Bạn tô lần lượt từng vùng và bức tranh dần hiện ra – rất hợp để thư giãn."
+    },
+    {
+     "q": "Tôi có thể tự vẽ tranh của mình không?",
+     "a": "Một số game cho bạn vẽ tự do, số khác dùng việc vẽ như một câu đố, như Draw The Path - Puzzle. Hãy xem phần mô tả game để biết đó là loại nào."
+    },
+    {
+     "q": "Game tô màu có chơi tốt trên máy tính bảng không?",
+     "a": "Có, tô màu bằng ngón tay trên máy tính bảng rất tự nhiên, và nhiều game tô màu hỗ trợ màn hình cảm ứng. Trang của từng game cho biết có hỗ trợ màn hình cảm ứng không."
+    },
+    {
+     "q": "Tôi có thể in hoặc lưu tranh đã tô không?",
+     "a": "Một số game tô màu có nút lưu, nhưng không phải game nào cũng có. Nếu game của bạn không có, bạn có thể chụp màn hình bức tranh đã hoàn thành."
+    }
+   ]
+  },
+  "cooking": {
+   "intro": "Đơn hàng đang tới tấp, vỉ nướng đã nóng và khách thì đang đói. Game nấu ăn đưa bạn vào bếp, và với gần 900 game trên Pixuvo, bạn có thể làm đủ món từ burger, pizza đến taco và bít tết.\n\nCó hai kiểu chính. Game nhà hàng và quản lý thời gian rất nhanh: khách đến, bạn chuẩn bị món họ gọi và phục vụ trước khi họ hết kiên nhẫn. Chúng xoay quanh tốc độ và sắp xếp khéo léo. Game công thức chậm rãi và sáng tạo hơn – bạn chọn nguyên liệu và chế biến món ăn từng bước, như khi nấu ở nhà. Một số game kết hợp cả hai và cho bạn điều hành một quán cà phê hay nhà hàng rồi làm nó phát triển. Burger Restaurant Simulator 3D, Pizza Maker food Cooking Games, Yummy Taco, Marmot Diner Dash và Taste City là những lựa chọn đầu tiên hay, còn Multiplayer Cooking Coop là game nên thử cùng bạn bè.\n\nCác bé nhỏ tuổi thường thích game công thức nhất vì không có đồng hồ. Với game nhà hàng, một mẹo hay là chuẩn bị sẵn những món được gọi nhiều trước khi khách yêu cầu. Game nấu ăn chơi bằng nhấp chuột, kéo thả hoặc chạm, nên nhiều game chạy tốt trên máy tính bảng và điện thoại – hãy xem trang game để biết có chạy trên thiết bị của bạn không. Và nếu game làm bạn thấy đói, có lẽ đã đến lúc vào bếp nấu món thật cùng người lớn rồi đấy!",
+   "faq": [
+    {
+     "q": "Game nấu ăn nào hay cho trẻ em?",
+     "a": "Các bé nhỏ tuổi thường thích game công thức nhẹ nhàng, còn các bạn lớn hơn hay mê game nhà hàng tốc độ. Để bắt đầu, hãy thử Pizza Maker food Cooking Games, Yummy Taco và Marmot Diner Dash."
+    },
+    {
+     "q": "Chơi game nấu ăn online miễn phí ở đâu?",
+     "a": "Ngay tại đây – mọi game nấu ăn trên Pixuvo đều miễn phí và mở ngay trên trình duyệt, không cần đăng ký hay tải về."
+    },
+    {
+     "q": "Game nhà hàng quản lý thời gian là gì?",
+     "a": "Đó là game nấu ăn mà khách đến gọi món và bạn phải nấu, phục vụ thật nhanh. Tính trước và phục vụ đúng thứ tự giúp bạn kiếm được nhiều hơn."
+    },
+    {
+     "q": "Chúng tôi có thể cùng nấu ăn trong một game không?",
+     "a": "Một số game được làm để chơi đồng đội – Multiplayer Cooking Coop là một game nên xem. Trang game cho biết game có hỗ trợ nhiều hơn một người chơi không."
+    },
+    {
+     "q": "Tôi có thể chơi game nấu ăn trên máy tính bảng không?",
+     "a": "Có, nhiều game nấu ăn chỉ cần chạm và kéo đơn giản, chạy tốt trên máy tính bảng và điện thoại. Trang của từng game cho biết có hỗ trợ màn hình cảm ứng không."
+    }
+   ]
+  },
+  "dress-up": {
+   "intro": "Chọn một bộ đồ, thử kiểu tóc mới, thêm phụ kiện và tạo nên phong cách của riêng bạn. Game thay đồ là chuyện sáng tạo và gu thẩm mỹ, và với hơn 2.800 game, có rất nhiều thứ để khám phá.\n\nGame thời trang và trang điểm là những game kinh điển: bạn chọn quần áo, đồ trang điểm và phụ kiện cho một nhân vật hoặc một dịp đặc biệt, và có game thêm phần thiết kế móng hoặc chủ đề K-pop. Hãy thử Doll Queen Designer, Anime Girl Fashion Make Up, Model Wedding - Girl Games hoặc Aidol K-pop Adventure. Mục này cũng có game chăm sóc, nơi bạn chăm những nhân vật dễ thương, thú cưng hoặc em bé. Baby Panda Care, Funny Kitty Care, Stacky Dash Nail, Funny Rescue Gardener và Funny Rescue Carpenter là những lựa chọn khác nên thử.\n\nTrong game thay đồ không có đáp án sai – niềm vui nằm ở việc thử nghiệm. Hôm nay thử phối màu hài hòa, mai thử kết hợp thật táo bạo, rồi chụp màn hình bộ đồ bạn thích nhất. Game thay đồ được rất nhiều bạn nhỏ yêu thích, dù là trai hay gái, và ai cũng có thể vui với việc phối đồ và thiết kế. Chúng chỉ cần nhấp chuột hoặc chạm, nên phần lớn dễ chơi trên máy tính bảng và điện thoại; trang game cho bạn biết có chơi được trên điện thoại hay máy tính bảng không.",
+   "faq": [
+    {
+     "q": "Game thay đồ là gì?",
+     "a": "Game thay đồ cho bạn chọn quần áo, kiểu tóc, đồ trang điểm và phụ kiện cho một nhân vật. Một số game còn có chăm sóc thú cưng hoặc em bé, trang trí hay tự thiết kế trang phục."
+    },
+    {
+     "q": "Có game thay đồ cho con trai không?",
+     "a": "Có – game thay đồ dành cho tất cả mọi người. Game phối đồ, thiết kế và chăm sóc được các bạn nhỏ cả trai lẫn gái yêu thích, và nhiều game có chủ đề như nghề nghiệp, K-pop hay động vật."
+    },
+    {
+     "q": "Game thay đồ nào hợp với các bé nhỏ tuổi?",
+     "a": "Game chăm sóc thường đơn giản và dễ thương, nên là khởi đầu nhẹ nhàng. Để bắt đầu, hãy thử Baby Panda Care, Funny Kitty Care và Doll Queen Designer."
+    },
+    {
+     "q": "Tôi có thể lưu bộ đồ của mình không?",
+     "a": "Tùy từng game. Nếu không có nút lưu, bạn có thể chụp màn hình bộ đồ bạn thích nhất."
+    },
+    {
+     "q": "Các game này có miễn phí không?",
+     "a": "Có. Mọi game thay đồ trên Pixuvo đều chơi miễn phí trên trình duyệt, không cần tài khoản."
+    }
+   ]
+  },
+  "drift": {
+   "intro": "Vào cua, chạm phanh và để đuôi xe trượt quanh khúc cua trong làn khói trắng. Drift là một trong những kỹ năng ngầu nhất trong game ô tô, và các game ở đây được xây dựng xoay quanh nó. Pixuvo có hơn 650 game drift miễn phí trên trình duyệt.\n\nTrong phần lớn game drift, bạn được điểm theo độ dài và độ nghiêng của cú trượt, và giữ được cú drift từ khúc cua này sang khúc cua khác sẽ tạo thành combo. Có game trung thành với kiểu trượt bánh kinh điển trên đường đua với nhiều loại xe, có game kết hợp drift với rượt đuổi hoặc những phương tiện khác thường. GT Drift Most Wanted, Bimmer Drifting Legends, Vaz Drifting Legends, Get Drifty, Drift Cops 3D và Drift Bus là vài game nên thử.\n\nDrift cần luyện tập, nên đừng lo nếu ban đầu bạn bị xoay vòng. Ý tưởng cơ bản là vào cua với tốc độ, bắt đầu trượt bằng phanh tay hoặc một cú đánh lái nhanh, rồi nhẹ nhàng đánh lái ngược lại để giữ kiểm soát. Những cú đánh lái nhỏ hiệu quả hơn những cú lớn. Phần lớn game drift dùng phím mũi tên hoặc WASD, với phím cách là phanh tay; trang game liệt kê phím điều khiển. Chơi trên điện thoại hoặc máy tính bảng? Nhiều game cũng chạy được; hãy xem trên trang game. Game drift thuộc thể loại game đua xe.",
+   "faq": [
+    {
+     "q": "Drift trong game ô tô là gì?",
+     "a": "Drift là cho xe trượt ngang qua khúc cua mà vẫn giữ được kiểm soát. Game drift chấm điểm cho những cú trượt dài và đẹp mắt."
+    },
+    {
+     "q": "Drift trong game như thế nào?",
+     "a": "Vào cua với tốc độ, bắt đầu trượt bằng phanh tay (thường là phím cách) và nhẹ nhàng đánh lái ngược chiều để giữ cú trượt. Đánh lái nhỏ và mượt là chìa khóa."
+    },
+    {
+     "q": "Nên thử game drift nào đầu tiên?",
+     "a": "Get Drifty và GT Drift Most Wanted đang nằm gần đầu thể loại. Hãy bắt đầu bằng những lượt tập ngắn rồi dần chuyển sang những cú drift dài hơn."
+    },
+    {
+     "q": "Tôi có thể chơi game drift trên điện thoại không?",
+     "a": "Nhiều game drift có điều khiển cảm ứng và chạy trên điện thoại, máy tính bảng. Trang game cho biết có hỗ trợ di động không."
+    },
+    {
+     "q": "Game drift có miễn phí không?",
+     "a": "Có, mọi game drift trên Pixuvo đều chơi miễn phí trên trình duyệt, không cần tải."
+    }
+   ]
+  },
+  "driving": {
+   "intro": "Đua xe là để về nhất. Lái xe là để lái cho giỏi: đánh lái mượt, phanh đúng lúc và đến nơi cần đến mà xe vẫn còn nguyên vẹn. Pixuvo có hơn 2.500 game lái xe miễn phí cho các bạn mê ngồi sau vô lăng.\n\nThể loại này có nhiều kiểu lái xe. Game đỗ xe thách bạn đưa xe vào chỗ hẹp mà không bị trầy xước. Game xe tải giao cho bạn những chiếc xe hạng nặng, hàng hóa và đường gồ ghề. Game xe buýt yêu cầu bạn dừng đúng chỗ và đón khách. Còn có game đường cao tốc và đường vô tận, nơi bạn len lỏi giữa dòng xe, cùng game nhào lộn với dốc nhảy và những cú bay xa. Final Freeway, Final Freeway 2R, Road Fury, Truck Simulator Stunt Extreme và Italian Brainrot Extreme Driver là những game dễ để bắt đầu.\n\nNếu muốn một thử thách nhẹ nhàng, hãy bắt đầu với game đỗ xe – nó dạy bạn cách xe rẽ. Nếu thích tốc độ, hãy thử game đường cao tốc, nơi mục tiêu là lái càng lâu càng tốt mà không đâm xe. Phần lớn game lái xe dùng phím mũi tên hoặc WASD, với phím cách để phanh. Nhiều game cũng chạy trên điện thoại và máy tính bảng – trang của từng game sẽ cho bạn biết. Hãy nhớ game là để giải trí: lái xe thật cần học bài bản và tuân thủ luật giao thông. Muốn tốc độ thuần túy, hãy ghé thể loại game đua xe.",
+   "faq": [
+    {
+     "q": "Game lái xe là gì?",
+     "a": "Game lái xe xoay quanh việc điều khiển phương tiện cho tốt – đánh lái, phanh, đỗ xe và đi đúng tuyến. Chúng thường nhẹ nhàng hơn game đua xe."
+    },
+    {
+     "q": "Game lái xe có dạy lái ô tô được không?",
+     "a": "Không, game lái xe trên trình duyệt chỉ để giải trí và không thay thế được việc học lái hay luật giao thông thật. Chúng có thể giúp trẻ làm quen cảm giác đánh lái và ước lượng khoảng cách."
+    },
+    {
+     "q": "Nên thử game lái xe nào đầu tiên?",
+     "a": "Game đỗ xe là khởi đầu tuyệt vời vì nó dạy bạn cách xe rẽ. Sau đó, Final Freeway và Road Fury là những game nên thử tiếp."
+    },
+    {
+     "q": "Tôi có thể lái những loại xe nào?",
+     "a": "Ô tô, xe tải, xe buýt và nhiều hơn nữa. Hãy xem các thể loại con game đỗ xe, game xe tải và game xe buýt để tìm nhanh."
+    },
+    {
+     "q": "Tôi có thể chơi game lái xe trên điện thoại không?",
+     "a": "Nhiều game lái xe có bàn đạp và vô lăng trên màn hình, chạy được trên điện thoại và máy tính bảng. Trang của từng game cho biết có hỗ trợ màn hình cảm ứng không."
+    }
+   ]
+  },
+  "educational": {
+   "intro": "Học mà vui thì nhớ lâu hơn. Game giáo dục kết hợp vui chơi với những kỹ năng thật như đọc, đếm, chăm sóc cơ thể hay tìm hiểu thiên nhiên. Pixuvo có hơn 1.300 game dạy bé điều gì đó trong lúc chơi.\n\nVới những người chơi nhỏ tuổi nhất, có các game về những từ đầu tiên, chữ cái và đếm số đơn giản. Game sức khỏe và chăm sóc dạy thói quen tốt như đánh răng, game thiên nhiên tìm hiểu môi trường một cách vui nhộn, còn game nấu ăn luyện cách làm theo các bước đúng thứ tự. Câu đố rèn sự kiên nhẫn và tập trung. Hãy thử My First 100 Words, App For Kids - Edu games, Doctor Teeth, Save The Planet và Yummy Cupcake. Để luyện thêm một lĩnh vực, game toán và game trí nhớ của chúng tôi là những người bạn đồng hành tuyệt vời.\n\nChọn thế nào? Hãy nghĩ xem con bạn đang học gì – chữ cái, con số, từ ngữ hay thói quen – và chọn game phù hợp. Chơi từng lúc ngắn 10 đến 15 phút, sau đó trò chuyện một chút về những gì bé đã khám phá, là cách rất hiệu quả. Phần lớn game giáo dục chỉ cần nhấp chuột hoặc chạm đơn giản, nên cũng dễ chơi trên máy tính bảng và điện thoại – trang của từng game cho biết có hỗ trợ màn hình cảm ứng không.",
+   "faq": [
+    {
+     "q": "Game giáo dục nào hay nhất cho trẻ em?",
+     "a": "Tùy độ tuổi: các bé mầm non có thể bắt đầu với game từ ngữ và chữ cái đơn giản – My First 100 Words là game hay để bắt đầu – còn các bạn lớn hơn có thể thích câu đố logic, game đố vui cùng game toán và game trí nhớ của chúng tôi."
+    },
+    {
+     "q": "Game giáo dục có thật sự giúp trẻ học không?",
+     "a": "Game giáo dục tốt khiến việc luyện tập trở nên vui, giúp trẻ ôn kỹ năng thường xuyên hơn. Chúng hiệu quả nhất khi đi cùng việc đọc sách, học ở trường và trò chuyện với người lớn, chứ không thay thế những điều đó."
+    },
+    {
+     "q": "Có game giáo dục cho trẻ mầm non không?",
+     "a": "Có. Game từ ngữ, chữ cái và tô màu đơn giản rất hợp với trẻ nhỏ, nhất là khi có bố mẹ ngồi cạnh – My First 100 Words và App For Kids - Edu games là hai game nên thử."
+    },
+    {
+     "q": "Con tôi có thể chơi game giáo dục trên máy tính bảng không?",
+     "a": "Nhiều game giáo dục chỉ cần chạm đơn giản và chạy tốt trên máy tính bảng. Hãy xem trang game để biết có chạy trên thiết bị của bạn không."
+    },
+    {
+     "q": "Các game này có miễn phí không?",
+     "a": "Có. Mọi game giáo dục trên Pixuvo đều miễn phí, không cần tài khoản và không phải cài đặt gì."
+    }
+   ]
+  },
+  "escape": {
+   "intro": "Cửa đã khóa, chìa khóa biến mất và trên tường có một dãy mã lạ được khắc vội. Game thoát hiểm trao cho bạn một chiếc hộp đầy câu đố và chỉ một mục tiêu: thoát ra ngoài. Pixuvo có hơn 2.000 game thoát hiểm miễn phí, từ phòng thoát hiểm kinh điển đến đường chạy kiểu obby và vượt ngục.\n\nKiểu kinh điển là phòng thoát hiểm trỏ và nhấp. Bạn nhấp khắp khung cảnh, thu thập đồ vật, kết hợp chúng và giải mã. Có những series qua từng cánh cửa, nơi mỗi căn phòng mới lại khó hơn một chút. Game vượt ngục thêm câu chuyện lẻn qua mặt lính canh, còn game thoát hiểm obby thiên về nhảy qua đường chạy chướng ngại vật hơn là tìm manh mối, nên hợp với các bạn thích vận động hơn suy nghĩ. Những game hay nên thử gồm 100 Doors - Escape from Prison, Prison Jail Escaping Game, Cool Escape Obby Man và Knock and Run. 100 Doors Escape.\n\nQuy tắc vàng của game thoát hiểm: nhìn mọi thứ hai lần. Hãy nhấp vào các góc, mở ngăn kéo, phóng to tranh ảnh và ghi nhớ mọi con số hay màu sắc bạn thấy, vì chúng thường mở khóa thứ gì đó về sau. Một cuốn sổ nhỏ cạnh bàn phím thật sự hữu ích. Phần lớn phòng thoát hiểm chỉ cần chuột hoặc ngón tay, nên rất thân thiện với màn hình cảm ứng, và nhiều game cũng chơi được trên điện thoại hoặc máy tính bảng; hãy xem trang game cho chắc. Game thoát hiểm thuộc thể loại game phiêu lưu lớn hơn, nếu bạn muốn khám phá thêm.",
+   "faq": [
+    {
+     "q": "Game phòng thoát hiểm chơi như thế nào?",
+     "a": "Bạn bị mắc kẹt trong một căn phòng và phải tìm đồ vật ẩn giấu, kết hợp chúng và giải mã hoặc giải đố để mở lối ra. Phần lớn chơi bằng cách nhấp hoặc chạm vào đồ vật."
+    },
+    {
+     "q": "Game thoát hiểm nào hay cho người mới chơi?",
+     "a": "Series qua từng cánh cửa thường bắt đầu dễ rồi khó dần, nên là cách tốt để làm quen với lối tư duy của câu đố thoát hiểm. 100 Doors - Escape from Prison là game hay để bắt đầu."
+    },
+    {
+     "q": "Nếu bị kẹt trong game thoát hiểm thì phải làm sao?",
+     "a": "Hãy nhấp lại vào mọi góc, kiểm tra túi đồ và thử kết hợp các món. Ghi lại những con số, màu sắc và ký hiệu đã thấy thường giúp lộ ra lời giải."
+    },
+    {
+     "q": "Game thoát hiểm obby là gì?",
+     "a": "Obby là đường chạy vượt chướng ngại vật. Trong game thoát hiểm obby, bạn đến được lối ra bằng cách chạy và nhảy qua chướng ngại vật thay vì giải manh mối."
+    },
+    {
+     "q": "Tôi có thể chơi game thoát hiểm trên điện thoại không?",
+     "a": "Phòng thoát hiểm phần lớn chỉ cần chạm, nên nhiều game chạy tốt trên điện thoại và máy tính bảng. Trang của từng game cho biết có hỗ trợ màn hình cảm ứng không."
+    }
+   ]
+  },
+  "farming": {
+   "intro": "Gieo hạt, tưới nước rồi quay lại thu hoạch. Game nông trại ấm cúng và yên bình, vì vậy nhiều bạn nhỏ (và cả bố mẹ) thích chơi sau một ngày bận rộn. Pixuvo có hơn 240 game nông trại.\n\nPhần lớn chúng kết hợp vài hoạt động. Game trồng trọt xoay quanh gieo trồng, tưới nước và thu hái rau, quả hay hoa. Game vật nuôi cho bạn cho ăn và chăm sóc gà, bò hoặc thú cưng. Game máy kéo đưa bạn vào ghế lái để cày ruộng và chở hàng, và có những game nông trại là thế giới nhỏ nơi bạn làm ruộng, xây dựng và buôn bán theo nhịp của mình. Garden Master, Happy Farm, Tractor Simulator Farming Game, A day in the countryside và Island Farm Cat Gardener là vài game nên thử.\n\nNếu muốn thư giãn, hãy bắt đầu với một game làm vườn nơi chẳng có gì có thể hỏng. Nếu thích lái xe, hãy thử game mô phỏng máy kéo. Game nông trại thường thưởng cho việc bạn quay lại đều đặn, và một số lưu nông trại của bạn trong trình duyệt trên thiết bị bạn dùng. Phần lớn chỉ cần nhấp chuột hoặc chạm, nên cũng dễ chơi trên máy tính bảng và điện thoại – trang game cho bạn biết có chơi được trên điện thoại và máy tính bảng không.",
+   "faq": [
+    {
+     "q": "Game nông trại là gì?",
+     "a": "Game nông trại cho bạn trồng cây, chăm sóc vật nuôi và đôi khi lái máy kéo. Chúng thường nhẹ nhàng và tập trung vào việc dần dần phát triển nông trại của bạn."
+    },
+    {
+     "q": "Game nông trại nào hợp với các bé nhỏ tuổi?",
+     "a": "Game làm vườn và vật nuôi nhẹ nhàng là khởi đầu tốt, và nhiều game nông trại hầu như không có áp lực thời gian, rất hợp với người chơi nhỏ tuổi. Những game hay để bắt đầu: Garden Master, Happy Farm và Island Farm Cat Gardener."
+    },
+    {
+     "q": "Ở đây có game máy kéo không?",
+     "a": "Có – Tractor Simulator Farming Game là một game nên thử, và bạn có thể tìm thêm xe cộ trong các mục game lái xe và game xe tải."
+    },
+    {
+     "q": "Nông trại của tôi có được lưu lại không?",
+     "a": "Nhiều game nông trại lưu tiến trình trong trình duyệt trên cùng một thiết bị. Nếu bạn xóa dữ liệu trình duyệt hoặc dùng thiết bị khác, có thể bạn phải bắt đầu lại."
+    },
+    {
+     "q": "Các game này có miễn phí không?",
+     "a": "Có. Mọi game nông trại trên Pixuvo đều miễn phí và chạy trên trình duyệt, không cần đăng ký."
+    }
+   ]
+  },
+  "fighting": {
+   "intro": "Đấu tay đôi, đấu trường đông nghịt và những cú đấm hạ gục – game đối kháng là chuyện đọc vị đối thủ và ra đòn trước. Pixuvo tập hợp hơn 1.000 game đối kháng miễn phí để chơi trên trình duyệt, và nhiều game được làm cho hai người dùng chung một bàn phím.\n\nKhông phải game đối kháng nào cũng giống nhau. Game đấu người que giữ đồ họa đơn giản để mọi sự chú ý dồn vào việc canh thời điểm tung cú đá và combo; Stickman Warriors và Stickman Street Fighting 3D là những ví dụ hay. Game đấu trường và party thì ngộ nghĩnh hơn, xô đẩy và nảy tưng tưng nhiều hơn là đánh nhau nghiêm túc. Ngoài ra còn có game gộp và chiến đấu, kết hợp gộp đồ với trận đánh – lựa chọn hay cho các bạn thích lên kế hoạch hơn là bấm phím loạn xạ. Sumo Shove, Knockback Knights và Gladiators Merge and Fight là những game khác nên thử.\n\nCách hay để tiến bộ là học thật giỏi hai ba chiêu thay vì bấm mọi phím cùng lúc. Đỡ đòn đúng lúc thường thắng nhiều trận hơn là tấn công. Trên máy tính, hãy xem cách bố trí phím điều khiển trên trang game trước khi bắt đầu, nhất là ở chế độ 2 người. Nhiều game cũng chạy trên điện thoại và máy tính bảng – trang game sẽ ghi rõ. Nếu muốn thêm game cần phản xạ nhanh, thể loại game hành động rộng hơn là điểm đến tiếp theo.",
+   "faq": [
+    {
+     "q": "Game đối kháng nào hay nhất cho trẻ em?",
+     "a": "Game đối kháng kiểu party là khởi đầu vui vẻ, nhẹ nhàng, còn game đấu người que đơn giản là bước tiếp theo hợp lý. Sumo Shove, Knockback Knights và Stickman Warriors là những ví dụ hay."
+    },
+    {
+     "q": "Tôi có thể chơi game đối kháng với bạn trên cùng một máy tính không?",
+     "a": "Có, nhiều game đối kháng có chế độ 2 người trên một bàn phím, thường là WASD cho một người và phím mũi tên cho người kia. Trang game cho biết khi game hỗ trợ hai người chơi."
+    },
+    {
+     "q": "Làm sao để chơi game đối kháng giỏi hơn?",
+     "a": "Hãy học thật giỏi vài chiêu, luyện đỡ đòn và quan sát đối thủ trước khi tấn công. Những lượt tập ngắn giúp ích hơn một buổi chơi dài."
+    },
+    {
+     "q": "Game đối kháng người que là gì?",
+     "a": "Đó là game đối kháng mà nhân vật là những hình người que đơn giản. Vì đồ họa đơn giản, niềm vui đến từ việc canh thời điểm, combo và vật lý."
+    },
+    {
+     "q": "Game đối kháng trên Pixuvo có miễn phí không?",
+     "a": "Có, mọi game đối kháng trên Pixuvo đều chơi miễn phí trên trình duyệt, không cần tài khoản và không phải cài đặt gì."
+    }
+   ]
+  },
+  "first-person-shooter": {
+   "intro": "Trong game bắn súng góc nhìn thứ nhất, bạn không đứng xem người hùng – bạn chính là người hùng. Camera đặt ngay sau mắt bạn, nên mỗi khúc quanh bạn rẽ và mỗi mục tiêu bạn phát hiện đều cảm thấy gần và thật. Pixuvo có hơn 150 game bắn súng góc nhìn thứ nhất (FPS) miễn phí, chơi thẳng trên trình duyệt.\n\nGame FPS thường có vài kiểu: game nhiệm vụ với mục tiêu cần hoàn thành qua từng màn, game chiến trường trên bản đồ lớn hơn, và game bắn súng đấu trường với những ván nhanh và nhắm bắn tốc độ. Những game nằm gần đầu danh sách gồm Frontline Assault: Battleground Fire Max Shooting, Commando Force 2, Strykon và Battle Shot Elite, cùng FPS Sniper Shooting: Production Facility, Border Battleground, Battleops và Vexon. Nếu muốn thứ gì nhẹ nhàng hơn, hãy tìm game bắn súng phong cách hoạt hình, vui nhộn thay vì gai góc.\n\nGame FPS dễ chơi nhất với chuột và bàn phím: WASD để di chuyển, chuột để nhìn và nhắm, nhấp chuột trái để bắn và thường nhấp chuột phải để ngắm qua ống ngắm. Mẹo cho người mới: khi di chuyển, hãy giữ tâm ngắm ở ngang tầm đầu, để khi có gì xuất hiện bạn chỉ cần chỉnh rất ít. Hãy xem phím điều khiển trên trang game; một số game cũng chạy trên điện thoại và máy tính bảng, trang game sẽ ghi rõ. Nhiều game FPS có phong cách chân thực và hợp với các bạn lớn tuổi hơn – các game có nội dung bạo lực được kiểm duyệt thủ công, và trang dành cho phụ huynh giải thích cách chúng tôi kiểm tra. Còn nhiều game bắn súng khác đang chờ bạn trong thể loại game bắn súng.",
+   "faq": [
+    {
+     "q": "Game bắn súng góc nhìn thứ nhất là gì?",
+     "a": "Game bắn súng góc nhìn thứ nhất (FPS) là game bắn súng mà bạn nhìn thế giới qua đôi mắt của nhân vật. Trên màn hình bạn thường chỉ thấy đôi tay và vũ khí của mình."
+    },
+    {
+     "q": "Game FPS điều khiển thế nào?",
+     "a": "Phần lớn dùng WASD để di chuyển, chuột để nhìn xung quanh, nhấp chuột trái để bắn và nhấp chuột phải để ngắm qua ống ngắm. Trang game liệt kê chính xác phím điều khiển."
+    },
+    {
+     "q": "Game FPS nào hay nhất cho người mới chơi?",
+     "a": "Hãy tìm game nhiệm vụ có màn chơi ngắn để học từng bước. Game bắn súng phong cách hoạt hình là lựa chọn nhẹ nhàng hơn cho người chơi nhỏ tuổi."
+    },
+    {
+     "q": "Tôi có thể chơi game FPS mà không cần tải gì không?",
+     "a": "Có, game FPS trên Pixuvo chạy trực tiếp trên trình duyệt web, không cần tải hay cài đặt."
+    },
+    {
+     "q": "Game FPS có phù hợp với trẻ em không?",
+     "a": "Tùy từng game – có game kiểu hoạt hình, có game là game chiến tranh chân thực, hợp với các bạn lớn hơn. Phụ huynh có thể đọc trang dành cho phụ huynh để biết game được kiểm duyệt thế nào."
+    }
+   ]
+  },
+  "football": {
+   "intro": "Một cú sút, một bàn thắng và cả khán đài như vỡ òa. Bóng đá (người Mỹ gọi là soccer) là môn thể thao được yêu thích nhất hành tinh, và Pixuvo có hơn 590 game bóng đá để bạn chơi ngay trên trình duyệt.\n\nKiểu phổ biến nhất là game sút phạt đền và đá phạt. Bạn nhắm, chọn lực và cố vượt qua thủ môn hay hàng rào hậu vệ để ghi bàn chỉ bằng một cú sút hoàn hảo. Game bóng đá đầu to là những trận một đối một nhanh và vui nhộn, nơi các cầu thủ đầu to nhảy lên đánh đầu, và thường rất hợp cho hai người chơi. Game chạy thêm phần né tránh và rê bóng. Curve Kick, Penalty Challenge, Power Free Kick, Soccer Dash và Anime Headball là những game dễ để bắt đầu.\n\nNếu mới chơi, hãy bắt đầu với game sút phạt đền, vì nó dạy bạn nhắm và căn lực chỉ bằng chuột hoặc một cú vuốt. Khi muốn có đối thủ thật sự, hãy thử một trận bóng đá đầu to với bạn trên cùng một bàn phím. Phần lớn game bóng đá đều nhanh, nên bạn có thể chơi trọn một trận trong vài phút. Nhiều game cũng chạy trên điện thoại và máy tính bảng – trang game sẽ ghi rõ.",
+   "faq": [
+    {
+     "q": "Một trận bóng đá kéo dài bao lâu?",
+     "a": "Một trận đấu chuyên nghiệp thật kéo dài 90 phút, chia làm hai hiệp, mỗi hiệp 45 phút. Game bóng đá trên trình duyệt ngắn hơn nhiều: một lượt sút phạt đền hay một trận bóng đá đầu to thường chỉ mất vài phút."
+    },
+    {
+     "q": "Bóng đá ở đây có phải là “soccer” không?",
+     "a": "Đúng vậy – đó là môn thể thao chơi với quả bóng tròn và hai khung thành. Người Mỹ gọi là soccer, còn phần lớn thế giới gọi là football, tức bóng đá."
+    },
+    {
+     "q": "Game bóng đá đầu to là gì?",
+     "a": "Đó là những trận một đối một với các cầu thủ hoạt hình có cái đầu khổng lồ. Bạn nhảy, sút và đánh đầu đưa bóng vào lưới, và nhiều game cho hai người chơi trên một bàn phím – trang game cho biết khi game hỗ trợ hai người chơi."
+    },
+    {
+     "q": "Game bóng đá nào hay nhất để luyện sút phạt đền?",
+     "a": "Penalty Challenge, Shoot Up Penalty Kicks và Penalty Shoot Pro World Cup là những game hay để bắt đầu, còn Curve Kick và Power Free Kick là những game khác nên thử."
+    },
+    {
+     "q": "Tôi có thể chơi game bóng đá trên máy tính bảng không?",
+     "a": "Nhiều game bóng đá chỉ cần vuốt đơn giản để sút, nên chạy tốt trên máy tính bảng và điện thoại. Trang của từng game cho biết có hỗ trợ màn hình cảm ứng không."
+    }
+   ]
+  },
+  "golf": {
+   "intro": "Chạm nhẹ, bóng lăn và cong dần về phía lỗ. Game golf thuộc hàng game thư giãn nhất trên Pixuvo – không có đồng hồ đuổi theo, chỉ có bạn, quả bóng và một sân golf đầy mẹo. Có gần 100 game golf, nên ngày nào bạn cũng có thể thử thứ gì đó mới.\n\nMini golf là nơi tuyệt vời để bắt đầu. Các sân có dốc, tường, cối xay gió và những chướng ngại vật ngộ nghĩnh, và mục tiêu là đưa bóng vào lỗ với càng ít cú đánh càng tốt. Little Golf, Golf Mini, Mini Golf 2 và Mini Golf 18 For Kids là những sân đầu tiên hay. Golf Orbit, Golf - World Challenge, Sunny Golf, Tap & Putt và Oh My Golf là những game khác nên thử. Có game golf là câu đố gạt bóng nhẹ nhàng, có game lại xoay quanh những cú phát bóng xa và mạnh.\n\nHãy nhớ quy tắc chính: càng ít cú đánh càng tốt. Con số bạn cần vượt qua gọi là “par”. Trước mỗi cú đánh, hãy xem bóng sẽ dội vào tường ở đâu, và dùng những cú chạm nhỏ, nhẹ khi đã ở gần lỗ. Game golf thường chỉ cần chuột hoặc ngón tay, nên cũng rất hợp trên máy tính bảng và điện thoại – trang game cho bạn biết có chơi được trên điện thoại hay máy tính bảng không.",
+   "faq": [
+    {
+     "q": "Game mini golf nào hay cho trẻ em?",
+     "a": "Mini Golf 18 For Kids, Little Golf và Golf Mini là những game hay để bắt đầu, còn Mini Golf 2 là một game khác nên thử. Khi mới học, hãy tìm những lỗ golf ngắn và có đường ngắm rõ ràng."
+    },
+    {
+     "q": "“Par” trong golf nghĩa là gì?",
+     "a": "Par là số cú đánh mà một người chơi giỏi cần để hoàn thành một lỗ. Đánh ít cú hơn par là rất tuyệt, còn nhiều hơn nghĩa là lần sau bạn có thể cố gắng cải thiện."
+    },
+    {
+     "q": "Làm sao để đánh bóng đi đúng khoảng cách?",
+     "a": "Trong phần lớn game golf, bạn kéo hoặc giữ để chỉnh lực và thả ra để đánh. Hãy đánh ngắn, nhẹ khi ở gần lỗ – quá mạnh tay là lý do trượt phổ biến nhất."
+    },
+    {
+     "q": "Tôi có thể chơi game golf trên điện thoại hoặc máy tính bảng không?",
+     "a": "Nhiều game golf chỉ cần một cú chạm hoặc kéo đơn giản, nên chạy tốt trên màn hình cảm ứng. Trang game cho bạn biết có chơi được trên điện thoại và máy tính bảng không."
+    },
+    {
+     "q": "Các game này có miễn phí không?",
+     "a": "Có. Mọi game golf trên Pixuvo đều miễn phí, không cần đăng ký và không phải tải gì."
+    }
+   ]
+  },
+  "hidden-object": {
+   "intro": "Đâu đó trong căn phòng bừa bộn này có một chiếc chìa khóa, một tách trà và một chú chim vàng tí xíu. Bạn có tìm ra trước khi hết giờ không? Game tìm đồ vật là chuyện mắt tinh và kiên nhẫn, và Pixuvo có hơn 300 game như vậy để chơi miễn phí trên trình duyệt.\n\nPhần lớn game cho bạn một danh sách đồ vật và một bức tranh chi tiết, đầy đồ đạc lộn xộn. Bạn nhấp vào từng món khi tìm thấy, và có game thêm gợi ý, đồng hồ hoặc điểm thưởng khi tìm nhanh. Game tìm điểm khác biệt như Italian Brainrot: Find the Difference cho bạn hai bức tranh gần như giống hệt và yêu cầu chỉ ra điểm đã thay đổi. Những cuộc phiêu lưu tìm đồ dài hơn nối nhiều khung cảnh thành một bí ẩn, và vài game có không khí rùng rợn, nên hợp với các bạn lớn hơn. Hidden Objects Lost Island 2, Hidden Object Emily's Case và Hidden Objects Vacation in Brazil là vài game nên thử.\n\nMẹo nhỏ đây: đừng nhìn cả bức tranh cùng lúc. Hãy quét từng phần, như đọc một trang sách từ trái sang phải, và tìm hình dáng thay vì màu sắc. Chỉ dùng gợi ý khi thật sự bí thay vì nhấp lung tung, vì nhiều game trừ điểm khi nhấp sai. Bạn chỉ cần chuột hoặc ngón tay, và nhiều game cũng chạy trên điện thoại và máy tính bảng – trang game sẽ ghi rõ. Game tìm đồ vật nằm trong thể loại game giải đố.",
+   "faq": [
+    {
+     "q": "Game tìm đồ vật là gì?",
+     "a": "Đó là game giải đố mà bạn tìm trong một bức tranh đông đúc những món đồ theo danh sách. Có phiên bản lại yêu cầu bạn tìm điểm khác biệt giữa hai bức tranh."
+    },
+    {
+     "q": "Làm sao để chơi game tìm đồ vật giỏi hơn?",
+     "a": "Hãy quét bức tranh theo từng phần nhỏ và tìm đường viền của từng món, không chỉ màu sắc. Để dành gợi ý cho lúc thật sự bí."
+    },
+    {
+     "q": "Game tìm đồ vật có tốt cho trẻ em không?",
+     "a": "Chúng rèn sự tập trung, kiên nhẫn và khả năng quan sát. Một số game có cốt truyện mang chủ đề rùng rợn, nên các bé nhỏ tuổi có thể thích game tìm điểm khác biệt nhẹ nhàng hơn."
+    },
+    {
+     "q": "Game tìm đồ vật và game tìm điểm khác biệt khác nhau thế nào?",
+     "a": "Game tìm đồ vật cho bạn một danh sách thứ cần tìm trong một khung cảnh, còn game tìm điểm khác biệt cho bạn hai bức tranh và hỏi điều gì đã thay đổi. Cả hai đều nằm trong thể loại này."
+    },
+    {
+     "q": "Tôi có thể chơi game tìm đồ vật trên máy tính bảng không?",
+     "a": "Có, nhiều game chơi tốt bằng ngón tay trên điện thoại và máy tính bảng. Game có chạy trên di động hay không được ghi trên trang game."
+    }
+   ]
+  },
+  "horror": {
+   "intro": "Cánh cửa kẽo kẹt, hành lang tối om và có thứ gì đó đang chuyển động trong bóng tối. Mục này dành cho những người chơi thích chút cảm giác hồi hộp và một cú hù dọa ra trò – kiểu vui rùng rợn mà nhiều bạn nhỏ thích vào dịp Halloween hay khi ngủ lại nhà bạn. Pixuvo có hơn 200 game kinh dị.\n\nNhiều game là những cuộc phiêu lưu rùng rợn và game thoát hiểm, nơi bạn khám phá những nơi đáng sợ, tìm manh mối và cố thoát ra. Có game dùng nhân vật meme hài hước, có game dựa vào những chủ đề rùng rợn kinh điển như búp bê, nghĩa địa và ngôi nhà ma ám. The malevolent mansion of evil, Exhibit of Sorrows, Cursed Dreams, Floppa Scary Horror và Scary Doll là những game dễ để bắt đầu.\n\nKhông phải ai cũng thích bị dọa, và điều đó hoàn toàn bình thường. Game kinh dị có thể có những cú hù bất ngờ, âm thanh đáng sợ và hình ảnh u tối, nên hợp với các bạn lớn hơn, và phụ huynh nên xem qua trước khi các bé nhỏ tuổi chơi. Bật đèn lên, hoặc chơi cùng một người bạn, sẽ đỡ sợ hơn nhiều! Các game có nội dung bạo lực hoặc người lớn được kiểm duyệt thủ công trước khi xuất hiện, và trang dành cho phụ huynh giải thích thêm. Nhiều game kinh dị chơi hay nhất trên máy tính với tai nghe; trang của từng game cho biết có hỗ trợ màn hình cảm ứng không.",
+   "faq": [
+    {
+     "q": "Game kinh dị có phù hợp với trẻ em không?",
+     "a": "Tùy từng bé. Nhiều game ở đây là phiêu lưu rùng rợn nhẹ nhàng, nhưng một số có những cú hù bất ngờ và hình ảnh u tối, nên hợp với các bạn lớn hơn, và phụ huynh nên xem trước. Trang dành cho phụ huynh có thêm gợi ý."
+    },
+    {
+     "q": "Game kinh dị nào ít đáng sợ nhất ở đây?",
+     "a": "Những game xoay quanh nhân vật meme hài hước thường ngớ ngẩn nhiều hơn đáng sợ. Dù vậy, mỗi game một khác, nên nếu chưa chắc, hãy cùng nhau chơi thử trước."
+    },
+    {
+     "q": "Jump scare là gì?",
+     "a": "Jump scare (cú hù bất ngờ) là một hình ảnh hoặc âm thanh lớn xuất hiện đột ngột khiến bạn giật mình. Đây là mẹo mà nhiều game kinh dị sử dụng, nên vặn nhỏ âm lượng có thể khiến game bớt căng thẳng."
+    },
+    {
+     "q": "Có game kinh dị kiểu phòng thoát hiểm không?",
+     "a": "Có, nhiều game kinh dị xoay quanh việc khám phá những nơi rùng rợn và giải đố để thoát ra. The malevolent mansion of evil và Exhibit of Sorrows là hai game kinh dị nên xem."
+    },
+    {
+     "q": "Các game này có miễn phí không?",
+     "a": "Có. Mọi game kinh dị trên Pixuvo đều miễn phí và chạy trên trình duyệt, không cần đăng ký."
+    }
+   ]
+  },
+  "idle": {
+   "intro": "Đây là kiểu game vẫn tiếp tục chơi ngay cả khi bạn rời tay khỏi bàn phím. Trong game idle, mỏ, công nhân hay nhà máy của bạn vẫn sản xuất trong lúc bạn chờ, và khi bạn quay lại, đã có cả đống xu sẵn sàng cho lần nâng cấp tiếp theo. Pixuvo có 250 game idle.\n\nÝ tưởng lúc nào cũng tương tự: bắt đầu nhỏ, kiếm tiền, nâng cấp, lớn mạnh nhanh hơn. Bối cảnh mới là thứ làm mỗi game khác nhau: bạn có thể đào sâu mãi xuống lòng đất, biến vài cái cây thành cả một cơ nghiệp gỗ, thu thập tài nguyên để phát triển căn cứ hay vương quốc, hoặc gộp ô tô rồi cho chúng đua. Drill to the Core, Lumberjack Idle, Idle Craft 3D, Dominations Idle và Idle Merge Car and Race là vài game nằm gần đầu danh sách, còn Little Commander - Red vs Blue và Frozenventure cũng rất đáng xem.\n\nGame idle rất hợp với những người thích thấy mình tiến bộ mà không cần phản xạ nhanh. Chúng cũng dễ xen vào giữa những việc khác: ghé vào, mua vài nâng cấp rồi quay lại sau. Một mẹo đơn giản – hãy nâng cấp thứ kiếm được nhiều nhất trên mỗi đồng xu bỏ ra. Nhiều game idle lưu tiến trình trong trình duyệt trên thiết bị bạn dùng, nên hãy chơi trên cùng một thiết bị. Chúng chỉ cần nhấp chuột hoặc chạm, nên thường chạy tốt trên điện thoại và máy tính bảng; game có chạy trên di động hay không được ghi trên trang game.",
+   "faq": [
+    {
+     "q": "Game idle là gì?",
+     "a": "Game idle là game mà tiến trình của bạn vẫn tiếp tục ngay cả khi bạn không chủ động chơi. Bạn mua nâng cấp tự động kiếm xu, rồi dùng số xu đó để lớn mạnh nhanh hơn nữa."
+    },
+    {
+     "q": "Game idle và game clicker khác nhau thế nào?",
+     "a": "Trong game clicker, bạn kiếm chủ yếu bằng cách tự nhấp, còn game idle tự kiếm tiền theo thời gian. Nhiều game kết hợp cả hai: lúc đầu bạn nhấp, về sau mọi thứ chạy tự động."
+    },
+    {
+     "q": "Game idle có tiếp tục kiếm tiền khi tôi đóng trang không?",
+     "a": "Một số game idle tính thời gian bạn vắng mặt và tặng xu khi bạn quay lại, nhưng không phải game nào cũng vậy. Tùy từng game."
+    },
+    {
+     "q": "Nên thử game idle nào đầu tiên?",
+     "a": "Drill to the Core, Lumberjack Idle và Idle Merge Car and Race là ba game dễ để bắt đầu. Hãy thử vài game, mỗi game vài phút, rồi giữ lại game có chủ đề bạn thích nhất."
+    },
+    {
+     "q": "Các game này có miễn phí không?",
+     "a": "Có. Mọi game idle trên Pixuvo đều chơi miễn phí, không cần tài khoản."
+    }
+   ]
+  },
+  "io": {
+   "intro": "Bắt đầu thật nhỏ, lớn lên thật to và cố đừng để bị ăn mất. Đó chính là tinh thần của game .io – kiểu game trên trình duyệt mà rất nhiều người chơi cùng vào một đấu trường và tranh tài trong những ván ngắn. Pixuvo có hơn 1.800 game theo phong cách .io.\n\nCái tên bắt nguồn từ đuôi địa chỉ web “.io” của những game đình đám đầu tiên như Agar.io và Slither.io. Từ đó, “.io” trở thành nhãn gọi chung cho mọi game đấu trường đơn giản, nhanh, vào chơi chỉ trong vài giây. Trong game rắn và giun, bạn ăn để dài ra; trong game khối tròn, bạn to và mạnh hơn nhờ thu thập đồ và qua mặt người khác; ngoài ra còn có kiểu game vui nhộn với đua, đấu và trốn tìm. Worm Hunt - Snake game iO zone, Blob Wars, Evo Pit, Diep.io, Hide N Seek.io và Fallingman.io là vài game đáng thử.\n\nĐiều tuyệt nhất ở game .io là tốc độ: thua thì chỉ vài giây sau bạn đã vào ván mới. Hãy học bằng cách quan sát những người chơi lớn hơn và lúc đầu nên đi gần mép bản đồ. Phần lớn game .io chơi bằng chuột hoặc phím mũi tên, một số chạy được cả trên điện thoại và máy tính bảng – trang game sẽ ghi rõ. Nhiều game .io là game online, nên hãy nhắc các bé không bao giờ chia sẻ thông tin cá nhân với người chơi khác.",
+   "faq": [
+    {
+     "q": "“.io” trong game nghĩa là gì?",
+     "a": "“.io” vốn là một đuôi địa chỉ web, giống như .com. Nó trở thành nhãn game sau những game đình đám đầu tiên như Agar.io và Slither.io, nên ngày nay nó chỉ các game đấu trường đơn giản, nhanh, vào chơi trong vài giây."
+    },
+    {
+     "q": "Game .io là gì?",
+     "a": "Đó là những game trình duyệt chơi nhanh, nơi bạn tranh tài trong một đấu trường, thường bằng cách lớn lên, gom điểm hoặc trụ lại lâu hơn người khác. Mỗi ván đều ngắn nên bạn có thể chơi lại ngay."
+    },
+    {
+     "q": "Nên bắt đầu với game .io nào?",
+     "a": "Worm Hunt - Snake game iO zone, Diep.io, Hide N Seek.io và Fallingman.io là những lựa chọn đầu tiên rất ổn. Ván chơi ngắn nên thử vài game cũng dễ."
+    },
+    {
+     "q": "Game .io có chơi với người thật không?",
+     "a": "Nhiều game .io chơi online với người chơi khác, một số khác dùng đối thủ máy. Bố mẹ có thể xem trước game và nhắc các bé không chia sẻ thông tin cá nhân."
+    },
+    {
+     "q": "Các game này có miễn phí không?",
+     "a": "Có. Tất cả game .io trên Pixuvo đều miễn phí và mở ngay trên trình duyệt, không cần tài khoản."
+    }
+   ]
+  },
+  "jigsaw": {
+   "intro": "Không gì sánh bằng cảm giác đặt mảnh cuối cùng vào chỗ và thấy cả bức tranh hiện ra. Game ghép hình online mang lại đúng cảm giác đó mà không sợ rơi mất mảnh nào dưới gầm ghế. Pixuvo có hơn 1.500 game ghép hình miễn phí để chơi ngay trên trình duyệt.\n\nTranh ghép có gần như mọi thứ các bé yêu thích: động vật trong Animal Explorer Puzzle và Axolotl Jigsaw Picture Puzzle, người ngoài hành tinh trong Small Aliens - Jigsaw, cảnh theo mùa trong Halloween Puzzle và thể thao trong Gymnastics Jigsaw Jam. Puzzles for Kids và Jigsaw Sort cũng đáng thử, và có những game biến tấu kiểu ghép hình cổ điển, nên bạn có thể đổi phong cách khi muốn điều gì mới.\n\nMẹo mà dân mê ghép hình vẫn dùng cũng hiệu quả khi chơi online: ghép viền và các góc trước, rồi chia các mảnh còn lại theo màu. Nhiều game cho bạn chọn số mảnh, vậy hãy bắt đầu với ít mảnh và tăng dần khi đã nhanh tay hơn. Một số game còn hiện mờ bức tranh hoàn chỉnh ở nền – rất có ích cho người mới. Ghép hình nhẹ nhàng, yên tĩnh, rất hợp để thư giãn hoặc để bé ngồi chơi cạnh bố mẹ. Bạn chỉ cần chuột hoặc ngón tay để kéo mảnh, và nhiều game chạy được cả trên điện thoại hay máy tính bảng; hãy xem trang game để chắc chắn. Muốn thêm game rèn trí óc, hãy ghé chuyên mục game giải đố.",
+   "faq": [
+    {
+     "q": "Game ghép hình nào hợp với bé nhỏ?",
+     "a": "Puzzles for Kids và các game ghép hình động vật như Animal Explorer Puzzle là lựa chọn thân thiện, khởi đầu nhẹ nhàng cho bé nhỏ. Hãy chọn ít mảnh nếu game cho phép."
+    },
+    {
+     "q": "Làm sao ghép hình nhanh hơn?",
+     "a": "Ghép khung viền trước, rồi gom các mảnh còn lại theo màu hoặc họa tiết. Thường xuyên nhìn bức tranh hoàn chỉnh để biết mỗi phần nằm ở đâu."
+    },
+    {
+     "q": "Mình có chọn được số mảnh ghép không?",
+     "a": "Nhiều game ghép hình cho bạn chọn số mảnh trước khi bắt đầu. Hãy bắt đầu với ít mảnh và thử nhiều hơn khi đã nhanh tay."
+    },
+    {
+     "q": "Game ghép hình online có chơi được trên máy tính bảng không?",
+     "a": "Kéo mảnh bằng ngón tay rất hợp với màn hình cảm ứng, và nhiều game ghép hình chạy trên điện thoại và máy tính bảng. Trang game cho biết game có hỗ trợ di động hay không."
+    },
+    {
+     "q": "Game ghép hình trên Pixuvo có miễn phí không?",
+     "a": "Có, tất cả game ghép hình trên Pixuvo đều miễn phí trên trình duyệt, không cần đăng ký."
+    }
+   ]
+  },
+  "mahjong": {
+   "intro": "Tìm hai quân giống nhau, bấm vào và nhìn chúng biến mất. Mạt chược solitaire (mahjong nối) nhẹ nhàng, nhiều màu sắc và rất tốt để luyện mắt. Pixuvo có gần 300 game mạt chược.\n\nPhần lớn game theo cùng một luật đơn giản: bạn chỉ được gỡ một cặp quân giống nhau nếu mỗi quân đều “tự do” – không bị quân nào đè lên và còn trống ít nhất một bên. Mục tiêu là dọn sạch cả bàn. Có bản giữ nguyên quân bài truyền thống, có bản dùng chủ đề và hình ảnh mới. Game Mahjong Connect thì hơi khác: các quân nằm phẳng trên bàn và bạn nối được hai quân nếu có một đường nối rẽ không quá hai lần. Một số game khác thêm kiểu xếp chồng hoặc sắp xếp. Nên bắt đầu với: Mahjong Classical, Mahjong Garden, Mahjong Sweet Connection, Mahjong Pair Up và Mahjong Tower.\n\nChiến thuật tốt cho người mới là gỡ quân ở các chồng cao nhất và các hàng dài trước, vì chúng chặn nhiều quân khác nhất. Có gợi ý thì cứ dùng – học hỏi chẳng có gì phải ngại! Mạt chược chơi bằng cú bấm chuột hoặc chạm và ở phần lớn phiên bản không bị giới hạn thời gian, nên hợp với máy tính, máy tính bảng và nhiều điện thoại; game có chạy trên di động không thì trang game sẽ ghi rõ.",
+   "faq": [
+    {
+     "q": "Chơi mạt chược solitaire như thế nào?",
+     "a": "Bấm vào hai quân giống nhau đang tự do – không bị che và còn trống bên trái hoặc bên phải – để gỡ chúng. Bạn thắng khi dọn sạch cả bàn."
+    },
+    {
+     "q": "Mạt chược và Mahjong Connect khác nhau thế nào?",
+     "a": "Trong mạt chược solitaire, các quân xếp chồng thành nhiều tầng. Trong Mahjong Connect, các quân nằm phẳng và bạn nối được hai quân nếu có một đường rẽ không quá hai lần nối chúng."
+    },
+    {
+     "q": "Đây có phải là mạt chược Trung Quốc truyền thống không?",
+     "a": "Không hẳn. Mạt chược truyền thống thường có bốn người chơi với bộ quân, còn mạt chược solitaire là trò ghép cặp một người chơi dùng cùng hình quân bài."
+    },
+    {
+     "q": "Hết nước ghép thì nên làm gì?",
+     "a": "Dùng gợi ý hoặc xáo lại nếu game có, hoặc chơi lại. Lần sau hãy thử gỡ các chồng cao nhất trước để ít quân bị chặn hơn."
+    },
+    {
+     "q": "Các game này có miễn phí không?",
+     "a": "Có. Mọi game mạt chược trên Pixuvo đều miễn phí trên trình duyệt."
+    }
+   ]
+  },
+  "match-3": {
+   "intro": "Đổi chỗ hai viên kẹo, xếp ba viên thành hàng và bùm! Game ghép 3 hiểu luật chỉ trong vài giây, vậy mà càng lên màn càng thú vị. Pixuvo có hơn 2.300 game như vậy.\n\nLuật ở đâu cũng giống nhau: đổi chỗ hai ô cạnh nhau để tạo hàng ba ô cùng loại trở lên. Ghép bốn hay năm ô thì thường bạn nhận được ô đặc biệt có thể xóa cả hàng hoặc nổ tung một vùng. Kẹo ngọt và đá quý lấp lánh là chủ đề kinh điển, nhưng bạn cũng sẽ gặp đại dương, đồ ăn và nhiều bối cảnh khác, có game còn kết hợp công thức quen thuộc với điều mới như hợp nhất hay trang trí. Vào chơi nhanh với: Candy Match Saga 2, Sweet Blast, Super Candy Jewels, Gemcrafter và Ocean Crash.\n\nMới bắt đầu? Hãy tìm nước ghép ở gần đáy bàn trước, vì các ô rơi xuống có thể tự tạo thêm combo. Để dành ô đặc biệt cho lúc thật sự cần. Game ghép 3 rất hợp cho những phút nghỉ ngắn và chơi tốt bằng chuột hay ngón tay, nên nhiều game hợp với máy tính bảng và điện thoại – game có chạy trên di động không thì trang game sẽ ghi rõ.",
+   "faq": [
+    {
+     "q": "Game ghép 3 là gì?",
+     "a": "Đó là game giải đố mà bạn đổi chỗ các ô để xếp ba ô cùng loại trở lên thành hàng. Các ô đã ghép biến mất, ô mới rơi xuống và bạn cố đạt mục tiêu của từng màn."
+    },
+    {
+     "q": "Làm sao tạo ô đặc biệt trong game ghép 3?",
+     "a": "Ở phần lớn game, ghép bốn hoặc năm ô cùng lúc sẽ tạo ra một ô đặc biệt có thể xóa một hàng, một cột hoặc cả một vùng."
+    },
+    {
+     "q": "Có game ghép 3 chủ đề kẹo không?",
+     "a": "Có, kẹo là một trong những chủ đề kinh điển của game ghép 3, và chuyên mục này có rất nhiều bàn chơi ngọt ngào. Candy Match Saga 2 và Sweet Blast là hai game đáng thử."
+    },
+    {
+     "q": "Vì sao nên ghép ở phía dưới trước?",
+     "a": "Ghép ở dưới đáy làm mọi thứ phía trên rơi xuống, thường tạo thêm nước ghép miễn phí. Ghép ở trên cùng chỉ làm vài ô dịch chuyển."
+    },
+    {
+     "q": "Các game này có miễn phí không?",
+     "a": "Có. Tất cả game ghép 3 trên Pixuvo đều miễn phí, không cần đăng ký."
+    }
+   ]
+  },
+  "math": {
+   "intro": "Ai bảo học toán chỉ có phiếu bài tập? Trong game toán học, đáp án đúng sẽ làm điều gì đó xảy ra: võ sĩ tung cú đấm, quái vật được cho ăn, xe đua lao vút lên trước. Pixuvo có hơn 700 game toán học miễn phí, biến những con số thành thử thách mà các bé thật sự muốn chơi.\n\nCác game luyện rất nhiều kỹ năng. Game số học luyện cộng, trừ, nhân, chia. Game kiểu đối đầu biến phép tính thành trận đấu tay đôi, ai tính nhẩm nhanh hơn sẽ chiếm ưu thế. Câu đố con số như 2048 thì ít cần tốc độ mà cần tư duy logic nhiều hơn. Kobadoo Arithmetic, Kids Math Online, Math Fight Club, Math Battle và Number Sums là vài game đáng thử. Nhiều game cho chọn dạng bài hoặc độ khó, nên hữu ích cho cả bé nhỏ lẫn các anh chị lớn hơn.\n\nĐể có kết quả tốt nhất, hãy chọn game khớp với phần đang học – bé lớp 1 cộng số nhỏ cần thứ khác hẳn so với học sinh lớp 6 đang luyện bảng cửu chương. Những buổi ngắn khoảng mười phút, đều đặn, có ích hơn một buổi dài. Bố mẹ và thầy cô có thể ngồi cạnh và biến việc học thành cuộc thi vui vẻ. Phần lớn game toán chơi bằng chuột, bàn phím hoặc chạm vào đáp án. Chơi trên máy tính bảng? Nhiều game hỗ trợ, và trang game cho biết đó là game nào. Còn nhiều game rèn trí óc khác trong chuyên mục game giải đố.",
+   "faq": [
+    {
+     "q": "Game toán học có thực sự giúp bé học không?",
+     "a": "Game toán mang lại nhiều lượt luyện tập nhanh và phản hồi ngay, giúp những kiến thức như bảng cửu chương ghi nhớ lâu hơn. Game hiệu quả nhất khi đi kèm việc học ở trường, chơi những buổi ngắn và đều đặn."
+    },
+    {
+     "q": "Game toán nào tốt để luyện bảng cửu chương?",
+     "a": "Hãy tìm game cho chọn phép nhân và bắt đầu chậm trước khi tăng tốc. Math Fight Club, Math Battle và Kobadoo Arithmetic là những chỗ bắt đầu dễ dàng."
+    },
+    {
+     "q": "Có game toán cho bé nhỏ không?",
+     "a": "Có, nhiều game toán bắt đầu với phép cộng và đếm đơn giản, và nhiều game cho chọn độ khó. Kids Math Online và Kobadoo Arithmetic là hai game đáng thử."
+    },
+    {
+     "q": "Bé có thể luyện những kỹ năng toán nào ở đây?",
+     "a": "Cộng, trừ, nhân, chia, tư duy logic với con số và tốc độ tính nhẩm. Câu đố con số như 2048 cũng rèn cảm nhận về số."
+    },
+    {
+     "q": "Bé có chơi game toán trên máy tính bảng được không?",
+     "a": "Nhiều game toán chỉ cần chạm vào đáp án nên chơi tốt trên điện thoại và máy tính bảng. Game có chạy trên di động không thì trang game sẽ ghi rõ."
+    }
+   ]
+  },
+  "maze": {
+   "intro": "Rẽ trái, rẽ phải, ngõ cụt, quay lại – rồi bất ngờ lối ra hiện ngay trước mặt. Mê cung là một trong những câu đố lâu đời nhất thế giới, và trên màn hình vẫn vui như thường. Pixuvo có hơn 190 game mê cung miễn phí để bạn giải ngay trên trình duyệt.\n\nKhông phải mê cung nào cũng vẽ trên giấy. Có những mê cung cổ điển nhìn từ trên xuống, nơi bạn dẫn nhân vật tới lối ra. Có những câu đố lăn bi, nơi bạn điều khiển viên bi qua các lối đi hiểm hóc và cố không để nó rơi xuống lỗ, và có game còn thêm kiểu tìm đường riêng. Hiện Maze Escape Hero, Maze Evolution HTML, MarbleMaze2, Roll Ball: Hole Puzzle, Maze Control HD và Snake Way đang đứng gần đầu danh sách.\n\nMột mẹo các nhà thám hiểm dùng từ lâu: luôn đặt một tay lên tường. Nếu bạn cứ men theo cùng một bức tường, trái hoặc phải, thì với mê cung đơn giản bạn sẽ tới được lối ra. Mẹo khác là nhìn mê cung ngược từ lối ra trước khi bắt đầu đi. Game mê cung rất hợp với bé nhỏ vì rèn khả năng lập kế hoạch và tư duy không gian mà không gây căng thẳng. Bạn thường di chuyển bằng phím mũi tên hoặc kéo bằng chuột hay ngón tay. Dùng điện thoại hay máy tính bảng? Nhiều game chạy được ở đó; hãy xem trên trang game. Còn nhiều game logic khác đang chờ trong chuyên mục game giải đố.",
+   "faq": [
+    {
+     "q": "Mẹo giải mê cung là gì?",
+     "a": "Ở nhiều mê cung đơn giản, bạn có thể luôn men theo một bức tường, giữ nó ở cùng một phía, cho tới khi gặp lối ra. Lập kế hoạch ngược từ lối ra cũng rất có ích."
+    },
+    {
+     "q": "Game mê cung có tốt cho bé không?",
+     "a": "Có, game rèn khả năng lập kế hoạch, tính kiên nhẫn và tư duy không gian. Mê cung nhỏ, đơn giản là khởi đầu nhẹ nhàng cho bé nhỏ."
+    },
+    {
+     "q": "Game mê cung lăn bi là gì?",
+     "a": "Trong mê cung lăn bi, bạn lăn viên bi qua các lối đi và cố không để nó rơi xuống lỗ. Vào chơi nhanh với MarbleMaze2 và Roll Ball: Hole Puzzle."
+    },
+    {
+     "q": "Điều khiển game mê cung thế nào?",
+     "a": "Phần lớn dùng phím mũi tên, chuột hoặc kéo bằng ngón tay. Trang game ghi rõ cách điều khiển của từng game."
+    },
+    {
+     "q": "Game mê cung trên Pixuvo có miễn phí không?",
+     "a": "Có, mọi game mê cung trên Pixuvo đều miễn phí và chạy ngay trên trình duyệt, không cần đăng ký."
+    }
+   ]
+  },
+  "memory": {
+   "intro": "Lật một lá bài, nhớ xem nó là gì, lật lá khác… lá giống nó nằm ở góc hay ở giữa nhỉ? Game trí nhớ dễ bắt đầu mà lại là bài tập thực sự cho bộ não. Pixuvo có hơn 600 game trí nhớ miễn phí để chơi ngay trên trình duyệt.\n\nKinh điển nhất là trò lật thẻ tìm cặp: mọi lá bài úp xuống và bạn lật hai lá mỗi lượt để tìm cặp giống nhau. Game ghi nhớ chuỗi thử thách một kiểu trí nhớ khác – bạn xem một chuỗi màu sắc hoặc âm thanh rồi lặp lại, và chuỗi dài thêm sau mỗi lượt. Có game luyện nhớ con số và vị trí, còn game tìm điểm khác biệt kết hợp trí nhớ với khả năng quan sát kỹ. Nên bắt đầu với: Memory Cards, Funny Animals Memory Game, Flag Memory Match, Kobadoo Numbers, Three Cups Game và The Kitchen - Spot the differences.\n\nMuốn giỏi hơn, hãy thử thầm gọi tên thứ mình thấy (“con mèo, góc trên bên trái”) – lời nói giúp hình ảnh in sâu hơn. Bắt đầu với ít thẻ và thêm dần khi tiến bộ. Game trí nhớ hợp với mọi lứa tuổi và là lựa chọn vui để bố mẹ và bé thay phiên nhau chơi. Bạn chỉ cần chuột hoặc chạm, và khá nhiều game chạy được cả trên điện thoại và máy tính bảng – trang game sẽ ghi rõ. Còn nhiều game tư duy khác trong chuyên mục game giải đố.",
+   "faq": [
+    {
+     "q": "Game trí nhớ có giúp cải thiện trí nhớ không?",
+     "a": "Game giúp trí nhớ làm việc của bạn được luyện tập đều đặn, nhất là khi game khó dần từng bước. Chơi những buổi ngắn thường xuyên hiệu quả hơn một buổi dài."
+    },
+    {
+     "q": "Game trí nhớ nào hay cho bé?",
+     "a": "Game lật thẻ tìm cặp dễ học, còn game ghi nhớ chuỗi là bước tiếp theo thú vị. Hãy thử Funny Animals Memory Game, Memory Cards hoặc Flag Memory Match trước."
+    },
+    {
+     "q": "Làm sao thắng trò lật thẻ trí nhớ?",
+     "a": "Hãy nhớ vị trí của mọi lá bạn đã lật, kể cả lá không thành cặp. Thầm gọi tên lá bài, như “con chó, hàng thứ hai”, giúp bạn dễ nhớ lại hơn."
+    },
+    {
+     "q": "Bố mẹ và bé có chơi game trí nhớ cùng nhau được không?",
+     "a": "Có, game lật thẻ rất dễ chơi thay phiên trên cùng một màn hình. Đó là cách hay để cùng nhau chơi vài phút."
+    },
+    {
+     "q": "Game trí nhớ có miễn phí không?",
+     "a": "Có, tất cả game trí nhớ trên Pixuvo đều miễn phí trên trình duyệt, không cần đăng ký."
+    }
+   ]
+  },
+  "motorcycle": {
+   "intro": "Hai bánh xe, một tay lái và một cái dốc nhảy trông cao quá mức – game mô tô là sự kết hợp giữa tốc độ, thăng bằng và những pha nhào lộn táo bạo. Pixuvo có hơn 700 game mô tô miễn phí, từ đường đua xe địa hình tới đua trên xa lộ.\n\nKiểu được yêu thích là game xe nhào lộn, nơi mỗi màn là một đường vượt chướng ngại vật đầy dốc nhảy, vòng lộn và bẫy. Bạn nghiêng người về trước và về sau để giữ thăng bằng cho tay lái, và tiếp đất bằng cả hai bánh chính là thử thách. Moto X3M: Spooky Land là ví dụ tiêu biểu. Game motocross đưa bạn ra những đường đất lầy lội, game đua đường trường là cuộc chơi tốc độ trên mặt nhựa, còn nếu thích đạp xe thì có game BMX và xe đạp leo núi. Stunt Extreme, Impossible Bike Stunt Ride, Motocross Racing, Real Motor Race Master và BMX Kid là những game đáng thử khác.\n\nVới game nhào lộn, mẹo quan trọng nhất là thăng bằng: ngả người ra sau để nhấc bánh trước khi nhảy, chồm về trước để không bị lật, và cố tiếp đất bằng cả hai bánh cùng lúc. Nhiều màn nhào lộn khá ngắn nên chơi lại rất nhanh. Phần lớn dùng phím mũi tên, đôi khi thêm phím để nghiêng. Chơi trên máy tính bảng? Nhiều game hỗ trợ, và trang game cho biết đó là game nào. Game mô tô thuộc chuyên mục game đua xe rộng lớn hơn.",
+   "faq": [
+    {
+     "q": "Game mô tô nào hay nhất cho bé?",
+     "a": "Nếu thích đường nhào lộn, Moto X3M: Spooky Land là game tốt để bắt đầu, còn Motocross Racing, Stunt Extreme và BMX Kid là những game đáng thử khác."
+    },
+    {
+     "q": "Làm sao giữ thăng bằng trong game xe nhào lộn?",
+     "a": "Ngả người ra sau khi rời dốc nhảy và chồm về trước nếu xe bắt đầu lật ngửa. Cố tiếp đất bằng cả hai bánh cùng lúc."
+    },
+    {
+     "q": "Game motocross và game đua đường trường khác nhau thế nào?",
+     "a": "Game motocross diễn ra trên đường đất gồ ghề có dốc nhảy, còn game đua đường trường xoay quanh tốc độ tối đa trên mặt nhựa, thường xen giữa dòng xe cộ."
+    },
+    {
+     "q": "Game mô tô dùng cách điều khiển nào?",
+     "a": "Thường là phím mũi tên để tăng tốc, phanh và nghiêng. Trang game ghi rõ cách điều khiển của từng game."
+    },
+    {
+     "q": "Có chơi game mô tô trên máy tính bảng được không?",
+     "a": "Nhiều game mô tô có nút cảm ứng và chạy trên điện thoại và máy tính bảng. Trang game cho bạn biết game có chạy trên điện thoại và máy tính bảng hay không."
+    }
+   ]
+  },
+  "multiplayer": {
+   "intro": "Chơi game thường vui hơn khi có người khác, và đó chính là điều mà mục này hướng tới. Nhiều người chơi không phải là một thể loại mà là một cách chơi: bạn chia sẻ game với bạn bè, gia đình hoặc người chơi khác qua mạng. Pixuvo có hơn 800 game nhiều người chơi.\n\nCó hai cách chơi chính. Chơi chung trên một thiết bị nghĩa là mọi người cùng chơi trên một máy – thường là một bàn phím, một người dùng WASD và người kia dùng phím mũi tên. Chơi online thì kết nối bạn với người chơi khác qua internet. Các game đứng gần đầu danh sách gồm Bunny Boy Online, MultiPlayer Pong, Tanknarok, Obby Football Soccer 3D và Mage Royale. Ở đây có đủ loại game, từ đấu đội và đặt bom tới thể thao và hành động. Một số game kiểu bắn súng dành cho các bạn lớn hơn.\n\nVới buổi tối chơi game cả nhà, game chơi chung trên một màn hình là dễ nhất: không cần cài đặt gì, chỉ việc ngồi cạnh nhau và chơi. Với game online, bố mẹ nên xem trước cách game hoạt động và nhắc các bé không bao giờ chia sẻ thông tin cá nhân với người chơi khác. Trang game ghi rõ game chơi chung một máy hay online khi nhà phát hành cung cấp thông tin này, và trang dành cho bố mẹ của chúng tôi có thêm nhiều lời khuyên.",
+   "faq": [
+    {
+     "q": "Game nhiều người chơi nào hay để chơi với bạn bè?",
+     "a": "Những game tốt để bắt đầu gồm MultiPlayer Pong, Tanknarok, Obby Football Soccer 3D và Mage Royale. Trang game cho biết game chơi trên một thiết bị hay online."
+    },
+    {
+     "q": "Chơi chung một máy và chơi online khác nhau thế nào?",
+     "a": "Chơi chung một máy nghĩa là mọi người cùng chơi trên một thiết bị, thường dùng chung một bàn phím. Chơi online kết nối bạn với người chơi khác qua internet."
+    },
+    {
+     "q": "Có chơi game nhiều người trên một máy tính được không?",
+     "a": "Có, nhiều game cho hai người dùng chung một bàn phím, thường một người dùng WASD và người kia dùng phím mũi tên. Mục game 2 người của chúng tôi còn nhiều game kiểu này hơn nữa."
+    },
+    {
+     "q": "Game nhiều người chơi online có an toàn cho bé không?",
+     "a": "Bố mẹ nên xem trước game trước khi bé chơi online và nhắc bé không bao giờ chia sẻ thông tin cá nhân. Trang dành cho bố mẹ giải thích thêm về an toàn trên Pixuvo."
+    },
+    {
+     "q": "Các game này có miễn phí không?",
+     "a": "Có. Tất cả game nhiều người chơi trên Pixuvo đều miễn phí trên trình duyệt, không cần tạo tài khoản."
+    }
+   ]
+  },
+  "music": {
+   "intro": "Gõ theo nhịp, nhảy theo tiết tấu hoặc tự làm bài hát của riêng mình. Game âm nhạc dành cho tất cả những ai không thể đứng yên khi nghe một giai điệu hay. Pixuvo có gần 200 game như vậy.\n\nGame nhịp điệu là một nhóm lớn. Bạn bấm phím hoặc chạm đúng lúc khi các nốt nhạc bay qua, và trong vài game nhân vật của bạn nhảy theo nhịp. Game kiểu Friday Night Funkin', thường gọi là FNF, là một kiểu nổi tiếng mà bạn thắng các trận đấu nhạc bằng cách bấm mũi tên đúng nhịp. Game sáng tạo cho bạn tự tạo âm thanh bằng cách ghép nhịp, giọng hát và nhạc cụ thành bài hát, và có game giúp bạn khám phá nhạc cụ thật. Vào chơi nhanh với: Tile Jumper 3D, FNF - House, Beat Maker Pro, Robot Band, Musical Instruments và Singing Blob.\n\nHãy bật âm thanh – game âm nhạc cần nó! Đeo tai nghe sẽ tiện hơn nếu có người xung quanh. Với game nhịp điệu, hãy bắt đầu ở tốc độ dễ và tập trung vào nhịp nhạc chứ không phải màn hình. Game nhịp điệu dùng bàn phím chơi trên máy tính là đã nhất, còn game âm nhạc kiểu chạm thì hợp với máy tính bảng và điện thoại; trang game cho bạn biết có chơi được trên điện thoại hay máy tính bảng không.",
+   "faq": [
+    {
+     "q": "Game nhịp điệu là gì?",
+     "a": "Game nhịp điệu yêu cầu bạn bấm phím hoặc chạm màn hình đúng nhịp nhạc. Bấm càng chuẩn, điểm càng cao."
+    },
+    {
+     "q": "FNF là gì?",
+     "a": "FNF là viết tắt của Friday Night Funkin', một game nhịp điệu mà bạn thắng các trận đấu nhạc bằng cách bấm phím mũi tên đúng nhịp bài hát. Có rất nhiều game do người hâm mộ làm theo phong cách này."
+    },
+    {
+     "q": "Có tự làm nhạc trong các game này được không?",
+     "a": "Có, game tạo beat cho bạn ghép nhịp, giọng hát và nhạc cụ thành một bài hát nhỏ của riêng mình. Beat Maker Pro là game tốt để bắt đầu."
+    },
+    {
+     "q": "Có cần bật âm thanh để chơi game âm nhạc không?",
+     "a": "Có, phần lớn game âm nhạc dễ hơn và vui hơn nhiều khi bật âm thanh. Nên đeo tai nghe nếu có người ở gần."
+    },
+    {
+     "q": "Các game này có miễn phí không?",
+     "a": "Có. Tất cả game âm nhạc trên Pixuvo đều miễn phí trên trình duyệt."
+    }
+   ]
+  },
+  "ninja": {
+   "intro": "Bước chân lặng lẽ trên mái nhà, cú bật nhanh qua khoảng trống, phi tiêu xé gió – game ninja biến bạn thành người hùng nhanh nhẹn, lén lút. Pixuvo có hơn 250 game ninja miễn phí chạy thẳng trên trình duyệt.\n\nÝ tưởng của phần lớn game là sự nhanh nhẹn. Thay vì đứng một chỗ để đánh, bạn nhảy, lướt và leo tường qua các màn, và căn thời điểm quan trọng hơn sức mạnh. Có game đi cảnh cuộn ngang, nơi bạn chạy băng qua các mái nhà, có game sinh tồn với mục tiêu sống sót càng lâu càng tốt. Nếu thích kiếm và cốt truyện, ở đây cũng có những cuộc phiêu lưu kiểu samurai, dù vài game có màu sắc u tối hơn và hợp với các bạn lớn hơn. Vào chơi nhanh với: Rooftop Ninja, Ninja Survival, Samurai. Shoguns Betrayal và Ashen Ninja - Rust and Katana.\n\nNinja mới nên bắt đầu với game đi cảnh, vì bạn học căn thời điểm nhảy trước rồi mới tới chiến đấu. Phần lớn game ninja dùng phím mũi tên hoặc WASD để di chuyển và một phím để nhảy hoặc phóng phi tiêu, cách điều khiển được ghi trên trang game. Khá nhiều game chạy được cả trên điện thoại và máy tính bảng – trang game sẽ ghi rõ. Khi muốn những trận đấu lớn hơn, chuyên mục game đối kháng ở ngay gần đó, và chuyên mục game hành động còn hàng nghìn game cần phản xạ nhanh.",
+   "faq": [
+    {
+     "q": "Game ninja là gì?",
+     "a": "Game ninja là game hành động mà bạn vào vai người hùng nhanh nhẹn, lén lút, biết nhảy, leo, rón rén và dùng vũ khí như phi tiêu hay thanh katana. Sự nhanh nhẹn và căn thời điểm quan trọng hơn sức mạnh."
+    },
+    {
+     "q": "Nên thử game ninja nào trước?",
+     "a": "Hãy bắt đầu với một game đi cảnh để quen căn thời điểm nhảy – Rooftop Ninja là game dễ, dễ chịu, còn Ninja Survival là một game khác đáng thử."
+    },
+    {
+     "q": "Game ninja và game samurai khác nhau thế nào?",
+     "a": "Game ninja thường tập trung vào tốc độ, lén lút và nhào lộn, còn game samurai thiên về đấu kiếm tay đôi và những câu chuyện về danh dự. Pixuvo xếp cả hai loại vào đây."
+    },
+    {
+     "q": "Game ninja có hợp với bé nhỏ không?",
+     "a": "Nhiều game ninja đi cảnh có phong cách hoạt hình và dễ chơi, nhưng một số cuộc phiêu lưu samurai có màu sắc u tối hơn. Bố mẹ có thể đọc trang dành cho bố mẹ để xem game được duyệt thế nào."
+    },
+    {
+     "q": "Có chơi game ninja trên máy tính bảng được không?",
+     "a": "Nhiều game cũng chạy trên điện thoại và máy tính bảng. Hãy xem trang game – nó cho biết game có hỗ trợ màn hình cảm ứng không."
+    }
+   ]
+  },
+  "parking": {
+   "intro": "Lùi một chút, đánh lái, liếc gương… rồi trượt vào giữa hai vạch thật hoàn hảo. Game đỗ xe biến một trong những phần khó nhất khi lái xe thành câu đố bạn có thể chinh phục. Pixuvo có hơn 550 game đỗ xe miễn phí để chơi ngay trên trình duyệt.\n\nCó hai kiểu rất khác nhau. Game đỗ xe kiểu lái xe cho bạn tự cầm lái và đưa xe vào ô đã kẻ sẵn mà không va vào tường hay xe khác. Game đỗ xe kiểu giải đố cho bạn nhìn từ trên xuống một bãi xe chật kín, và bạn phải tính xem di chuyển các xe theo thứ tự nào để xe nào cũng ra được. Parking Jam 3D, Parkings Jaam, Unblock Car Parking, Car Parking 12, Underground Parking và Ultimate Car Parking Challenge là vài game đứng gần đầu danh sách, và phần mô tả game cho biết mỗi game thuộc kiểu nào.\n\nNếu thích cầm lái, hãy bắt đầu với một màn đầu của game kiểu lái xe và đi thật chậm – tốc độ là kẻ thù của đỗ xe khéo. Đánh lái nhẹ, dừng lại thường xuyên và dùng góc nhìn camera nếu game có. Nếu thích tư duy logic, game đỗ xe kiểu giải đố rất tuyệt vì nhiều màn không giới hạn thời gian và bạn có thể tính trước từng nước đi. Game đỗ xe kiểu lái xe dùng phím mũi tên hoặc WASD, còn kiểu giải đố chỉ cần bấm chuột hoặc chạm. Chơi trên máy tính bảng? Nhiều game hỗ trợ, và trang game cho biết đó là game nào. Game đỗ xe thuộc chuyên mục game lái xe.",
+   "faq": [
+    {
+     "q": "Game giải phóng bãi xe (parking jam) là gì?",
+     "a": "Đó là câu đố mà các xe bị xếp chật kín trong bãi và bạn chọn thứ tự cho từng xe chạy ra mà không đâm nhau. Phần mô tả game cho biết một game đỗ xe có phải là kiểu giải đố này không."
+    },
+    {
+     "q": "Làm sao chơi game đỗ xe giỏi hơn?",
+     "a": "Lái chậm, đánh lái nhẹ và dừng lại để kiểm tra góc xe. Chuyển sang camera nhìn từ trên xuống, nếu game có, sẽ giúp vào chỗ hẹp dễ hơn nhiều."
+    },
+    {
+     "q": "Game đỗ xe nào hợp với người mới?",
+     "a": "Game giải phóng bãi xe kiểu giải đố rất dễ bắt đầu vì bạn chỉ cần chạm vào xe. Nếu muốn tự cầm lái, hãy chơi chậm rãi ở những màn đầu."
+    },
+    {
+     "q": "Có chơi game đỗ xe trên điện thoại được không?",
+     "a": "Game đỗ xe kiểu giải đố chỉ cần chạm, và nhiều game đỗ xe kiểu lái xe có điều khiển cảm ứng, nên nhiều game chạy được trên điện thoại và máy tính bảng. Trang game cho biết game có hỗ trợ di động hay không."
+    },
+    {
+     "q": "Game đỗ xe có miễn phí không?",
+     "a": "Có, tất cả game đỗ xe trên Pixuvo đều miễn phí trên trình duyệt, không cần tài khoản."
+    }
+   ]
+  },
+  "platformer": {
+   "intro": "Chạy, nhảy, trượt khỏi mép, thử lại – và cuối cùng cũng qua được. Cảm giác đó chính là trái tim của game đi cảnh, một trong những thể loại lâu đời và được yêu thích nhất. Pixuvo có hơn 1.700 game đi cảnh, từ những cuộc phiêu lưu nhẹ nhàng tới thử thách thật sự khó nhằn.\n\nGame đi cảnh phiêu lưu kinh điển đưa bạn qua những màn đầy hố sâu, kẻ địch và đồng xu. Game đi cảnh giải đố bắt bạn suy nghĩ trước khi nhảy, với những màn chơi giấu mẹo. Rồi còn có game đi cảnh siêu khó, dành cho người chơi mê thử thách thật sự và không ngại ngã liên tục. Hãy thử Super Willie World, Super Onion Boy 2, Red Ball Rolling 2, The Floor Is Lying, The Black And White hoặc Snail Odyssey - Hardest Game.\n\nNgười mới nên bắt đầu với game đi cảnh phiêu lưu có màn ngắn và điểm lưu gần nhau. Hãy học cách nhảy: phần lớn game cho bạn nhảy cao hơn khi giữ nút lâu hơn. Trên máy tính, bạn thường di chuyển bằng phím mũi tên hoặc WASD và nhảy bằng mũi tên lên, W hoặc phím cách. Một số game đi cảnh có nút trên màn hình cho điện thoại và máy tính bảng, nhưng nhiều game chơi bằng bàn phím vẫn sướng nhất – mỗi trang game cho biết có hỗ trợ màn hình cảm ứng hay không.",
+   "faq": [
+    {
+     "q": "Game đi cảnh là gì?",
+     "a": "Game đi cảnh là game mà bạn chạy và nhảy giữa các bục, tránh hố sâu, bẫy và kẻ địch để tới cuối mỗi màn."
+    },
+    {
+     "q": "Game đi cảnh nào hay cho người mới?",
+     "a": "Hãy tìm game đi cảnh có màn ngắn và điểm lưu gần nhau, để dành những game khó nhất cho sau này. Bạn có thể bắt đầu với Super Willie World, Super Onion Boy 2 và Red Ball Rolling 2."
+    },
+    {
+     "q": "Game đi cảnh dùng phím nào?",
+     "a": "Phần lớn dùng phím mũi tên hoặc WASD để di chuyển, và mũi tên lên, W hoặc phím cách để nhảy. Cách điều khiển thường hiện trên màn hình bắt đầu của game."
+    },
+    {
+     "q": "Có chơi game đi cảnh trên điện thoại được không?",
+     "a": "Một số game đi cảnh có nút cảm ứng và chạy trên điện thoại và máy tính bảng, nhưng nhiều game dễ chơi nhất với bàn phím. Game có chạy trên di động không thì trang game sẽ ghi rõ."
+    },
+    {
+     "q": "Các game này có miễn phí không?",
+     "a": "Có. Mọi game đi cảnh trên Pixuvo đều miễn phí và mở ngay trên trình duyệt."
+    }
+   ]
+  },
+  "pool": {
+   "intro": "Xoa phấn đầu cơ, ngắm đường bi và tính trước một bước. Game bi-a nhẹ nhàng, đòi hỏi sự khéo léo và hơi giống bài tập hình học – nhưng là kiểu bài tập vui thật sự. Pixuvo có hơn 360 game như vậy.\n\nPhiên bản nổi tiếng nhất là bi-a 8 bi (pool): một người chơi nhận bi trơn, người kia nhận bi sọc, ai đánh vào lỗ hết bi của mình rồi tới bi số 8 màu đen thì thắng. Hãy thử 8-Ball Pool Pro, PoolClub hoặc Billiard King cho bàn bi-a cổ điển. Còn có những kiểu khác nữa. Bi-a 3 băng chơi trên bàn không có lỗ, bi cái phải chạm ba băng, còn bi-a Nga (Russian pyramid) dùng bi to và lỗ hẹp – 3 Cushion Billards và Billiards 3D Russian Pyramid là hai game đáng thử. Simply Billiards, Pooking Master và 8 Ball Pool Free cũng là những bàn chơi hay.\n\nNếu mới bắt đầu, hãy chọn game có hiện đường ngắm. Nó giúp bạn thấy bi sẽ bật khỏi băng như thế nào. Rồi tập những cú đánh nhẹ – đánh quá mạnh là lỗi thường gặp nhất. Trên máy tính, bạn ngắm bằng chuột; trên máy tính bảng hay điện thoại, bạn kéo bằng ngón tay. Nhiều game bi-a hỗ trợ màn hình cảm ứng, và trang game cho bạn biết đó là game nào.",
+   "faq": [
+    {
+     "q": "Pool và billiards khác nhau thế nào?",
+     "a": "Billiards là tên gọi chung của các môn chơi bằng cơ, còn pool là một kiểu phổ biến trong đó, chơi trên bàn có sáu lỗ. Một số game bi-a, như bi-a 3 băng, hoàn toàn không có lỗ."
+    },
+    {
+     "q": "Chơi bi-a 8 bi như thế nào?",
+     "a": "Một người nhận bi trơn, người kia nhận bi sọc. Bạn phải đánh vào lỗ hết nhóm bi của mình rồi tới bi số 8 màu đen để thắng, nhưng đánh bi số 8 vào lỗ quá sớm thì sẽ thua."
+    },
+    {
+     "q": "Có chơi bi-a với bạn được không?",
+     "a": "Có, nhiều game bi-a cho hai người thay phiên nhau trên cùng một thiết bị, và một số có trận đấu online. Trang game cho biết game có những chế độ nào."
+    },
+    {
+     "q": "Vì sao bi cái của mình cứ rơi vào lỗ?",
+     "a": "Có lẽ bạn đang đánh quá mạnh. Hãy giảm lực và nhìn đường ngắm để biết bi cái sẽ lăn đi đâu sau khi chạm bi."
+    },
+    {
+     "q": "Game bi-a có chơi được trên điện thoại không?",
+     "a": "Nhiều game bi-a dùng kiểu kéo để ngắm, chơi rất tốt trên điện thoại và máy tính bảng. Trang game cho bạn biết game có chạy trên điện thoại và máy tính bảng hay không."
+    }
+   ]
+  },
+  "puzzle": {
+   "intro": "Có game thử thách đôi tay, còn game giải đố thử thách bộ não. Xếp khối vào chỗ, nhận ra quy luật, tìm đường ngắn nhất – có một niềm vui rất riêng vào khoảnh khắc một màn khó bỗng trở nên sáng tỏ. Pixuvo có hơn 15.000 game giải đố miễn phí, chuyên mục lớn nhất trên trang.\n\nVì quá lớn, mục giải đố được chia thành các nhóm nhỏ hơn. Game ghép hình cho bạn ghép lại các bức tranh; game 2048 xoay quanh việc trượt và gộp các ô số; game tìm đồ vật bắt bạn tìm kiếm trong một khung cảnh rối mắt; game xếp khối bắt bạn xếp và xóa các hình; game mê cung thách bạn tìm đường; game toán biến phép tính thành cuộc đua; còn game trí nhớ rèn bạn nhớ và ghép cặp. Các game gần đầu danh sách gồm Drop Planets, Merge Royal, Seat the Guests, Memory Cards, Flag Memory Match, Kobadoo Arithmetic và Math Fight Club.\n\nNếu mới làm quen với game giải đố, hãy bắt đầu với game có màn ngắn và khó dần từ từ, như lật thẻ trí nhớ hay ghép hình dễ. Các bạn lớn hơn mê thử thách có thể thử game logic và game hợp nhất, nơi ai tính trước được nhiều nước sẽ được thưởng. Phần lớn game giải đố chỉ cần chuột hoặc chạm, nên chơi thoải mái trên mọi thiết bị. Chơi trên máy tính bảng? Nhiều game hỗ trợ, và trang game cho biết đó là game nào.",
+   "faq": [
+    {
+     "q": "Game giải đố có tốt cho não bộ không?",
+     "a": "Game giải đố khiến bạn lập kế hoạch, nhận ra quy luật, ghi nhớ và thử lại sau khi sai, đó là cách luyện tư duy rất tốt. Đây cũng là cách dùng thời gian trước màn hình một cách nhẹ nhàng."
+    },
+    {
+     "q": "Game giải đố nào hay cho người mới?",
+     "a": "Game lật thẻ trí nhớ như Memory Cards, ghép hình dễ và game hợp nhất nhẹ nhàng là khởi đầu tuyệt vời. Chúng có màn ngắn và khó dần từ từ."
+    },
+    {
+     "q": "Có những loại game giải đố nào?",
+     "a": "Pixuvo chia chúng thành ghép hình, 2048, tìm đồ vật, xếp khối, mê cung, toán học và trí nhớ, cùng nhiều câu đố logic không thuộc hẳn nhóm nào."
+    },
+    {
+     "q": "Chơi game giải đố miễn phí ở đâu?",
+     "a": "Ngay tại Pixuvo – hơn 15.000 game giải đố chạy miễn phí trên trình duyệt, không cần tải về hay đăng ký."
+    },
+    {
+     "q": "Có chơi game giải đố trên điện thoại hay máy tính bảng được không?",
+     "a": "Phần lớn game giải đố chỉ cần chạm, nên nhiều game chơi tốt trên điện thoại và máy tính bảng. Hãy xem trang game để biết game có chạy trên thiết bị của bạn không."
+    }
+   ]
+  },
+  "quiz": {
+   "intro": "Bạn gọi tên được bao nhiêu lá cờ? Bạn có rành hình khối, màu sắc và emoji không? Game đố vui biến hiểu biết của bạn thành thử thách, và với hơn 330 game trên Pixuvo, lúc nào cũng có điều mới để bạn tự kiểm tra.\n\nCó game đố vui xoay quanh việc học kiến thức như cờ các nước, hình khối hay emoji, còn game hỏi đáp kiến thức tổng hợp trộn câu hỏi từ nhiều chủ đề. Một số game đố thử thách đôi mắt và sự chú ý thay vì kiến thức, và có game thêm chút câu đố chữ. Loạt Kobadoo là chỗ bắt đầu hay – Kobadoo Flags, Kobadoo Shapes và Kobadoo Emojis đều đứng gần đầu danh sách – còn Fight Trivia, WhatQuiz, How Many Mice và CrossWord cũng đáng thử.\n\nGame đố vui chơi một mình đã vui, chơi cùng cả nhà còn vui hơn. Hãy thay phiên nhau trả lời, hoặc thi xem ai hô đáp án nhanh hơn trước khi hết giờ. Nếu chủ đề còn mới với bạn, đừng lo trả lời sai – đó chính là cách học. Phần lớn game đố vui chỉ cần bấm chuột hoặc chạm, nên chơi tốt trên máy tính, máy tính bảng và nhiều điện thoại; mỗi trang game cho biết có hỗ trợ màn hình cảm ứng hay không.",
+   "faq": [
+    {
+     "q": "Game đố vui nào hay cho bé?",
+     "a": "Để bắt đầu, hãy thử các game Kobadoo như Kobadoo Flags và Kobadoo Shapes. Các bạn lớn hơn có thể thử thêm Fight Trivia hoặc WhatQuiz."
+    },
+    {
+     "q": "Có game đố cờ các nước không?",
+     "a": "Có – Kobadoo Flags là một game đáng thử. Đố cờ là cách vui để học địa lý."
+    },
+    {
+     "q": "Cả nhà có chơi game đố vui cùng nhau được không?",
+     "a": "Có! Hãy thay phiên trả lời hoặc chơi thành một đội trên cùng một màn hình. Game đố vui là cách tuyệt vời để cùng nhau học điều mới."
+    },
+    {
+     "q": "Game đố vui có giúp bé học không?",
+     "a": "Đố vui là cách vui để ôn kiến thức và nhớ lâu hơn. Trả lời sai cũng là một phần của việc học."
+    },
+    {
+     "q": "Các game này có miễn phí không?",
+     "a": "Có. Tất cả game đố vui trên Pixuvo đều miễn phí trên trình duyệt, không cần tài khoản."
+    }
+   ]
+  },
+  "racing": {
+   "intro": "Ba, hai, một – xuất phát! Game đua xe là cảm giác phấn khích của tốc độ và niềm vui khi về đích đầu tiên. Pixuvo có hơn 5.000 game đua xe miễn phí, nên dù bạn muốn đua ô tô, lái mô tô địa hình hay húc văng các tay lái khác, luôn có một đường đua đang chờ bạn.\n\nChuyên mục chia thành vài làn. Game ô tô có đủ cả, từ xe thành phố tới siêu xe và xe kart. Game drift là nghệ thuật trượt ngang qua khúc cua thật đẹp mắt. Game mô tô mang tới dốc nhảy, nhào lộn và thăng bằng – Moto X3M: Spooky Land và Motocross Racing là những chuyến đi đầu tiên rất ổn. Ngoài ra, bạn còn gặp game rượt đuổi, game đâm xe và những cuộc đua chớp nhoáng – Endless Car Chase, Demolition Derby Life, BMG! CrashDay 2025 và Mini Car Racing là vài game đáng thử.\n\nNên thử cuộc đua nào trước? Nếu mới chơi, hãy chọn game có đường đua hoặc màn chơi ngắn, để học cách điều khiển trước khi đua đường dài. Game mô tô nhào lộn rất hợp nếu bạn cũng thích giải đố, vì mỗi cú nhảy đều phải căn thời điểm thật chuẩn. Trên máy tính, phần lớn game đua dùng phím mũi tên hoặc WASD, và một số game 2 người chia bàn phím cho hai tay đua. Khá nhiều game chạy được cả trên điện thoại và máy tính bảng – trang game sẽ ghi rõ. Muốn lái chậm rãi, cẩn thận hơn? Chuyên mục game lái xe có game đỗ xe, xe tải và xe buýt.",
+   "faq": [
+    {
+     "q": "Game đua xe nào hay nhất cho bé?",
+     "a": "Moto X3M: Spooky Land, Motocross Racing và Mini Car Racing là vòng đua đầu tiên rất ổn. Nếu mới chơi, hãy tìm game có màn ngắn và điều khiển đơn giản."
+    },
+    {
+     "q": "Game đua xe có giúp lái xe giỏi hơn không?",
+     "a": "Game đua xe có thể rèn tốc độ phản xạ và sự phối hợp tay mắt, nhưng không giống lái xe thật và không dạy luật giao thông. Chúng để giải trí, không phải bài học lái xe."
+    },
+    {
+     "q": "Có game đua xe cho hai người trên một máy tính không?",
+     "a": "Có, một số game đua xe cho hai người dùng chung bàn phím, một người dùng WASD và người kia dùng phím mũi tên. Trang game cho biết khi nào game hỗ trợ hai người chơi."
+    },
+    {
+     "q": "Game đua xe và game lái xe khác nhau thế nào?",
+     "a": "Game đua xe xoay quanh tốc độ và chiến thắng trước đồng hồ hoặc các tay đua khác. Game lái xe tập trung vào điều khiển cẩn thận, như đỗ ô tô hay chở hàng bằng xe tải."
+    },
+    {
+     "q": "Có chơi game đua xe trên điện thoại được không?",
+     "a": "Nhiều game đua xe có nút trên màn hình hoặc điều khiển bằng cách nghiêng máy, và chạy trên điện thoại và máy tính bảng. Trang game cho bạn biết có chơi được trên điện thoại hay máy tính bảng không."
+    }
+   ]
+  },
+  "retro": {
+   "intro": "Điểm ảnh to bè, hiệu ứng âm thanh tít tít và luật chơi đơn giản mà khó thành thạo đến bất ngờ – game retro mang trở lại phong cách của những chiếc máy tính gia đình đời đầu và máy game thùng. Pixuvo có hơn 550 game retro miễn phí, chơi ngay trên trình duyệt, không cần giả lập, không cần cài đặt gì.\n\nRetro không có nghĩa là cũ kỹ và nhàm chán. Nhiều game ở đây là sáng tác hoàn toàn mới, mượn ý tưởng từ thời kỳ kinh điển. Bạn sẽ gặp game không gian, phiêu lưu, khám phá hầm ngục và cả pinball, và nhiều game cho thấy một ý tưởng đơn giản có thể vui đến mức nào. Nên bắt đầu với: Pixeroids, Star Wing, Shadoworld Adventure, Jungle Game, Dunjun, 3D Pinball - Space Cadet và Boing Bang.\n\nLần đầu thử, hãy chọn game có một mục tiêu duy nhất mà bạn hiểu trong mười giây, như né thiên thạch hay nảy bóng. Game retro rất hợp để bố mẹ và bé chơi cùng, vì người lớn thường nhận ra phong cách này và có thể chia sẻ vài mẹo. Phần lớn chỉ dùng phím mũi tên và một hai nút, nên chơi bằng bàn phím rất dễ. Khá nhiều game chạy được cả trên điện thoại và máy tính bảng – trang game sẽ ghi rõ. Game retro thuộc chuyên mục game arcade, nên những game săn điểm kinh điển khác chỉ cách bạn một cú bấm.",
+   "faq": [
+    {
+     "q": "Game retro là gì?",
+     "a": "Game retro dùng hình thức và ý tưởng của các trò chơi điện tử đời cũ – đồ họa điểm ảnh, âm thanh đơn giản và luật chơi kiểu arcade rõ ràng. Có game là bản làm lại, nhưng nhiều game là game mới làm theo phong cách cũ."
+    },
+    {
+     "q": "Có chơi game retro trên trình duyệt mà không cần giả lập được không?",
+     "a": "Có. Game retro trên Pixuvo chạy trực tiếp trên trình duyệt, nên không cần tải về hay cài đặt gì."
+    },
+    {
+     "q": "Pixuvo có game pinball không?",
+     "a": "Có, 3D Pinball - Space Cadet nằm trong chuyên mục game retro và chơi ngay trên trình duyệt."
+    },
+    {
+     "q": "Game retro có hợp để chơi cùng bố mẹ không?",
+     "a": "Rất hợp. Nhiều bố mẹ còn nhớ kiểu game này, và điều khiển đơn giản giúp dễ thay phiên nhau chơi và so điểm."
+    },
+    {
+     "q": "Game retro dùng cách điều khiển nào?",
+     "a": "Phần lớn dùng phím mũi tên cùng một hai nút, như phím cách. Trang game ghi rõ cách điều khiển chính xác."
+    }
+   ]
+  },
+  "runner": {
+   "intro": "Chạy, nhảy, trượt, lặp lại – và đừng đâm vào tường. Game chạy vô tận giữ bạn luôn lao về phía trước trong khi cả thế giới ập tới, và mỗi giây sống sót lại cộng thêm quãng đường hay điểm số. Pixuvo có hơn 2.000 game chạy miễn phí để chơi ngay trên trình duyệt.\n\nCó vài kiểu đáng biết. Game chạy vô tận không bao giờ kết thúc: đường chạy kéo dài mãi và tốc độ tăng dần cho tới khi bạn mắc lỗi, nên thử thách là phá kỷ lục của chính mình. Game chạy theo màn có vạch đích, thường kèm điều bất ngờ trên đường, như cổng làm thay đổi đám đông của bạn hay vật phẩm để thu thập. Game chạy theo làn cho bạn chuyển giữa vài làn để né tàu, rào chắn và hố. Rồi còn có những game kỳ quặc, hài hước với nhân vật khác thường. Vào chơi nhanh với: Popcorn Race 3D, Spider Evolution Runner Game, Subway Princess Run, 3D laane runner và Runner Soldiers.\n\nGame chạy rất dễ bắt đầu vì thường chỉ cần vài phím: mũi tên để đổi làn, lên để nhảy, xuống để trượt, hoặc một cú chạm hay vuốt trên màn hình cảm ứng. Nhiều game chạy được cả trên điện thoại hay máy tính bảng; hãy xem trang game để chắc chắn. Mẹo từ những tay chạy lão luyện: hãy nhìn xa hơn chướng ngại vật kế tiếp, để có thời gian phản ứng. Game chạy thuộc chuyên mục game arcade, nơi có thêm nhiều game săn điểm nhanh khác.",
+   "faq": [
+    {
+     "q": "Game chạy vô tận là gì?",
+     "a": "Game chạy vô tận là game mà nhân vật của bạn tự động chạy mãi và đường chạy không bao giờ hết. Bạn né chướng ngại vật khi tốc độ tăng dần và cố phá kỷ lục quãng đường của mình."
+    },
+    {
+     "q": "Nên bắt đầu với game chạy nào?",
+     "a": "Popcorn Race 3D, Subway Princess Run và 3D laane runner là những game đáng thử. Phần lớn game chạy học được ngay trong phút đầu tiên."
+    },
+    {
+     "q": "Làm sao chơi game chạy giỏi hơn?",
+     "a": "Hãy nhìn về phía trước thay vì nhìn nhân vật, để thấy chướng ngại vật sớm hơn. Giữ bình tĩnh khi tốc độ tăng và di chuyển nhẹ, sớm thay vì nhảy vào giây cuối."
+    },
+    {
+     "q": "Có chơi game chạy bằng cách vuốt trên điện thoại được không?",
+     "a": "Nhiều game chạy hỗ trợ vuốt và chạm, và khá nhiều game chạy được trên điện thoại và máy tính bảng. Trang game cho biết game có chạy trên di động hay không."
+    },
+    {
+     "q": "Game chạy có miễn phí không?",
+     "a": "Có, tất cả game chạy trên Pixuvo đều miễn phí trên trình duyệt, không cần đăng ký."
+    }
+   ]
+  },
+  "shooting": {
+   "intro": "Tay vững, mắt tinh và căn thời điểm chuẩn – suy cho cùng, game bắn súng là chuyện ngắm bắn. Pixuvo có hơn 4.000 game bắn súng miễn phí, từ tập bắn bia và bắn phi thuyền vũ trụ tới những trận chiến đồng đội lớn, tất cả đều chạy trên trình duyệt.\n\nGame bắn súng thường được gọi là “shooter” và có nhiều phong cách. Game bắn tỉa đòi hỏi kiên nhẫn và một phát bắn tầm xa hoàn hảo. Game zombie là chuyện sống sót qua những đợt xác sống lững thững kéo tới. Game bắn súng góc nhìn thứ nhất cho bạn thấy hành động qua đôi mắt nhân vật, như trong Commando Force 2, Strykon và Battle Shot Elite. Game xe tăng thay lính bằng xe bọc thép và pháo lớn, còn game bắn cung mang tới cung tên. Ngoài các nhóm đó còn có game bắn máy bay, trận chiến người que và nhiều nữa – Fractal Combat X, Stickman Prison Counter Assault, Trap the Convoy và Quarantine Zombies rất đáng thử.\n\nMuốn giỏi hơn, hãy tập trung vào hai điều: ngắm trước khi bắn, và luôn di chuyển để khó bị trúng đạn. Nhiều game bắn súng cho chỉnh độ nhạy chuột, và giảm độ nhạy thường giúp ngắm vững hơn. Trên máy tính, phần lớn dùng WASD để di chuyển và chuột để ngắm, bắn. Chơi trên máy tính bảng? Nhiều game hỗ trợ, và trang game cho biết đó là game nào. Một số game bắn súng có phong cách chân thực và hợp với các bạn lớn hơn; game có từ ngữ bạo lực được giữ lại để duyệt thủ công, và trang dành cho bố mẹ giải thích cách chúng tôi kiểm tra game, để mỗi gia đình tự chọn điều phù hợp.",
+   "faq": [
+    {
+     "q": "Game bắn súng còn được gọi là gì?",
+     "a": "Chúng thường được gọi là shooter. Các kiểu phổ biến gồm bắn súng góc nhìn thứ nhất (FPS), góc nhìn thứ ba, nhìn từ trên xuống, shoot 'em up và bắn tỉa."
+    },
+    {
+     "q": "Làm sao chơi game bắn súng giỏi hơn?",
+     "a": "Dành một chút thời gian ngắm trước khi bắn, luôn di chuyển để khó bị trúng và thử giảm độ nhạy chuột để ngắm vững hơn. Những buổi luyện ngắn cũng có ích."
+    },
+    {
+     "q": "ADS trong game bắn súng nghĩa là gì?",
+     "a": "ADS là viết tắt của “aim down sights”: bạn nhìn qua kính ngắm của súng để ngắm chính xác hơn, thường bằng cách giữ chuột phải."
+    },
+    {
+     "q": "Game bắn súng có ổn cho trẻ em không?",
+     "a": "Điều đó tùy vào từng game và từng gia đình. Nhiều game bắn súng trên trình duyệt có phong cách hoạt hình, số khác chân thực hơn; game có từ ngữ bạo lực được duyệt thủ công, và trang dành cho bố mẹ giải thích cách làm."
+    },
+    {
+     "q": "Có chơi game bắn súng trên điện thoại được không?",
+     "a": "Một số game bắn súng có điều khiển cảm ứng và chạy trên điện thoại và máy tính bảng, nhưng nhiều game chơi tốt nhất với chuột và bàn phím. Trang game cho bạn biết game có chạy trên điện thoại và máy tính bảng hay không."
+    }
+   ]
+  },
+  "simulation": {
+   "intro": "Bạn đã bao giờ muốn lái xe buýt, điều hành siêu thị hay tự thiết kế đường sá? Game mô phỏng cho bạn thử những nghề nghiệp và thế giới mà ngoài đời không thử được. Với hơn 3.100 game, có rất nhiều thứ để khám phá.\n\nGame mô phỏng có đủ mọi hương vị. Game kinh doanh (tycoon) giao cho bạn một cơ ngơi lớn dần từng bước. Game nông trại xoay quanh việc gieo trồng, thu hoạch và chăm sóc vật nuôi, còn game xây dựng cho bạn xây đủ thứ, từ đường sá tới tên lửa. Rồi còn có game mô phỏng nghề nghiệp, mô phỏng lái xe và game sandbox, nơi bạn tự dựng cảnh rồi xem điều gì xảy ra. Garden Master, Road Designer, Stack Rocket, Bus Driver Simulator 3D và Supermarket Simulator Dream Store là vài game đáng thử.\n\nChưa biết bắt đầu từ đâu? Hãy tự hỏi mình muốn làm gì trong một ngày. Chủ cửa hàng? Thử game cửa hàng hoặc game kinh doanh. Nông dân? Ghé game nông trại. Thợ xây? Thử game xây dựng. Game mô phỏng thường dài hơn game arcade, và nhiều game lưu tiến trình trong trình duyệt trên thiết bị bạn đang chơi. Game mô phỏng 3D lớn chạy tốt nhất trên máy tính, còn game nhẹ hơn chạy được cả trên điện thoại và máy tính bảng – trang game cho biết đó là game nào.",
+   "faq": [
+    {
+     "q": "Game mô phỏng là gì?",
+     "a": "Game mô phỏng tái hiện một điều gì đó trong đời thực, như lái xe, điều hành cửa hàng hay làm nông, và cho bạn tự trải nghiệm. Có game rất chân thực, có game lại vui nhộn và ngộ nghĩnh."
+    },
+    {
+     "q": "Có những loại game mô phỏng nào?",
+     "a": "Trên Pixuvo bạn sẽ gặp game kinh doanh, nông trại và xây dựng, cùng game mô phỏng lái xe, nghề nghiệp và sandbox. Mỗi kiểu chính đều có mục riêng."
+    },
+    {
+     "q": "Tiến trình trong game mô phỏng có được lưu không?",
+     "a": "Nhiều game mô phỏng lưu tiến trình trong trình duyệt trên cùng thiết bị, nhưng tùy từng game. Nếu xóa dữ liệu trình duyệt hoặc đổi thiết bị, tiến trình có thể mất."
+    },
+    {
+     "q": "Có chơi game mô phỏng trên điện thoại được không?",
+     "a": "Game mô phỏng nhẹ thường chạy được trên điện thoại và máy tính bảng, còn game mô phỏng 3D lớn chạy tốt nhất trên máy tính. Mỗi trang game cho biết có hỗ trợ màn hình cảm ứng hay không."
+    },
+    {
+     "q": "Các game này có miễn phí không?",
+     "a": "Có. Mọi game mô phỏng trên Pixuvo đều miễn phí và chạy trên trình duyệt, không cần tải về."
+    }
+   ]
+  },
+  "snake": {
+   "intro": "Ăn, lớn lên, và dù thế nào cũng đừng cắn vào đuôi mình. Rắn săn mồi là một trong những ý tưởng game đơn giản nhất từng có, và chính vì thế nó vẫn được yêu thích đến vậy. Pixuvo có hơn 250 game rắn săn mồi miễn phí, từ bản cổ điển trên lưới ô vuông tới những đấu trường online lớn đầy giun của người chơi khác.\n\nKiểu cổ điển là chuyện lập kế hoạch: con rắn tự bò, bạn chỉ điều hướng, và mỗi miếng mồi làm bạn dài thêm, nên bàn chơi kín dần và bạn phải chừa cho mình một lối thoát. Kiểu .io thì khác. Bạn trườn quanh một đấu trường lớn cùng những con rắn khác, và nếu đầu chúng chạm vào thân bạn thì chúng bị loại – vậy nên to là tốt, nhưng khôn ngoan còn tốt hơn. Worms Zone, Gusano.io Worms Snake Game, Color Snake 3D Online, Snake Arena 2 và Snake Frenzy Color Clash là những game đáng thử.\n\nNgười mới nên bắt đầu chậm: lúc đầu đi gần mép, rẽ vòng rộng và tránh chỗ đông đúc trong game đấu trường cho tới khi đã lớn. Trên máy tính, bạn điều hướng bằng phím mũi tên hoặc chuột; trên màn hình cảm ứng, bạn thường vuốt hoặc kéo. Nhiều game chạy được cả trên điện thoại hay máy tính bảng; hãy xem trang game để chắc chắn. Game rắn săn mồi thuộc chuyên mục game arcade, nơi còn nhiều game săn điểm cao nhanh gọn đang chờ.",
+   "faq": [
+    {
+     "q": "Chơi game rắn săn mồi như thế nào?",
+     "a": "Bạn điều khiển một con rắn luôn di chuyển, ăn mồi để dài ra và tránh đâm vào tường hay đuôi của chính mình. Trong bản đấu trường, bạn còn phải tránh rắn của người chơi khác."
+    },
+    {
+     "q": "Game rắn .io là gì?",
+     "a": "Đó là game rắn trong một đấu trường lớn dùng chung, thường chơi online với người khác. Worms Zone và Gusano.io Worms Snake Game là hai game đáng thử."
+    },
+    {
+     "q": "Chiến thuật tốt cho game rắn săn mồi là gì?",
+     "a": "Rẽ vòng rộng, luôn chừa cho mình một lối trống và đừng đuổi theo mồi vào chỗ hẹp. Trong game đấu trường, hãy lớn lên cẩn thận trước khi thử gài bẫy người khác."
+    },
+    {
+     "q": "Có chơi game rắn săn mồi trên điện thoại được không?",
+     "a": "Nhiều game rắn dùng thao tác vuốt hoặc kéo, nên chơi tốt trên màn hình cảm ứng. Trang game cho biết game có hỗ trợ di động hay không."
+    },
+    {
+     "q": "Rắn và thang là gì?",
+     "a": "Rắn và thang là trò chơi cờ bàn kinh điển, bạn gieo xúc xắc, leo lên thang và trượt xuống theo rắn. Snake n Ladders Game có trong chuyên mục này, và trang game giải thích cách chơi."
+    }
+   ]
+  },
+  "sniper": {
+   "intro": "Hít một hơi, căn tâm ngắm, chờ đúng khoảnh khắc… rồi bóp cò. Game bắn tỉa là mặt kiên nhẫn của game bắn súng: thay vì vừa chạy vừa xả đạn, bạn nhìn qua ống ngắm và khiến một phát bắn tầm xa chính xác trở nên đáng giá. Pixuvo có hơn 150 game bắn tỉa miễn phí trên trình duyệt.\n\nPhần lớn game bắn tỉa giao cho bạn một nhiệm vụ và một khung cảnh để quan sát. Bạn phóng to qua ống ngắm, tìm đúng mục tiêu và bắn trước khi bị phát hiện hoặc trước khi hết giờ. Có game thêm yếu tố giải đố, trong đó tìm ra đúng mục tiêu là một phần thử thách, có game đưa bạn tới những nơi như miền Viễn Tây hay ngoài không gian. Nên bắt đầu với: Courageous Sniper, Ghost Sniper, Sniper Shot, West Frontier Sharpshooter 3D và Sniper Wars Find the Criminal.\n\nBí quyết bắn tỉa giỏi là kiên nhẫn. Quan sát mục tiêu di chuyển thế nào trước khi bắn, và trong game có gió hoặc khoảng cách, hãy ngắm hơi lệch về phía trước hoặc phía trên. Quan sát toàn cảnh trước thường giúp bạn thấy góc bắn tốt nhất. Trên máy tính, game bắn tỉa dùng chuột để ngắm và phóng to, vì vậy chơi bằng chuột là hợp nhất. Chơi trên máy tính bảng? Nhiều game hỗ trợ, và trang game cho biết đó là game nào. Một số game bắn tỉa có phong cách chân thực và hợp với các bạn lớn hơn; bố mẹ có thể đọc trang dành cho bố mẹ để xem game được duyệt thế nào. Game bắn tỉa thuộc chuyên mục game bắn súng.",
+   "faq": [
+    {
+     "q": "Game bắn tỉa là gì?",
+     "a": "Game bắn tỉa là game bắn súng đề cao độ chính xác ở tầm xa. Bạn ngắm qua ống ngắm, chọn đúng mục tiêu và khiến mỗi phát bắn đều đáng giá."
+    },
+    {
+     "q": "Làm sao ngắm tốt hơn trong game bắn tỉa?",
+     "a": "Cứ từ từ, quan sát cách mục tiêu di chuyển và bắn khi chúng chậm lại. Trong game có gió hoặc khoảng cách, hãy ngắm hơi lệch về phía trước hoặc phía trên mục tiêu."
+    },
+    {
+     "q": "Có game bắn tỉa không có bạo lực chân thực không?",
+     "a": "Một số game bắn tỉa dùng mục tiêu hoạt hình, người ngoài hành tinh hoặc câu đố thay cho cảnh chân thực, và phần mô tả game thường cho bạn biết điều đó. Bố mẹ có thể xem trang dành cho bố mẹ để biết chúng tôi duyệt game thế nào."
+    },
+    {
+     "q": "Game bắn tỉa có chơi được trên máy tính bảng không?",
+     "a": "Có game chơi được, nhưng game bắn tỉa thường chơi tốt nhất bằng chuột để ngắm chính xác. Trang game cho bạn biết có chơi được trên điện thoại hay máy tính bảng không."
+    },
+    {
+     "q": "Game bắn tỉa trên Pixuvo có miễn phí không?",
+     "a": "Có, mọi game bắn tỉa trên Pixuvo đều miễn phí trên trình duyệt, không cần tải về."
+    }
+   ]
+  },
+  "solitaire": {
+   "intro": "Chỉ có bạn, một bộ bài và vài phút yên tĩnh. Solitaire, hay còn gọi là xếp bài, là một trong những game bài kinh điển trên máy tính, và Pixuvo có hơn 120 phiên bản.\n\nKlondike là bản kinh điển mà phần lớn mọi người nghĩ tới: bảy cột bài, xếp giảm dần xen kẽ đỏ đen và đưa các quân A lên trên để sắp xếp từng chất. Klondike Solitaire 4 Suits và Klondike Kings Solitaire là hai game đáng thử. Spider Solitaire (xếp bài nhện) dùng hai bộ bài và yêu cầu bạn xếp trọn chuỗi từ K tới A, còn TriPeaks nhanh hơn: bạn dọn ba kim tự tháp bài bằng cách chọn lá lớn hơn hoặc nhỏ hơn lá đang mở một bậc. Ultimate Solitaire Classic, Spider Solitaire Classic Ver, Tripeaks Solitaire Classic và Solitaire Holiday là những game khác đứng gần đầu danh sách.\n\nNgười mới nên bắt đầu với Klondike rút một lá, vì dễ thắng hơn. Mẹo hữu ích: luôn ưu tiên lật các lá đang úp, và đừng vội làm trống một cột nếu chưa có sẵn quân K. Xếp bài chơi bằng bấm, kéo hoặc chạm, và nhiều phiên bản chạy tốt trên máy tính bảng và điện thoại – hãy xem trang game để biết game có chạy trên thiết bị của bạn không.",
+   "faq": [
+    {
+     "q": "Chơi xếp bài Klondike như thế nào?",
+     "a": "Xếp bảy cột giảm dần, xen kẽ màu, như 6 đỏ lên 7 đen, và chuyển bài lên bốn chồng gốc từ A tới K. Bạn thắng khi mọi lá đều được xếp theo chất."
+    },
+    {
+     "q": "Klondike, Spider và TriPeaks khác nhau thế nào?",
+     "a": "Klondike dùng một bộ bài và xếp xen kẽ màu, Spider dùng hai bộ bài và xếp trọn chuỗi từ K tới A, còn TriPeaks là dọn các kim tự tháp bài bằng lá lớn hơn hoặc nhỏ hơn một bậc. TriPeaks học nhanh nhất."
+    },
+    {
+     "q": "Ván xếp bài nào cũng thắng được à?",
+     "a": "Không, có những ván không thể giải, kể cả với người chơi giỏi nhất. Nếu bị kẹt, hãy bắt đầu ván mới – đó cũng là một phần của xếp bài."
+    },
+    {
+     "q": "Có chơi xếp bài trên điện thoại được không?",
+     "a": "Nhiều game xếp bài hỗ trợ chạm và kéo, chơi tốt trên điện thoại và máy tính bảng. Mỗi trang game cho biết có hỗ trợ màn hình cảm ứng hay không."
+    },
+    {
+     "q": "Các game này có miễn phí không?",
+     "a": "Có. Tất cả game xếp bài trên Pixuvo đều miễn phí, không cần đăng ký và không cần tải về."
+    }
+   ]
+  },
+  "sports": {
+   "intro": "Không cần vé vào sân: bảng tỉ số nằm ngay trên trình duyệt của bạn. Pixuvo có hơn 2.300 game thể thao, rất hợp cho những phút nghỉ ngắn vì một trận đấu, một quả phạt đền hay một vòng chơi thường chỉ mất vài phút.\n\nCác nhóm lớn nhất có trang riêng. Game bóng đá có đá phạt đền, đá phạt trực tiếp và những trận đấu nhanh. Game bóng rổ xoay quanh ném rổ và úp rổ. Game bi-a thử thách khả năng tính góc, còn game golf có đủ từ golf mini thư giãn tới những cú đánh xa. Bạn cũng sẽ gặp các pha nhào lộn kiểu parkour và rất nhiều môn thể thao vật lý hài hước không hề có ngoài đời.\n\nCác game gần đầu danh sách gồm Curve Kick, Swipy Basketball, Golf Orbit, Billiards on Ice và Ragdoll Mega Dunk. Chọn thế nào? Muốn chơi nhanh, hãy thử game sút hoặc ném chỉ cần một nút, như thử thách phạt đền hay ném rổ. Thích đấu với ai đó, hãy tìm game ghi “2 người” – nhiều game cho hai người dùng chung một bàn phím. Phần lớn game thể thao dùng chuột hoặc thao tác vuốt đơn giản, nên cũng dễ thử trên máy tính bảng hay điện thoại; trang game cho biết game nào chạy được trên di động.",
+   "faq": [
+    {
+     "q": "Game thể thao nào hay nhất cho bé?",
+     "a": "Những game ngắn, đơn giản là khởi đầu tuyệt vời: Curve Kick và Penalty Kick Wiz cho bóng đá, Swipy Basketball cho bóng rổ và Golf Orbit cho golf. Chúng dạy cách căn thời điểm và ngắm mà các game thể thao khó hơn sẽ cần tới."
+    },
+    {
+     "q": "Ở đây có thể chơi những môn thể thao nào?",
+     "a": "Bóng đá, bóng rổ, bi-a và golf có mục riêng, và còn nhiều môn thể thao cùng game nhào lộn khác nằm trong danh sách chính."
+    },
+    {
+     "q": "Hai người có chơi game thể thao trên một máy tính được không?",
+     "a": "Có, nhiều game thể thao có chế độ hai người, một người dùng WASD và người kia dùng phím mũi tên. Trang game cho bạn biết khi nào game hỗ trợ hai người chơi."
+    },
+    {
+     "q": "Có chơi game thể thao trên điện thoại được không?",
+     "a": "Nhiều game thể thao dùng thao tác vuốt hoặc chạm, chơi tốt trên điện thoại và máy tính bảng. Trang game cho bạn biết game có chạy trên điện thoại và máy tính bảng hay không."
+    },
+    {
+     "q": "Các game này có miễn phí không?",
+     "a": "Có. Tất cả game thể thao trên Pixuvo đều miễn phí và mở ngay trên trình duyệt, không cần đăng ký hay tải gì về."
+    }
+   ]
+  },
+  "strategy": {
+   "intro": "Nghĩ trước, làm sau. Game chiến thuật dành cho những bạn nhỏ thích lập kế hoạch, vì nước đi thông minh nhất mới thắng chứ không phải ngón tay nhanh nhất. Pixuvo có hơn 1.000 game chiến thuật, và nhiều game có thể chơi theo nhịp độ của riêng bạn.\n\nMột nhóm lớn là game thủ thành, nơi bạn đặt tháp dọc đường đi để chặn từng đợt kẻ địch. Game lâu đài và chiến tranh cho bạn xây quân đội hoặc bảo vệ tường thành. Có game gần với giải đố hơn, nơi bạn phải tìm ra đúng thứ tự các nước đi, và một số game lớn hơn có căn cứ và đơn vị để quản lý. Chưa biết bắt đầu từ đâu? Hãy thử Empire Tower Defense - Zombie Fortress, King Rugni Tower Defense, Defend the Castle, Castel War 3D, Tower Crush và Babel Tower.\n\nNếu chưa chơi game chiến thuật bao giờ, thủ thành là nơi bắt đầu thân thiện nhất, vì luật rõ ràng và mỗi màn dạy thêm một ý tưởng mới. Sau đó, hãy thử game lâu đài, nơi bạn còn phải quản lý tài nguyên. Phần lớn game chiến thuật chơi bằng chuột, nên máy tính là lựa chọn thoải mái nhất, dù nhiều game cũng chạy trên máy tính bảng. Trang game cho biết game có hỗ trợ màn hình cảm ứng hay không.",
+   "faq": [
+    {
+     "q": "Game chiến thuật là gì?",
+     "a": "Game chiến thuật là game mà lập kế hoạch quan trọng nhất. Bạn quyết định xây gì, đặt đơn vị ở đâu hay đi nước nào, và quyết định đúng sẽ thắng nhiều hơn phản xạ nhanh."
+    },
+    {
+     "q": "Game chiến thuật nào dễ cho người mới?",
+     "a": "Game thủ thành là bước đầu tuyệt vời vì mỗi màn giới thiệu một ý tưởng mới. Defend the Castle cũng là game tốt để bắt đầu."
+    },
+    {
+     "q": "Game chiến thuật có tốt cho tư duy của bé không?",
+     "a": "Nhiều game chiến thuật yêu cầu tính trước, quản lý tài nguyên và học từ sai lầm, đó là những kỹ năng hữu ích. Như mọi game khác, chơi vừa phải là vui nhất."
+    },
+    {
+     "q": "Game chiến thuật có chơi được trên máy tính bảng không?",
+     "a": "Nhiều game chơi được, nhất là game theo lượt và game thủ thành, nhưng một số game lớn hơn dễ chơi hơn bằng chuột. Trang game cho bạn biết game có chạy trên điện thoại và máy tính bảng hay không."
+    },
+    {
+     "q": "Các game này có miễn phí không?",
+     "a": "Có, mọi game chiến thuật trên Pixuvo đều miễn phí và mở trên trình duyệt, không cần tài khoản."
+    }
+   ]
+  },
+  "tank": {
+   "intro": "Giáp nặng, tháp pháo xoay tròn và khẩu pháo bắn rung cả màn hình – game xe tăng cho bạn chỉ huy một trong những cỗ máy cứng cựa nhất chiến trường. Pixuvo có hơn 250 game xe tăng miễn phí trên trình duyệt.\n\nGame xe tăng có nhiều dạng. Game chiến đấu đặt bạn vào ghế lái xe tăng, game đấu trường giữ cho trận chiến nhỏ và nhanh, còn game chiến thuật và thủ thành thiên về tính toán nơi đặt đơn vị hơn là ngắm bắn. Hiện Tiger Tank, Tanks Blitz, Steel Skirmish, Micro Tank Battle, Age of Tanks Warriors: TD War, Paper Panzer và Tanks 2D War and Heroes đang đứng gần đầu danh sách.\n\nKỹ năng then chốt trong nhiều game xe tăng là điều khiển hai thứ cùng lúc: thân xe đi một hướng còn tháp pháo ngắm hướng khác. Hãy tập vừa chạy vòng tròn vừa giữ nòng pháo vào mục tiêu. Dùng tường và đồi làm chỗ nấp, và nhớ rằng trong nhiều game góc nhìn ngang, đạn pháo bay theo đường vòng cung, nên hãy ngắm cao hơn với mục tiêu ở xa. Phần lớn game xe tăng dùng WASD hoặc phím mũi tên để lái và chuột để ngắm, và khá nhiều game chạy được cả trên điện thoại và máy tính bảng – trang game sẽ ghi rõ. Game xe tăng thuộc chuyên mục game bắn súng, và nhiều game cũng hợp với người mê chiến thuật.",
+   "faq": [
+    {
+     "q": "Game xe tăng là gì?",
+     "a": "Game xe tăng giao cho bạn những cỗ xe bọc thép biết chạy, ngắm và khai pháo. Có game là trận chiến tốc độ, có game là game chiến thuật và thủ thành."
+    },
+    {
+     "q": "Ngắm bắn trong game xe tăng thế nào?",
+     "a": "Trong phần lớn game xe tăng nhìn từ trên xuống, bạn lái bằng WASD và xoay tháp pháo bằng chuột. Trong game góc nhìn ngang, đạn bay theo vòng cung, nên hãy ngắm cao hơn với mục tiêu ở xa."
+    },
+    {
+     "q": "Có game xe tăng chiến thuật không?",
+     "a": "Có, một số game xe tăng là game chiến thuật hoặc thủ thành, nơi lập kế hoạch và đặt đơn vị quan trọng hơn chỉ bắn. Age of Tanks Warriors: TD War là một game đáng thử."
+    },
+    {
+     "q": "Hai người có chơi game xe tăng cùng nhau được không?",
+     "a": "Một số game xe tăng có chế độ 2 người trên một bàn phím, một số khác chơi online. Trang game ghi rõ khi nhà phát hành cung cấp thông tin này."
+    },
+    {
+     "q": "Game xe tăng có miễn phí không?",
+     "a": "Có, tất cả game xe tăng trên Pixuvo đều miễn phí trên trình duyệt, không cần đăng ký."
+    }
+   ]
+  },
+  "tower-defense": {
+   "intro": "Kẻ địch đang hành quân trên đường, và chỉ có những tòa tháp của bạn chặn lối. Đó là toàn bộ ý tưởng của game thủ thành (tower defense), một phong cách chiến thuật kinh điển. Pixuvo có hơn 280 game thủ thành để bạn lựa chọn.\n\nMỗi game đều theo cùng một vòng lặp cốt lõi: kẻ địch kéo tới theo từng đợt dọc một con đường, bạn đặt tháp hoặc anh hùng bên cạnh, và mỗi kẻ địch bị chặn lại cho bạn xu để có thêm tháp mạnh hơn. Thứ thay đổi là bối cảnh: lâu đài và vương quốc, xe tăng, zombie hơi rùng rợn một chút hoặc các nhân vật meme hài hước. King Rugni Tower Defense, Tower Siege, Age of Tanks Warriors: TD War, Zombi Defense và Brainrot Tower Defense là vài game gần đầu danh sách, còn Hot Barrel Cats, Lilliput War, Limited Defense và Ashen Watch là những game khác để khám phá. Một số game thủ thành còn có anh hùng mà bạn di chuyển khắp bản đồ.\n\nMẹo cho người mới: đặt những tháp đầu tiên ở chỗ đường cong, vì ở đó kẻ địch ở trong tầm bắn lâu hơn. Kết hợp nhiều loại tháp – có loại bắn nhanh, có loại đánh mạnh hoặc làm chậm kẻ địch – và nâng cấp trước khi dàn trải quá mỏng. Game thủ thành thường chơi bằng cú bấm chuột nên hợp nhất với máy tính, nhưng nhiều game cũng chơi tốt bằng cách chạm trên máy tính bảng. Game có chạy trên di động không thì trang game sẽ ghi rõ.",
+   "faq": [
+    {
+     "q": "Game thủ thành là gì?",
+     "a": "Đó là game chiến thuật mà kẻ địch đi theo từng đợt dọc một con đường và bạn xây tháp bên cạnh để chặn chúng. Hạ kẻ địch giúp bạn kiếm tiền để xây thêm tháp và nâng cấp."
+    },
+    {
+     "q": "Nên đặt tháp ở đâu?",
+     "a": "Góc và khúc cua là vị trí tốt nhất, vì ở đó kẻ địch ở trong tầm bắn lâu hơn. Xây vài tháp mạnh từ sớm và nâng cấp chúng trước khi dàn trải."
+    },
+    {
+     "q": "Game thủ thành nào hay để chơi đầu tiên?",
+     "a": "King Rugni Tower Defense và Tower Siege là những game tốt để bắt đầu, còn Brainrot Tower Defense là một game khác đáng thử."
+    },
+    {
+     "q": "Có chơi game thủ thành trên máy tính bảng được không?",
+     "a": "Nhiều game thủ thành chỉ cần chạm để đặt tháp, nên chạy được trên máy tính bảng và điện thoại. Mỗi trang game cho biết có hỗ trợ màn hình cảm ứng hay không."
+    },
+    {
+     "q": "Các game này có miễn phí không?",
+     "a": "Có. Tất cả game thủ thành trên Pixuvo đều miễn phí trên trình duyệt, không cần đăng ký."
+    }
+   ]
+  },
+  "truck": {
+   "intro": "Bánh xe to, hàng hóa nặng và con đường đầy ổ gà – game xe tải dành cho các bạn nhỏ thích xe cộ phải thật to và thật ồn. Pixuvo có hơn 700 game xe tải miễn phí chạy trên trình duyệt.\n\nLái xe tải cảm giác rất khác lái ô tô. Xe tăng tốc chậm hơn, khó dừng hơn và ôm cua rộng hơn, nên lái cẩn thận quan trọng hơn tốc độ. Có game xe tải xoay quanh việc giao hàng mà không làm rơi; có game đưa bạn đi địa hình qua bùn lầy và đồi dốc, cho bạn lái xe quân sự hoặc đưa xe tải lớn lên đường nhào lộn. Còn có cả việc ở nông trại và thành phố, thậm chí cả game giải đố và game trí nhớ nhẹ nhàng với xe tải. Hiện Offroad Masters Challenge, Army Truck Driving, Truck Simulator Stunt Extreme, 3D city tractor garbage sim và Draw Truck Endless đang đứng gần đầu danh sách.\n\nMẹo cho mọi tài xế xe tải: phanh sớm. Xe nặng cần nhiều khoảng trống hơn để dừng, và trên đồi rất dễ bị trôi ngược hoặc lật nếu vội. Hãy ôm cua rộng và đi chậm qua chỗ xóc khi chở hàng. Phần lớn game xe tải dùng phím mũi tên hoặc WASD, và trang game ghi rõ các phím phụ. Khá nhiều game chạy được cả trên điện thoại và máy tính bảng – trang game sẽ ghi rõ. Game xe tải thuộc chuyên mục game lái xe, bên cạnh game xe buýt và game đỗ xe.",
+   "faq": [
+    {
+     "q": "Game xe tải là gì?",
+     "a": "Game xe tải cho bạn lái những cỗ xe lớn như xe tải, xe quân sự và máy kéo. Nhiều game xoay quanh giao hàng, leo đồi địa hình hoặc nhào lộn."
+    },
+    {
+     "q": "Làm sao lái giỏi trong game xe tải?",
+     "a": "Phanh sớm, ôm cua rộng và giảm tốc qua chỗ xóc, nhất là khi chở hàng. Xe tải rất nặng nên cần nhiều khoảng trống hơn ô tô."
+    },
+    {
+     "q": "Game xe tải địa hình là gì?",
+     "a": "Đó là game xe tải diễn ra trên đường đất, bùn lầy và đồi dốc thay vì đường phố bằng phẳng. Offroad Masters Challenge là một game đáng thử."
+    },
+    {
+     "q": "Có game xe tải cho bé nhỏ không?",
+     "a": "Có, một số game xe tải là câu đố hoặc game trí nhớ đơn giản không cần lái nhanh – Army Trucks Memory là một game đáng thử. Game lái xe có màn ngắn là bước tiếp theo rất ổn."
+    },
+    {
+     "q": "Có chơi game xe tải trên máy tính bảng được không?",
+     "a": "Nhiều game xe tải có điều khiển cảm ứng và chạy trên điện thoại và máy tính bảng. Trang game cho bạn biết có chơi được trên điện thoại hay máy tính bảng không."
+    }
+   ]
+  },
+  "tycoon": {
+   "intro": "Khởi đầu với một quầy bánh burger và kết thúc với cả một chuỗi nhà hàng. Game kinh doanh (tycoon) là chuyện gây dựng thứ gì đó từ gần như con số không, và niềm vui là ngắm những con số, cửa hàng và tòa nhà lớn dần. Pixuvo có hơn 340 game kinh doanh.\n\nVòng lặp cơ bản rất đơn giản: kiếm tiền, chi tiền nâng cấp, rồi kiếm được nhiều hơn nữa. Thứ bạn quản lý thay đổi theo từng game: một nhà hàng, một xưởng đóng tàu, một công ty công nghệ, một đồn cảnh sát hay cả một thế giới kỳ ảo. Để bắt đầu, hãy thử Burger Restaurant Simulator 3D, Shipbuilding Tycoon, Silicon Valley - Idle Tycoon, My Mini Police và Dinosaur World. Nhiều game kinh doanh còn là game “idle”, nghĩa là cơ ngơi của bạn vẫn tiếp tục sinh lời trong lúc bạn nghỉ.\n\nGame kinh doanh là cách nhẹ nhàng để học về tiết kiệm và chi tiêu: mua ngay món nâng cấp rẻ nhất không phải lúc nào cũng là lựa chọn tốt nhất. Mẹo hay là nâng cấp thứ sinh lời nhiều nhất trước. Game chơi tốt bằng chuột, và nhiều game nhẹ hơn chạy được cả trên máy tính bảng và điện thoại – hãy xem trang game để biết game có chạy trên thiết bị của bạn không.",
+   "faq": [
+    {
+     "q": "Game kinh doanh là gì?",
+     "a": "Game kinh doanh (tycoon) cho bạn điều hành và phát triển một cơ ngơi, như nhà hàng, xưởng đóng tàu hay công viên giải trí. Bạn kiếm tiền, mua nâng cấp và mở rộng từng bước."
+    },
+    {
+     "q": "Game kinh doanh và game idle khác nhau thế nào?",
+     "a": "Game kinh doanh xoay quanh việc quản lý một cơ ngơi, còn game idle vẫn tiếp tục kiếm tiền cả khi bạn ngừng bấm. Nhiều game là cả hai, như Silicon Valley - Idle Tycoon."
+    },
+    {
+     "q": "Nên thử game kinh doanh nào trước?",
+     "a": "Game kinh doanh nhà hàng rất dễ hiểu, vì ai cũng biết nhà hàng hoạt động thế nào. Burger Restaurant Simulator 3D và Dinosaur World là hai game đáng thử."
+    },
+    {
+     "q": "Game kinh doanh có dạy gì về tiền bạc không?",
+     "a": "Theo kiểu vui chơi thì có: bạn học được rằng dành dụm để mua món nâng cấp tốt hơn có thể có lợi hơn tiêu ngay. Tất nhiên những con số chỉ là giả định."
+    },
+    {
+     "q": "Các game này có miễn phí không?",
+     "a": "Có. Tất cả game kinh doanh trên Pixuvo đều miễn phí, không cần tài khoản và không cần tải về."
+    }
+   ]
+  },
+  "word": {
+   "intro": "Các chữ cái nằm rải rác trên màn hình, và đâu đó trong chúng là một từ bị giấu. Game đố chữ là câu đố cho bất kỳ ai thích đọc, đánh vần hay đơn giản là thích tìm ra lời giải, và Pixuvo có hơn 340 game như vậy.\n\nGần như kiểu người chơi nào cũng có game đố chữ hợp với mình. Game tìm từ và điền từ yêu cầu bạn tìm những từ giấu trong lưới chữ, game ô chữ cho bạn gợi ý và các ô để điền, còn game treo cổ (hangman) là trò đoán chữ kinh điển. Game đảo chữ và ghép chữ cho bạn tạo từ từ một bộ chữ cái, game ghép hình với từ giúp các bé nhỏ nối từ với hình ảnh, còn game gõ phím rèn tốc độ. Hiện Fillwords: Find All the Words, Crossword Quest 3D, Wordquest Hangman, Rise of Words, Lexora, Match Pictures to Words 3D và Speed Typer đang đứng gần đầu danh sách.\n\nGame đố chữ là cách khéo léo để mở rộng vốn từ, vì mỗi từ mới tìm được lại nhớ lâu hơn một chút. Nếu mới chơi, hãy bắt đầu với game hình ảnh hoặc tìm từ, rồi chuyển sang đảo chữ và ô chữ khi muốn thử thách lớn hơn. Game gõ phím dễ chơi nhất với bàn phím thật, còn phần lớn game đố chữ khác chơi được bằng chạm và vuốt trên máy tính bảng và điện thoại – game có chạy trên di động không thì trang game sẽ ghi rõ.",
+   "faq": [
+    {
+     "q": "Game đố chữ nào hay cho bé?",
+     "a": "Bé nhỏ có thể bắt đầu với game ghép hình với từ, game tìm từ giúp luyện chính tả, còn treo cổ là trò đoán chữ vui cho mọi lứa tuổi. Vào chơi nhanh với: Match Pictures to Words 3D, Fillwords: Find All the Words và Wordquest Hangman."
+    },
+    {
+     "q": "Game đố chữ có giúp luyện chính tả và vốn từ không?",
+     "a": "Có, tìm và ghép từ lặp đi lặp lại giúp bạn nhớ cách viết và nghĩa của từ. Đây là phần luyện thêm cho vui, không thay thế việc học ở trường."
+    },
+    {
+     "q": "Chơi trò treo cổ (hangman) như thế nào?",
+     "a": "Bạn đoán một từ bị giấu, mỗi lần một chữ cái. Mỗi lần đoán sai, hình vẽ được thêm một phần, và bạn cố tìm ra từ trước khi hình vẽ hoàn thành."
+    },
+    {
+     "q": "Game đố chữ có bằng tiếng Việt không?",
+     "a": "Tùy từng game. Nhiều game dùng từ tiếng Anh, và một số cho chọn ngôn ngữ khác trong menu của game – phần mô tả game thường cho bạn biết."
+    },
+    {
+     "q": "Có game gõ phím để luyện tốc độ không?",
+     "a": "Có – Speed Typer là một game đáng thử. Game gõ phím chơi tốt nhất với bàn phím thật."
+    }
+   ]
+  },
+  "zombie": {
+   "intro": "Chúng chậm chạp, vụng về, và đông vô kể. Game zombie là chuyện sống sót trước bầy xác sống, và những game hay nhất kết hợp bắn súng với lập kế hoạch, xây dựng và một chút hài hước. Pixuvo có hơn 800 game zombie miễn phí trên trình duyệt.\n\nThế giới zombie đa dạng hơn bạn tưởng. Game sinh tồn xoay quanh việc trụ lại càng lâu càng tốt, thường là hết đợt này tới đợt khác. Có game khai thác ý tưởng zombie vụng về, có game lại thiên về hành động bắn súng. Chưa biết bắt đầu từ đâu? Hãy thử Quarantine Zombies, Zombie Can't Jump, Zombie Hunter Survival, Guns'n'Glory Zombies, Zombie World và Zombie Killer.\n\nMẹo sinh tồn tốt nhất: đừng bao giờ để bị bao vây. Luôn di chuyển, tận dụng góc tường và khung cửa để zombie chỉ tới từ một hướng, và nâng cấp vũ khí hoặc phòng thủ giữa các đợt khi game cho phép. Phần lớn game zombie dùng WASD để di chuyển và chuột để ngắm, hoặc chạm đơn giản trên màn hình cảm ứng. Khá nhiều game chạy được cả trên điện thoại và máy tính bảng – trang game sẽ ghi rõ. Game zombie có thể rùng rợn hoặc ghê máu, nên thường hợp với các bạn lớn hơn; game có từ ngữ bạo lực được giữ lại để duyệt thủ công, và trang dành cho bố mẹ giải thích cách làm. Game zombie thuộc chuyên mục game bắn súng.",
+   "faq": [
+    {
+     "q": "Game zombie là gì?",
+     "a": "Game zombie là chuyện sống sót trước những đám đông xác sống. Phần lớn kết hợp bắn súng với chiến thuật, như nâng cấp vũ khí hay xây dựng phòng thủ."
+    },
+    {
+     "q": "Làm sao sống sót lâu hơn trong game zombie?",
+     "a": "Luôn di chuyển, tránh bị bao vây và tận dụng khung cửa hoặc góc tường để zombie chỉ tới từ một phía. Dùng xu để nâng cấp giữa các đợt."
+    },
+    {
+     "q": "Game zombie có quá đáng sợ với trẻ em không?",
+     "a": "Có game theo phong cách hoạt hình và hài hước, có game rùng rợn hoặc ghê máu, nên chúng hợp nhất với các bạn lớn hơn. Trang dành cho bố mẹ giải thích cách game được duyệt."
+    },
+    {
+     "q": "Nên thử game zombie nào trước?",
+     "a": "Để bắt đầu, hãy thử Quarantine Zombies và Zombie Hunter Survival. Chọn game có đợt tấn công ngắn trước để học cách điều khiển."
+    },
+    {
+     "q": "Có chơi game zombie trên điện thoại được không?",
+     "a": "Nhiều game zombie có điều khiển cảm ứng và chạy trên điện thoại và máy tính bảng. Game có chạy trên di động không thì trang game sẽ ghi rõ."
+    }
+   ]
+  }
+ },
+ "land": {
+  "2-player-fighting": {
+   "intro": "Ai là nhà vô địch trong nhà bạn? Hãy phân định ngay tại đây với hơn 90 game đối kháng dành cho hai người trên cùng một máy tính. Mỗi trận đều ngắn, nhanh và dễ chơi lại, nên người thua lúc nào cũng có thể đòi phục thù.\n\nCác game này có vài kiểu. Game đối kháng người que dùng những hình người đơn giản lộn nhào, đấm và đá khắp màn hình. Game hỗn chiến trong đấu trường tìm cách đẩy đối thủ ra khỏi sàn đấu hoặc rơi khỏi nền. Game phản xạ như trò đập tay đỏ (red hands) thử xem ai nhanh hơn, và một số game là đấu tay đôi kiểu quyền anh hay đấu vật. Thường thì một người dùng W, A, S, D và người kia dùng phím mũi tên; một vài game còn hỗ trợ chơi online, điều này được ghi trên trang game khi nhà phát hành cung cấp.\n\nCho hiệp đầu tiên, hãy thử Stickman: Fighter 3D, Stickman Dragon Fighting, Two Player Red Hands Game, Boxing Gang Stars và Neon Slimes. Trước khi bắt đầu, hai bạn hãy thống nhất sẽ chơi bao nhiêu hiệp. Nhiều trận đấu ở đây có phong cách hoạt hình, và các game có nội dung bạo lực được kiểm duyệt thủ công trước khi xuất hiện trên Pixuvo.",
+   "faq": [
+    {
+     "q": "Game đối kháng 2 người nào hay nhất cho trẻ em?",
+     "a": "Game phong cách hoạt hình là khởi đầu tuyệt vời – hãy thử Neon Slimes, Two Player Red Hands Game hoặc Boxing Gang Stars. Game đối kháng người que cũng là lựa chọn dễ chơi vì nhân vật chỉ là những hình người que đơn giản."
+    },
+    {
+     "q": "Hai người có thể đấu trên cùng một bàn phím không?",
+     "a": "Có, phần lớn các game này đều chơi như vậy: một người dùng W, A, S, D, người kia dùng phím mũi tên, mỗi người có thêm vài phím tấn công."
+    },
+    {
+     "q": "Trò đập tay đỏ (red hands) là gì?",
+     "a": "Đó là trò thử phản xạ cho hai người: một người cố đập vào tay người kia, người kia cố rút tay về kịp lúc. Trò chơi nhanh và vui, trang game có ghi phím điều khiển."
+    },
+    {
+     "q": "Có game đối kháng người que cho hai người không?",
+     "a": "Có, ví dụ Stickman: Fighter 3D và Stickman Dragon Fighting. Bạn sẽ tìm thấy thêm ở trang game người que."
+    }
+   ]
+  },
+  "2-player-football": {
+   "intro": "Bóng lăn rồi, và bạn của bạn đang ngồi ngay bên cạnh! Trang này tập hợp hơn 80 game bóng đá cho hai người, từ loạt sút luân lưu đến những trận một đối một tốc độ với cầu thủ đầu to và quả bóng nảy tưng tưng.\n\nCó vài kiểu chơi chính. Game bóng đá đầu to (headball) cho mỗi người một nhân vật nhảy và sút ngay trước khung thành. Game bóng đá ô tô thay cầu thủ bằng những chiếc xe húc vào quả bóng khổng lồ. Game kiểu bàn như khúc côn cầu trên bàn hay búng bóng cho bạn ngắm và sút theo lượt. Phần lớn chơi trên một bàn phím, một người dùng W, A, S, D và người kia dùng phím mũi tên, còn một số là trận đấu online. Trang game ghi rõ chế độ chơi khi nhà phát hành cung cấp.\n\nHead Ball Challenge, Soccer Duel, Rocketcar Cup và Coin Flick Soccer là những game hay để bắt đầu, còn Rumble Stars Football - Online Soccer Game là game nên xem nếu bạn muốn đá online. Các trận đều ngắn, nên hãy chơi ai ghi đủ ba bàn trước thì thắng rồi đổi sân. Bóng đá đầu to rất dễ học – thường chỉ cần di chuyển, nhảy và sút – nên là lựa chọn tuyệt vời đầu tiên cho các bé nhỏ tuổi.",
+   "faq": [
+    {
+     "q": "Bóng đá đầu to (headball) là gì?",
+     "a": "Đó là kiểu game bóng đá mà mỗi người điều khiển một nhân vật đầu to đứng trước khung thành của mình. Bạn di chuyển, nhảy và sút để đưa bóng qua đối thủ."
+    },
+    {
+     "q": "Hai người chơi bóng đá trên một bàn phím như thế nào?",
+     "a": "Thường thì một người dùng W, A, S, D, người kia dùng phím mũi tên, và mỗi người có thêm một phím để sút. Phím điều khiển hiện ra trước khi trận đấu bắt đầu."
+    },
+    {
+     "q": "Tôi có thể đá bóng online với người chơi khác không?",
+     "a": "Có, một số game như Rumble Stars Football - Online Soccer Game có trận đấu online. Phần lớn các game còn lại chơi cạnh nhau trên một máy tính."
+    },
+    {
+     "q": "Game bóng đá 2 người nào dễ nhất cho các bé?",
+     "a": "Game búng bóng theo lượt là dễ nhất vì không ai phải nhanh tay – bạn có thể thử Coin Flick Soccer. Game bóng đá đầu to cũng đơn giản, chỉ dùng vài phím."
+    },
+    {
+     "q": "Bóng đá ở đây có phải là “soccer” không?",
+     "a": "Đúng vậy. Đây là bóng đá – môn thể thao mà người Mỹ gọi là soccer, còn phần lớn thế giới gọi là football."
+    }
+   ]
+  },
+  "2-player-racing": {
+   "intro": "Đua xe sẽ vui hơn nhiều khi chiếc xe bên cạnh do anh chị em hay bạn thân của bạn cầm lái. Trang này tập hợp hơn 200 game đua xe dành cho hai người, để hai bạn phân định ai nhanh hơn mà không phải chờ ai trên mạng.\n\nPhần lớn các game này chơi trên cùng một bàn phím: một người lái bằng W, A, S, D, người kia dùng phím mũi tên. Một số game chia đôi màn hình để mỗi tay đua có một nửa, số khác cho cả hai xe chạy trên cùng một đường đua. Một vài game là đấu online – trang game sẽ ghi rõ loại nào khi nhà phát hành cung cấp thông tin. Bạn sẽ gặp đường đua vòng kinh điển, game nhào lộn với dốc nhảy khổng lồ, thử thách địa hình, màn so tài drift và cả bóng đá ô tô, nơi các xe cùng đẩy một quả bóng khổng lồ.\n\nĐể bắt đầu, bạn có thể thử Offroad Masters Challenge, Mega Ramp Stunt Racing 3D, Noob vs Pro : Drift Tag và Rocketcar Cup. Mẹo nhỏ: ngồi sao cho cả hai đều với tới bàn phím thoải mái và thống nhất phím điều khiển trước khi đồng hồ đếm ngược. Nhiều game cũng chơi được trên máy tính bảng – hãy xem trang game.",
+   "faq": [
+    {
+     "q": "Hai người đua xe trên một máy tính như thế nào?",
+     "a": "Phần lớn game đua xe 2 người chia đôi bàn phím: một người dùng W, A, S, D, người kia dùng phím mũi tên. Có game chia đôi màn hình, có game cho cả hai xe chạy chung một đường đua."
+    },
+    {
+     "q": "Có game đua xe 2 người online không?",
+     "a": "Có, một vài game cho bạn đua với người khác qua mạng thay vì chung bàn phím. Trang game ghi rõ chế độ chơi khi nhà phát hành cung cấp thông tin này."
+    },
+    {
+     "q": "Game đua xe 2 người có những loại nào?",
+     "a": "Bạn sẽ thấy đua trên đường đua, game nhào lộn và dốc nhảy, lái xe địa hình, so tài drift và bóng đá ô tô – nơi bạn ghi bàn bằng xe."
+    },
+    {
+     "q": "Có chơi game đua xe 2 người trên điện thoại được không?",
+     "a": "Một số game chạy được trên điện thoại và máy tính bảng, nhưng dùng chung bàn phím thường dễ nhất trên máy tính. Trang của từng game ghi rõ game hỗ trợ thiết bị nào."
+    },
+    {
+     "q": "Tôi có phải tải gì không?",
+     "a": "Không. Mọi game đều chạy trên trình duyệt web, không cần tải, không cần cài đặt và không cần đăng ký."
+    }
+   ]
+  },
+  "2-player-shooting": {
+   "intro": "Hai người, một bàn phím và một điểm số cần vượt qua – đó là ý tưởng của bộ sưu tập hơn 150 game bắn súng cho hai người này. Có game là đấu tay đôi để xem ai khéo hơn, có game là chơi hợp tác, hai bạn cùng phe chống lại từng đợt kẻ địch.\n\nBạn sẽ gặp những màn đấu trên nền tảng, nơi người chơi tìm cách đẩy nhau ra khỏi bản đồ, trận chiến xe tăng, đấu ô tô và game phòng thủ trước zombie. Trong phần lớn game, một người di chuyển bằng W, A, S, D, người kia dùng phím mũi tên, kèm thêm một hai phím để bắn. Một vài game chơi online thay vì chung bàn phím; trang game sẽ ghi rõ khi nhà phát hành cung cấp thông tin.\n\nNhững game nằm gần đầu danh sách gồm Gun Mayhem Original, Car Battle, Tanks of War Halloween, Zombie swarm và BlockCraft Together. Nếu mới chơi, hãy bắt đầu bằng một game hợp tác để cả hai cùng học phím điều khiển trước khi chuyển sang đấu tay đôi. Phụ huynh muốn xem trên Pixuvo có gì có thể đọc trang dành cho phụ huynh, nơi giải thích cách kiểm duyệt các game có nội dung bạo lực.",
+   "faq": [
+    {
+     "q": "Game bắn súng 2 người nào hay để chơi với bạn?",
+     "a": "Gun Mayhem Original, Car Battle, Tanks of War Halloween và Zombie swarm là những lựa chọn dễ bắt đầu. Trang game cho biết đó là game đấu tay đôi hay hợp tác khi nhà phát hành cung cấp thông tin."
+    },
+    {
+     "q": "Có game bắn súng hợp tác chứ không chỉ đấu tay đôi không?",
+     "a": "Có. Một số game cho cả hai người cùng phe chiến đấu với kẻ địch do máy điều khiển – một cách hay để cùng nhau làm quen phím điều khiển."
+    },
+    {
+     "q": "Game bắn súng 2 người điều khiển thế nào?",
+     "a": "Thường thì một người dùng W, A, S, D cùng một phím bắn, người kia dùng phím mũi tên cùng một phím bắn khác. Mỗi game đều hiện phím điều khiển riêng lúc bắt đầu."
+    },
+    {
+     "q": "Game bắn súng này có phù hợp với trẻ em không?",
+     "a": "Nhiều game có phong cách hoạt hình, nhưng mỗi game một khác. Các game có nội dung bạo lực được kiểm duyệt thủ công, và phụ huynh có thể đọc thêm ở trang dành cho phụ huynh."
+    }
+   ]
+  },
+  "2-player-sports": {
+   "intro": "Ganh đua vui vẻ chính là tinh thần của thể thao, và hơn 250 game ở đây đưa tinh thần ấy lên màn hình. Rủ một người bạn, dùng chung bàn phím và chơi một trận mà tỉ số thật sự quan trọng – vì đối thủ đang ngồi ngay cạnh bạn.\n\nNhóm lớn nhất là bóng đá: đọ sút phạt đền, bóng đá đầu to và những trận đấu ngắn có khung thành ở hai đầu sân. Ngoài ra còn có bóng chuyền, bóng rổ, bi-a và những màn kết hợp vui nhộn như bóng đá ô tô, nơi các xe đẩy quả bóng. Ở nhiều game, một người dùng W, A, S, D còn người kia dùng phím mũi tên; một vài game là trận đấu online với người chơi khác. Trang game sẽ cho bạn biết đó là loại nào khi nhà phát hành có thông tin.\n\nMuốn vào trận ngay? Hãy thử VOLLEY CLASH, Basketball League, 8 Ball Pool 2D và Toy Soccer Cup. Các môn đánh theo lượt như bi-a rất hợp với các bé còn đang làm quen với bàn phím, vì không ai phải phản xạ trong tích tắc. Các trận thường ngắn, nên bạn có thể chơi “thắng 2 trong 3 ván” và thay phiên nhau chọn game tiếp theo.",
+   "faq": [
+    {
+     "q": "Hai người có thể chơi những môn thể thao nào ở đây?",
+     "a": "Bóng đá, bóng chuyền, bóng rổ, bi-a và bóng đá ô tô. Danh sách còn dài thêm khi có game mới."
+    },
+    {
+     "q": "Làm sao để đấu game thể thao với bạn trên một bàn phím?",
+     "a": "Trong hầu hết game thể thao 2 người, một người dùng W, A, S, D và người kia dùng phím mũi tên. Phím điều khiển thường hiện ra trước khi trận đấu bắt đầu."
+    },
+    {
+     "q": "Game thể thao 2 người nào hợp với các bé nhỏ tuổi?",
+     "a": "Game đánh theo lượt như 8 Ball Pool 2D là khởi đầu tốt vì không phải vội. Các trận bóng đá và bóng chuyền đơn giản chỉ dùng một hai phím cũng rất dễ học."
+    },
+    {
+     "q": "Tôi có thể đấu với người khác qua mạng không?",
+     "a": "Một số game thể thao có trận đấu online. Trang game ghi rõ chế độ chơi khi nhà phát hành cung cấp."
+    },
+    {
+     "q": "Các game thể thao này có miễn phí không?",
+     "a": "Có, bạn chơi miễn phí ngay trên trình duyệt, không cần tài khoản và không cần tải."
+    }
+   ]
+  },
+  "animal": {
+   "intro": "Mèo con, cá mập, gà con, cún cưng và cả khủng long – động vật là ngôi sao trong hơn 2.700 game ở trang này. Có game cho bạn chăm sóc thú cưng, có game biến động vật thành người hùng, và có game chỉ đơn giản là vui nhộn với một nhân vật lông xù hoặc có cánh.\n\nGame chăm sóc thú cưng xoay quanh việc cho ăn, tắm rửa và chăm sóc động vật – các bé nhỏ tuổi đặc biệt thích. Game giải cứu đưa ra một câu đố để bạn cứu chú mèo bị mắc kẹt hay con vật nào đó đang gặp nạn. Game arcade cho bạn hóa thân thành động vật: vỗ cánh như chim, bơi như cá mập hay nhảy lon ton như chú gà con. Ngoài ra còn có những cuộc phiêu lưu khủng long và game ghép hình động vật.\n\nĐể chơi nhẹ nhàng, Save kitten và Funny Rescue Pet là những game hay để bắt đầu, còn Tiny Chick, Shadobirds, Big Shark và Dino Squad Battle Mission là những game khác nằm gần đầu danh sách. Phần lớn game động vật dùng nhấp chuột, chạm hoặc phím mũi tên đơn giản, nên hợp với nhiều lứa tuổi. Nhiều game cũng chơi được trên điện thoại và máy tính bảng – trang game ghi rõ.",
+   "faq": [
+    {
+     "q": "Game động vật nào hay cho trẻ em?",
+     "a": "Game giải cứu và chăm sóc thú cưng nhẹ nhàng là khởi đầu dễ thương cho các bé nhỏ tuổi – hãy thử Save kitten và Funny Rescue Pet. Big Shark và Dino Squad Battle Mission cũng là những lựa chọn hay."
+    },
+    {
+     "q": "Có game chăm sóc thú cưng không?",
+     "a": "Có, có những game cho bạn cho ăn, tắm rửa và chăm sóc thú cưng. Bạn cũng tìm thấy thêm ở trang game con gái, nơi có các game chăm sóc như Funny Kitty Care."
+    },
+    {
+     "q": "Có game khủng long không?",
+     "a": "Có, khủng long xuất hiện trong nhiều game động vật, từ phiêu lưu đến giải đố – Dino Squad Battle Mission là một game nên thử."
+    },
+    {
+     "q": "Tôi có thể chơi game động vật trên máy tính bảng không?",
+     "a": "Nhiều game động vật dùng thao tác chạm hoặc nhấp đơn giản, nên thường chạy được trên máy tính bảng. Trang của từng game ghi rõ thiết bị được hỗ trợ."
+    }
+   ]
+  },
+  "boys": {
+   "intro": "Tốc độ, chiến đấu và những thử thách lớn – đó là những gì bạn sẽ tìm thấy trong hơn 10.000 game đua xe, đối kháng và bắn súng này. Nhiều bạn trai mê chúng, nhưng mọi game ở đây đều dành cho tất cả mọi người, nên ai thích hành động đều được chào đón.\n\nGame đua xe có đủ từ đường đua mô tô nhào lộn đến rượt đuổi ô tô và lái xe tải. Game đối kháng gồm trận chiến người que, hỗn chiến trong đấu trường và đấu tay đôi. Game bắn súng có sinh tồn trước zombie, trận chiến xe tăng và đoàn xe, cùng những nhiệm vụ mà bạn phải ngắm thật kỹ và hoàn thành mục tiêu. Có game arcade chơi xong trong một phút, có game với các màn chơi mở khóa lần lượt.\n\nĐể bắt đầu, hãy thử Moto X3M: Spooky Land nếu thích đua mô tô nhào lộn, hoặc Sumo Shove, Knockback Knights, Stickman Warriors, Quarantine Zombies và Trap the Convoy – tất cả đều nằm gần đầu danh sách. Phần lớn các game này dùng bàn phím (phím mũi tên hoặc W, A, S, D) và đôi khi dùng chuột để ngắm. Muốn chơi cùng bạn? Hãy xem các trang game đua xe 2 người, game đối kháng 2 người và game bắn súng 2 người. Phụ huynh có thể đọc về cách Pixuvo kiểm duyệt game có nội dung bạo lực ở trang dành cho phụ huynh.",
+   "faq": [
+    {
+     "q": "Con trai nên bắt đầu với game nào?",
+     "a": "Moto X3M: Spooky Land, Stickman Warriors và Quarantine Zombies nằm gần đầu danh sách. Nhưng mọi game trên Pixuvo đều dành cho tất cả mọi người, nên cứ thử bất cứ game nào trông thú vị."
+    },
+    {
+     "q": "Có game con trai nào cho hai người chơi không?",
+     "a": "Có. Các trang game đua xe, đối kháng và bắn súng 2 người có những game mà hai người dùng chung một bàn phím."
+    },
+    {
+     "q": "Các game hành động này có phù hợp với trẻ em không?",
+     "a": "Nhiều game là hành động phong cách hoạt hình, nhưng mỗi game một khác. Các game có nội dung bạo lực, người lớn hoặc cờ bạc được kiểm duyệt thủ công, và phụ huynh có thể xem chi tiết ở trang dành cho phụ huynh."
+    },
+    {
+     "q": "Tôi có cần bàn phím để chơi không?",
+     "a": "Nhiều game hành động dễ chơi nhất với bàn phím, nhưng một số cũng chạy được trên điện thoại và máy tính bảng bằng điều khiển cảm ứng. Trang game ghi rõ điều này."
+    },
+    {
+     "q": "Con gái có chơi game con trai được không?",
+     "a": "Tất nhiên rồi. Mọi game trên Pixuvo đều dành cho tất cả mọi người – trang này chỉ đơn giản gom các game đua xe, đối kháng và bắn súng lại với nhau."
+    }
+   ]
+  },
+  "brain": {
+   "intro": "Sẵn sàng cho bộ não tập thể dục chưa? Hơn 4.500 game này đều xoay quanh việc suy nghĩ: ghi nhớ, đếm số, tìm từ và giải câu đố. Đây là lựa chọn hay khi bạn muốn chơi thứ gì đó mà cũng giống luyện tập một chút.\n\nGame trí nhớ yêu cầu bạn nhớ thẻ bài, hình ảnh hay vị trí quả bóng được giấu. Game toán biến phép cộng, trừ và nhân thành những cuộc đua và trận đấu. Game đố vui kiểm tra hiểu biết của bạn về lá cờ, hình khối hay biểu tượng cảm xúc, còn game chữ cho bạn ghép từ, giải ô chữ hoặc đoán chữ cái. Thêm vào đó là câu đố logic, nơi bạn phải nghĩ cách sửa, nối hoặc di chuyển mọi thứ theo đúng thứ tự.\n\nMột vài game hay để bắt đầu, nằm gần đầu danh sách, là Kobadoo Numbers, Kobadoo Arithmetic, Kobadoo Flags, Memory Cards, Flag Memory Match, Three Cups Game và Math Fight Club. Hãy thử vài kiểu khác nhau để tìm ra kiểu tư duy bạn thích nhất. Phần lớn game trí tuệ không cần phản xạ nhanh, chỉ cần chuột hoặc chạm, nên rất hợp với người chơi nhỏ tuổi và cả người lớn muốn chơi cùng.",
+   "faq": [
+    {
+     "q": "Game trí tuệ có tốt cho não không?",
+     "a": "Game trí tuệ là cách vui để luyện trí nhớ, đếm số, từ ngữ và logic. Như mọi game khác, tốt nhất là chơi từng lúc ngắn, xen kẽ với các hoạt động khác."
+    },
+    {
+     "q": "Game trí nhớ nào hay nhất cho trẻ em?",
+     "a": "Game lật thẻ tìm cặp là lựa chọn kinh điển cho trẻ em. Memory Cards, Flag Memory Match và Three Cups Game là ba game nên thử."
+    },
+    {
+     "q": "Có game toán cho trẻ em không?",
+     "a": "Có. Mục toán có hơn 700 game, trong đó có Kobadoo Numbers, Kobadoo Arithmetic và Math Fight Club."
+    },
+    {
+     "q": "Có những loại game trí tuệ nào?",
+     "a": "Bạn sẽ tìm thấy game trí nhớ, game toán, game đố vui, game chữ và câu đố logic. Mỗi loại rèn một kỹ năng hơi khác nhau."
+    },
+    {
+     "q": "Tôi có thể chơi game trí tuệ trên máy tính bảng không?",
+     "a": "Nhiều game trí tuệ chỉ cần chạm đơn giản, nên thường chạy được trên máy tính bảng và điện thoại. Trang game ghi rõ những thiết bị được hỗ trợ."
+    }
+   ]
+  },
+  "christmas": {
+   "intro": "Bông tuyết, quà tặng và một ông già Noel bận rộn – game Giáng sinh là cách ấm áp để hòa vào không khí lễ hội. Bộ sưu tập này có hơn 750 game mùa đông và Giáng sinh, và chúng ở đây quanh năm, nên bạn có thể chơi cả khi ngoài trời đang nắng ấm.\n\nNhiều game Giáng sinh xoay quanh việc giúp ông già Noel: thả quà xuống ống khói, lái xe tuần lộc hay bảo vệ những món quà. Game clicker cho bạn trang trí cây thông Noel hoặc xây cả một bộ sưu tập lễ hội khổng lồ, mỗi lần một cú nhấp. Ngoài ra còn có game thay đồ với trang phục lễ hội, câu đố mùa đông, game xếp 3 và game arcade lấy bối cảnh những ngôi làng phủ tuyết.\n\nChimney Express, Santa Rush Down, Christmas Tree Clicker, Santa Clicker và Christmas Adventures là vài game nằm gần đầu danh sách, nên rất dễ để bắt đầu. Game Giáng sinh là hoạt động gia đình dễ thương trong kỳ nghỉ lễ, vì nhiều game ngắn và đủ dễ để trẻ em và người lớn thay phiên nhau chơi. Phần lớn chỉ cần nhấp chuột, chạm hoặc phím mũi tên đơn giản.",
+   "faq": [
+    {
+     "q": "Game Giáng sinh online nào chơi vui?",
+     "a": "Game ông già Noel chơi nhanh và game clicker nhẹ nhàng đều là lựa chọn vui. Bạn có thể bắt đầu với Chimney Express, Santa Rush Down và Christmas Tree Clicker."
+    },
+    {
+     "q": "Có game Giáng sinh cả nhà cùng chơi được không?",
+     "a": "Có. Nhiều game Giáng sinh ngắn và đơn giản, nên trẻ em và người lớn có thể thay phiên nhau chơi và so điểm."
+    },
+    {
+     "q": "Tôi có thể chơi game Giáng sinh ngoài mùa lễ không?",
+     "a": "Có, game Giáng sinh ở trên Pixuvo quanh năm, nên bạn có thể chơi bất cứ lúc nào."
+    },
+    {
+     "q": "Có game thay đồ Giáng sinh không?",
+     "a": "Có, có những game thay đồ ngày lễ với trang phục rực rỡ sắc màu lễ hội."
+    },
+    {
+     "q": "Game Giáng sinh có miễn phí không?",
+     "a": "Có, bạn chơi miễn phí trên trình duyệt, không cần tải hay đăng ký."
+    }
+   ]
+  },
+  "girls": {
+   "intro": "Trình diễn thời trang, lò nướng pizza và đám cưới trong mơ – đây là những game mà nhiều bạn gái yêu thích, được gom về một chỗ. Tất nhiên, mọi game ở đây đều dành cho tất cả mọi người, nên ai thích phối đồ, nấu ăn hay chăm sóc người khác đều được chào đón. Bộ sưu tập này có hơn 3.700 game.\n\nGame thay đồ cho bạn phối trang phục, kiểu tóc và phụ kiện, từ phong cách K-pop, anime đến váy cưới. Game trang điểm và tiệm làm móng xoay quanh màu sắc, họa tiết và những chi tiết nhỏ cần tỉ mỉ. Game nấu ăn đưa bạn ra sau quầy của một tiệm burger hay tiệm pizza, nơi bạn làm theo công thức và phục vụ khách. Bạn còn tìm thấy game chăm sóc, nơi bạn chăm thú cưng hoặc giúp đỡ các nhân vật.\n\nĐể bắt đầu, Aidol K-pop Adventure, Anime Girl Fashion Make Up, Pizza Maker food Cooking Games, Burger Restaurant Simulator 3D và Funny Kitty Care là những game đáng thử. Phần lớn game này chơi bằng chuột hoặc chạm, nên rất thư thả và dễ chơi. Nếu bạn thích nhất một kiểu game nào đó, hãy mở trang game thay đồ, game nấu ăn hoặc game công chúa để có thêm nhiều lựa chọn.",
+   "faq": [
+    {
+     "q": "Game nào hay nhất cho con gái?",
+     "a": "Game thay đồ, trang điểm và nấu ăn là nơi bắt đầu tốt – Aidol K-pop Adventure và Pizza Maker food Cooking Games nằm gần đầu danh sách. Nhưng mọi game trên Pixuvo đều dành cho tất cả mọi người, nên cứ thử bất cứ game nào trông thú vị."
+    },
+    {
+     "q": "Game vui nào cho con gái chơi lúc buồn chán?",
+     "a": "Game thay đồ và làm móng nhanh, game nấu ăn và game chăm sóc thú cưng rất hợp khi bạn có vài phút rảnh. Phần lớn chỉ cần nhấp chuột hoặc chạm."
+    },
+    {
+     "q": "Có game thời trang cho bạn gái mê thời trang không?",
+     "a": "Có, rất nhiều. Game thay đồ thời trang cho bạn thiết kế trang phục, chọn phụ kiện và tạo nên cả một phong cách – hãy xem Anime Girl Fashion Make Up hoặc trang game công chúa."
+    },
+    {
+     "q": "Tôi có thể chơi các game này trên điện thoại hoặc máy tính bảng không?",
+     "a": "Nhiều game chạy được trên điện thoại và máy tính bảng vì chỉ cần chạm đơn giản. Trang game ghi rõ mỗi game hỗ trợ thiết bị nào."
+    }
+   ]
+  },
+  "halloween": {
+   "intro": "Bí ngô, kẹo ngọt, những con ma thân thiện và quái vật nhỏ dễ thương – phần lớn game Halloween rùng rợn theo kiểu vui nhộn chứ không đáng sợ. Trang này có hơn 550 game như vậy, sẵn sàng cho bạn chơi bất cứ khi nào muốn có chút không khí Halloween, không chỉ trong tháng Mười.\n\nBạn sẽ tìm thấy phiên bản Halloween của nhiều kiểu game được yêu thích. Game gộp cho bạn kết hợp các món đồ ma quái thành món mới, câu đố khối rơi và thả kẹo thử khả năng canh thời điểm, còn game nhảy và game lái xe thử phản xạ của bạn. Game thay đồ và làm móng cho bạn tạo trang phục hóa trang và bộ móng Halloween, và còn có vài game hành động với nhân vật quái vật.\n\nSpooky Merge, Halloween Merge Game, Halloween Candy Drop, Falling Blocks - Halloween Challenge, Halloween Hop và Fashion Girl Halloween Boutique là những game dễ để bắt đầu. Phần lớn game Halloween dùng nhấp chuột, chạm hoặc phím mũi tên, nên rất dễ với các bé nhỏ tuổi. Nếu muốn thứ gì đó thật sự rùng rợn, người chơi lớn hơn có thể xem thể loại game kinh dị, còn nhiều game ở trang này chỉ xoay quanh trang phục hóa trang, kẹo ngọt và quái vật hoạt hình.",
+   "faq": [
+    {
+     "q": "Game Halloween có đáng sợ không?",
+     "a": "Phần nhiều thì không. Nhiều game ở trang này xoay quanh bí ngô, kẹo, trang phục hóa trang và quái vật hoạt hình, nhưng một số có thể hơi rùng rợn, nên nếu chưa chắc, bạn hãy xem qua game trước."
+    },
+    {
+     "q": "Game Halloween nào hay cho trẻ em?",
+     "a": "Spooky Merge, Halloween Candy Drop và Halloween Hop là những game hay để bắt đầu, còn Fashion Girl Halloween Boutique là game nên thử nếu bạn thích phối đồ."
+    },
+    {
+     "q": "Có game thay đồ Halloween không?",
+     "a": "Có, có những game hóa trang và làm móng Halloween, như Fashion Girl Halloween Boutique và Crazy Halloween Nail Doctor."
+    },
+    {
+     "q": "Tôi có thể chơi game Halloween quanh năm không?",
+     "a": "Có, game Halloween ở trên Pixuvo quanh năm."
+    }
+   ]
+  },
+  "kids": {
+   "intro": "Bàn tay nhỏ, trí tò mò lớn: góc này của Pixuvo dành cho các bé nhỏ tuổi và những gia đình muốn tìm game nhẹ nhàng, nhiều màu sắc, vừa học được chút ít vừa vui thật nhiều. Ở đây có hơn 3.500 game được chọn từ các mục giáo dục, tô màu và gia đình.\n\nGame học tập giúp bé luyện những từ đầu tiên, con số, hình khối và phép tính đơn giản. Game tô màu và vẽ gồm tranh tô màu, tô màu theo số và tranh đính đá (diamond painting) – rất thư giãn và không cần biết đọc. Game nhập vai cho bé làm nha sĩ, bác sĩ hay họa sĩ trong vài phút. Phần lớn chỉ cần nhấp chuột hoặc chạm, nên rất dễ với các bé mới làm quen với máy tính.\n\nCho những bước đầu tiên, hãy thử My First 100 Words, Master of Numbers, Butterfly Coloring Pages Kids, Diamond Painting by Number và Doctor Teeth. Gửi phụ huynh: game miễn phí, không cần đăng ký, và có một trang dành cho phụ huynh giải thích cách Pixuvo kiểm duyệt game. Một số game có quảng cáo từ nhà phát hành game, nên đôi khi các bé nhỏ tuổi có thể cần người lớn giúp. Nhiều game cũng chơi được trên máy tính bảng – trang game ghi rõ.",
+   "faq": [
+    {
+     "q": "Game online nào hay cho các bé nhỏ tuổi?",
+     "a": "Game học tập và tô màu là khởi đầu nhẹ nhàng – bạn có thể bắt đầu với My First 100 Words, Master of Numbers và Butterfly Coloring Pages Kids. Hãy chọn những game chỉ cần nhấp hoặc chạm đơn giản và không bị giới hạn thời gian."
+    },
+    {
+     "q": "Game trí nhớ nào hay nhất cho bé?",
+     "a": "Game lật thẻ tìm cặp là lựa chọn kinh điển: bạn lật hai thẻ và tìm những cặp giống nhau. Hãy thử Memory Cards hoặc Flag Memory Match, và xem thêm ở trang game trí tuệ."
+    },
+    {
+     "q": "Chơi game có tốt cho trẻ em không?",
+     "a": "Nếu chơi vừa phải, các game có đếm số, từ ngữ, màu sắc hoặc giải quyết vấn đề có thể là cách vui để luyện kỹ năng. Chơi từng lúc ngắn và chơi cùng nhau là tốt nhất."
+    },
+    {
+     "q": "Con tôi có thể chơi trên máy tính bảng không?",
+     "a": "Nhiều game cho bé chạy được trên máy tính bảng và điện thoại vì chỉ cần chạm. Trang của từng game ghi rõ những thiết bị được hỗ trợ."
+    },
+    {
+     "q": "Bé có cần tài khoản để chơi không?",
+     "a": "Không. Không cần đăng ký và không cần tải – game mở ngay trên trình duyệt."
+    }
+   ]
+  },
+  "multiplayer-shooting": {
+   "intro": "Có những game bắn súng chơi vui hơn hẳn khi phía bên kia là người thật. Trang này liệt kê hơn 250 game bắn súng nhiều người chơi, nơi bạn chơi cùng hoặc đấu với người khác, qua mạng hoặc trên cùng một máy tính.\n\nCác loại chính gồm game đấu trường .io, nơi nhiều người cùng chung một bản đồ lớn và tìm cách lớn mạnh hoặc trụ lại lâu nhất; trận chiến đồng đội với xe tăng, trực thăng hay ô tô; game bắn súng khối vuông kiểu pixel; và game trốn tìm, nơi một phe trốn còn phe kia đi tìm. Có game cho hai đến bốn người chơi chung một bàn phím, có game kết nối bạn với người chơi online – trang game sẽ ghi rõ khi nhà phát hành cung cấp thông tin.\n\nNhững game hay để bắt đầu là Tanknarok, Paint or Seek: Chameleon Hide Online, Guardz IO và Helicopter And Tank Battle vehicle wars. Trong game online, bạn sẽ gặp những người chơi mình không quen, vì vậy hãy dùng biệt danh, đừng bao giờ chia sẻ thông tin cá nhân và dừng chơi nếu ai đó cư xử không tử tế. Phụ huynh có thể đọc thêm ở trang dành cho phụ huynh của Pixuvo, bao gồm cách kiểm duyệt các game có nội dung bạo lực.",
+   "faq": [
+    {
+     "q": "Nhiều người chơi trong các game này nghĩa là gì?",
+     "a": "Nghĩa là bạn chơi cùng người khác chứ không chỉ với máy. Có game chơi online với người chơi ở bất cứ đâu, có game cho bạn bè chơi chung trên một máy tính."
+    },
+    {
+     "q": "Game bắn súng .io là gì?",
+     "a": "Game .io đưa rất nhiều người chơi vào một đấu trường chung. Bạn thường bắt đầu nhỏ bé, thu thập điểm và cố trụ lại trong game càng lâu càng tốt."
+    },
+    {
+     "q": "Tôi có thể chơi game bắn súng nhiều người với bạn ngồi cùng phòng không?",
+     "a": "Có, một số game cho hai người trở lên chơi trên một bàn phím. Hãy xem trang game để biết game chơi chung máy hay online."
+    },
+    {
+     "q": "Làm sao để trẻ em chơi game online nhiều người một cách an toàn?",
+     "a": "Hãy dùng biệt danh tự đặt, đừng bao giờ chia sẻ tên thật, trường học hay địa chỉ, và báo cho bố mẹ nếu có ai đó xấu tính. Trang dành cho phụ huynh giải thích thêm."
+    },
+    {
+     "q": "Tôi có cần tài khoản để chơi online không?",
+     "a": "Trên Pixuvo thì không – bạn chỉ cần mở game và chơi ngay trên trình duyệt. Một số game có thể yêu cầu bạn gõ biệt danh."
+    }
+   ]
+  },
+  "princess": {
+   "intro": "Vương miện, váy dạ hội và một chút phép màu: trang này tập hợp hơn 650 game công chúa. Ở đây bạn có thể làm nhà tạo mẫu, nhà thiết kế và chuyên gia trang điểm cho các nhân vật hoàng gia – và quyết định một nàng công chúa ngày nay nên trông thế nào.\n\nPhần lớn game công chúa là game thay đồ. Bạn chọn váy, kiểu tóc, giày và trang sức, rồi khoe diện mạo cuối cùng. Game trang điểm có thêm make-up, vẽ mặt hoặc thiết kế móng, và có game còn cho bạn thiết kế hình xăm hay trang phục punk cho một nàng công chúa không quá truyền thống. Bạn cũng sẽ gặp game nhóm bạn, nơi nhiều nhân vật cùng chuẩn bị cho một bữa tiệc, và vài game phiêu lưu với nhân vật chính là công chúa.\n\nNhững game hay để bắt đầu là Princess Nail Salon, Princess Look Like A Supermodel, Princess Punk Fashion - Tattoo Desgin và Bff Witchy Transformation. Game công chúa chủ yếu chơi bằng nhấp chuột hoặc chạm, nên không cần vội – cứ từ từ chăm chút từng chi tiết. Như mọi game trên Pixuvo, chúng dành cho tất cả mọi người. Muốn phối đồ thêm nữa? Hãy thử thể loại game thay đồ hoặc trang game con gái.",
+   "faq": [
+    {
+     "q": "Game công chúa là gì?",
+     "a": "Đó là những game về công chúa, chủ yếu là game thay đồ và trang điểm, nơi bạn chọn trang phục, kiểu tóc, make-up và phụ kiện."
+    },
+    {
+     "q": "Tôi có thể làm gì trong game thay đồ công chúa?",
+     "a": "Bạn có thể chọn váy, giày, trang sức và kiểu tóc, thử trang điểm hoặc thiết kế móng, và tạo nên một diện mạo hoàn chỉnh."
+    },
+    {
+     "q": "Có game công chúa cho các bé nhỏ tuổi không?",
+     "a": "Có. Nhiều game công chúa chỉ cần nhấp chuột đơn giản và không giới hạn thời gian, nên các bé có thể chơi theo nhịp của mình."
+    },
+    {
+     "q": "Tôi có thể chơi game công chúa trên điện thoại không?",
+     "a": "Nhiều game thay đồ chơi rất tốt bằng thao tác chạm trên điện thoại và máy tính bảng. Trang game ghi rõ thiết bị được hỗ trợ."
+    },
+    {
+     "q": "Game công chúa có mất tiền không?",
+     "a": "Không, bạn chơi miễn phí trên trình duyệt, không cần tải và không cần đăng ký."
+    }
+   ]
+  },
+  "space": {
+   "intro": "Ba, hai, một, phóng! Hơn 650 game ở trang này diễn ra giữa các vì sao, hành tinh và thế giới ngoài hành tinh. Dù bạn muốn bảo vệ Trái Đất, xây dựng cả một thiên hà hay chỉ bay càng xa càng tốt, vũ trụ luôn là bối cảnh tuyệt vời cho những cuộc phiêu lưu.\n\nGame bắn súng vũ trụ là loại kinh điển: bạn lái phi thuyền và bắn hạ thiên thạch hoặc quân xâm lược ngoài hành tinh. Game phòng thủ yêu cầu bạn bảo vệ một hành tinh hay một nông trại khỏi người ngoài hành tinh, thường kèm chút hài hước. Game gộp và giải đố cho bạn ghép các hành tinh nhỏ thành hành tinh lớn hơn, còn game arcade thách bạn né tránh, bay lượn và thu thập ngôi sao. Một số game chiến thuật cho bạn khám phá và xây dựng trong vũ trụ.\n\nĐể bắt đầu, hãy thử Protect the Earth, Dogs vs Aliens, Farmers vs Aliens, Merge Planets Deluxe, Galaxy Pop và Star Rush. Nếu mới chơi, hãy bắt đầu bằng một câu đố nhẹ nhàng rồi chuyển sang game nhanh hơn khi đã quen phím điều khiển. Game bắn súng vũ trụ thường dùng phím mũi tên hoặc chuột, còn game gộp chơi rất tốt bằng thao tác chạm. Nếu bạn mê những game này, thể loại bắn súng và arcade còn nhiều hơn nữa.",
+   "faq": [
+    {
+     "q": "Game vũ trụ nào hay cho trẻ em?",
+     "a": "Câu đố gộp nhẹ nhàng và game arcade nhanh là khởi đầu dễ dàng. Merge Planets Deluxe, Dogs vs Aliens và Star Rush là những ví dụ hay."
+    },
+    {
+     "q": "Có game bắn súng vũ trụ không?",
+     "a": "Có, trong game bắn súng vũ trụ bạn lái phi thuyền và bắn thiên thạch hoặc quân xâm lược ngoài hành tinh. Stars Strike và Alien War là hai game nên thử."
+    },
+    {
+     "q": "Game gộp hành tinh là gì?",
+     "a": "Trong game gộp, bạn thả hoặc ghép các hành tinh nhỏ để tạo thành hành tinh lớn hơn. Merge Planets Deluxe là một game nên thử."
+    },
+    {
+     "q": "Tôi có thể chơi game vũ trụ trên điện thoại không?",
+     "a": "Nhiều game vũ trụ, nhất là game gộp và arcade, chơi được bằng cảm ứng. Trang của từng game ghi rõ thiết bị được hỗ trợ."
+    }
+   ]
+  },
+  "stickman": {
+   "intro": "Một hình tròn làm đầu, vài nét kẻ làm tay chân – vậy mà các nhân vật người que vẫn có thể chiến đấu, chạy, nhảy, lẻn đi và giải đố. Trang này tập hợp hơn 650 game người que với đủ mọi phong cách bạn có thể nghĩ ra.\n\nGame đối kháng người que là một nhóm lớn: những trận đấu nhanh, nơi các hình người que đơn giản đấm, đá và tung chiêu đặc biệt. Ngoài ra còn có game người que bắn súng và bắn cung, game đánh trùm, game phòng thủ bảo vệ căn cứ và game giải đố, nơi người que phải lẻn đi, thoát ra hoặc lấy trộm thứ gì đó một cách thông minh. Một số game người que được làm cho hai, thậm chí bốn người chơi.\n\nĐể khởi động, hãy thử Stickman Mega Boss Battles!, Stickman Battle 1-4 Players, Stickman Guys Defense, DOP Stickman và Stickman Thief Puzzle. Nếu bạn thích động não hơn đánh nhau, hãy tìm các game giải đố. Vì nhân vật rất đơn giản nên game cũng dễ hiểu. Phần lớn dùng bàn phím hoặc chuột; một số chơi được bằng cảm ứng trên điện thoại và máy tính bảng, điều này được ghi trên trang game.",
+   "faq": [
+    {
+     "q": "Game người que là gì?",
+     "a": "Đó là những game mà nhân vật là các hình người que đơn giản. Game người que có thể là game đối kháng, bắn súng, giải đố, phòng thủ hoặc phiêu lưu."
+    },
+    {
+     "q": "Nhiều người có thể chơi game người que cùng lúc không?",
+     "a": "Có, một số game được – trang game cho biết game hỗ trợ bao nhiêu người chơi. Stickman Battle 1-4 Players là một game nên xem."
+    },
+    {
+     "q": "Có game người que giải đố chứ không chỉ đánh nhau không?",
+     "a": "Có. Một số game người que là để suy nghĩ chứ không phải chiến đấu – DOP Stickman và Stickman Thief Puzzle là hai game nên thử."
+    },
+    {
+     "q": "Vì sao trẻ em thích game người que?",
+     "a": "Nhân vật đơn giản khiến game dễ hiểu, nên bạn có thể lao ngay vào hành động."
+    },
+    {
+     "q": "Game người que có miễn phí không?",
+     "a": "Có, mọi game người que trên Pixuvo đều chơi miễn phí trên trình duyệt, không cần tải."
+    }
+   ]
+  },
+  "unblocked": {
+   "intro": "Nhiều người tìm “game unblocked” khi họ chỉ đơn giản muốn những game mở được trên một trang web bình thường mà không phải cài đặt gì. Pixuvo hoạt động đúng như vậy: toàn bộ hơn 45.000 game đều chạy trên trình duyệt web, không cần tải, không cần cài ứng dụng, không cần tiện ích mở rộng và không cần đăng ký.\n\nNói rõ trang này không phải là gì: Pixuvo không phải công cụ để vượt bộ lọc của trường học hay mạng, và cũng không tìm cách lách chúng. Nhà trường, nơi làm việc và phụ huynh quyết định những trang web nào được phép dùng trên máy tính và mạng của họ, và các quy định đó cần được tôn trọng. Nếu một trang bị chặn ở trường, tốt nhất bạn hãy chơi ở nhà hoặc vào giờ nghỉ khi được phép chơi game. Pixuvo là một trang web bình thường, nên việc nó có mở được trên một mạng nào đó hay không tùy thuộc vào cách mạng đó được thiết lập.\n\nTrang này liệt kê các game phổ biến trên toàn trang, dựa trên lượt chơi thật, nên là nơi tốt để tìm một game chơi nhanh. Những game hay để bắt đầu: Drop Planets, Merge Royal, Epic Duck, Kobadoo Numbers, Kobadoo Flags và Three Cups Game. Game yêu thích bạn đánh dấu được lưu trong trình duyệt này trên thiết bị này.",
+   "faq": [
+    {
+     "q": "Game unblocked là gì?",
+     "a": "Thường người ta muốn nói đến game trên trình duyệt chạy trên một trang web bình thường, không cần tải, cài đặt hay tiện ích mở rộng. Game trên Pixuvo hoạt động như vậy, nhưng không vượt qua bất kỳ bộ lọc nào."
+    },
+    {
+     "q": "Tôi có thể dùng Pixuvo để vượt bộ lọc của trường không?",
+     "a": "Không. Pixuvo không vượt bộ lọc của trường học hay mạng. Nhà trường và phụ huynh quyết định điều gì được phép, nên bạn hãy tuân theo quy định của họ."
+    },
+    {
+     "q": "Tôi có thể chơi game nào mà không cần tải gì?",
+     "a": "Mọi game trên Pixuvo đều mở ngay trên trình duyệt. Drop Planets, Merge Royal và Epic Duck là những game chơi nhanh nên thử."
+    },
+    {
+     "q": "Các game này có cần Flash hay plugin không?",
+     "a": "Không. Game chạy trên trình duyệt hiện đại mà không cần Flash, plugin hay tiện ích mở rộng."
+    },
+    {
+     "q": "Các game có miễn phí không?",
+     "a": "Có, game miễn phí và bạn không cần tài khoản. Một số game có thể hiện quảng cáo từ nhà phát hành."
+    }
+   ]
+  }
+ }
+}
