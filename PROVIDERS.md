@@ -18,6 +18,7 @@ State on 2026-10-02:
 | GamePix | available | approved | **approved** (property 9O09X, ads.txt VALID) | partner_handles | 13 892 sources (2 961 merged into GameMonetize games) |
 | Playgama | available | approved | **pending** (revenue in widgets.playgama.com) | partner_handles | 2 350 sources (2 081 own games, 269 attached) |
 | GameZipper (since 2026-10-05) | available (local file) | approved — **76 hand-picked games only** | not_approved (no revenue share exists) | **owner_accepted** | 76 sources |
+| HTMLGames (since 2026-10-05) | available | approved | not_approved (no revenue share; their ads.txt lines added) | partner_handles | ~1 240 sources (≈1 210 own games, ≈30 attached) |
 | GameDistribution | unknown | **awaiting_approval** | not_approved | blocked | 0 — application rejected |
 | Famobi | unknown | disabled | not_approved | blocked | 0 — no account |
 
@@ -87,6 +88,24 @@ State on 2026-10-02:
   (`sandboxFor` in `src/lib/security.ts`), so no click inside the game can open a new window. Re-test before
   adding more games.
 * Farkle stays in review (`sensitive:casino` tag).
+
+## HTMLGames (Zygomatic)
+
+* **Feed:** `GET https://www.htmlgames.com/rss/games.php?json` — a JSON array (1 242 games on 2026-10-05): name,
+  category (56 genres), create_date, description, url (`https://cdn.htmlgames.com/<Id>/index.html`, a few end in `/`),
+  embed, width/height (always 800×480, even for portrait games — ignored), thumb1–thumb8 (we use the 800×450 webp).
+* **Permission:** the RSS page (https://www.htmlgames.com/rss/) says "Feel free to publish our html5 games on your
+  site". No account, key or attribution parameter.
+* **ads.txt:** their seller lines from https://cdn.htmlgames.com/ads.partners.txt are part of `/ads.txt`
+  (`src/config/ads-htmlgames.ts`, verbatim). They authorise Zygomatic's sellers for the ads in their games; the revenue
+  is theirs, not Pixuvo's. Replace the block when they change the file.
+* **Genres:** `HG_GENRES` in the adapter maps their genres to Pixuvo labels and keeps precise solitaire/mahjong tags
+  (`spider solitaire`, `freecell`, `klondike`, `pyramid solitaire`, `golf solitaire`, `tripeaks`, `mahjong connect`)
+  for the landings of the same names. Brand words (Tetris, Zuma, Bejeweled, Arkanoid) never become tags.
+* **Skipped:** 6 German-language daily puzzles and JollyJong2.5 (URL outside the expected pattern). Tetris/Zuma/
+  "Frozen" titles and blackjack/poker games wait in review.
+* **Consent:** live test 2026-10-05 from an EU IP — a certified InMobi TCF dialog with "Reject all" before ads (Yolla
+  Media + Google IMA/GAM); no popups.
 
 ## GameDistribution
 

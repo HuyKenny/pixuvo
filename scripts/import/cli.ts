@@ -1,5 +1,5 @@
 /**
- * pnpm import:games  [--provider gamemonetize|gamepix|playgama|gamezipper|all] [--target local|remote|sqlite:<f>]
+ * pnpm import:games  [--provider gamemonetize|gamepix|playgama|gamezipper|htmlgames|all] [--target local|remote|sqlite:<f>]
  *                    [--budget 90000] [--resume] [--start-page N] [--cache-dir dir] [--technical-only]
  * pnpm import:dry-run  (same flags, no writes; prints the plan and an estimate)
  */
@@ -29,7 +29,7 @@ const { values } = parseArgs({
 
 const cfg = loadConfig();
 const db = openTarget(values.target!, cfg);
-const providers = values.provider === 'all' ? ['gamemonetize', 'gamepix', 'playgama', 'gamezipper'] : values.provider!.split(',');
+const providers = values.provider === 'all' ? ['gamemonetize', 'gamepix', 'playgama', 'gamezipper', 'htmlgames'] : values.provider!.split(',');
 let budget = Number(values.budget);
 if (!Number.isFinite(budget) || budget <= 0) throw new Error('--budget must be a positive number');
 
