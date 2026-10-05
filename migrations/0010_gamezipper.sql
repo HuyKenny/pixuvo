@@ -1,0 +1,7 @@
+-- GameZipper: open embed programme, no account. Approved by the site owner on 2026-10-05 for a hand-picked
+-- selection (data/providers/gamezipper-allowlist.json) under a sandbox without popups.
+INSERT INTO providers (id, name, website, catalog_status, publish_status, monetize_status, consent_mode, attribution, notes, verified_at, updated_at) VALUES
+  ('gamezipper', 'GameZipper', 'https://gamezipper.com', 'available', 'approved', 'not_approved', 'owner_accepted', '{"utm_source":"pixuvo.com"}',
+   'Open embed programme (https://gamezipper.com/publisher-partner.html): no signup, no key, no revenue share; commercial use allowed, the raw game files may not be rehosted. The documented feed /api/games.json returns 404 (2026-10-05), so scripts/import/gamezipper-catalog.ts rebuilds data/providers/gamezipper.json from /js/games-data.js and the game pages, for the allowlisted titles only. CONSENT/ADS: live test 2026-10-05 from an EU IP, game embedded the way Pixuvo does it: 5 AdSense units, Adsterra (effectivecpmnetwork.com, popunder/smartlink) and ExoClick (magsrv.com) load inside the frame with NO consent prompt, plus a "GameZipper — More Free Games" bar, although the programme page says embeds carry no ads. The site owner decided on 2026-10-05 to publish a selection anyway; /api/play serves these games WITHOUT allow-popups (sandboxFor in src/lib/security.ts). Re-test before widening the selection.',
+   '2026-10-05T12:00:00Z', '2026-10-05T12:00:00Z')
+ON CONFLICT(id) DO NOTHING;

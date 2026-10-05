@@ -374,7 +374,7 @@ export async function runImport(db: SqlDb, adapter: ProviderAdapter, opts: RunOp
     const norm = normTitle(item.title);
     const aspect = item.width && item.height ? item.width / item.height : null;
     const candidates = key ? byKey.get(key) ?? [] : [];
-    const categorySlugs = mapLabelsToCategories(item.labels);
+    const categorySlugs = mapLabelsToCategories(item.labels, categoryText(item));
 
     // Duplicate check: auto-attach only with ≥2 strong signals and a different provider.
     let attachTo: LightGame | null = null;
@@ -508,7 +508,7 @@ export async function runImport(db: SqlDb, adapter: ProviderAdapter, opts: RunOp
     params.push(ex.gameId);
     push(EST.update, { sql: `UPDATE games SET ${sets.join(', ')} WHERE id=?`, params });
 
-    const categorySlugs = ov.has('categories') ? (JSON.parse(ov.get('categories')!) as string[]) : mapLabelsToCategories(item.labels);
+    const categorySlugs = ov.has('categories') ? (JSON.parse(ov.get('categories')!) as string[]) : mapLabelsToCategories(item.labels, categoryText(item));
     const pub = g.status === 'published';
     if (!ov.has('categories')) {
       push(EST.catRow * 3, { sql: "DELETE FROM game_categories WHERE game_id=? AND origin='provider'", params: [ex.gameId] });
@@ -556,6 +556,11 @@ export async function runImport(db: SqlDb, adapter: ProviderAdapter, opts: RunOp
     }
     rep.archived = gameIds.length;
   }
+}
+
+/** What a category's `evidence` is checked against. */
+function categoryText(item: SourceItem): string {
+  return `${item.title} ${item.description} ${item.instructions}`;
 }
 
 /** Keep the categories table in sync with src/lib/taxonomy.ts (writes only differences). */

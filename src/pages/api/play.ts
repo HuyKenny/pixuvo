@@ -9,7 +9,7 @@ import type { APIRoute } from 'astro';
 import { q } from '../../lib/server/db';
 import { getEnv } from '../../lib/server/env';
 import { clientIp, error, json, readJson, sameOrigin, sha256Hex } from '../../lib/server/http';
-import { isAllowedEmbed, playKey } from '../../lib/security';
+import { isAllowedEmbed, playKey, sandboxFor } from '../../lib/security';
 
 export const prerender = false;
 
@@ -27,8 +27,6 @@ interface SourceRow {
 }
 
 const ALLOW = 'autoplay; fullscreen; gamepad; accelerometer; gyroscope';
-// Partner games need scripts, their own origin storage, popups for ad clicks and pointer lock.
-const SANDBOX = 'allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms allow-pointer-lock allow-orientation-lock';
 
 export const POST: APIRoute = async ({ request }) => {
   if (!sameOrigin(request)) return error(403, 'Cross-site request refused.');
@@ -79,7 +77,8 @@ export const POST: APIRoute = async ({ request }) => {
   }
   // e2e/test mode: never load real partner games (no ad impressions from tests). Relative URL on purpose:
   // `wrangler dev` rewrites request.url to the route host (pixuvo.com) when routes are configured.
-  if (env.ENVIRONMENT === 'test') return json({ embedUrl: `/e2e-fixture/game/?id=${id}`, sourceId: pick.id, provider: pick.provider_name, allow: ALLOW, sandbox: SANDBOX });
+  const sandbox = sandboxFor(pick.provider_id);
+  if (env.ENVIRONMENT === 'test') return json({ embedUrl: `/e2e-fixture/game/?id=${id}`, sourceId: pick.id, provider: pick.provider_name, allow: ALLOW, sandbox });
   // One aggregated write per play, counted at most once per visitor, game and day: the game starts
   // on page open, so reloads must not inflate trending (or cost a D1 write each time).
   const day = new Date().toISOString().slice(0, 10);
@@ -88,7 +87,7 @@ export const POST: APIRoute = async ({ request }) => {
      ON CONFLICT(day, game_id) DO UPDATE SET play_clicks = play_clicks + 1`,
     [day, id],
   );
-  return json({ embedUrl: embed.toString(), sourceId: pick.id, provider: pick.provider_name, allow: ALLOW, sandbox: SANDBOX });
+  return json({ embedUrl: embed.toString(), sourceId: pick.id, provider: pick.provider_name, allow: ALLOW, sandbox });
 };
 
 export const GET: APIRoute = () => error(405, 'Use POST.');

@@ -1,6 +1,17 @@
 /** Security headers shared by the middleware (SSR) and scripts/postbuild.ts (_headers for static files). */
-export const GAME_FRAME_HOSTS = ['https://html5.gamemonetize.co', 'https://html5.gamemonetize.com', 'https://play.gamepix.com', 'https://playgama.com'];
-export const IMAGE_HOSTS = ['https://img.gamemonetize.com', 'https://img.gamepix.com', 'https://static.playgama.com'];
+export const GAME_FRAME_HOSTS = ['https://html5.gamemonetize.co', 'https://html5.gamemonetize.com', 'https://play.gamepix.com', 'https://playgama.com', 'https://gamezipper.com'];
+export const IMAGE_HOSTS = ['https://img.gamemonetize.com', 'https://img.gamepix.com', 'https://static.playgama.com', 'https://gamezipper.com'];
+
+// Partner games need scripts, their own origin storage, popups for ad clicks and pointer lock.
+const SANDBOX = 'allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms allow-pointer-lock allow-orientation-lock';
+// Providers whose game page runs popunder/smartlink ad networks (GameZipper: Adsterra + ExoClick, verified
+// 2026-10-05) get no popups at all: a click in the game can never open a new window or tab.
+const STRICT_SANDBOX = 'allow-scripts allow-same-origin allow-forms allow-pointer-lock allow-orientation-lock';
+const STRICT_PROVIDERS = new Set(['gamezipper']);
+
+export function sandboxFor(providerId: string): string {
+  return STRICT_PROVIDERS.has(providerId) ? STRICT_SANDBOX : SANDBOX;
+}
 
 const TEST_MODE = (typeof process !== 'undefined' && process.env?.PUBLIC_TEST_MODE === '1') || import.meta.env?.PUBLIC_TEST_MODE === '1';
 

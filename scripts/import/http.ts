@@ -18,6 +18,8 @@ export interface FetchOptions {
   /** POST JSON body (Playgama's export API is POST-only). */
   method?: 'GET' | 'POST';
   body?: unknown;
+  /** 'text' returns the body unparsed (GameZipper has no feed, only HTML pages). */
+  as?: 'json' | 'text';
 }
 
 export class FeedError extends Error {
@@ -47,6 +49,10 @@ export function assertAllowedUrl(raw: string, allowHosts: string[]): URL {
   return u;
 }
 
+export async function fetchText(url: string, opts: FetchOptions): Promise<string> {
+  return (await fetchJson(url, { ...opts, as: 'text' })) as string;
+}
+
 export async function fetchJson(url: string, opts: FetchOptions): Promise<unknown> {
   const {
     allowHosts,
@@ -59,6 +65,7 @@ export async function fetchJson(url: string, opts: FetchOptions): Promise<unknow
     sleep = defaultSleep,
     method = 'GET',
     body,
+    as = 'json',
   } = opts;
 
   let attempt = 0;
@@ -91,7 +98,7 @@ export async function fetchJson(url: string, opts: FetchOptions): Promise<unknow
           method,
           redirect: 'manual',
           signal: ctrl.signal,
-          headers: { accept: 'application/json', 'user-agent': userAgent, ...(method === 'POST' ? { 'content-type': 'application/json' } : {}) },
+          headers: { accept: as === 'text' ? 'text/html,text/plain;q=0.9' : 'application/json', 'user-agent': userAgent, ...(method === 'POST' ? { 'content-type': 'application/json' } : {}) },
           ...(method === 'POST' ? { body: JSON.stringify(body ?? {}) } : {}),
         });
       } catch (e) {
@@ -111,6 +118,7 @@ export async function fetchJson(url: string, opts: FetchOptions): Promise<unknow
         if (!res.ok) throw new FeedError(`HTTP ${res.status}`, false, res.status);
         const ct = res.headers.get('content-type') ?? '';
         if (!/json|javascript|text\/plain|text\/html/i.test(ct)) throw new FeedError(`unexpected content-type ${ct}`, false);
+        if (as === 'text') return body;
         try {
           return JSON.parse(body);
         } catch {

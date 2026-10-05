@@ -1,0 +1,468 @@
+{
+ "checked": "2026-10-05",
+ "source": "Ahrefs keywords-explorer-overview, global volume of the title query; game intent checked by hand",
+ "games": [
+  {
+   "slug": "chess",
+   "title": "Chess",
+   "keyword": "chess",
+   "global_volume": 5500000
+  },
+  {
+   "slug": "go",
+   "title": "Go",
+   "keyword": "go board game",
+   "global_volume": 0
+  },
+  {
+   "slug": "tic-tac-toe",
+   "title": "Tic Tac Toe",
+   "keyword": "tic tac toe",
+   "global_volume": 1190000
+  },
+  {
+   "slug": "typing-speed",
+   "title": "Typing Speed Test",
+   "keyword": "typing speed test",
+   "global_volume": 1050000
+  },
+  {
+   "slug": "hearts",
+   "title": "Hearts",
+   "keyword": "hearts",
+   "global_volume": 832000
+  },
+  {
+   "slug": "rummy",
+   "title": "Rummy",
+   "keyword": "rummy",
+   "global_volume": 395000
+  },
+  {
+   "slug": "spades",
+   "title": "Spades",
+   "keyword": "spades",
+   "global_volume": 393000
+  },
+  {
+   "slug": "word-scramble",
+   "title": "Word Scramble",
+   "keyword": "word scramble",
+   "global_volume": 240000
+  },
+  {
+   "slug": "euchre",
+   "title": "Euchre",
+   "keyword": "euchre",
+   "global_volume": 212000
+  },
+  {
+   "slug": "mini-golf",
+   "title": "Mini Golf",
+   "keyword": "mini golf",
+   "global_volume": 213000
+  },
+  {
+   "slug": "carrom",
+   "title": "Carrom Board",
+   "keyword": "carrom board",
+   "global_volume": 176000
+  },
+  {
+   "slug": "dominoes",
+   "title": "Dominoes",
+   "keyword": "dominoes",
+   "global_volume": 103000
+  },
+  {
+   "slug": "color-by-number",
+   "title": "Color by Number",
+   "keyword": "color by number",
+   "global_volume": 98000
+  },
+  {
+   "slug": "pinball",
+   "title": "Pinball",
+   "keyword": "pinball",
+   "global_volume": 94000
+  },
+  {
+   "slug": "mancala",
+   "title": "Mancala",
+   "keyword": "mancala",
+   "global_volume": 84000
+  },
+  {
+   "slug": "reversi",
+   "title": "Reversi",
+   "keyword": "reversi",
+   "global_volume": 66000
+  },
+  {
+   "slug": "reaction-time",
+   "title": "Reaction Time",
+   "keyword": "reaction time",
+   "global_volume": 52000
+  },
+  {
+   "slug": "farkle",
+   "title": "Farkle",
+   "keyword": "farkle",
+   "global_volume": 42000
+  },
+  {
+   "slug": "go-fish",
+   "title": "Go Fish",
+   "keyword": "go fish",
+   "global_volume": 42000
+  },
+  {
+   "slug": "chinese-checkers",
+   "title": "Chinese Checkers",
+   "keyword": "chinese checkers",
+   "global_volume": 36000
+  },
+  {
+   "slug": "suguru",
+   "title": "Suguru",
+   "keyword": "suguru",
+   "global_volume": 33000
+  },
+  {
+   "slug": "chinese-chess",
+   "title": "Chinese Chess",
+   "keyword": "chinese chess",
+   "global_volume": 31000
+  },
+  {
+   "slug": "shogi",
+   "title": "Shogi",
+   "keyword": "shogi",
+   "global_volume": 32000
+  },
+  {
+   "slug": "killer-sudoku",
+   "title": "Killer Sudoku",
+   "keyword": "killer sudoku",
+   "global_volume": 31000
+  },
+  {
+   "slug": "kakuro",
+   "title": "Kakuro",
+   "keyword": "kakuro",
+   "global_volume": 29000
+  },
+  {
+   "slug": "gomoku",
+   "title": "Gomoku",
+   "keyword": "gomoku",
+   "global_volume": 22000
+  },
+  {
+   "slug": "tower-of-hanoi",
+   "title": "Tower of Hanoi",
+   "keyword": "tower of hanoi",
+   "global_volume": 22000
+  },
+  {
+   "slug": "magic-square",
+   "title": "Magic Square",
+   "keyword": "magic square",
+   "global_volume": 19000
+  },
+  {
+   "slug": "crazy-eights",
+   "title": "Crazy Eights",
+   "keyword": "crazy eights",
+   "global_volume": 18000
+  },
+  {
+   "slug": "schulte-table",
+   "title": "Schulte Table",
+   "keyword": "schulte table",
+   "global_volume": 15000
+  },
+  {
+   "slug": "hitori",
+   "title": "Hitori",
+   "keyword": "hitori",
+   "global_volume": 14000
+  },
+  {
+   "slug": "samurai-sudoku",
+   "title": "Samurai Sudoku",
+   "keyword": "samurai sudoku",
+   "global_volume": 12000
+  },
+  {
+   "slug": "codewords",
+   "title": "Codewords",
+   "keyword": "codewords",
+   "global_volume": 11000
+  },
+  {
+   "slug": "lits",
+   "title": "LITS",
+   "keyword": "lits",
+   "global_volume": 9000
+  },
+  {
+   "slug": "sokoban",
+   "title": "Sokoban",
+   "keyword": "sokoban",
+   "global_volume": 9100
+  },
+  {
+   "slug": "tripeaks",
+   "title": "TriPeaks Classic",
+   "keyword": "tripeaks classic",
+   "global_volume": 7800
+  },
+  {
+   "slug": "cryptograms",
+   "title": "Cryptograms",
+   "keyword": "cryptograms",
+   "global_volume": 7500
+  },
+  {
+   "slug": "slitherlink",
+   "title": "Slitherlink",
+   "keyword": "slitherlink",
+   "global_volume": 6700
+  },
+  {
+   "slug": "star-battle",
+   "title": "Star Battle",
+   "keyword": "star battle",
+   "global_volume": 5600
+  },
+  {
+   "slug": "onet",
+   "title": "Onet Connect",
+   "keyword": "onet connect",
+   "global_volume": 4800
+  },
+  {
+   "slug": "nurikabe",
+   "title": "Nurikabe",
+   "keyword": "nurikabe",
+   "global_volume": 4100
+  },
+  {
+   "slug": "sukima",
+   "title": "Sukima",
+   "keyword": "sukima",
+   "global_volume": 3800
+  },
+  {
+   "slug": "shikaku",
+   "title": "Shikaku",
+   "keyword": "shikaku",
+   "global_volume": 3800
+  },
+  {
+   "slug": "same-game",
+   "title": "Same Game",
+   "keyword": "same game",
+   "global_volume": 3600
+  },
+  {
+   "slug": "shirokuro",
+   "title": "Shirokuro",
+   "keyword": "shirokuro",
+   "global_volume": 3400
+  },
+  {
+   "slug": "bus-traffic-fever",
+   "title": "Bus Traffic Fever",
+   "keyword": "bus traffic fever",
+   "global_volume": 3400
+  },
+  {
+   "slug": "math-24",
+   "title": "Math 24",
+   "keyword": "math 24",
+   "global_volume": 3400
+  },
+  {
+   "slug": "klotski",
+   "title": "Klotski",
+   "keyword": "klotski",
+   "global_volume": 3400
+  },
+  {
+   "slug": "peg-solitaire",
+   "title": "Peg Solitaire",
+   "keyword": "peg solitaire",
+   "global_volume": 3300
+  },
+  {
+   "slug": "8-ball-billiards",
+   "title": "8 Ball Billiards Classic",
+   "keyword": "8 ball billiards classic",
+   "global_volume": 3100
+  },
+  {
+   "slug": "binairo",
+   "title": "Binairo",
+   "keyword": "binairo",
+   "global_volume": 3100
+  },
+  {
+   "slug": "jigsaw-sudoku",
+   "title": "Jigsaw Sudoku",
+   "keyword": "jigsaw sudoku",
+   "global_volume": 2900
+  },
+  {
+   "slug": "labyrinth",
+   "title": "Labyrinth Maze",
+   "keyword": "labyrinth maze",
+   "global_volume": 2500
+  },
+  {
+   "slug": "pentomino",
+   "title": "Pentominoes",
+   "keyword": "pentominoes",
+   "global_volume": 2100
+  },
+  {
+   "slug": "nonogram",
+   "title": "Nonogram Puzzle",
+   "keyword": "nonogram puzzle",
+   "global_volume": 2000
+  },
+  {
+   "slug": "rullo",
+   "title": "Rullo",
+   "keyword": "rullo",
+   "global_volume": 1700
+  },
+  {
+   "slug": "flood-fill",
+   "title": "Flood Fill",
+   "keyword": "flood fill",
+   "global_volume": 1600
+  },
+  {
+   "slug": "hexxagon",
+   "title": "Hexxagon",
+   "keyword": "hexxagon",
+   "global_volume": 1500
+  },
+  {
+   "slug": "train-tracks",
+   "title": "Train Tracks",
+   "keyword": "train tracks",
+   "global_volume": 1500
+  },
+  {
+   "slug": "tatami",
+   "title": "Tatami",
+   "keyword": "tatami",
+   "global_volume": 1400
+  },
+  {
+   "slug": "matchstick-puzzle",
+   "title": "Matchstick Puzzle",
+   "keyword": "matchstick puzzle",
+   "global_volume": 1300
+  },
+  {
+   "slug": "crossmath",
+   "title": "Crossmath",
+   "keyword": "crossmath",
+   "global_volume": 1200
+  },
+  {
+   "slug": "einstein-riddle",
+   "title": "Einstein's Riddle",
+   "keyword": "einsteins riddle",
+   "global_volume": 1100
+  },
+  {
+   "slug": "sandwich-sudoku",
+   "title": "Sandwich Sudoku",
+   "keyword": "sandwich sudoku",
+   "global_volume": 1100
+  },
+  {
+   "slug": "wagiri",
+   "title": "Wagiri",
+   "keyword": "wagiri",
+   "global_volume": 900
+  },
+  {
+   "slug": "skyscrapers",
+   "title": "Skyscrapers",
+   "keyword": "skyscrapers",
+   "global_volume": 900
+  },
+  {
+   "slug": "arrow-sudoku",
+   "title": "Arrow Sudoku",
+   "keyword": "arrow sudoku",
+   "global_volume": 600
+  },
+  {
+   "slug": "hashiwokakero",
+   "title": "Hashiwokakero",
+   "keyword": "hashiwokakero",
+   "global_volume": 600
+  },
+  {
+   "slug": "knights-tour",
+   "title": "Knight's Tour",
+   "keyword": "knights tour",
+   "global_volume": 450
+  },
+  {
+   "slug": "kakurasu",
+   "title": "Kakurasu",
+   "keyword": "kakurasu",
+   "global_volume": 400
+  },
+  {
+   "slug": "kropki-sudoku",
+   "title": "Kropki Sudoku",
+   "keyword": "kropki sudoku",
+   "global_volume": 400
+  },
+  {
+   "slug": "heyawake",
+   "title": "Heyawake",
+   "keyword": "heyawake",
+   "global_volume": 350
+  },
+  {
+   "slug": "x-sudoku",
+   "title": "X-Sudoku",
+   "keyword": "xsudoku",
+   "global_volume": 350
+  },
+  {
+   "slug": "masyu",
+   "title": "Masyu",
+   "keyword": "masyu",
+   "global_volume": 300
+  },
+  {
+   "slug": "fifteen",
+   "title": "Fifteen Puzzle",
+   "keyword": "fifteen puzzle",
+   "global_volume": 300
+  },
+  {
+   "slug": "thermo-sudoku",
+   "title": "Thermo Sudoku",
+   "keyword": "thermo sudoku",
+   "global_volume": 250
+  },
+  {
+   "slug": "dominosa",
+   "title": "Dominosa",
+   "keyword": "dominosa",
+   "global_volume": 200
+  }
+ ]
+}

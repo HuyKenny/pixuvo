@@ -73,7 +73,7 @@ const ld = [{
   ...(liked !== null ? { aggregateRating: { '@type': 'AggregateRating', ratingValue: liked, bestRating: 100, worstRating: 0, ratingCount: votes } } : {}),
 }];
 // The game starts on page open: warm up the partner's frame host.
-const FRAME_HOST: Record<string, string> = { GameMonetize: 'https://html5.gamemonetize.co', GamePix: 'https://play.gamepix.com', Playgama: 'https://playgama.com' };
+const FRAME_HOST: Record<string, string> = { GameMonetize: 'https://html5.gamemonetize.co', GamePix: 'https://play.gamepix.com', Playgama: 'https://playgama.com', GameZipper: 'https://gamezipper.com' };
 const frameHost = g.providerName ? FRAME_HOST[g.providerName] : undefined;
 const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait, fit, ...(cat ? { cat: cat.slug } : {}) };
 ---

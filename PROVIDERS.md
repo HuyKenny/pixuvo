@@ -17,6 +17,7 @@ State on 2026-10-02:
 | GameMonetize | available | approved | **approved** (ads.txt VERIFIED, website Approved) | **owner_accepted** | 38 131 sources |
 | GamePix | available | approved | **approved** (property 9O09X, ads.txt VALID) | partner_handles | 13 892 sources (2 961 merged into GameMonetize games) |
 | Playgama | available | approved | **pending** (revenue in widgets.playgama.com) | partner_handles | 2 350 sources (2 081 own games, 269 attached) |
+| GameZipper (since 2026-10-05) | available (local file) | approved — **76 hand-picked games only** | not_approved (no revenue share exists) | **owner_accepted** | 76 sources |
 | GameDistribution | unknown | **awaiting_approval** | not_approved | blocked | 0 — application rejected |
 | Famobi | unknown | disabled | not_approved | blocked | 0 — no account |
 
@@ -65,6 +66,27 @@ State on 2026-10-02:
   `https://playgama.com/export/game/<slug>`, exactly like the dashboard's iframe code.
 * 17 games point to their own domains (e.g. numicolor.com) and are skipped (not on the frame allowlist).
 * **Consent:** live test 2026-10-02 from an EU IP — Google's certified consent dialog (Funding Choices) before ads.
+
+## GameZipper
+
+* **Programme:** https://gamezipper.com/publisher-partner.html — open embed, no signup, no key, no revenue share;
+  commercial use allowed, raw game files must not be rehosted. Embed `https://gamezipper.com/<slug>/?utm_source=pixuvo.com&utm_medium=embed`.
+* **Feed:** the documented `GET /api/games.json` returns 404 (2026-10-05). `scripts/import/gamezipper-catalog.ts`
+  rebuilds `data/providers/gamezipper.json` from `/js/games-data.js` (parsed as text, never executed) and one page
+  per allowlisted game, 3 s apart. The adapter only reads that file, so the daily sync makes no requests to them.
+  Refresh: `pnpm exec tsx scripts/import/gamezipper-catalog.ts` (all) or `--only slug1,slug2`, then commit the file.
+* **Selection:** `data/providers/gamezipper-allowlist.json` — 77 of their 466 games: the title has real search demand
+  (Ahrefs, global volume ≥ ~200 with game intent), it is not a clone of a trademarked game (Wordle, KenKen, Connect
+  Four, Fill-a-Pix, Quoridor, Slice Master… were left out) and Pixuvo did not already have it under the same name.
+  Kropki Sudoku has no thumbnail and is skipped, so 76 games import. `editorial-import.ts` gives a game its
+  `search_volume` only when no other published game carries the keyword.
+* **Ads/consent (2026-10-05, EU IP, game embedded like Pixuvo does):** 5 AdSense units, Adsterra
+  (effectivecpmnetwork.com — popunder/smartlink) and ExoClick (magsrv.com) load inside the frame with **no consent
+  prompt**, plus a "GameZipper — More Free Games" bar — although the programme page promises no ads in embeds. The
+  site owner decided to publish the selection anyway; `/api/play` serves these games **without `allow-popups`**
+  (`sandboxFor` in `src/lib/security.ts`), so no click inside the game can open a new window. Re-test before
+  adding more games.
+* Farkle stays in review (`sensitive:casino` tag).
 
 ## GameDistribution
 

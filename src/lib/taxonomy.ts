@@ -20,6 +20,11 @@ export interface CategoryDef {
   match: string[];
   /** Shown in the header / homepage sections. */
   nav?: boolean;
+  /**
+   * Some provider labels are applied loosely (GameMonetize tags dentist and bus games "sudoku"). When set,
+   * the label only counts if the game's own title/description/instructions also match.
+   */
+  evidence?: RegExp;
   blurb: string;
 }
 
@@ -46,6 +51,9 @@ export const CATEGORIES: CategoryDef[] = [
   { slug: 'maze', name: 'Maze', kind: 'subgenre', parent: 'puzzle', match: ['maze', 'labyrinth'], blurb: 'Find the way through.' },
   { slug: 'math', name: 'Math', kind: 'subgenre', parent: 'puzzle', match: ['math', 'maths', 'number', 'numbers'], blurb: 'Numbers, sums and quick mental arithmetic.' },
   { slug: 'memory', name: 'Memory', kind: 'subgenre', parent: 'puzzle', match: ['memory'], blurb: 'Remember, match and recall.' },
+  { slug: 'sudoku', name: 'Sudoku', kind: 'subgenre', parent: 'puzzle', match: ['sudoku', 'sudoku puzzle', 'sudoku puzzles', 'sudoku games', 'killer sudoku', 'killer-sudoku', 'samurai sudoku', 'jigsaw sudoku', 'irregular sudoku', 'x-sudoku', 'diagonal sudoku'], evidence: /sudoku|doku\b|futoshiki|kenken|latin square/i, blurb: 'Fill the grid so every row, column and box has each number once.' },
+  // Plain "logic" stays with the puzzle genre (1 000+ games use it loosely); only grid-logic labels land here.
+  { slug: 'logic', name: 'Logic Puzzles', kind: 'subgenre', parent: 'puzzle', match: ['logic puzzle', 'logic puzzles', 'nikoli', 'nikoli puzzle', 'nonogram', 'picross', 'griddlers', 'kakuro', 'cross sums', 'grid puzzle', 'logic grid', 'binary puzzle', 'takuzu'], blurb: 'Grid puzzles solved by pure reasoning, no guessing.' },
   { slug: 'racing', name: 'Racing', kind: 'genre', nav: true, match: ['racing', 'race', 'races'], blurb: 'Beat the clock or the other racers to the finish line.' },
   { slug: 'car', name: 'Car', kind: 'subgenre', parent: 'racing', match: ['car', 'cars', 'supercars', 'car games'], blurb: 'Cars of every kind, from city traffic to supercars.' },
   { slug: 'drift', name: 'Drift', kind: 'subgenre', parent: 'racing', match: ['drift', 'drifting'], blurb: 'Slide through corners and keep the combo going.' },
@@ -74,9 +82,9 @@ export const CATEGORIES: CategoryDef[] = [
   { slug: 'idle', name: 'Idle', kind: 'genre', match: ['idle', 'incremental'], blurb: 'Progress that keeps going even when you look away.' },
   { slug: 'clicker', name: 'Clicker', kind: 'genre', match: ['clicker', 'click'], blurb: 'Click, upgrade, repeat.' },
   { slug: 'platformer', name: 'Platformer', kind: 'genre', match: ['platformer', 'platform', 'platforms'], blurb: 'Run, jump and land on the next ledge.' },
-  { slug: 'board', name: 'Board', kind: 'genre', match: ['board', 'board games', 'checkers', 'ludo', 'backgammon', 'dominoes'], blurb: 'Classic tabletop games on screen.' },
-  { slug: 'chess', name: 'Chess', kind: 'subgenre', parent: 'board', match: ['chess'], blurb: 'The royal game.' },
-  { slug: 'card', name: 'Card', kind: 'genre', match: ['card', 'cards', 'card games'], blurb: 'Deal, play and build the best hand.' },
+  { slug: 'board', name: 'Board', kind: 'genre', match: ['board', 'board game', 'board games', 'checkers', 'ludo', 'backgammon', 'dominoes', 'mancala', 'chinese checkers'], blurb: 'Classic tabletop games on screen.' },
+  { slug: 'chess', name: 'Chess', kind: 'subgenre', parent: 'board', match: ['chess', 'chess variant', 'chinese chess', 'xiangqi', 'japanese chess', 'shogi'], blurb: 'The royal game.' },
+  { slug: 'card', name: 'Card', kind: 'genre', match: ['card', 'cards', 'card game', 'card games'], blurb: 'Deal, play and build the best hand.' },
   { slug: 'solitaire', name: 'Solitaire', kind: 'subgenre', parent: 'card', match: ['solitaire', 'klondike', 'spider solitaire', 'freecell'], blurb: 'Patience card games for one.' },
   { slug: 'mahjong', name: 'Mahjong', kind: 'genre', match: ['mahjong', 'mahjongg'], blurb: 'Match tiles and clear the layout.' },
   { slug: 'match-3', name: 'Match 3', kind: 'genre', match: ['match 3', 'match-3', 'match3', 'bejeweled', 'jewel', 'jewels', 'matching'], blurb: 'Line up three or more and watch them pop.' },
@@ -87,7 +95,7 @@ export const CATEGORIES: CategoryDef[] = [
   { slug: 'cooking', name: 'Cooking', kind: 'genre', match: ['cooking', 'cook', 'kitchen', 'restaurant', 'chef'], blurb: 'Prepare dishes and serve customers.' },
   { slug: 'dress-up', name: 'Dress Up', kind: 'genre', match: ['dress up', 'dress-up', 'dressup', 'fashion', 'makeover', 'makeup', 'make up'], blurb: 'Outfits, styling and makeovers.' },
   { slug: 'coloring', name: 'Coloring & Drawing', kind: 'genre', match: ['coloring', 'colouring', 'drawing', 'draw', 'paint'], blurb: 'Colour pictures and draw your own.' },
-  { slug: 'educational', name: 'Educational', kind: 'genre', match: ['educational', 'education', 'learning'], blurb: 'Games that teach something along the way.' },
+  { slug: 'educational', name: 'Educational', kind: 'genre', match: ['educational', 'education', 'learning', 'typing'], blurb: 'Games that teach something along the way.' },
   // ── Modes (how you play, not what you play) ──────────────────────────────
   { slug: 'multiplayer', name: 'Multiplayer', kind: 'mode', nav: true, match: ['multiplayer', 'multi player', 'online multiplayer'], blurb: 'Games for more than one player.' },
   { slug: '2-player', name: '2 Player', kind: 'mode', nav: true, match: ['2 player', '2 player games', 'two-player', 'two player', '2 players', '2player'], blurb: 'Play with a friend.' },
@@ -121,13 +129,19 @@ for (const c of CATEGORIES) {
   }
 }
 
-/** Provider labels (category + tags) → Pixuvo category slugs. A subgenre also adds its parent. */
-export function mapLabelsToCategories(labels: string[]): string[] {
+/**
+ * Provider labels (category + tags) → Pixuvo category slugs. A subgenre also adds its parent.
+ * `text` (title + description + instructions) is checked for categories that require evidence; without
+ * it such categories are skipped, so a caller that forgets the text never over-assigns.
+ */
+export function mapLabelsToCategories(labels: string[], text?: string): string[] {
   const out = new Set<string>();
   for (const l of labels) {
     const hits = matchIndex.get(normLabel(l));
     if (!hits) continue;
     for (const slug of hits) {
+      const ev = bySlug.get(slug)?.evidence;
+      if (ev && !(text && ev.test(text))) continue;
       out.add(slug);
       const parent = bySlug.get(slug)?.parent;
       if (parent) out.add(parent);
@@ -255,7 +269,9 @@ export const RELATED: Record<string, string[]> = {
   car: ['racing', 'driving', 'parking', 'drift', 'truck', '2-player-racing'],
   driving: ['car', 'parking', 'truck', 'bus', 'racing'],
   motorcycle: ['racing', 'car', 'driving', 'stickman'],
-  puzzle: ['brain', 'match-3', 'mahjong', 'word', 'jigsaw', '2048', 'memory', 'math'],
+  puzzle: ['brain', 'logic', 'sudoku', 'match-3', 'mahjong', 'word', 'jigsaw', '2048', 'memory', 'math'],
+  sudoku: ['logic', 'math', 'brain', '2048', 'puzzle'],
+  logic: ['sudoku', 'brain', 'math', 'board', 'puzzle'],
   action: ['fighting', 'shooting', 'stickman', 'ninja', 'platformer', 'boys'],
   shooting: ['sniper', 'first-person-shooter', 'zombie', 'tank', 'multiplayer-shooting', '2-player-shooting'],
   sports: ['football', 'basketball', 'golf', 'pool', '2-player-sports', '2-player-football'],
