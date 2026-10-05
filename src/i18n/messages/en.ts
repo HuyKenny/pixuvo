@@ -562,7 +562,9 @@ const base = {
 } as const;
 
 // catn = short label (chips, menus); catg = the whole "… games" phrase used in titles and headings; catb = blurb.
-const categories = Object.fromEntries(CATEGORIES.flatMap((c) => [[`catn.${c.slug}`, c.name], [`catg.${c.slug}`, `${c.name} Games`], [`catb.${c.slug}`, c.blurb]]));
+// A name that already says what the games are ("Logic Puzzles") must not get "Games" appended.
+const CATG: Record<string, string> = { logic: 'Logic Puzzles' };
+const categories = Object.fromEntries(CATEGORIES.flatMap((c) => [[`catn.${c.slug}`, c.name], [`catg.${c.slug}`, CATG[c.slug] ?? `${c.name} Games`], [`catb.${c.slug}`, c.blurb]]));
 const themes = Object.fromEntries(THEMES.map((t) => [`theme.${t.slug}`, t.name]));
 
 const en = { ...base, ...categories, ...themes } as Record<string, string>;
