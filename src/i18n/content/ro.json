@@ -1603,6 +1603,56 @@
      "a": "Multe jocuri cu zombi au comenzi tactile și merg pe telefoane și tablete. Pe pagina fiecărui joc scrie dacă rulează pe mobil."
     }
    ]
+  },
+  "sudoku": {
+   "intro": "Nouă rânduri, nouă coloane, nouă careuri – și fiecare număr de la 1 la 9 trebuie să apară exact o dată în fiecare dintre ele. Atât îi trebuie unui sudoku, o singură regulă, și totuși te poate ține concentrat multă vreme. Pe Pixuvo găsești peste 70 de jocuri sudoku gratuite, pe care le joci direct în browser, de la grile ușoare pentru începători până la variante pline de capcane.\n\nSudoku clasic este o grilă de 9×9 în care sunt deja trecute câteva numere. Pe restul le completezi întrebându-te unde mai poate ajunge fiecare număr: dacă pe un rând există deja un 7, nicio altă căsuță de pe acel rând nu mai poate fi 7. Nu ghicești și nu faci calcule – e logică pură. Când varianta clasică ți se pare ușoară, trece la variante. Killer Sudoku adaugă cuști în care numerele trebuie să dea o anumită sumă, Samurai Sudoku îmbină cinci grile care se suprapun, Jigsaw Sudoku înlocuiește careurile cu forme neregulate, iar X-Sudoku adaugă ambele diagonale. Arrow Sudoku, Sandwich Sudoku și Thermo Sudoku îi dau grilei linii și indicii în plus.\n\nCei mici pot începe cu variantele cu imagini, precum Fruit Sudoku sau Halloween Sudoku, unde desenele țin locul numerelor. Futoshiki și Calcu Doku sunt veri apropiați, cu grile mai mici. Un obicei bun la orice sudoku: urmărește câte un singur număr pe rând, notează mărunt variantele când o căsuță are două opțiuni și ia o pauză dacă te blochezi – cu mintea odihnită vezi adesea pe loc următorul pas. Mai multe jocuri cu numere găsești în categoria de matematică.",
+   "faq": [
+    {
+     "q": "Cum se joacă sudoku?",
+     "a": "Completează grila astfel încât fiecare rând, fiecare coloană și fiecare careu de 3×3 să conțină toate numerele de la 1 la 9, fiecare o singură dată. Începe cu rândurile, coloanele sau careurile care au deja multe numere – acolo rămân mai puține locuri de verificat."
+    },
+    {
+     "q": "Este sudoku bun pentru copii?",
+     "a": "Da. Sudoku antrenează gândirea atentă, răbdarea și concentrarea și nu cere deloc calcule. Variantele cu imagini și grilele mici sunt un început bun pentru copiii mai mici."
+    },
+    {
+     "q": "Ce este Killer Sudoku?",
+     "a": "Este o variantă în care peste grilă sunt desenate cuști punctate. Numerele dintr-o cușcă trebuie să dea suma mică scrisă în colțul ei și niciun număr nu se poate repeta în cușcă – pe lângă regulile obișnuite de sudoku."
+    },
+    {
+     "q": "Care este diferența dintre sudoku și kakuro?",
+     "a": "La sudoku așezi fiecare număr o singură dată pe rând, coloană și careu. Kakuro seamănă cu un rebus în care fiecare șir de căsuțe trebuie să dea suma din indiciu. Kakuro și alte enigme pe grilă sunt în categoria de enigme logice."
+    },
+    {
+     "q": "Pot juca sudoku pe telefon?",
+     "a": "Multe dintre jocurile sudoku merg pe telefon și pe tabletă, nu doar pe calculator. Pe pagina fiecărui joc vezi pe ce dispozitive funcționează."
+    }
+   ]
+  },
+  "logic": {
+   "intro": "Există enigme fără noroc, fără cronometru și fără ghicit – doar o grilă, câteva indicii și o singură soluție corectă, la care ajungi raționând pas cu pas. Acestea sunt enigmele logice, iar pe Pixuvo găsești în jur de 25, gratuite, de jucat direct în browser. Multe vin din Japonia, unde editura de jocuri de minte Nikoli le-a făcut celebre.\n\nFiecare enigmă are propriul set mic de reguli. La nonogramă, numerele de lângă fiecare rând și fiecare coloană îți spun câte căsuțe să colorezi, iar grila terminată dezvăluie un desen. Kakuro funcționează ca un rebus făcut din sume. La Hitori întunecești numere până când niciun rând și nicio coloană nu mai repetă vreunul, iar la Nurikabe construiești insule în mijlocul mării. Slitherlink și Masyu îți cer să desenezi o singură buclă închisă, Hashiwokakero leagă insule cu poduri, iar la Star Battle așezi stele astfel încât niciuna să nu le atingă pe celelalte. Binairo, LITS, Shikaku, Heyawake și Suguru aduc fiecare încă o idee isteață.\n\nCel mai bine începi cu o grilă mică și cu primele niveluri ușoare: citește regulile, caută indiciul care permite un singur răspuns și continuă de acolo. Fiecare pas corect îl face pe următorul mai ușor. Enigmele logice sunt jocuri calme și liniștite, potrivite pentru copiii mai mari și pentru adulți, iar părinții le pot rezolva împreună cu copiii. Dacă îți plac, încearcă și categoriile de sudoku și de matematică.",
+   "faq": [
+    {
+     "q": "Ce sunt enigmele logice?",
+     "a": "Sunt enigme pe care le rezolvi doar prin raționament. Fiecare are câteva reguli și câteva indicii și o singură soluție, la care ajungi fără să ghicești."
+    },
+    {
+     "q": "Ce este o nonogramă?",
+     "a": "Nonograma, numită și picross sau griddlers, este o grilă în care numerele de lângă fiecare rând și coloană arată câte căsuțe la rând trebuie colorate. La final, căsuțele colorate formează un desen."
+    },
+    {
+     "q": "Sunt enigmele logice bune pentru copii?",
+     "a": "Da, mai ales pentru copiii cărora le plac provocările liniștite. Antrenează gândirea atentă și răbdarea. Grilele mici și primele niveluri sunt cel mai bun punct de plecare."
+    },
+    {
+     "q": "Ce sunt enigmele Nikoli?",
+     "a": "Nikoli este o editură japoneză de jocuri de minte care a creat sau a popularizat multe enigme pe grilă, precum Slitherlink, Nurikabe, Hashiwokakero, Heyawake și Masyu. Tot prin Nikoli a devenit celebru și sudoku."
+    },
+    {
+     "q": "Am nevoie de matematică pentru enigmele logice?",
+     "a": "De obicei, nu. Majoritatea îți cer doar să compari și să numeri. Câteva, precum Kakuro, folosesc adunări simple."
+    }
+   ]
   }
  },
  "land": {

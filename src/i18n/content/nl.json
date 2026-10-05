@@ -1603,6 +1603,56 @@
      "a": "Veel zombiespellen hebben aanraakbediening en werken op telefoons en tablets. Of een spel op mobiel werkt, staat op de spelpagina."
     }
    ]
+  },
+  "sudoku": {
+   "intro": "Negen rijen, negen kolommen, negen vakken – en in elk daarvan moet elk cijfer van 1 tot 9 precies één keer staan. Meer regels heeft sudoku niet nodig, en toch kun je er lang over nadenken. Op Pixuvo vind je meer dan 70 gratis sudokuspellen die je in je browser speelt, van makkelijke puzzels voor beginners tot pittige varianten.\n\nDe klassieke sudoku is een rooster van 9×9 waarin al een paar cijfers staan. De rest vul je in door je af te vragen waar een cijfer nog kan staan: staat er in een rij al een 7, dan kan geen ander vakje in die rij een 7 zijn. Je hoeft niet te gokken en niet te rekenen – het is pure logica. Vind je de klassieke versie makkelijk geworden, probeer dan een variant. Killer Sudoku voegt kooien toe waarvan de cijfers samen een bepaald getal moeten maken, Samurai Sudoku koppelt vijf roosters die elkaar overlappen, Jigsaw Sudoku vervangt de vakken door grillige vormen en X-Sudoku telt ook de twee diagonalen mee. Arrow Sudoku, Sandwich Sudoku en Thermo Sudoku geven het rooster extra lijnen en aanwijzingen.\n\nJongere spelers kunnen beginnen met plaatjesversies zoals Fruit Sudoku of Halloween Sudoku, waarin plaatjes de plek van cijfers innemen. Futoshiki en Calcu Doku zijn naaste familie met kleinere roosters. Een goede gewoonte bij elke sudoku: zoek steeds één cijfer tegelijk, zet kleine notities als een vakje twee mogelijkheden heeft en neem even pauze als je vastzit – met frisse ogen zie je de volgende stap vaak meteen. Meer spellen met getallen vind je bij de rekenspellen.",
+   "faq": [
+    {
+     "q": "Hoe speel je sudoku?",
+     "a": "Vul het rooster zo in dat elke rij, elke kolom en elk vak van 3×3 elk cijfer van 1 tot 9 precies één keer bevat. Begin bij de rijen, kolommen of vakken waar al veel cijfers staan – daar blijven de minste mogelijkheden over."
+    },
+    {
+     "q": "Is sudoku goed voor kinderen?",
+     "a": "Ja. Sudoku traint nauwkeurig nadenken, geduld en concentratie, en je hoeft er helemaal niet voor te rekenen. Plaatjesversies en kleine roosters zijn een goed begin voor jongere kinderen."
+    },
+    {
+     "q": "Wat is killer sudoku?",
+     "a": "Killer sudoku is een variant met gestippelde kooien over het rooster. De cijfers in elke kooi moeten samen het kleine getal in de hoek maken, en binnen een kooi mag geen cijfer twee keer voorkomen – bovenop de gewone sudokuregels."
+    },
+    {
+     "q": "Wat is het verschil tussen sudoku en kakuro?",
+     "a": "Bij sudoku zet je elk cijfer één keer per rij, kolom en vak. Kakuro lijkt op een kruiswoordpuzzel waarin elke reeks vakjes samen een gegeven som moet maken. Kakuro en andere roosterpuzzels vind je bij de logische puzzels."
+    },
+    {
+     "q": "Kan ik sudoku op mijn telefoon spelen?",
+     "a": "Veel sudokuspellen werken op telefoons en tablets net zo goed als op een computer. Op de pagina van het spel zie je welke apparaten het ondersteunt."
+    }
+   ]
+  },
+  "logic": {
+   "intro": "Sommige puzzels hebben geen geluk, geen tijdslimiet en geen gokwerk nodig – alleen een rooster, een paar aanwijzingen en één juiste oplossing die je stap voor stap vindt door goed na te denken. Dat zijn logische puzzels, en Pixuvo heeft er zo'n 25, gratis te spelen in je browser. Veel ervan komen uit Japan, waar puzzeluitgever Nikoli ze beroemd maakte.\n\nElke puzzel heeft zijn eigen korte set regels. Bij een nonogram vertellen de getallen naast elke rij en kolom hoeveel vakjes je moet inkleuren, en het ingevulde rooster vormt een plaatje. Kakuro werkt als een kruiswoordpuzzel van sommen. Bij Hitori maak je getallen zwart tot er in geen enkele rij of kolom nog een getal dubbel staat, en bij Nurikabe bouw je eilanden in een zee. Bij Slitherlink en Masyu teken je één gesloten lus, bij Hashiwokakero verbind je eilanden met bruggen en bij Star Battle zet je sterren zo neer dat ze elkaar niet raken. Binairo, LITS, Shikaku, Heyawake en Suguru hebben elk weer hun eigen slimme draai.\n\nBegin het liefst met een klein rooster en de eerste makkelijke levels: lees de regels, zoek de aanwijzing die maar één antwoord toelaat en bouw vanaf daar verder. Elke goede stap maakt de volgende makkelijker. Logische puzzels zijn rustige spellen die goed passen bij oudere kinderen en volwassenen, en ouders en kinderen kunnen er samen een oplossen. Vind je ze leuk, kijk dan ook bij de sudokuspellen en rekenspellen.",
+   "faq": [
+    {
+     "q": "Wat zijn logische puzzels?",
+     "a": "Logische puzzels los je op door alleen na te denken. Elke puzzel heeft een paar regels en wat aanwijzingen, en er is precies één oplossing die je zonder gokken kunt vinden."
+    },
+    {
+     "q": "Wat is een nonogram?",
+     "a": "Een nonogram, ook wel picross of griddlers genoemd, is een rooster waarbij de getallen naast elke rij en kolom aangeven hoeveel vakjes op een rij je inkleurt. Als je klaar bent, vormen de gekleurde vakjes een plaatje."
+    },
+    {
+     "q": "Zijn logische puzzels goed voor kinderen?",
+     "a": "Ja, vooral voor kinderen die van een rustige uitdaging houden. Ze trainen nauwkeurig nadenken en geduld. Kleine roosters en de eerste levels zijn het beste startpunt."
+    },
+    {
+     "q": "Wat zijn Nikoli-puzzels?",
+     "a": "Nikoli is een Japanse puzzeluitgever die veel roosterpuzzels heeft bedacht of populair gemaakt, zoals Slitherlink, Nurikabe, Hashiwokakero, Heyawake en Masyu. Ook sudoku werd beroemd dankzij Nikoli."
+    },
+    {
+     "q": "Moet ik kunnen rekenen voor logische puzzels?",
+     "a": "Meestal niet. Bij de meeste logische puzzels hoef je alleen te vergelijken en te tellen. Een paar, zoals Kakuro, vragen eenvoudig optellen."
+    }
+   ]
   }
  },
  "land": {

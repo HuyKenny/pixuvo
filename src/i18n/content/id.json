@@ -1603,6 +1603,56 @@
      "a": "Banyak game zombie punya kontrol sentuh dan jalan di HP dan tablet. Apakah sebuah game jalan di HP tertulis di halamannya."
     }
    ]
+  },
+  "sudoku": {
+   "intro": "Sembilan baris, sembilan kolom, sembilan blok – dan setiap angka dari 1 sampai 9 harus muncul tepat satu kali di masing-masing. Hanya itu aturan sudoku, tapi aturan sederhana ini bisa membuatmu berpikir lama. Di Pixuvo ada lebih dari 70 game sudoku gratis yang bisa dimainkan langsung di browser, mulai dari kotak ringan untuk pemula sampai varian yang menantang.\n\nSudoku klasik berupa kotak 9×9 yang sudah berisi beberapa angka. Kamu mengisi sisanya sambil bertanya, di mana angka ini masih bisa ditaruh: kalau satu baris sudah punya angka 7, sel lain di baris itu tidak boleh berisi 7. Tidak perlu menebak dan tidak perlu berhitung – semuanya murni logika. Kalau versi klasik sudah terasa mudah, coba variannya. Killer Sudoku menambahkan kurungan yang jumlah angkanya harus sama dengan angka tertentu, Samurai Sudoku menggabungkan lima kotak yang saling tumpang tindih, Jigsaw Sudoku mengganti blok dengan bentuk-bentuk berkelok, dan X-Sudoku menambahkan kedua diagonal. Arrow Sudoku, Sandwich Sudoku, dan Thermo Sudoku memberi garis serta petunjuk tambahan di kotaknya.\n\nPemain yang lebih kecil bisa mulai dengan versi bergambar seperti Fruit Sudoku atau Halloween Sudoku, yang memakai gambar sebagai pengganti angka. Futoshiki dan Calcu Doku masih saudara dekat sudoku dengan kotak yang lebih kecil. Kebiasaan bagus untuk setiap sudoku: periksa satu angka setiap kali, tulis catatan kecil kalau satu sel punya dua kemungkinan, dan istirahat sebentar kalau buntu – dengan mata yang segar, langkah berikutnya sering langsung kelihatan. Game angka lainnya ada di kategori matematika.",
+   "faq": [
+    {
+     "q": "Bagaimana cara bermain sudoku?",
+     "a": "Isi kotak sampai setiap baris, setiap kolom, dan setiap blok 3×3 berisi angka 1 sampai 9 masing-masing tepat satu kali. Mulailah dari baris, kolom, atau blok yang sudah banyak angkanya – tempat yang perlu dicek jadi lebih sedikit."
+    },
+    {
+     "q": "Apakah sudoku bagus untuk anak?",
+     "a": "Ya. Sudoku melatih cara berpikir yang teliti, kesabaran, dan konsentrasi, dan sama sekali tidak butuh berhitung. Versi bergambar dan kotak kecil cocok untuk anak yang lebih kecil."
+    },
+    {
+     "q": "Apa itu Killer Sudoku?",
+     "a": "Killer Sudoku adalah varian dengan kurungan bergaris putus-putus di atas kotak. Jumlah angka di setiap kurungan harus sama dengan angka kecil di sudutnya, dan tidak boleh ada angka yang berulang di dalam kurungan – selain aturan sudoku biasa."
+    },
+    {
+     "q": "Apa bedanya sudoku dan kakuro?",
+     "a": "Di sudoku, setiap angka ditaruh satu kali di tiap baris, kolom, dan blok. Kakuro mirip teka-teki silang, di mana setiap deretan sel harus berjumlah sama dengan angka petunjuk. Kakuro dan teka-teki kotak lainnya ada di kategori teka-teki logika."
+    },
+    {
+     "q": "Bisakah main sudoku di HP?",
+     "a": "Banyak game sudoku bisa dimainkan di HP dan tablet, sama seperti di komputer. Halaman game-nya menunjukkan perangkat apa saja yang didukung."
+    }
+   ]
+  },
+  "logic": {
+   "intro": "Ada teka-teki yang tidak bergantung pada keberuntungan, tanpa timer, dan tanpa menebak – hanya kotak, beberapa petunjuk, dan satu jawaban benar yang bisa kamu temukan dengan bernalar langkah demi langkah. Inilah teka-teki logika, dan Pixuvo punya sekitar 25 game semacam ini, gratis dimainkan di browser. Banyak di antaranya berasal dari Jepang, tempat penerbit teka-teki Nikoli membuatnya terkenal.\n\nSetiap teka-teki punya aturan kecilnya sendiri. Di nonogram, angka di samping setiap baris dan kolom menunjukkan berapa sel yang harus diwarnai, dan kotak yang selesai membentuk sebuah gambar. Kakuro seperti teka-teki silang yang terbuat dari penjumlahan. Di Hitori kamu menghitamkan angka sampai tidak ada angka yang berulang di baris atau kolom mana pun, sedangkan di Nurikabe kamu membangun pulau-pulau di tengah laut. Slitherlink dan Masyu memintamu menggambar satu lingkaran tertutup, Hashiwokakero menghubungkan pulau dengan jembatan, dan Star Battle menempatkan bintang supaya tidak ada yang bersentuhan. Binairo, LITS, Shikaku, Heyawake, dan Suguru masing-masing punya keunikan cerdas lainnya.\n\nCara terbaik untuk mulai adalah dengan kotak kecil dan level-level awal yang mudah: baca aturannya, cari petunjuk yang hanya memungkinkan satu jawaban, lalu lanjutkan dari situ. Setiap langkah yang benar membuat langkah berikutnya lebih mudah. Teka-teki logika adalah permainan yang tenang dan santai, cocok untuk anak yang lebih besar dan orang dewasa, dan orang tua bisa memecahkannya bersama anak. Kalau kamu suka, coba juga kategori sudoku dan matematika.",
+   "faq": [
+    {
+     "q": "Apa itu teka-teki logika?",
+     "a": "Teka-teki logika adalah teka-teki yang dipecahkan hanya dengan bernalar. Masing-masing punya beberapa aturan dan petunjuk, dan hanya ada satu jawaban yang bisa dicapai tanpa menebak."
+    },
+    {
+     "q": "Apa itu nonogram?",
+     "a": "Nonogram, yang juga disebut picross atau griddlers, adalah kotak dengan angka di samping setiap baris dan kolom yang menunjukkan berapa sel berurutan yang harus diwarnai. Setelah selesai, sel-sel yang diwarnai membentuk sebuah gambar."
+    },
+    {
+     "q": "Apakah teka-teki logika bagus untuk anak?",
+     "a": "Ya, terutama untuk anak yang suka tantangan yang tenang. Teka-teki logika melatih cara berpikir yang teliti dan kesabaran. Kotak kecil dan level-level awal adalah tempat terbaik untuk mulai."
+    },
+    {
+     "q": "Apa itu teka-teki Nikoli?",
+     "a": "Nikoli adalah penerbit teka-teki asal Jepang yang menciptakan atau memopulerkan banyak teka-teki kotak, seperti Slitherlink, Nurikabe, Hashiwokakero, Heyawake, dan Masyu. Sudoku juga jadi terkenal berkat Nikoli."
+    },
+    {
+     "q": "Apakah perlu jago matematika untuk teka-teki logika?",
+     "a": "Biasanya tidak. Kebanyakan teka-teki logika hanya memintamu membandingkan dan menghitung. Hanya beberapa, seperti Kakuro, yang memakai penjumlahan sederhana."
+    }
+   ]
   }
  },
  "land": {

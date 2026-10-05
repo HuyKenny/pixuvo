@@ -1603,6 +1603,56 @@
      "a": "Wiele gier z zombie ma sterowanie dotykowe i działa na telefonach i tabletach. Czy dana gra działa na telefonie, sprawdzisz na jej stronie."
     }
    ]
+  },
+  "sudoku": {
+   "intro": "Dziewięć wierszy, dziewięć kolumn, dziewięć kwadratów – i każda cyfra od 1 do 9 musi pojawić się w każdym z nich dokładnie raz. Sudoku nie potrzebuje żadnej innej zasady, a mimo to potrafi zająć głowę na długo. Na Pixuvo czeka ponad 70 darmowych gier sudoku online, w które zagrasz prosto w przeglądarce – od łagodnych diagramów dla początkujących po podchwytliwe odmiany.\n\nKlasyczne sudoku to diagram 9×9, w którym kilka cyfr jest już wpisanych. Resztę uzupełniasz, zadając sobie pytanie, gdzie dana cyfra może jeszcze trafić: jeśli w wierszu jest już siódemka, żadne inne pole w tym wierszu nie może być siódemką. Nie ma tu zgadywania ani liczenia – to czysta logika. Gdy klasyka zacznie wydawać się łatwa, spróbuj odmiany. Killer Sudoku dodaje klatki, których cyfry muszą dać podaną sumę, Samurai Sudoku łączy pięć nachodzących na siebie diagramów, Jigsaw Sudoku zamienia kwadraty na powyginane kształty, a X-Sudoku dokłada obie przekątne. Arrow Sudoku, Sandwich Sudoku i Thermo Sudoku dają diagramowi dodatkowe linie i podpowiedzi.\n\nMłodsi gracze mogą zacząć od wersji obrazkowych, takich jak Fruit Sudoku czy Halloween Sudoku, gdzie zamiast cyfr układa się obrazki. Futoshiki i Calcu Doku to bliscy krewni z mniejszymi diagramami. Przy każdym sudoku przydaje się jeden nawyk: sprawdzaj po jednej cyfrze naraz, zapisuj małe notatki, gdy pole ma dwie możliwości, a kiedy utkniesz, zrób przerwę – wypoczęte oczy często od razu widzą kolejny ruch. Więcej gier z liczbami znajdziesz w kategorii gier matematycznych.",
+   "faq": [
+    {
+     "q": "Jak grać w sudoku?",
+     "a": "Uzupełnij diagram tak, by każdy wiersz, każda kolumna i każdy kwadrat 3×3 zawierały każdą cyfrę od 1 do 9 dokładnie raz. Zacznij od wierszy, kolumn lub kwadratów, w których jest już dużo cyfr – zostaje tam mniej miejsc do sprawdzenia."
+    },
+    {
+     "q": "Czy sudoku jest dobre dla dzieci?",
+     "a": "Tak. Sudoku ćwiczy uważne myślenie, cierpliwość i koncentrację, a do tego w ogóle nie wymaga liczenia. Na początek dla młodszych dzieci dobrze sprawdzają się wersje obrazkowe i małe diagramy."
+    },
+    {
+     "q": "Co to jest killer sudoku?",
+     "a": "Killer sudoku to odmiana z kropkowanymi klatkami na diagramie. Cyfry w każdej klatce muszą dać razem małą liczbę zapisaną w jej rogu i żadna cyfra nie może się w klatce powtórzyć – oprócz zwykłych zasad sudoku."
+    },
+    {
+     "q": "Czym sudoku różni się od kakuro?",
+     "a": "W sudoku chodzi o to, by każda cyfra była raz w wierszu, kolumnie i kwadracie. Kakuro wygląda jak krzyżówka, w której każdy ciąg pól musi dać podaną sumę. Kakuro i inne łamigłówki na diagramach znajdziesz w kategorii łamigłówek logicznych."
+    },
+    {
+     "q": "Czy mogę grać w sudoku na telefonie?",
+     "a": "Wiele gier sudoku działa na telefonach i tabletach tak samo jak na komputerze. Na stronie gry zobaczysz, jakie urządzenia obsługuje."
+    }
+   ]
+  },
+  "logic": {
+   "intro": "Niektóre łamigłówki nie mają szczęścia, stopera ani zgadywania – tylko diagram, kilka wskazówek i jedno poprawne rozwiązanie, do którego dochodzisz krok po kroku samym rozumowaniem. To łamigłówki logiczne, a na Pixuvo jest ich około 25, wszystkie za darmo w przeglądarce. Wiele z nich pochodzi z Japonii, gdzie rozsławiło je wydawnictwo łamigłówek Nikoli.\n\nKażda łamigłówka ma własny, niewielki zestaw zasad. W nonogramie, znanym u nas też jako obrazek logiczny, liczby przy wierszach i kolumnach mówią, ile pól zamalować, a gotowy diagram pokazuje obrazek. Kakuro działa jak krzyżówka z sum. W Hitori zaczerniasz liczby, aż w żadnym wierszu ani kolumnie nic się nie powtarza, a w Nurikabe budujesz wyspy na morzu. Slitherlink i Masyu każą narysować jedną zamkniętą pętlę, Hashiwokakero łączy wyspy mostami, a w Star Battle rozmieszczasz gwiazdy tak, by żadne się nie stykały. Binairo, LITS, Shikaku, Heyawake i Suguru dokładają każda kolejny sprytny haczyk.\n\nNajlepiej zacząć od małego diagramu i pierwszych łatwych poziomów: przeczytaj zasady, poszukaj wskazówki, która pozwala tylko na jedną odpowiedź, i buduj od niej dalej. Każdy poprawny krok ułatwia następny. Łamigłówki logiczne to spokojne, ciche gry dla starszych dzieci i dorosłych, a rodzice mogą rozwiązywać je razem z dziećmi. Jeśli ci się spodobają, zajrzyj też do kategorii sudoku i gier matematycznych.",
+   "faq": [
+    {
+     "q": "Czym są łamigłówki logiczne?",
+     "a": "Łamigłówki logiczne to zagadki, które rozwiązuje się samym rozumowaniem. Każda ma kilka zasad i parę wskazówek, a do jedynego rozwiązania da się dojść bez zgadywania."
+    },
+    {
+     "q": "Co to jest nonogram?",
+     "a": "Nonogram, nazywany też obrazkiem logicznym, japońską krzyżówką, picrossem albo griddlers, to diagram, w którym liczby przy każdym wierszu i kolumnie pokazują, ile pól pod rząd zamalować. Po skończeniu zamalowane pola tworzą obrazek."
+    },
+    {
+     "q": "Czy łamigłówki logiczne są dobre dla dzieci?",
+     "a": "Tak, zwłaszcza dla dzieci, które lubią spokojne wyzwania. Ćwiczą uważne myślenie i cierpliwość. Najlepiej zacząć od małych diagramów i pierwszych poziomów."
+    },
+    {
+     "q": "Czym są łamigłówki Nikoli?",
+     "a": "Nikoli to japońskie wydawnictwo łamigłówek, które wymyśliło lub spopularyzowało wiele zagadek na diagramach, takich jak Slitherlink, Nurikabe, Hashiwokakero, Heyawake i Masyu. Dzięki Nikoli sławę zdobyło też sudoku."
+    },
+    {
+     "q": "Czy do łamigłówek logicznych potrzebna jest matematyka?",
+     "a": "Zwykle nie. W większości łamigłówek logicznych wystarczy porównywać i liczyć pola. Tylko niektóre, na przykład Kakuro, wymagają prostego dodawania."
+    }
+   ]
   }
  },
  "land": {

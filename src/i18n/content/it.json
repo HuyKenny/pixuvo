@@ -1603,6 +1603,56 @@
      "a": "Molti giochi di zombie hanno comandi touch e funzionano su smartphone e tablet. Nella pagina di ogni gioco trovi se funziona su mobile."
     }
    ]
+  },
+  "sudoku": {
+   "intro": "Nove righe, nove colonne, nove riquadri – e in ognuno ogni numero da 1 a 9 deve comparire una sola volta. Al sudoku basta questa regola, eppure può farti pensare a lungo. Su Pixuvo trovi più di 70 giochi di sudoku gratis da giocare nel browser, dalle griglie facili per chi inizia alle varianti più difficili.\n\nIl sudoku classico è una griglia 9×9 in cui ci sono già alcuni numeri. Il resto lo completi chiedendoti dove può ancora andare un numero: se in una riga c'è già un 7, nessun'altra casella di quella riga può essere un 7. Non devi tirare a indovinare e non devi fare calcoli – è pura logica. Quando il classico ti sembra facile, prova una variante. Il Killer Sudoku aggiunge delle gabbie i cui numeri devono dare una certa somma, il Samurai Sudoku unisce cinque griglie che si sovrappongono, il Jigsaw Sudoku sostituisce i riquadri con forme irregolari e l'X-Sudoku aggiunge le due diagonali. Arrow Sudoku, Sandwich Sudoku e Thermo Sudoku arricchiscono la griglia con linee e indizi in più.\n\nI più piccoli possono iniziare con le versioni a immagini come Fruit Sudoku o Halloween Sudoku, dove al posto dei numeri ci sono disegni. Futoshiki e Calcu Doku sono parenti stretti con griglie più piccole. Una buona abitudine per ogni sudoku: cerca un numero alla volta, scrivi piccole note quando una casella ha due possibilità e fai una pausa se ti blocchi – con occhi freschi spesso vedi subito la mossa successiva. Altri giochi con i numeri ti aspettano tra i giochi di matematica.",
+   "faq": [
+    {
+     "q": "Come si gioca a sudoku?",
+     "a": "Riempi la griglia in modo che ogni riga, ogni colonna e ogni riquadro 3×3 contenga una sola volta ogni numero da 1 a 9. Comincia dalle righe, colonne o riquadri che hanno già molti numeri – lì restano meno caselle da controllare."
+    },
+    {
+     "q": "Il sudoku fa bene ai bambini?",
+     "a": "Sì. Il sudoku allena il ragionamento, la pazienza e la concentrazione, e non richiede nessun calcolo. Le versioni a immagini e le griglie piccole sono un buon inizio per i bambini più piccoli."
+    },
+    {
+     "q": "Che cos'è il Killer Sudoku?",
+     "a": "Il Killer Sudoku è una variante con delle gabbie tratteggiate sopra la griglia. I numeri di ogni gabbia devono dare come somma il numerino scritto nel suo angolo, e dentro una gabbia nessun numero può ripetersi – oltre alle normali regole del sudoku."
+    },
+    {
+     "q": "Che differenza c'è tra sudoku e kakuro?",
+     "a": "Nel sudoku metti ogni numero una volta per riga, colonna e riquadro. Il kakuro sembra un cruciverba in cui ogni fila di caselle deve dare una somma indicata. Il kakuro e gli altri giochi a griglia sono nei rompicapi logici."
+    },
+    {
+     "q": "Posso giocare a sudoku sul telefono?",
+     "a": "Molti giochi di sudoku funzionano su telefono e tablet così come sul computer. Nella pagina del gioco trovi su quali dispositivi funziona."
+    }
+   ]
+  },
+  "logic": {
+   "intro": "Alcuni rompicapi non hanno fortuna, né cronometro, né tentativi a caso – solo una griglia, qualche indizio e un'unica soluzione giusta che trovi ragionando passo dopo passo. Sono i rompicapi logici, e su Pixuvo ce ne sono 25, gratis da giocare nel browser. Molti arrivano dal Giappone, dove l'editore di enigmi Nikoli li ha resi famosi.\n\nOgni rompicapo ha le sue poche regole. Nel nonogramma i numeri accanto a ogni riga e colonna ti dicono quante caselle colorare, e alla fine la griglia mostra un disegno. Il kakuro funziona come un cruciverba fatto di somme. Nell'Hitori annerisci i numeri finché nessuna riga o colonna ne ripete uno, mentre nel Nurikabe costruisci isole in mezzo al mare. Slitherlink e Masyu ti chiedono di disegnare un unico anello chiuso, Hashiwokakero collega le isole con dei ponti e Star Battle fa posizionare stelle che non si tocchino mai. Binairo, LITS, Shikaku, Heyawake e Suguru aggiungono ognuno un'idea furba in più.\n\nIl modo migliore per cominciare è una griglia piccola con i primi livelli facili: leggi le regole, cerca l'indizio che permette una sola risposta e parti da lì. Ogni passo giusto rende più facile il successivo. I rompicapi logici sono giochi calmi e tranquilli, adatti ai ragazzi più grandi e agli adulti, e genitori e figli possono risolverne uno insieme. Se ti piacciono, prova anche i giochi di sudoku e i giochi di matematica.",
+   "faq": [
+    {
+     "q": "Che cosa sono i rompicapi logici?",
+     "a": "I rompicapi logici sono enigmi che si risolvono solo con il ragionamento. Ognuno ha poche regole e qualche indizio, e c'è un'unica soluzione che puoi trovare senza tirare a indovinare."
+    },
+    {
+     "q": "Che cos'è un nonogramma?",
+     "a": "Un nonogramma, chiamato anche picross o griddlers, è una griglia in cui i numeri accanto a ogni riga e colonna indicano quante caselle di fila colorare. Quando hai finito, le caselle colorate formano un disegno."
+    },
+    {
+     "q": "I rompicapi logici vanno bene per i bambini?",
+     "a": "Sì, soprattutto per i bambini a cui piacciono le sfide tranquille. Allenano il ragionamento e la pazienza. Le griglie piccole e i primi livelli sono il punto di partenza migliore."
+    },
+    {
+     "q": "Che cosa sono i rompicapi Nikoli?",
+     "a": "Nikoli è un editore giapponese di enigmi che ha inventato o reso popolari molti giochi a griglia, come Slitherlink, Nurikabe, Hashiwokakero, Heyawake e Masyu. Anche il sudoku è diventato famoso grazie a Nikoli."
+    },
+    {
+     "q": "Serve la matematica per i rompicapi logici?",
+     "a": "Di solito no. La maggior parte dei rompicapi logici chiede solo di confrontare e contare. Alcuni, come il kakuro, usano semplici addizioni."
+    }
+   ]
   }
  },
  "land": {

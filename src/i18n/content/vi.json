@@ -1603,6 +1603,56 @@
      "a": "Nhiều game zombie có điều khiển cảm ứng và chạy trên điện thoại và máy tính bảng. Game có chạy trên di động không thì trang game sẽ ghi rõ."
     }
    ]
+  },
+  "sudoku": {
+   "intro": "Chín hàng, chín cột, chín ô vuông – và mỗi số từ 1 đến 9 phải xuất hiện đúng một lần trong từng hàng, từng cột, từng ô. Sudoku chỉ cần một luật duy nhất như vậy, nhưng có thể khiến bạn suy nghĩ rất lâu. Pixuvo có hơn 70 game Sudoku miễn phí chơi ngay trên trình duyệt, từ những lưới dễ cho người mới đến các biến thể hóc búa.\n\nSudoku cổ điển là một lưới 9×9 đã có sẵn vài con số. Bạn điền phần còn lại bằng cách tự hỏi một số còn có thể đặt ở đâu: nếu một hàng đã có số 7 thì không ô nào khác trong hàng đó được là 7. Không cần đoán và không cần tính toán – chỉ thuần logic. Khi bản cổ điển đã thấy dễ, hãy thử các biến thể. Killer Sudoku thêm những vùng có tổng các số phải bằng một con số cho trước, Samurai Sudoku ghép năm lưới chồng lên nhau, Jigsaw Sudoku thay các ô vuông bằng những hình dạng uốn lượn, còn X-Sudoku thêm cả hai đường chéo. Arrow Sudoku, Sandwich Sudoku và Thermo Sudoku mang đến cho lưới thêm đường kẻ và gợi ý.\n\nCác bạn nhỏ có thể bắt đầu với phiên bản hình ảnh như Fruit Sudoku hay Halloween Sudoku, nơi hình vẽ thay cho con số. Futoshiki và Calcu Doku là những \"họ hàng\" gần của Sudoku với lưới nhỏ hơn. Một thói quen tốt cho mọi ván Sudoku: xét từng số một, ghi chú nhỏ khi một ô có hai khả năng, và nghỉ một chút nếu bị bí – nhìn lại bằng con mắt tỉnh táo, bạn thường thấy ngay bước tiếp theo. Còn nhiều game về con số khác trong chuyên mục game toán học.",
+   "faq": [
+    {
+     "q": "Chơi Sudoku như thế nào?",
+     "a": "Điền vào lưới sao cho mỗi hàng, mỗi cột và mỗi ô vuông 3×3 đều chứa các số từ 1 đến 9, mỗi số đúng một lần. Hãy bắt đầu từ hàng, cột hoặc ô vuông đã có nhiều số – ở đó còn ít chỗ cần kiểm tra hơn."
+    },
+    {
+     "q": "Sudoku có tốt cho trẻ em không?",
+     "a": "Có. Sudoku rèn luyện tư duy cẩn thận, sự kiên nhẫn và khả năng tập trung, mà hoàn toàn không cần tính toán. Phiên bản hình ảnh và lưới nhỏ là khởi đầu tốt cho các bé nhỏ tuổi."
+    },
+    {
+     "q": "Killer Sudoku là gì?",
+     "a": "Killer Sudoku là biến thể có các vùng viền chấm đặt trên lưới. Tổng các số trong mỗi vùng phải bằng con số nhỏ ở góc vùng đó, và không số nào được lặp lại trong một vùng – ngoài các luật Sudoku thông thường."
+    },
+    {
+     "q": "Sudoku và Kakuro khác nhau thế nào?",
+     "a": "Sudoku là đặt mỗi số một lần trong mỗi hàng, cột và ô vuông. Kakuro trông giống ô chữ, trong đó mỗi dãy ô phải có tổng bằng con số gợi ý. Kakuro và các câu đố lưới khác nằm trong chuyên mục câu đố logic."
+    },
+    {
+     "q": "Có thể chơi Sudoku trên điện thoại không?",
+     "a": "Nhiều game Sudoku chạy được trên điện thoại và máy tính bảng cũng như trên máy tính. Trang game cho biết game hỗ trợ những thiết bị nào."
+    }
+   ]
+  },
+  "logic": {
+   "intro": "Có những câu đố không dựa vào may mắn, không đếm giờ và không cần đoán – chỉ có một lưới ô, vài gợi ý và một lời giải đúng duy nhất mà bạn tìm ra bằng cách suy luận từng bước. Đó là câu đố logic, và Pixuvo có khoảng 25 game như vậy, chơi miễn phí trên trình duyệt. Nhiều câu đố đến từ Nhật Bản, nơi nhà xuất bản câu đố Nikoli đã làm chúng trở nên nổi tiếng.\n\nMỗi câu đố có một bộ luật nhỏ riêng. Trong nonogram, các con số bên cạnh mỗi hàng và cột cho biết cần tô bao nhiêu ô, và lưới hoàn chỉnh sẽ hiện ra một bức tranh. Kakuro giống một ô chữ làm từ các phép cộng. Trong Hitori, bạn tô đen các số cho đến khi không hàng hay cột nào còn số lặp lại, còn trong Nurikabe bạn xây những hòn đảo giữa biển. Slitherlink và Masyu yêu cầu vẽ một vòng khép kín duy nhất, Hashiwokakero nối các đảo bằng cầu, còn Star Battle đặt các ngôi sao sao cho không ngôi sao nào chạm nhau. Binairo, LITS, Shikaku, Heyawake và Suguru mỗi game lại có một điểm độc đáo thông minh riêng.\n\nCách tốt nhất để bắt đầu là chọn lưới nhỏ và những màn dễ đầu tiên: đọc luật, tìm gợi ý chỉ cho phép một đáp án, rồi phát triển tiếp từ đó. Mỗi bước đúng lại giúp bước sau dễ hơn. Câu đố logic là những trò chơi nhẹ nhàng, yên tĩnh, hợp với trẻ lớn và người lớn, và bố mẹ có thể cùng con giải chung. Nếu thích, bạn hãy thử thêm chuyên mục Sudoku và game toán học.",
+   "faq": [
+    {
+     "q": "Câu đố logic là gì?",
+     "a": "Câu đố logic là những câu đố chỉ giải bằng suy luận. Mỗi câu đố có vài luật và một số gợi ý, và chỉ có đúng một lời giải mà bạn có thể tìm ra mà không cần đoán."
+    },
+    {
+     "q": "Nonogram là gì?",
+     "a": "Nonogram, còn gọi là picross hay griddlers, là một lưới ô mà các con số bên cạnh mỗi hàng và cột cho biết cần tô bao nhiêu ô liên tiếp. Khi hoàn thành, các ô được tô sẽ tạo thành một bức tranh."
+    },
+    {
+     "q": "Câu đố logic có tốt cho trẻ em không?",
+     "a": "Có, nhất là với những bé thích thử thách nhẹ nhàng. Câu đố logic rèn tư duy cẩn thận và sự kiên nhẫn. Lưới nhỏ và những màn đầu tiên là nơi tốt nhất để bắt đầu."
+    },
+    {
+     "q": "Câu đố Nikoli là gì?",
+     "a": "Nikoli là nhà xuất bản câu đố của Nhật Bản đã sáng tạo hoặc phổ biến nhiều câu đố trên lưới, như Slitherlink, Nurikabe, Hashiwokakero, Heyawake và Masyu. Sudoku cũng trở nên nổi tiếng nhờ Nikoli."
+    },
+    {
+     "q": "Có cần giỏi toán để giải câu đố logic không?",
+     "a": "Thường là không. Phần lớn câu đố logic chỉ yêu cầu so sánh và đếm. Chỉ một số ít, như Kakuro, dùng phép cộng đơn giản."
+    }
+   ]
   }
  },
  "land": {

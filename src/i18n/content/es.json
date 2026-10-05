@@ -1603,6 +1603,56 @@
      "a": "Muchos juegos de zombis tienen controles táctiles y funcionan en móviles y tabletas. En la página de cada juego se indica si va en móvil."
     }
    ]
+  },
+  "sudoku": {
+   "intro": "Nueve filas, nueve columnas y nueve cajas, y cada número del 1 al 9 tiene que aparecer exactamente una vez en cada una. Esa única regla es todo lo que necesita el sudoku, y aun así puede tenerte pensando un buen rato. En Pixuvo tienes más de 70 juegos de sudoku gratis para jugar en el navegador, desde cuadrículas sencillas para empezar hasta variantes con mucha miga.\n\nEl sudoku clásico es una cuadrícula de 9×9 que ya trae algunos números. Para completar el resto, pregúntate dónde puede ir todavía cada número: si una fila ya tiene un 7, ninguna otra casilla de esa fila puede ser un 7. No hace falta adivinar ni hacer cuentas: es lógica pura. Cuando el clásico te resulte fácil, prueba una variante. Killer Sudoku añade jaulas cuyos números deben sumar una cifra concreta, Samurai Sudoku une cinco cuadrículas que se solapan, Jigsaw Sudoku cambia las cajas por formas irregulares y X-Sudoku suma las dos diagonales. Arrow Sudoku, Sandwich Sudoku y Thermo Sudoku añaden líneas y pistas extra a la cuadrícula.\n\nLos más pequeños pueden empezar con versiones de dibujos como Fruit Sudoku o Halloween Sudoku, donde las imágenes ocupan el lugar de los números. Futoshiki y Calcu Doku son primos cercanos con cuadrículas más pequeñas. Un buen truco para cualquier sudoku: busca un número cada vez, apunta notas pequeñas cuando una casilla tenga dos opciones y descansa un poco si te atascas, porque con la mente fresca muchas veces ves el siguiente paso al instante. Tienes más juegos con números en la categoría de matemáticas.",
+   "faq": [
+    {
+     "q": "¿Cómo se juega al sudoku?",
+     "a": "Completa la cuadrícula para que cada fila, cada columna y cada caja de 3×3 tenga todos los números del 1 al 9 una sola vez. Empieza por las filas, columnas o cajas que ya tienen muchos números: quedan menos huecos que revisar."
+    },
+    {
+     "q": "¿El sudoku es bueno para los niños?",
+     "a": "Sí. El sudoku entrena el razonamiento, la paciencia y la concentración, y no exige hacer ninguna cuenta. Las versiones con dibujos y las cuadrículas pequeñas son un buen comienzo para los más pequeños."
+    },
+    {
+     "q": "¿Qué es el Killer Sudoku?",
+     "a": "Es una variante con jaulas de línea punteada sobre la cuadrícula. Los números de cada jaula deben sumar la cifra pequeña que aparece en su esquina y no pueden repetirse dentro de la jaula, además de cumplir las reglas normales del sudoku."
+    },
+    {
+     "q": "¿En qué se diferencian el sudoku y el kakuro?",
+     "a": "En el sudoku colocas cada número una vez por fila, columna y caja. El kakuro parece un crucigrama en el que cada tramo de casillas debe sumar la cifra de su pista. El kakuro y otros pasatiempos de cuadrícula están en la categoría de acertijos lógicos."
+    },
+    {
+     "q": "¿Puedo jugar al sudoku en el móvil?",
+     "a": "Muchos de los juegos de sudoku funcionan en móviles y tabletas además de en la computadora. En la página de cada juego verás qué dispositivos admite."
+    }
+   ]
+  },
+  "logic": {
+   "intro": "Hay acertijos sin suerte, sin reloj y sin adivinar: solo una cuadrícula, unas cuantas pistas y una única solución correcta a la que llegas razonando paso a paso. Son los acertijos lógicos, y en Pixuvo tienes unos 25, gratis y para jugar en el navegador. Muchos vienen de Japón, donde la editorial de pasatiempos Nikoli los hizo famosos.\n\nCada acertijo tiene su pequeño conjunto de reglas. En un nonograma, los números junto a cada fila y columna te dicen cuántas casillas tienes que rellenar, y al terminar la cuadrícula muestra un dibujo. El kakuro funciona como un crucigrama hecho de sumas. En Hitori sombreas números hasta que ninguno se repite en filas ni columnas, y en Nurikabe construyes islas en medio del mar. Slitherlink y Masyu te piden trazar un único circuito cerrado, Hashiwokakero une islas con puentes y Star Battle coloca estrellas de modo que ninguna se toque. Binairo, LITS, Shikaku, Heyawake y Suguru aportan cada uno otro giro ingenioso.\n\nLo mejor para empezar es una cuadrícula pequeña y los primeros niveles fáciles: lee las reglas, busca la pista que solo admite una respuesta y avanza desde ahí. Cada paso correcto hace más fácil el siguiente. Los acertijos lógicos son juegos tranquilos y silenciosos, ideales para niños mayores y adultos, y también para resolver en familia. Si te gustan, prueba también las categorías de sudoku y matemáticas.",
+   "faq": [
+    {
+     "q": "¿Qué son los acertijos lógicos?",
+     "a": "Son acertijos que se resuelven solo razonando. Cada uno tiene unas pocas reglas y algunas pistas, y hay exactamente una solución a la que puedes llegar sin adivinar."
+    },
+    {
+     "q": "¿Qué es un nonograma?",
+     "a": "Un nonograma, también llamado picross o griddlers, es una cuadrícula en la que los números junto a cada fila y columna indican cuántas casillas seguidas hay que colorear. Al terminar, las casillas coloreadas forman un dibujo."
+    },
+    {
+     "q": "¿Los acertijos lógicos son buenos para los niños?",
+     "a": "Sí, sobre todo para los niños a los que les gusta un reto tranquilo. Entrenan el razonamiento y la paciencia. Las cuadrículas pequeñas y los primeros niveles son el mejor punto de partida."
+    },
+    {
+     "q": "¿Qué son los acertijos de Nikoli?",
+     "a": "Nikoli es una editorial japonesa de pasatiempos que creó o popularizó muchos acertijos de cuadrícula, como Slitherlink, Nurikabe, Hashiwokakero, Heyawake y Masyu. El sudoku también se hizo famoso gracias a Nikoli."
+    },
+    {
+     "q": "¿Hacen falta matemáticas para los acertijos lógicos?",
+     "a": "Normalmente no. La mayoría solo te pide comparar y contar. Algunos, como el kakuro, usan sumas sencillas."
+    }
+   ]
   }
  },
  "land": {

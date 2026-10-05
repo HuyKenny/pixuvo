@@ -1603,6 +1603,56 @@
      "a": "Viele Zombiespiele haben Touch-Steuerung und laufen auf Handy und Tablet. Ob ein Spiel mobil läuft, steht auf seiner Seite."
     }
    ]
+  },
+  "sudoku": {
+   "intro": "Neun Zeilen, neun Spalten, neun Blöcke – und in jedem davon muss jede Zahl von 1 bis 9 genau einmal stehen. Mehr Regeln braucht Sudoku nicht, und trotzdem kann es dich lange zum Grübeln bringen. Auf Pixuvo findest du mehr als 70 kostenlose Sudoku-Spiele für den Browser, von leichten Anfängerrätseln bis zu kniffligen Varianten.\n\nDas klassische Sudoku ist ein 9×9-Gitter, in dem schon ein paar Zahlen stehen. Den Rest füllst du aus, indem du dich fragst, wo eine Zahl noch hinpasst: Steht in einer Zeile schon eine 7, kann kein anderes Feld dieser Zeile eine 7 sein. Du musst nicht raten und nicht rechnen – es ist reine Logik. Wenn dir der Klassiker zu leicht wird, probier eine Variante. Bei Killer Sudoku kommen Käfige dazu, deren Zahlen eine vorgegebene Summe ergeben müssen, Samurai Sudoku verbindet fünf überlappende Gitter, Jigsaw Sudoku ersetzt die Blöcke durch unregelmäßige Formen und X-Sudoku nimmt beide Diagonalen dazu. Arrow Sudoku, Sandwich Sudoku und Thermo Sudoku bringen zusätzliche Linien und Hinweise ins Gitter.\n\nJüngere Kinder fangen am besten mit Bilder-Sudokus wie Fruit Sudoku oder Halloween Sudoku an, bei denen Bilder statt Zahlen eingesetzt werden. Futoshiki und Calcu Doku sind enge Verwandte mit kleineren Gittern. Ein guter Tipp für jedes Sudoku: Nimm dir immer eine Zahl auf einmal vor, mach dir kleine Notizen, wenn ein Feld zwei Möglichkeiten hat, und gönn dir eine Pause, wenn du nicht weiterkommst – mit frischem Blick siehst du den nächsten Schritt oft sofort. Weitere Zahlenspiele findest du bei den Mathespielen.",
+   "faq": [
+    {
+     "q": "Wie spielt man Sudoku?",
+     "a": "Füll das Gitter so aus, dass in jeder Zeile, jeder Spalte und jedem 3×3-Block jede Zahl von 1 bis 9 genau einmal steht. Fang mit Zeilen, Spalten oder Blöcken an, in denen schon viele Zahlen stehen – dort bleiben weniger Möglichkeiten übrig."
+    },
+    {
+     "q": "Ist Sudoku gut für Kinder?",
+     "a": "Ja. Sudoku trainiert genaues Nachdenken, Geduld und Konzentration, und man muss dafür überhaupt nicht rechnen. Bilder-Sudokus und kleine Gitter sind ein guter Einstieg für jüngere Kinder."
+    },
+    {
+     "q": "Was ist Killer Sudoku?",
+     "a": "Killer Sudoku ist eine Variante mit gestrichelten Käfigen über dem Gitter. Die Zahlen in jedem Käfig müssen die kleine Zahl in seiner Ecke ergeben, und innerhalb eines Käfigs darf sich keine Zahl wiederholen – zusätzlich zu den normalen Sudoku-Regeln."
+    },
+    {
+     "q": "Was ist der Unterschied zwischen Sudoku und Kakuro?",
+     "a": "Beim Sudoku geht es darum, jede Zahl einmal pro Zeile, Spalte und Block einzutragen. Kakuro sieht aus wie ein Kreuzworträtsel, bei dem jede Reihe von Feldern eine vorgegebene Summe ergeben muss. Kakuro und andere Gitterrätsel findest du bei den Logikrätseln."
+    },
+    {
+     "q": "Kann ich Sudoku auf dem Handy spielen?",
+     "a": "Viele Sudoku-Spiele laufen auf Handy und Tablet genauso wie am Computer. Auf der Spielseite steht, welche Geräte ein Spiel unterstützt."
+    }
+   ]
+  },
+  "logic": {
+   "intro": "Manche Rätsel kommen ohne Glück, ohne Zeitdruck und ohne Raten aus – nur ein Gitter, ein paar Hinweise und genau eine richtige Lösung, die du Schritt für Schritt durch Nachdenken findest. Das sind Logikrätsel, und auf Pixuvo gibt es rund 25 davon, kostenlos im Browser. Viele stammen aus Japan, wo der Rätselverlag Nikoli sie berühmt gemacht hat.\n\nJedes Rätsel hat seine eigenen, kurzen Regeln. Beim Nonogramm verraten dir die Zahlen neben jeder Zeile und Spalte, wie viele Felder du ausmalen musst, und am Ende zeigt das Gitter ein Bild. Kakuro funktioniert wie ein Kreuzworträtsel aus Summen. Bei Hitori schwärzt du Zahlen, bis sich in keiner Zeile und Spalte mehr eine wiederholt, und bei Nurikabe baust du Inseln in einem Meer. Bei Slitherlink und Masyu zeichnest du eine einzige geschlossene Schleife, bei Hashiwokakero verbindest du Inseln mit Brücken, und bei Star Battle setzt du Sterne so, dass sich keine berühren. Binairo, LITS, Shikaku, Heyawake und Suguru bringen jeweils noch einen eigenen cleveren Dreh.\n\nAm besten startest du mit einem kleinen Gitter und den ersten leichten Leveln: Lies die Regeln, such den Hinweis, der nur eine Antwort zulässt, und bau darauf auf. Jeder richtige Schritt macht den nächsten leichter. Logikrätsel sind ruhige, entspannte Spiele für ältere Kinder und Erwachsene – und Eltern können sie gut zusammen mit ihren Kindern lösen. Wenn sie dir gefallen, schau auch bei den Sudoku-Spielen und Mathespielen vorbei.",
+   "faq": [
+    {
+     "q": "Was sind Logikrätsel?",
+     "a": "Logikrätsel sind Rätsel, die du allein durch Nachdenken löst. Jedes hat ein paar Regeln und einige Hinweise, und es gibt genau eine Lösung, die du ohne Raten findest."
+    },
+    {
+     "q": "Was ist ein Nonogramm?",
+     "a": "Ein Nonogramm, auch Picross oder Griddler genannt, ist ein Gitter, bei dem die Zahlen neben jeder Zeile und Spalte angeben, wie viele Felder am Stück ausgemalt werden. Wenn du fertig bist, ergeben die ausgemalten Felder ein Bild."
+    },
+    {
+     "q": "Sind Logikrätsel gut für Kinder?",
+     "a": "Ja, vor allem für Kinder, die ruhige Herausforderungen mögen. Sie trainieren genaues Nachdenken und Geduld. Kleine Gitter und die ersten Level sind der beste Einstieg."
+    },
+    {
+     "q": "Was sind Nikoli-Rätsel?",
+     "a": "Nikoli ist ein japanischer Rätselverlag, der viele Gitterrätsel erfunden oder bekannt gemacht hat, zum Beispiel Slitherlink, Nurikabe, Hashiwokakero, Heyawake und Masyu. Auch Sudoku ist durch Nikoli berühmt geworden."
+    },
+    {
+     "q": "Muss ich für Logikrätsel rechnen können?",
+     "a": "Meistens nicht. Bei den meisten Logikrätseln musst du nur vergleichen und zählen. Ein paar wenige, wie Kakuro, brauchen einfaches Addieren."
+    }
+   ]
   }
  },
  "land": {

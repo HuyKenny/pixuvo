@@ -1603,6 +1603,56 @@
      "a": "Beaucoup de jeux de zombies ont des commandes tactiles et marchent sur téléphone et tablette. La page de chaque jeu indique s'il tourne sur mobile."
     }
    ]
+  },
+  "sudoku": {
+   "intro": "Neuf lignes, neuf colonnes, neuf carrés – et chaque chiffre de 1 à 9 doit apparaître une seule fois dans chacun d'eux. Le sudoku n'a besoin que de cette règle, et pourtant il peut te faire réfléchir très longtemps. Sur Pixuvo, tu trouves plus de 70 jeux de sudoku gratuits à jouer dans ton navigateur, des grilles faciles pour débuter aux variantes les plus corsées.\n\nLe sudoku classique est une grille de 9×9 où quelques chiffres sont déjà placés. Tu complètes le reste en te demandant où un chiffre peut encore aller : si une ligne contient déjà un 7, aucune autre case de cette ligne ne peut être un 7. Pas besoin de deviner ni de calculer – c'est de la logique pure. Quand le classique te paraît facile, essaie une variante. Le Killer Sudoku ajoute des cages dont les chiffres doivent donner une somme précise, le Samurai Sudoku réunit cinq grilles qui se chevauchent, le Jigsaw Sudoku remplace les carrés par des formes irrégulières et le X-Sudoku ajoute les deux diagonales. Arrow Sudoku, Sandwich Sudoku et Thermo Sudoku apportent des lignes et des indices en plus.\n\nLes plus jeunes peuvent commencer par des versions en images comme Fruit Sudoku ou Halloween Sudoku, où des dessins remplacent les chiffres. Futoshiki et Calcu Doku sont de proches cousins aux grilles plus petites. Une bonne habitude pour chaque sudoku : cherche un chiffre à la fois, note de petits indices quand une case a deux possibilités et fais une pause si tu bloques – avec un regard neuf, on voit souvent tout de suite l'étape suivante. D'autres jeux de chiffres t'attendent dans les jeux de maths.",
+   "faq": [
+    {
+     "q": "Comment jouer au sudoku ?",
+     "a": "Remplis la grille pour que chaque ligne, chaque colonne et chaque carré de 3×3 contienne une seule fois chaque chiffre de 1 à 9. Commence par les lignes, colonnes ou carrés qui ont déjà beaucoup de chiffres – il reste moins de cases à vérifier."
+    },
+    {
+     "q": "Le sudoku est-il bon pour les enfants ?",
+     "a": "Oui. Le sudoku entraîne la réflexion, la patience et la concentration, et il ne demande aucun calcul. Les versions en images et les petites grilles sont un bon début pour les plus jeunes."
+    },
+    {
+     "q": "Qu'est-ce que le Killer Sudoku ?",
+     "a": "Le Killer Sudoku est une variante avec des cages en pointillés sur la grille. Les chiffres de chaque cage doivent donner le petit nombre écrit dans son coin, et aucun chiffre ne peut se répéter dans une cage – en plus des règles habituelles du sudoku."
+    },
+    {
+     "q": "Quelle est la différence entre le sudoku et le kakuro ?",
+     "a": "Au sudoku, tu places chaque chiffre une fois par ligne, colonne et carré. Le kakuro ressemble à des mots croisés où chaque suite de cases doit donner une somme indiquée. Le kakuro et les autres casse-tête en grille se trouvent dans les jeux de logique."
+    },
+    {
+     "q": "Peut-on jouer au sudoku sur un téléphone ?",
+     "a": "Beaucoup de jeux de sudoku fonctionnent sur téléphone et tablette aussi bien que sur ordinateur. La page du jeu indique les appareils compatibles."
+    }
+   ]
+  },
+  "logic": {
+   "intro": "Certains casse-tête se passent de chance, de chrono et de hasard : juste une grille, quelques indices et une seule bonne solution, que l'on trouve en raisonnant étape par étape. Ce sont les jeux de logique, et Pixuvo en propose 25, gratuits dans ton navigateur. Beaucoup viennent du Japon, où l'éditeur de casse-tête Nikoli les a rendus célèbres.\n\nChaque casse-tête a ses propres règles, toujours courtes. Dans un nonogramme (ou picross), les nombres à côté de chaque ligne et colonne indiquent combien de cases noircir, et la grille terminée révèle un dessin. Le kakuro fonctionne comme des mots croisés faits d'additions. Au Hitori, tu noircis des nombres jusqu'à ce qu'aucune ligne ni colonne n'en répète un, et au Nurikabe, tu construis des îles au milieu de la mer. Slitherlink et Masyu demandent de tracer une seule boucle, Hashiwokakero relie des îles par des ponts et Star Battle place des étoiles sans qu'elles se touchent. Binairo, LITS, Shikaku, Heyawake et Suguru ajoutent chacun leur petite astuce.\n\nLe mieux est de commencer par une petite grille et les premiers niveaux faciles : lis les règles, cherche l'indice qui n'autorise qu'une seule réponse et avance à partir de là. Chaque bonne étape rend la suivante plus facile. Les jeux de logique sont des jeux calmes et tranquilles, parfaits pour les grands enfants et les adultes, et parents et enfants peuvent en résoudre un ensemble. Si tu aimes, essaie aussi les jeux de sudoku et les jeux de maths.",
+   "faq": [
+    {
+     "q": "Qu'est-ce qu'un jeu de logique ?",
+     "a": "Un jeu de logique est un casse-tête que l'on résout uniquement par le raisonnement. Chacun a quelques règles et des indices, et il existe une seule solution que l'on peut trouver sans deviner."
+    },
+    {
+     "q": "Qu'est-ce qu'un nonogramme ?",
+     "a": "Un nonogramme, aussi appelé picross ou logimage, est une grille où les nombres à côté de chaque ligne et colonne indiquent combien de cases à la suite il faut colorier. À la fin, les cases coloriées forment un dessin."
+    },
+    {
+     "q": "Les jeux de logique sont-ils bons pour les enfants ?",
+     "a": "Oui, surtout pour les enfants qui aiment les défis calmes. Ils entraînent la réflexion et la patience. Les petites grilles et les premiers niveaux sont le meilleur point de départ."
+    },
+    {
+     "q": "Que sont les casse-tête Nikoli ?",
+     "a": "Nikoli est un éditeur japonais de casse-tête qui a inventé ou popularisé de nombreux jeux en grille, comme Slitherlink, Nurikabe, Hashiwokakero, Heyawake et Masyu. C'est aussi grâce à Nikoli que le sudoku est devenu célèbre."
+    },
+    {
+     "q": "Faut-il être bon en maths pour les jeux de logique ?",
+     "a": "En général, non. La plupart des jeux de logique demandent seulement de comparer et de compter. Quelques-uns, comme le kakuro, utilisent des additions simples."
+    }
+   ]
   }
  },
  "land": {

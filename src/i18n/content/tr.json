@@ -1603,6 +1603,56 @@
      "a": "Birçok zombi oyununun dokunmatik kontrolleri var ve telefon ile tablette çalışıyor. Oyunun mobilde çalışıp çalışmadığı sayfasında yazar."
     }
    ]
+  },
+  "sudoku": {
+   "intro": "Dokuz satır, dokuz sütun, dokuz kutu – ve 1'den 9'a kadar her sayı bunların her birinde tam bir kez yer almalı. Sudokunun ihtiyacı olan tek kural bu, ama yine de seni uzun süre düşündürebilir. Pixuvo'da tarayıcıda oynayabileceğin 70'ten fazla ücretsiz sudoku oyunu var; başlangıç için kolay tablolardan zorlu varyasyonlara kadar.\n\nKlasik sudoku, içinde birkaç sayının hazır verildiği 9×9'luk bir tablodur. Gerisini her sayının hâlâ nereye girebileceğini sorarak doldurursun: Bir satırda zaten 7 varsa, o satırdaki başka hiçbir kare 7 olamaz. Tahmin yok, hesap yok – tamamen mantık. Klasik sudoku kolay gelmeye başladığında bir varyasyon dene. Killer Sudoku, içindeki sayıların belirli bir toplamı vermesi gereken kafesler ekler; Samurai Sudoku üst üste binen beş tabloyu birleştirir; Jigsaw Sudoku kutuların yerine eğri büğrü şekiller koyar; X-Sudoku ise iki köşegeni de oyuna katar. Arrow Sudoku, Sandwich Sudoku ve Thermo Sudoku tabloya ek çizgiler ve ipuçları getirir.\n\nKüçükler, sayıların yerini resimlerin aldığı Fruit Sudoku veya Halloween Sudoku gibi resimli sürümlerle başlayabilir. Futoshiki ve Calcu Doku ise daha küçük tablolu yakın akrabalardır. Her sudoku için iyi bir alışkanlık: Her seferinde tek bir sayıya odaklan, bir karede iki seçenek varsa küçük notlar al ve takıldığında biraz mola ver – dinlenmiş gözler bir sonraki adımı çoğu zaman hemen görür. Daha fazla sayı oyunu matematik kategorisinde.",
+   "faq": [
+    {
+     "q": "Sudoku nasıl oynanır?",
+     "a": "Tabloyu, her satırda, her sütunda ve her 3×3'lük kutuda 1'den 9'a kadar her sayı tam bir kez olacak şekilde doldur. Zaten çok sayı bulunan satır, sütun ya da kutulardan başla – orada kontrol edilecek daha az yer kalır."
+    },
+    {
+     "q": "Sudoku çocuklar için faydalı mı?",
+     "a": "Evet. Sudoku dikkatli düşünmeyi, sabrı ve odaklanmayı geliştirir ve hiç hesap gerektirmez. Resimli sürümler ve küçük tablolar, küçük çocuklar için iyi bir başlangıçtır."
+    },
+    {
+     "q": "Killer Sudoku nedir?",
+     "a": "Killer Sudoku, tablonun üzerinde noktalı kafeslerin bulunduğu bir varyasyondur. Normal sudoku kurallarına ek olarak her kafesteki sayıların toplamı köşesinde yazan küçük sayıya eşit olmalı ve bir kafeste aynı sayı tekrar etmemelidir."
+    },
+    {
+     "q": "Sudoku ile kakuro arasındaki fark nedir?",
+     "a": "Sudokuda her sayıyı her satır, sütun ve kutuya bir kez yerleştirirsin. Kakuro ise her kare dizisinin toplamının ipucundaki sayıyı vermesi gereken bir çengel bulmacaya benzer. Kakuro ve diğer tablo bulmacaları mantık bulmacaları kategorisinde."
+    },
+    {
+     "q": "Sudokuyu telefonda oynayabilir miyim?",
+     "a": "Sudoku oyunlarının çoğu bilgisayarın yanı sıra telefon ve tablette de çalışır. Hangi cihazların desteklendiğini oyun sayfasında görebilirsin."
+    }
+   ]
+  },
+  "logic": {
+   "intro": "Bazı bulmacalarda şans, süre ya da tahmin yoktur – yalnızca bir tablo, birkaç ipucu ve adım adım akıl yürüterek bulabileceğin tek bir doğru çözüm vardır. Bunlara mantık bulmacaları denir ve Pixuvo'da tarayıcıda ücretsiz oynayabileceğin 25 kadarı var. Birçoğu, bulmaca yayıncısı Nikoli'nin ünlü yaptığı Japonya'dan geliyor.\n\nHer bulmacanın kendine ait küçük bir kural seti vardır. Nonogramda her satırın ve sütunun yanındaki sayılar kaç kareyi boyaman gerektiğini söyler, bitmiş tablo da bir resim ortaya çıkarır. Kakuro, toplamlardan oluşan bir çengel bulmaca gibidir. Hitori'de hiçbir satır ya da sütunda aynı sayı kalmayana kadar sayıları karartırsın; Nurikabe'de ise denizin ortasında adalar kurarsın. Slitherlink ve Masyu tek bir kapalı döngü çizmeni ister, Hashiwokakero adaları köprülerle bağlar, Star Battle'da ise yıldızları hiçbiri birbirine değmeyecek şekilde yerleştirirsin. Binairo, LITS, Shikaku, Heyawake ve Suguru da her biri başka zekice bir fikir ekler.\n\nBaşlamanın en iyi yolu küçük bir tablo ve ilk kolay seviyelerdir: Kuralları oku, tek bir cevaba izin veren ipucunu bul ve oradan ilerle. Her doğru adım bir sonrakini kolaylaştırır. Mantık bulmacaları sakin, sessiz oyunlardır; büyük çocuklara ve yetişkinlere uygundur, anne babalar da çocuklarıyla birlikte çözebilir. Seviyorsan sudoku ve matematik kategorilerine de göz at.",
+   "faq": [
+    {
+     "q": "Mantık bulmacaları nedir?",
+     "a": "Mantık bulmacaları yalnızca akıl yürüterek çözülen bulmacalardır. Her birinin birkaç kuralı ve birkaç ipucu vardır; tahmin etmeden ulaşabileceğin tam olarak tek bir çözüm bulunur."
+    },
+    {
+     "q": "Nonogram nedir?",
+     "a": "Picross ya da griddlers olarak da bilinen nonogram, her satırın ve sütunun yanındaki sayıların art arda kaç karenin boyanacağını gösterdiği bir tablodur. Bitirdiğinde boyanan kareler bir resim oluşturur."
+    },
+    {
+     "q": "Mantık bulmacaları çocuklar için faydalı mı?",
+     "a": "Evet, özellikle sakin bir meydan okumayı seven çocuklar için. Dikkatli düşünmeyi ve sabrı geliştirir. Küçük tablolar ve ilk seviyeler başlamak için en iyi yerdir."
+    },
+    {
+     "q": "Nikoli bulmacaları nedir?",
+     "a": "Nikoli, Slitherlink, Nurikabe, Hashiwokakero, Heyawake ve Masyu gibi pek çok tablo bulmacasını yaratan ya da yaygınlaştıran bir Japon bulmaca yayıncısıdır. Sudoku da Nikoli sayesinde ünlü oldu."
+    },
+    {
+     "q": "Mantık bulmacaları için matematik bilmem gerekir mi?",
+     "a": "Genellikle hayır. Çoğu mantık bulmacası yalnızca karşılaştırmanı ve saymanı ister. Kakuro gibi birkaçı basit toplama kullanır."
+    }
+   ]
   }
  },
  "land": {

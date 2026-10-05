@@ -1603,6 +1603,56 @@
      "a": "Muitos jogos de zumbi têm controles de toque e funcionam no celular e no tablet. Se um jogo roda no celular, isso aparece na página dele."
     }
    ]
+  },
+  "sudoku": {
+   "intro": "Nove linhas, nove colunas e nove quadrados – e cada número de 1 a 9 precisa aparecer exatamente uma vez em cada um deles. Essa única regra é tudo o que o sudoku precisa, mas mesmo assim ele pode deixar você pensando por um bom tempo. No Pixuvo você encontra mais de 70 jogos de sudoku grátis para jogar no navegador, de grades tranquilas para iniciantes até variantes bem desafiadoras.\n\nO sudoku clássico é uma grade 9×9 que já vem com alguns números. Para completar o resto, pergunte onde cada número ainda pode entrar: se uma linha já tem um 7, nenhuma outra casa dessa linha pode ser 7. Não tem chute nem conta – é lógica pura. Quando o clássico ficar fácil, experimente uma variante. Killer Sudoku acrescenta gaiolas cujos números precisam somar um valor indicado, Samurai Sudoku junta cinco grades sobrepostas, Jigsaw Sudoku troca os quadrados por formas irregulares e X-Sudoku inclui as duas diagonais. Arrow Sudoku, Sandwich Sudoku e Thermo Sudoku colocam linhas e pistas extras na grade.\n\nOs menores podem começar com versões de figuras, como Fruit Sudoku ou Halloween Sudoku, em que desenhos ocupam o lugar dos números. Futoshiki e Calcu Doku são primos próximos, com grades menores. Uma boa dica para qualquer sudoku: procure um número de cada vez, faça anotações pequenas quando uma casa tiver duas opções e dê uma pausa se travar – com a cabeça descansada, muitas vezes você enxerga o próximo passo na hora. Mais jogos com números estão na categoria de matemática.",
+   "faq": [
+    {
+     "q": "Como se joga sudoku?",
+     "a": "Preencha a grade para que cada linha, cada coluna e cada quadrado 3×3 tenha todos os números de 1 a 9 uma única vez. Comece pelas linhas, colunas ou quadrados que já têm muitos números – sobram menos casas para conferir."
+    },
+    {
+     "q": "Sudoku é bom para crianças?",
+     "a": "Sim. O sudoku treina o raciocínio, a paciência e a concentração, e não exige nenhuma conta. As versões com figuras e as grades pequenas são um ótimo começo para as crianças menores."
+    },
+    {
+     "q": "O que é Killer Sudoku?",
+     "a": "É uma variante com gaiolas pontilhadas sobre a grade. Os números de cada gaiola precisam somar o valor pequeno mostrado no canto dela, e nenhum número pode se repetir dentro da gaiola – além das regras normais do sudoku."
+    },
+    {
+     "q": "Qual é a diferença entre sudoku e kakuro?",
+     "a": "No sudoku você coloca cada número uma vez por linha, coluna e quadrado. O kakuro parece uma palavra cruzada em que cada sequência de casas precisa somar o valor da pista. O kakuro e outros enigmas de grade estão na categoria de enigmas lógicos."
+    },
+    {
+     "q": "Dá para jogar sudoku no celular?",
+     "a": "Muitos dos jogos de sudoku funcionam no celular e no tablet, além do computador. A página de cada jogo mostra quais dispositivos ele suporta."
+    }
+   ]
+  },
+  "logic": {
+   "intro": "Alguns enigmas não têm sorte, cronômetro nem chute – só uma grade, algumas pistas e uma única solução correta, que você encontra raciocinando passo a passo. Esses são os enigmas lógicos, e o Pixuvo tem cerca de 25 deles, grátis para jogar no navegador. Muitos vêm do Japão, onde a editora de passatempos Nikoli os tornou famosos.\n\nCada enigma tem seu próprio conjunto pequeno de regras. No nonograma, os números ao lado de cada linha e coluna dizem quantas casas pintar, e a grade pronta revela um desenho. O kakuro funciona como uma palavra cruzada feita de somas. No Hitori você escurece números até que nenhuma linha ou coluna repita um deles, e no Nurikabe você forma ilhas no meio do mar. Slitherlink e Masyu pedem que você desenhe um único circuito fechado, Hashiwokakero liga ilhas com pontes e Star Battle espalha estrelas de forma que nenhuma encoste na outra. Binairo, LITS, Shikaku, Heyawake e Suguru trazem, cada um, mais uma ideia esperta.\n\nO melhor jeito de começar é com uma grade pequena e as primeiras fases fáceis: leia as regras, procure a pista que só permite uma resposta e avance a partir dela. Cada passo certo deixa o próximo mais fácil. Os enigmas lógicos são jogos calmos e silenciosos, ideais para crianças maiores e adultos, e pais e filhos podem resolver um juntos. Se você gostar, experimente também as categorias de sudoku e de matemática.",
+   "faq": [
+    {
+     "q": "O que são enigmas lógicos?",
+     "a": "São enigmas que você resolve só com raciocínio. Cada um tem poucas regras e algumas pistas, e existe exatamente uma solução, que dá para alcançar sem chutar."
+    },
+    {
+     "q": "O que é um nonograma?",
+     "a": "O nonograma, também chamado de picross ou griddlers, é uma grade em que os números ao lado de cada linha e coluna mostram quantas casas seguidas devem ser pintadas. No final, as casas pintadas formam um desenho."
+    },
+    {
+     "q": "Enigmas lógicos são bons para crianças?",
+     "a": "Sim, principalmente para crianças que gostam de um desafio tranquilo. Eles treinam o raciocínio e a paciência. Grades pequenas e as primeiras fases são o melhor lugar para começar."
+    },
+    {
+     "q": "O que são os enigmas da Nikoli?",
+     "a": "A Nikoli é uma editora japonesa de passatempos que criou ou popularizou muitos enigmas de grade, como Slitherlink, Nurikabe, Hashiwokakero, Heyawake e Masyu. O sudoku também ficou famoso graças à Nikoli."
+    },
+    {
+     "q": "Preciso saber matemática para os enigmas lógicos?",
+     "a": "Normalmente não. A maioria só pede que você compare e conte. Alguns, como o kakuro, usam somas simples."
+    }
+   ]
   }
  },
  "land": {

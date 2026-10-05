@@ -1603,6 +1603,56 @@
      "a": "Many zombie games have touch controls and work on phones and tablets. Whether a game runs on mobile is listed on its page."
     }
    ]
+  },
+  "sudoku": {
+   "intro": "Nine rows, nine columns, nine boxes – and every number from 1 to 9 has to appear exactly once in each of them. That one rule is all sudoku needs, yet it can keep you thinking for a long time. Pixuvo has more than 70 free sudoku games to play in your browser, from gentle beginner grids to tricky variants.\n\nThe classic puzzle is a 9×9 grid that already shows a few numbers. You fill in the rest by asking where a number can still go: if a row already has a 7, no other cell in that row can be a 7. There is no guessing and no math – it is pure logic. Once the classic feels easy, try a variant. Killer Sudoku adds cages whose numbers must add up to a given sum, Samurai Sudoku joins five grids that overlap, Jigsaw Sudoku replaces the boxes with wobbly shapes, and X-Sudoku adds both diagonals. Arrow Sudoku, Sandwich Sudoku and Thermo Sudoku give the grid extra lines and clues to work with.\n\nYounger players can start with picture versions such as Fruit Sudoku or Halloween Sudoku, where pictures take the place of numbers. Futoshiki and Calcu Doku are close cousins with smaller grids. A good habit for every sudoku: scan one number at a time, write small notes when a cell has two options, and take a break if you get stuck – fresh eyes often spot the next step at once. More number games are in the math category.",
+   "faq": [
+    {
+     "q": "How do you play sudoku?",
+     "a": "Fill the grid so that every row, every column and every 3×3 box contains each number from 1 to 9 exactly once. Start with the rows, columns or boxes that already have many numbers – there are fewer places left to check."
+    },
+    {
+     "q": "Is sudoku good for kids?",
+     "a": "Yes. Sudoku trains careful thinking, patience and concentration, and it needs no arithmetic at all. Picture versions and small grids are a good start for younger children."
+    },
+    {
+     "q": "What is killer sudoku?",
+     "a": "Killer sudoku is a variant with dotted cages over the grid. The numbers in each cage must add up to the small number shown in its corner, and no number may repeat inside a cage – on top of the normal sudoku rules."
+    },
+    {
+     "q": "What is the difference between sudoku and kakuro?",
+     "a": "Sudoku is about placing each number once per row, column and box. Kakuro looks like a crossword where each run of cells must add up to a clue sum. Kakuro and other grid puzzles are in the logic puzzles category."
+    },
+    {
+     "q": "Can I play sudoku on my phone?",
+     "a": "Many of the sudoku games work on phones and tablets as well as on a computer. The game page shows which devices a game supports."
+    }
+   ]
+  },
+  "logic": {
+   "intro": "Some puzzles have no luck, no timer and no guessing – just a grid, a few clues and one correct solution you can find by reasoning step by step. These are logic puzzles, and Pixuvo has 25 of them, free to play in your browser. Many come from Japan, where the puzzle publisher Nikoli made them famous.\n\nEach puzzle has its own small set of rules. In a nonogram, the numbers beside each row and column tell you how many cells to fill in, and the finished grid shows a picture. Kakuro works like a crossword made of sums. In Hitori you shade numbers until no row or column repeats one, while in Nurikabe you build islands in a sea. Slitherlink and Masyu ask you to draw a single loop, Hashiwokakero connects islands with bridges, and Star Battle places stars so that none of them touch. Binairo, LITS, Shikaku, Heyawake and Suguru each add another clever twist.\n\nThe best way to start is with a small grid and the first easy levels: read the rules, look for the clue that allows only one answer, and build from there. Every correct step makes the next one easier. Logic puzzles are calm, quiet games that suit older kids and adults, and parents and children can solve one together. If you like them, try the sudoku and math categories too.",
+   "faq": [
+    {
+     "q": "What are logic puzzles?",
+     "a": "Logic puzzles are puzzles you solve by reasoning alone. Each one has a few rules and some clues, and there is exactly one solution you can reach without guessing."
+    },
+    {
+     "q": "What is a nonogram?",
+     "a": "A nonogram, also called picross or griddlers, is a grid where numbers next to each row and column show how many cells in a row to colour. When you finish, the coloured cells form a picture."
+    },
+    {
+     "q": "Are logic puzzles good for kids?",
+     "a": "Yes, especially for kids who like a calm challenge. They train careful thinking and patience. Small grids and the first levels are the best place to start."
+    },
+    {
+     "q": "What are Nikoli puzzles?",
+     "a": "Nikoli is a Japanese puzzle publisher that created or popularised many grid puzzles, such as Slitherlink, Nurikabe, Hashiwokakero, Heyawake and Masyu. Sudoku became famous through Nikoli too."
+    },
+    {
+     "q": "Do I need math for logic puzzles?",
+     "a": "Usually not. Most logic puzzles only ask you to compare and count. A few, such as Kakuro, use simple addition."
+    }
+   ]
   }
  },
  "land": {

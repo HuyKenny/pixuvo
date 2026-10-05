@@ -1603,6 +1603,56 @@
      "a": "Sok zombis játéknak érintővezérlése van, és működik telefonon és tableten. Azt, hogy egy játék fut-e mobilon, az oldalán találod."
     }
    ]
+  },
+  "sudoku": {
+   "intro": "Kilenc sor, kilenc oszlop, kilenc blokk – és mindegyikben pontosan egyszer kell szerepelnie minden számnak 1-től 9-ig. A sudokunak ennyi szabály elég, mégis sokáig el lehet merülni benne. A Pixuvón több mint 70 ingyenes sudoku játékot találsz, amelyeket közvetlenül a böngészőben játszhatsz – a könnyű, kezdőknek szóló tábláktól a trükkös változatokig.\n\nA klasszikus sudoku egy 9×9-es tábla, amelyben már ki van töltve néhány szám. A többit úgy írod be, hogy azt kérdezed: hová kerülhet még az adott szám? Ha egy sorban már van 7-es, abban a sorban egyetlen másik mező sem lehet 7-es. Nincs találgatás és nincs számolás – ez tiszta logika. Ha a klasszikus már könnyűnek tűnik, próbálj ki egy változatot. A Killer Sudoku ketreceket ad a táblához, amelyekben a számok összegének ki kell adnia egy megadott értéket, a Samurai Sudoku öt egymásba lógó táblát kapcsol össze, a Jigsaw Sudoku a blokkokat kacskaringós alakzatokra cseréli, az X-Sudoku pedig a két átlót is beveszi a szabályba. Az Arrow Sudoku, a Sandwich Sudoku és a Thermo Sudoku további vonalakat és segítségeket rajzol a táblára.\n\nA kisebbek kezdhetik a képes változatokkal, például a Fruit Sudokuval vagy a Halloween Sudokuval, ahol számok helyett képeket kell elhelyezni. A Futoshiki és a Calcu Doku közeli rokonok kisebb táblákkal. Minden sudokunál jól jön egy szokás: egyszerre csak egy számot nézz végig, írj kis jegyzeteket, ha egy mezőbe két szám is kerülhet, és ha elakadsz, tarts szünetet – kipihent szemmel gyakran azonnal meglátod a következő lépést. További számos játékokat a matekos kategóriában találsz.",
+   "faq": [
+    {
+     "q": "Hogyan kell sudokuzni?",
+     "a": "Töltsd ki a táblát úgy, hogy minden sorban, minden oszlopban és minden 3×3-as blokkban pontosan egyszer szerepeljen minden szám 1-től 9-ig. Kezdd azokkal a sorokkal, oszlopokkal vagy blokkokkal, ahol már sok szám van – ott kevesebb helyet kell végignézni."
+    },
+    {
+     "q": "Jó a sudoku gyerekeknek?",
+     "a": "Igen. A sudoku fejleszti a figyelmes gondolkodást, a türelmet és a koncentrációt, ráadásul egyáltalán nem kell hozzá számolni. A kisebb gyerekeknek a képes változatok és a kis táblák jelentenek jó kezdést."
+    },
+    {
+     "q": "Mi az a killer sudoku?",
+     "a": "A killer sudoku olyan változat, amelyben pontozott vonalú ketrecek vannak a táblán. Az egyes ketrecekben lévő számok összegének meg kell egyeznie a sarkában látható kis számmal, és a ketrecen belül egy szám sem ismétlődhet – mindez a szokásos sudokuszabályokon felül."
+    },
+    {
+     "q": "Mi a különbség a sudoku és a kakuro között?",
+     "a": "A sudokuban minden számnak egyszer kell szerepelnie soronként, oszloponként és blokkonként. A kakuro egy keresztrejtvényre hasonlít, ahol minden mezősornak egy megadott összeget kell kiadnia. A kakurót és más rácsrejtvényeket a logikai rejtvények kategóriában találod."
+    },
+    {
+     "q": "Játszhatok sudokut a telefonomon?",
+     "a": "A sudoku játékok közül sok telefonon és tableten is ugyanúgy működik, mint számítógépen. A játék oldalán látod, milyen eszközöket támogat."
+    }
+   ]
+  },
+  "logic": {
+   "intro": "Vannak rejtvények, amelyekben nincs szerencse, nincs stopper és nincs tippelés – csak egy rács, néhány támpont és egyetlen helyes megoldás, amelyhez lépésről lépésre, gondolkodással jutsz el. Ezek a logikai rejtvények, és a Pixuvón nagyjából 25 ilyet találsz, mindet ingyen, a böngészőben. Sok közülük Japánból származik, ahol a Nikoli rejtvénykiadó tette őket híressé.\n\nMinden rejtvénynek saját, kis szabályrendszere van. A nonogramban, amelyet japán rejtvényként is ismerhetsz, a sorok és oszlopok mellett álló számok megmondják, hány mezőt kell befesteni, és a kész rács egy képet rajzol ki. A Kakuro összegekből álló keresztrejtvényként működik. A Hitoriban addig satírozol be számokat, amíg egyik sorban és oszlopban sem ismétlődik egy sem, a Nurikabéban pedig szigeteket építesz a tengerben. A Slitherlink és a Masyu egyetlen zárt hurok megrajzolását kéri, a Hashiwokakero hidakkal köti össze a szigeteket, a Star Battle-ben pedig úgy kell elhelyezni a csillagokat, hogy egyik se érjen a másikhoz. A Binairo, a LITS, a Shikaku, a Heyawake és a Suguru mind egy újabb ötletes csavart hoz.\n\nA legjobb egy kis ráccsal és az első könnyű szintekkel kezdeni: olvasd el a szabályokat, keresd meg azt a támpontot, amely csak egyféle választ enged, és onnan építkezz tovább. Minden helyes lépés megkönnyíti a következőt. A logikai rejtvények nyugodt, csendes játékok, amelyek a nagyobb gyerekeknek és a felnőtteknek is jól állnak, és a szülők együtt is megfejthetik őket a gyerekekkel. Ha tetszenek, nézz be a sudoku és a matekos kategóriába is.",
+   "faq": [
+    {
+     "q": "Mik azok a logikai rejtvények?",
+     "a": "A logikai rejtvények olyan feladványok, amelyeket pusztán gondolkodással lehet megoldani. Mindegyiknek van néhány szabálya és pár támpontja, és pontosan egy megoldása, amelyhez tippelés nélkül el lehet jutni."
+    },
+    {
+     "q": "Mi az a nonogram?",
+     "a": "A nonogram, más néven japán rejtvény, picross vagy griddlers, egy rács, amelyben az egyes sorok és oszlopok melletti számok megmutatják, hány egymás melletti mezőt kell kiszínezni. Ha elkészülsz, a kiszínezett mezők képet adnak ki."
+    },
+    {
+     "q": "Jók a logikai rejtvények gyerekeknek?",
+     "a": "Igen, főleg azoknak a gyerekeknek, akik szeretik a nyugodt kihívásokat. Fejlesztik a figyelmes gondolkodást és a türelmet. Érdemes kis rácsokkal és az első szintekkel kezdeni."
+    },
+    {
+     "q": "Mik azok a Nikoli rejtvények?",
+     "a": "A Nikoli egy japán rejtvénykiadó, amely sok rácsrejtvényt talált ki vagy tett népszerűvé, például a Slitherlinket, a Nurikabét, a Hashiwokakerót, a Heyawakét és a Masyut. A sudoku is a Nikolinak köszönhetően lett híres."
+    },
+    {
+     "q": "Kell matek a logikai rejtvényekhez?",
+     "a": "Általában nem. A legtöbb logikai rejtvényben elég összehasonlítani és megszámolni a mezőket. Csak néhány, például a Kakuro, használ egyszerű összeadást."
+    }
+   ]
   }
  },
  "land": {

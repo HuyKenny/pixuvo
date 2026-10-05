@@ -1603,6 +1603,56 @@
      "a": "Veľa zombie hier má dotykové ovládanie a funguje na mobiloch aj tabletoch. Či hra beží na mobile, nájdeš na jej stránke."
     }
    ]
+  },
+  "sudoku": {
+   "intro": "Deväť riadkov, deväť stĺpcov, deväť štvorcov – a každé číslo od 1 do 9 sa v každom z nich musí objaviť práve raz. Viac pravidiel sudoku nepotrebuje, a predsa pri ňom dokážeš premýšľať poriadne dlho. Na Pixuve nájdeš vyše 70 hier sudoku zadarmo, ktoré si zahráš priamo v prehliadači – od ľahkých mriežok pre začiatočníkov až po záludné varianty.\n\nKlasické sudoku je mriežka 9×9, v ktorej je už niekoľko čísel vyplnených. Zvyšok dopĺňaš tak, že sa pýtaš, kam ešte dané číslo môže prísť: keď už je v riadku sedmička, žiadne iné políčko v tom riadku sedmičkou byť nemôže. Netreba nič tipovať ani počítať – je to čistá logika. Keď ti klasika začne pripadať ľahká, skús niektorú variantu. Killer Sudoku pridáva klietky, ktorých čísla musia dať zadaný súčet, Samurai Sudoku spája päť mriežok, ktoré sa prekrývajú, Jigsaw Sudoku nahrádza štvorce kľukatými tvarmi a X-Sudoku pridáva obe uhlopriečky. Arrow Sudoku, Sandwich Sudoku a Thermo Sudoku dávajú do mriežky ďalšie čiary a nápovedy.\n\nMenší hráči môžu začať obrázkovými verziami, ako je Fruit Sudoku alebo Halloween Sudoku, kde namiesto čísel ukladáš obrázky. Futoshiki a Calcu Doku sú blízki príbuzní s menšími mriežkami. Pri každom sudoku sa oplatí jeden zvyk: prechádzaj vždy jedno číslo, píš si malé poznámky, keď má políčko dve možnosti, a keď sa zasekneš, daj si prestávku – oddýchnuté oči často hneď zbadajú ďalší krok. Ďalšie hry s číslami nájdeš v kategórii matematických hier.",
+   "faq": [
+    {
+     "q": "Ako sa hrá sudoku?",
+     "a": "Vyplň mriežku tak, aby každý riadok, každý stĺpec a každý štvorec 3×3 obsahoval každé číslo od 1 do 9 práve raz. Začni pri riadkoch, stĺpcoch alebo štvorcoch, kde je už veľa čísel – ostáva tam menej miest na overenie."
+    },
+    {
+     "q": "Je sudoku vhodné pre deti?",
+     "a": "Áno. Sudoku trénuje pozorné premýšľanie, trpezlivosť a sústredenie a vôbec pri ňom netreba počítať. Pre menšie deti sú dobrým začiatkom obrázkové verzie a malé mriežky."
+    },
+    {
+     "q": "Čo je killer sudoku?",
+     "a": "Killer sudoku je varianta s bodkovanými klietkami cez mriežku. Čísla v každej klietke musia spolu dať malé číslo v jej rohu a vnútri klietky sa žiadne číslo nesmie opakovať – popritom platia bežné pravidlá sudoku."
+    },
+    {
+     "q": "Aký je rozdiel medzi sudoku a kakuro?",
+     "a": "Pri sudoku ide o to, aby každé číslo bolo raz v riadku, stĺpci aj štvorci. Kakuro vyzerá ako krížovka, v ktorej každý rad políčok musí dať zadaný súčet. Kakuro a ďalšie mriežkové hádanky nájdeš v kategórii logických hádanok."
+    },
+    {
+     "q": "Môžem hrať sudoku na mobile?",
+     "a": "Množstvo hier sudoku funguje na mobile a tablete rovnako ako na počítači. Na stránke hry uvidíš, ktoré zariadenia hra podporuje."
+    }
+   ]
+  },
+  "logic": {
+   "intro": "Niektoré hádanky nemajú žiadnu náhodu, žiadny časovač a žiadne tipovanie – len mriežku, pár nápovied a jediné správne riešenie, ku ktorému sa dopracuješ úvahou krok za krokom. Hovorí sa im logické hádanky a na Pixuve ich je zhruba 25, všetky zadarmo v prehliadači. Mnohé z nich pochádzajú z Japonska, kde ich preslávilo vydavateľstvo hádanok Nikoli.\n\nKaždá hádanka má vlastnú malú sadu pravidiel. Pri nonograme, ktorému sa u nás hovorí aj maľovaná krížovka, ti čísla vedľa riadkov a stĺpcov prezradia, koľko políčok vyfarbiť, a hotová mriežka ukáže obrázok. Kakuro funguje ako krížovka zo súčtov. V Hitori začierňuješ čísla, kým sa v žiadnom riadku ani stĺpci neopakujú, a v Nurikabe staviaš ostrovy v mori. Slitherlink a Masyu od teba chcú nakresliť jedinú slučku, Hashiwokakero spája ostrovy mostami a v Star Battle rozmiestňuješ hviezdy tak, aby sa žiadne nedotýkali. Binairo, LITS, Shikaku, Heyawake a Suguru pridávajú každá ďalší dômyselný háčik.\n\nNajlepšie je začať malou mriežkou a prvými ľahkými úrovňami: prečítaj si pravidlá, nájdi nápovedu, ktorá pripúšťa len jednu odpoveď, a pokračuj od nej. Každý správny krok uľahčí ten ďalší. Logické hádanky sú pokojné, tiché hry, ktoré sadnú starším deťom aj dospelým, a rodičia ich môžu lúštiť spolu s deťmi. Ak ťa bavia, pozri sa aj do kategórií sudoku a matematických hier.",
+   "faq": [
+    {
+     "q": "Čo sú logické hádanky?",
+     "a": "Logické hádanky sú úlohy, ktoré vyriešiš len úvahou. Každá má pár pravidiel a niekoľko nápovied a vedie k nej práve jedno riešenie, ku ktorému sa dostaneš bez tipovania."
+    },
+    {
+     "q": "Čo je nonogram?",
+     "a": "Nonogram, známy aj ako maľovaná krížovka, picross alebo griddlers, je mriežka, v ktorej čísla pri každom riadku a stĺpci ukazujú, koľko políčok za sebou vyfarbiť. Keď ju dokončíš, vyfarbené políčka vytvoria obrázok."
+    },
+    {
+     "q": "Sú logické hádanky vhodné pre deti?",
+     "a": "Áno, najmä pre deti, ktoré majú rady pokojnú výzvu. Trénujú pozorné premýšľanie a trpezlivosť. Najlepšie je začať malými mriežkami a prvými úrovňami."
+    },
+    {
+     "q": "Čo sú hádanky Nikoli?",
+     "a": "Nikoli je japonské vydavateľstvo hádanok, ktoré vymyslelo alebo preslávilo množstvo mriežkových hádanok, napríklad Slitherlink, Nurikabe, Hashiwokakero, Heyawake a Masyu. Vďaka Nikoli sa preslávilo aj sudoku."
+    },
+    {
+     "q": "Potrebujem na logické hádanky matematiku?",
+     "a": "Väčšinou nie. Vo väčšine logických hádanok stačí porovnávať a počítať políčka. Len niektoré, napríklad Kakuro, používajú jednoduché sčítanie."
+    }
+   ]
   }
  },
  "land": {
