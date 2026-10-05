@@ -2056,6 +2056,132 @@
      "a": "Ja, sie sind kostenlos, und du brauchst kein Konto. Manche Spiele zeigen Werbung ihrer Anbieter."
     }
    ]
+  },
+  "spider-solitaire": {
+   "intro": "Spider Solitär ist die Patience, bei der du lange Kartenreihen vom König abwärts bis zum Ass bildest. Ist eine Reihe vollständig und in einer Farbe, verschwindet sie vom Tisch – räumst du alle ab, hast du gewonnen. Spider gehört zu den meistgespielten Kartenspielen der Welt, und auf dieser Seite findest du mehr als 10 kostenlose Spider-Spiele für den Browser.\n\nDie Regeln sind immer ähnlich: Die Karten liegen in Spalten, du legst eine Karte auf eine, die einen Wert höher ist, und eine Reihe in derselben Farbe darfst du zusammen verschieben. Kommst du nicht weiter, teilst du aus dem Stapel eine neue Reihe aus. Spider Solitaire 1 suit ist der freundlichste Einstieg, weil alle Karten dieselbe Farbe haben. Das normale Spider Solitaire ist deutlich schwerer, und Big Spider Solitaire sowie Huge Spider Solitaire bringen mehr Spalten und mehr Karten. Tarantula Solitaire, Black Widow Solitaire, Jumping Spider und Three Blind Mice sind Varianten mit eigenen Kniffen, und Spider Freecell mischt freie Zellen dazu.\n\nEin guter Tipp: Leere früh eine Spalte – eine freie Spalte ist der wertvollste Platz auf dem Tisch. Denk ein paar Züge voraus, bevor du neue Karten austeilst, und halte Reihen möglichst in einer Farbe. Spider ist ein ruhiges Spiel für größere Kinder und Erwachsene; weitere Patiencen findest du in der Kategorie Solitär-Spiele.",
+   "faq": [
+    {
+     "q": "Wie spielt man Spider Solitär?",
+     "a": "Leg Karten auf eine Karte, die einen Wert höher ist, und bilde Reihen vom König bis zum Ass. Eine vollständige Reihe in einer Farbe wird entfernt. Räum alle Karten ab, um zu gewinnen."
+    },
+    {
+     "q": "Welches Spider Solitär ist am leichtesten?",
+     "a": "Die Version mit einer Farbe, denn alle Karten haben dieselbe Farbe und jede Reihe lässt sich verschieben. Spider Solitaire 1 suit ist ein gutes erstes Spiel."
+    },
+    {
+     "q": "Was ist der Unterschied zwischen Spider und Klondike?",
+     "a": "Bei Klondike legst du die Karten auf vier Ablagestapel vom Ass bis zum König. Bei Spider baust du Reihen vom König abwärts bis zum Ass direkt auf dem Tisch, und fertige Reihen werden entfernt."
+    },
+    {
+     "q": "Kann ich Spider Solitär auf dem Handy spielen?",
+     "a": "Ja, die Spiele laufen auf Handy und Tablet genauso wie am Computer. Du tippst die Karten an oder ziehst sie."
+    }
+   ]
+  },
+  "freecell": {
+   "intro": "FreeCell ist das Solitär für alle, die gern nachdenken. Alle 52 Karten liegen offen, nichts ist verdeckt – du siehst von Anfang an jede Karte. Vier freie Zellen geben dir Platz, um Karten zwischenzuparken, während du die Spalten sortierst, und fast jedes Spiel ist lösbar. Bei Pixuvo gibt es mehr als 20 kostenlose FreeCell-Spiele für den Browser.\n\nZiel ist es, alle Karten auf die vier Ablagestapel zu bringen, nach Farbe sortiert vom Ass bis zum König. Auf dem Tisch baust du die Spalten abwärts in abwechselnden Farben, und du darfst eine Karte in eine leere freie Zelle oder eine leere Spalte legen. Freecell Solitaire und Classic Freecell Solitaire folgen genau diesen Regeln. Double Freecell und Freecell Duplex nutzen zwei Kartenspiele, Eight Off gibt dir acht freie Zellen, und bei Baker's Game baust du nach Farbe statt abwechselnd rot und schwarz. Daily Freecell bringt jeden Tag ein neues Spiel, und es gibt Saisonversionen wie Freecell Christmas und Freecell Summer Holiday.\n\nDer wichtigste Tipp: Halte die freien Zellen so lange wie möglich leer, denn jede belegte Zelle macht die nächsten Züge schwerer. Befreie Asse und Zweien früh und versuch, eine ganze Spalte zu leeren – sie ist mehr wert als eine freie Zelle. Weitere Kartenspiele findest du in der Kategorie Solitär-Spiele.",
+   "faq": [
+    {
+     "q": "Wie spielt man FreeCell?",
+     "a": "Bring alle Karten nach Farbe vom Ass bis zum König auf die vier Ablagestapel. Auf dem Tisch baust du abwärts in abwechselnden Farben und nutzt die vier freien Zellen, um einzelne Karten abzulegen."
+    },
+    {
+     "q": "Ist jedes FreeCell-Spiel lösbar?",
+     "a": "Fast jedes Spiel lässt sich lösen, deshalb lieben Planer FreeCell so sehr. Nur wenige seltene Spiele haben keine Lösung."
+    },
+    {
+     "q": "Was ist der Unterschied zwischen FreeCell und Klondike?",
+     "a": "Bei FreeCell liegen alle Karten von Anfang an offen, und es gibt keinen Nachziehstapel. Bei Klondike sind manche Karten verdeckt, und du ziehst Karten vom Stapel nach."
+    },
+    {
+     "q": "Gibt es ein tägliches FreeCell-Spiel?",
+     "a": "Ja, Daily Freecell bringt dir jeden Tag ein neues Spiel."
+    }
+   ]
+  },
+  "klondike-solitaire": {
+   "intro": "Klondike ist das Solitär, das die meisten einfach Solitär nennen: sieben Kartenspalten, ein Nachziehstapel und vier Ablagestapel, die du vom Ass bis zum König füllst. Es ist die klassische Patience, und auf dieser Seite findest du fast 40 kostenlose Klondike-Spiele für den Browser, vom schlichten Klassiker bis zu Themenversionen.\n\nAuf dem Tisch baust du die Spalten abwärts in abwechselnden Farben – eine rote Sieben auf eine schwarze Acht. Verdeckte Karten werden umgedreht, sobald du sie freilegst, und wenn dir die Züge ausgehen, ziehst du vom Stapel nach. Wild West Solitaire beginnt leicht und wird Level für Level schwerer, Winter Solitaire, Halloween Klondike und Christmas Solitaire holen die Jahreszeit auf den Tisch, und Kings Klondike sowie Secret Double Klondike spielst du mit zwei Kartenspielen und acht Ablagestapeln. Taj Mahal Solitaire und Freecell Klondike Solitaire mischen Klondike mit anderen Patiencen.\n\nEin paar Gewohnheiten helfen: Dreh zuerst verdeckte Karten um, leg Karten auf die Ablagestapel, wenn es sicher ist, und halte eine leere Spalte für einen König frei. Klondike ist ein entspanntes Spiel für größere Kinder, Eltern und Großeltern gleichermaßen. Weitere Patiencen findest du in der Kategorie Solitär-Spiele.",
+   "faq": [
+    {
+     "q": "Wie spielt man Klondike Solitär?",
+     "a": "Bau die vier Ablagestapel nach Farbe vom Ass bis zum König auf. Auf dem Tisch legst du Karten abwärts in abwechselnden Farben und deckst verdeckte Karten auf; brauchst du neue Karten, ziehst du vom Stapel."
+    },
+    {
+     "q": "Ist Klondike dasselbe wie Solitär?",
+     "a": "Ja, wer Solitär sagt, meint meistens Klondike. Spider, FreeCell und Pyramide sind andere Solitär-Spiele."
+    },
+    {
+     "q": "Darf nur ein König in eine leere Spalte?",
+     "a": "Im klassischen Klondike ja – nur ein König oder eine Reihe, die mit einem König beginnt, darf in eine leere Spalte."
+    },
+    {
+     "q": "Gibt es Klondike-Spiele mit zwei Kartenspielen?",
+     "a": "Ja, Kings Klondike und Secret Double Klondike nutzen zwei Kartenspiele und acht Ablagestapel."
+    }
+   ]
+  },
+  "pyramid-solitaire": {
+   "intro": "Beim Pyramiden Solitär liegen die Karten als Pyramide, und du baust sie Paar für Paar ab: Zwei freie Karten, die zusammen 13 ergeben, verschwinden vom Tisch. Ein Bube zählt 11, eine Dame 12 und ein König 13 – der König darf also allein gehen. Bei Pixuvo gibt es mehr als 20 kostenlose Pyramiden-Solitär-Spiele für den Browser.\n\nEine Karte ist frei, wenn keine andere Karte auf ihr liegt. Findest du auf dem Tisch keine 13, deckst du eine Karte vom Stapel auf und versuchst, sie zu einem Paar zu ergänzen. Pyramid Solitaire und Egypt Pyramid Solitaire folgen den klassischen Regeln, Giza Solitaire ist eine schwerere Variante, und Freecell Giza Solitaire bringt freie Zellen dazu. Ancient Wonders Solitaire, Jungle Solitaire und Totem Solitaire haben ihre eigene Kulisse, Pyramid Klondike mischt Klondike hinein, und bei Maya Pyramid Solitaire ergeben Karten oder Münzen zusammen 11 statt 13.\n\nDer hilfreichste Tipp: Schau, welche Karten ein Paar freilegen würde, und wähl das Paar, das die meisten Karten befreit. Nebenbei ist es ein schönes kleines Spiel, um schnelles Addieren zu üben. Weitere Patiencen findest du in der Kategorie Solitär-Spiele.",
+   "faq": [
+    {
+     "q": "Wie spielt man Pyramiden Solitär?",
+     "a": "Entferne zwei freie Karten, die zusammen 13 ergeben – ein Bube zählt 11, eine Dame 12 und ein König allein 13. Räum die ganze Pyramide ab, um zu gewinnen."
+    },
+    {
+     "q": "Welche Kartenwerte gelten?",
+     "a": "Ein Ass zählt 1, Zahlenkarten zählen ihre Zahl, ein Bube 11, eine Dame 12 und ein König 13."
+    },
+    {
+     "q": "Ist Pyramiden Solitär gut für Kinder?",
+     "a": "Ja, es ist schnell gelernt und übt das Addieren bis 13. Die Karten bleiben übersichtlich, und jeder Zug geht schnell."
+    },
+    {
+     "q": "Gibt es schwerere Versionen?",
+     "a": "Ja, Giza Solitaire ist eine schwierigere Variante, und Freecell Giza Solitaire bringt freie Zellen zum Planen dazu."
+    }
+   ]
+  },
+  "golf-solitaire": {
+   "intro": "Golf und TriPeaks sind die schnellen Solitär-Spiele: Unten liegt eine offene Karte, und du räumst den Tisch ab, indem du eine Karte spielst, die einen Wert höher oder niedriger ist – eine Acht auf eine Sieben oder eine Neun. Lange Ketten bringen die meisten Punkte, und wenn dir die Züge ausgehen, deckst du eine neue Karte vom Stapel auf. Bei Pixuvo gibt es mehr als 30 kostenlose Golf- und TriPeaks-Solitär-Spiele für den Browser.\n\nBei TriPeaks bilden die Karten drei Gipfel, und verdeckte Karten drehen sich um, sobald du sie freilegst. Tripeaks Solitaire ist der Klassiker, 3 Pyramid Tripeaks 2 und Snowy Peaks Solitaire sind Versionen mit scrollendem Spielfeld, und Tripeaks Creatures hat 40 Level. Magic Castle Solitaire, Skyscraper Solitaire, Ancient Rome Solitaire, Tri-Fruit Solitaire und 3 Keys Solitaire packen dieselbe Idee in andere Welten und Anordnungen.\n\nDas Geheimnis: Erst schauen, dann klicken. Passen zwei Karten, nimm die, die die nächste Kette eröffnet oder eine verdeckte Karte freilegt. Die Spiele sind schnell, bunt und leicht zu lernen – genau richtig für Kinder und Erwachsene. Weitere Patiencen findest du in der Kategorie Solitär-Spiele.",
+   "faq": [
+    {
+     "q": "Wie spielt man TriPeaks Solitär?",
+     "a": "Spiel eine Karte vom Tisch, die einen Wert höher oder niedriger ist als die offene Karte unten. Passt keine Karte, deckst du eine neue vom Stapel auf. Räum alle drei Gipfel ab, um zu gewinnen."
+    },
+    {
+     "q": "Was ist der Unterschied zwischen Golf und TriPeaks?",
+     "a": "Beide nutzen die Regel „einen Wert höher oder niedriger“. Bei Golf liegen die Karten in Spalten, bei TriPeaks in drei überlappenden Gipfeln."
+    },
+    {
+     "q": "Spielt die Farbe bei TriPeaks eine Rolle?",
+     "a": "Nein, es zählt nur der Wert – jede Sieben passt auf jede Acht oder Sechs."
+    },
+    {
+     "q": "Sind TriPeaks-Spiele gut für Kinder?",
+     "a": "Ja, die Regel ist einfach, und die Spiele sind schnell und bunt. Nebenbei üben sie das Vorwärts- und Rückwärtszählen."
+    }
+   ]
+  },
+  "mahjong-connect": {
+   "intro": "Mahjong Connect ist der flotte Verwandte von Mahjong Solitär: Die Steine liegen flach auf dem Spielfeld, und du entfernst zwei gleiche Steine, indem du sie mit einer Linie verbindest. Die Linie darf höchstens zweimal abknicken, besteht also aus höchstens drei geraden Strecken, und sie darf nicht durch andere Steine laufen. Bei Pixuvo gibt es mehr als 40 kostenlose Mahjong-Connect-Spiele für den Browser.\n\nViele davon nutzen Bilder statt klassischer Mahjong-Steine, und das macht sie auch für jüngere Spieler leicht. Animals Connect und Animals Connect 2 zeigen lustige Tiere, in Zoobies Connect sind die Zoobies dabei, Connect Fish nimmt dich mit ins Meer und Space Connect ins Weltall. Jungle Connect, African Savannah, Wallpaper Connect und Time Connect haben jeweils ihr eigenes Steinset.\n\nSo spielst du geschickt: Räum zuerst die Steine am Rand ab, denn die lassen sich am leichtesten verbinden, und such nach Paaren, die nur hinter einem einzigen Stein versteckt sind. Bietet ein Spiel Hinweise oder Mischen an, heb sie dir auf, bis du wirklich feststeckst. Weitere Legespiele findest du in der Kategorie Mahjong-Spiele.",
+   "faq": [
+    {
+     "q": "Wie spielt man Mahjong Connect?",
+     "a": "Finde zwei gleiche Steine und verbinde sie mit einer Linie, die höchstens zweimal abknickt und keine anderen Steine kreuzt. Beide Steine verschwinden. Räum das Feld ab, um zu gewinnen."
+    },
+    {
+     "q": "Was ist der Unterschied zwischen Mahjong Connect und Mahjong Solitär?",
+     "a": "Bei Mahjong Solitär sind die Steine in Schichten gestapelt, und du nimmst freie Steine von oben. Bei Mahjong Connect liegen alle Steine flach, und du verbindest Paare mit einer Linie."
+    },
+    {
+     "q": "Ist Mahjong Connect gut für Kinder?",
+     "a": "Ja, viele Versionen zeigen Tiere und andere Bilder, und die Regel ist schnell gelernt. Das Spiel trainiert genaues Hinschauen und vorausschauendes Planen."
+    },
+    {
+     "q": "Kann ich Mahjong Connect auf dem Handy spielen?",
+     "a": "Ja, die Spiele laufen auf Handy und Tablet genauso wie am Computer – du tippst einfach die beiden Steine an."
+    }
+   ]
   }
  }
 }

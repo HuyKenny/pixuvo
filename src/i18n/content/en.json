@@ -2056,6 +2056,132 @@
      "a": "Yes, the Halloween games stay on Pixuvo all year round."
     }
    ]
+  },
+  "spider-solitaire": {
+   "intro": "Spider Solitaire is the patience game where you build long runs of cards from King down to Ace. When a run is complete and in one suit, it leaves the table – clear them all and you win. It is one of the most played card games in the world, and this page collects more than 10 free Spider games to play in your browser.\n\nThe rules are always similar: cards are dealt into columns, you move a card onto one that is one higher, and a run of cards in the same suit can move together. When you are stuck, you deal a new row from the stock. Spider Solitaire 1 suit is the friendliest start, because every card has the same suit. The plain Spider Solitaire game is much harder, and Big Spider Solitaire and Huge Spider Solitaire add more columns and more cards. Tarantula Solitaire, Black Widow Solitaire, Jumping Spider and Three Blind Mice are variants with their own twists, and Spider Freecell mixes in free cells.\n\nA good habit is to empty a column early – an empty column is the most useful spot on the board. Think a few moves ahead before you deal new cards, and keep runs in one suit whenever you can. Spider is a calm game for older kids and adults; more patience games are in the solitaire category.",
+   "faq": [
+    {
+     "q": "How do you play Spider Solitaire?",
+     "a": "Move cards onto a card one higher in value and build runs from King to Ace. A complete run in one suit is removed. Clear all cards to win."
+    },
+    {
+     "q": "What is the easiest Spider Solitaire?",
+     "a": "The one-suit version, because all cards have the same suit and every run can move. Spider Solitaire 1 suit is a good first game."
+    },
+    {
+     "q": "What is the difference between Spider and Klondike?",
+     "a": "Klondike builds the cards up on four foundations from Ace to King. Spider builds runs down from King to Ace on the table itself and removes them when they are complete."
+    },
+    {
+     "q": "Can I play Spider Solitaire on my phone?",
+     "a": "Yes, these games work on phones and tablets as well as on a computer. You tap or drag the cards."
+    }
+   ]
+  },
+  "freecell": {
+   "intro": "FreeCell is the solitaire game for people who like to think. All 52 cards are dealt face up, so there is nothing hidden – you can see every card from the start. Four free cells give you room to park cards while you sort the columns, and almost every deal can be solved. Pixuvo has more than 20 free FreeCell games to play in your browser.\n\nThe goal is to move all cards to the four foundations, in suit from Ace to King. On the table you build columns downwards in alternating colors, and you can move a card into an empty free cell or an empty column. Freecell Solitaire and Classic Freecell Solitaire play by these rules. Double Freecell and Freecell Duplex use two decks, Eight Off gives you eight free cells, and Baker's Game asks you to build in suit instead of by color. Daily Freecell brings a new deal every day, and there are seasonal versions such as Freecell Christmas and Freecell Summer Holiday.\n\nThe main tip: keep free cells empty for as long as you can, because every filled cell makes the next moves harder. Free the Aces and Twos early, and try to empty a whole column – it is worth more than a free cell. More card games are in the solitaire category.",
+   "faq": [
+    {
+     "q": "How do you play FreeCell?",
+     "a": "Move all cards to the four foundations in suit from Ace to King. On the table, build down in alternating colors and use the four free cells to park single cards."
+    },
+    {
+     "q": "Can every FreeCell game be won?",
+     "a": "Almost every deal can be solved, which is why FreeCell is loved by people who like planning. A few rare deals have no solution."
+    },
+    {
+     "q": "What is the difference between FreeCell and Klondike?",
+     "a": "In FreeCell all cards are face up from the start and there is no stock pile. In Klondike some cards are hidden and you draw from the stock."
+    },
+    {
+     "q": "Is there a daily FreeCell game?",
+     "a": "Yes, Daily Freecell gives you a new deal every day."
+    }
+   ]
+  },
+  "klondike-solitaire": {
+   "intro": "Klondike is the solitaire most people simply call Solitaire: seven columns of cards, a stock pile and four foundations to fill from Ace to King. It is the classic patience game, and this page has almost 40 free Klondike games to play in your browser, from the plain classic to themed versions.\n\nOn the table you build columns downwards in alternating colors – a red Seven on a black Eight. Hidden cards turn face up when you uncover them, and when you run out of moves you draw from the stock. Wild West Solitaire starts easy and gets harder level by level, Winter Solitaire, Halloween Klondike and Christmas Solitaire bring the season to the table, and Kings Klondike and Secret Double Klondike use two decks and eight foundations. Taj Mahal Solitaire and Freecell Klondike Solitaire mix Klondike with other patience games.\n\nA few habits help: turn over hidden cards first, move cards to the foundations when it is safe, and keep an empty column for a King. Klondike is a relaxed game for older kids, parents and grandparents alike. More patience games are in the solitaire category.",
+   "faq": [
+    {
+     "q": "How do you play Klondike Solitaire?",
+     "a": "Build the four foundations from Ace to King in suit. On the table, place cards down in alternating colors and turn over hidden cards; draw from the stock when you need new cards."
+    },
+    {
+     "q": "Is Klondike the same as Solitaire?",
+     "a": "Yes, when people say Solitaire they usually mean Klondike. Spider, FreeCell and Pyramid are other solitaire games."
+    },
+    {
+     "q": "Can only a King go into an empty column?",
+     "a": "In classic Klondike, yes – only a King, or a run that starts with a King, can be placed in an empty column."
+    },
+    {
+     "q": "Are there Klondike games with two decks?",
+     "a": "Yes, Kings Klondike and Secret Double Klondike use two decks and eight foundations."
+    }
+   ]
+  },
+  "pyramid-solitaire": {
+   "intro": "In Pyramid Solitaire the cards are laid out as a pyramid, and you take it apart two cards at a time: any two free cards that add up to 13 leave the table. A Jack counts 11, a Queen 12 and a King 13, so a King can go on its own. Pixuvo has more than 20 free pyramid solitaire games to play in your browser.\n\nA card is free when no other card covers it. If you cannot make 13 on the table, you turn a card from the stock and try to pair it. Pyramid Solitaire and Egypt Pyramid Solitaire play by the classic rules, Giza Solitaire is a harder variation and Freecell Giza Solitaire adds free cells. Ancient Wonders Solitaire, Jungle Solitaire and Totem Solitaire bring their own settings, Pyramid Klondike mixes in Klondike, and in Maya Pyramid Solitaire cards or coins add up to 11 instead of 13.\n\nThe tip that helps most: look at which cards a pair would uncover, and choose the pair that frees the most cards. It is a good little game for practising quick addition, too. More patience games are in the solitaire category.",
+   "faq": [
+    {
+     "q": "How do you play Pyramid Solitaire?",
+     "a": "Remove two free cards that add up to 13 – a Jack is 11, a Queen 12 and a King 13 on its own. Clear the whole pyramid to win."
+    },
+    {
+     "q": "Which card values are used?",
+     "a": "An Ace is 1, number cards count their number, a Jack 11, a Queen 12 and a King 13."
+    },
+    {
+     "q": "Is Pyramid Solitaire good for kids?",
+     "a": "Yes, it is easy to learn and practises adding up to 13. The cards stay simple and every move is quick."
+    },
+    {
+     "q": "Are there harder versions?",
+     "a": "Yes, Giza Solitaire is a more difficult variation, and Freecell Giza Solitaire adds free cells to plan with."
+    }
+   ]
+  },
+  "golf-solitaire": {
+   "intro": "Golf and TriPeaks are the fast solitaire games: an open card sits at the bottom, and you clear the table by playing a card that is one higher or one lower – an Eight onto a Seven or a Nine. Long chains score the most, and when you run out of moves you turn a new card from the stock. Pixuvo has more than 30 free golf and TriPeaks solitaire games to play in your browser.\n\nIn TriPeaks the cards form three peaks, and covered cards turn over when you uncover them. Tripeaks Solitaire is the classic, 3 Pyramid Tripeaks 2 and Snowy Peaks Solitaire are scrolling versions, and Tripeaks Creatures has 40 levels. Magic Castle Solitaire, Skyscraper Solitaire, Ancient Rome Solitaire, Tri-Fruit Solitaire and 3 Keys Solitaire give the same idea different worlds and layouts.\n\nThe secret is to look before you click: if two cards can be played, pick the one that opens up the next chain or uncovers a hidden card. These games are quick, colourful and easy to learn, so they suit kids and adults alike. More patience games are in the solitaire category.",
+   "faq": [
+    {
+     "q": "How do you play TriPeaks Solitaire?",
+     "a": "Play a card from the table that is one higher or one lower than the open card at the bottom. When no card fits, turn a new card from the stock. Clear all three peaks to win."
+    },
+    {
+     "q": "What is the difference between Golf and TriPeaks?",
+     "a": "Both use the one-higher-or-lower rule. Golf lays the cards out in columns, TriPeaks in three overlapping peaks."
+    },
+    {
+     "q": "Do suits matter in TriPeaks?",
+     "a": "No, only the value counts – any Seven can go on any Eight or Six."
+    },
+    {
+     "q": "Are TriPeaks games good for kids?",
+     "a": "Yes, the rule is simple and the games are quick and colourful. They also practise counting up and down."
+    }
+   ]
+  },
+  "mahjong-connect": {
+   "intro": "Mahjong Connect is the quick cousin of mahjong solitaire: the tiles lie flat on the board, and you remove two matching tiles by connecting them with a line. The line may turn no more than twice, so the path has at most three straight parts, and it cannot run through other tiles. Pixuvo has more than 40 free mahjong connect games to play in your browser.\n\nMany of them use pictures instead of classic mahjong tiles, which makes them easy for younger players. Animals Connect and Animals Connect 2 use funny animals, Zoobies Connect has the Zoobies, Connect Fish takes you to the ocean and Space Connect to outer space. Jungle Connect, African Savannah, Wallpaper Connect and Time Connect each bring their own tile set.\n\nA good way to play: clear the tiles along the edges first, because they are easiest to connect, and look for pairs that are hidden behind a single tile. If a game gives you hints or shuffles, save them for when you are really stuck. More tile games are in the mahjong category.",
+   "faq": [
+    {
+     "q": "How do you play Mahjong Connect?",
+     "a": "Find two matching tiles and connect them with a line that turns no more than twice and does not cross other tiles. Both tiles disappear. Clear the board to win."
+    },
+    {
+     "q": "What is the difference between Mahjong Connect and Mahjong Solitaire?",
+     "a": "Mahjong Solitaire stacks tiles in layers and you take free tiles from the top. In Mahjong Connect all tiles lie flat and you link pairs with a path."
+    },
+    {
+     "q": "Is Mahjong Connect good for kids?",
+     "a": "Yes, many versions use animals and other pictures, and the rule is quick to learn. It trains looking carefully and planning ahead."
+    },
+    {
+     "q": "Can I play Mahjong Connect on my phone?",
+     "a": "Yes, the games work on phones and tablets as well as on a computer – you tap the two tiles."
+    }
+   ]
   }
  }
 }

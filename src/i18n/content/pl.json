@@ -2056,6 +2056,132 @@
      "a": "Tak, są darmowe i nie potrzebujesz konta. Niektóre gry mogą wyświetlać reklamy swoich wydawców."
     }
    ]
+  },
+  "spider-solitaire": {
+   "intro": "Pasjans Pająk, czyli Spider Solitaire, to gra, w której układasz długie sekwencje kart od króla aż do asa. Gdy sekwencja jest pełna i w jednym kolorze, znika ze stołu – usuń wszystkie, a wygrywasz. To jedna z najpopularniejszych gier karcianych na świecie, a na tej stronie znajdziesz ponad 10 darmowych gier w Pająka do grania w przeglądarce.\n\nZasady są zawsze podobne: karty leżą w kolumnach, kartę kładziesz na kartę o jeden wyższą, a sekwencję w jednym kolorze możesz przenieść w całości. Kiedy utkniesz, rozdajesz z talii nowy rząd. Najprzyjaźniejszy początek to Spider Solitaire 1 suit, bo wszystkie karty są w tym samym kolorze. Zwykły Spider Solitaire jest dużo trudniejszy, a Big Spider Solitaire i Huge Spider Solitaire dokładają kolejne kolumny i więcej kart. Tarantula Solitaire, Black Widow Solitaire, Jumping Spider i Three Blind Mice to odmiany z własnymi niespodziankami, a Spider Freecell dorzuca wolne komórki.\n\nDobry nawyk to jak najszybciej opróżnić jedną kolumnę – pusta kolumna to najcenniejsze miejsce na stole. Zanim rozdasz nowe karty, przemyśl kilka ruchów do przodu i trzymaj sekwencje w jednym kolorze, kiedy tylko się da. Pająk to spokojna gra dla starszych dzieci i dorosłych; więcej gier znajdziesz w kategorii Pasjanse.",
+   "faq": [
+    {
+     "q": "Jak grać w pasjansa Pająk?",
+     "a": "Kładź karty na kartę o jeden wyższą i układaj sekwencje od króla do asa. Pełna sekwencja w jednym kolorze znika ze stołu. Usuń wszystkie karty, a wygrasz."
+    },
+    {
+     "q": "Który Pająk jest najłatwiejszy?",
+     "a": "Wersja z jednym kolorem, bo wszystkie karty są w tym samym kolorze i każdą sekwencję można przenieść. Spider Solitaire 1 suit to dobra pierwsza gra."
+    },
+    {
+     "q": "Czym różni się Pająk od Klondike?",
+     "a": "W Klondike układasz karty w górę na czterech stosach bazowych, od asa do króla. W Pająku budujesz sekwencje w dół od króla do asa bezpośrednio na stole i usuwasz je, gdy są pełne."
+    },
+    {
+     "q": "Czy mogę grać w Pająka na telefonie?",
+     "a": "Tak, te gry działają na telefonach i tabletach tak samo jak na komputerze. Karty wystarczy stuknąć albo przeciągnąć."
+    }
+   ]
+  },
+  "freecell": {
+   "intro": "FreeCell to pasjans dla tych, którzy lubią pomyśleć. Wszystkie 52 karty leżą odkryte, więc nic nie jest ukryte – każdą kartę widzisz od początku. Cztery wolne komórki dają ci miejsce na odłożenie kart, kiedy porządkujesz kolumny, a prawie każde rozdanie da się rozwiązać. Na Pixuvo znajdziesz ponad 20 darmowych gier FreeCell do grania w przeglądarce.\n\nCelem jest przeniesienie wszystkich kart na cztery stosy bazowe, w kolorach od asa do króla. Na stole układasz kolumny w dół, na przemian czerwone i czarne, a kartę możesz odłożyć do pustej wolnej komórki albo do pustej kolumny. Według tych zasad grasz we Freecell Solitaire i Classic Freecell Solitaire. Double Freecell i Freecell Duplex używają dwóch talii, Eight Off daje ci osiem wolnych komórek, a w Baker's Game układasz karty w tym samym kolorze zamiast na przemian czerwone i czarne. Daily Freecell to codziennie nowe rozdanie, są też wersje sezonowe, takie jak Freecell Christmas i Freecell Summer Holiday.\n\nNajważniejsza rada: jak najdłużej trzymaj wolne komórki puste, bo każda zajęta utrudnia kolejne ruchy. Wcześnie uwalniaj asy i dwójki i spróbuj opróżnić całą kolumnę – jest warta więcej niż wolna komórka. Więcej gier karcianych znajdziesz w kategorii Pasjanse.",
+   "faq": [
+    {
+     "q": "Jak grać w pasjansa FreeCell?",
+     "a": "Przenieś wszystkie karty na cztery stosy bazowe, w kolorach od asa do króla. Na stole układaj w dół na przemian czerwone i czarne, a cztery wolne komórki wykorzystuj do odkładania pojedynczych kart."
+    },
+    {
+     "q": "Czy każdą grę FreeCell da się wygrać?",
+     "a": "Prawie każde rozdanie da się rozwiązać i dlatego FreeCell kochają ci, którzy lubią planować. Tylko nieliczne rozdania nie mają rozwiązania."
+    },
+    {
+     "q": "Czym różni się FreeCell od Klondike?",
+     "a": "We FreeCell wszystkie karty są od początku odkryte i nie ma talii do dobierania. W Klondike część kart jest zakryta, a nowe karty dobierasz z talii."
+    },
+    {
+     "q": "Czy jest codzienna gra FreeCell?",
+     "a": "Tak, Daily Freecell daje ci nowe rozdanie każdego dnia."
+    }
+   ]
+  },
+  "klondike-solitaire": {
+   "intro": "Klondike to ten pasjans, który większość ludzi nazywa po prostu pasjansem albo Solitaire: siedem kolumn kart, talia do dobierania i cztery stosy bazowe do zapełnienia od asa do króla. To klasyczny pasjans, a na tej stronie znajdziesz prawie 40 darmowych gier Klondike do grania w przeglądarce, od zwykłej klasyki po wersje tematyczne.\n\nNa stole układasz kolumny w dół, na przemian kolorami – czerwoną siódemkę na czarną ósemkę. Zakryte karty odwracają się, gdy je odsłonisz, a kiedy skończą ci się ruchy, dobierasz z talii. Wild West Solitaire zaczyna się łagodnie i z każdym poziomem robi się trudniejszy, Winter Solitaire, Halloween Klondike i Christmas Solitaire przenoszą na stół pory roku, a Kings Klondike i Secret Double Klondike używają dwóch talii i ośmiu stosów bazowych. Taj Mahal Solitaire i Freecell Klondike Solitaire łączą Klondike z innymi pasjansami.\n\nPomaga kilka nawyków: najpierw odkrywaj zakryte karty, na stosy bazowe przenoś karty tylko wtedy, gdy to bezpieczne, i zostaw pustą kolumnę na króla. Klondike to spokojna gra dla starszych dzieci, rodziców i dziadków. Więcej gier znajdziesz w kategorii Pasjanse.",
+   "faq": [
+    {
+     "q": "Jak grać w pasjansa Klondike?",
+     "a": "Ułóż cztery stosy bazowe od asa do króla, każdy w jednym kolorze. Na stole kładź karty w dół na przemian czerwone i czarne i odkrywaj zakryte karty; gdy potrzebujesz nowych, dobieraj z talii."
+    },
+    {
+     "q": "Czy Klondike to po prostu pasjans?",
+     "a": "Tak, kiedy ktoś mówi „pasjans” albo Solitaire, zwykle ma na myśli Klondike. Pająk, FreeCell i Piramida to inne pasjanse."
+    },
+    {
+     "q": "Czy na pustą kolumnę można położyć tylko króla?",
+     "a": "W klasycznym Klondike tak – na pustą kolumnę może trafić tylko król albo sekwencja, która zaczyna się od króla."
+    },
+    {
+     "q": "Czy są gry Klondike na dwie talie?",
+     "a": "Tak, Kings Klondike i Secret Double Klondike używają dwóch talii i ośmiu stosów bazowych."
+    }
+   ]
+  },
+  "pyramid-solitaire": {
+   "intro": "W pasjansie Piramida karty ułożone są w piramidę, a ty rozbierasz ją po dwie karty naraz: każde dwie wolne karty, które dają razem 13, znikają ze stołu. Walet liczy się jako 11, dama jako 12, a król jako 13, więc król schodzi sam. Na Pixuvo znajdziesz ponad 20 darmowych gier w pasjansa Piramida do grania w przeglądarce.\n\nKarta jest wolna, gdy nie zakrywa jej żadna inna. Jeśli na stole nie da się ułożyć 13, odkrywasz kartę z talii i szukasz do niej pary. Pyramid Solitaire i Egypt Pyramid Solitaire mają klasyczne zasady, Giza Solitaire to trudniejsza odmiana, a Freecell Giza Solitaire dodaje wolne komórki. Ancient Wonders Solitaire, Jungle Solitaire i Totem Solitaire mają własne klimaty, Pyramid Klondike dorzuca elementy Klondike, a w Maya Pyramid Solitaire karty lub monety muszą dawać razem 11 zamiast 13.\n\nNajbardziej pomaga ta rada: sprawdź, które karty odsłoni dana para, i wybierz tę, która uwolni najwięcej kart. To też fajna gra do ćwiczenia szybkiego dodawania. Więcej gier znajdziesz w kategorii Pasjanse.",
+   "faq": [
+    {
+     "q": "Jak grać w pasjansa Piramida?",
+     "a": "Zdejmuj dwie wolne karty, które dają razem 13 – walet to 11, dama 12, a król 13 schodzi sam. Rozbierz całą piramidę, a wygrasz."
+    },
+    {
+     "q": "Ile są warte karty?",
+     "a": "As to 1, blotki mają wartość swojej liczby, walet 11, dama 12, a król 13."
+    },
+    {
+     "q": "Czy Piramida jest dobra dla dzieci?",
+     "a": "Tak, łatwo się jej nauczyć i ćwiczy dodawanie do 13. Karty są proste, a każdy ruch trwa chwilę."
+    },
+    {
+     "q": "Czy są trudniejsze wersje?",
+     "a": "Tak, Giza Solitaire to trudniejsza odmiana, a Freecell Giza Solitaire dodaje wolne komórki, które pomagają planować."
+    }
+   ]
+  },
+  "golf-solitaire": {
+   "intro": "Golf i TriPeaks to szybkie pasjanse: na dole leży odkryta karta, a stół czyścisz, dokładając kartę o jeden wyższą albo niższą – ósemkę na siódemkę albo dziewiątkę. Najwięcej punktów dają długie serie, a kiedy skończą ci się ruchy, odkrywasz nową kartę z talii. Na Pixuvo znajdziesz ponad 30 darmowych gier w pasjansa Golf i TriPeaks do grania w przeglądarce.\n\nW TriPeaks karty tworzą trzy szczyty, a zakryte karty odwracają się, gdy je odsłonisz. Tripeaks Solitaire to klasyka, 3 Pyramid Tripeaks 2 i Snowy Peaks Solitaire to wersje z przewijaniem, a Tripeaks Creatures ma 40 poziomów. Magic Castle Solitaire, Skyscraper Solitaire, Ancient Rome Solitaire, Tri-Fruit Solitaire i 3 Keys Solitaire przenoszą ten sam pomysł do innych światów i układów.\n\nSekret polega na tym, żeby spojrzeć, zanim klikniesz: jeśli możesz zagrać dwie karty, wybierz tę, która otworzy kolejną serię albo odsłoni zakrytą kartę. Te gry są szybkie, kolorowe i łatwe do nauczenia, więc pasują i dzieciom, i dorosłym. Więcej gier znajdziesz w kategorii Pasjanse.",
+   "faq": [
+    {
+     "q": "Jak grać w pasjansa TriPeaks?",
+     "a": "Zagraj ze stołu kartę o jeden wyższą albo niższą od odkrytej karty na dole. Gdy żadna nie pasuje, odkryj nową kartę z talii. Oczyść wszystkie trzy szczyty, a wygrasz."
+    },
+    {
+     "q": "Czym różni się Golf od TriPeaks?",
+     "a": "Oba korzystają z zasady o jeden wyżej albo niżej. W Golfie karty leżą w kolumnach, w TriPeaks w trzech zachodzących na siebie szczytach."
+    },
+    {
+     "q": "Czy w TriPeaks liczą się kolory?",
+     "a": "Nie, liczy się tylko wartość – każdą siódemkę można położyć na dowolną ósemkę albo szóstkę."
+    },
+    {
+     "q": "Czy TriPeaks jest dobry dla dzieci?",
+     "a": "Tak, zasada jest prosta, a gry są szybkie i kolorowe. Przy okazji ćwiczą liczenie w górę i w dół."
+    }
+   ]
+  },
+  "mahjong-connect": {
+   "intro": "Mahjong Connect to szybki kuzyn klasycznego pasjansa mahjong: kamienie leżą płasko na planszy, a dwa takie same usuwasz, łącząc je linią. Linia może skręcić najwyżej dwa razy, więc ścieżka ma najwyżej trzy proste odcinki, i nie może przechodzić przez inne kamienie. Na Pixuvo znajdziesz ponad 40 darmowych gier Mahjong Connect do grania w przeglądarce.\n\nWiele z nich zamiast klasycznych kamieni mahjonga ma obrazki, więc poradzą sobie z nimi także młodsi gracze. Animals Connect i Animals Connect 2 to zabawne zwierzaki, Zoobies Connect należy do Zoobies, Connect Fish zabiera cię do oceanu, a Space Connect w kosmos. Jungle Connect, African Savannah, Wallpaper Connect i Time Connect mają każdy własny zestaw kamieni.\n\nDobry sposób na grę: najpierw zbieraj kamienie z brzegów, bo najłatwiej je połączyć, i szukaj par, które zasłania tylko jeden kamień. Jeśli gra daje podpowiedzi albo tasowanie, zostaw je na moment, gdy naprawdę utkniesz. Więcej gier z kamieniami znajdziesz w kategorii Gry Mahjong.",
+   "faq": [
+    {
+     "q": "Jak grać w Mahjong Connect?",
+     "a": "Znajdź dwa takie same kamienie i połącz je linią, która skręca najwyżej dwa razy i nie przechodzi przez inne kamienie. Oba kamienie znikają. Oczyść planszę, a wygrasz."
+    },
+    {
+     "q": "Czym różni się Mahjong Connect od pasjansa mahjong?",
+     "a": "W pasjansie mahjong kamienie leżą w warstwach, a ty zdejmujesz wolne kamienie z góry. W Mahjong Connect wszystkie kamienie leżą płasko, a pary łączysz ścieżką."
+    },
+    {
+     "q": "Czy Mahjong Connect jest dobry dla dzieci?",
+     "a": "Tak, wiele wersji ma zwierzaki i inne obrazki, a zasady szybko się zapamiętuje. Gra ćwiczy uważne patrzenie i planowanie do przodu."
+    },
+    {
+     "q": "Czy mogę grać w Mahjong Connect na telefonie?",
+     "a": "Tak, gry działają na telefonach i tabletach tak samo jak na komputerze – wystarczy stuknąć dwa kamienie."
+    }
+   ]
   }
  }
 }

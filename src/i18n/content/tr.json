@@ -2056,6 +2056,132 @@
      "a": "Evet, ücretsizdir ve hesap açman gerekmez. Bazı oyunlarda yayıncılarına ait reklamlar görünebilir."
     }
    ]
+  },
+  "spider-solitaire": {
+   "intro": "Örümcek Solitaire, Papazdan Asa kadar uzun kart dizileri kurduğun sabır oyunudur. Bir dizi tamamlandığında ve tek bir takımdan oluştuğunda masadan kalkar – hepsini temizlersen kazanırsın. Dünyada en çok oynanan kart oyunlarından biridir ve bu sayfada tarayıcında oynayabileceğin 10'dan fazla ücretsiz Spider oyununu topladık.\n\nKurallar hemen hep benzerdir: kartlar sütunlara dağıtılır, bir kartı kendisinden bir büyük kartın üstüne koyarsın ve aynı takımdan bir dizi birlikte taşınabilir. Takıldığında desteden yeni bir sıra dağıtırsın. Spider Solitaire 1 suit en kolay başlangıçtır, çünkü bütün kartlar aynı takımdandır. Normal Spider Solitaire çok daha zordur; Big Spider Solitaire ve Huge Spider Solitaire ise daha fazla sütun ve daha fazla kart ekler. Tarantula Solitaire, Black Widow Solitaire, Jumping Spider ve Three Blind Mice kendine özgü kuralları olan varyantlardır, Spider Freecell ise oyuna boş hücreler katar.\n\nİyi bir alışkanlık, erkenden bir sütunu boşaltmaktır – boş bir sütun masadaki en işe yarar yerdir. Yeni kart dağıtmadan önce birkaç hamle ileriyi düşün ve elinden geldiğince dizileri tek takımda tut. Spider, büyük çocuklar ve yetişkinler için sakin bir oyundur; daha fazla sabır oyunu Solitaire Oyunları kategorisinde.",
+   "faq": [
+    {
+     "q": "Örümcek Solitaire nasıl oynanır?",
+     "a": "Kartları kendilerinden bir büyük kartın üstüne taşı ve Papazdan Asa diziler kur. Tek takımdan tamamlanan bir dizi masadan kalkar. Kazanmak için bütün kartları temizle."
+    },
+    {
+     "q": "En kolay Örümcek Solitaire hangisi?",
+     "a": "Tek takımlı sürüm, çünkü bütün kartlar aynı takımdandır ve her dizi taşınabilir. Spider Solitaire 1 suit ilk oyun için çok uygundur."
+    },
+    {
+     "q": "Spider ile Klondike arasındaki fark nedir?",
+     "a": "Klondike'ta kartları dört temel yığınına Astan Papaza doğru dizersin. Spider'da ise dizileri masanın üzerinde Papazdan Asa doğru kurarsın ve tamamlanan diziler kalkar."
+    },
+    {
+     "q": "Örümcek Solitaire'i telefonda oynayabilir miyim?",
+     "a": "Evet, bu oyunlar bilgisayarın yanı sıra telefon ve tablette de çalışır. Kartlara dokunman ya da onları sürüklemen yeterli."
+    }
+   ]
+  },
+  "freecell": {
+   "intro": "FreeCell, düşünmeyi sevenlerin solitaire oyunudur. 52 kartın hepsi açık dağıtılır, yani hiçbir şey gizli değildir – her kartı baştan görürsün. Dört boş hücre, sütunları düzenlerken kartları bir kenara koymana yer açar ve neredeyse her el çözülebilir. Pixuvo'da tarayıcında oynayabileceğin 20'den fazla ücretsiz FreeCell oyunu var.\n\nAmaç bütün kartları takımlarına göre Astan Papaza kadar dört temel yığınına taşımaktır. Masada sütunları kırmızı ve siyah sırayla azalan şekilde kurarsın; bir kartı boş bir hücreye ya da boş bir sütuna taşıyabilirsin. Freecell Solitaire ve Classic Freecell Solitaire bu kurallarla oynanır. Double Freecell ve Freecell Duplex iki deste kullanır, Eight Off sana sekiz boş hücre verir, Baker's Game ise renge göre değil takıma göre dizmeni ister. Daily Freecell her gün yeni bir el getirir; Freecell Christmas ve Freecell Summer Holiday gibi mevsimlik sürümler de var.\n\nEn önemli ipucu: boş hücreleri olabildiğince uzun süre boş tut, çünkü dolan her hücre sonraki hamleleri zorlaştırır. Asları ve İkileri erkenden kurtar ve bütün bir sütunu boşaltmaya çalış – boş bir sütun, boş bir hücreden daha değerlidir. Daha fazla kart oyunu Solitaire Oyunları kategorisinde.",
+   "faq": [
+    {
+     "q": "FreeCell nasıl oynanır?",
+     "a": "Bütün kartları takımlarına göre Astan Papaza kadar dört temel yığınına taşı. Masada kırmızı ve siyah sırayla azalan diziler kur ve tek kartları koymak için dört boş hücreyi kullan."
+    },
+    {
+     "q": "Her FreeCell oyunu kazanılabilir mi?",
+     "a": "Neredeyse her el çözülebilir, bu yüzden FreeCell plan yapmayı sevenlerin gözdesidir. Yalnızca birkaç nadir elin çözümü yoktur."
+    },
+    {
+     "q": "FreeCell ile Klondike arasındaki fark nedir?",
+     "a": "FreeCell'de bütün kartlar baştan açıktır ve kart çekilecek bir deste yoktur. Klondike'ta ise bazı kartlar kapalıdır ve desteden kart çekersin."
+    },
+    {
+     "q": "Günlük bir FreeCell oyunu var mı?",
+     "a": "Evet, Daily Freecell her gün sana yeni bir el verir."
+    }
+   ]
+  },
+  "klondike-solitaire": {
+   "intro": "Klondike, çoğu insanın kısaca Solitaire dediği oyundur: yedi sütun kart, bir deste ve Astan Papaza kadar doldurulacak dört temel yığını. Klasik sabır oyunudur ve bu sayfada, sade klasikten temalı sürümlere kadar tarayıcında oynayabileceğin 40'a yakın ücretsiz Klondike oyunu var.\n\nMasada sütunları kırmızı ve siyah sırayla azalan şekilde kurarsın – siyah bir Sekizin üstüne kırmızı bir Yedi. Kapalı kartlar açığa çıktığında çevrilir, hamlen kalmadığında da desteden kart çekersin. Wild West Solitaire kolay başlar ve her seviyede biraz daha zorlaşır; Winter Solitaire, Halloween Klondike ve Christmas Solitaire mevsimleri masaya getirir, Kings Klondike ve Secret Double Klondike ise iki deste ve sekiz temel yığını kullanır. Taj Mahal Solitaire ve Freecell Klondike Solitaire, Klondike'ı başka sabır oyunlarıyla karıştırır.\n\nBirkaç alışkanlık işini kolaylaştırır: önce kapalı kartları aç, güvenli olduğunda kartları temel yığınlarına taşı ve bir Papaz için boş bir sütun ayır. Klondike; büyük çocuklar, anne babalar ve büyükanne ile büyükbabalar için rahatlatıcı bir oyundur. Daha fazla sabır oyunu Solitaire Oyunları kategorisinde.",
+   "faq": [
+    {
+     "q": "Klondike Solitaire nasıl oynanır?",
+     "a": "Dört temel yığınını takımlarına göre Astan Papaza kadar diz. Masada kartları kırmızı ve siyah sırayla azalan şekilde yerleştir ve kapalı kartları aç; yeni karta ihtiyacın olduğunda desteden çek."
+    },
+    {
+     "q": "Klondike ile Solitaire aynı şey mi?",
+     "a": "Evet, insanlar Solitaire dediğinde genellikle Klondike'ı kastederler. Spider, FreeCell ve Piramit başka solitaire oyunlarıdır."
+    },
+    {
+     "q": "Boş bir sütuna sadece Papaz mı konabilir?",
+     "a": "Klasik Klondike'ta evet – boş bir sütuna yalnızca bir Papaz ya da Papazla başlayan bir dizi konabilir."
+    },
+    {
+     "q": "İki desteyle oynanan Klondike oyunları var mı?",
+     "a": "Evet, Kings Klondike ve Secret Double Klondike iki deste ve sekiz temel yığını kullanır."
+    }
+   ]
+  },
+  "pyramid-solitaire": {
+   "intro": "Piramit Solitaire'de kartlar piramit şeklinde dizilir ve sen onu ikişer ikişer sökersin: toplamı 13 eden herhangi iki açık kart masadan kalkar. Vale 11, Kız 12, Papaz da 13 sayılır; bu yüzden Papaz tek başına kalkabilir. Pixuvo'da tarayıcında oynayabileceğin 20'den fazla ücretsiz Piramit Solitaire oyunu var.\n\nÜstünü başka bir kart örtmeyen kart serbesttir. Masadaki kartlarla 13 yapamıyorsan desteden bir kart çevirir ve onu eşleştirmeye çalışırsın. Pyramid Solitaire ve Egypt Pyramid Solitaire klasik kurallarla oynanır, Giza Solitaire daha zor bir varyanttır, Freecell Giza Solitaire ise boş hücreler ekler. Ancient Wonders Solitaire, Jungle Solitaire ve Totem Solitaire kendi dünyalarını getirir, Pyramid Klondike oyunu Klondike ile karıştırır, Maya Pyramid Solitaire'de ise kartlar ya da paralar 13 yerine 11 etmelidir.\n\nEn çok işe yarayan ipucu: bir çiftin hangi kartları açığa çıkaracağına bak ve en çok kartı serbest bırakan çifti seç. Üstelik hızlı toplama alıştırması için de güzel bir oyundur. Daha fazla sabır oyunu Solitaire Oyunları kategorisinde.",
+   "faq": [
+    {
+     "q": "Piramit Solitaire nasıl oynanır?",
+     "a": "Toplamı 13 eden iki serbest kartı kaldır – Vale 11, Kız 12, Papaz ise 13 olduğu için tek başına kalkar. Kazanmak için bütün piramidi temizle."
+    },
+    {
+     "q": "Kartların değerleri nedir?",
+     "a": "As 1, sayılı kartlar üzerindeki sayı kadar, Vale 11, Kız 12 ve Papaz 13 sayılır."
+    },
+    {
+     "q": "Piramit Solitaire çocuklar için uygun mu?",
+     "a": "Evet, öğrenmesi kolaydır ve 13'e kadar toplama alıştırması yaptırır. Kartlar basittir ve her hamle hızlıdır."
+    },
+    {
+     "q": "Daha zor sürümler var mı?",
+     "a": "Evet, Giza Solitaire daha zor bir varyanttır, Freecell Giza Solitaire ise plan yapmak için boş hücreler ekler."
+    }
+   ]
+  },
+  "golf-solitaire": {
+   "intro": "Golf ve TriPeaks hızlı solitaire oyunlarıdır: altta açık bir kart durur ve sen masayı ondan bir büyük ya da bir küçük kart oynayarak temizlersin – bir Yedinin ya da Dokuzun üstüne bir Sekiz. Uzun zincirler en çok puanı getirir; hamlen kalmadığında desteden yeni bir kart çevirirsin. Pixuvo'da tarayıcında oynayabileceğin 30'dan fazla ücretsiz Golf ve TriPeaks solitaire oyunu var.\n\nTriPeaks'te kartlar üç tepe oluşturur ve kapalı kartlar açığa çıktığında çevrilir. Tripeaks Solitaire klasiğidir, 3 Pyramid Tripeaks 2 ve Snowy Peaks Solitaire kayan sürümlerdir, Tripeaks Creatures ise 40 seviyeden oluşur. Magic Castle Solitaire, Skyscraper Solitaire, Ancient Rome Solitaire, Tri-Fruit Solitaire ve 3 Keys Solitaire aynı fikri farklı dünyalara ve dizilişlere taşır.\n\nİşin sırrı tıklamadan önce bakmaktır: iki kart oynayabiliyorsan bir sonraki zinciri açan ya da kapalı bir kartı ortaya çıkaranı seç. Bu oyunlar hızlı, renkli ve kolay öğrenilir; bu yüzden çocuklara da yetişkinlere de uyar. Daha fazla sabır oyunu Solitaire Oyunları kategorisinde.",
+   "faq": [
+    {
+     "q": "TriPeaks Solitaire nasıl oynanır?",
+     "a": "Masadan, alttaki açık karttan bir büyük ya da bir küçük olan bir kart oyna. Uyan kart yoksa desteden yeni bir kart çevir. Kazanmak için üç tepeyi de temizle."
+    },
+    {
+     "q": "Golf ile TriPeaks arasındaki fark nedir?",
+     "a": "İkisi de bir büyük ya da bir küçük kuralını kullanır. Golf'te kartlar sütunlara, TriPeaks'te ise üst üste binen üç tepeye dizilir."
+    },
+    {
+     "q": "TriPeaks'te takımlar önemli mi?",
+     "a": "Hayır, yalnızca değer önemlidir – herhangi bir Yedi, herhangi bir Sekizin ya da Altının üstüne gidebilir."
+    },
+    {
+     "q": "TriPeaks oyunları çocuklar için uygun mu?",
+     "a": "Evet, kuralı basittir, oyunlar da hızlı ve renklidir. Ayrıca ileri ve geri saymayı da çalıştırır."
+    }
+   ]
+  },
+  "mahjong-connect": {
+   "intro": "Mahjong Connect, mahjong solitaire'in hızlı kuzenidir: taşlar tahtada düz durur ve iki aynı taşı bir çizgiyle birleştirerek kaldırırsın. Çizgi en fazla iki kez dönebilir, yani yol en fazla üç düz parçadan oluşur ve başka taşların içinden geçemez. Pixuvo'da tarayıcında oynayabileceğin 40'tan fazla ücretsiz Mahjong Connect oyunu var.\n\nBirçoğu klasik mahjong taşları yerine resimler kullanır, bu da onları küçük oyuncular için kolaylaştırır. Animals Connect ve Animals Connect 2'de komik hayvanlar var, Zoobies Connect'te Zoobies'ler, Connect Fish seni okyanusa, Space Connect ise uzaya götürür. Jungle Connect, African Savannah, Wallpaper Connect ve Time Connect'in her biri kendi taş setiyle gelir.\n\nİyi bir oyun yolu: önce kenarlardaki taşları temizle, çünkü onları birleştirmek en kolayıdır, ve tek bir taşın arkasına gizlenmiş çiftleri ara. Oyun sana ipucu ya da karıştırma hakkı veriyorsa, onları gerçekten takıldığın anlar için sakla. Daha fazla taş oyunu Mahjong Oyunları kategorisinde.",
+   "faq": [
+    {
+     "q": "Mahjong Connect nasıl oynanır?",
+     "a": "İki aynı taşı bul ve onları en fazla iki kez dönen, başka taşların üzerinden geçmeyen bir çizgiyle birleştir. İki taş da kaybolur. Kazanmak için tahtayı temizle."
+    },
+    {
+     "q": "Mahjong Connect ile mahjong solitaire arasındaki fark nedir?",
+     "a": "Mahjong solitaire'de taşlar katmanlar halinde üst üste dizilir ve üstteki serbest taşları alırsın. Mahjong Connect'te bütün taşlar düz durur ve çiftleri bir yolla birleştirirsin."
+    },
+    {
+     "q": "Mahjong Connect çocuklar için uygun mu?",
+     "a": "Evet, birçok sürümde hayvanlar ve başka resimler var, kuralı da çabucak öğrenilir. Dikkatli bakmayı ve ileriyi planlamayı geliştirir."
+    },
+    {
+     "q": "Mahjong Connect'i telefonda oynayabilir miyim?",
+     "a": "Evet, oyunlar bilgisayarın yanı sıra telefon ve tablette de çalışır – iki taşa dokunman yeterli."
+    }
+   ]
   }
  }
 }

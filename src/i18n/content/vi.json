@@ -2056,6 +2056,132 @@
      "a": "Có, game miễn phí và bạn không cần tài khoản. Một số game có thể hiện quảng cáo từ nhà phát hành."
     }
    ]
+  },
+  "spider-solitaire": {
+   "intro": "Xếp bài nhện (Spider Solitaire) là trò chơi bài một người, trong đó bạn xếp những dãy bài dài từ K xuống A. Khi một dãy đã đủ và cùng một chất, dãy đó rời khỏi bàn – dọn hết các dãy là bạn thắng. Đây là một trong những game bài được chơi nhiều nhất thế giới, và trang này tập hợp hơn 10 game xếp bài nhện miễn phí để bạn chơi ngay trên trình duyệt.\n\nLuật chơi hầu như luôn giống nhau: bài được chia thành các cột, bạn đặt một lá lên lá lớn hơn nó một bậc, và cả dãy bài cùng chất có thể di chuyển cùng lúc. Khi hết nước đi, bạn chia thêm một hàng mới từ chồng bài. Spider Solitaire 1 suit là khởi đầu dễ chịu nhất, vì mọi lá bài đều cùng một chất. Bản Spider Solitaire thông thường khó hơn nhiều, còn Big Spider Solitaire và Huge Spider Solitaire có thêm cột và thêm bài. Tarantula Solitaire, Black Widow Solitaire, Jumping Spider và Three Blind Mice là các biến thể với nét riêng, còn Spider Freecell kết hợp thêm ô trống.\n\nMột thói quen tốt là làm trống một cột thật sớm – cột trống là vị trí hữu ích nhất trên bàn. Hãy tính trước vài nước trước khi chia bài mới, và cố giữ các dãy cùng một chất khi có thể. Xếp bài nhện là trò chơi nhẹ nhàng cho trẻ lớn và người lớn; các trò xếp bài khác có trong mục Game xếp bài.",
+   "faq": [
+    {
+     "q": "Chơi xếp bài nhện như thế nào?",
+     "a": "Đặt lá bài lên lá lớn hơn một bậc và xếp các dãy từ K xuống A. Một dãy hoàn chỉnh cùng chất sẽ được dọn khỏi bàn. Dọn hết bài là bạn thắng."
+    },
+    {
+     "q": "Xếp bài nhện bản nào dễ nhất?",
+     "a": "Bản một chất, vì mọi lá bài cùng chất và dãy nào cũng di chuyển được. Spider Solitaire 1 suit là game đầu tiên rất hợp."
+    },
+    {
+     "q": "Xếp bài nhện khác Klondike ở điểm nào?",
+     "a": "Klondike xếp bài tăng dần lên bốn ô đích từ A đến K. Xếp bài nhện xếp các dãy giảm dần từ K xuống A ngay trên bàn và dọn chúng đi khi đã đủ."
+    },
+    {
+     "q": "Có chơi xếp bài nhện trên điện thoại được không?",
+     "a": "Được, các game này chạy trên điện thoại và máy tính bảng cũng như trên máy tính. Bạn chạm hoặc kéo các lá bài."
+    }
+   ]
+  },
+  "freecell": {
+   "intro": "FreeCell là trò xếp bài dành cho người thích suy nghĩ. Cả 52 lá bài đều được chia ngửa, không có gì bị giấu – bạn thấy mọi lá ngay từ đầu. Bốn ô trống cho bạn chỗ để tạm gửi bài trong lúc sắp xếp các cột, và gần như ván nào cũng giải được. Pixuvo có hơn 20 game FreeCell miễn phí để chơi trên trình duyệt.\n\nMục tiêu là đưa toàn bộ bài lên bốn ô đích, theo từng chất từ A đến K. Trên bàn, bạn xếp các cột giảm dần và xen kẽ màu, và có thể đặt một lá vào ô trống còn rỗng hoặc vào cột trống. Freecell Solitaire và Classic Freecell Solitaire chơi theo luật này. Double Freecell và Freecell Duplex dùng hai bộ bài, Eight Off cho bạn tám ô trống, còn Baker's Game yêu cầu xếp theo chất thay vì theo màu. Daily Freecell mang đến một ván mới mỗi ngày, và còn có các bản theo mùa như Freecell Christmas và Freecell Summer Holiday.\n\nMẹo quan trọng nhất: giữ các ô trống rỗng càng lâu càng tốt, vì mỗi ô bị lấp đầy sẽ khiến các nước tiếp theo khó hơn. Hãy giải phóng các lá A và lá 2 sớm, và cố làm trống cả một cột – nó còn giá trị hơn một ô trống. Các game bài khác có trong mục Game xếp bài.",
+   "faq": [
+    {
+     "q": "Chơi FreeCell như thế nào?",
+     "a": "Đưa toàn bộ bài lên bốn ô đích theo từng chất từ A đến K. Trên bàn, xếp giảm dần và xen kẽ màu, dùng bốn ô trống để tạm gửi từng lá một."
+    },
+    {
+     "q": "Ván FreeCell nào cũng thắng được sao?",
+     "a": "Gần như ván nào cũng giải được, vì thế FreeCell được những người thích lên kế hoạch yêu thích. Chỉ một vài ván hiếm hoi là không có lời giải."
+    },
+    {
+     "q": "FreeCell khác Klondike ở điểm nào?",
+     "a": "Trong FreeCell, mọi lá bài đều ngửa ngay từ đầu và không có chồng bài rút. Trong Klondike, một số lá bị úp và bạn rút thêm bài từ chồng bài."
+    },
+    {
+     "q": "Có FreeCell hằng ngày không?",
+     "a": "Có, Daily Freecell cho bạn một ván mới mỗi ngày."
+    }
+   ]
+  },
+  "klondike-solitaire": {
+   "intro": "Klondike là trò xếp bài mà hầu hết mọi người gọi đơn giản là Solitaire: bảy cột bài, một chồng bài rút và bốn ô đích cần xếp từ A đến K. Đây là trò xếp bài cổ điển, và trang này có gần 40 game Klondike miễn phí để chơi trên trình duyệt, từ bản cổ điển đơn giản đến các bản theo chủ đề.\n\nTrên bàn, bạn xếp các cột giảm dần và xen kẽ màu – lá 7 đỏ lên lá 8 đen. Lá bài úp sẽ được lật lên khi bạn mở ra, và khi hết nước đi thì rút từ chồng bài. Wild West Solitaire bắt đầu dễ rồi khó dần qua từng màn, Winter Solitaire, Halloween Klondike và Christmas Solitaire mang không khí các mùa lên bàn bài, còn Kings Klondike và Secret Double Klondike dùng hai bộ bài và tám ô đích. Taj Mahal Solitaire và Freecell Klondike Solitaire pha trộn Klondike với các trò xếp bài khác.\n\nVài thói quen sẽ giúp bạn: lật các lá úp trước, đưa bài lên ô đích khi an toàn, và giữ một cột trống cho lá K. Klondike là trò chơi thư thái cho trẻ lớn, bố mẹ lẫn ông bà. Các trò xếp bài khác có trong mục Game xếp bài.",
+   "faq": [
+    {
+     "q": "Chơi xếp bài Klondike như thế nào?",
+     "a": "Xếp bốn ô đích theo từng chất từ A đến K. Trên bàn, đặt bài giảm dần và xen kẽ màu, lật các lá úp; khi cần bài mới thì rút từ chồng bài."
+    },
+    {
+     "q": "Klondike có phải là Solitaire không?",
+     "a": "Đúng vậy, khi nói Solitaire người ta thường ám chỉ Klondike. Xếp bài nhện, FreeCell và kim tự tháp là những trò xếp bài khác."
+    },
+    {
+     "q": "Có phải chỉ lá K mới được đặt vào cột trống?",
+     "a": "Trong Klondike cổ điển thì đúng – chỉ lá K, hoặc một dãy bắt đầu bằng K, mới được đặt vào cột trống."
+    },
+    {
+     "q": "Có game Klondike dùng hai bộ bài không?",
+     "a": "Có, Kings Klondike và Secret Double Klondike dùng hai bộ bài và tám ô đích."
+    }
+   ]
+  },
+  "pyramid-solitaire": {
+   "intro": "Trong xếp bài kim tự tháp (Pyramid Solitaire), các lá bài được bày thành hình kim tự tháp, và bạn dỡ nó ra từng cặp hai lá: hai lá tự do bất kỳ có tổng bằng 13 sẽ rời khỏi bàn. Lá J tính 11, Q tính 12 và K tính 13, nên lá K có thể tự đi một mình. Pixuvo có hơn 20 game xếp bài kim tự tháp miễn phí để chơi trên trình duyệt.\n\nMột lá bài là tự do khi không bị lá nào khác đè lên. Nếu trên bàn không ghép được tổng 13, hãy lật một lá từ chồng bài và thử ghép với nó. Pyramid Solitaire và Egypt Pyramid Solitaire chơi theo luật cổ điển, Giza Solitaire là biến thể khó hơn, còn Freecell Giza Solitaire có thêm ô trống. Ancient Wonders Solitaire, Jungle Solitaire và Totem Solitaire mang bối cảnh riêng, Pyramid Klondike pha trộn với Klondike, và trong Maya Pyramid Solitaire các lá bài hoặc đồng xu phải cộng lại bằng 11 thay vì 13.\n\nMẹo hữu ích nhất: xem mỗi cặp sẽ mở ra những lá nào, rồi chọn cặp giải phóng được nhiều lá nhất. Đây cũng là một trò nhỏ rất hay để luyện cộng nhẩm nhanh. Các trò xếp bài khác có trong mục Game xếp bài.",
+   "faq": [
+    {
+     "q": "Chơi xếp bài kim tự tháp như thế nào?",
+     "a": "Bỏ hai lá tự do có tổng bằng 13 – J là 11, Q là 12, còn K là 13 và tự đi một mình. Dọn hết kim tự tháp là bạn thắng."
+    },
+    {
+     "q": "Mỗi lá bài có giá trị bao nhiêu?",
+     "a": "A là 1, các lá số tính đúng số của nó, J là 11, Q là 12 và K là 13."
+    },
+    {
+     "q": "Xếp bài kim tự tháp có hợp với trẻ em không?",
+     "a": "Có, trò này dễ học và giúp luyện phép cộng đến 13. Các lá bài đơn giản và mỗi nước đi đều nhanh."
+    },
+    {
+     "q": "Có phiên bản khó hơn không?",
+     "a": "Có, Giza Solitaire là biến thể khó hơn, và Freecell Giza Solitaire có thêm ô trống để bạn tính toán."
+    }
+   ]
+  },
+  "golf-solitaire": {
+   "intro": "Golf và TriPeaks là những trò xếp bài nhanh: có một lá bài ngửa ở phía dưới, và bạn dọn bàn bằng cách đánh lá lớn hơn hoặc nhỏ hơn nó một bậc – lá 8 lên lá 7 hoặc lá 9. Chuỗi càng dài điểm càng cao, và khi hết nước đi bạn lật một lá mới từ chồng bài. Pixuvo có hơn 30 game xếp bài Golf và TriPeaks miễn phí để chơi trên trình duyệt.\n\nTrong TriPeaks, các lá bài tạo thành ba đỉnh, và lá bị úp sẽ lật lên khi bạn mở ra. Tripeaks Solitaire là bản cổ điển, 3 Pyramid Tripeaks 2 và Snowy Peaks Solitaire là các bản cuộn màn hình, còn Tripeaks Creatures có 40 màn. Magic Castle Solitaire, Skyscraper Solitaire, Ancient Rome Solitaire, Tri-Fruit Solitaire và 3 Keys Solitaire mang cùng ý tưởng đến những thế giới và cách bày bài khác nhau.\n\nBí quyết là nhìn kỹ trước khi bấm: nếu có hai lá đánh được, hãy chọn lá mở ra chuỗi tiếp theo hoặc lật được một lá đang úp. Những game này nhanh, nhiều màu sắc và dễ học, nên hợp với cả trẻ em lẫn người lớn. Các trò xếp bài khác có trong mục Game xếp bài.",
+   "faq": [
+    {
+     "q": "Chơi xếp bài TriPeaks như thế nào?",
+     "a": "Đánh một lá trên bàn lớn hơn hoặc nhỏ hơn một bậc so với lá ngửa ở dưới. Khi không lá nào hợp, lật một lá mới từ chồng bài. Dọn sạch cả ba đỉnh là bạn thắng."
+    },
+    {
+     "q": "Golf và TriPeaks khác nhau thế nào?",
+     "a": "Cả hai đều dùng luật lớn hơn hoặc nhỏ hơn một bậc. Golf bày bài thành các cột, còn TriPeaks thành ba đỉnh chồng lên nhau."
+    },
+    {
+     "q": "Chất bài có quan trọng trong TriPeaks không?",
+     "a": "Không, chỉ giá trị lá bài là quan trọng – lá 7 nào cũng đặt được lên lá 8 hoặc lá 6 bất kỳ."
+    },
+    {
+     "q": "Game TriPeaks có hợp với trẻ em không?",
+     "a": "Có, luật chơi đơn giản, game nhanh và nhiều màu sắc. Trò này còn giúp luyện đếm xuôi và đếm ngược."
+    }
+   ]
+  },
+  "mahjong-connect": {
+   "intro": "Mahjong Connect (game nối thú, nối hình) là người anh em nhanh nhẹn của mạt chược xếp hình: các ô nằm phẳng trên bàn, và bạn loại bỏ hai ô giống nhau bằng cách nối chúng bằng một đường. Đường nối được rẽ tối đa hai lần, tức là có nhiều nhất ba đoạn thẳng, và không được đi xuyên qua ô khác. Pixuvo có hơn 40 game Mahjong Connect miễn phí để chơi trên trình duyệt.\n\nNhiều game dùng hình ảnh thay cho quân mạt chược truyền thống, nên rất dễ với các bạn nhỏ. Animals Connect và Animals Connect 2 có những chú thú ngộ nghĩnh, Zoobies Connect có các bạn Zoobies, Connect Fish đưa bạn xuống đại dương còn Space Connect đưa bạn ra ngoài vũ trụ. Jungle Connect, African Savannah, Wallpaper Connect và Time Connect mỗi game có một bộ ô riêng.\n\nCách chơi hay: dọn các ô ở rìa trước vì chúng dễ nối nhất, và tìm những cặp đang nấp sau một ô duy nhất. Nếu game có gợi ý hoặc xáo trộn, hãy để dành cho lúc thật sự bí. Các game xếp ô khác có trong mục Game mạt chược.",
+   "faq": [
+    {
+     "q": "Chơi Mahjong Connect như thế nào?",
+     "a": "Tìm hai ô giống nhau và nối chúng bằng một đường rẽ không quá hai lần và không cắt qua ô khác. Cả hai ô sẽ biến mất. Dọn sạch bàn là bạn thắng."
+    },
+    {
+     "q": "Mahjong Connect khác Mahjong Solitaire ở điểm nào?",
+     "a": "Mahjong Solitaire xếp các ô chồng thành nhiều lớp và bạn lấy những ô tự do ở trên cùng. Trong Mahjong Connect mọi ô đều nằm phẳng và bạn nối các cặp bằng một đường đi."
+    },
+    {
+     "q": "Mahjong Connect có hợp với trẻ em không?",
+     "a": "Có, nhiều bản dùng hình con vật và hình ảnh khác, luật chơi lại dễ hiểu. Trò này rèn khả năng quan sát kỹ và tính trước."
+    },
+    {
+     "q": "Có chơi Mahjong Connect trên điện thoại được không?",
+     "a": "Được, các game chạy trên điện thoại và máy tính bảng cũng như trên máy tính – bạn chỉ cần chạm vào hai ô."
+    }
+   ]
   }
  }
 }

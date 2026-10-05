@@ -2056,6 +2056,132 @@
      "a": "Sim, são grátis e você não precisa de conta. Alguns jogos podem mostrar anúncios das próprias editoras."
     }
    ]
+  },
+  "spider-solitaire": {
+   "intro": "A Paciência Spider é o jogo de cartas em que você monta longas sequências do Rei até o Ás. Quando uma sequência fica completa e é toda do mesmo naipe, ela sai da mesa – tire todas e você vence. É um dos jogos de cartas mais jogados do mundo, e esta página reúne mais de 10 jogos de Spider grátis para jogar no navegador.\n\nAs regras são quase sempre parecidas: as cartas são distribuídas em colunas, você coloca uma carta sobre outra que vale um ponto a mais, e uma sequência do mesmo naipe pode ser movida inteira. Quando empacar, distribua uma nova fileira do monte. Spider Solitaire 1 suit é o começo mais tranquilo, porque todas as cartas são do mesmo naipe. O Spider Solitaire comum é bem mais difícil, e Big Spider Solitaire e Huge Spider Solitaire trazem mais colunas e mais cartas. Tarantula Solitaire, Black Widow Solitaire, Jumping Spider e Three Blind Mice são variações com seus próprios truques, e Spider Freecell mistura células livres no jogo.\n\nUm bom hábito é esvaziar uma coluna logo cedo – uma coluna vazia é o lugar mais útil da mesa. Pense alguns lances à frente antes de distribuir novas cartas e, sempre que der, mantenha as sequências em um só naipe. O Spider é um jogo calmo para crianças maiores e adultos; mais jogos de paciência estão na categoria de jogos de paciência.",
+   "faq": [
+    {
+     "q": "Como se joga Paciência Spider?",
+     "a": "Coloque cada carta sobre outra que vale um ponto a mais e monte sequências do Rei ao Ás. Uma sequência completa do mesmo naipe sai da mesa. Tire todas as cartas para vencer."
+    },
+    {
+     "q": "Qual é a Paciência Spider mais fácil?",
+     "a": "A versão de um naipe, porque todas as cartas são do mesmo naipe e qualquer sequência pode ser movida. Spider Solitaire 1 suit é um ótimo primeiro jogo."
+    },
+    {
+     "q": "Qual é a diferença entre Spider e Klondike?",
+     "a": "No Klondike você sobe as cartas em quatro fundações, do Ás ao Rei. No Spider você desce sequências do Rei ao Ás na própria mesa, e elas saem quando ficam completas."
+    },
+    {
+     "q": "Dá para jogar Paciência Spider no celular?",
+     "a": "Sim, estes jogos funcionam no celular e no tablet, além do computador. É só tocar ou arrastar as cartas."
+    }
+   ]
+  },
+  "freecell": {
+   "intro": "FreeCell é a paciência para quem gosta de pensar. As 52 cartas são distribuídas viradas para cima, então nada fica escondido – você vê todas as cartas desde o início. Quatro células livres dão espaço para guardar cartas enquanto você organiza as colunas, e quase todas as partidas têm solução. A Pixuvo tem mais de 20 jogos de FreeCell grátis para jogar no navegador.\n\nO objetivo é levar todas as cartas para as quatro fundações, por naipe, do Ás ao Rei. Na mesa você monta as colunas em ordem decrescente, alternando as cores, e pode mover uma carta para uma célula livre vazia ou para uma coluna vazia. Freecell Solitaire e Classic Freecell Solitaire seguem essas regras. Double Freecell e Freecell Duplex usam dois baralhos, Eight Off dá oito células livres e Baker's Game pede que você monte por naipe em vez de por cor. Daily Freecell traz uma partida nova todo dia, e há versões temáticas como Freecell Christmas e Freecell Summer Holiday.\n\nA dica principal: deixe as células livres vazias pelo máximo de tempo possível, porque cada célula ocupada deixa os próximos lances mais difíceis. Libere os Ases e os Dois logo cedo e tente esvaziar uma coluna inteira – ela vale mais do que uma célula livre. Mais jogos de cartas estão na categoria de jogos de paciência.",
+   "faq": [
+    {
+     "q": "Como se joga FreeCell?",
+     "a": "Leve todas as cartas para as quatro fundações, por naipe, do Ás ao Rei. Na mesa, monte em ordem decrescente alternando as cores e use as quatro células livres para guardar cartas soltas."
+    },
+    {
+     "q": "Dá para vencer todas as partidas de FreeCell?",
+     "a": "Quase todas as partidas têm solução, e é por isso que o FreeCell é tão querido por quem gosta de planejar. Algumas poucas partidas raras não têm solução."
+    },
+    {
+     "q": "Qual é a diferença entre FreeCell e Klondike?",
+     "a": "No FreeCell todas as cartas ficam viradas para cima desde o início e não há monte. No Klondike algumas cartas ficam escondidas e você compra do monte."
+    },
+    {
+     "q": "Existe um FreeCell diário?",
+     "a": "Sim, o Daily Freecell traz uma partida nova todo dia."
+    }
+   ]
+  },
+  "klondike-solitaire": {
+   "intro": "Klondike é a paciência que a maioria das pessoas chama simplesmente de Paciência: sete colunas de cartas, um monte e quatro fundações para completar do Ás ao Rei. É o jogo de paciência clássico, e esta página tem quase 40 jogos de Klondike grátis para jogar no navegador, do clássico de sempre a versões temáticas.\n\nNa mesa você monta as colunas em ordem decrescente, alternando as cores – um Sete vermelho sobre um Oito preto. As cartas escondidas são viradas quando você as descobre, e quando os lances acabam você compra do monte. Wild West Solitaire começa fácil e fica mais difícil a cada fase; Winter Solitaire, Halloween Klondike e Christmas Solitaire levam cada época do ano para a mesa, e Kings Klondike e Secret Double Klondike usam dois baralhos e oito fundações. Taj Mahal Solitaire e Freecell Klondike Solitaire misturam o Klondike com outras paciências.\n\nAlguns hábitos ajudam: vire primeiro as cartas escondidas, mande cartas para as fundações quando for seguro e guarde uma coluna vazia para um Rei. Klondike é um jogo tranquilo para crianças maiores, pais e avós. Mais jogos de paciência estão na categoria de jogos de paciência.",
+   "faq": [
+    {
+     "q": "Como se joga Paciência Klondike?",
+     "a": "Monte as quatro fundações do Ás ao Rei, cada uma de um naipe. Na mesa, coloque as cartas em ordem decrescente alternando as cores e vire as cartas escondidas; compre do monte quando precisar de cartas novas."
+    },
+    {
+     "q": "Klondike é a mesma coisa que Paciência?",
+     "a": "Sim, quando as pessoas falam em Paciência, geralmente estão falando do Klondike. Spider, FreeCell e Pirâmide são outros tipos de paciência."
+    },
+    {
+     "q": "Só um Rei pode ir para uma coluna vazia?",
+     "a": "No Klondike clássico, sim – só um Rei, ou uma sequência que começa com um Rei, pode ir para uma coluna vazia."
+    },
+    {
+     "q": "Existem jogos de Klondike com dois baralhos?",
+     "a": "Sim, Kings Klondike e Secret Double Klondike usam dois baralhos e oito fundações."
+    }
+   ]
+  },
+  "pyramid-solitaire": {
+   "intro": "Na Paciência Pirâmide as cartas ficam dispostas em forma de pirâmide, e você a desmonta de duas em duas: quaisquer duas cartas livres que somam 13 saem da mesa. O Valete vale 11, a Dama 12 e o Rei 13, então o Rei pode sair sozinho. A Pixuvo tem mais de 20 jogos de Paciência Pirâmide grátis para jogar no navegador.\n\nUma carta está livre quando nenhuma outra carta a cobre. Se não der para fazer 13 com as cartas da mesa, você vira uma carta do monte e tenta formar um par com ela. Pyramid Solitaire e Egypt Pyramid Solitaire seguem as regras clássicas, Giza Solitaire é uma variação mais difícil e Freecell Giza Solitaire acrescenta células livres. Ancient Wonders Solitaire, Jungle Solitaire e Totem Solitaire têm seus próprios cenários, Pyramid Klondike mistura com o Klondike, e em Maya Pyramid Solitaire as cartas ou moedas somam 11 em vez de 13.\n\nA dica que mais ajuda: observe quais cartas cada par vai descobrir e escolha o par que libera mais cartas. De quebra, é um ótimo joguinho para treinar contas rápidas de somar. Mais jogos de paciência estão na categoria de jogos de paciência.",
+   "faq": [
+    {
+     "q": "Como se joga Paciência Pirâmide?",
+     "a": "Tire duas cartas livres que somam 13 – o Valete vale 11, a Dama 12 e o Rei 13 sozinho. Limpe a pirâmide inteira para vencer."
+    },
+    {
+     "q": "Quanto vale cada carta?",
+     "a": "O Ás vale 1, as cartas numeradas valem o seu número, o Valete 11, a Dama 12 e o Rei 13."
+    },
+    {
+     "q": "A Paciência Pirâmide é boa para crianças?",
+     "a": "Sim, é fácil de aprender e treina somas até 13. As cartas são simples e cada lance é rápido."
+    },
+    {
+     "q": "Existem versões mais difíceis?",
+     "a": "Sim, Giza Solitaire é uma variação mais difícil, e Freecell Giza Solitaire acrescenta células livres para planejar."
+    }
+   ]
+  },
+  "golf-solitaire": {
+   "intro": "Golf e TriPeaks são as paciências rápidas: há uma carta aberta embaixo, e você limpa a mesa jogando uma carta um ponto acima ou abaixo – um Oito sobre um Sete ou um Nove. Sequências longas valem mais pontos, e quando os lances acabam você vira uma carta nova do monte. A Pixuvo tem mais de 30 jogos de Paciência Golf e TriPeaks grátis para jogar no navegador.\n\nNo TriPeaks as cartas formam três picos, e as cartas cobertas são viradas quando você as descobre. Tripeaks Solitaire é o clássico, 3 Pyramid Tripeaks 2 e Snowy Peaks Solitaire são versões com rolagem, e Tripeaks Creatures tem 40 fases. Magic Castle Solitaire, Skyscraper Solitaire, Ancient Rome Solitaire, Tri-Fruit Solitaire e 3 Keys Solitaire levam a mesma ideia para outros mundos e outras disposições.\n\nO segredo é olhar antes de clicar: se duas cartas puderem ser jogadas, escolha a que abre a próxima sequência ou descobre uma carta escondida. Esses jogos são rápidos, coloridos e fáceis de aprender, então combinam com crianças e adultos. Mais jogos de paciência estão na categoria de jogos de paciência.",
+   "faq": [
+    {
+     "q": "Como se joga Paciência TriPeaks?",
+     "a": "Jogue uma carta da mesa que seja um ponto acima ou abaixo da carta aberta embaixo. Quando nenhuma servir, vire uma carta nova do monte. Limpe os três picos para vencer."
+    },
+    {
+     "q": "Qual é a diferença entre Golf e TriPeaks?",
+     "a": "Os dois usam a regra de um ponto acima ou abaixo. O Golf dispõe as cartas em colunas, e o TriPeaks em três picos sobrepostos."
+    },
+    {
+     "q": "O naipe importa no TriPeaks?",
+     "a": "Não, só o valor conta – qualquer Sete pode ir sobre qualquer Oito ou Seis."
+    },
+    {
+     "q": "Os jogos de TriPeaks são bons para crianças?",
+     "a": "Sim, a regra é simples e os jogos são rápidos e coloridos. Eles também treinam contar para frente e para trás."
+    }
+   ]
+  },
+  "mahjong-connect": {
+   "intro": "Mahjong Connect é o primo rápido do mahjong paciência: as peças ficam deitadas no tabuleiro, e você tira duas peças iguais ligando-as com uma linha. A linha pode fazer no máximo duas curvas, então o caminho tem até três trechos retos, e não pode passar por outras peças. A Pixuvo tem mais de 40 jogos de Mahjong Connect grátis para jogar no navegador.\n\nMuitos deles usam figuras em vez das peças clássicas de mahjong, o que facilita para os jogadores mais novos. Animals Connect e Animals Connect 2 têm bichos engraçados, Zoobies Connect traz os Zoobies, Connect Fish leva você para o oceano e Space Connect para o espaço. Jungle Connect, African Savannah, Wallpaper Connect e Time Connect têm cada um o seu próprio conjunto de peças.\n\nUm bom jeito de jogar: tire primeiro as peças das bordas, porque são as mais fáceis de ligar, e procure pares escondidos atrás de uma única peça. Se o jogo oferecer dicas ou embaralhamentos, guarde para quando você empacar de verdade. Mais jogos de peças estão na categoria de jogos de mahjong.",
+   "faq": [
+    {
+     "q": "Como se joga Mahjong Connect?",
+     "a": "Encontre duas peças iguais e ligue-as com uma linha que faz no máximo duas curvas e não passa por outras peças. As duas peças somem. Limpe o tabuleiro para vencer."
+    },
+    {
+     "q": "Qual é a diferença entre Mahjong Connect e mahjong paciência?",
+     "a": "No mahjong paciência as peças ficam empilhadas em camadas e você tira as peças livres de cima. No Mahjong Connect todas as peças ficam deitadas e você liga os pares com um caminho."
+    },
+    {
+     "q": "Mahjong Connect é bom para crianças?",
+     "a": "Sim, muitas versões usam bichos e outras figuras, e a regra se aprende rapidinho. O jogo treina a atenção e o planejamento."
+    },
+    {
+     "q": "Dá para jogar Mahjong Connect no celular?",
+     "a": "Sim, os jogos funcionam no celular e no tablet, além do computador – é só tocar nas duas peças."
+    }
+   ]
   }
  }
 }

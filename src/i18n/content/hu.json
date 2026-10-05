@@ -2056,6 +2056,132 @@
      "a": "Igen, ingyenesek, és fiók sem kell hozzájuk. Egyes játékokban a kiadóik hirdetései jelenhetnek meg."
     }
    ]
+  },
+  "spider-solitaire": {
+   "intro": "A pók pasziánsz, angolul Spider Solitaire, az a kártyajáték, amelyben hosszú sorokat raksz királytól egészen ászig. Ha egy sor teljes és egyszínű, lekerül az asztalról – ha mindet eltünteted, nyertél. Ez a világ egyik legnépszerűbb kártyajátéka, és ezen az oldalon több mint 10 ingyenes pók pasziánszot találsz, amelyekkel a böngésződben játszhatsz.\n\nA szabályok mindig hasonlók: a lapok oszlopokba vannak osztva, egy lapot az eggyel nagyobbra tehetsz, és az azonos színű sor egyben is mozgatható. Ha elakadsz, a pakliból új sort osztasz. A legbarátságosabb kezdés a Spider Solitaire 1 suit, mert itt minden lap ugyanolyan színű. A sima Spider Solitaire sokkal nehezebb, a Big Spider Solitaire és a Huge Spider Solitaire pedig még több oszlopot és lapot hoz. A Tarantula Solitaire, a Black Widow Solitaire, a Jumping Spider és a Three Blind Mice saját csavarral rendelkező változatok, a Spider Freecell pedig szabad cellákat is ad a játékhoz.\n\nJó szokás minél előbb kiüríteni egy oszlopot – az üres oszlop a legértékesebb hely az asztalon. Mielőtt új lapokat osztasz, gondolj előre néhány lépést, és amikor csak lehet, tartsd egyszínűen a sorokat. A pók pasziánsz nyugodt játék nagyobb gyerekeknek és felnőtteknek; további játékokat a Pasziánszjátékok kategóriában találsz.",
+   "faq": [
+    {
+     "q": "Hogyan kell játszani a pók pasziánszt?",
+     "a": "Tedd a lapokat az eggyel nagyobb lapra, és rakj sorokat királytól ászig. A teljes, egyszínű sor lekerül az asztalról. Ha minden lapot eltüntetsz, nyertél."
+    },
+    {
+     "q": "Melyik a legkönnyebb pók pasziánsz?",
+     "a": "Az egyszínű változat, mert minden lap ugyanolyan színű, és bármelyik sor mozgatható. A Spider Solitaire 1 suit jó első játék."
+    },
+    {
+     "q": "Mi a különbség a pók és a Klondike között?",
+     "a": "A Klondike-ban a lapokat felfelé rakod négy célkupacra, ásztól királyig. A pók pasziánszban magán az asztalon építesz lefelé sorokat királytól ászig, és a teljes sorok lekerülnek."
+    },
+    {
+     "q": "Játszhatok pók pasziánszt a telefonomon?",
+     "a": "Igen, a játékok telefonon és tableten ugyanúgy működnek, mint számítógépen. A lapokat elég megérinteni vagy áthúzni."
+    }
+   ]
+  },
+  "freecell": {
+   "intro": "A FreeCell azoknak való pasziánsz, akik szeretnek gondolkodni. Mind az 52 lap képpel felfelé van kiosztva, így semmi sincs elrejtve – minden lapot látsz az elejétől. A négy szabad cella helyet ad, ahová lapokat tehetsz félre, amíg rendezed az oszlopokat, és szinte minden leosztás megoldható. A Pixuvón több mint 20 ingyenes FreeCell játék vár a böngésződben.\n\nA cél az, hogy minden lapot a négy célkupacra juttass, színenként ásztól királyig. Az asztalon lefelé építed az oszlopokat, váltakozva piros és fekete lapokkal, és egy lapot üres szabad cellába vagy üres oszlopba is tehetsz. A Freecell Solitaire és a Classic Freecell Solitaire ezekkel a szabályokkal megy. A Double Freecell és a Freecell Duplex két paklival játszható, az Eight Off nyolc szabad cellát ad, a Baker's Game-ben pedig színre színt kell rakni a piros–fekete váltakozás helyett. A Daily Freecell minden nap új leosztást hoz, és vannak szezonális változatok is, például a Freecell Christmas és a Freecell Summer Holiday.\n\nA legfontosabb tipp: a szabad cellákat tartsd üresen, ameddig csak lehet, mert minden foglalt cella megnehezíti a következő lépéseket. Az ászokat és a ketteseket korán szabadítsd ki, és próbálj kiüríteni egy egész oszlopot – többet ér egy szabad cellánál. További kártyajátékokat a Pasziánszjátékok kategóriában találsz.",
+   "faq": [
+    {
+     "q": "Hogyan kell játszani a FreeCellt?",
+     "a": "Juttasd az összes lapot a négy célkupacra, színenként ásztól királyig. Az asztalon lefelé építs, váltakozva piros és fekete lapokkal, a négy szabad cellát pedig egy-egy lap félretételére használd."
+    },
+    {
+     "q": "Minden FreeCell játszma megnyerhető?",
+     "a": "Szinte minden leosztás megoldható, ezért szeretik annyira a FreeCellt azok, akik szeretnek tervezni. Néhány ritka leosztásnak nincs megoldása."
+    },
+    {
+     "q": "Mi a különbség a FreeCell és a Klondike között?",
+     "a": "A FreeCellben az elejétől minden lap képpel felfelé van, és nincs húzópakli. A Klondike-ban egyes lapok rejtve vannak, és a pakliból húzol."
+    },
+    {
+     "q": "Van napi FreeCell játék?",
+     "a": "Igen, a Daily Freecell minden nap új leosztást ad."
+    }
+   ]
+  },
+  "klondike-solitaire": {
+   "intro": "A Klondike az a pasziánsz, amelyet a legtöbben egyszerűen csak pasziánsznak hívnak: hét oszlop lap, egy húzópakli és négy célkupac, amelyet ásztól királyig töltesz fel. Ez a klasszikus pasziánsz, és ezen az oldalon közel 40 ingyenes Klondike játékot találsz a böngésződben, a sima klasszikustól a tematikus változatokig.\n\nAz asztalon lefelé építed az oszlopokat, váltakozó színekkel – piros hetest fekete nyolcasra. A rejtett lapok felfordulnak, amikor szabaddá teszed őket, és ha elfogynak a lépéseid, a pakliból húzol. A Wild West Solitaire könnyen indul, és szintről szintre nehezebb, a Winter Solitaire, a Halloween Klondike és a Christmas Solitaire az évszakokat hozza az asztalra, a Kings Klondike és a Secret Double Klondike pedig két paklival és nyolc célkupaccal megy. A Taj Mahal Solitaire és a Freecell Klondike Solitaire más pasziánszokkal keveri a Klondike-ot.\n\nNéhány szokás sokat segít: először a rejtett lapokat fordítsd fel, a célkupacokra csak akkor tegyél lapot, ha biztonságos, és tarts meg egy üres oszlopot a királynak. A Klondike nyugodt játék nagyobb gyerekeknek, szülőknek és nagyszülőknek egyaránt. További játékokat a Pasziánszjátékok kategóriában találsz.",
+   "faq": [
+    {
+     "q": "Hogyan kell játszani a Klondike pasziánszt?",
+     "a": "Építsd fel a négy célkupacot színenként ásztól királyig. Az asztalon lefelé rakd a lapokat, váltakozva piros és fekete színnel, és fordítsd fel a rejtett lapokat; ha új lap kell, húzz a pakliból."
+    },
+    {
+     "q": "A Klondike ugyanaz, mint a pasziánsz?",
+     "a": "Igen, amikor valaki pasziánszt mond, általában a Klondike-ra gondol. A pók, a FreeCell és a piramis más pasziánszjátékok."
+    },
+    {
+     "q": "Üres oszlopba csak király kerülhet?",
+     "a": "A klasszikus Klondike-ban igen – üres oszlopba csak király, vagy királlyal kezdődő sor tehető."
+    },
+    {
+     "q": "Van kétpaklis Klondike?",
+     "a": "Igen, a Kings Klondike és a Secret Double Klondike két paklival és nyolc célkupaccal játszható."
+    }
+   ]
+  },
+  "pyramid-solitaire": {
+   "intro": "A piramis pasziánszban a lapok piramis alakban fekszenek, és te kettesével bontod le: bármely két szabad lap, amelyek összege 13, lekerül az asztalról. A bubi 11-et ér, a dáma 12-t, a király 13-at, így a király egyedül is mehet. A Pixuvón több mint 20 ingyenes piramis pasziánsz vár a böngésződben.\n\nEgy lap akkor szabad, ha egyetlen másik lap sem takarja. Ha az asztalon nem jön ki a 13, felfordítasz egy lapot a pakliból, és ahhoz keresel párt. A Pyramid Solitaire és az Egypt Pyramid Solitaire a klasszikus szabályokkal megy, a Giza Solitaire nehezebb változat, a Freecell Giza Solitaire pedig szabad cellákat ad hozzá. Az Ancient Wonders Solitaire, a Jungle Solitaire és a Totem Solitaire saját világot hoz, a Pyramid Klondike Klondike-ot kever bele, a Maya Pyramid Solitaire-ben pedig a lapoknak vagy érméknek 13 helyett 11-et kell kiadniuk.\n\nA legtöbbet ez a tipp segít: nézd meg, mely lapokat szabadítana fel egy pár, és azt válaszd, amelyik a legtöbb lapot teszi szabaddá. Ráadásul jó kis játék a gyors fejszámolás gyakorlására. További játékokat a Pasziánszjátékok kategóriában találsz.",
+   "faq": [
+    {
+     "q": "Hogyan kell játszani a piramis pasziánszt?",
+     "a": "Vegyél le két szabad lapot, amelyek összege 13 – a bubi 11, a dáma 12, a király 13, és egyedül is lemehet. Ha az egész piramist lebontod, nyertél."
+    },
+    {
+     "q": "Mennyit érnek a lapok?",
+     "a": "Az ász 1, a számos lapok a számuknak megfelelő értéket érik, a bubi 11, a dáma 12, a király 13."
+    },
+    {
+     "q": "Jó a piramis pasziánsz gyerekeknek?",
+     "a": "Igen, könnyű megtanulni, és gyakoroltatja az összeadást 13-ig. A lapok egyszerűek, és minden lépés gyors."
+    },
+    {
+     "q": "Vannak nehezebb változatok?",
+     "a": "Igen, a Giza Solitaire nehezebb változat, a Freecell Giza Solitaire pedig szabad cellákat ad, amelyekkel tervezhetsz."
+    }
+   ]
+  },
+  "golf-solitaire": {
+   "intro": "A golf és a TriPeaks a gyors pasziánszok: alul egy nyitott lap fekszik, és úgy takarítod le az asztalt, hogy eggyel nagyobb vagy kisebb lapot teszel rá – nyolcast hetesre vagy kilencesre. A hosszú sorozatok érik a legtöbb pontot, és ha elfogynak a lépéseid, új lapot fordítasz a pakliból. A Pixuvón több mint 30 ingyenes golf és TriPeaks pasziánsz vár a böngésződben.\n\nA TriPeaksben a lapok három csúcsot alkotnak, a takart lapok pedig felfordulnak, amikor szabaddá teszed őket. A Tripeaks Solitaire a klasszikus, a 3 Pyramid Tripeaks 2 és a Snowy Peaks Solitaire görgetős változatok, a Tripeaks Creatures pedig 40 pályát kínál. A Magic Castle Solitaire, a Skyscraper Solitaire, az Ancient Rome Solitaire, a Tri-Fruit Solitaire és a 3 Keys Solitaire ugyanazt az ötletet más világokba és elrendezésekbe viszi.\n\nA titok: nézz körül, mielőtt kattintasz. Ha két lapot is letehetsz, azt válaszd, amelyik a következő sorozatot nyitja meg, vagy egy rejtett lapot fordít fel. Ezek a játékok gyorsak, színesek és könnyen megtanulhatók, így gyerekeknek és felnőtteknek egyaránt valók. További játékokat a Pasziánszjátékok kategóriában találsz.",
+   "faq": [
+    {
+     "q": "Hogyan kell játszani a TriPeaks pasziánszt?",
+     "a": "Tegyél le az asztalról egy lapot, amely eggyel nagyobb vagy kisebb az alul nyitott lapnál. Ha egyik sem illik, fordíts fel új lapot a pakliból. Ha mindhárom csúcsot letakarítod, nyertél."
+    },
+    {
+     "q": "Mi a különbség a golf és a TriPeaks között?",
+     "a": "Mindkettő az eggyel nagyobb vagy kisebb szabályra épül. A golfban a lapok oszlopokban fekszenek, a TriPeaksben három egymást átfedő csúcsban."
+    },
+    {
+     "q": "Számít a szín a TriPeaksben?",
+     "a": "Nem, csak az érték számít – bármelyik hetes mehet bármelyik nyolcasra vagy hatosra."
+    },
+    {
+     "q": "Jók a TriPeaks játékok gyerekeknek?",
+     "a": "Igen, a szabály egyszerű, a játékok pedig gyorsak és színesek. Közben a felfelé és lefelé számolást is gyakoroltatják."
+    }
+   ]
+  },
+  "mahjong-connect": {
+   "intro": "A Mahjong Connect a mahjong pasziánsz gyors unokatestvére: a kockák laposan fekszenek a táblán, és két egyformát úgy tüntetsz el, hogy egy vonallal összekötöd őket. A vonal legfeljebb kétszer fordulhat, így az út legfeljebb három egyenes szakaszból áll, és nem mehet át más kockákon. A Pixuvón több mint 40 ingyenes Mahjong Connect játék vár a böngésződben.\n\nSok közülük a klasszikus mahjongkockák helyett képeket használ, így a kisebbek is könnyen boldogulnak velük. Az Animals Connect és az Animals Connect 2 vicces állatokkal játszik, a Zoobies Connectben a Zoobies figurái szerepelnek, a Connect Fish az óceánba, a Space Connect pedig a világűrbe visz. A Jungle Connect, az African Savannah, a Wallpaper Connect és a Time Connect mind saját kockakészletet hoz.\n\nJó módszer: először a szélső kockákat szedd le, mert azokat a legkönnyebb összekötni, és keress olyan párokat, amelyeket csak egyetlen kocka takar el. Ha a játék súgót vagy keverést ad, tartsd meg arra az esetre, amikor tényleg elakadsz. További kockás játékokat a Mahjong játékok kategóriában találsz.",
+   "faq": [
+    {
+     "q": "Hogyan kell játszani a Mahjong Connectet?",
+     "a": "Keress két egyforma kockát, és kösd össze őket egy olyan vonallal, amely legfeljebb kétszer fordul, és nem megy át más kockákon. Mindkét kocka eltűnik. Ha letakarítod a táblát, nyertél."
+    },
+    {
+     "q": "Mi a különbség a Mahjong Connect és a mahjong pasziánsz között?",
+     "a": "A mahjong pasziánszban a kockák rétegekben vannak egymásra rakva, és a szabad kockákat felülről veszed le. A Mahjong Connectben minden kocka laposan fekszik, a párokat pedig egy úttal kötöd össze."
+    },
+    {
+     "q": "Jó a Mahjong Connect gyerekeknek?",
+     "a": "Igen, sok változat állatokat és más képeket használ, a szabály pedig gyorsan megtanulható. Fejleszti a figyelmes nézelődést és az előre tervezést."
+    },
+    {
+     "q": "Játszhatok Mahjong Connectet a telefonomon?",
+     "a": "Igen, a játékok telefonon és tableten ugyanúgy működnek, mint számítógépen – csak meg kell érintened a két kockát."
+    }
+   ]
   }
  }
 }

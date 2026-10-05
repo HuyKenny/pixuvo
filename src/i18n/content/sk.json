@@ -2056,6 +2056,132 @@
      "a": "Áno, sú zadarmo a nepotrebuješ účet. Niektoré hry môžu zobrazovať reklamy od svojich vydavateľov."
     }
    ]
+  },
+  "spider-solitaire": {
+   "intro": "Pavúk, po anglicky Spider Solitaire, je pasians, v ktorom skladáš dlhé postupky kariet od kráľa až po eso. Keď je postupka celá a v jednej farbe, zmizne zo stola – a keď odstrániš všetky, vyhrávaš. Patrí medzi najhrávanejšie kartové hry na svete a na tejto stránke nájdeš viac než 10 hier Pavúk zadarmo priamo v prehliadači.\n\nPravidlá sú vždy podobné: karty sú rozdané do stĺpcov, kartu prikladáš na kartu o jedna vyššiu a postupka v jednej farbe sa dá presunúť celá naraz. Keď sa zasekneš, rozdáš z balíčka nový rad. Najpríjemnejší začiatok je Spider Solitaire 1 suit, pretože všetky karty majú rovnakú farbu. Obyčajný Spider Solitaire je oveľa ťažší a Big Spider Solitaire a Huge Spider Solitaire pridávajú ďalšie stĺpce a viac kariet. Tarantula Solitaire, Black Widow Solitaire, Jumping Spider a Three Blind Mice sú varianty s vlastnými zvláštnosťami a Spider Freecell k tomu pridáva voľné bunky.\n\nDobrý zvyk je čo najskôr vyprázdniť jeden stĺpec – prázdny stĺpec je najcennejšie miesto na stole. Skôr ako rozdáš nové karty, premysli si pár ťahov dopredu a postupky drž v jednej farbe, kedykoľvek sa dá. Pavúk je pokojná hra pre staršie deti aj dospelých; ďalšie hry nájdeš v kategórii Pasiansy.",
+   "faq": [
+    {
+     "q": "Ako sa hrá Pavúk solitaire?",
+     "a": "Prikladaj karty na kartu o jedna vyššiu a skladaj postupky od kráľa po eso. Celá postupka v jednej farbe zo stola zmizne. Keď odstrániš všetky karty, vyhrávaš."
+    },
+    {
+     "q": "Ktorý Pavúk je najľahší?",
+     "a": "Verzia s jednou farbou, pretože všetky karty majú rovnakú farbu a presunúť sa dá každá postupka. Spider Solitaire 1 suit je dobrá prvá hra."
+    },
+    {
+     "q": "Aký je rozdiel medzi Pavúkom a Klondike?",
+     "a": "V Klondike skladáš karty nahor na štyri cieľové kôpky od esa po kráľa. V Pavúkovi staviaš postupky nadol od kráľa po eso priamo na stole a celé sa odstraňujú."
+    },
+    {
+     "q": "Môžem hrať Pavúka na mobile?",
+     "a": "Áno, hry fungujú na mobile a tablete rovnako ako na počítači. Karty stačí ťuknúť alebo potiahnuť."
+    }
+   ]
+  },
+  "freecell": {
+   "intro": "FreeCell je pasians pre tých, ktorí radi rozmýšľajú. Všetkých 52 kariet je rozdaných lícom nahor, takže nič nie je skryté – každú kartu vidíš od začiatku. Štyri voľné bunky ti dávajú miesto, kam karty odložiť, kým triediš stĺpce, a takmer každá hra sa dá vyriešiť. Na Pixuve je viac než 20 hier FreeCell zadarmo, ktoré hráš v prehliadači.\n\nCieľom je presunúť všetky karty na štyri cieľové kôpky, podľa farieb od esa po kráľa. Na stole skladáš stĺpce nadol a striedaš červenú s čiernou; kartu môžeš dať do prázdnej voľnej bunky alebo do prázdneho stĺpca. Podľa týchto pravidiel sa hrá Freecell Solitaire a Classic Freecell Solitaire. Double Freecell a Freecell Duplex používajú dva balíčky, Eight Off ti dá osem voľných buniek a v Baker's Game sa skladá podľa farby karty namiesto striedania červenej a čiernej. Daily Freecell prináša každý deň nové rozdanie a sú tu aj sezónne verzie ako Freecell Christmas a Freecell Summer Holiday.\n\nHlavná rada: nechaj voľné bunky prázdne čo najdlhšie, pretože každá obsadená bunka sťažuje ďalšie ťahy. Uvoľni čoskoro esá a dvojky a skús vyprázdniť celý stĺpec – má väčšiu cenu ako voľná bunka. Ďalšie kartové hry nájdeš v kategórii Pasiansy.",
+   "faq": [
+    {
+     "q": "Ako sa hrá FreeCell?",
+     "a": "Presuň všetky karty na štyri cieľové kôpky podľa farieb od esa po kráľa. Na stole skladaj nadol so striedaním červenej a čiernej a štyri voľné bunky používaj na odloženie jednotlivých kariet."
+    },
+    {
+     "q": "Dá sa každá hra FreeCell vyhrať?",
+     "a": "Takmer každé rozdanie sa dá vyriešiť, a preto FreeCell milujú ľudia, ktorí radi plánujú. Zopár vzácnych rozdaní riešenie nemá."
+    },
+    {
+     "q": "Aký je rozdiel medzi FreeCell a Klondike?",
+     "a": "Vo FreeCell sú všetky karty od začiatku lícom nahor a nie je tu žiadny balíček na doberanie. V Klondike sú niektoré karty skryté a doberáš si z balíčka."
+    },
+    {
+     "q": "Existuje denná hra FreeCell?",
+     "a": "Áno, Daily Freecell ti každý deň ponúkne nové rozdanie."
+    }
+   ]
+  },
+  "klondike-solitaire": {
+   "intro": "Klondike je ten pasians, ktorému väčšina ľudí hovorí jednoducho solitaire alebo solitér: sedem stĺpcov kariet, balíček na doberanie a štyri cieľové kôpky, ktoré plníš od esa po kráľa. Je to klasický pasians a na tejto stránke nájdeš takmer 40 hier Klondike zadarmo v prehliadači, od obyčajnej klasiky po tematické verzie.\n\nNa stole skladáš stĺpce nadol a striedaš farby – červenú sedmičku na čiernu osmičku. Skryté karty sa otočia lícom nahor, keď ich odkryješ, a keď ti dôjdu ťahy, doberieš si z balíčka. Wild West Solitaire začína zľahka a s každou úrovňou pritvrdzuje, Winter Solitaire, Halloween Klondike a Christmas Solitaire prinesú na stôl ročné obdobia a Kings Klondike a Secret Double Klondike sa hrajú s dvoma balíčkami a ôsmimi cieľovými kôpkami. Taj Mahal Solitaire a Freecell Klondike Solitaire miešajú Klondike s inými pasiansmi.\n\nPomôže pár návykov: najprv otáčaj skryté karty, na cieľové kôpky presúvaj karty, len keď je to bezpečné, a nechaj si prázdny stĺpec pre kráľa. Klondike je pohodová hra pre staršie deti, rodičov aj starých rodičov. Ďalšie hry nájdeš v kategórii Pasiansy.",
+   "faq": [
+    {
+     "q": "Ako sa hrá Klondike solitaire?",
+     "a": "Poskladaj štyri cieľové kôpky od esa po kráľa podľa farieb. Na stole prikladaj karty nadol so striedaním červenej a čiernej a otáčaj skryté karty; keď potrebuješ nové karty, dober si z balíčka."
+    },
+    {
+     "q": "Je Klondike to isté ako solitaire?",
+     "a": "Áno, keď ľudia povedia solitaire alebo solitér, väčšinou myslia Klondike. Pavúk, FreeCell a Pyramída sú iné pasiansy."
+    },
+    {
+     "q": "Môže na prázdny stĺpec len kráľ?",
+     "a": "V klasickom Klondike áno – na prázdny stĺpec smie len kráľ alebo postupka, ktorá začína kráľom."
+    },
+    {
+     "q": "Sú hry Klondike s dvoma balíčkami?",
+     "a": "Áno, Kings Klondike a Secret Double Klondike sa hrajú s dvoma balíčkami a ôsmimi cieľovými kôpkami."
+    }
+   ]
+  },
+  "pyramid-solitaire": {
+   "intro": "V pasianse Pyramída sú karty vyskladané do pyramídy a ty ju rozoberáš vždy po dvoch kartách: akékoľvek dve voľné karty, ktoré dajú spolu 13, zmiznú zo stola. Dolník (J) má hodnotu 11, dáma 12 a kráľ 13, takže kráľ odchádza sám. Na Pixuve je viac než 20 hier Pyramída solitaire zadarmo v prehliadači.\n\nKarta je voľná, keď ju nezakrýva žiadna iná. Keď na stole súčet 13 neurobíš, otočíš kartu z balíčka a skúsiš k nej nájsť dvojicu. Pyramid Solitaire a Egypt Pyramid Solitaire sa hrajú podľa klasických pravidiel, Giza Solitaire je ťažší variant a Freecell Giza Solitaire pridáva voľné bunky. Ancient Wonders Solitaire, Jungle Solitaire a Totem Solitaire majú vlastné prostredie, Pyramid Klondike primiešava Klondike a v Maya Pyramid Solitaire musia karty alebo mince dať spolu 11 namiesto 13.\n\nNajviac pomáha táto rada: pozri sa, ktoré karty by dvojica odkryla, a vyber tú, ktorá uvoľní najviac kariet. Je to aj šikovná hra na precvičenie rýchleho sčítania. Ďalšie hry nájdeš v kategórii Pasiansy.",
+   "faq": [
+    {
+     "q": "Ako sa hrá Pyramída solitaire?",
+     "a": "Odoberaj dve voľné karty so súčtom 13 – dolník je 11, dáma 12 a kráľ 13 odchádza sám. Keď rozoberieš celú pyramídu, vyhrávaš."
+    },
+    {
+     "q": "Aké hodnoty majú karty?",
+     "a": "Eso je 1, karty s číslami majú svoju hodnotu, dolník 11, dáma 12 a kráľ 13."
+    },
+    {
+     "q": "Hodí sa Pyramída pre deti?",
+     "a": "Áno, ľahko sa ju naučíš a precvičuje sčítanie do 13. Karty sú jednoduché a každý ťah je rýchly."
+    },
+    {
+     "q": "Sú aj ťažšie verzie?",
+     "a": "Áno, Giza Solitaire je náročnejší variant a Freecell Giza Solitaire pridáva voľné bunky, s ktorými môžeš plánovať."
+    }
+   ]
+  },
+  "golf-solitaire": {
+   "intro": "Golf a TriPeaks sú rýchle pasiansy: dole leží otvorená karta a stôl čistíš tak, že na ňu prikladáš kartu o jedna vyššiu alebo nižšiu – osmičku na sedmičku alebo deviatku. Najviac bodov dávajú dlhé rady a keď ti dôjdu ťahy, otočíš z balíčka novú kartu. Na Pixuve je viac než 30 hier Golf a TriPeaks solitaire zadarmo v prehliadači.\n\nV TriPeaks tvoria karty tri vrcholy a zakryté karty sa otočia, len čo ich odkryješ. Tripeaks Solitaire je klasika, 3 Pyramid Tripeaks 2 a Snowy Peaks Solitaire sú verzie s posúvaním a Tripeaks Creatures má 40 úrovní. Magic Castle Solitaire, Skyscraper Solitaire, Ancient Rome Solitaire, Tri-Fruit Solitaire a 3 Keys Solitaire dávajú rovnakému nápadu iné svety a rozloženia.\n\nTajomstvo je pozerať sa, skôr než klikneš: keď môžeš zahrať dve karty, vyber tú, ktorá otvorí ďalší rad alebo odkryje skrytú kartu. Tieto hry sú rýchle, farebné a ľahko sa ich naučíš, takže sa hodia deťom aj dospelým. Ďalšie hry nájdeš v kategórii Pasiansy.",
+   "faq": [
+    {
+     "q": "Ako sa hrá TriPeaks solitaire?",
+     "a": "Zahraj zo stola kartu, ktorá je o jedna vyššia alebo nižšia ako otvorená karta dole. Keď žiadna nepasuje, otoč z balíčka novú kartu. Keď vyčistíš všetky tri vrcholy, vyhrávaš."
+    },
+    {
+     "q": "Aký je rozdiel medzi Golfom a TriPeaks?",
+     "a": "Oba používajú pravidlo o jedna vyššia alebo nižšia. Golf má karty rozložené do stĺpcov, TriPeaks do troch prekrývajúcich sa vrcholov."
+    },
+    {
+     "q": "Záleží v TriPeaks na farbách?",
+     "a": "Nie, počíta sa len hodnota – akákoľvek sedmička ide na akúkoľvek osmičku alebo šestku."
+    },
+    {
+     "q": "Hodí sa TriPeaks pre deti?",
+     "a": "Áno, pravidlo je jednoduché a hry sú rýchle a farebné. Navyše precvičujú počítanie nahor aj nadol."
+    }
+   ]
+  },
+  "mahjong-connect": {
+   "intro": "Mahjong Connect je rýchly bratranec klasického mahjongu: kocky ležia naplocho na hracej ploche a dve rovnaké odstrániš tak, že ich spojíš čiarou. Čiara sa smie zalomiť najviac dvakrát, takže cesta má najviac tri rovné úseky, a nesmie viesť cez iné kocky. Na Pixuve je viac než 40 hier Mahjong Connect zadarmo v prehliadači.\n\nVeľa z nich používa namiesto klasických mahjongových kociek obrázky, takže ich zvládnu aj menší hráči. Animals Connect a Animals Connect 2 majú zábavné zvieratká, Zoobies Connect patrí Zoobies, Connect Fish ťa vezme do oceánu a Space Connect do vesmíru. Jungle Connect, African Savannah, Wallpaper Connect a Time Connect majú každý vlastnú sadu kociek.\n\nDobrý postup: najprv zbieraj kocky na okrajoch, pretože tie sa spájajú najľahšie, a hľadaj dvojice, ktoré zakrýva jediná kocka. Ak hra ponúka nápovede alebo zamiešanie, šetri si ich na chvíľu, keď sa naozaj zasekneš. Ďalšie hry s kockami nájdeš v kategórii Mahjong hry.",
+   "faq": [
+    {
+     "q": "Ako sa hrá Mahjong Connect?",
+     "a": "Nájdi dve rovnaké kocky a spoj ich čiarou, ktorá sa zalomí najviac dvakrát a nevedie cez iné kocky. Obe kocky zmiznú. Keď vyčistíš celú plochu, vyhrávaš."
+    },
+    {
+     "q": "Aký je rozdiel medzi Mahjong Connect a Mahjong solitaire?",
+     "a": "V Mahjong solitaire sú kocky naukladané vo vrstvách a berieš voľné kocky zhora. V Mahjong Connect ležia všetky kocky naplocho a dvojice spájaš cestou."
+    },
+    {
+     "q": "Hodí sa Mahjong Connect pre deti?",
+     "a": "Áno, veľa verzií má zvieratká a iné obrázky a pravidlo sa rýchlo naučí. Trénuje pozorné sledovanie a plánovanie dopredu."
+    },
+    {
+     "q": "Môžem hrať Mahjong Connect na mobile?",
+     "a": "Áno, hry fungujú na mobile a tablete rovnako ako na počítači – stačí ťuknúť na dve kocky."
+    }
+   ]
   }
  }
 }

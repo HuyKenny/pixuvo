@@ -2056,6 +2056,132 @@
      "a": "Ya, gratis, dan kamu tidak perlu akun. Beberapa game mungkin menampilkan iklan dari penerbitnya."
     }
    ]
+  },
+  "spider-solitaire": {
+   "intro": "Spider Solitaire adalah permainan kartu solitaire di mana kamu menyusun deret kartu panjang dari King turun sampai As. Kalau satu deret sudah lengkap dan jenisnya sama, deret itu keluar dari meja – singkirkan semuanya dan kamu menang. Ini salah satu game kartu yang paling banyak dimainkan di dunia, dan di halaman ini ada lebih dari 10 game Spider gratis yang bisa dimainkan langsung di browser.\n\nAturannya hampir selalu mirip: kartu dibagi ke beberapa kolom, kamu memindahkan kartu ke kartu yang satu angka lebih tinggi, dan deret kartu dengan jenis yang sama bisa dipindah sekaligus. Kalau buntu, bagikan baris baru dari tumpukan. Spider Solitaire 1 suit adalah awal yang paling ramah, karena semua kartunya berjenis sama. Spider Solitaire biasa jauh lebih sulit, sedangkan Big Spider Solitaire dan Huge Spider Solitaire menambah kolom dan kartu. Tarantula Solitaire, Black Widow Solitaire, Jumping Spider, dan Three Blind Mice adalah varian dengan keunikan masing-masing, dan Spider Freecell menambahkan sel bebas.\n\nKebiasaan yang bagus: kosongkan satu kolom sejak awal – kolom kosong adalah tempat paling berguna di meja. Pikirkan beberapa langkah ke depan sebelum membagi kartu baru, dan usahakan deret tetap satu jenis. Spider adalah game santai untuk anak yang lebih besar dan orang dewasa; game kartu sabar lainnya ada di kategori Game Solitaire.",
+   "faq": [
+    {
+     "q": "Bagaimana cara main Spider Solitaire?",
+     "a": "Pindahkan kartu ke kartu yang satu angka lebih tinggi dan susun deret dari King sampai As. Deret lengkap dengan jenis yang sama akan disingkirkan. Bersihkan semua kartu untuk menang."
+    },
+    {
+     "q": "Spider Solitaire mana yang paling mudah?",
+     "a": "Versi satu jenis kartu, karena semua kartunya sama jenisnya dan setiap deret bisa dipindah. Spider Solitaire 1 suit cocok untuk game pertama."
+    },
+    {
+     "q": "Apa bedanya Spider dan Klondike?",
+     "a": "Di Klondike, kartu disusun naik di empat fondasi dari As sampai King. Di Spider, deret disusun turun dari King sampai As langsung di meja, lalu disingkirkan saat sudah lengkap."
+    },
+    {
+     "q": "Apakah Spider Solitaire bisa dimainkan di HP?",
+     "a": "Bisa, game-game ini jalan di HP dan tablet sama baiknya dengan di komputer. Kamu tinggal ketuk atau seret kartunya."
+    }
+   ]
+  },
+  "freecell": {
+   "intro": "FreeCell adalah solitaire untuk kamu yang suka berpikir. Semua 52 kartu dibagi dalam keadaan terbuka, jadi tidak ada yang tersembunyi – kamu bisa melihat setiap kartu sejak awal. Empat sel bebas memberi tempat untuk menaruh kartu sementara kamu merapikan kolom, dan hampir setiap susunan bisa diselesaikan. Pixuvo punya lebih dari 20 game FreeCell gratis yang bisa dimainkan di browser.\n\nTujuannya memindahkan semua kartu ke empat fondasi, per jenis dari As sampai King. Di meja, kolom disusun turun dengan warna berselang-seling, dan kamu bisa menaruh kartu di sel bebas yang kosong atau di kolom kosong. Freecell Solitaire dan Classic Freecell Solitaire memakai aturan ini. Double Freecell dan Freecell Duplex memakai dua dek, Eight Off memberi delapan sel bebas, dan Baker's Game memintamu menyusun berdasarkan jenis, bukan warna. Daily Freecell menghadirkan susunan baru setiap hari, dan ada juga versi musiman seperti Freecell Christmas dan Freecell Summer Holiday.\n\nTips utamanya: biarkan sel bebas kosong selama mungkin, karena setiap sel yang terisi membuat langkah berikutnya makin sulit. Bebaskan As dan kartu Dua lebih awal, dan coba kosongkan satu kolom penuh – nilainya lebih besar daripada satu sel bebas. Game kartu lainnya ada di kategori Game Solitaire.",
+   "faq": [
+    {
+     "q": "Bagaimana cara main FreeCell?",
+     "a": "Pindahkan semua kartu ke empat fondasi per jenis dari As sampai King. Di meja, susun turun dengan warna berselang-seling dan pakai empat sel bebas untuk menaruh kartu satu per satu."
+    },
+    {
+     "q": "Apakah setiap game FreeCell bisa dimenangkan?",
+     "a": "Hampir setiap susunan bisa diselesaikan, makanya FreeCell disukai orang yang senang merencanakan. Hanya sedikit susunan langka yang tidak punya solusi."
+    },
+    {
+     "q": "Apa bedanya FreeCell dan Klondike?",
+     "a": "Di FreeCell semua kartu terbuka sejak awal dan tidak ada tumpukan cadangan. Di Klondike sebagian kartu tertutup dan kamu mengambil kartu dari tumpukan."
+    },
+    {
+     "q": "Apakah ada FreeCell harian?",
+     "a": "Ada, Daily Freecell memberimu susunan baru setiap hari."
+    }
+   ]
+  },
+  "klondike-solitaire": {
+   "intro": "Klondike adalah solitaire yang biasanya disebut orang \"Solitaire\" saja: tujuh kolom kartu, satu tumpukan cadangan, dan empat fondasi yang diisi dari As sampai King. Inilah solitaire klasik, dan di halaman ini ada hampir 40 game Klondike gratis untuk dimainkan di browser, dari versi klasik biasa sampai versi bertema.\n\nDi meja, kolom disusun turun dengan warna berselang-seling – Tujuh merah di atas Delapan hitam. Kartu tertutup terbuka saat kamu membukanya, dan kalau sudah tidak ada langkah, ambil kartu dari tumpukan. Wild West Solitaire dimulai dengan mudah lalu makin sulit tiap level, Winter Solitaire, Halloween Klondike, dan Christmas Solitaire membawa suasana musim ke meja, sedangkan Kings Klondike dan Secret Double Klondike memakai dua dek dan delapan fondasi. Taj Mahal Solitaire dan Freecell Klondike Solitaire memadukan Klondike dengan game solitaire lain.\n\nBeberapa kebiasaan ini membantu: buka kartu tertutup lebih dulu, pindahkan kartu ke fondasi kalau sudah aman, dan sisakan kolom kosong untuk King. Klondike adalah game santai untuk anak yang lebih besar, orang tua, sampai kakek dan nenek. Game kartu sabar lainnya ada di kategori Game Solitaire.",
+   "faq": [
+    {
+     "q": "Bagaimana cara main Solitaire Klondike?",
+     "a": "Susun empat fondasi per jenis dari As sampai King. Di meja, taruh kartu turun dengan warna berselang-seling dan buka kartu yang tertutup; ambil dari tumpukan kalau butuh kartu baru."
+    },
+    {
+     "q": "Apakah Klondike sama dengan Solitaire?",
+     "a": "Ya, kalau orang bilang Solitaire biasanya yang dimaksud Klondike. Spider, FreeCell, dan Pyramid adalah game solitaire lain."
+    },
+    {
+     "q": "Apakah hanya King yang boleh masuk kolom kosong?",
+     "a": "Di Klondike klasik, ya – hanya King, atau deret yang diawali King, yang boleh ditaruh di kolom kosong."
+    },
+    {
+     "q": "Apakah ada Klondike dengan dua dek?",
+     "a": "Ada, Kings Klondike dan Secret Double Klondike memakai dua dek dan delapan fondasi."
+    }
+   ]
+  },
+  "pyramid-solitaire": {
+   "intro": "Di Pyramid Solitaire, kartu disusun berbentuk piramida, dan kamu membongkarnya dua kartu sekaligus: dua kartu bebas yang jumlahnya 13 keluar dari meja. Jack bernilai 11, Queen 12, dan King 13, jadi King bisa keluar sendiri. Pixuvo punya lebih dari 20 game solitaire piramida gratis yang bisa dimainkan di browser.\n\nSebuah kartu bebas kalau tidak tertutup kartu lain. Kalau tidak ada pasangan berjumlah 13 di meja, buka kartu dari tumpukan dan coba pasangkan. Pyramid Solitaire dan Egypt Pyramid Solitaire memakai aturan klasik, Giza Solitaire adalah variasi yang lebih sulit, dan Freecell Giza Solitaire menambahkan sel bebas. Ancient Wonders Solitaire, Jungle Solitaire, dan Totem Solitaire punya latar masing-masing, Pyramid Klondike memadukannya dengan Klondike, dan di Maya Pyramid Solitaire kartu atau koin harus berjumlah 11, bukan 13.\n\nTips yang paling membantu: lihat kartu mana yang akan terbuka oleh sebuah pasangan, lalu pilih pasangan yang membebaskan kartu paling banyak. Game kecil ini juga bagus untuk latihan berhitung cepat. Game kartu sabar lainnya ada di kategori Game Solitaire.",
+   "faq": [
+    {
+     "q": "Bagaimana cara main Pyramid Solitaire?",
+     "a": "Singkirkan dua kartu bebas yang jumlahnya 13 – Jack bernilai 11, Queen 12, dan King 13 bisa keluar sendiri. Bersihkan seluruh piramida untuk menang."
+    },
+    {
+     "q": "Berapa nilai setiap kartu?",
+     "a": "As bernilai 1, kartu angka sesuai angkanya, Jack 11, Queen 12, dan King 13."
+    },
+    {
+     "q": "Apakah Pyramid Solitaire cocok untuk anak?",
+     "a": "Cocok, aturannya mudah dipelajari dan melatih penjumlahan sampai 13. Kartunya sederhana dan setiap langkah berlangsung cepat."
+    },
+    {
+     "q": "Apakah ada versi yang lebih sulit?",
+     "a": "Ada, Giza Solitaire adalah variasi yang lebih sulit, dan Freecell Giza Solitaire menambahkan sel bebas untuk menyusun strategi."
+    }
+   ]
+  },
+  "golf-solitaire": {
+   "intro": "Golf dan TriPeaks adalah game solitaire yang serba cepat: ada satu kartu terbuka di bawah, dan kamu membersihkan meja dengan memainkan kartu yang satu angka lebih tinggi atau lebih rendah – Delapan di atas Tujuh atau Sembilan. Rantai panjang memberi skor paling tinggi, dan kalau sudah tidak ada langkah, buka kartu baru dari tumpukan. Pixuvo punya lebih dari 30 game solitaire golf dan TriPeaks gratis yang bisa dimainkan di browser.\n\nDi TriPeaks, kartu membentuk tiga puncak, dan kartu yang tertutup akan terbuka saat kamu membukanya. Tripeaks Solitaire adalah versi klasik, 3 Pyramid Tripeaks 2 dan Snowy Peaks Solitaire adalah versi yang bergulir, dan Tripeaks Creatures punya 40 level. Magic Castle Solitaire, Skyscraper Solitaire, Ancient Rome Solitaire, Tri-Fruit Solitaire, dan 3 Keys Solitaire memberi ide yang sama dengan dunia dan susunan yang berbeda.\n\nRahasianya: lihat dulu sebelum klik. Kalau ada dua kartu yang bisa dimainkan, pilih yang membuka rantai berikutnya atau membuka kartu tersembunyi. Game ini cepat, penuh warna, dan mudah dipelajari, jadi cocok untuk anak-anak maupun orang dewasa. Game kartu sabar lainnya ada di kategori Game Solitaire.",
+   "faq": [
+    {
+     "q": "Bagaimana cara main TriPeaks Solitaire?",
+     "a": "Mainkan kartu dari meja yang satu angka lebih tinggi atau lebih rendah dari kartu terbuka di bawah. Kalau tidak ada yang cocok, buka kartu baru dari tumpukan. Bersihkan ketiga puncak untuk menang."
+    },
+    {
+     "q": "Apa bedanya Golf dan TriPeaks?",
+     "a": "Keduanya memakai aturan satu angka lebih tinggi atau lebih rendah. Golf menyusun kartu dalam kolom, TriPeaks dalam tiga puncak yang saling menumpuk."
+    },
+    {
+     "q": "Apakah jenis kartu berpengaruh di TriPeaks?",
+     "a": "Tidak, yang dihitung hanya nilainya – Tujuh apa saja bisa ditaruh di atas Delapan atau Enam apa saja."
+    },
+    {
+     "q": "Apakah game TriPeaks cocok untuk anak?",
+     "a": "Cocok, aturannya sederhana dan game-nya cepat serta penuh warna. Sekalian juga melatih berhitung maju dan mundur."
+    }
+   ]
+  },
+  "mahjong-connect": {
+   "intro": "Mahjong Connect adalah saudara cepat dari mahjong solitaire: ubin-ubinnya tersusun datar di papan, dan kamu menyingkirkan dua ubin yang sama dengan menghubungkannya lewat sebuah garis. Garis itu boleh berbelok paling banyak dua kali, jadi jalurnya maksimal terdiri dari tiga bagian lurus, dan tidak boleh melewati ubin lain. Pixuvo punya lebih dari 40 game mahjong connect gratis yang bisa dimainkan di browser.\n\nBanyak di antaranya memakai gambar, bukan ubin mahjong klasik, jadi mudah dimainkan pemain yang lebih kecil. Animals Connect dan Animals Connect 2 memakai hewan-hewan lucu, Zoobies Connect punya para Zoobies, Connect Fish mengajakmu ke lautan, dan Space Connect ke luar angkasa. Jungle Connect, African Savannah, Wallpaper Connect, dan Time Connect masing-masing punya set ubin sendiri.\n\nCara main yang bagus: singkirkan dulu ubin-ubin di pinggir, karena paling mudah dihubungkan, lalu cari pasangan yang tersembunyi di balik satu ubin. Kalau game-nya punya petunjuk atau acak ulang, simpan untuk saat kamu benar-benar buntu. Game ubin lainnya ada di kategori Game Mahjong.",
+   "faq": [
+    {
+     "q": "Bagaimana cara main Mahjong Connect?",
+     "a": "Cari dua ubin yang sama dan hubungkan dengan garis yang berbelok tidak lebih dari dua kali dan tidak melewati ubin lain. Kedua ubin akan hilang. Bersihkan papan untuk menang."
+    },
+    {
+     "q": "Apa bedanya Mahjong Connect dan Mahjong Solitaire?",
+     "a": "Di Mahjong Solitaire, ubin ditumpuk berlapis dan kamu mengambil ubin bebas dari atas. Di Mahjong Connect semua ubin tersusun datar dan kamu menghubungkan pasangan dengan jalur."
+    },
+    {
+     "q": "Apakah Mahjong Connect cocok untuk anak?",
+     "a": "Cocok, banyak versinya memakai hewan dan gambar lain, dan aturannya cepat dipahami. Game ini melatih ketelitian dan kemampuan merencanakan."
+    },
+    {
+     "q": "Apakah Mahjong Connect bisa dimainkan di HP?",
+     "a": "Bisa, game-game ini jalan di HP dan tablet sama baiknya dengan di komputer – tinggal ketuk kedua ubinnya."
+    }
+   ]
   }
  }
 }

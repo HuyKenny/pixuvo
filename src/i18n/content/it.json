@@ -2056,6 +2056,132 @@
      "a": "Sì, sono gratis e non serve un account. Alcuni giochi possono mostrare pubblicità dei loro editori."
     }
    ]
+  },
+  "spider-solitaire": {
+   "intro": "Il Solitario Spider è il solitario in cui formi lunghe sequenze di carte dal Re fino all'Asso. Quando una sequenza è completa e tutta dello stesso seme, lascia il tavolo – eliminale tutte e hai vinto. È uno dei giochi di carte più giocati al mondo, e in questa pagina trovi più di 10 giochi di Spider gratis da giocare nel browser.\n\nLe regole sono sempre simili: le carte vengono distribuite in colonne, sposti una carta su una di valore più alto di uno, e una sequenza dello stesso seme si può spostare tutta insieme. Quando sei bloccato, distribuisci una nuova fila dal mazzo. Spider Solitaire 1 suit è il punto di partenza più semplice, perché tutte le carte hanno lo stesso seme. Lo Spider Solitaire normale è molto più difficile, e Big Spider Solitaire e Huge Spider Solitaire aggiungono altre colonne e altre carte. Tarantula Solitaire, Black Widow Solitaire, Jumping Spider e Three Blind Mice sono varianti con le loro particolarità, e Spider Freecell aggiunge le celle libere.\n\nUna buona abitudine è liberare presto una colonna – una colonna vuota è il posto più utile del tavolo. Pensa qualche mossa in anticipo prima di distribuire nuove carte, e cerca di tenere le sequenze dello stesso seme. Lo Spider è un gioco tranquillo per ragazzi e adulti; altri solitari ti aspettano nella categoria Giochi di solitario.",
+   "faq": [
+    {
+     "q": "Come si gioca al Solitario Spider?",
+     "a": "Sposta le carte su una carta di valore più alto di uno e forma sequenze dal Re all'Asso. Una sequenza completa dello stesso seme viene eliminata. Togli tutte le carte per vincere."
+    },
+    {
+     "q": "Qual è il Solitario Spider più facile?",
+     "a": "La versione a un seme, perché tutte le carte sono dello stesso seme e ogni sequenza si può spostare. Spider Solitaire 1 suit è un ottimo primo gioco."
+    },
+    {
+     "q": "Che differenza c'è tra Spider e Klondike?",
+     "a": "Nel Klondike metti le carte su quattro pile di base dall'Asso al Re. Nello Spider formi sequenze dal Re all'Asso direttamente sul tavolo, e quando sono complete vengono eliminate."
+    },
+    {
+     "q": "Posso giocare al Solitario Spider sul telefono?",
+     "a": "Sì, questi giochi funzionano su telefono e tablet come sul computer. Tocchi o trascini le carte."
+    }
+   ]
+  },
+  "freecell": {
+   "intro": "Il FreeCell è il solitario per chi ama ragionare. Tutte le 52 carte sono scoperte, non c'è niente di nascosto – vedi ogni carta fin dall'inizio. Quattro celle libere ti danno spazio per parcheggiare le carte mentre metti in ordine le colonne, e quasi ogni partita ha una soluzione. Su Pixuvo ci sono più di 20 giochi di FreeCell gratis da giocare nel browser.\n\nL'obiettivo è portare tutte le carte sulle quattro pile di base, per seme, dall'Asso al Re. Sul tavolo costruisci le colonne in ordine decrescente alternando i colori, e puoi spostare una carta in una cella libera vuota o in una colonna vuota. Freecell Solitaire e Classic Freecell Solitaire seguono queste regole. Double Freecell e Freecell Duplex usano due mazzi, Eight Off ti dà otto celle libere, e in Baker's Game costruisci per seme invece che alternando i colori. Daily Freecell ti offre una nuova partita ogni giorno, e ci sono versioni stagionali come Freecell Christmas e Freecell Summer Holiday.\n\nIl consiglio principale: tieni vuote le celle libere il più a lungo possibile, perché ogni cella occupata rende più difficili le mosse successive. Libera presto gli Assi e i Due e prova a svuotare un'intera colonna – vale più di una cella libera. Altri giochi di carte ti aspettano nella categoria Giochi di solitario.",
+   "faq": [
+    {
+     "q": "Come si gioca a FreeCell?",
+     "a": "Porta tutte le carte sulle quattro pile di base, per seme, dall'Asso al Re. Sul tavolo costruisci in ordine decrescente alternando i colori e usa le quattro celle libere per parcheggiare singole carte."
+    },
+    {
+     "q": "Si possono vincere tutte le partite di FreeCell?",
+     "a": "Quasi tutte le partite hanno una soluzione, ed è per questo che FreeCell piace tanto a chi ama pianificare. Solo poche partite rare sono impossibili."
+    },
+    {
+     "q": "Che differenza c'è tra FreeCell e Klondike?",
+     "a": "In FreeCell tutte le carte sono scoperte fin dall'inizio e non c'è il mazzo da cui pescare. Nel Klondike alcune carte sono coperte e peschi dal mazzo."
+    },
+    {
+     "q": "Esiste una partita di FreeCell del giorno?",
+     "a": "Sì, Daily Freecell ti dà una nuova partita ogni giorno."
+    }
+   ]
+  },
+  "klondike-solitaire": {
+   "intro": "Il Klondike è il solitario che quasi tutti chiamano semplicemente Solitario: sette colonne di carte, un mazzo da cui pescare e quattro pile di base da riempire dall'Asso al Re. È il solitario classico, e in questa pagina trovi quasi 40 giochi di Klondike gratis da giocare nel browser, dal classico più semplice alle versioni a tema.\n\nSul tavolo costruisci le colonne in ordine decrescente alternando i colori – un Sette rosso su un Otto nero. Le carte coperte si girano quando le liberi, e quando finisci le mosse peschi dal mazzo. Wild West Solitaire inizia facile e diventa più difficile livello dopo livello, Winter Solitaire, Halloween Klondike e Christmas Solitaire portano la stagione sul tavolo, e Kings Klondike e Secret Double Klondike usano due mazzi e otto pile di base. Taj Mahal Solitaire e Freecell Klondike Solitaire mescolano il Klondike con altri solitari.\n\nQualche abitudine aiuta: scopri prima le carte coperte, sposta le carte sulle pile di base quando è sicuro, e tieni una colonna vuota per un Re. Il Klondike è un gioco rilassante per ragazzi, genitori e nonni. Altri solitari ti aspettano nella categoria Giochi di solitario.",
+   "faq": [
+    {
+     "q": "Come si gioca al Solitario Klondike?",
+     "a": "Completa le quattro pile di base per seme, dall'Asso al Re. Sul tavolo metti le carte in ordine decrescente alternando i colori e scopri le carte coperte; quando ti servono nuove carte, peschi dal mazzo."
+    },
+    {
+     "q": "Il Klondike è lo stesso del Solitario?",
+     "a": "Sì, quando si dice Solitario di solito si intende il Klondike. Spider, FreeCell e Piramide sono altri giochi di solitario."
+    },
+    {
+     "q": "In una colonna vuota può andare solo un Re?",
+     "a": "Nel Klondike classico sì – solo un Re, o una sequenza che inizia con un Re, può occupare una colonna vuota."
+    },
+    {
+     "q": "Ci sono giochi di Klondike con due mazzi?",
+     "a": "Sì, Kings Klondike e Secret Double Klondike usano due mazzi e otto pile di base."
+    }
+   ]
+  },
+  "pyramid-solitaire": {
+   "intro": "Nel Solitario Piramide le carte sono disposte a piramide, e tu la smonti due carte alla volta: due carte libere che sommate fanno 13 lasciano il tavolo. Il Fante vale 11, la Donna 12 e il Re 13, quindi il Re può andarsene da solo. Su Pixuvo ci sono più di 20 giochi di Solitario Piramide gratis da giocare nel browser.\n\nUna carta è libera quando nessun'altra carta la copre. Se sul tavolo non riesci a fare 13, giri una carta dal mazzo e provi ad abbinarla. Pyramid Solitaire ed Egypt Pyramid Solitaire seguono le regole classiche, Giza Solitaire è una variante più difficile e Freecell Giza Solitaire aggiunge le celle libere. Ancient Wonders Solitaire, Jungle Solitaire e Totem Solitaire hanno ognuno la propria ambientazione, Pyramid Klondike ci mescola il Klondike, e in Maya Pyramid Solitaire carte o monete devono fare 11 invece di 13.\n\nIl consiglio che aiuta di più: guarda quali carte libererebbe una coppia, e scegli quella che ne scopre di più. È anche un bel giochino per allenarsi a fare le somme velocemente. Altri solitari ti aspettano nella categoria Giochi di solitario.",
+   "faq": [
+    {
+     "q": "Come si gioca al Solitario Piramide?",
+     "a": "Togli due carte libere che sommate fanno 13 – il Fante vale 11, la Donna 12 e il Re 13 da solo. Smonta tutta la piramide per vincere."
+    },
+    {
+     "q": "Quanto valgono le carte?",
+     "a": "L'Asso vale 1, le carte numerate valgono il loro numero, il Fante 11, la Donna 12 e il Re 13."
+    },
+    {
+     "q": "Il Solitario Piramide è adatto ai bambini?",
+     "a": "Sì, si impara subito e allena le somme fino a 13. Le carte restano semplici e ogni mossa è veloce."
+    },
+    {
+     "q": "Ci sono versioni più difficili?",
+     "a": "Sì, Giza Solitaire è una variante più impegnativa, e Freecell Giza Solitaire aggiunge le celle libere per pianificare."
+    }
+   ]
+  },
+  "golf-solitaire": {
+   "intro": "Golf e TriPeaks sono i solitari veloci: in basso c'è una carta scoperta, e svuoti il tavolo giocando una carta di un valore più alta o più bassa – un Otto su un Sette o su un Nove. Le catene lunghe danno più punti, e quando finisci le mosse giri una nuova carta dal mazzo. Su Pixuvo ci sono più di 30 giochi di Solitario Golf e TriPeaks gratis da giocare nel browser.\n\nNel TriPeaks le carte formano tre picchi, e le carte coperte si girano quando le liberi. Tripeaks Solitaire è il classico, 3 Pyramid Tripeaks 2 e Snowy Peaks Solitaire sono versioni a scorrimento, e Tripeaks Creatures ha 40 livelli. Magic Castle Solitaire, Skyscraper Solitaire, Ancient Rome Solitaire, Tri-Fruit Solitaire e 3 Keys Solitaire portano la stessa idea in mondi e disposizioni diverse.\n\nIl segreto è guardare prima di cliccare: se puoi giocare due carte, scegli quella che apre la catena successiva o scopre una carta coperta. Sono giochi veloci, colorati e facili da imparare, quindi piacciono a bambini e adulti. Altri solitari ti aspettano nella categoria Giochi di solitario.",
+   "faq": [
+    {
+     "q": "Come si gioca al Solitario TriPeaks?",
+     "a": "Gioca una carta dal tavolo di un valore più alta o più bassa della carta scoperta in basso. Se nessuna carta va bene, gira una nuova carta dal mazzo. Svuota tutti e tre i picchi per vincere."
+    },
+    {
+     "q": "Che differenza c'è tra Golf e TriPeaks?",
+     "a": "Entrambi usano la regola del valore più alto o più basso di uno. Nel Golf le carte sono disposte in colonne, nel TriPeaks in tre picchi sovrapposti."
+    },
+    {
+     "q": "Nel TriPeaks conta il seme?",
+     "a": "No, conta solo il valore – qualsiasi Sette va su qualsiasi Otto o Sei."
+    },
+    {
+     "q": "I giochi di TriPeaks sono adatti ai bambini?",
+     "a": "Sì, la regola è semplice e i giochi sono veloci e colorati. Allenano anche a contare in avanti e all'indietro."
+    }
+   ]
+  },
+  "mahjong-connect": {
+   "intro": "Il Mahjong Connect è il cugino veloce del mahjong solitario: le tessere sono stese sul piano di gioco, e togli due tessere uguali collegandole con una linea. La linea può girare al massimo due volte, quindi il percorso ha al massimo tre tratti dritti, e non può passare attraverso altre tessere. Su Pixuvo ci sono più di 40 giochi di Mahjong Connect gratis da giocare nel browser.\n\nMolti usano immagini al posto delle classiche tessere del mahjong, e questo li rende facili anche per i giocatori più piccoli. Animals Connect e Animals Connect 2 hanno animali buffi, Zoobies Connect ha gli Zoobies, Connect Fish ti porta nell'oceano e Space Connect nello spazio. Jungle Connect, African Savannah, Wallpaper Connect e Time Connect hanno ognuno il proprio set di tessere.\n\nUn buon modo di giocare: togli prima le tessere sui bordi, perché sono le più facili da collegare, e cerca le coppie nascoste dietro una sola tessera. Se il gioco offre suggerimenti o rimescolamenti, tienili per quando sei davvero bloccato. Altri giochi di tessere ti aspettano nella categoria Giochi di mahjong.",
+   "faq": [
+    {
+     "q": "Come si gioca a Mahjong Connect?",
+     "a": "Trova due tessere uguali e collegale con una linea che gira al massimo due volte e non attraversa altre tessere. Le due tessere spariscono. Svuota il piano per vincere."
+    },
+    {
+     "q": "Che differenza c'è tra Mahjong Connect e Mahjong Solitario?",
+     "a": "Nel Mahjong Solitario le tessere sono impilate a strati e prendi quelle libere dall'alto. Nel Mahjong Connect tutte le tessere sono stese in piano e colleghi le coppie con un percorso."
+    },
+    {
+     "q": "Il Mahjong Connect è adatto ai bambini?",
+     "a": "Sì, molte versioni usano animali e altre immagini, e la regola si impara in fretta. Allena l'attenzione e la capacità di pianificare."
+    },
+    {
+     "q": "Posso giocare a Mahjong Connect sul telefono?",
+     "a": "Sì, i giochi funzionano su telefono e tablet come sul computer – basta toccare le due tessere."
+    }
+   ]
   }
  }
 }
