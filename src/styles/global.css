@@ -3622,3 +3622,19 @@ body.is-fullscreen .bottom-nav {
 .seo-faq summary { font-weight: 800; cursor: pointer; min-height: 28px; }
 .seo-faq details p { margin: 8px 0 0; }
 .tips { margin: 0; padding-inline-start: 20px; display: grid; gap: 6px; line-height: 1.55; }
+
+.site-footer .footer-popular {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgb(255 255 255 / 0.08);
+  align-items: baseline;
+  font-size: 13px;
+}
+.site-footer .footer-popular strong {
+  color: #9097bf;
+  font-weight: 800;
+}
+.site-footer .footer-popular a {
+  color: #c5c9e4;
+  font-weight: 700;
+}

@@ -1,10 +1,20 @@
 ---
 import Logo from './Logo.astro';
 import LangSwitch from './LangSwitch.astro';
-import { SITE } from '../lib/site';
+import { SITE, categoryPath } from '../lib/site';
 import { useI18n } from '../i18n';
 const { t } = await useI18n(Astro);
-const year = new Date().getUTCFullYear();
+const now = new Date();
+const year = now.getUTCFullYear();
+// Sitewide links to the pages people search for (and to the seasonal ones while their season is coming), so crawlers and
+// visitors reach them from every page. Landings that do not exist are never linked: only these published slugs.
+const m = now.getUTCMonth();
+const d = now.getUTCDate();
+const seasonal = [
+  ...((m === 8 && d >= 15) || m === 9 || (m === 10 && d <= 2) ? ['halloween'] : []),
+  ...((m === 9 && d >= 20) || m === 10 || m === 11 || (m === 0 && d <= 6) ? ['christmas'] : []),
+];
+const popular = [...seasonal, 'kids', 'girls', 'boys', 'unblocked', 'brain', 'parkour', 'dinosaur', 'spider-solitaire', 'mahjong-connect'];
 ---
 <footer class="site-footer">
   <div class="wrap footer-row">
@@ -14,6 +24,10 @@ const year = new Date().getUTCFullYear();
     </nav>
     <LangSwitch variant="footer" />
   </div>
+  <nav class="wrap footer-popular" aria-label={t('footer.popular')}>
+    <strong>{t('footer.popular')}</strong>
+    {popular.map((slug) => <a href={categoryPath(slug)}>{t(`land.${slug}.h1`)}</a>)}
+  </nav>
   <div class="wrap footer-fine">
     <nav aria-label={t('a11y.legalNav')}><a href="/parents/">{t('nav.parents')}</a><a href="/about/">{t('nav.about')}</a><a href="/contact/">{t('nav.contact')}</a><a href="/privacy/">{t('nav.privacy')}</a><a href="/cookies/">{t('nav.cookies')}</a><a href="/terms/">{t('nav.terms')}</a><a href="/copyright/">{t('nav.copyright')}</a><button type="button" class="link-btn footer-link" data-consent-open>{t('nav.privacyChoices')}</button></nav>
     <span>© {year} Pixuvo · {t('site.footerCredit')} · <a href={`mailto:${SITE.email}`}>{SITE.email}</a></span>
