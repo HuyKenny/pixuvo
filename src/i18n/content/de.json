@@ -2350,6 +2350,90 @@
      "a": "Viele Essen Spiele funktionieren auf Handys und Tablets. Auf der Spielseite siehst du, welche Geräte ein Spiel unterstützt."
     }
    ]
+  },
+  "toddler": {
+   "intro": "Leuchtende Farben, große Formen und einfaches Antippen: Spiele für Kleinkinder sind für die jüngsten Spieler gemacht, und auf Pixuvo gibt es mehr als 160 davon kostenlos im Browser. Die meisten lehren spielerisch, und viele spielt man am besten zusammen mit einem Elternteil.\n\nEine große Gruppe sind die Puzzles. Wooden Puzzles ist ein Puzzlespiel für Kleinkinder, bei dem du Holzgegenstände an die richtige Stelle legst, und Kid Puzzle ABCD bringt das Alphabet bei. Preschool Games sammelt vier verschiedene Puzzlespiele für Vorschulkinder mit Farben und Formen, und Colors & Shapes - Kids Learn Color and Shape sowie Fun Learning For Kids helfen Kindern, Formen und Dinge um sich herum zu entdecken. Math Kids - Add, Subtract, Count, and Learn ist ein Spiel über Zahlen für kleine Kinder, Kids Memory Game - Birds übt das Gedächtnis mit Vögeln, und Easy Kids Coloring Book hat dicke dunkle Linien und große, einfache Bilder, die sich leicht ausmalen lassen.\n\nSetz dich bei den Allerkleinsten neben das Kind und sprich darüber, was es sieht – die Spiele machen mehr Spaß, wenn man gemeinsam spielt. Halte die Spielzeiten kurz und lass das Kind auswählen. Weitere Spiele für die Kleinen findest du bei den Baby Spielen und den Spielen für Kinder.",
+   "faq": [
+    {
+     "q": "Was sind Spiele für Kleinkinder?",
+     "a": "Spiele für Kleinkinder sind einfache Spiele für die jüngsten Spieler, mit großen Bildern, leuchtenden Farben und leichtem Antippen. Viele bringen Formen, Farben, Buchstaben oder Zahlen bei."
+    },
+    {
+     "q": "Sind Spiele für Kleinkinder kostenlos?",
+     "a": "Ja, alle sind kostenlos im Browser spielbar, ohne Download."
+    },
+    {
+     "q": "Können Kleinkinder auf Tablet oder Handy spielen?",
+     "a": "Ja, viele dieser Spiele funktionieren auf Tablets und Handys. Bei den Jüngsten ist es am besten, wenn ein Elternteil in der Nähe ist."
+    },
+    {
+     "q": "Was können Kinder aus diesen Spielen lernen?",
+     "a": "Viele üben Farben, Formen, Buchstaben, Zählen und Gedächtnis, zum Beispiel Preschool Games, Kid Puzzle ABCD und Math Kids."
+    }
+   ]
+  },
+  "kindergarten": {
+   "intro": "Das Kindergartenalter ist eine Zeit von Farben, Buchstaben und ersten Zahlen, und auf Pixuvo gibt es rund 60 kostenlose Kindergarten Spiele im Browser. Sie sind für Kinder um die fünf Jahre gemacht und lehren spielerisch.\n\nIn Coloring Book Kindergarten wählst du ein Bild aus und malst es aus, KinderGarten Spot the Differences fordert dich auf, Unterschiede zwischen zwei Bildern zu finden, und Kids Puzzle ABCD dreht sich ums Alphabet. Math Kids - Add, Subtract, Count, and Learn ist für kleine Kinder, die Zahlen lernen, und Learning Farm Animals: Educational Games For Kids und Farm Match nutzen süße Bauernhoftiere zum Lernen und Zuordnen. Wenn Kinder gern so tun, als wären sie erwachsen, lassen Kindergarten School Teacher Kids Learning Games und Kinder Garden sie Lehrer spielen.\n\nKinder in diesem Alter mögen kurze Spiele mit klaren Bildern, also probiere ein Spiel nach dem anderen aus und sprich danach darüber. Weitere Lernspiele findest du bei den Lernspielen, weitere Spiele für die Kleinen bei den Spielen für Kleinkinder.",
+   "faq": [
+    {
+     "q": "Was sind Kindergarten Spiele?",
+     "a": "Kindergarten Spiele sind Lern- und Spielspiele für Kinder um die fünf Jahre, zum Beispiel Ausmalen, Memory, Buchstaben und Zählen."
+    },
+    {
+     "q": "Sind diese Spiele gut für 5-Jährige?",
+     "a": "Sie sind für Kinder im Kindergartenalter gemacht, mit einfacher Steuerung und klaren Bildern. Setz dich bei den ersten Spielen zum Kind."
+    },
+    {
+     "q": "Sind sie kostenlos?",
+     "a": "Ja, du kannst alle kostenlos im Browser spielen, ohne Download."
+    },
+    {
+     "q": "Was kann mein Kind lernen?",
+     "a": "Viele Spiele üben Farben, Buchstaben, Zahlen, Zuordnen und das Bemerken kleiner Details."
+    }
+   ]
+  },
+  "ludo": {
+   "intro": "Würfle, bewege deine Figuren über das Brett und bring sie alle als Erster nach Hause: Ludo, bei uns bekannt als Mensch ärgere dich nicht, ist eines der bekanntesten Brettspiele für die Familie. Auf Pixuvo gibt es mehr als 30 kostenlose Ludo-Spiele im Browser, und du kannst gegen den Computer oder mit Freunden spielen.\n\nDie Idee ist in allen gleich: Jeder Spieler hat vier Figuren, du würfelst, und die Zahl sagt dir, wie weit du ziehst. Ludo Classic ist der Familienklassiker. Ludo wird auch gegen drei Computergegner gespielt, und Ludo Online hat drei Modi, darunter das Spiel gegen einen Bot. In Ludo Wars kannst du einen Online-Spieler oder einen Freund im lokalen Zwei-Spieler-Modus herausfordern, und Ludo Legend lässt sich allein oder mit Freunden auf einem Gerät spielen, indem man es weitergibt. Ludo Fever, Ludo Champions, Ludo World und Ludo Multiplayer bringen ihr eigenes Aussehen und eigene Regeln mit.\n\nBei Mensch ärgere dich nicht entscheidet viel das Glück, aber du wählst, welche Figur du ziehst, und genau darin liegt die Strategie: Schütze eine Figur in Gefahr oder schicke eine andere nach vorn. Ein gutes Spiel, um sich mit der Familie abzuwechseln. Weitere Brettspiele findest du bei den Brettspielen.",
+   "faq": [
+    {
+     "q": "Wie spielt man Ludo (Mensch ärgere dich nicht)?",
+     "a": "Jeder Spieler hat vier Figuren. Du würfelst, ziehst eine Figur so viele Felder wie gewürfelt und versuchst, alle deine Figuren vor den anderen nach Hause zu bringen."
+    },
+    {
+     "q": "Kann ich Ludo gegen den Computer spielen?",
+     "a": "Ja, viele Versionen haben einen Bot-Gegner, zum Beispiel Ludo Online mit dem Spielmodus gegen einen Bot."
+    },
+    {
+     "q": "Kann ich Ludo mit Freunden spielen?",
+     "a": "Ja. Manche Spiele lassen dich mit Freunden auf einem Gerät spielen, andere, wie Ludo Wars, lassen dich einen Online-Spieler herausfordern."
+    },
+    {
+     "q": "Ist Ludo nur Glück?",
+     "a": "Der Würfel ist Glück, aber du wählst, welche Figur du ziehst, und gute Entscheidungen helfen beim Gewinnen."
+    }
+   ]
+  },
+  "3d": {
+   "intro": "Schnelle Strecken, große Arenen und Welten, in die man hineinschaut statt nur darüber hinweg: 3D Spiele fühlen sich an, als wäre man mitten im Spiel, und auf Pixuvo gibt es mehr als 6.000 kostenlose 3D Spiele im Browser.\n\nFür jeden Geschmack ist etwas dabei. Tunnel Rush schickt dich mit voller Fahrt durch einen Tunnel, Slope City und Slope Cyber sind endlose Laufspiele, und Grand Prix Hero und MR RACER : Car Racing sind Rennspiele. Rocket Soccer Derby und Speedy Golf bringen Sport, Aquapark.io führt dich in einen Wasserpark, und Narrow One ist ein 3D-Multiplayer-Spiel zum Bogenschießen. Wenn du es ruhiger magst, ist Tanuki Sunset ein Longboard-Spiel aus der Third-Person-Sicht, in dem du einen Waschbären spielst.\n\nDie meisten 3D Spiele verlangen dem Gerät etwas mehr ab. Wenn ein Spiel langsam läuft, schließe andere Tabs oder probiere ein leichteres. Viele funktionieren mit Tastatur oder Maus, viele auch mit Touch. Weitere Rennen findest du bei den Rennspielen, weitere Laufspiele bei den Runner-Spielen.",
+   "faq": [
+    {
+     "q": "Was sind 3D Spiele?",
+     "a": "3D Spiele zeigen die Spielwelt mit Tiefe, sodass du hineinschauen und dich darin bewegen kannst, nicht nur nach links und rechts."
+    },
+    {
+     "q": "Laufen 3D Spiele auf jedem Gerät?",
+     "a": "Viele schon, aber sie verlangen dem Gerät mehr ab als 2D-Spiele. Wenn ein Spiel langsam ist, schließe andere Tabs oder probiere ein anderes."
+    },
+    {
+     "q": "Gibt es 3D Spiele für Kinder?",
+     "a": "Ja, es gibt Rennen, Laufspiele, Sport und Tierspiele in 3D. Alter und Steuerung findest du auf der Spieleseite."
+    },
+    {
+     "q": "Muss ich etwas herunterladen?",
+     "a": "Nein, alle laufen im Browser, ohne Download."
+    }
+   ]
   }
  }
 }

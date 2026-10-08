@@ -786,5 +786,22 @@
  "land.food.h1": "음식 게임",
  "land.food.title": "음식 게임 – 무료 온라인 음식 게임 즐기기",
  "land.food.description": "무료 음식 게임: 쿠키를 굽고, 채소를 썰고, 케이크를 합치고, 나만의 베이커리를 운영해요. 브라우저에서 다운로드 없이 즐겨요.",
- "land.food.intro": "굽고, 썰고, 합치고, 내놓고 – 음식이 가득한 게임."
+ "land.food.intro": "굽고, 썰고, 합치고, 내놓고 – 음식이 가득한 게임.",
+ "footer.popular": "인기 검색어",
+ "land.toddler.h1": "유아 게임",
+ "land.toddler.title": "유아 게임 – 유아와 어린이집 아이를 위한 무료 온라인 게임",
+ "land.toddler.description": "무료 유아 게임: 가장 어린 플레이어를 위한 쉬운 퍼즐, 색깔, 모양, 글자, 숫자 세기. 다운로드 없이 온라인으로 즐겨요.",
+ "land.toddler.intro": "가장 어린 플레이어를 위한 쉬운 퍼즐, 색깔, 모양, 글자 게임이에요.",
+ "land.kindergarten.h1": "유치원 게임",
+ "land.kindergarten.title": "유치원 게임 – 5세 아이를 위한 무료 학습 게임",
+ "land.kindergarten.description": "5세를 위한 무료 유치원 게임: 색칠 놀이, 기억력, 수학, 글자, 틀린 그림 찾기. 다운로드 없이 온라인으로 즐겨요.",
+ "land.kindergarten.intro": "유치원 나이에 맞는 색칠 놀이, 기억력, 글자, 숫자 게임이에요.",
+ "land.ludo.h1": "루도 게임",
+ "land.ludo.title": "루도 게임 – 무료 온라인 루도(Ludo) 플레이",
+ "land.ludo.description": "무료 루도 게임: 주사위를 굴려 말을 집으로 보내요. 컴퓨터나 친구와 대결할 수 있어요. 다운로드 없이 온라인으로 즐겨요.",
+ "land.ludo.intro": "주사위를 굴리고 내 말을 집까지 먼저 보내요.",
+ "land.3d.h1": "3D 게임",
+ "land.3d.title": "3D 게임 – 무료 온라인 3D 게임 플레이",
+ "land.3d.description": "무료 3D 게임: 레이싱, 달리기, 스포츠, 양궁 등을 3D 세계에서 즐겨요. 다운로드 없이 브라우저에서 바로 플레이해요.",
+ "land.3d.intro": "3D 세계에서 즐기는 레이싱, 달리기, 스포츠 게임이에요."
 }

@@ -2350,6 +2350,90 @@
      "a": "Molti giochi di cibo funzionano su telefoni e tablet. La pagina del gioco mostra quali dispositivi supporta."
     }
    ]
+  },
+  "toddler": {
+   "intro": "Colori vivaci, forme grandi e semplici tocchi: i giochi per bambini piccoli sono fatti per i giocatori più piccoli, e su Pixuvo ne trovi più di 160 gratis nel browser. La maggior parte insegna giocando, e molti si giocano meglio insieme a un genitore.\n\nI puzzle sono un grande gruppo. Wooden Puzzles è un gioco di puzzle per bambini piccoli in cui metti oggetti di legno al posto giusto, e Kid Puzzle ABCD insegna l'alfabeto. Preschool Games riunisce quattro diversi giochi di puzzle per l'età prescolare con colori e forme, e Colors & Shapes - Kids Learn Color and Shape e Fun Learning For Kids aiutano i bambini a notare le forme e le cose intorno a loro. Math Kids - Add, Subtract, Count, and Learn è un gioco sui numeri per i più piccoli, Kids Memory Game - Birds allena la memoria con gli uccellini, ed Easy Kids Coloring Book ha linee spesse e scure e immagini grandi e semplici, facili da colorare.\n\nCon i più piccoli, siediti accanto al bambino e parla di ciò che vede: i giochi sono più belli quando si gioca insieme. Tieni le sessioni brevi e lascia scegliere al bambino. Altri giochi per i più piccoli si trovano nei giochi per neonati e nei giochi per bambini.",
+   "faq": [
+    {
+     "q": "Che cosa sono i giochi per bambini piccoli?",
+     "a": "I giochi per bambini piccoli sono giochi semplici per i giocatori più piccoli, con immagini grandi, colori vivaci e comandi facili con un tocco. Molti insegnano forme, colori, lettere o numeri."
+    },
+    {
+     "q": "I giochi per bambini piccoli sono gratis?",
+     "a": "Sì, sono tutti gratis da giocare nel browser, senza download."
+    },
+    {
+     "q": "I bambini piccoli possono giocare su tablet o telefono?",
+     "a": "Sì, molti di questi giochi funzionano su tablet e telefoni. Con i più piccoli la cosa migliore è avere un genitore vicino."
+    },
+    {
+     "q": "Che cosa possono imparare i bambini da questi giochi?",
+     "a": "Molti esercitano colori, forme, lettere, conteggio e memoria, per esempio Preschool Games, Kid Puzzle ABCD e Math Kids."
+    }
+   ]
+  },
+  "kindergarten": {
+   "intro": "L'età della scuola dell'infanzia è il tempo dei colori, delle lettere e dei primi numeri, e su Pixuvo trovi circa 60 giochi gratis per questa età nel browser. Sono fatti per bambini di circa cinque anni e insegnano giocando.\n\nIn Coloring Book Kindergarten scegli un'immagine e la colori, KinderGarten Spot the Differences ti chiede di trovare le differenze tra due immagini, e Kids Puzzle ABCD serve a imparare l'alfabeto. Math Kids - Add, Subtract, Count, and Learn è per i più piccoli che imparano i numeri, e Learning Farm Animals: Educational Games For Kids e Farm Match usano simpatici animali della fattoria per imparare e abbinare. Se ai bambini piace fare finta di essere grandi, Kindergarten School Teacher Kids Learning Games e Kinder Garden li fanno giocare a fare la maestra.\n\nAi bambini di questa età piacciono i giochi brevi con immagini chiare, quindi prova un gioco alla volta e parlane dopo. Altri giochi per imparare si trovano nei giochi educativi, e altri giochi per i più piccoli nei giochi per bambini piccoli.",
+   "faq": [
+    {
+     "q": "Che cosa sono i giochi per la scuola dell'infanzia?",
+     "a": "Sono giochi per imparare e divertirsi per bambini di circa cinque anni, per esempio colorare, memory, lettere e conteggio."
+    },
+    {
+     "q": "Questi giochi vanno bene per bambini di 5 anni?",
+     "a": "Sono fatti per bambini in età da scuola dell'infanzia, con comandi semplici e immagini chiare. Siediti con il bambino per i primi giochi."
+    },
+    {
+     "q": "Sono gratis?",
+     "a": "Sì, puoi giocare a tutti gratis nel browser, senza download."
+    },
+    {
+     "q": "Che cosa può imparare mio figlio?",
+     "a": "Molti giochi esercitano colori, lettere, numeri, abbinamenti e l'attenzione ai piccoli dettagli."
+    }
+   ]
+  },
+  "ludo": {
+   "intro": "Lancia il dado, muovi le pedine sul tabellone e portale tutte a casa per prima: il Ludo, parente del gioco Non t'arrabbiare, è uno dei giochi da tavolo di famiglia più conosciuti. Su Pixuvo trovi più di 30 giochi di Ludo gratis nel browser, e puoi giocare contro il computer o con gli amici.\n\nL'idea è la stessa in tutti: ogni giocatore ha quattro pedine, lanci un dado e il numero ti dice di quanto avanzare. Ludo Classic è il classico di famiglia. Il Ludo si gioca anche contro tre avversari controllati dal computer, e Ludo Online ha tre modalità, compresa la partita contro un bot. In Ludo Wars puoi sfidare un giocatore online o un amico nella modalità locale per due giocatori, e Ludo Legend si può giocare da soli o con gli amici su un solo dispositivo passandoselo. Ludo Fever, Ludo Champions, Ludo World e Ludo Multiplayer hanno ciascuno un proprio aspetto e proprie regole.\n\nNel Ludo la fortuna conta molto, ma scegli tu quale pedina muovere, ed è lì che sta la strategia: proteggi una pedina in pericolo, oppure manda avanti un'altra. Un buon gioco da fare a turno con la famiglia. Altri giochi da tavolo si trovano nei giochi da tavolo.",
+   "faq": [
+    {
+     "q": "Come si gioca a Ludo?",
+     "a": "Ogni giocatore ha quattro pedine. Lanci un dado, muovi una pedina del numero di caselle uscito e cerchi di portare tutte le tue pedine a casa prima degli altri."
+    },
+    {
+     "q": "Posso giocare a Ludo contro il computer?",
+     "a": "Sì, molte versioni hanno un avversario bot, per esempio Ludo Online con la sua modalità contro un bot."
+    },
+    {
+     "q": "Posso giocare a Ludo con gli amici?",
+     "a": "Sì. Alcuni giochi permettono di giocare con gli amici su un solo dispositivo, e altri, come Ludo Wars, permettono di sfidare un giocatore online."
+    },
+    {
+     "q": "Il Ludo è solo fortuna?",
+     "a": "Il dado è fortuna, ma scegli tu quale pedina muovere, e le buone scelte aiutano a vincere."
+    }
+   ]
+  },
+  "3d": {
+   "intro": "Piste veloci, grandi arene e mondi in cui guardi in profondità: i giochi 3D danno la sensazione di essere dentro il gioco, e su Pixuvo ne trovi più di 6.000 gratis nel browser.\n\nC'è qualcosa per ogni gusto. Tunnel Rush ti lancia a tutta velocità in un tunnel, Slope City e Slope Cyber sono giochi di corsa infinita, e Grand Prix Hero e MR RACER : Car Racing sono giochi di corse. Rocket Soccer Derby e Speedy Golf portano lo sport, Aquapark.io ti porta in un parco acquatico, e Narrow One è un gioco 3D di tiro con l'arco multigiocatore. Se preferisci qualcosa di più tranquillo, Tanuki Sunset è un gioco di longboard in terza persona in cui sei un procione.\n\nLa maggior parte dei giochi 3D chiede un po' di più al dispositivo, quindi se un gioco è lento, chiudi le altre schede o prova uno più leggero. Molti funzionano con tastiera o mouse, e molti anche con il touch. Altre corse si trovano nei giochi di corse, e altri giochi di corsa nei giochi di corsa infinita.",
+   "faq": [
+    {
+     "q": "Che cosa sono i giochi 3D?",
+     "a": "I giochi 3D mostrano il mondo di gioco con profondità, così puoi guardarci dentro e muoverti, non solo a sinistra e a destra."
+    },
+    {
+     "q": "I giochi 3D funzionano su qualsiasi dispositivo?",
+     "a": "Molti sì, ma chiedono più al dispositivo dei giochi 2D. Se un gioco è lento, chiudi le altre schede o provane un altro."
+    },
+    {
+     "q": "Ci sono giochi 3D per bambini?",
+     "a": "Sì, ci sono corse, giochi di corsa, sport e giochi con animali in 3D. Controlla l'età e i comandi nella pagina del gioco."
+    },
+    {
+     "q": "Devo scaricare qualcosa?",
+     "a": "No, funzionano tutti nel browser, senza download."
+    }
+   ]
   }
  }
 }

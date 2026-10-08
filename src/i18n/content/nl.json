@@ -2350,6 +2350,90 @@
      "a": "Veel eetspelletjes werken op telefoons en tablets. Op de spelpagina zie je welke apparaten een spel ondersteunt."
     }
    ]
+  },
+  "toddler": {
+   "intro": "Felle kleuren, grote vormen en simpele tikjes: peuterspelletjes zijn gemaakt voor de jongste spelers, en op Pixuvo vind je er meer dan 160 gratis in je browser. De meeste leren op een speelse manier, en veel spelletjes speel je het best samen met een ouder.\n\nPuzzels vormen een grote groep. Wooden Puzzles is een puzzelspel voor peuters waarin je houten voorwerpen op de juiste plek legt, en Kid Puzzle ABCD leert het alfabet. Preschool Games bundelt vier verschillende puzzelspellen voor kleuters met kleuren en vormen, en Colors & Shapes - Kids Learn Color and Shape en Fun Learning For Kids helpen kinderen vormen en dingen om zich heen op te merken. Math Kids - Add, Subtract, Count, and Learn is een spel over cijfers voor jonge kinderen, Kids Memory Game - Birds oefent het geheugen met vogels, en Easy Kids Coloring Book heeft dikke donkere lijnen en grote, simpele plaatjes die makkelijk te kleuren zijn.\n\nGa bij de allerkleinsten naast het kind zitten en praat over wat het ziet – de spelletjes zijn leuker als je samen speelt. Houd de speeltijd kort en laat het kind kiezen. Meer spelletjes voor de kleintjes vind je bij de babyspelletjes en de kinderspelletjes.",
+   "faq": [
+    {
+     "q": "Wat zijn peuterspelletjes?",
+     "a": "Peuterspelletjes zijn eenvoudige spelletjes voor de jongste spelers, met grote plaatjes, felle kleuren en simpel tikken. Veel ervan leren vormen, kleuren, letters of cijfers."
+    },
+    {
+     "q": "Zijn peuterspelletjes gratis?",
+     "a": "Ja, je kunt ze allemaal gratis in je browser spelen, zonder download."
+    },
+    {
+     "q": "Kunnen peuters op een tablet of telefoon spelen?",
+     "a": "Ja, veel van deze spelletjes werken op tablets en telefoons. Bij de jongste kinderen is het het best als er een ouder in de buurt is."
+    },
+    {
+     "q": "Wat kunnen kinderen van deze spelletjes leren?",
+     "a": "Veel oefenen kleuren, vormen, letters, tellen en geheugen, bijvoorbeeld Preschool Games, Kid Puzzle ABCD en Math Kids."
+    }
+   ]
+  },
+  "kindergarten": {
+   "intro": "Kleuterleeftijd is een tijd van kleuren, letters en de eerste cijfers, en op Pixuvo vind je ongeveer 60 gratis kleuterspelletjes in je browser. Ze zijn gemaakt voor kinderen van rond de vijf jaar en leren al spelend.\n\nIn Coloring Book Kindergarten kies je een plaatje en kleur je het in, KinderGarten Spot the Differences vraagt je verschillen tussen twee plaatjes te vinden, en Kids Puzzle ABCD gaat over het leren van het alfabet. Math Kids - Add, Subtract, Count, and Learn is voor jonge kinderen die cijfers leren, en Learning Farm Animals: Educational Games For Kids en Farm Match gebruiken schattige boerderijdieren om te leren en te koppelen. Als kinderen graag doen alsof ze groot zijn, laten Kindergarten School Teacher Kids Learning Games en Kinder Garden hen juf of meester spelen.\n\nKinderen van deze leeftijd houden van korte spelletjes met duidelijke plaatjes, dus probeer één spel tegelijk en praat er daarna over. Meer leerspelletjes vind je bij de leerspellen, en meer spelletjes voor de kleintjes bij de peuterspelletjes.",
+   "faq": [
+    {
+     "q": "Wat zijn kleuterspelletjes?",
+     "a": "Kleuterspelletjes zijn leer- en speelspelletjes voor kinderen van rond de vijf jaar, bijvoorbeeld kleuren, memory, letters en tellen."
+    },
+    {
+     "q": "Zijn deze spelletjes goed voor 5-jarigen?",
+     "a": "Ze zijn gemaakt voor kinderen op kleuterleeftijd, met eenvoudige besturing en duidelijke plaatjes. Ga bij de eerste spelletjes bij je kind zitten."
+    },
+    {
+     "q": "Zijn ze gratis?",
+     "a": "Ja, je kunt ze allemaal gratis in je browser spelen, zonder download."
+    },
+    {
+     "q": "Wat kan mijn kind leren?",
+     "a": "Veel spelletjes oefenen kleuren, letters, cijfers, koppelen en het opmerken van kleine details."
+    }
+   ]
+  },
+  "ludo": {
+   "intro": "Gooi de dobbelsteen, verplaats je pionnen over het bord en breng ze allemaal als eerste thuis: Ludo, in Nederland bekend als Mens erger je niet, is een van de bekendste bordspellen voor het hele gezin. Op Pixuvo vind je meer dan 30 gratis Ludo spelletjes in je browser, en je kunt tegen de computer of met vrienden spelen.\n\nHet idee is overal hetzelfde: elke speler heeft vier pionnen, je gooit een dobbelsteen en het getal bepaalt hoe ver je mag zetten. Ludo Classic is de familieklassieker. Ludo wordt ook gespeeld tegen drie computertegenstanders, en Ludo Online heeft drie modi, waaronder spelen tegen een bot. In Ludo Wars kun je een online speler of een vriend uitdagen in de lokale modus voor twee spelers, en Ludo Legend kun je alleen of met vrienden op één apparaat spelen door het door te geven. Ludo Fever, Ludo Champions, Ludo World en Ludo Multiplayer hebben hun eigen uiterlijk en regels.\n\nBij Ludo beslist geluk veel, maar jij kiest welke pion je zet, en daar zit de strategie: bescherm een pion die in gevaar is, of stuur een andere vooruit. Een goed spel om om de beurt met het gezin te spelen. Meer bordspellen vind je bij de bordspellen.",
+   "faq": [
+    {
+     "q": "Hoe speel je Ludo (Mens erger je niet)?",
+     "a": "Elke speler heeft vier pionnen. Je gooit de dobbelsteen, zet een pion zoveel stappen als gegooid en probeert al je pionnen eerder thuis te brengen dan de anderen."
+    },
+    {
+     "q": "Kan ik Ludo tegen de computer spelen?",
+     "a": "Ja, veel versies hebben een bot als tegenstander, bijvoorbeeld Ludo Online met de modus tegen een bot."
+    },
+    {
+     "q": "Kan ik Ludo met vrienden spelen?",
+     "a": "Ja. Sommige spellen laten je met vrienden op één apparaat spelen, en andere, zoals Ludo Wars, laten je een online speler uitdagen."
+    },
+    {
+     "q": "Is Ludo alleen maar geluk?",
+     "a": "De dobbelsteen is geluk, maar jij kiest welke pion je zet, en goede keuzes helpen je winnen."
+    }
+   ]
+  },
+  "3d": {
+   "intro": "Snelle banen, grote arena's en werelden waar je in kijkt in plaats van overheen: 3D spelletjes voelen alsof je er middenin zit, en op Pixuvo vind je meer dan 6.000 gratis 3D spelletjes in je browser.\n\nEr is voor elke smaak iets. Tunnel Rush stuurt je met volle snelheid door een tunnel, Slope City en Slope Cyber zijn eindeloze rennerspellen, en Grand Prix Hero en MR RACER : Car Racing zijn racespellen. Rocket Soccer Derby en Speedy Golf brengen sport, Aquapark.io neemt je mee naar een waterpark, en Narrow One is een 3D-multiplayerspel voor boogschieten. Houd je van iets rustigers, dan is Tanuki Sunset een longboardspel vanuit het derdepersoonsperspectief waarin je een wasbeer speelt.\n\nDe meeste 3D spelletjes vragen wat meer van je apparaat, dus als een spel traag voelt, sluit dan andere tabbladen of probeer een lichter spel. Veel werken met toetsenbord of muis, en veel ook met aanraking. Meer races vind je bij de racespellen en meer rennerspellen bij de runnerspellen.",
+   "faq": [
+    {
+     "q": "Wat zijn 3D spelletjes?",
+     "a": "3D spelletjes tonen de spelwereld met diepte, zodat je erin kunt kijken en je erdoor kunt bewegen, niet alleen naar links en rechts."
+    },
+    {
+     "q": "Werken 3D spelletjes op elk apparaat?",
+     "a": "Veel wel, maar ze vragen meer van het apparaat dan 2D-spelletjes. Als een spel traag is, sluit dan andere tabbladen of probeer een ander spel."
+    },
+    {
+     "q": "Zijn er 3D spelletjes voor kinderen?",
+     "a": "Ja, er zijn races, rennerspellen, sport en dierenspellen in 3D. Check de spelpagina voor leeftijd en besturing."
+    },
+    {
+     "q": "Moet ik iets downloaden?",
+     "a": "Nee, ze draaien allemaal in je browser, zonder download."
+    }
+   ]
   }
  }
 }

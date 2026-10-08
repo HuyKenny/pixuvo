@@ -2350,6 +2350,90 @@
      "a": "Many food games work on phones and tablets. The game page shows which devices a game supports."
     }
    ]
+  },
+  "toddler": {
+   "intro": "Bright colors, big shapes and simple taps: toddler games are made for the youngest players, and Pixuvo has more than 160 free ones to play in your browser. Most are about learning in a playful way, and many are best played together with a parent.\n\nPuzzles are a big group. Wooden Puzzles is a puzzle game for toddlers where you put wooden objects in the right place, and Kid Puzzle ABCD teaches the alphabet. Preschool Games gathers four different puzzle games for preschool kids with colors and shapes, and Colors & Shapes - Kids Learn Color and Shape and Fun Learning For Kids help children notice shapes and the things around them. Math Kids - Add, Subtract, Count, and Learn is a game for young children about numbers, Kids Memory Game - Birds practises memory with birds, and Easy Kids Coloring Book has dark thick lines and large, simple pictures that are easy to color.\n\nFor the smallest children, sit next to them and talk about what they see – the games are better when you play together. Keep sessions short and let the child choose. More games for little ones are in the baby games and the kids games.",
+   "faq": [
+    {
+     "q": "What are toddler games?",
+     "a": "Toddler games are simple games for the youngest players, with big pictures, bright colors and easy taps. Many teach shapes, colors, letters or numbers."
+    },
+    {
+     "q": "Are toddler games free?",
+     "a": "Yes, all of them are free to play in your browser, with no download."
+    },
+    {
+     "q": "Can toddlers play on a tablet or phone?",
+     "a": "Yes, many of these games work on tablets and phones. A parent nearby is the best idea for the youngest children."
+    },
+    {
+     "q": "What can children learn from these games?",
+     "a": "Many practise colors, shapes, letters, counting and memory, for example Preschool Games, Kid Puzzle ABCD and Math Kids."
+    }
+   ]
+  },
+  "kindergarten": {
+   "intro": "Kindergarten age is a time of colors, letters and first numbers, and Pixuvo has around 60 free kindergarten games to play in your browser. They are made for children around five, and they teach through play.\n\nColoring Book Kindergarten lets you choose a picture and color it, KinderGarten Spot the Differences asks you to find differences between two pictures, and Kids Puzzle ABCD is about learning the alphabet. Math Kids - Add, Subtract, Count, and Learn is for young children who are learning numbers, and Learning Farm Animals: Educational Games For Kids and Farm Match use cute farm animals for learning and matching. If you like pretending, Kindergarten School Teacher Kids Learning Games and Kinder Garden let you play the teacher.\n\nChildren of this age like short games with clear pictures, so try one game at a time and talk about it afterwards. More learning games are in the educational category, and more games for little ones are in the toddler games.",
+   "faq": [
+    {
+     "q": "What are kindergarten games?",
+     "a": "Kindergarten games are learning and play games for children around five years old, for example coloring, memory, letters and counting."
+    },
+    {
+     "q": "Are these games good for 5 year olds?",
+     "a": "They are made for children of kindergarten age, with simple controls and clear pictures. Sit with the child for the first games."
+    },
+    {
+     "q": "Are they free?",
+     "a": "Yes, you can play all of them free in your browser, with no download."
+    },
+    {
+     "q": "What can my child learn?",
+     "a": "Many games practise colors, letters, numbers, matching and noticing small details."
+    }
+   ]
+  },
+  "ludo": {
+   "intro": "Roll the dice, move your tokens around the board and bring them all home first: Ludo is one of the best-known family board games. Pixuvo has more than 30 free Ludo games to play in your browser, and you can play against the computer or with friends.\n\nThe idea is the same in all of them: each player has four tokens, you roll a die, and the number tells you how far to move. Ludo Classic is the family classic. Ludo is also played against three computer opponents, and Ludo Online has three modes, including playing against a bot. Ludo Wars lets you challenge an online player or a friend in local two-player mode, and Ludo Legend can be played alone or with friends on one device by passing it on. Ludo Fever, Ludo Champions, Ludo World and Ludo Multiplayer bring their own looks and rules.\n\nLuck decides a lot in Ludo, but you can choose which token to move, and that is where the strategy is: protect a token that is in danger, or send another one forward. A good game for taking turns with family. More board games are in the board category.",
+   "faq": [
+    {
+     "q": "How do you play Ludo?",
+     "a": "Each player has four tokens. You roll a die, move a token the number of steps shown and try to bring all your tokens home before the others."
+    },
+    {
+     "q": "Can I play Ludo against the computer?",
+     "a": "Yes, many versions have a bot opponent, for example Ludo Online with its play-against-bot mode."
+    },
+    {
+     "q": "Can I play Ludo with friends?",
+     "a": "Yes. Some games let you play with friends on one device, and others, such as Ludo Wars, let you challenge an online player."
+    },
+    {
+     "q": "Is Ludo only luck?",
+     "a": "The die is luck, but you choose which token to move, and good choices help you win."
+    }
+   ]
+  },
+  "3d": {
+   "intro": "Fast tracks, big arenas and worlds you look into instead of across: 3D games feel like being inside the game, and Pixuvo has more than 6,000 free 3D games to play in your browser.\n\nThere is something for every taste. Tunnel Rush sends you speeding through a tunnel, Slope City and Slope Cyber are endless running games, and Grand Prix Hero and MR RACER : Car Racing are racing games. Rocket Soccer Derby and Speedy Golf bring sports, Aquapark.io takes you to a water park, and Narrow One is a 3D multiplayer archery game. If you like something calmer, Tanuki Sunset is a third-person longboard-skating game where you play as a raccoon.\n\nMost 3D games need a little more from your device, so if a game feels slow, close other tabs or try a lighter one. Many work with the keyboard or mouse, and many also with touch. More racing is in the racing category, and more running games are in the runner category.",
+   "faq": [
+    {
+     "q": "What are 3D games?",
+     "a": "3D games show the game world with depth, so you can look into it and move around, not only left and right."
+    },
+    {
+     "q": "Do 3D games run on any device?",
+     "a": "Many do, but they need more from the device than 2D games. If a game is slow, close other tabs or try another one."
+    },
+    {
+     "q": "Are there 3D games for kids?",
+     "a": "Yes, there are racing, running, sports and animal games in 3D. Check the game page for the age and controls."
+    },
+    {
+     "q": "Do I need to download anything?",
+     "a": "No, all of them run in your browser, with no download."
+    }
+   ]
   }
  }
 }

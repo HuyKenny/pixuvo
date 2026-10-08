@@ -786,5 +786,22 @@
  "land.food.h1": "美食遊戲",
  "land.food.title": "美食遊戲 – 免費線上玩美食遊戲",
  "land.food.description": "免費美食遊戲：烤餅乾、切蔬菜、合成蛋糕，還能經營自己的麵包店。用瀏覽器線上玩，不用下載。",
- "land.food.intro": "烤、切、合成、上菜，滿螢幕都是美食的遊戲。"
+ "land.food.intro": "烤、切、合成、上菜，滿螢幕都是美食的遊戲。",
+ "footer.popular": "熱門搜尋",
+ "land.toddler.h1": "幼兒遊戲",
+ "land.toddler.title": "幼兒遊戲 – 適合幼兒與學齡前寶寶的免費線上遊戲",
+ "land.toddler.description": "免費幼兒遊戲：簡單拼圖、顏色、形狀、字母和數數，專為最小的玩家準備。線上玩，不用下載。",
+ "land.toddler.intro": "簡單的拼圖、顏色、形狀和字母，專為最小的玩家準備。",
+ "land.kindergarten.h1": "幼稚園遊戲",
+ "land.kindergarten.title": "幼稚園遊戲 – 適合5歲孩子的免費學習遊戲",
+ "land.kindergarten.description": "適合5歲孩子的免費幼稚園遊戲：著色、記憶、數學、字母和找不同。線上玩，不用下載。",
+ "land.kindergarten.intro": "著色、記憶、字母和數字，適合幼稚園年齡的孩子。",
+ "land.ludo.h1": "飛行棋（Ludo）遊戲",
+ "land.ludo.title": "飛行棋（Ludo）遊戲 – 免費線上玩Ludo",
+ "land.ludo.description": "免費飛行棋 Ludo 遊戲：擲骰子，把棋子送回終點，可與電腦或朋友對戰。線上玩，不用下載。",
+ "land.ludo.intro": "擲骰子，讓你的棋子率先衝回終點。",
+ "land.3d.h1": "3D遊戲",
+ "land.3d.title": "3D遊戲 – 免費線上玩3D遊戲",
+ "land.3d.description": "免費3D遊戲：賽車、跑酷、運動、射箭等，盡在3D世界。在瀏覽器中線上玩，不用下載。",
+ "land.3d.intro": "在3D世界裡賽車、奔跑、玩運動遊戲。"
 }

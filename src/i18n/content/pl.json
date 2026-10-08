@@ -2350,6 +2350,90 @@
      "a": "Wiele gier z jedzeniem działa na telefonach i tabletach. Strona gry pokazuje, które urządzenia dana gra obsługuje."
     }
    ]
+  },
+  "toddler": {
+   "intro": "Jasne kolory, duże kształty i proste dotknięcia: gry dla maluchów są stworzone dla najmłodszych graczy, a na Pixuvo znajdziesz ich ponad 160 za darmo, prosto w przeglądarce. Większość uczy przez zabawę, a wiele najlepiej grać razem z rodzicem.\n\nDużą grupę stanowią puzzle. Wooden Puzzles to gra puzzlowa dla maluchów, w której układasz drewniane przedmioty na właściwych miejscach, a Kid Puzzle ABCD uczy alfabetu. Preschool Games zbierają cztery różne gry puzzlowe dla przedszkolaków z kolorami i kształtami, a Colors & Shapes - Kids Learn Color and Shape oraz Fun Learning For Kids pomagają dzieciom dostrzegać kształty i rzeczy dookoła. Math Kids - Add, Subtract, Count, and Learn to gra o liczbach dla małych dzieci, Kids Memory Game - Birds ćwiczy pamięć z ptakami, a Easy Kids Coloring Book ma grube ciemne linie i duże, proste obrazki, które łatwo pokolorować.\n\nPrzy najmłodszych dzieciach usiądź obok i rozmawiaj o tym, co widzą – gry są lepsze, gdy gra się razem. Graj krótko i pozwól dziecku wybierać. Więcej gier dla maluchów znajdziesz w grach dla niemowląt i grach dla dzieci.",
+   "faq": [
+    {
+     "q": "Czym są gry dla maluchów?",
+     "a": "Gry dla maluchów to proste gry dla najmłodszych graczy, z dużymi obrazkami, jasnymi kolorami i łatwym sterowaniem dotykiem. Wiele uczy kształtów, kolorów, liter lub cyfr."
+    },
+    {
+     "q": "Czy gry dla maluchów są darmowe?",
+     "a": "Tak, we wszystkie można grać za darmo w przeglądarce, bez pobierania."
+    },
+    {
+     "q": "Czy maluchy mogą grać na tablecie lub telefonie?",
+     "a": "Tak, wiele z tych gier działa na tabletach i telefonach. Przy najmłodszych dzieciach najlepiej, gdy w pobliżu jest rodzic."
+    },
+    {
+     "q": "Czego dzieci mogą się nauczyć z tych gier?",
+     "a": "Wiele ćwiczy kolory, kształty, litery, liczenie i pamięć, na przykład Preschool Games, Kid Puzzle ABCD i Math Kids."
+    }
+   ]
+  },
+  "kindergarten": {
+   "intro": "Wiek przedszkolny to czas kolorów, liter i pierwszych liczb, a na Pixuvo znajdziesz około 60 darmowych gier przedszkolnych prosto w przeglądarce. Są przeznaczone dla dzieci w wieku około pięciu lat i uczą przez zabawę.\n\nW Coloring Book Kindergarten wybierasz obrazek i go kolorujesz, KinderGarten Spot the Differences prosi o znalezienie różnic między dwoma obrazkami, a Kids Puzzle ABCD służy do nauki alfabetu. Math Kids - Add, Subtract, Count, and Learn jest dla małych dzieci uczących się liczb, a Learning Farm Animals: Educational Games For Kids i Farm Match wykorzystują urocze zwierzęta z farmy do nauki i dobierania w pary. Jeśli dzieci lubią bawić się w dorosłych, Kindergarten School Teacher Kids Learning Games i Kinder Garden pozwolą im zagrać w nauczyciela.\n\nDzieci w tym wieku lubią krótkie gry z wyraźnymi obrazkami, więc spróbuj jednej gry naraz i porozmawiaj o niej potem. Więcej gier do nauki jest w grach edukacyjnych, a więcej gier dla najmłodszych w grach dla maluchów.",
+   "faq": [
+    {
+     "q": "Czym są gry przedszkolne?",
+     "a": "Gry przedszkolne to gry do nauki i zabawy dla dzieci w wieku około pięciu lat, na przykład kolorowanki, memory, litery i liczenie."
+    },
+    {
+     "q": "Czy te gry są dobre dla 5-latków?",
+     "a": "Są stworzone dla dzieci w wieku przedszkolnym, z prostym sterowaniem i wyraźnymi obrazkami. Przy pierwszych grach usiądź z dzieckiem."
+    },
+    {
+     "q": "Czy są darmowe?",
+     "a": "Tak, we wszystkie możesz grać za darmo w przeglądarce, bez pobierania."
+    },
+    {
+     "q": "Czego może się nauczyć moje dziecko?",
+     "a": "Wiele gier ćwiczy kolory, litery, cyfry, dobieranie i zauważanie drobnych szczegółów."
+    }
+   ]
+  },
+  "ludo": {
+   "intro": "Rzucaj kostką, przesuwaj pionki po planszy i doprowadź je wszystkie do domu jako pierwszy: Chińczyk, czyli Ludo, to jedna z najbardziej znanych rodzinnych gier planszowych. Na Pixuvo znajdziesz ponad 30 darmowych gier Ludo prosto w przeglądarce, w które możesz grać z komputerem lub ze znajomymi.\n\nZasada jest we wszystkich taka sama: każdy gracz ma cztery pionki, rzucasz kostką, a liczba mówi, o ile pól się przesuniesz. Ludo Classic to rodzinny klasyk. W Ludo gra się też przeciwko trzem przeciwnikom komputerowym, a Ludo Online ma trzy tryby, w tym grę z botem. W Ludo Wars możesz rzucić wyzwanie graczowi online lub znajomemu w lokalnym trybie dla dwóch osób, a w Ludo Legend można grać samemu albo ze znajomymi na jednym urządzeniu, podając je dalej. Ludo Fever, Ludo Champions, Ludo World i Ludo Multiplayer mają własny wygląd i zasady.\n\nW Chińczyku dużo decyduje szczęście, ale możesz wybrać, którym pionkiem się ruszyć, i na tym polega strategia: osłoń pionek, któremu coś grozi, albo wyślij do przodu inny. Dobra gra do grania na zmianę z rodziną. Więcej gier planszowych jest w kategorii gry planszowe.",
+   "faq": [
+    {
+     "q": "Jak się gra w Chińczyka (Ludo)?",
+     "a": "Każdy gracz ma cztery pionki. Rzucasz kostką, przesuwasz pionek o wyrzuconą liczbę pól i starasz się doprowadzić wszystkie swoje pionki do domu przed innymi."
+    },
+    {
+     "q": "Czy mogę grać w Ludo z komputerem?",
+     "a": "Tak, wiele wersji ma przeciwnika sterowanego przez komputer, na przykład Ludo Online z trybem gry z botem."
+    },
+    {
+     "q": "Czy mogę grać w Ludo ze znajomymi?",
+     "a": "Tak. Niektóre gry pozwalają grać ze znajomymi na jednym urządzeniu, a inne, jak Ludo Wars, pozwalają rzucić wyzwanie graczowi online."
+    },
+    {
+     "q": "Czy Ludo to tylko szczęście?",
+     "a": "Kostka to szczęście, ale to ty wybierasz, którym pionkiem się ruszyć, a dobre decyzje pomagają wygrać."
+    }
+   ]
+  },
+  "3d": {
+   "intro": "Szybkie trasy, wielkie areny i światy, w które patrzysz w głąb: gry 3D dają poczucie bycia w środku gry, a na Pixuvo znajdziesz ich ponad 6000 za darmo, prosto w przeglądarce.\n\nKażdy znajdzie coś dla siebie. Tunnel Rush wysyła cię z pełną prędkością przez tunel, Slope City i Slope Cyber to niekończące się gry biegowe, a Grand Prix Hero i MR RACER : Car Racing to gry wyścigowe. Rocket Soccer Derby i Speedy Golf przynoszą sport, Aquapark.io zabiera cię do parku wodnego, a Narrow One to wieloosobowa gra łucznicza 3D. Jeśli wolisz coś spokojniejszego, Tanuki Sunset to gra o jeździe na longboardzie z widokiem z trzeciej osoby, w której grasz szopem praczem.\n\nWiększość gier 3D wymaga od urządzenia trochę więcej, więc jeśli gra zwalnia, zamknij inne karty albo wypróbuj lżejszą. Wiele działa z klawiaturą lub myszą, a wiele także dotykiem. Więcej wyścigów jest w grach wyścigowych, a więcej gier biegowych w grach typu runner.",
+   "faq": [
+    {
+     "q": "Czym są gry 3D?",
+     "a": "Gry 3D pokazują świat gry z głębią, więc możesz w niego patrzeć i poruszać się po nim, nie tylko w lewo i w prawo."
+    },
+    {
+     "q": "Czy gry 3D działają na każdym urządzeniu?",
+     "a": "Wiele tak, ale wymagają od urządzenia więcej niż gry 2D. Jeśli gra zwalnia, zamknij inne karty albo wypróbuj inną."
+    },
+    {
+     "q": "Czy są gry 3D dla dzieci?",
+     "a": "Tak, są wyścigi, gry biegowe, sportowe i gry ze zwierzętami w 3D. Wiek i sterowanie sprawdzisz na stronie gry."
+    },
+    {
+     "q": "Czy muszę coś pobierać?",
+     "a": "Nie, wszystkie działają w przeglądarce, bez pobierania."
+    }
+   ]
   }
  }
 }

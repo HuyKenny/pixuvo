@@ -2350,6 +2350,90 @@
      "a": "Banyak game makanan yang bisa dimainkan di ponsel dan tablet. Halaman game menunjukkan perangkat apa saja yang didukung."
     }
    ]
+  },
+  "toddler": {
+   "intro": "Warna cerah, bentuk besar, dan ketukan sederhana: game balita dibuat untuk pemain paling kecil, dan Pixuvo punya lebih dari 160 game gratis yang bisa dimainkan di browser. Sebagian besar mengajak anak belajar sambil bermain, dan banyak yang paling seru dimainkan bersama orang tua.\n\nPuzzle adalah kelompok yang besar. Wooden Puzzles adalah game puzzle untuk balita yang meminta anak menaruh benda kayu di tempat yang tepat, dan Kid Puzzle ABCD mengenalkan alfabet. Preschool Games menghimpun empat game puzzle berbeda untuk anak prasekolah dengan warna dan bentuk, sedangkan Colors & Shapes - Kids Learn Color and Shape dan Fun Learning For Kids membantu anak memperhatikan bentuk dan benda di sekitarnya. Math Kids - Add, Subtract, Count, and Learn adalah game angka untuk anak kecil, Kids Memory Game - Birds melatih ingatan lewat gambar burung, dan Easy Kids Coloring Book punya garis tebal gelap serta gambar besar yang sederhana sehingga mudah diwarnai.\n\nUntuk anak yang paling kecil, duduklah di sampingnya dan ngobrol tentang apa yang ia lihat – game terasa lebih seru kalau dimainkan bersama. Buat sesi bermain singkat dan biarkan anak memilih sendiri. Game lain untuk si kecil ada di Game Bayi dan Game Anak.",
+   "faq": [
+    {
+     "q": "Apa itu game balita?",
+     "a": "Game balita adalah game sederhana untuk pemain paling kecil, dengan gambar besar, warna cerah, dan ketukan yang mudah. Banyak di antaranya mengajarkan bentuk, warna, huruf, atau angka."
+    },
+    {
+     "q": "Apakah game balita gratis?",
+     "a": "Ya, semuanya gratis dimainkan di browser, tanpa download."
+    },
+    {
+     "q": "Bisakah balita bermain di tablet atau ponsel?",
+     "a": "Bisa, banyak game ini berjalan di tablet dan ponsel. Sebaiknya ada orang tua di dekat anak, terutama untuk anak yang paling kecil."
+    },
+    {
+     "q": "Apa yang bisa dipelajari anak dari game ini?",
+     "a": "Banyak yang melatih warna, bentuk, huruf, berhitung, dan memori, misalnya Preschool Games, Kid Puzzle ABCD, dan Math Kids."
+    }
+   ]
+  },
+  "kindergarten": {
+   "intro": "Usia TK adalah masa warna, huruf, dan angka pertama, dan Pixuvo punya sekitar 60 game TK gratis yang bisa dimainkan di browser. Game ini dibuat untuk anak sekitar lima tahun dan mengajar lewat permainan.\n\nColoring Book Kindergarten membiarkanmu memilih gambar lalu mewarnainya, KinderGarten Spot the Differences meminta kamu menemukan perbedaan di antara dua gambar, dan Kids Puzzle ABCD mengajak belajar alfabet. Math Kids - Add, Subtract, Count, and Learn cocok untuk anak kecil yang sedang belajar angka, sementara Learning Farm Animals: Educational Games For Kids dan Farm Match memakai hewan ternak yang lucu untuk belajar dan mencocokkan. Kalau suka bermain peran, Kindergarten School Teacher Kids Learning Games dan Kinder Garden memungkinkan kamu menjadi guru.\n\nAnak seusia ini menyukai game singkat dengan gambar yang jelas, jadi coba satu game dulu lalu ngobrol tentangnya sesudahnya. Game belajar lainnya ada di kategori Game Edukasi, dan game untuk si kecil ada di Game Balita.",
+   "faq": [
+    {
+     "q": "Apa itu game TK?",
+     "a": "Game TK adalah game belajar sambil bermain untuk anak sekitar lima tahun, misalnya mewarnai, memori, huruf, dan berhitung."
+    },
+    {
+     "q": "Apakah game ini cocok untuk anak 5 tahun?",
+     "a": "Game ini dibuat untuk anak usia TK, dengan kontrol sederhana dan gambar yang jelas. Temani anak saat memainkan game pertamanya."
+    },
+    {
+     "q": "Apakah gratis?",
+     "a": "Ya, semuanya bisa dimainkan gratis di browser, tanpa download."
+    },
+    {
+     "q": "Apa yang bisa dipelajari anak saya?",
+     "a": "Banyak game melatih warna, huruf, angka, mencocokkan, dan memperhatikan detail kecil."
+    }
+   ]
+  },
+  "ludo": {
+   "intro": "Lempar dadu, jalankan bidakmu mengelilingi papan, dan bawa semuanya pulang lebih dulu: Ludo adalah salah satu permainan papan keluarga yang paling terkenal. Pixuvo punya lebih dari 30 game Ludo gratis yang bisa dimainkan di browser, melawan komputer atau bersama teman.\n\nIdenya sama di semuanya: tiap pemain punya empat bidak, kamu melempar dadu, dan angkanya menentukan berapa langkah bidak berjalan. Ludo Classic adalah versi klasik untuk keluarga. Ludo juga bisa dimainkan melawan tiga lawan komputer, dan Ludo Online punya tiga mode, termasuk melawan bot. Ludo Wars memungkinkan kamu menantang pemain online atau teman dalam mode dua pemain lokal, dan Ludo Legend bisa dimainkan sendiri atau bersama teman di satu perangkat dengan saling bergiliran. Ludo Fever, Ludo Champions, Ludo World, dan Ludo Multiplayer punya tampilan dan aturan sendiri.\n\nDalam Ludo, keberuntungan sangat berperan, tetapi kamu bisa memilih bidak mana yang dijalankan, dan di situlah letak strateginya: lindungi bidak yang terancam, atau majukan bidak yang lain. Cocok untuk bermain bergiliran bersama keluarga. Permainan papan lainnya ada di kategori Permainan Papan.",
+   "faq": [
+    {
+     "q": "Bagaimana cara bermain Ludo?",
+     "a": "Tiap pemain punya empat bidak. Kamu melempar dadu, menjalankan satu bidak sesuai angka yang keluar, dan berusaha membawa semua bidakmu pulang sebelum pemain lain."
+    },
+    {
+     "q": "Bisakah main Ludo melawan komputer?",
+     "a": "Bisa, banyak versi punya lawan bot, misalnya Ludo Online dengan mode melawan bot."
+    },
+    {
+     "q": "Bisakah main Ludo bersama teman?",
+     "a": "Bisa. Beberapa game memungkinkan bermain bersama teman di satu perangkat, dan yang lain, seperti Ludo Wars, memungkinkan kamu menantang pemain online."
+    },
+    {
+     "q": "Apakah Ludo hanya soal keberuntungan?",
+     "a": "Dadu memang soal keberuntungan, tetapi kamu yang memilih bidak mana yang dijalankan, dan pilihan yang bagus membantumu menang."
+    }
+   ]
+  },
+  "3d": {
+   "intro": "Lintasan cepat, arena luas, dan dunia yang bisa kamu masuki, bukan hanya dilihat dari samping: game 3D terasa seperti berada di dalam permainan, dan Pixuvo punya lebih dari 6.000 game 3D gratis yang bisa dimainkan di browser.\n\nAda yang cocok untuk setiap selera. Tunnel Rush membuatmu melesat di dalam terowongan, Slope City dan Slope Cyber adalah game lari tanpa henti, sedangkan Grand Prix Hero dan MR RACER : Car Racing adalah game balap. Rocket Soccer Derby dan Speedy Golf menghadirkan olahraga, Aquapark.io membawamu ke taman air, dan Narrow One adalah game memanah 3D multiplayer. Kalau mau yang lebih santai, Tanuki Sunset adalah game main skate longboard dari sudut pandang orang ketiga, di mana kamu menjadi seekor rakun.\n\nSebagian besar game 3D butuh perangkat yang sedikit lebih kuat, jadi kalau game terasa lambat, tutup tab lain atau coba game yang lebih ringan. Banyak yang bisa dimainkan dengan keyboard atau mouse, dan banyak pula yang mendukung layar sentuh. Game balap lainnya ada di kategori Game Balap, dan game lari lainnya ada di kategori Game Lari.",
+   "faq": [
+    {
+     "q": "Apa itu game 3D?",
+     "a": "Game 3D menampilkan dunia permainan dengan kedalaman, sehingga kamu bisa melihat ke dalamnya dan bergerak ke segala arah, bukan hanya kiri dan kanan."
+    },
+    {
+     "q": "Apakah game 3D bisa jalan di semua perangkat?",
+     "a": "Banyak yang bisa, tetapi game 3D butuh perangkat yang lebih kuat daripada game 2D. Kalau game terasa lambat, tutup tab lain atau coba game lain."
+    },
+    {
+     "q": "Apakah ada game 3D untuk anak-anak?",
+     "a": "Ada, ada game balap, lari, olahraga, dan hewan dalam 3D. Cek halaman game untuk melihat usia dan kontrolnya."
+    },
+    {
+     "q": "Apakah saya perlu download sesuatu?",
+     "a": "Tidak, semuanya berjalan di browser, tanpa download."
+    }
+   ]
   }
  }
 }

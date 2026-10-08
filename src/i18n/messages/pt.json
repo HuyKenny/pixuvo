@@ -802,5 +802,22 @@
  "land.food.h1": "Jogos de comida",
  "land.food.title": "Jogos de comida – jogue grátis online jogos de comidinha",
  "land.food.description": "Jogos de comida grátis: asse biscoitos, corte legumes, junte bolos e comande sua própria confeitaria. Jogue online no navegador, sem baixar.",
- "land.food.intro": "Asse, corte, junte e sirva: jogos cheios de comida."
+ "land.food.intro": "Asse, corte, junte e sirva: jogos cheios de comida.",
+ "footer.popular": "Pesquisas populares",
+ "land.toddler.h1": "Jogos para crianças pequenas",
+ "land.toddler.title": "Jogos para crianças pequenas – jogos grátis para os pequenos",
+ "land.toddler.description": "Jogos grátis para crianças pequenas: quebra-cabeças simples, cores, formas, letras e contagem para os menores. Jogue online, sem baixar.",
+ "land.toddler.intro": "Quebra-cabeças simples, cores, formas e letras para os jogadores menores.",
+ "land.kindergarten.h1": "Jogos de pré-escola",
+ "land.kindergarten.title": "Jogos de pré-escola – jogos educativos grátis para 5 anos",
+ "land.kindergarten.description": "Jogos de pré-escola grátis para crianças de 5 anos: colorir, memória, matemática, letras e diferenças. Jogue online, sem baixar nada.",
+ "land.kindergarten.intro": "Colorir, memória, letras e números para a idade da pré-escola.",
+ "land.ludo.h1": "Jogos de Ludo",
+ "land.ludo.title": "Jogos de Ludo – jogue Ludo grátis online",
+ "land.ludo.description": "Jogos de Ludo grátis: jogue o dado, leve seus peões para casa e jogue contra o computador ou com amigos. Online, sem baixar nada.",
+ "land.ludo.intro": "Jogue o dado e leve seus peões para casa primeiro.",
+ "land.3d.h1": "Jogos 3D",
+ "land.3d.title": "Jogos 3D – jogue jogos em 3D grátis online",
+ "land.3d.description": "Jogos 3D grátis: corrida, corrida infinita, esportes, arco e flecha e mais em mundos 3D. Jogue no navegador, sem baixar nada.",
+ "land.3d.intro": "Corrida, correria e esportes em mundos 3D."
 }

@@ -802,5 +802,22 @@
  "land.food.h1": "Jeux de nourriture",
  "land.food.title": "Jeux de nourriture – jouer gratuitement en ligne",
  "land.food.description": "Jeux de nourriture gratuits : fais cuire des cookies, coupe des légumes, fusionne des gâteaux et gère ta boulangerie. Joue en ligne, sans téléchargement.",
- "land.food.intro": "Cuire, couper, fusionner et servir – des jeux pleins de nourriture."
+ "land.food.intro": "Cuire, couper, fusionner et servir – des jeux pleins de nourriture.",
+ "footer.popular": "Recherches populaires",
+ "land.toddler.h1": "Jeux pour tout-petits",
+ "land.toddler.title": "Jeux pour tout-petits – jeux gratuits en ligne pour les petits",
+ "land.toddler.description": "Jeux gratuits pour tout-petits : puzzles simples, couleurs, formes, lettres et comptage pour les plus jeunes. Joue en ligne, sans téléchargement.",
+ "land.toddler.intro": "Des puzzles simples, des couleurs, des formes et des lettres pour les plus jeunes joueurs.",
+ "land.kindergarten.h1": "Jeux de maternelle",
+ "land.kindergarten.title": "Jeux de maternelle – jeux éducatifs gratuits pour les 5 ans",
+ "land.kindergarten.description": "Jeux de maternelle gratuits pour les 5 ans : coloriage, memory, maths, lettres et jeu des différences. Joue en ligne, sans téléchargement.",
+ "land.kindergarten.intro": "Coloriage, mémoire, lettres et chiffres pour l'âge de la maternelle.",
+ "land.ludo.h1": "Jeux de Ludo",
+ "land.ludo.title": "Jeux de Ludo – joue gratuitement au Ludo en ligne",
+ "land.ludo.description": "Jeux de Ludo gratuits (jeu des petits chevaux) : lance le dé, ramène tes pions à la maison et joue contre l'ordinateur ou entre amis.",
+ "land.ludo.intro": "Lance le dé et ramène tes pions à la maison avant les autres.",
+ "land.3d.h1": "Jeux 3D",
+ "land.3d.title": "Jeux 3D – joue gratuitement à des jeux 3D en ligne",
+ "land.3d.description": "Jeux 3D gratuits : courses, runners, sports, tir à l'arc et plus encore dans des mondes en 3D. Joue en ligne, sans téléchargement.",
+ "land.3d.intro": "Courses, runners et sports dans des mondes en 3D."
 }

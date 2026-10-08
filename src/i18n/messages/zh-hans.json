@@ -786,5 +786,22 @@
  "land.food.h1": "美食小游戏",
  "land.food.title": "美食游戏 – 免费在线玩美食小游戏",
  "land.food.description": "免费美食游戏：烤饼干、切蔬菜、合成蛋糕，还能经营自己的面包店。在浏览器里在线玩，无需下载。",
- "land.food.intro": "烤、切、合成、上菜，满屏都是美食的游戏。"
+ "land.food.intro": "烤、切、合成、上菜，满屏都是美食的游戏。",
+ "footer.popular": "热门搜索",
+ "land.toddler.h1": "幼儿游戏",
+ "land.toddler.title": "幼儿游戏 – 适合幼儿和学龄前宝宝的免费在线小游戏",
+ "land.toddler.description": "免费幼儿游戏：简单拼图、颜色、形状、字母和数数，专为最小的玩家准备。在线玩，无需下载。",
+ "land.toddler.intro": "简单的拼图、颜色、形状和字母，专为最小的玩家准备。",
+ "land.kindergarten.h1": "幼儿园游戏",
+ "land.kindergarten.title": "幼儿园游戏 – 适合5岁孩子的免费益智小游戏",
+ "land.kindergarten.description": "适合5岁孩子的免费幼儿园游戏：涂色、记忆、数学、字母和找不同。在线玩，无需下载。",
+ "land.kindergarten.intro": "涂色、记忆、字母和数字，适合幼儿园年龄的孩子。",
+ "land.ludo.h1": "飞行棋（Ludo）小游戏",
+ "land.ludo.title": "飞行棋（Ludo）小游戏 – 免费在线玩Ludo",
+ "land.ludo.description": "免费飞行棋 Ludo 小游戏：掷骰子，把棋子送回终点，可与电脑或好友对战。在线玩，无需下载。",
+ "land.ludo.intro": "掷骰子，让你的棋子率先冲回终点。",
+ "land.3d.h1": "3D游戏",
+ "land.3d.title": "3D游戏 – 免费在线玩3D小游戏",
+ "land.3d.description": "免费3D游戏：赛车、跑酷、体育、射箭等，尽在3D世界。在浏览器中在线玩，无需下载。",
+ "land.3d.intro": "在3D世界里赛车、奔跑、玩体育游戏。"
 }

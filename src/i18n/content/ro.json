@@ -2350,6 +2350,90 @@
      "a": "Multe jocuri cu mâncare merg pe telefoane și tablete. Pagina jocului arată ce dispozitive suportă."
     }
    ]
+  },
+  "toddler": {
+   "intro": "Culori vii, forme mari și atingeri simple: jocurile pentru copii mici sunt făcute pentru cei mai mici jucători, iar Pixuvo are peste 160 gratis, de jucat în browser. Cele mai multe învață prin joacă, iar multe se joacă mai bine împreună cu un părinte.\n\nPuzzle-urile sunt un grup mare. Wooden Puzzles este un joc de puzzle pentru cei mici în care pui obiecte din lemn la locul lor, iar Kid Puzzle ABCD învață alfabetul. Preschool Games adună patru puzzle-uri diferite cu culori și forme pentru preșcolari, iar Colors & Shapes - Kids Learn Color and Shape și Fun Learning For Kids îi ajută pe copii să observe formele și lucrurile din jur. Math Kids - Add, Subtract, Count, and Learn este un joc despre numere pentru cei mici, Kids Memory Game - Birds exersează memoria cu păsărele, iar Easy Kids Coloring Book are linii groase, închise și desene mari și simple, ușor de colorat.\n\nCu cei mai mici, stai lângă ei și vorbește despre ce văd: jocurile sunt mai bune când se joacă împreună. Alege sesiuni scurte și lasă copilul să aleagă. Mai multe jocuri pentru cei mici găsești la jocurile cu bebeluși și la jocurile pentru copii.",
+   "faq": [
+    {
+     "q": "Ce sunt jocurile pentru copii mici?",
+     "a": "Sunt jocuri simple pentru cei mai mici jucători, cu imagini mari, culori vii și atingeri ușoare. Multe învață forme, culori, litere sau numere."
+    },
+    {
+     "q": "Sunt gratis jocurile pentru copii mici?",
+     "a": "Da, toate sunt gratis și se joacă în browser, fără să descarci nimic."
+    },
+    {
+     "q": "Pot juca cei mici pe tabletă sau pe telefon?",
+     "a": "Da, multe dintre aceste jocuri merg pe tablete și pe telefoane. Pentru cei mai mici, cel mai bine e să fie un adult în apropiere."
+    },
+    {
+     "q": "Ce pot învăța copiii din aceste jocuri?",
+     "a": "Multe exersează culorile, formele, literele, numărarea și memoria, de exemplu Preschool Games, Kid Puzzle ABCD și Math Kids."
+    }
+   ]
+  },
+  "kindergarten": {
+   "intro": "Vârsta grădiniței e timpul culorilor, al literelor și al primelor numere, iar Pixuvo are în jur de 60 de jocuri pentru grădiniță gratis, de jucat în browser. Sunt făcute pentru copii de aproximativ cinci ani și învață prin joacă.\n\nColoring Book Kindergarten te lasă să alegi un desen și să-l colorezi, KinderGarten Spot the Differences îți cere să găsești diferențele dintre două imagini, iar Kids Puzzle ABCD te ajută să înveți alfabetul. Math Kids - Add, Subtract, Count, and Learn e pentru cei mici care învață numerele, iar Learning Farm Animals: Educational Games For Kids și Farm Match folosesc animăluțe simpatice de la fermă pentru învățat și potrivit perechi. Dacă îți place să te joci de-a cei mari, Kindergarten School Teacher Kids Learning Games și Kinder Garden te lasă să fii învățătorul.\n\nCopiilor de vârsta asta le plac jocurile scurte, cu imagini clare, așa că încearcă un joc pe rând și vorbiți despre el după aceea. Mai multe jocuri de învățat găsești la jocurile educative, iar mai multe jocuri pentru cei mici la jocurile pentru copii mici.",
+   "faq": [
+    {
+     "q": "Ce sunt jocurile pentru grădiniță?",
+     "a": "Sunt jocuri de învățat și de joacă pentru copii de aproximativ cinci ani, de exemplu de colorat, de memorie, cu litere și de numărat."
+    },
+    {
+     "q": "Sunt bune aceste jocuri pentru copiii de 5 ani?",
+     "a": "Sunt făcute pentru vârsta grădiniței, cu comenzi simple și imagini clare. La primele jocuri, stai lângă copil."
+    },
+    {
+     "q": "Sunt gratis?",
+     "a": "Da, poți juca toate jocurile gratis în browser, fără să descarci nimic."
+    },
+    {
+     "q": "Ce poate învăța copilul meu?",
+     "a": "Multe jocuri exersează culorile, literele, numerele, potrivirea perechilor și observarea micilor detalii."
+    }
+   ]
+  },
+  "ludo": {
+   "intro": "Dă cu zarul, mută-ți piesele pe tablă și adu-le pe toate acasă primul: Ludo, cunoscut la noi și ca „Nu te supăra frate”, este unul dintre cele mai cunoscute jocuri de societate pentru familie. Pixuvo are peste 30 de jocuri Ludo gratis, de jucat în browser, împotriva calculatorului sau cu prietenii.\n\nIdeea e aceeași în toate: fiecare jucător are patru piese, dai cu zarul, iar numărul îți spune câte căsuțe mergi. Ludo Classic este clasicul familiei. Se poate juca Ludo și împotriva a trei adversari controlați de calculator, iar Ludo Online are trei moduri, între care și jocul împotriva unui bot. Ludo Wars îți permite să provoci un jucător online sau un prieten în modul local pentru doi, iar Ludo Legend se poate juca singur sau cu prietenii pe același dispozitiv, pasându-l mai departe. Ludo Fever, Ludo Champions, Ludo World și Ludo Multiplayer vin cu aspectul și regulile lor.\n\nLa Ludo norocul contează mult, dar tu alegi ce piesă muți, și aici stă strategia: aperi o piesă aflată în pericol sau trimiți alta înainte. Un joc bun pentru a juca pe rând cu familia. Mai multe jocuri de societate găsești la categoria jocuri de societate.",
+   "faq": [
+    {
+     "q": "Cum se joacă Ludo?",
+     "a": "Fiecare jucător are patru piese. Dai cu zarul, muți o piesă câte căsuțe arată zarul și încerci să-ți aduci toate piesele acasă înaintea celorlalți."
+    },
+    {
+     "q": "Pot juca Ludo împotriva calculatorului?",
+     "a": "Da, multe versiuni au un adversar controlat de calculator, de exemplu Ludo Online cu modul de joc împotriva unui bot."
+    },
+    {
+     "q": "Pot juca Ludo cu prietenii?",
+     "a": "Da. Unele jocuri permit să joci cu prietenii pe același dispozitiv, iar altele, ca Ludo Wars, te lasă să provoci un jucător online."
+    },
+    {
+     "q": "Ludo e doar noroc?",
+     "a": "Zarul e noroc, dar tu alegi ce piesă muți, iar alegerile bune te ajută să câștigi."
+    }
+   ]
+  },
+  "3d": {
+   "intro": "Piste rapide, arene uriașe și lumi în care privești înăuntru, nu doar din lateral: jocurile 3D îți dau senzația că ești în joc, iar Pixuvo are peste 6.000 de jocuri 3D gratis, de jucat în browser.\n\nExistă ceva pentru orice gust. Tunnel Rush te trimite cu viteză printr-un tunel, Slope City și Slope Cyber sunt jocuri de alergare fără sfârșit, iar Grand Prix Hero și MR RACER : Car Racing sunt jocuri de curse. Rocket Soccer Derby și Speedy Golf aduc sportul, Aquapark.io te duce la un parc acvatic, iar Narrow One este un joc 3D multiplayer de tir cu arcul. Dacă vrei ceva mai liniștit, Tanuki Sunset este un joc de longboard la persoana a treia, în care joci ca un raton.\n\nCele mai multe jocuri 3D cer ceva mai mult de la dispozitiv, așa că, dacă un joc merge greu, închide alte file sau încearcă unul mai ușor. Multe merg cu tastatura sau cu mouse-ul, iar multe și cu atingere. Mai multe curse găsești la jocurile de curse, iar mai multe jocuri de alergare la categoria jocuri de alergare.",
+   "faq": [
+    {
+     "q": "Ce sunt jocurile 3D?",
+     "a": "Jocurile 3D arată lumea jocului cu adâncime, așa că poți privi înăuntrul ei și te poți mișca, nu doar la stânga și la dreapta."
+    },
+    {
+     "q": "Merg jocurile 3D pe orice dispozitiv?",
+     "a": "Multe merg, dar cer mai mult de la dispozitiv decât jocurile 2D. Dacă un joc merge greu, închide alte file sau încearcă altul."
+    },
+    {
+     "q": "Există jocuri 3D pentru copii?",
+     "a": "Da, există jocuri 3D de curse, de alergare, de sport și cu animale. Verifică pagina jocului pentru vârstă și comenzi."
+    },
+    {
+     "q": "Trebuie să descarc ceva?",
+     "a": "Nu, toate merg în browser, fără descărcări."
+    }
+   ]
   }
  }
 }

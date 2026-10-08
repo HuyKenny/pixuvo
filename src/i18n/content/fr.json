@@ -2350,6 +2350,90 @@
      "a": "Beaucoup de jeux de nourriture fonctionnent sur téléphone et tablette. La page du jeu indique les appareils pris en charge."
     }
    ]
+  },
+  "toddler": {
+   "intro": "Des couleurs vives, de grandes formes et de simples tapotements : les jeux pour tout-petits sont faits pour les plus jeunes joueurs, et Pixuvo en propose plus de 160 gratuits dans ton navigateur. La plupart apprennent en s'amusant, et beaucoup se jouent mieux avec un parent.\n\nLes puzzles forment un grand groupe. Wooden Puzzles est un jeu de puzzle pour tout-petits où tu remets des objets en bois à la bonne place, et Kid Puzzle ABCD apprend l'alphabet. Preschool Games réunit quatre jeux de puzzle différents pour les enfants d'âge préscolaire, avec des couleurs et des formes, et Colors & Shapes - Kids Learn Color and Shape et Fun Learning For Kids aident les enfants à remarquer les formes et les choses autour d'eux. Math Kids - Add, Subtract, Count, and Learn est un jeu de chiffres pour les jeunes enfants, Kids Memory Game - Birds exerce la mémoire avec des oiseaux, et Easy Kids Coloring Book propose des traits épais et foncés et de grandes images simples, faciles à colorier.\n\nPour les tout-petits, assieds-toi à côté de l'enfant et parle de ce qu'il voit – les jeux sont meilleurs quand on joue ensemble. Garde des parties courtes et laisse l'enfant choisir. D'autres jeux pour les petits se trouvent dans les jeux de bébé et les jeux pour enfants.",
+   "faq": [
+    {
+     "q": "Qu'est-ce que les jeux pour tout-petits ?",
+     "a": "Les jeux pour tout-petits sont des jeux simples pour les plus jeunes joueurs, avec de grandes images, des couleurs vives et des commandes faciles par tapotement. Beaucoup apprennent les formes, les couleurs, les lettres ou les chiffres."
+    },
+    {
+     "q": "Les jeux pour tout-petits sont-ils gratuits ?",
+     "a": "Oui, tous sont gratuits dans ton navigateur, sans téléchargement."
+    },
+    {
+     "q": "Les tout-petits peuvent-ils jouer sur tablette ou téléphone ?",
+     "a": "Oui, beaucoup de ces jeux fonctionnent sur tablettes et téléphones. Pour les plus jeunes, le mieux est d'avoir un parent à proximité."
+    },
+    {
+     "q": "Que peuvent apprendre les enfants avec ces jeux ?",
+     "a": "Beaucoup exercent les couleurs, les formes, les lettres, le comptage et la mémoire, par exemple Preschool Games, Kid Puzzle ABCD et Math Kids."
+    }
+   ]
+  },
+  "kindergarten": {
+   "intro": "L'âge de la maternelle est celui des couleurs, des lettres et des premiers chiffres, et Pixuvo propose environ 60 jeux de maternelle gratuits dans ton navigateur. Ils sont faits pour les enfants d'environ cinq ans et enseignent en jouant.\n\nDans Coloring Book Kindergarten, tu choisis une image et tu la colores, KinderGarten Spot the Differences te demande de trouver les différences entre deux images, et Kids Puzzle ABCD sert à apprendre l'alphabet. Math Kids - Add, Subtract, Count, and Learn s'adresse aux jeunes enfants qui apprennent les chiffres, et Learning Farm Animals: Educational Games For Kids et Farm Match utilisent de mignons animaux de la ferme pour apprendre et associer. Si les enfants aiment faire semblant d'être grands, Kindergarten School Teacher Kids Learning Games et Kinder Garden leur permettent de jouer à la maîtresse.\n\nLes enfants de cet âge aiment les jeux courts avec des images claires : essaie un jeu à la fois et parlez-en ensuite. D'autres jeux pour apprendre se trouvent dans les jeux éducatifs, et d'autres jeux pour les petits dans les jeux pour tout-petits.",
+   "faq": [
+    {
+     "q": "Qu'est-ce que les jeux de maternelle ?",
+     "a": "Les jeux de maternelle sont des jeux pour apprendre et s'amuser destinés aux enfants d'environ cinq ans, par exemple le coloriage, le memory, les lettres et le comptage."
+    },
+    {
+     "q": "Ces jeux conviennent-ils aux enfants de 5 ans ?",
+     "a": "Ils sont faits pour les enfants d'âge maternelle, avec des commandes simples et des images claires. Assieds-toi avec l'enfant pour les premiers jeux."
+    },
+    {
+     "q": "Sont-ils gratuits ?",
+     "a": "Oui, tu peux tous y jouer gratuitement dans ton navigateur, sans téléchargement."
+    },
+    {
+     "q": "Que peut apprendre mon enfant ?",
+     "a": "Beaucoup de jeux exercent les couleurs, les lettres, les chiffres, l'association et le repérage de petits détails."
+    }
+   ]
+  },
+  "ludo": {
+   "intro": "Lance le dé, déplace tes pions sur le plateau et ramène-les tous à la maison avant les autres : le Ludo, proche du jeu des petits chevaux, est l'un des jeux de société familiaux les plus connus. Pixuvo propose plus de 30 jeux de Ludo gratuits dans ton navigateur, et tu peux jouer contre l'ordinateur ou avec des amis.\n\nL'idée est la même partout : chaque joueur a quatre pions, tu lances un dé, et le nombre indique de combien tu avances. Ludo Classic est le classique de la famille. Le Ludo se joue aussi contre trois adversaires contrôlés par l'ordinateur, et Ludo Online propose trois modes, dont jouer contre un bot. Dans Ludo Wars, tu peux défier un joueur en ligne ou un ami en mode local à deux joueurs, et Ludo Legend se joue seul ou entre amis sur un même appareil en se le passant. Ludo Fever, Ludo Champions, Ludo World et Ludo Multiplayer ont chacun leur look et leurs règles.\n\nAu Ludo, la chance compte beaucoup, mais tu choisis quel pion déplacer, et c'est là qu'est la stratégie : protège un pion en danger, ou envoie un autre en avant. Un bon jeu à jouer chacun son tour en famille. D'autres jeux de plateau se trouvent dans les jeux de société.",
+   "faq": [
+    {
+     "q": "Comment joue-t-on au Ludo ?",
+     "a": "Chaque joueur a quatre pions. Tu lances un dé, déplaces un pion du nombre de cases indiqué et essaies de ramener tous tes pions à la maison avant les autres."
+    },
+    {
+     "q": "Puis-je jouer au Ludo contre l'ordinateur ?",
+     "a": "Oui, beaucoup de versions ont un adversaire bot, par exemple Ludo Online avec son mode de jeu contre un bot."
+    },
+    {
+     "q": "Puis-je jouer au Ludo avec des amis ?",
+     "a": "Oui. Certains jeux te permettent de jouer entre amis sur un même appareil, et d'autres, comme Ludo Wars, te permettent de défier un joueur en ligne."
+    },
+    {
+     "q": "Le Ludo, est-ce seulement de la chance ?",
+     "a": "Le dé, c'est la chance, mais tu choisis quel pion déplacer, et de bons choix aident à gagner."
+    }
+   ]
+  },
+  "3d": {
+   "intro": "Des pistes rapides, de grandes arènes et des mondes dans lesquels on regarde en profondeur : les jeux 3D donnent l'impression d'être dans le jeu, et Pixuvo en propose plus de 6 000 gratuits dans ton navigateur.\n\nIl y en a pour tous les goûts. Tunnel Rush te lance à toute vitesse dans un tunnel, Slope City et Slope Cyber sont des jeux de course sans fin, et Grand Prix Hero et MR RACER : Car Racing sont des jeux de course de voitures. Rocket Soccer Derby et Speedy Golf apportent du sport, Aquapark.io t'emmène dans un parc aquatique, et Narrow One est un jeu de tir à l'arc multijoueur en 3D. Si tu préfères quelque chose de plus calme, Tanuki Sunset est un jeu de longboard à la troisième personne où tu joues un raton laveur.\n\nLa plupart des jeux 3D demandent un peu plus à ton appareil : si un jeu est lent, ferme d'autres onglets ou essaie un jeu plus léger. Beaucoup fonctionnent au clavier ou à la souris, et beaucoup aussi au toucher. D'autres courses se trouvent dans les jeux de course, et d'autres jeux de course à pied dans les jeux de runner.",
+   "faq": [
+    {
+     "q": "Qu'est-ce que les jeux 3D ?",
+     "a": "Les jeux 3D montrent le monde du jeu en profondeur, pour que tu puisses y regarder et t'y déplacer, pas seulement à gauche et à droite."
+    },
+    {
+     "q": "Les jeux 3D fonctionnent-ils sur tous les appareils ?",
+     "a": "Beaucoup, oui, mais ils demandent plus à l'appareil que les jeux 2D. Si un jeu est lent, ferme d'autres onglets ou essaie-en un autre."
+    },
+    {
+     "q": "Y a-t-il des jeux 3D pour les enfants ?",
+     "a": "Oui, il y a des courses, des jeux de runner, du sport et des jeux d'animaux en 3D. Vérifie l'âge et les commandes sur la page du jeu."
+    },
+    {
+     "q": "Dois-je télécharger quelque chose ?",
+     "a": "Non, tous fonctionnent dans ton navigateur, sans téléchargement."
+    }
+   ]
   }
  }
 }

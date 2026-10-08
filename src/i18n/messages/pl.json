@@ -810,5 +810,22 @@
  "land.food.h1": "Gry z jedzeniem",
  "land.food.title": "Gry z jedzeniem – graj w gry o jedzeniu online za darmo",
  "land.food.description": "Darmowe gry z jedzeniem: piecz ciastka, krój warzywa, łącz torty i prowadź własną piekarnię. Graj online w przeglądarce, bez pobierania.",
- "land.food.intro": "Piecz, krój, łącz i podawaj – gry pełne jedzenia."
+ "land.food.intro": "Piecz, krój, łącz i podawaj – gry pełne jedzenia.",
+ "footer.popular": "Popularne wyszukiwania",
+ "land.toddler.h1": "Gry dla maluchów",
+ "land.toddler.title": "Gry dla maluchów – darmowe gry online dla małych dzieci",
+ "land.toddler.description": "Darmowe gry dla maluchów: proste puzzle, kolory, kształty, litery i liczenie dla najmłodszych. Graj online, bez pobierania.",
+ "land.toddler.intro": "Proste puzzle, kolory, kształty i litery dla najmłodszych graczy.",
+ "land.kindergarten.h1": "Gry przedszkolne",
+ "land.kindergarten.title": "Gry przedszkolne – darmowe gry edukacyjne dla 5-latków",
+ "land.kindergarten.description": "Darmowe gry przedszkolne dla 5-latków: kolorowanki, memory, liczenie, litery i szukanie różnic. Graj online, bez pobierania.",
+ "land.kindergarten.intro": "Kolorowanki, pamięć, litery i cyfry dla dzieci w wieku przedszkolnym.",
+ "land.ludo.h1": "Chińczyk (Ludo)",
+ "land.ludo.title": "Chińczyk i gry Ludo – graj za darmo online",
+ "land.ludo.description": "Chińczyk i gry Ludo za darmo: rzucaj kostką, doprowadź pionki do domu i graj z komputerem lub ze znajomymi. Bez pobierania.",
+ "land.ludo.intro": "Rzucaj kostką i doprowadź swoje pionki do domu jako pierwszy.",
+ "land.3d.h1": "Gry 3D",
+ "land.3d.title": "Gry 3D – graj za darmo w gry 3D online w przeglądarce",
+ "land.3d.description": "Darmowe gry 3D: wyścigi, runnery, sport, łucznictwo i więcej w światach 3D. Graj online w przeglądarce, bez pobierania.",
+ "land.3d.intro": "Wyścigi, bieganie i sport w światach 3D."
 }

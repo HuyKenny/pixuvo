@@ -2350,6 +2350,90 @@
      "a": "Muitos jogos de comida funcionam em celulares e tablets. A página do jogo mostra quais dispositivos ele aceita."
     }
    ]
+  },
+  "toddler": {
+   "intro": "Cores vivas, formas grandes e toques simples: os jogos para crianças pequenas foram feitos para os jogadores menores, e o Pixuvo tem mais de 160 grátis para jogar no navegador. A maioria ensina brincando, e muitos ficam melhores jogados junto com um adulto.\n\nOs quebra-cabeças são um grupo grande. Wooden Puzzles é um jogo de quebra-cabeça para os pequenos em que você coloca objetos de madeira no lugar certo, e Kid Puzzle ABCD ensina o alfabeto. Preschool Games reúne quatro quebra-cabeças diferentes com cores e formas para a pré-escola, e Colors & Shapes - Kids Learn Color and Shape e Fun Learning For Kids ajudam as crianças a notar as formas e as coisas ao redor. Math Kids - Add, Subtract, Count, and Learn é um jogo de números para os pequenos, Kids Memory Game - Birds treina a memória com passarinhos, e Easy Kids Coloring Book tem linhas grossas e escuras e desenhos grandes e simples, fáceis de colorir.\n\nCom os menorzinhos, sente ao lado e converse sobre o que eles veem: os jogos ficam melhores quando se joga junto. Faça sessões curtas e deixe a criança escolher. Tem mais jogos para os pequenos nos jogos de bebê e nos jogos infantis.",
+   "faq": [
+    {
+     "q": "O que são jogos para crianças pequenas?",
+     "a": "São jogos simples para os jogadores menores, com imagens grandes, cores vivas e toques fáceis. Muitos ensinam formas, cores, letras ou números."
+    },
+    {
+     "q": "Os jogos para crianças pequenas são grátis?",
+     "a": "Sim, todos são grátis e rodam no navegador, sem precisar baixar nada."
+    },
+    {
+     "q": "Crianças pequenas podem jogar no tablet ou no celular?",
+     "a": "Sim, muitos desses jogos funcionam em tablets e celulares. Para os menorzinhos, o melhor é ter um adulto por perto."
+    },
+    {
+     "q": "O que as crianças podem aprender com esses jogos?",
+     "a": "Muitos treinam cores, formas, letras, contagem e memória, por exemplo Preschool Games, Kid Puzzle ABCD e Math Kids."
+    }
+   ]
+  },
+  "kindergarten": {
+   "intro": "A idade da pré-escola é o tempo das cores, das letras e dos primeiros números, e o Pixuvo tem cerca de 60 jogos de pré-escola grátis para jogar no navegador. Eles foram feitos para crianças de uns cinco anos e ensinam brincando.\n\nColoring Book Kindergarten deixa você escolher um desenho e colorir, KinderGarten Spot the Differences pede que você ache as diferenças entre duas imagens, e Kids Puzzle ABCD é para aprender o alfabeto. Math Kids - Add, Subtract, Count, and Learn é para os pequenos que estão aprendendo os números, e Learning Farm Animals: Educational Games For Kids e Farm Match usam bichinhos fofos da fazenda para aprender e combinar. Se você gosta de brincar de faz de conta, Kindergarten School Teacher Kids Learning Games e Kinder Garden deixam você ser o professor.\n\nCrianças dessa idade gostam de jogos curtos com imagens claras, então experimente um jogo de cada vez e converse sobre ele depois. Tem mais jogos de aprendizagem nos jogos educativos, e mais jogos para os pequenos nos jogos para crianças pequenas.",
+   "faq": [
+    {
+     "q": "O que são jogos de pré-escola?",
+     "a": "São jogos para aprender e brincar, feitos para crianças de uns cinco anos, por exemplo de colorir, memória, letras e contagem."
+    },
+    {
+     "q": "Esses jogos são bons para crianças de 5 anos?",
+     "a": "Eles foram feitos para a idade da pré-escola, com controles simples e imagens claras. Nos primeiros jogos, vale sentar junto com a criança."
+    },
+    {
+     "q": "São grátis?",
+     "a": "Sim, você pode jogar todos de graça no navegador, sem baixar nada."
+    },
+    {
+     "q": "O que meu filho pode aprender?",
+     "a": "Muitos jogos treinam cores, letras, números, combinar pares e reparar em pequenos detalhes."
+    }
+   ]
+  },
+  "ludo": {
+   "intro": "Jogue o dado, mova seus peões pelo tabuleiro e leve todos para casa primeiro: o Ludo é um dos jogos de tabuleiro em família mais conhecidos. O Pixuvo tem mais de 30 jogos de Ludo grátis para jogar no navegador, contra o computador ou com amigos.\n\nA ideia é a mesma em todos: cada jogador tem quatro peões, você joga um dado e o número diz quantas casas andar. Ludo Classic é o clássico da família. Também dá para jogar Ludo contra três adversários do computador, e Ludo Online tem três modos, inclusive jogar contra um bot. Ludo Wars permite desafiar um jogador online ou um amigo no modo local para dois, e Ludo Legend pode ser jogado sozinho ou com amigos no mesmo aparelho, passando de mão em mão. Ludo Fever, Ludo Champions, Ludo World e Ludo Multiplayer têm visual e regras próprios.\n\nNo Ludo a sorte pesa muito, mas você escolhe qual peão mover, e é aí que está a estratégia: proteger um peão em perigo ou mandar outro para a frente. Um bom jogo para revezar com a família. Tem mais jogos de tabuleiro na categoria de jogos de tabuleiro.",
+   "faq": [
+    {
+     "q": "Como se joga Ludo?",
+     "a": "Cada jogador tem quatro peões. Você joga um dado, move um peão o número de casas que saiu e tenta levar todos os seus peões para casa antes dos outros."
+    },
+    {
+     "q": "Posso jogar Ludo contra o computador?",
+     "a": "Sim, muitas versões têm um adversário controlado pelo computador, por exemplo Ludo Online com seu modo contra um bot."
+    },
+    {
+     "q": "Posso jogar Ludo com amigos?",
+     "a": "Sim. Alguns jogos permitem jogar com amigos no mesmo aparelho, e outros, como Ludo Wars, deixam você desafiar um jogador online."
+    },
+    {
+     "q": "O Ludo é só sorte?",
+     "a": "O dado é sorte, mas você escolhe qual peão mover, e boas escolhas ajudam a ganhar."
+    }
+   ]
+  },
+  "3d": {
+   "intro": "Pistas rápidas, arenas enormes e mundos que você enxerga por dentro, não só de lado: os jogos 3D dão a sensação de estar dentro do jogo, e o Pixuvo tem mais de 6.000 jogos 3D grátis para jogar no navegador.\n\nTem coisa para todo gosto. Tunnel Rush te manda a toda velocidade por um túnel, Slope City e Slope Cyber são jogos de corrida infinita, e Grand Prix Hero e MR RACER : Car Racing são jogos de corrida. Rocket Soccer Derby e Speedy Golf trazem esportes, Aquapark.io leva você a um parque aquático, e Narrow One é um jogo multijogador de arco e flecha em 3D. Se você prefere algo mais calmo, Tanuki Sunset é um jogo de longboard em terceira pessoa em que você joga como um guaxinim.\n\nA maioria dos jogos 3D exige um pouco mais do aparelho, então, se um jogo ficar lento, feche outras abas ou tente um mais leve. Muitos funcionam com teclado ou mouse, e muitos também com toque. Tem mais corridas nos jogos de corrida e mais jogos de correr na categoria de jogos de corrida infinita.",
+   "faq": [
+    {
+     "q": "O que são jogos 3D?",
+     "a": "Os jogos 3D mostram o mundo do jogo com profundidade, então você pode olhar para dentro dele e se mover, não só para a esquerda e para a direita."
+    },
+    {
+     "q": "Os jogos 3D rodam em qualquer aparelho?",
+     "a": "Muitos rodam, mas exigem mais do aparelho que os jogos 2D. Se um jogo ficar lento, feche outras abas ou tente outro."
+    },
+    {
+     "q": "Existem jogos 3D para crianças?",
+     "a": "Sim, há jogos de corrida, de correr, de esportes e de animais em 3D. Veja a página do jogo para conferir a idade e os controles."
+    },
+    {
+     "q": "Preciso baixar alguma coisa?",
+     "a": "Não, todos rodam no navegador, sem precisar baixar nada."
+    }
+   ]
   }
  }
 }

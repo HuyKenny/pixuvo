@@ -2350,6 +2350,90 @@
      "a": "Nhiều game đồ ăn chơi được trên điện thoại và máy tính bảng. Trang của mỗi game cho biết game hỗ trợ thiết bị nào."
     }
    ]
+  },
+  "toddler": {
+   "intro": "Màu sắc tươi sáng, hình khối lớn và những cú chạm đơn giản: game cho trẻ nhỏ được làm cho người chơi bé nhất, và Pixuvo có hơn 160 game miễn phí để chơi ngay trên trình duyệt. Phần lớn là học mà chơi, và nhiều game vui nhất khi bố mẹ chơi cùng con.\n\nXếp hình là một nhóm lớn. Wooden Puzzles là game xếp hình cho trẻ nhỏ, bé đặt các vật bằng gỗ vào đúng chỗ, còn Kid Puzzle ABCD giúp bé làm quen bảng chữ cái. Preschool Games gồm bốn game xếp hình khác nhau cho trẻ mầm non với màu sắc và hình khối, còn Colors & Shapes - Kids Learn Color and Shape và Fun Learning For Kids giúp bé để ý đến hình dạng và những thứ xung quanh. Math Kids - Add, Subtract, Count, and Learn là game về con số cho trẻ nhỏ, Kids Memory Game - Birds luyện trí nhớ với các chú chim, và Easy Kids Coloring Book có nét viền đậm, dày cùng những hình lớn, đơn giản nên rất dễ tô.\n\nVới các bé nhỏ nhất, hãy ngồi cạnh con và trò chuyện về những gì con nhìn thấy – game sẽ vui hơn khi cả nhà chơi cùng. Mỗi lần chơi nên ngắn và để bé tự chọn. Thêm game cho các bé có trong mục Game em bé và Game cho bé.",
+   "faq": [
+    {
+     "q": "Game cho trẻ nhỏ là gì?",
+     "a": "Game cho trẻ nhỏ là những game đơn giản dành cho người chơi bé nhất, với hình ảnh lớn, màu sắc tươi sáng và thao tác chạm dễ dàng. Nhiều game dạy về hình khối, màu sắc, chữ cái hoặc con số."
+    },
+    {
+     "q": "Game cho trẻ nhỏ có miễn phí không?",
+     "a": "Có, tất cả đều miễn phí và chơi ngay trên trình duyệt, không cần tải về."
+    },
+    {
+     "q": "Trẻ nhỏ có chơi được trên máy tính bảng hay điện thoại không?",
+     "a": "Có, nhiều game chạy được trên máy tính bảng và điện thoại. Với các bé nhỏ nhất, tốt nhất là có bố mẹ ở bên cạnh."
+    },
+    {
+     "q": "Bé học được gì từ những game này?",
+     "a": "Nhiều game luyện màu sắc, hình khối, chữ cái, đếm số và trí nhớ, ví dụ Preschool Games, Kid Puzzle ABCD và Math Kids."
+    }
+   ]
+  },
+  "kindergarten": {
+   "intro": "Tuổi mẫu giáo là lúc bé làm quen với màu sắc, chữ cái và những con số đầu tiên, và Pixuvo có khoảng 60 game mẫu giáo miễn phí để chơi ngay trên trình duyệt. Các game được làm cho bé khoảng năm tuổi và dạy bé qua trò chơi.\n\nColoring Book Kindergarten cho bé chọn một bức tranh rồi tô màu, KinderGarten Spot the Differences yêu cầu tìm điểm khác nhau giữa hai bức tranh, còn Kids Puzzle ABCD giúp học bảng chữ cái. Math Kids - Add, Subtract, Count, and Learn dành cho các bé đang học số, còn Learning Farm Animals: Educational Games For Kids và Farm Match dùng những con vật nông trại đáng yêu để học và ghép đôi. Nếu bé thích đóng vai, Kindergarten School Teacher Kids Learning Games và Kinder Garden cho bé làm cô giáo.\n\nTrẻ ở tuổi này thích những game ngắn với hình ảnh rõ ràng, nên hãy thử từng game một rồi trò chuyện với con sau đó. Thêm game học tập có trong mục Game giáo dục, và thêm game cho các bé nhỏ có trong mục Game cho trẻ nhỏ.",
+   "faq": [
+    {
+     "q": "Game mẫu giáo là gì?",
+     "a": "Game mẫu giáo là những game vừa học vừa chơi dành cho bé khoảng năm tuổi, ví dụ tô màu, trò chơi trí nhớ, chữ cái và đếm số."
+    },
+    {
+     "q": "Những game này có hợp với bé 5 tuổi không?",
+     "a": "Các game được làm cho bé tuổi mẫu giáo, với cách điều khiển đơn giản và hình ảnh rõ ràng. Bạn nên ngồi cùng bé trong những game đầu tiên."
+    },
+    {
+     "q": "Có miễn phí không?",
+     "a": "Có, bạn có thể chơi tất cả miễn phí trên trình duyệt, không cần tải về."
+    },
+    {
+     "q": "Con tôi học được gì?",
+     "a": "Nhiều game luyện màu sắc, chữ cái, con số, ghép đôi và khả năng để ý những chi tiết nhỏ."
+    }
+   ]
+  },
+  "ludo": {
+   "intro": "Tung xúc xắc, di chuyển quân quanh bàn cờ và đưa tất cả về đích trước: Ludo, hay cờ cá ngựa, là một trong những trò chơi bàn cờ gia đình nổi tiếng nhất. Pixuvo có hơn 30 game Ludo miễn phí để chơi ngay trên trình duyệt, chơi với máy hoặc cùng bạn bè.\n\nÝ tưởng ở tất cả game đều giống nhau: mỗi người chơi có bốn quân, bạn tung một con xúc xắc và con số cho biết quân đi bao nhiêu bước. Ludo Classic là phiên bản kinh điển cho cả nhà. Ludo cũng có thể chơi với ba đối thủ máy, và Ludo Online có ba chế độ, trong đó có chơi với bot. Ludo Wars cho bạn thách đấu người chơi online hoặc bạn bè ở chế độ hai người chơi chung máy, còn Ludo Legend có thể chơi một mình hoặc cùng bạn bè trên một thiết bị bằng cách chuyền tay nhau. Ludo Fever, Ludo Champions, Ludo World và Ludo Multiplayer mang đến diện mạo và luật chơi riêng.\n\nTrong Ludo, may mắn quyết định khá nhiều, nhưng bạn được chọn quân nào đi, và chiến thuật nằm ở đó: bảo vệ quân đang gặp nguy hiểm, hoặc đẩy một quân khác tiến lên. Đây là game hay để cả nhà thay phiên nhau chơi. Thêm game bàn cờ có trong mục Game bàn cờ.",
+   "faq": [
+    {
+     "q": "Chơi Ludo như thế nào?",
+     "a": "Mỗi người chơi có bốn quân. Bạn tung xúc xắc, đi một quân đúng số bước hiện ra và cố đưa tất cả quân của mình về đích trước những người khác."
+    },
+    {
+     "q": "Tôi có thể chơi Ludo với máy không?",
+     "a": "Có, nhiều phiên bản có đối thủ bot, ví dụ Ludo Online với chế độ chơi với bot."
+    },
+    {
+     "q": "Tôi có thể chơi Ludo với bạn bè không?",
+     "a": "Có. Một số game cho phép chơi cùng bạn bè trên một thiết bị, và những game khác, như Ludo Wars, cho bạn thách đấu người chơi online."
+    },
+    {
+     "q": "Ludo có chỉ dựa vào may mắn không?",
+     "a": "Xúc xắc là may mắn, nhưng bạn chọn quân nào đi, và lựa chọn tốt sẽ giúp bạn thắng."
+    }
+   ]
+  },
+  "3d": {
+   "intro": "Đường đua tốc độ, đấu trường rộng lớn và những thế giới mà bạn nhìn vào bên trong chứ không chỉ nhìn ngang: game 3D mang lại cảm giác như đang ở trong trò chơi, và Pixuvo có hơn 6.000 game 3D miễn phí để chơi ngay trên trình duyệt.\n\nCó đủ thứ cho mọi sở thích. Tunnel Rush đưa bạn lao vút qua một đường hầm, Slope City và Slope Cyber là những game chạy vô tận, còn Grand Prix Hero và MR RACER : Car Racing là game đua xe. Rocket Soccer Derby và Speedy Golf mang đến thể thao, Aquapark.io đưa bạn tới công viên nước, và Narrow One là game bắn cung 3D nhiều người chơi. Nếu thích thứ gì nhẹ nhàng hơn, Tanuki Sunset là game trượt ván longboard góc nhìn thứ ba, trong đó bạn vào vai một chú gấu mèo.\n\nHầu hết game 3D đòi hỏi thiết bị mạnh hơn một chút, nên nếu game bị chậm, hãy đóng các tab khác hoặc thử một game nhẹ hơn. Nhiều game chơi được bằng bàn phím hoặc chuột, và nhiều game cũng hỗ trợ cảm ứng. Thêm game đua xe có trong mục Game đua xe, và thêm game chạy có trong mục Game chạy vô tận.",
+   "faq": [
+    {
+     "q": "Game 3D là gì?",
+     "a": "Game 3D thể hiện thế giới trò chơi có chiều sâu, nên bạn có thể nhìn vào bên trong và di chuyển khắp nơi, không chỉ sang trái hay sang phải."
+    },
+    {
+     "q": "Game 3D có chạy được trên mọi thiết bị không?",
+     "a": "Nhiều game chạy được, nhưng chúng đòi hỏi thiết bị mạnh hơn game 2D. Nếu game bị chậm, hãy đóng các tab khác hoặc thử game khác."
+    },
+    {
+     "q": "Có game 3D cho trẻ em không?",
+     "a": "Có, có các game đua xe, chạy, thể thao và động vật ở dạng 3D. Hãy xem trang của game để biết độ tuổi và cách điều khiển."
+    },
+    {
+     "q": "Tôi có cần tải gì về không?",
+     "a": "Không, tất cả đều chạy trên trình duyệt, không cần tải về."
+    }
+   ]
   }
  }
 }

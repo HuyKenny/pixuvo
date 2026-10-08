@@ -2350,6 +2350,90 @@
      "a": "Spousta her s jídlem funguje na mobilech a tabletech. Na stránce hry se dozvíš, která zařízení hra podporuje."
     }
    ]
+  },
+  "toddler": {
+   "intro": "Jasné barvy, velké tvary a jednoduchá klepnutí: hry pro nejmenší jsou vyrobené pro batolata a nejmladší hráče a na Pixuvu jich najdete více než 160 zdarma přímo v prohlížeči. Většina z nich učí hravou formou a mnohé se nejlépe hrají společně s rodičem.\n\nVelkou skupinou jsou puzzle. Wooden Puzzles je hra pro batolata, ve které skládáte dřevěné předměty na správné místo, a Kid Puzzle ABCD učí abecedu. Preschool Games spojují čtyři různé hry s puzzle pro předškoláky s barvami a tvary a Colors & Shapes - Kids Learn Color and Shape a Fun Learning For Kids pomáhají dětem všímat si tvarů a věcí kolem sebe. Math Kids - Add, Subtract, Count, and Learn je hra o číslech pro malé děti, Kids Memory Game - Birds trénuje paměť s ptáčky a Easy Kids Coloring Book má tlusté tmavé linky a velké jednoduché obrázky, které se snadno vybarvují.\n\nPři hře s úplně nejmenšími si k dítěti sedněte a povídejte si o tom, co vidí – hry jsou lepší, když se hrají společně. Hrajte krátce a nechte dítě, ať si vybírá samo. Další hry pro nejmenší najdete mezi hrami pro miminka a hrami pro děti.",
+   "faq": [
+    {
+     "q": "Co jsou hry pro nejmenší?",
+     "a": "Hry pro nejmenší jsou jednoduché hry pro batolata a nejmladší hráče s velkými obrázky, jasnými barvami a snadným ovládáním klepnutím. Mnohé učí tvary, barvy, písmena nebo čísla."
+    },
+    {
+     "q": "Jsou hry pro nejmenší zdarma?",
+     "a": "Ano, všechny si můžete zahrát zdarma v prohlížeči, bez stahování."
+    },
+    {
+     "q": "Mohou batolata hrát na tabletu nebo telefonu?",
+     "a": "Ano, spousta těchto her funguje na tabletech i telefonech. U nejmenších dětí je nejlepší, když je poblíž rodič."
+    },
+    {
+     "q": "Co se děti z těchto her naučí?",
+     "a": "Mnohé procvičují barvy, tvary, písmena, počítání a paměť, například Preschool Games, Kid Puzzle ABCD a Math Kids."
+    }
+   ]
+  },
+  "kindergarten": {
+   "intro": "Školkový věk je čas barev, písmen a prvních čísel a na Pixuvu najdete kolem 60 her do školky zdarma přímo v prohlížeči. Jsou určené dětem kolem pěti let a učí hrou.\n\nV Coloring Book Kindergarten si vyberete obrázek a vybarvíte ho, KinderGarten Spot the Differences vás vyzve k hledání rozdílů mezi dvěma obrázky a Kids Puzzle ABCD se věnuje učení abecedy. Math Kids - Add, Subtract, Count, and Learn je pro malé děti, které se učí čísla, a Learning Farm Animals: Educational Games For Kids a Farm Match využívají roztomilá zvířátka z farmy k učení a hledání dvojic. Pokud si děti rády hrají na dospělé, Kindergarten School Teacher Kids Learning Games a Kinder Garden jim dají zahrát si na učitelku.\n\nDěti v tomto věku mají rády krátké hry s jasnými obrázky, takže zkuste jednu hru po druhé a pak si o ní popovídejte. Další hry k učení najdete mezi vzdělávacími hrami a další hry pro nejmenší mezi hrami pro nejmenší.",
+   "faq": [
+    {
+     "q": "Co jsou hry do školky?",
+     "a": "Hry do školky jsou učící a zábavné hry pro děti kolem pěti let, například omalovánky, pexeso, písmena a počítání."
+    },
+    {
+     "q": "Jsou tyto hry vhodné pro pětileté děti?",
+     "a": "Jsou určené dětem ve školkovém věku, s jednoduchým ovládáním a jasnými obrázky. U prvních her si k dítěti raději sedněte."
+    },
+    {
+     "q": "Jsou zdarma?",
+     "a": "Ano, všechny si můžete zahrát zdarma v prohlížeči, bez stahování."
+    },
+    {
+     "q": "Co se moje dítě naučí?",
+     "a": "Mnohé hry procvičují barvy, písmena, čísla, přiřazování a všímání si drobných detailů."
+    }
+   ]
+  },
+  "ludo": {
+   "intro": "Hoďte kostkou, posouvejte figurky po hracím plánu a dovezte je všechny domů jako první: Člověče, nezlob se, známé i pod názvem Ludo, patří mezi nejznámější rodinné společenské hry. Na Pixuvu najdete více než 30 her Ludo zdarma přímo v prohlížeči a hrát můžete proti počítači nebo s přáteli.\n\nPrincip je ve všech stejný: každý hráč má čtyři figurky, hodíte kostkou a číslo říká, o kolik polí se posunete. Ludo Classic je rodinná klasika. Ludo se hraje také proti třem počítačovým soupeřům a Ludo Online má tři režimy, včetně hry proti botovi. V Ludo Wars můžete vyzvat online hráče nebo kamaráda v lokálním režimu pro dva a Ludo Legend lze hrát samostatně nebo s přáteli na jednom zařízení, když si ho předáváte. Ludo Fever, Ludo Champions, Ludo World a Ludo Multiplayer přinášejí vlastní vzhled a pravidla.\n\nO výsledku Člověče, nezlob se hodně rozhoduje štěstí, ale můžete si vybrat, kterou figurkou táhnout, a v tom je strategie: chraňte figurku v ohrožení, nebo pošlete jinou dopředu. Dobrá hra na střídání s rodinou. Další stolní hry najdete mezi deskovými hrami.",
+   "faq": [
+    {
+     "q": "Jak se hraje Člověče, nezlob se (Ludo)?",
+     "a": "Každý hráč má čtyři figurky. Hodíte kostkou, posunete figurku o počet kroků na kostce a snažíte se dovést všechny své figurky domů dřív než ostatní."
+    },
+    {
+     "q": "Můžu hrát Ludo proti počítači?",
+     "a": "Ano, spousta verzí má soupeře ovládaného počítačem, například Ludo Online s režimem hry proti botovi."
+    },
+    {
+     "q": "Můžu hrát Ludo s kamarády?",
+     "a": "Ano. Některé hry umožňují hrát s kamarády na jednom zařízení a jiné, třeba Ludo Wars, dovolují vyzvat online hráče."
+    },
+    {
+     "q": "Je Ludo jen o štěstí?",
+     "a": "Kostka je štěstí, ale vy si vybíráte, kterou figurkou půjdete, a dobré rozhodnutí pomáhá k výhře."
+    }
+   ]
+  },
+  "3d": {
+   "intro": "Rychlé tratě, velké arény a světy, do kterých se díváte do hloubky: 3D hry působí, jako byste byli přímo ve hře, a na Pixuvu jich najdete více než 6 000 zdarma přímo v prohlížeči.\n\nVybere si každý. Tunnel Rush vás vyšle tunelem plnou rychlostí, Slope City a Slope Cyber jsou nekonečné běhací hry a Grand Prix Hero a MR RACER : Car Racing jsou závodní hry. Rocket Soccer Derby a Speedy Golf přinášejí sport, Aquapark.io vás zavede do aquaparku a Narrow One je multiplayerová 3D lukostřelba. Pokud máte rádi něco klidnějšího, Tanuki Sunset je hra o jízdě na longboardu z pohledu třetí osoby, ve které hrajete za mývala.\n\nVětšina 3D her si žádá od zařízení o něco víc, takže pokud hra zpomaluje, zavřete ostatní karty nebo zkuste lehčí hru. Mnohé se ovládají klávesnicí nebo myší a mnohé i dotykem. Další závody najdete mezi závodními hrami a další běhací hry mezi běhacími hrami.",
+   "faq": [
+    {
+     "q": "Co jsou 3D hry?",
+     "a": "3D hry zobrazují herní svět do hloubky, takže se do něj můžete dívat a pohybovat se v něm, nejen doleva a doprava."
+    },
+    {
+     "q": "Poběží 3D hry na každém zařízení?",
+     "a": "Spousta jich poběží, ale od zařízení vyžadují víc než 2D hry. Pokud hra zpomaluje, zavřete ostatní karty nebo zkuste jinou."
+    },
+    {
+     "q": "Jsou 3D hry i pro děti?",
+     "a": "Ano, najdete závody, běhací hry, sporty i hry se zvířaty ve 3D. Věk a ovládání zkontrolujte na stránce hry."
+    },
+    {
+     "q": "Musím něco stahovat?",
+     "a": "Ne, všechny běží v prohlížeči, bez stahování."
+    }
+   ]
   }
  }
 }
