@@ -12,7 +12,8 @@ const m = now.getUTCMonth();
 const d = now.getUTCDate();
 const seasonal = [
   ...((m === 8 && d >= 15) || m === 9 || (m === 10 && d <= 2) ? ['halloween'] : []),
-  ...((m === 9 && d >= 20) || m === 10 || m === 11 || (m === 0 && d <= 6) ? ['christmas'] : []),
+  // Christmas is linked from 1 October: Google needs weeks to index a page of a new, low-authority site before the December peak.
+  ...(m >= 9 || (m === 0 && d <= 6) ? ['christmas'] : []),
 ];
 const popular = [...seasonal, 'kids', 'girls', 'boys', 'unblocked', 'brain', 'parkour', 'dinosaur', 'spider-solitaire', 'mahjong-connect'];
 ---
