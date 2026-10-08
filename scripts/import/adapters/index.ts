@@ -3,7 +3,8 @@ import { gamemonetize } from './gamemonetize.ts';
 import { gamepix } from './gamepix.ts';
 import { famobi, gamedistribution } from './inactive.ts';
 import { gamezipper } from './gamezipper.ts';
+import { gameflare } from './gameflare.ts';
 import { htmlgames } from './htmlgames.ts';
 import { playgama } from './playgama.ts';
 
-export const ADAPTERS: Record<string, ProviderAdapter> = { gamemonetize, gamepix, playgama, gamezipper, htmlgames, gamedistribution, famobi };
+export const ADAPTERS: Record<string, ProviderAdapter> = { gamemonetize, gamepix, playgama, gamezipper, htmlgames, gameflare, gamedistribution, famobi };

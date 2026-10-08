@@ -1,6 +1,6 @@
 /** Security headers shared by the middleware (SSR) and scripts/postbuild.ts (_headers for static files). */
-export const GAME_FRAME_HOSTS = ['https://html5.gamemonetize.co', 'https://html5.gamemonetize.com', 'https://play.gamepix.com', 'https://playgama.com', 'https://gamezipper.com', 'https://cdn.htmlgames.com'];
-export const IMAGE_HOSTS = ['https://img.gamemonetize.com', 'https://img.gamepix.com', 'https://static.playgama.com', 'https://gamezipper.com', 'https://www.htmlgames.com', 'https://cdn.htmlgames.com'];
+export const GAME_FRAME_HOSTS = ['https://html5.gamemonetize.co', 'https://html5.gamemonetize.com', 'https://play.gamepix.com', 'https://playgama.com', 'https://gamezipper.com', 'https://cdn.htmlgames.com', 'https://distribution.gameflare.com'];
+export const IMAGE_HOSTS = ['https://img.gamemonetize.com', 'https://img.gamepix.com', 'https://static.playgama.com', 'https://gamezipper.com', 'https://www.htmlgames.com', 'https://cdn.htmlgames.com', 'https://data.gameflare.com'];
 
 // Partner games need scripts, their own origin storage, popups for ad clicks and pointer lock.
 const SANDBOX = 'allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms allow-pointer-lock allow-orientation-lock';
