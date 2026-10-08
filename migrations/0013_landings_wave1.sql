@@ -1,0 +1,33 @@
+-- Content audit 2026-10-08 (Marketing Miner, US monthly searches): dinosaur games 23 k, shark games 19 k, bowling games 50 k,
+-- spot the difference ~11 k, baby games 22 k, drawing games ~14 k, food games ~8 k. The first five filter on tags derived from
+-- the title (TITLE_TAGS in src/lib/taxonomy.ts; scripts/retag.ts backfills them), because partner tags are loose.
+INSERT INTO seo_landings (slug, h1, title, description, intro, filter, status, indexable, min_games, updated_at) VALUES
+ ('dinosaur', 'Dinosaur Games', 'Dinosaur Games – Play Free Dinosaur Games Online',
+  'Free dinosaur games: run, jump and roar as a dino, hatch baby dinosaurs and color prehistoric animals. Play online, no downloads.',
+  'Run, hatch and color – dinosaurs in every kind of game.',
+  '{"tags":["dinosaur-games"]}', 'published', 1, 24, '2026-10-08T00:00:00Z'),
+ ('shark', 'Shark Games', 'Shark Games – Play Free Shark Games Online',
+  'Free shark games: swim, eat smaller fish and grow into the biggest shark in the sea. Play online in your browser, no downloads.',
+  'Swim, eat and grow – be the biggest shark in the sea.',
+  '{"tags":["shark-games"]}', 'published', 1, 24, '2026-10-08T00:00:00Z'),
+ ('bowling', 'Bowling Games', 'Bowling Games – Play Free Bowling Games Online',
+  'Free bowling games: aim, roll and knock down all the pins in classic, 3D and arcade bowling. Play online, no downloads.',
+  'Aim, roll and knock down all the pins.',
+  '{"tags":["bowling-games"]}', 'published', 1, 24, '2026-10-08T00:00:00Z'),
+ ('spot-the-difference', 'Spot the Difference Games', 'Spot the Difference Games – Free Find the Differences Online',
+  'Free spot the difference games: compare two pictures, find every difference and train your eyes. Play online, no downloads.',
+  'Compare two pictures and find every difference.',
+  '{"tags":["spot-the-difference"]}', 'published', 1, 24, '2026-10-08T00:00:00Z'),
+ ('baby', 'Baby Games', 'Baby Games – Free Baby Care and Baby Games Online',
+  'Free baby games: care for babies and baby animals, play puzzles and dress-up with cute little ones. Play online, no downloads.',
+  'Care for cute babies and baby animals.',
+  '{"tags":["baby-games"]}', 'published', 1, 24, '2026-10-08T00:00:00Z'),
+ ('drawing', 'Drawing Games', 'Drawing Games – Play Free Drawing Games Online',
+  'Free drawing games: sketch lines that solve puzzles, make pixel art and paint by numbers. Play online in your browser, no downloads.',
+  'Draw lines, paint pixels and solve puzzles with your pencil.',
+  '{"tags":["draw","drawing"]}', 'published', 1, 24, '2026-10-08T00:00:00Z'),
+ ('food', 'Food Games', 'Food Games – Play Free Food Games Online',
+  'Free food games: bake cookies, slice vegetables, merge cakes and run your own bakery. Play online in your browser, no downloads.',
+  'Bake, slice, merge and serve – games full of food.',
+  '{"tags":["food"]}', 'published', 1, 24, '2026-10-08T00:00:00Z')
+ON CONFLICT(slug) DO NOTHING;

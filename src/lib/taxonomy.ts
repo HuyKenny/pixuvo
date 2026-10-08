@@ -208,6 +208,24 @@ export function findSensitiveTerms(text: string): string[] {
   return sensitiveRes.filter(([, re]) => re.test(text)).map(([t]) => t);
 }
 
+/**
+ * Tags derived from the TITLE. Partner tags are loose ("baby" sits on baseball and bubble games), so landing pages for
+ * searched themes (dinosaur games, bowling games…) filter on these precise slugs instead. The importer adds them on
+ * every import; scripts/retag.ts backfills existing games.
+ */
+export const TITLE_TAGS: Array<{ slug: string; name: string; re: RegExp; exclude?: RegExp }> = [
+  { slug: 'dinosaur-games', name: 'Dinosaur Games', re: /(?<![a-z0-9])(dino|dinos|dinosaur|dinosaurs|dyno|t-?rex|trex|jurassic|raptor|triceratops|stegosaurus)(?![a-z0-9])/i },
+  { slug: 'shark-games', name: 'Shark Games', re: /(?<![a-z0-9])(shark|sharks|megalodon)(?![a-z0-9])/i },
+  { slug: 'bowling-games', name: 'Bowling Games', re: /(?<![a-z0-9])bowling(?![a-z0-9])/i },
+  { slug: 'spot-the-difference', name: 'Spot The Difference', re: /(?<![a-z0-9])(differences?|spot the|odd one out)(?![a-z0-9])/i, exclude: /(?<![a-z0-9])(date|romance|kiss|sexy)(?![a-z0-9])/i },
+  // "Baby" also names war/shooter heroes (Baby Sniper, Gears of Babies); a baby-games page is for care and play games.
+  { slug: 'baby-games', name: 'Baby Games', re: /(?<![a-z0-9])(baby|babies|toddler|toddlers|newborn|infant)(?![a-z0-9])/i, exclude: /(?<![a-z0-9])(sniper|war|wars|gun|guns|shoot|shooter|shooting|kill|killer|zombie|soldier|gears|battle|arena|tournament|vietnam|great|hero|ninja|fight|fighter|bomb|survival|escape)(?![a-z0-9])/i },
+];
+
+export function titleTags(title: string): Array<{ slug: string; name: string }> {
+  return TITLE_TAGS.filter((t) => t.re.test(title) && !t.exclude?.test(title)).map(({ slug, name }) => ({ slug, name }));
+}
+
 /** Query synonyms for search (both directions). */
 /**
  * Themes = curated groups of partner tags, used as a category filter ("Animals", "Christmas"…).
@@ -281,6 +299,13 @@ export const RELATED: Record<string, string[]> = {
   'golf-solitaire': ['solitaire', 'pyramid-solitaire', 'klondike-solitaire', 'freecell', 'spider-solitaire'],
   'mahjong-connect': ['mahjong', 'match-3', 'memory', 'solitaire'],
   parkour: ['stickman', 'platformer', 'runner', 'action'],
+  dinosaur: ['animal', 'runner', 'coloring', 'kids'],
+  shark: ['animal', 'io', 'arcade', 'kids'],
+  bowling: ['sports', 'pool', 'golf', '2-player'],
+  'spot-the-difference': ['hidden-object', 'brain', 'memory', 'kids'],
+  baby: ['dress-up', 'cooking', 'coloring', 'kids', 'girls'],
+  drawing: ['coloring', 'brain', 'kids', 'educational'],
+  food: ['cooking', 'tycoon', 'match-3', 'kids'],
   platformer: ['parkour', 'runner', 'arcade', 'stickman'],
   logic: ['sudoku', 'brain', 'math', 'board', 'puzzle'],
   action: ['fighting', 'shooting', 'stickman', 'ninja', 'platformer', 'boys'],

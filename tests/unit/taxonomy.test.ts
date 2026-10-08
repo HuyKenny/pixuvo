@@ -28,3 +28,20 @@ describe('taxonomy', () => {
     expect(findSensitiveTerms('Slothful Sloth')).toEqual([]);
   });
 });
+
+describe('title-derived tags', () => {
+  it('tags the themes landing pages are built on, by whole word', async () => {
+    const { titleTags } = await import('../../src/lib/taxonomy.ts');
+    const slugs = (t: string) => titleTags(t).map((x) => x.slug);
+    expect(slugs('Run Dino Run')).toEqual(['dinosaur-games']);
+    expect(slugs('Cute Dinosaur Run')).toEqual(['dinosaur-games']);
+    expect(slugs('Hungry Shark Attack')).toEqual(['shark-games']);
+    expect(slugs('Kitten Bowling')).toEqual(['bowling-games']);
+    expect(slugs('Garden Secrets Find the Differences')).toEqual(['spot-the-difference']);
+    expect(slugs('Baby Taylor Little Santa Helper')).toEqual(['baby-games']);
+    expect(slugs('Baby Sniper In Vietnam')).toEqual([]);
+    expect(slugs('Date the Difference')).toEqual([]);
+    expect(slugs('Tiny Fishing')).toEqual([]);
+    expect(slugs('Dinosaurs and Babies')).toEqual(['dinosaur-games', 'baby-games']);
+  });
+});

@@ -13,6 +13,7 @@ import {
   mapLabelsToCategories,
   normLabel,
   pickPrimaryCategory,
+  titleTags,
 } from '../../src/lib/taxonomy.ts';
 import { contentWords, dedupeKey, hashString, inferControls, isDistinctiveTitle, jaccard, normTitle, shingles, slugify, stableStringify } from '../../src/lib/text.ts';
 import { rankScore } from '../../src/lib/rank.ts';
@@ -318,6 +319,8 @@ export async function runImport(db: SqlDb, adapter: ProviderAdapter, opts: RunOp
       out.push({ slug, name: l.length <= 30 ? titleCase(l) : titleCase(l.slice(0, 30)) });
       if (out.length >= 8) break;
     }
+    // Title-derived tags (landing pages) come on top of the 8 partner tags.
+    for (const t of titleTags(item.title)) if (!seenT.has(t.slug) && !catSet.has(t.slug)) { seenT.add(t.slug); out.push(t); }
     return out;
   }
 
