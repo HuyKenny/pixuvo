@@ -754,5 +754,9 @@
  "land.mahjong-connect.h1": "连连看",
  "land.mahjong-connect.title": "连连看 – 免费在线玩麻将连连看小游戏",
  "land.mahjong-connect.description": "免费连连看小游戏：用不超过三条直线把两张相同的牌连起来消掉。在浏览器里就能玩，无需下载。",
- "land.mahjong-connect.intro": "用不超过三段直线，把两张相同的牌连起来。"
+ "land.mahjong-connect.intro": "用不超过三段直线，把两张相同的牌连起来。",
+ "land.parkour.h1": "跑酷游戏",
+ "land.parkour.title": "跑酷游戏 – 免费在线玩跑酷和 Obby 小游戏",
+ "land.parkour.description": "免费跑酷游戏：跳跃、攀爬、奔跑，闯过障碍赛道和 Obby 关卡。无需下载，浏览器直接在线玩。",
+ "land.parkour.intro": "跳跃、攀爬、奔跑，闯过惊险的障碍赛道。"
 }

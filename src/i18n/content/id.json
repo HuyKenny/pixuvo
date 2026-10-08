@@ -2182,6 +2182,27 @@
      "a": "Bisa, game-game ini jalan di HP dan tablet sama baiknya dengan di komputer – tinggal ketuk kedua ubinnya."
     }
    ]
+  },
+  "parkour": {
+   "intro": "Lari, lompat, panjat – dan usahakan jangan jatuh. Di game parkour, kamu melewati rintangan dengan mengatur waktu setiap lompatan, dan satu langkah salah akan mengembalikanmu ke checkpoint terakhir. Pixuvo punya lebih dari 140 game parkour dan obby gratis yang bisa dimainkan di browser, dari lari 2D singkat sampai menara 3D yang tinggi.\n\nObby adalah sebutan untuk game lintasan rintangan, dan banyak game di sini persis seperti itu: platform, balok bergerak, lava, dan jebakan yang harus dilewati, level demi level. Cubetopia Parkour, Parkour Obby Jump to Victory, dan Obby - Playground Hardcore Challenge dibangun di sekitar lompatan yang presisi. Di Obby Pogo Parkour! kamu melompat dengan tongkat pogo dan bisa meningkatkannya, Infinite Ascent adalah pendakian vertikal, dan Shadow Sprint adalah lari parkour 3D di kota pada malam hari. Kalau suka bermain bersama, Ninja Parkour Multiplayer dan Obby Modes! Online Mini-Games memungkinkan kamu menjajal lintasan bareng-bareng. Eclipse Run 2 memadukan parkour dengan menembak, jadi lebih cocok untuk anak yang lebih besar.\n\nBeberapa kebiasaan membuat lintasan lebih mudah: lihat platform berikutnya sebelum melompat, tunggu balok bergerak alih-alih terburu-buru, dan manfaatkan checkpoint untuk menenangkan diri, bukan untuk tergesa-gesa. Game lompat lainnya ada di kategori Game Platformer.",
+   "faq": [
+    {
+     "q": "Apa itu game parkour?",
+     "a": "Game parkour adalah game di mana kamu berlari, melompat, dan memanjat melewati rintangan. Tujuannya mencapai akhir lintasan tanpa jatuh atau menyentuh jebakan."
+    },
+    {
+     "q": "Apa itu obby?",
+     "a": "Obby adalah game lintasan rintangan. Kamu melompat dari platform ke platform melewati balok bergerak, lava, dan jebakan, biasanya dengan checkpoint di sepanjang jalan."
+    },
+    {
+     "q": "Apakah game parkour cocok untuk anak-anak?",
+     "a": "Kebanyakan cocok – game ini melatih ketepatan waktu dan kesabaran, dan jatuh hanya berarti mencoba lagi. Beberapa menyertakan tembak-menembak, seperti Eclipse Run 2, jadi cek halaman game untuk catatan anak yang lebih besar."
+    },
+    {
+     "q": "Bisakah aku main game parkour bersama teman?",
+     "a": "Bisa, beberapa game punya mode multipemain, seperti Ninja Parkour Multiplayer dan Obby Modes! Online Mini-Games. Jumlah pemain tertera di halaman game."
+    }
+   ]
   }
  }
 }

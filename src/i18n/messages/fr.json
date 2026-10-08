@@ -770,5 +770,9 @@
  "land.mahjong-connect.h1": "Mahjong Connect",
  "land.mahjong-connect.title": "Mahjong Connect – jouer gratuitement en ligne, sans téléchargement",
  "land.mahjong-connect.description": "Jeux de Mahjong Connect gratuits : relie deux tuiles identiques par un chemin d'au plus trois traits. À jouer dans ton navigateur, sans téléchargement.",
- "land.mahjong-connect.intro": "Relie deux tuiles identiques par un chemin de trois traits droits au maximum."
+ "land.mahjong-connect.intro": "Relie deux tuiles identiques par un chemin de trois traits droits au maximum.",
+ "land.parkour.h1": "Jeux de parkour",
+ "land.parkour.title": "Jeux de parkour – joue gratuitement aux jeux de parkour et d'obby",
+ "land.parkour.description": "Jeux de parkour gratuits : saute, grimpe et cours sur des parcours d'obstacles et des obbys. Joue en ligne dans ton navigateur, sans téléchargement.",
+ "land.parkour.intro": "Saute, grimpe et cours à travers des parcours d'obstacles piégeux."
 }

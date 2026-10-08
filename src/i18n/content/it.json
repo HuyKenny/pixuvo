@@ -2182,6 +2182,27 @@
      "a": "Sì, i giochi funzionano su telefono e tablet come sul computer – basta toccare le due tessere."
     }
    ]
+  },
+  "parkour": {
+   "intro": "Corri, salta, scala – e cerca di non cadere. Nei giochi di parkour attraversi percorsi a ostacoli calcolando ogni salto, e un passo falso ti rimanda all'ultimo checkpoint. Su Pixuvo trovi più di 140 giochi di parkour e obby gratuiti da giocare nel browser, dalle brevi corse 2D alle alte torri 3D.\n\nObby è il nome di un gioco con percorso a ostacoli, e molti giochi qui sono proprio così: piattaforme, blocchi mobili, lava e trappole da superare, livello dopo livello. Cubetopia Parkour, Parkour Obby Jump to Victory e Obby - Playground Hardcore Challenge puntano su salti precisi. In Obby Pogo Parkour! rimbalzi su un pogo che puoi potenziare, Infinite Ascent è una scalata verticale e Shadow Sprint è una corsa di parkour in 3D in una città di notte. Se ti piace giocare in compagnia, in Ninja Parkour Multiplayer e Obby Modes! Online Mini-Games affrontate i percorsi insieme. Eclipse Run 2 unisce parkour e sparatorie, quindi è più adatto ai ragazzi più grandi.\n\nAlcune abitudini rendono i percorsi più facili: guarda la prossima piattaforma prima di saltare, aspetta i blocchi mobili invece di avere fretta e usa un checkpoint per calmarti, non per correre. Altri giochi di salto li trovi nella categoria Giochi platform.",
+   "faq": [
+    {
+     "q": "Cosa sono i giochi di parkour?",
+     "a": "I giochi di parkour sono giochi in cui corri, salti e scali ostacoli. L'obiettivo è arrivare alla fine del percorso senza cadere né toccare una trappola."
+    },
+    {
+     "q": "Cos'è un obby?",
+     "a": "Un obby è un gioco con percorso a ostacoli. Salti da una piattaforma all'altra tra blocchi mobili, lava e trappole, di solito con dei checkpoint lungo la strada."
+    },
+    {
+     "q": "I giochi di parkour vanno bene per i bambini?",
+     "a": "La maggior parte sì: allenano tempismo e pazienza, e cadere significa solo riprovare. Alcuni includono sparatorie, come Eclipse Run 2, quindi guarda la pagina del gioco per le note sui più grandi."
+    },
+    {
+     "q": "Posso giocare a parkour con gli amici?",
+     "a": "Sì, alcuni giochi hanno la modalità multiplayer, come Ninja Parkour Multiplayer e Obby Modes! Online Mini-Games. Il numero di giocatori è indicato nella pagina del gioco."
+    }
+   ]
   }
  }
 }

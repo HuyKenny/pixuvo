@@ -2182,6 +2182,27 @@
      "a": "Ano, hry fungují na mobilu a tabletu stejně jako na počítači – stačí ťuknout na dvě kostky."
     }
    ]
+  },
+  "parkour": {
+   "intro": "Běž, skákej, šplhej – a hlavně nespadni. V parkour hrách procházíš překážkové dráhy a o všem rozhoduje načasování skoku: jeden špatný krok a vrátíš se na poslední checkpoint. Na Pixuvu najdeš více než 140 parkour her a obby zdarma přímo v prohlížeči, od krátkých 2D běhů po vysoké 3D věže.\n\nObby je název pro hru s překážkovou dráhou a spousta her tady je přesně taková: plošiny, pohyblivé bloky, láva a pasti, které musíš zdolat level za levelem. Cubetopia Parkour, Parkour Obby Jump to Victory a Obby - Playground Hardcore Challenge stojí na přesných skocích. V Obby Pogo Parkour! se odrážíš na pogo holi a vylepšuješ ji, Infinite Ascent je vertikální výstup a Shadow Sprint je 3D parkourový běh nočním městem. Když chceš hrát ve společnosti, v Ninja Parkour Multiplayer a Obby Modes! Online Mini-Games se do tratí pustíte společně. Eclipse Run 2 míchá parkour se střílením, takže se hodí spíš pro starší děti.\n\nPár zásad ti dráhy usnadní: před skokem se podívej na další plošinu, u pohyblivých bloků radši počkej, než abys spěchal, a checkpoint využij k uklidnění, ne ke spěchu. Další skákací hry najdeš v kategorii Skákačky.",
+   "faq": [
+    {
+     "q": "Co jsou parkour hry?",
+     "a": "Parkour hry jsou hry, ve kterých běháš, skáčeš a šplháš přes překážky. Cílem je dostat se na konec dráhy a nespadnout ani se nedotknout pasti."
+    },
+    {
+     "q": "Co je to obby?",
+     "a": "Obby je hra s překážkovou dráhou. Skáčeš z plošiny na plošinu přes pohyblivé bloky, lávu a pasti, většinou s checkpointy po cestě."
+    },
+    {
+     "q": "Jsou parkour hry vhodné pro děti?",
+     "a": "Většina ano – trénují načasování a trpělivost a pád znamená jen zkusit to znovu. Pár her přidává střílení, například Eclipse Run 2, proto se na stránce hry podívej na poznámky pro starší děti."
+    },
+    {
+     "q": "Můžu hrát parkour hry s kamarády?",
+     "a": "Ano, některé hry mají multiplayer, třeba Ninja Parkour Multiplayer a Obby Modes! Online Mini-Games. Počet hráčů najdeš na stránce hry."
+    }
+   ]
   }
  }
 }

@@ -770,5 +770,9 @@
  "land.mahjong-connect.h1": "Mahjong Connect",
  "land.mahjong-connect.title": "Mahjong Connect – gioca gratis online, senza download",
  "land.mahjong-connect.description": "Giochi di Mahjong Connect gratis: collega due tessere uguali con un percorso di massimo tre linee. Gioca nel browser, senza download.",
- "land.mahjong-connect.intro": "Collega due tessere uguali con un percorso di non più di tre linee dritte."
+ "land.mahjong-connect.intro": "Collega due tessere uguali con un percorso di non più di tre linee dritte.",
+ "land.parkour.h1": "Giochi di parkour",
+ "land.parkour.title": "Giochi di parkour – gioca gratis a parkour e obby online",
+ "land.parkour.description": "Giochi di parkour gratis: salta, scala e corri tra percorsi a ostacoli e obby. Gioca online nel browser, senza download.",
+ "land.parkour.intro": "Salta, scala e corri attraverso insidiosi percorsi a ostacoli."
 }

@@ -280,6 +280,8 @@ export const RELATED: Record<string, string[]> = {
   'pyramid-solitaire': ['solitaire', 'golf-solitaire', 'klondike-solitaire', 'freecell', 'spider-solitaire'],
   'golf-solitaire': ['solitaire', 'pyramid-solitaire', 'klondike-solitaire', 'freecell', 'spider-solitaire'],
   'mahjong-connect': ['mahjong', 'match-3', 'memory', 'solitaire'],
+  parkour: ['stickman', 'platformer', 'runner', 'action'],
+  platformer: ['parkour', 'runner', 'arcade', 'stickman'],
   logic: ['sudoku', 'brain', 'math', 'board', 'puzzle'],
   action: ['fighting', 'shooting', 'stickman', 'ninja', 'platformer', 'boys'],
   shooting: ['sniper', 'first-person-shooter', 'zombie', 'tank', 'multiplayer-shooting', '2-player-shooting'],

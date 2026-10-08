@@ -2182,6 +2182,27 @@
      "a": "Evet, oyunlar bilgisayarın yanı sıra telefon ve tablette de çalışır – iki taşa dokunman yeterli."
     }
    ]
+  },
+  "parkour": {
+   "intro": "Koş, zıpla, tırman – ve düşmemeye çalış. Parkur oyunlarında her sıçrayışın zamanlamasını tutturarak engelli parkuru geçersin; tek yanlış adım seni son kontrol noktasına geri gönderir. Pixuvo'da tarayıcında oynayabileceğin 140'tan fazla ücretsiz parkur oyunu ve obby var; kısa 2D koşulardan yüksek 3D kulelere kadar.\n\nObby, engelli parkur oyunlarına verilen addır ve buradaki oyunların çoğu tam olarak bu: bölüm bölüm aşılması gereken platformlar, hareketli bloklar, lavlar ve tuzaklar. Cubetopia Parkour, Parkour Obby Jump to Victory ve Obby - Playground Hardcore Challenge hassas sıçrayışlar üzerine kurulu. Obby Pogo Parkour! ile pogo çubuğuyla zıplayıp çubuğunu geliştirirsin, Infinite Ascent dikey bir tırmanış, Shadow Sprint ise geceleyin bir şehirde geçen 3D parkur koşusu. Arkadaşlarla oynamak istersen Ninja Parkour Multiplayer ve Obby Modes! Online Mini-Games parkurları birlikte geçmene izin verir. Eclipse Run 2 parkuru nişan alıp ateş etmeyle karıştırdığı için daha büyük çocuklara uygun.\n\nBirkaç alışkanlık parkurları kolaylaştırır: zıplamadan önce bir sonraki platforma bak, hareketli blokları acele etmeden bekle ve kontrol noktasını acele etmek için değil, sakinleşmek için kullan. Daha fazla zıplama oyunu platform oyunları kategorisinde seni bekliyor.",
+   "faq": [
+    {
+     "q": "Parkur oyunları nedir?",
+     "a": "Parkur oyunları engellerin üzerinden koştuğun, zıpladığın ve tırmandığın oyunlardır. Amaç, düşmeden ya da tuzağa değmeden parkurun sonuna ulaşmaktır."
+    },
+    {
+     "q": "Obby nedir?",
+     "a": "Obby, engelli parkur tarzı bir oyundur. Hareketli bloklardan, lavlardan ve tuzaklardan kaçınarak platformdan platforma zıplarsın; yol boyunca genellikle kontrol noktaları bulunur."
+    },
+    {
+     "q": "Parkur oyunları çocuklar için uygun mu?",
+     "a": "Çoğu uygun: zamanlamayı ve sabrı geliştirir, düşmek de sadece yeniden denemek demektir. Eclipse Run 2 gibi birkaçında nişan alıp ateş etme de var, bu yüzden oyun sayfasındaki büyük çocuk notlarına göz at."
+    },
+    {
+     "q": "Parkur oyunlarını arkadaşlarımla oynayabilir miyim?",
+     "a": "Evet, Ninja Parkour Multiplayer ve Obby Modes! Online Mini-Games gibi bazı oyunlarda çok oyunculu mod var. Oyuncu sayısını oyun sayfasında görebilirsin."
+    }
+   ]
   }
  }
 }

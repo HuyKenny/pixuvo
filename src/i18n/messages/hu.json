@@ -762,5 +762,9 @@
  "land.mahjong-connect.h1": "Mahjong Connect",
  "land.mahjong-connect.title": "Mahjong Connect – párosító mahjong ingyen online",
  "land.mahjong-connect.description": "Ingyenes Mahjong Connect: köss össze két egyforma kockát egy legfeljebb kétszer forduló vonallal. Játssz online a böngésződben, letöltés nélkül.",
- "land.mahjong-connect.intro": "Köss össze két egyforma kockát egy legfeljebb három egyenes szakaszból álló úttal."
+ "land.mahjong-connect.intro": "Köss össze két egyforma kockát egy legfeljebb három egyenes szakaszból álló úttal.",
+ "land.parkour.h1": "Parkour játékok",
+ "land.parkour.title": "Parkour játékok – játssz ingyen online parkour és obby játékokat",
+ "land.parkour.description": "Ingyenes parkour játékok: ugorj, mássz és fuss akadálypályákon és obbykon át. Játssz online a böngésződben, letöltés nélkül.",
+ "land.parkour.intro": "Ugorj, mássz és fuss át a fortélyos akadálypályákon."
 }

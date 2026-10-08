@@ -778,5 +778,9 @@
  "land.mahjong-connect.h1": "Mahjong Connect",
  "land.mahjong-connect.title": "Mahjong Connect – hraj spojovací mahjong zdarma online",
  "land.mahjong-connect.description": "Mahjong Connect zdarma: spoj dvě stejné kostky čárou, která se zlomí nejvýš dvakrát. Hraj online v prohlížeči bez stahování.",
- "land.mahjong-connect.intro": "Spoj dvě stejné kostky cestou, která má nejvýš tři rovné úseky."
+ "land.mahjong-connect.intro": "Spoj dvě stejné kostky cestou, která má nejvýš tři rovné úseky.",
+ "land.parkour.h1": "Parkour hry",
+ "land.parkour.title": "Parkour hry – hraj zdarma online parkour a obby hry",
+ "land.parkour.description": "Parkour hry zdarma: skákej, šplhej a běž přes překážkové dráhy a obby. Hraj online v prohlížeči, bez stahování.",
+ "land.parkour.intro": "Skákej, šplhej a běž přes záludné překážkové dráhy."
 }

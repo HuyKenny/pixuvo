@@ -2182,6 +2182,27 @@
      "a": "Tak, gry działają na telefonach i tabletach tak samo jak na komputerze – wystarczy stuknąć dwa kamienie."
     }
    ]
+  },
+  "parkour": {
+   "intro": "Biegnij, skacz, wspinaj się – i staraj się nie spaść. W grach parkour pokonujesz tory przeszkód, a wszystko zależy od wyczucia czasu przy skoku: jeden zły krok i wracasz do ostatniego checkpointu. Na Pixuvo znajdziesz ponad 140 darmowych gier parkour i obby w przeglądarce, od krótkich biegów 2D po wysokie wieże 3D.\n\nObby to nazwa gry z torem przeszkód i wiele gier tutaj dokładnie taki ma: platformy, ruchome bloki, lawę i pułapki do ominięcia, poziom po poziomie. Cubetopia Parkour, Parkour Obby Jump to Victory i Obby - Playground Hardcore Challenge opierają się na precyzyjnych skokach. W Obby Pogo Parkour! odbijasz się na kiju pogo i ulepszasz go, Infinite Ascent to pionowa wspinaczka, a Shadow Sprint to bieg parkour w 3D przez nocne miasto. Jeśli wolisz grać w towarzystwie, w Ninja Parkour Multiplayer i Obby Modes! Online Mini-Games możecie mierzyć się z trasami razem. Eclipse Run 2 łączy parkour ze strzelaniem, więc lepiej pasuje do starszych dzieci.\n\nKilka nawyków ułatwia tory: przed skokiem spójrz na następną platformę, przy ruchomych blokach poczekaj zamiast się spieszyć, a checkpoint wykorzystaj, żeby się uspokoić, a nie żeby gnać dalej. Więcej gier ze skakaniem znajdziesz w kategorii Platformówki.",
+   "faq": [
+    {
+     "q": "Czym są gry parkour?",
+     "a": "Gry parkour to gry, w których biegasz, skaczesz i wspinasz się po przeszkodach. Celem jest dotarcie do końca toru bez spadnięcia i bez dotknięcia pułapki."
+    },
+    {
+     "q": "Co to jest obby?",
+     "a": "Obby to gra z torem przeszkód. Skaczesz z platformy na platformę obok ruchomych bloków, lawy i pułapek, zwykle z checkpointami po drodze."
+    },
+    {
+     "q": "Czy gry parkour są dobre dla dzieci?",
+     "a": "Większość tak – ćwiczą wyczucie czasu i cierpliwość, a upadek oznacza tylko kolejną próbę. Kilka gier łączy się ze strzelaniem, np. Eclipse Run 2, więc zajrzyj na stronę gry, gdzie są uwagi dla starszych dzieci."
+    },
+    {
+     "q": "Czy mogę grać w gry parkour ze znajomymi?",
+     "a": "Tak, niektóre gry mają multiplayer, na przykład Ninja Parkour Multiplayer i Obby Modes! Online Mini-Games. Liczbę graczy zobaczysz na stronie gry."
+    }
+   ]
   }
  }
 }

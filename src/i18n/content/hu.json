@@ -2182,6 +2182,27 @@
      "a": "Igen, a játékok telefonon és tableten ugyanúgy működnek, mint számítógépen – csak meg kell érintened a két kockát."
     }
    ]
+  },
+  "parkour": {
+   "intro": "Fuss, ugorj, mássz – és próbálj meg nem leesni. A parkour játékokban akadálypályákon kell átjutnod, és minden az ugrás időzítésén múlik: egy rossz lépés, és vissza is kerülsz az utolsó checkpointhoz. A Pixuvón több mint 140 ingyenes parkour játékot és obbyt találsz a böngésződben, a rövid 2D futásoktól a magas 3D tornyokig.\n\nAz obby az akadálypályás játékok neve, és az itteni játékok közül sok pontosan ilyen: platformok, mozgó blokkok, láva és csapdák várnak, pályáról pályára. A Cubetopia Parkour, a Parkour Obby Jump to Victory és az Obby - Playground Hardcore Challenge a pontos ugrásokra épül. Az Obby Pogo Parkour!-ban pogo-boton pattogsz és fejleszted azt, az Infinite Ascent függőleges mászás, a Shadow Sprint pedig 3D parkourfutás egy éjszakai városban. Ha társaságban játszanál, a Ninja Parkour Multiplayerben és az Obby Modes! Online Mini-Gamesben együtt vághattok neki a pályáknak. Az Eclipse Run 2 a parkourt lövöldözéssel keveri, ezért inkább nagyobb gyerekeknek való.\n\nNéhány szokás megkönnyíti a pályákat: ugrás előtt nézd meg a következő platformot, a mozgó blokkoknál inkább várj, mint hogy kapkodj, a checkpointot pedig arra használd, hogy megnyugodj, ne arra, hogy siess. További ugrálós játékokat a platformjátékok kategóriában találsz.",
+   "faq": [
+    {
+     "q": "Mik azok a parkour játékok?",
+     "a": "A parkour játékokban akadályokon futsz, ugrasz és mászol át. A cél, hogy leesés és csapdaérintés nélkül elérj a pálya végéig."
+    },
+    {
+     "q": "Mi az az obby?",
+     "a": "Az obby egy akadálypályás játék. Platformról platformra ugrálsz mozgó blokkok, láva és csapdák mellett, útközben általában checkpointokkal."
+    },
+    {
+     "q": "Jók a parkour játékok gyerekeknek?",
+     "a": "A legtöbb igen – az időzítést és a türelmet gyakorolják, a leesés pedig csak újabb próbálkozást jelent. Néhány játékban lövöldözés is van, például az Eclipse Run 2-ben, ezért nézd meg a játék oldalán a nagyobb gyerekeknek szóló megjegyzéseket."
+    },
+    {
+     "q": "Játszhatok parkour játékokat a barátaimmal?",
+     "a": "Igen, néhány játék többjátékos módot kínál, például a Ninja Parkour Multiplayer és az Obby Modes! Online Mini-Games. A játékosok számát a játék oldalán látod."
+    }
+   ]
   }
  }
 }

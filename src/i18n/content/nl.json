@@ -2182,6 +2182,27 @@
      "a": "Ja, de spelletjes werken op telefoons en tablets net zo goed als op een computer – je tikt de twee stenen aan."
     }
    ]
+  },
+  "parkour": {
+   "intro": "Rennen, springen, klimmen – en zorg dat je niet valt. In parkour spelletjes kom je door hindernisbanen door elke sprong op het juiste moment te maken, en één verkeerde stap stuurt je terug naar het laatste checkpoint. Pixuvo heeft meer dan 140 gratis parkour spelletjes en obby's om in je browser te spelen, van korte 2D-runs tot hoge 3D-torens.\n\nObby is de naam voor een hindernisbaanspel en veel spellen hier zijn precies dat: platforms, bewegende blokken, lava en vallen waar je levelslang langs moet. Cubetopia Parkour, Parkour Obby Jump to Victory en Obby - Playground Hardcore Challenge draaien om precieze sprongen. In Obby Pogo Parkour! stuiter je vooruit op een pogostick die je kunt upgraden, Infinite Ascent is een verticale klim en Shadow Sprint is een 3D-parkourrun door een stad bij nacht. Speel je liever samen, dan pakken jullie de banen in Ninja Parkour Multiplayer en Obby Modes! Online Mini-Games samen aan. Eclipse Run 2 combineert parkour met schieten en is daarom beter voor oudere kinderen.\n\nEen paar gewoontes maken de banen makkelijker: kijk voor je springt naar het volgende platform, wacht bij bewegende blokken in plaats van te haasten, en gebruik een checkpoint om tot rust te komen, niet om door te jakkeren. Meer springspellen vind je in de categorie platformspellen.",
+   "faq": [
+    {
+     "q": "Wat zijn parkour spelletjes?",
+     "a": "Parkour spelletjes zijn spellen waarin je over obstakels rent, springt en klimt. Het doel is het einde van de baan te halen zonder te vallen of een val aan te raken."
+    },
+    {
+     "q": "Wat is een obby?",
+     "a": "Een obby is een hindernisbaanspel. Je springt van platform naar platform langs bewegende blokken, lava en vallen, meestal met checkpoints onderweg."
+    },
+    {
+     "q": "Zijn parkour spelletjes geschikt voor kinderen?",
+     "a": "De meeste wel – ze oefenen timing en geduld, en vallen betekent gewoon opnieuw proberen. Een paar spellen mengen er schieten doorheen, zoals Eclipse Run 2, dus kijk op de spelpagina voor opmerkingen voor oudere kinderen."
+    },
+    {
+     "q": "Kan ik parkour spelletjes met vrienden spelen?",
+     "a": "Ja, sommige spellen hebben multiplayer, zoals Ninja Parkour Multiplayer en Obby Modes! Online Mini-Games. Op de spelpagina zie je het aantal spelers."
+    }
+   ]
   }
  }
 }

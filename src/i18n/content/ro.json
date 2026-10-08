@@ -2182,6 +2182,27 @@
      "a": "Da, jocurile merg pe telefon și pe tabletă, la fel ca pe calculator – atingi pur și simplu cele două plăcuțe."
     }
    ]
+  },
+  "parkour": {
+   "intro": "Aleargă, sari, cațără-te – și încearcă să nu cazi. În jocurile de parkour treci prin trasee cu obstacole sincronizând fiecare salt, iar un singur pas greșit te trimite înapoi la ultimul checkpoint. Pixuvo are peste 140 de jocuri de parkour și obby gratis, de jucat în browser, de la alergări scurte în 2D până la turnuri înalte în 3D.\n\nObby este numele unui joc cu traseu cu obstacole, iar multe dintre jocurile de aici sunt exact așa: platforme, blocuri mobile, lavă și capcane de depășit, nivel după nivel. Cubetopia Parkour, Parkour Obby Jump to Victory și Obby - Playground Hardcore Challenge se bazează pe salturi precise. În Obby Pogo Parkour! avansezi sărind pe un pogo pe care îl poți îmbunătăți, Infinite Ascent este o cățărare pe verticală, iar Shadow Sprint este o cursă de parkour în 3D printr-un oraș noaptea. Dacă îți place să joci în companie, în Ninja Parkour Multiplayer și Obby Modes! Online Mini-Games luați traseele la rând împreună. Eclipse Run 2 amestecă parkourul cu împușcăturile, deci se potrivește mai bine copiilor mai mari.\n\nCâteva obiceiuri fac traseele mai ușoare: uită-te la următoarea platformă înainte să sari, așteaptă blocurile mobile în loc să te grăbești și folosește checkpointul ca să te liniștești, nu ca să te grăbești. Mai multe jocuri cu sărituri găsești în categoria Jocuri cu platforme.",
+   "faq": [
+    {
+     "q": "Ce sunt jocurile de parkour?",
+     "a": "Jocurile de parkour sunt jocuri în care alergi, sari și te cațări peste obstacole. Scopul este să ajungi la capătul traseului fără să cazi și fără să atingi o capcană."
+    },
+    {
+     "q": "Ce este un obby?",
+     "a": "Un obby este un joc cu traseu cu obstacole. Sari de pe o platformă pe alta pe lângă blocuri mobile, lavă și capcane, de obicei cu checkpointuri pe drum."
+    },
+    {
+     "q": "Sunt jocurile de parkour bune pentru copii?",
+     "a": "Cele mai multe da – exersează sincronizarea și răbdarea, iar o cădere înseamnă doar să încerci din nou. Câteva amestecă împușcăturile, precum Eclipse Run 2, așa că uită-te pe pagina jocului la notele pentru copiii mai mari."
+    },
+    {
+     "q": "Pot juca jocuri de parkour cu prietenii?",
+     "a": "Da, unele jocuri au multiplayer, precum Ninja Parkour Multiplayer și Obby Modes! Online Mini-Games. Numărul de jucători apare pe pagina jocului."
+    }
+   ]
   }
  }
 }

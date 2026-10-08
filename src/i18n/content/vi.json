@@ -2182,6 +2182,27 @@
      "a": "Được, các game chạy trên điện thoại và máy tính bảng cũng như trên máy tính – bạn chỉ cần chạm vào hai ô."
     }
    ]
+  },
+  "parkour": {
+   "intro": "Chạy, nhảy, leo – và cố đừng ngã. Trong game parkour, bạn vượt qua đường đua chướng ngại vật bằng cách canh thời điểm cho từng cú nhảy, và chỉ một bước sai là bạn bị đưa về điểm lưu gần nhất. Pixuvo có hơn 140 game parkour và obby miễn phí để chơi ngay trên trình duyệt, từ những màn chạy 2D ngắn đến các tòa tháp 3D cao vút.\n\nObby là tên gọi của game đường đua vượt chướng ngại vật, và nhiều game ở đây đúng là như vậy: nền tảng, khối di chuyển, dung nham và bẫy cần vượt qua, hết màn này đến màn khác. Cubetopia Parkour, Parkour Obby Jump to Victory và Obby - Playground Hardcore Challenge được xây dựng quanh những cú nhảy chính xác. Trong Obby Pogo Parkour!, bạn nhún nhảy trên gậy pogo và nâng cấp nó, Infinite Ascent là cuộc leo dọc lên cao, còn Shadow Sprint là màn chạy parkour 3D trong một thành phố về đêm. Nếu thích chơi cùng người khác, Ninja Parkour Multiplayer và Obby Modes! Online Mini-Games cho phép bạn cùng nhau chinh phục các đường đua. Eclipse Run 2 kết hợp parkour với bắn súng nên phù hợp hơn với các bạn lớn.\n\nVài thói quen sẽ giúp đường đua dễ hơn: nhìn nền tảng tiếp theo trước khi nhảy, chờ khối di chuyển thay vì vội vàng, và dùng điểm lưu để bình tĩnh lại chứ không phải để chạy đua. Nhiều game nhảy khác nằm trong danh mục Game đi cảnh.",
+   "faq": [
+    {
+     "q": "Game parkour là gì?",
+     "a": "Game parkour là game mà bạn chạy, nhảy và leo qua các chướng ngại vật. Mục tiêu là đến cuối đường đua mà không bị ngã hay chạm vào bẫy."
+    },
+    {
+     "q": "Obby là gì?",
+     "a": "Obby là game đường đua vượt chướng ngại vật. Bạn nhảy từ nền tảng này sang nền tảng khác, tránh các khối di chuyển, dung nham và bẫy, thường có điểm lưu dọc đường."
+    },
+    {
+     "q": "Game parkour có phù hợp với trẻ em không?",
+     "a": "Phần lớn là có – chúng rèn kỹ năng canh thời điểm và sự kiên nhẫn, còn ngã chỉ có nghĩa là thử lại. Một vài game có bắn súng, như Eclipse Run 2, nên hãy xem trang game để biết ghi chú cho các bạn lớn."
+    },
+    {
+     "q": "Tôi có thể chơi game parkour cùng bạn bè không?",
+     "a": "Có, một số game có chế độ nhiều người chơi, như Ninja Parkour Multiplayer và Obby Modes! Online Mini-Games. Số người chơi được ghi trên trang game."
+    }
+   ]
   }
  }
 }

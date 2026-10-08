@@ -19,6 +19,7 @@ State on 2026-10-02:
 | Playgama | available | approved | **pending** (revenue in widgets.playgama.com) | partner_handles | 2 350 sources (2 081 own games, 269 attached) |
 | GameZipper (since 2026-10-05) | available (local file) | approved — **76 hand-picked games only** | not_approved (no revenue share exists) | **owner_accepted** | 76 sources |
 | HTMLGames (since 2026-10-05) | available | approved | not_approved (no revenue share; their ads.txt lines added) | partner_handles | ~1 240 sources (≈1 210 own games, ≈30 attached) |
+| GameFlare (since 2026-10-05) | available | approved | **pending** (revenue share exists, needs a publisher account) | **owner_accepted** | 164 sources (≈129 own games, ≈35 attached) |
 | GameDistribution | unknown | **awaiting_approval** | not_approved | blocked | 0 — application rejected |
 | Famobi | unknown | disabled | not_approved | blocked | 0 — no account |
 
@@ -106,6 +107,24 @@ State on 2026-10-02:
   "Frozen" titles and blackjack/poker games wait in review.
 * **Consent:** live test 2026-10-05 from an EU IP — a certified InMobi TCF dialog with "Reject all" before ads (Yolla
   Media + Google IMA/GAM); no popups.
+
+## GameFlare
+
+* **Feed:** `GET https://distribution.gameflare.com/feed.json` → `{games:[{game:{title, url, description, instructions,
+  width, height, assetList:[{name}], categoryList:[{name}]}}]}` (164 games on 2026-10-05, no key). `url` is the embed
+  (`/embed/<slug>/`), the thumbnail is a 400×300 jpg on `data.gameflare.com`, sizes are real (portrait games exist).
+* **Revenue share:** 35 % publisher / 50 % developer / 15 % GameFlare, monthly from 50 €, via PayPal or Wise. It needs a
+  publisher account (Sign up on distribution.gameflare.com; "only offered for established websites") and their ads.txt
+  lines (`src/config/ads-gameflare.ts`, from https://distribution.gameflare.com/publishers/). **To do (owner):** register
+  pixuvo.com there, then set `monetize_status = approved`; if the account hands out a publisher parameter for the
+  embeds, add it in `adapters/gameflare.ts` (like the GamePix sid).
+* **Consent (2026-10-05, EU IP):** no TCF dialog, only "By clicking Play Game you agree with our Privacy Policy and
+  Cookie Policy… targeted advertisements" with no reject option. Ads from AdinPlay, Venatus, Google IMA/AdSense and
+  CPMStar; no popups. Published as `owner_accepted` by the owner's decision (same as GameMonetize).
+* **Labels:** category names minus " Games"; `Two players` → `2 player`, `Jumping/Skill` add `platformer`/`arcade`;
+  `HTML5`, `WebGL`, `Minecraft` (brand), `Bloody`, `Company`, `Crazy`, `Funny` are dropped.
+* **Tests:** their WAF answers 403 to a `HeadlessChrome` user agent — use a normal UA in browser tests. Skibidi Online
+  and Five Nights at Old Toy Factory 2020 wait in review (brand filter).
 
 ## GameDistribution
 
