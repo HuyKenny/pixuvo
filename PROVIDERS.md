@@ -141,3 +141,6 @@ State on 2026-10-02:
 Admin → Providers → Publish = `disabled` (or Consent = `blocked`) → Save. New plays stop immediately, games
 without another usable source become `hidden` (dynamic pages and APIs within ~1 minute, static pages with the next
 publish), and they are restored automatically when the provider is re-enabled. See OPERATIONS.md.
+
+## Dead embeds (probe)
+`scripts/probe-embeds.ts` runs daily in "Sync and publish" (1 500 least-recently-verified sources per run). GameMonetize wrappers load the real game from the developer's own domain (`var gameUrl`); NXDOMAIN or 404/410 there (or on the wrapper) is "dead". First failure only marks `missing_since='probe:<ts>'`; a second failing run disables the source and archives the game (`review_reason='dead_embed'`). 403/429/5xx/timeouts never count. Case: Line Rider (tinyleafgames.com, no DNS, 2026-10-09).
