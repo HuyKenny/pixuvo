@@ -115,9 +115,9 @@ State on 2026-10-02:
   (`/embed/<slug>/`), the thumbnail is a 400×300 jpg on `data.gameflare.com`, sizes are real (portrait games exist).
 * **Revenue share:** 35 % publisher / 50 % developer / 15 % GameFlare, monthly from 50 €, via PayPal or Wise. It needs a
   publisher account (Sign up on distribution.gameflare.com; "only offered for established websites") and their ads.txt
-  lines (`src/config/ads-gameflare.ts`, from https://distribution.gameflare.com/publishers/). **To do (owner):** register
-  pixuvo.com there, then set `monetize_status = approved`; if the account hands out a publisher parameter for the
-  embeds, add it in `adapters/gameflare.ts` (like the GamePix sid).
+  lines (`src/config/ads-gameflare.ts`, from https://distribution.gameflare.com/publishers/). **Status 2026-10-08:** the owner has registered
+  pixuvo.com; approval is pending, so `monetize_status` stays `pending` until the account shows reports. The embeds need no
+  publisher parameter (owner decision: use the feed unchanged; revenue is matched by domain via ads.txt).
 * **Consent (2026-10-05, EU IP):** no TCF dialog, only "By clicking Play Game you agree with our Privacy Policy and
   Cookie Policy… targeted advertisements" with no reject option. Ads from AdinPlay, Venatus, Google IMA/AdSense and
   CPMStar; no popups. Published as `owner_accepted` by the owner's decision (same as GameMonetize).
