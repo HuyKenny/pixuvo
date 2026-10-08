@@ -5677,5 +5677,149 @@
     "a": "Kom snel over de kades en blijf droog."
    }
   ]
+ },
+ "love-tester": {
+  "summary": "Love Tester is een kort spelletje voor de lol: je typt namen in en het spel vertelt je hoe goed ze bij elkaar passen. Het is meer een grap dan wetenschap, dus het is leuk om samen met vrienden te lachen, maar neem de uitslag niet serieus. Eén poging duurt maar een paar seconden.\n\nHet spel is gemaakt voor touchscreens, dus het werkt heel goed op een telefoon of tablet. Er is niets te leren en er zijn geen levels, dus het is een makkelijke keuze als je maar een minuutje hebt en wilt lachen.",
+  "how_to": "Tik op start, voer dan de namen in en laat het spel ze testen. Het spel toont de uitslag als liefdesscore. Probeer verschillende namen of koppels, bijvoorbeeld vrienden, huisdieren of favoriete personages, en vergelijk de scores.",
+  "tips": [
+   "Zie de uitslag als een grap – het kan echt niets voorspellen.",
+   "Probeer de namen van vrienden, huisdieren of favoriete personages en kijk wie de hoogste score krijgt.",
+   "Speel op een telefoon of tablet, want het spel gebruikt touch.",
+   "Laat de score aan een vriend zien en laat hem raden welke namen je hebt geprobeerd."
+  ],
+  "faq": [
+   {
+    "q": "Is Love Tester echt?",
+    "a": "Nee. Het is een grappig spel dat een score verzint voor de namen die je invoert. Het kan niets echts zeggen over liefde of vriendschap."
+   },
+   {
+    "q": "Kan ik Love Tester op mijn telefoon spelen?",
+    "a": "Ja, het spel is gemaakt voor touchscreens, dus het werkt op telefoons en tablets."
+   },
+   {
+    "q": "Kan ik ook vrienden of huisdieren testen in plaats van mijn crush?",
+    "a": "Ja, je kunt alle namen invoeren die je wilt, zoals vrienden, broers en zussen, huisdieren of favoriete personages."
+   }
+  ]
+ },
+ "tank-trouble": {
+  "summary": "In Tank Trouble zit je in een tank in een klein doolhof. Je rijdt om de muren heen, richt en probeert de andere tank te raken voordat die jou raakt. In de Solo-modus speel je tegen Laika, een meester in oorlog, en in multiplayer kun je op hetzelfde apparaat een of twee vrienden uitdagen.\n\nDe slagvelden zijn doolhoven, dus de muren zijn net zo belangrijk als de kanonnen. Je moet bedenken waar de andere tank vandaan kan komen, en een schot kun je slim gebruiken om een hoek. De rondes zijn snel en makkelijk opnieuw te starten, dus het is een geweldig spel om om de beurt met vrienden te spelen.",
+  "how_to": "Rijd in de Solo-modus met je tank door het doolhof en schiet op Laika, je tegenstander. In multiplayer op één toetsenbord bestuurt speler 1 met de toetsen WASD en schiet met Q, speler 2 gebruikt de pijltjestoetsen en de spatiebalk en speler 3 speelt met de muis. Gebruik de muren als dekking en probeer de andere tank als eerste te raken.",
+  "tips": [
+   "Gebruik de muren als dekking en kom pas tevoorschijn als je klaar bent om te schieten.",
+   "Bedenk waar de andere tank vandaan kan komen voordat je om een hoek rijdt.",
+   "Blijf in beweging, want een stilstaande tank is makkelijk te raken.",
+   "Speel om de beurt met vrienden en doe meerdere rondes om te zien wie het vaakst wint."
+  ],
+  "faq": [
+   {
+    "q": "Kan ik Tank Trouble met een vriend spelen?",
+    "a": "Ja. Je kunt multiplayer spelen met een of twee vrienden op hetzelfde apparaat. Speler 1 gebruikt WASD en Q, speler 2 de pijltjestoetsen en de spatiebalk, en speler 3 kan met de muis spelen."
+   },
+   {
+    "q": "Kan ik Tank Trouble alleen spelen?",
+    "a": "Ja. In de Solo-modus speel je tegen Laika, een meester in oorlog."
+   },
+   {
+    "q": "Is Tank Trouble gratis?",
+    "a": "Ja, je kunt het gratis in je browser spelen zonder iets te downloaden."
+   }
+  ]
+ },
+ "gin-rummy": {
+  "summary": "Gin Rummy is een klassiek kaartspel voor twee spelers, en in deze versie speel je tegen de computer. Je probeert je kaarten te verzamelen in sets en reeksen en kaarten kwijt te raken die er niet bij passen. De computer past zich tijdens het spelen aan je niveau aan, dus het blijft interessant of je nu net begint of al goed bent.\n\nHet spel slaat je voortgang op, dus je kunt stoppen en later terugkomen. Het is een rustig spel van plannen en onthouden – je let op welke kaarten je tegenstander pakt en welke hij weggooit, en daaraan zie je wat je moet houden. Het is een goede manier om een echt kaartspel te leren dat over de hele wereld wordt gespeeld.",
+  "how_to": "Speel tegen de computer. Als je aan de beurt bent, pak je een kaart en gooi je er een weg. Je probeert sets van hetzelfde getal en reeksen van opeenvolgende kaarten van dezelfde kleur te maken. Kaarten die niet bij een set of reeks horen, tellen tegen je. Let op wat je tegenstander oppakt, want dat laat zien wat hij nodig heeft.",
+  "tips": [
+   "Let op welke kaarten je tegenstander pakt en welke hij weggooit.",
+   "Houd kaarten vast waarmee je zowel een set als een reeks kunt maken.",
+   "Gooi hoge kaarten die nergens bij passen vroeg weg.",
+   "Neem de tijd – het spel slaat op, dus je kunt nadenken en later terugkomen."
+  ],
+  "faq": [
+   {
+    "q": "Hoeveel spelers heeft Gin Rummy?",
+    "a": "Gin Rummy is een spel voor twee spelers. In deze versie speel je tegen de computer."
+   },
+   {
+    "q": "Slaat het spel mijn voortgang op?",
+    "a": "Ja, het spel heeft automatisch opslaan en hervatten, dus je kunt later terugkomen."
+   },
+   {
+    "q": "Is de computertegenstander moeilijk?",
+    "a": "De computer past zich aan je speelniveau aan, dus het blijft een uitdaging zonder oneerlijk te zijn."
+   }
+  ]
+ },
+ "mini-dash": {
+  "summary": "Mini Dash is een platformspel in retrostijl waarin je een klein klodderje speelt. Zijn speciale kracht is de luchtdash: terwijl je in de lucht bent, kun je naar links of rechts dashen om obstakels te ontwijken en munten te bereiken. Leren wanneer je springt en wanneer je dasht is het hele spel – het is makkelijk te beginnen, maar oefenen is nodig om het te beheersen.\n\nIn elk level verzamel je de munten, en er is ook een speedrun-modus om te testen hoe snel je klaar kunt zijn. Het werkt met de muis op een computer en met touch op een telefoon of tablet.",
+  "how_to": "Op een computer druk je op X of de linkermuisknop om te springen, en op C of de rechtermuisknop om ook te springen. In de lucht druk je op X of de linkermuisknop om naar links te dashen, en op C of de rechtermuisknop om naar rechts te dashen. Op een telefoon raak je de linker- of rechterkant aan om te springen, en raak je in de lucht links of rechts aan om die kant op te dashen. Verzamel de munten en ontwijk obstakels.",
+  "tips": [
+   "Spring eerst en dash dan – de dash werkt alleen in de lucht.",
+   "Wacht op het juiste moment in plaats van te dashen zodra je de grond verlaat.",
+   "Probeer de speedrun-modus als je een level goed kent.",
+   "Leer de indeling van een level, want obstakels blijven op dezelfde plek."
+  ],
+  "faq": [
+   {
+    "q": "Hoe dash je in Mini Dash?",
+    "a": "Spring eerst en druk dan in de lucht op de dashknop. Op een computer gebruik je X of de linkermuisknop om naar links te dashen en C of de rechtermuisknop om naar rechts te dashen. Op een telefoon raak je in de lucht de linker- of rechterkant aan."
+   },
+   {
+    "q": "Kan ik Mini Dash op mijn telefoon spelen?",
+    "a": "Ja, het spel heeft touchbediening voor telefoons en tablets."
+   },
+   {
+    "q": "Is er een speedrun-modus?",
+    "a": "Ja, Mini Dash heeft een speedrun-modus om te testen hoe snel je klaar kunt zijn."
+   }
+  ]
+ },
+ "classic-snake": {
+  "summary": "Classic Snake haalt het idee van het oude slangenspel terug en houdt het simpel: je eet kleine stipjes om groter te worden en probeert de grootste slang van het klassement te maken. Naarmate je slang groeit, is hij moeilijker te besturen zonder ergens tegenaan te botsen, dus elk stipje maakt het spel een beetje spannender.\n\nDe besturing is alleen een muisklik of een tik, dus het start meteen op een computer of telefoon. De rondes zijn kort, dus je probeert makkelijk opnieuw en verbetert je eigen record.",
+  "how_to": "Klik met de muis of tik op het scherm om te spelen en je slang te sturen. Eet de kleine stipjes om langer te worden. Probeer de grootste slang van het klassement te worden.",
+  "tips": [
+   "Eet eerst stipjes dicht bij je, zodat je veilig groeit.",
+   "Laat jezelf ruimte om te draaien als je slang langer wordt.",
+   "Plan een route voordat je naar een stipje ver weg gaat.",
+   "Speel een paar rondes en probeer je beste lengte te verbeteren."
+  ],
+  "faq": [
+   {
+    "q": "Hoe speel je Classic Snake?",
+    "a": "Klik of tik om je slang te sturen, eet de kleine stipjes om langer te worden en probeer de grootste slang van het klassement te krijgen."
+   },
+   {
+    "q": "Kan ik Classic Snake op mijn telefoon spelen?",
+    "a": "Ja, het spel werkt met een tik, dus het werkt op telefoons en tablets."
+   },
+   {
+    "q": "Is Classic Snake gratis?",
+    "a": "Ja, je kunt het gratis in je browser spelen zonder iets te downloaden."
+   }
+  ]
+ },
+ "checkers": {
+  "summary": "Checkers is een klassiek strategiespel waarin elke zet telt. Je beweegt je stukken over het bord, slaat de stukken van je tegenstander door eroverheen te springen en probeert een stuk naar de overkant te brengen, zodat het gekroond wordt en in elke richting kan bewegen. Slaan is verplicht, dus je kunt vallen plannen en je tegenstander tot zetten dwingen.\n\nHet is makkelijk te leren en kost veel tijd om te beheersen. Het spel beloont vooruitdenken: kijk voor elke zet wat die je tegenstander daarna toestaat. Het is een goed spel om plannen, geduld en zorgvuldig nadenken te oefenen.",
+  "how_to": "Beweeg je stukken vooruit over het bord en sla stukken van de tegenstander door eroverheen te springen. Als slaan mogelijk is, moet je het doen. Als een van je stukken de overkant van het bord bereikt, wordt het gekroond en kan het daarna in elke richting bewegen. Je wint door alle stukken van de tegenstander te slaan of hem zonder zetten achter te laten.",
+  "tips": [
+   "Bedenk wat je zet je tegenstander daarna toestaat.",
+   "Gebruik de verplichte slag om vallen te zetten.",
+   "Houd je stukken bij elkaar, zodat ze elkaar beschermen.",
+   "Probeer een stuk te kronen, want een gekroond stuk is veel sterker."
+  ],
+  "faq": [
+   {
+    "q": "Is slaan verplicht bij Checkers?",
+    "a": "Ja, in dit spel moet je slaan als slaan mogelijk is. Daardoor zijn vallen en plannen mogelijk."
+   },
+   {
+    "q": "Wat gebeurt er als een stuk wordt gekroond?",
+    "a": "Een stuk dat de overkant van het bord bereikt, wordt gekroond en kan in elke richting bewegen."
+   },
+   {
+    "q": "Kan ik hier Checkers leren?",
+    "a": "Ja, de regels zijn simpel en een paar potjes spelen is een goede manier om het te leren."
+   }
+  ]
  }
 }

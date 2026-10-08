@@ -5677,5 +5677,149 @@
     "a": "Überquere die Docks schnell und bleib dabei trocken."
    }
   ]
+ },
+ "love-tester": {
+  "summary": "Love Tester ist ein kurzes Spiel zum Spaß: Du gibst Namen ein und das Spiel verrät dir, wie gut sie zusammenpassen. Es ist eher ein Scherz als Wissenschaft, deshalb eignet es sich zum Lachen mit Freunden und nicht dazu, das Ergebnis ernst zu nehmen. Ein Versuch dauert nur wenige Sekunden.\n\nDas Spiel ist für Touchscreens gemacht und funktioniert deshalb sehr gut auf dem Handy oder Tablet. Es gibt nichts zu lernen und keine Level, also ist es eine einfache Wahl, wenn du nur eine Minute hast und lächeln möchtest.",
+  "how_to": "Tippe auf Start, gib dann die Namen ein und lass das Spiel sie testen. Das Spiel zeigt das Ergebnis als Liebes-Score. Probiere verschiedene Namen oder Paare aus, zum Beispiel Freunde, Haustiere oder Lieblingsfiguren, und vergleiche die Werte.",
+  "tips": [
+   "Nimm das Ergebnis als Scherz – es kann wirklich nichts vorhersagen.",
+   "Probiere die Namen von Freunden, Haustieren oder Lieblingsfiguren aus und finde heraus, wer den höchsten Wert bekommt.",
+   "Spiele auf einem Handy oder Tablet, denn das Spiel nutzt Touch.",
+   "Zeig einem Freund den Wert und lass ihn raten, welche Namen du ausprobiert hast."
+  ],
+  "faq": [
+   {
+    "q": "Ist Love Tester echt?",
+    "a": "Nein. Es ist ein lustiges Spiel, das sich für die eingegebenen Namen einen Wert ausdenkt. Über Liebe oder Freundschaft kann es nichts Echtes sagen."
+   },
+   {
+    "q": "Kann ich Love Tester auf dem Handy spielen?",
+    "a": "Ja, das Spiel ist für Touchscreens gemacht und funktioniert deshalb auf Handys und Tablets."
+   },
+   {
+    "q": "Kann ich auch Freunde oder Haustiere testen statt meinen Schwarm?",
+    "a": "Ja, du kannst beliebige Namen eingeben, zum Beispiel von Freunden, Geschwistern, Haustieren oder Lieblingsfiguren."
+   }
+  ]
+ },
+ "tank-trouble": {
+  "summary": "In Tank Trouble sitzt du in einem Panzer in einem kleinen Labyrinth. Du fährst um die Wände herum, zielst und versuchst, den anderen Panzer zu treffen, bevor er dich trifft. Im Solo-Modus spielst du gegen Laika, eine Meisterin des Krieges, und im Mehrspielermodus kannst du auf demselben Gerät einen oder zwei Freunde herausfordern.\n\nDie Schlachtfelder sind Labyrinthe, deshalb sind die Wände genauso wichtig wie die Kanonen. Du musst überlegen, woher der andere Panzer kommen kann, und einen Schuss kann man auch clever um die Ecke einsetzen. Die Runden sind schnell und leicht neu zu starten, also ist es ein tolles Spiel zum Abwechseln mit Freunden.",
+  "how_to": "Im Solo-Modus fährst du deinen Panzer durch das Labyrinth und schießt auf Laika, deine Gegnerin. Im Mehrspielermodus an einer Tastatur fährt Spieler 1 mit den Tasten WASD und schießt mit Q, Spieler 2 nutzt die Pfeiltasten und die Leertaste und Spieler 3 spielt mit der Maus. Nutze die Wände als Deckung und versuche, den anderen Panzer zuerst zu treffen.",
+  "tips": [
+   "Nutze die Wände als Deckung und schau nur hervor, wenn du bereit zum Schießen bist.",
+   "Überlege, woher der andere Panzer kommen kann, bevor du um eine Ecke fährst.",
+   "Bleib in Bewegung, denn ein stehender Panzer ist leicht zu treffen.",
+   "Wechselt euch mit Freunden ab und spielt mehrere Runden, um zu sehen, wer am häufigsten gewinnt."
+  ],
+  "faq": [
+   {
+    "q": "Kann ich Tank Trouble mit einem Freund spielen?",
+    "a": "Ja. Du kannst den Mehrspielermodus mit einem oder zwei Freunden auf demselben Gerät spielen. Spieler 1 nutzt WASD und Q, Spieler 2 die Pfeiltasten und die Leertaste, und Spieler 3 kann mit der Maus spielen."
+   },
+   {
+    "q": "Kann ich Tank Trouble allein spielen?",
+    "a": "Ja. Im Solo-Modus spielst du gegen Laika, eine Meisterin des Krieges."
+   },
+   {
+    "q": "Ist Tank Trouble kostenlos?",
+    "a": "Ja, du kannst es kostenlos im Browser spielen, ganz ohne Download."
+   }
+  ]
+ },
+ "gin-rummy": {
+  "summary": "Gin Rummy ist ein klassisches Kartenspiel für zwei Spieler, und in dieser Version spielst du gegen den Computer. Du versuchst, deine Karten zu Sätzen und Reihen zu sammeln und Karten loszuwerden, die nicht passen. Der Computer passt sich beim Spielen deinem Niveau an, deshalb bleibt es spannend, egal ob du neu dabei bist oder schon gut spielst.\n\nDas Spiel speichert deinen Fortschritt, du kannst also aufhören und später weitermachen. Es ist ein ruhiges Spiel aus Planen und Merken – du beobachtest, welche Karten dein Gegner nimmt und welche er ablegt, und daran erkennst du, was du behalten solltest. So lernst du ein echtes Kartenspiel kennen, das auf der ganzen Welt gespielt wird.",
+  "how_to": "Spiele gegen den Computer. Wenn du dran bist, nimmst du eine Karte und legst dann eine ab. Dabei versuchst du, Sätze aus gleichen Zahlen und Reihen aus aufeinanderfolgenden Karten derselben Farbe zu bilden. Karten, die nicht zu einem Satz oder einer Reihe gehören, zählen gegen dich. Achte darauf, was dein Gegner aufnimmt, denn das zeigt, was er braucht.",
+  "tips": [
+   "Beobachte, welche Karten dein Gegner aufnimmt und welche er ablegt.",
+   "Behalte Karten, aus denen sowohl ein Satz als auch eine Reihe werden kann.",
+   "Wirf hohe Karten, die nirgends passen, früh ab.",
+   "Lass dir Zeit – das Spiel speichert, du kannst also nachdenken und später zurückkommen."
+  ],
+  "faq": [
+   {
+    "q": "Wie viele Spieler hat Gin Rummy?",
+    "a": "Gin Rummy ist ein Spiel für zwei Spieler. In dieser Version spielst du gegen den Computer."
+   },
+   {
+    "q": "Speichert das Spiel meinen Fortschritt?",
+    "a": "Ja, das Spiel speichert automatisch und lässt sich fortsetzen, du kannst also später zurückkommen."
+   },
+   {
+    "q": "Ist der Computergegner schwer?",
+    "a": "Der Computer passt sich deinem Spielniveau an, deshalb bleibt es herausfordernd, ohne unfair zu sein."
+   }
+  ]
+ },
+ "mini-dash": {
+  "summary": "Mini Dash ist ein Plattformspiel im Retro-Stil, in dem du einen kleinen Klecks spielst. Seine besondere Fähigkeit ist der Luft-Dash: Während du in der Luft bist, kannst du nach links oder rechts flitzen, um Hindernissen auszuweichen und Münzen zu erreichen. Zu lernen, wann man springt und wann man dasht, ist das ganze Spiel – es ist leicht zu starten, braucht aber Übung, um es zu meistern.\n\nIn jedem Level sammelst du die Münzen, und es gibt auch einen Speedrun-Modus, in dem du testen kannst, wie schnell du fertig wirst. Es funktioniert mit der Maus am Computer und per Touch auf dem Handy oder Tablet.",
+  "how_to": "Am Computer springst du mit der Taste X oder der linken Maustaste, und springen kannst du auch mit der Taste C oder der rechten Maustaste. In der Luft dashst du mit X oder der linken Maustaste nach links und mit C oder der rechten Maustaste nach rechts. Auf dem Handy tippst du zum Springen auf die linke oder rechte Seite und tippst dann in der Luft links oder rechts, um in diese Richtung zu dashen. Sammle die Münzen und weiche Hindernissen aus.",
+  "tips": [
+   "Spring zuerst, dann dashe – der Dash funktioniert nur in der Luft.",
+   "Warte auf den richtigen Moment, statt gleich zu dashen, wenn du den Boden verlässt.",
+   "Probiere den Speedrun-Modus aus, wenn du ein Level gut kennst.",
+   "Lerne den Aufbau eines Levels, denn die Hindernisse bleiben immer an derselben Stelle."
+  ],
+  "faq": [
+   {
+    "q": "Wie dasht man in Mini Dash?",
+    "a": "Spring zuerst und drücke dann in der Luft die Dash-Taste. Am Computer dashst du mit X oder der linken Maustaste nach links und mit C oder der rechten Maustaste nach rechts. Auf dem Handy tippst du in der Luft auf die linke oder rechte Seite."
+   },
+   {
+    "q": "Kann ich Mini Dash auf dem Handy spielen?",
+    "a": "Ja, das Spiel hat Touch-Steuerung für Handys und Tablets."
+   },
+   {
+    "q": "Gibt es einen Speedrun-Modus?",
+    "a": "Ja, Mini Dash hat einen Speedrun-Modus, um zu testen, wie schnell du fertig wirst."
+   }
+  ]
+ },
+ "classic-snake": {
+  "summary": "Classic Snake greift die Idee des alten Snake-Spiels auf und hält es einfach: Du frisst kleine Punkte, um größer zu werden, und versuchst, die größte Schlange der Bestenliste zu bauen. Je länger deine Schlange wird, desto schwerer ist sie zu lenken, ohne irgendwo anzustoßen, deshalb macht jeder Punkt das Spiel ein bisschen spannender.\n\nDie Steuerung ist nur ein Mausklick oder ein Tipp, deshalb startet es sofort am Computer oder auf dem Handy. Die Runden sind kurz, sodass du leicht noch einmal probieren und deinen eigenen Rekord schlagen kannst.",
+  "how_to": "Klicke mit der Maus oder tippe auf den Bildschirm, um zu spielen und deine Schlange zu lenken. Friss die kleinen Punkte, um länger zu werden. Versuche, die größte Schlange der Bestenliste zu werden.",
+  "tips": [
+   "Friss zuerst Punkte in deiner Nähe, damit du sicher wächst.",
+   "Lass dir Platz zum Wenden, wenn deine Schlange länger wird.",
+   "Plane einen Weg, bevor du einen weit entfernten Punkt ansteuerst.",
+   "Spiele ein paar Runden und versuche, deine beste Länge zu schlagen."
+  ],
+  "faq": [
+   {
+    "q": "Wie spielt man Classic Snake?",
+    "a": "Klicke oder tippe, um deine Schlange zu lenken, friss die kleinen Punkte, um länger zu werden, und versuche, die größte Schlange der Bestenliste zu bekommen."
+   },
+   {
+    "q": "Kann ich Classic Snake auf dem Handy spielen?",
+    "a": "Ja, das Spiel funktioniert mit einem Tipp, also auch auf Handys und Tablets."
+   },
+   {
+    "q": "Ist Classic Snake kostenlos?",
+    "a": "Ja, du kannst es kostenlos im Browser spielen, ganz ohne Download."
+   }
+  ]
+ },
+ "checkers": {
+  "summary": "Checkers ist ein klassisches Strategiespiel, bei dem jeder Zug zählt. Du bewegst deine Steine über das Brett, schlägst die Steine deines Gegners, indem du über sie springst, und versuchst, einen Stein auf die gegenüberliegende Seite zu bringen, damit er gekrönt wird und sich in jede Richtung bewegen kann. Schlagen ist Pflicht, deshalb kannst du Fallen planen und deinen Gegner zu Zügen zwingen.\n\nEs ist leicht zu lernen und braucht lange, um es zu meistern. Das Spiel belohnt Vorausdenken: Schau vor jedem Zug, was er deinem Gegner als Nächstes erlaubt. Es ist ein gutes Spiel, um Planen, Geduld und sorgfältiges Denken zu üben.",
+  "how_to": "Bewege deine Steine vorwärts über das Brett und schlage gegnerische Steine, indem du über sie springst. Wenn ein Schlagen möglich ist, musst du es ausführen. Erreicht einer deiner Steine die gegenüberliegende Seite des Bretts, wird er gekrönt und kann sich dann in jede Richtung bewegen. Du gewinnst, wenn du alle Steine des Gegners schlägst oder er keinen Zug mehr hat.",
+  "tips": [
+   "Überlege, was dein Zug deinem Gegner als Nächstes erlaubt.",
+   "Nutze die Schlagpflicht, um Fallen zu stellen.",
+   "Halte deine Steine zusammen, damit sie sich gegenseitig schützen.",
+   "Versuche, einen Stein zu krönen, denn ein gekrönter Stein ist viel stärker."
+  ],
+  "faq": [
+   {
+    "q": "Ist Schlagen bei Checkers Pflicht?",
+    "a": "Ja, in diesem Spiel musst du schlagen, wenn ein Schlagen möglich ist. Genau das macht Fallen und Planen möglich."
+   },
+   {
+    "q": "Was passiert, wenn ein Stein gekrönt wird?",
+    "a": "Ein Stein, der die gegenüberliegende Seite des Bretts erreicht, wird gekrönt und kann sich in jede Richtung bewegen."
+   },
+   {
+    "q": "Kann ich hier Checkers lernen?",
+    "a": "Ja, die Regeln sind einfach, und ein paar Partien zu spielen ist ein guter Weg, es zu lernen."
+   }
+  ]
  }
 }

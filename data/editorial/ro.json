@@ -5677,5 +5677,149 @@
     "a": "Să treci repede de docuri și să rămâi uscat."
    }
   ]
+ },
+ "love-tester": {
+  "summary": "Love Tester este un joc scurt de distracție: scrii niște nume și jocul îți spune cât de bine se potrivesc. Este mai mult o glumă decât știință, așa că e bun pentru a râde cu prietenii, nu pentru a lua rezultatul în serios. Fiecare încercare durează doar câteva secunde.\n\nJocul este făcut pentru ecrane tactile, așa că merge foarte bine pe telefon sau tabletă. Nu ai nimic de învățat și nu există niveluri, deci e o alegere ușoară când ai doar un minut și vrei să zâmbești.",
+  "how_to": "Atinge pentru a începe, apoi scrie numele și lasă jocul să le testeze. Jocul arată rezultatul ca un scor de dragoste. Încearcă nume sau perechi diferite, de exemplu prieteni, animale de companie sau personaje preferate, și compară scorurile.",
+  "tips": [
+   "Ia rezultatul ca pe o glumă – chiar nu poate prezice nimic.",
+   "Încearcă numele unor prieteni, animale de companie sau personaje preferate și vezi cine primește cel mai mare scor.",
+   "Joacă pe un telefon sau pe o tabletă, pentru că jocul folosește atingerea.",
+   "Arată scorul unui prieten și lasă-l să ghicească ce nume ai încercat."
+  ],
+  "faq": [
+   {
+    "q": "Este Love Tester pe bune?",
+    "a": "Nu. Este un joc distractiv care inventează un scor pentru numele pe care le scrii. Nu poate spune nimic real despre dragoste sau prietenie."
+   },
+   {
+    "q": "Pot juca Love Tester pe telefon?",
+    "a": "Da, jocul este făcut pentru ecrane tactile, așa că merge pe telefoane și tablete."
+   },
+   {
+    "q": "Pot testa prieteni sau animale de companie în loc de persoana care îmi place?",
+    "a": "Da, poți scrie orice nume vrei, de exemplu de prieteni, frați și surori, animale de companie sau personaje preferate."
+   }
+  ]
+ },
+ "tank-trouble": {
+  "summary": "În Tank Trouble stai într-un tanc într-un mic labirint. Ocolești pereții, țintești și încerci să nimerești celălalt tanc înainte să te nimerească el pe tine. În modul Solo joci împotriva lui Laika, o maestră a războiului, iar în multiplayer poți provoca un prieten sau doi pe același dispozitiv.\n\nCâmpurile de luptă sunt labirinturi, așa că pereții contează la fel de mult ca tunurile. Trebuie să te gândești de unde poate veni celălalt tanc, iar o lovitură poate fi folosită șmecherește după colț. Rundele sunt rapide și ușor de reluat, așa că este un joc grozav de jucat pe rând cu prietenii.",
+  "how_to": "În modul Solo, condu-ți tancul prin labirint și trage în Laika, adversara ta. În multiplayer pe o singură tastatură, jucătorul 1 conduce cu tastele WASD și trage cu Q, jucătorul 2 folosește săgețile și bara de spațiu, iar jucătorul 3 joacă cu mouse-ul. Folosește pereții ca adăpost și încearcă să nimerești primul celălalt tanc.",
+  "tips": [
+   "Folosește pereții ca adăpost și ieși la iveală doar când ești gata să tragi.",
+   "Gândește-te de unde poate veni celălalt tanc înainte să virezi după un colț.",
+   "Rămâi mereu în mișcare, pentru că un tanc care stă pe loc e ușor de nimerit.",
+   "Jucați pe rând cu prietenii și faceți mai multe runde ca să vedeți cine câștigă cel mai des."
+  ],
+  "faq": [
+   {
+    "q": "Pot juca Tank Trouble cu un prieten?",
+    "a": "Da. Poți juca multiplayer cu unul sau doi prieteni pe același dispozitiv. Jucătorul 1 folosește WASD și Q, jucătorul 2 săgețile și bara de spațiu, iar jucătorul 3 poate juca cu mouse-ul."
+   },
+   {
+    "q": "Pot juca Tank Trouble singur?",
+    "a": "Da. În modul Solo joci împotriva lui Laika, o maestră a războiului."
+   },
+   {
+    "q": "Este Tank Trouble gratuit?",
+    "a": "Da, îl poți juca gratuit în browser, fără să descarci nimic."
+   }
+  ]
+ },
+ "gin-rummy": {
+  "summary": "Gin Rummy este un joc clasic de cărți pentru doi jucători, iar în această versiune joci împotriva calculatorului. Încerci să-ți aduni cărțile în seturi și secvențe și să scapi de cărțile care nu se potrivesc. Calculatorul se adaptează nivelului tău pe măsură ce joci, așa că rămâne interesant, fie că abia începi, fie că ești deja bun.\n\nJocul îți salvează progresul, așa că poți pleca și reveni mai târziu. Este un joc liniștit de planificare și memorie – urmărești ce cărți ia adversarul și pe care le aruncă, iar asta îți arată ce să păstrezi. Este o metodă bună de a învăța un joc de cărți adevărat, care se joacă în toată lumea.",
+  "how_to": "Joacă împotriva calculatorului. Când îți vine rândul, iei o carte și apoi arunci una, încercând să formezi seturi de cărți cu același număr și secvențe de cărți consecutive de aceeași culoare. Cărțile care nu fac parte dintr-un set sau dintr-o secvență se numără împotriva ta. Urmărește ce ridică adversarul, pentru că asta arată de ce are nevoie.",
+  "tips": [
+   "Urmărește ce cărți ia adversarul și pe care le aruncă.",
+   "Păstrează cărțile care pot forma atât un set, cât și o secvență.",
+   "Aruncă devreme cărțile mari care nu se potrivesc nicăieri.",
+   "Nu te grăbi – jocul salvează, așa că poți să te gândești și să revii mai târziu."
+  ],
+  "faq": [
+   {
+    "q": "Câți jucători are Gin Rummy?",
+    "a": "Gin Rummy este un joc pentru doi jucători. În această versiune joci împotriva calculatorului."
+   },
+   {
+    "q": "Salvează jocul progresul meu?",
+    "a": "Da, jocul are salvare automată și reluare, așa că poți reveni mai târziu."
+   },
+   {
+    "q": "Este greu adversarul calculator?",
+    "a": "Calculatorul se adaptează nivelului tău de joc, așa că rămâne o provocare fără să fie nedrept."
+   }
+  ]
+ },
+ "mini-dash": {
+  "summary": "Mini Dash este un joc de platforme în stil retro în care joci cu o mică picătură. Abilitatea ei specială este dash-ul în aer: cât timp ești în aer, poți să te avânți la stânga sau la dreapta ca să eviți obstacolele și să ajungi la monede. Să înveți când să sari și când să faci dash este tot jocul – este ușor de început, dar cere exercițiu ca să-l stăpânești.\n\nÎn fiecare nivel strângi monedele și există și un mod speedrun, ca să testezi cât de repede poți termina. Merge cu mouse-ul pe calculator și cu atingerea pe telefon sau tabletă.",
+  "how_to": "Pe calculator, apasă X sau butonul stânga al mouse-ului ca să sari, iar C sau butonul dreapta al mouse-ului ca să sari și așa. În aer, apasă X sau butonul stânga al mouse-ului ca să faci dash spre stânga, iar C sau butonul dreapta al mouse-ului ca să faci dash spre dreapta. Pe telefon, atinge partea stângă sau dreaptă ca să sari, apoi atinge în aer stânga sau dreapta ca să faci dash în direcția aceea. Strânge monedele și evită obstacolele.",
+  "tips": [
+   "Sari mai întâi, apoi fă dash – dash-ul merge doar în aer.",
+   "Așteaptă momentul potrivit în loc să faci dash imediat ce ai părăsit pământul.",
+   "Încearcă modul speedrun când cunoști bine un nivel.",
+   "Învață cum e făcut un nivel, pentru că obstacolele rămân mereu în același loc."
+  ],
+  "faq": [
+   {
+    "q": "Cum se face dash în Mini Dash?",
+    "a": "Sari mai întâi, apoi apasă butonul de dash cât timp ești în aer. Pe calculator folosește X sau butonul stânga al mouse-ului pentru dash spre stânga și C sau butonul dreapta al mouse-ului pentru dash spre dreapta. Pe telefon, atinge în aer stânga sau dreapta."
+   },
+   {
+    "q": "Pot juca Mini Dash pe telefon?",
+    "a": "Da, jocul are comenzi tactile pentru telefoane și tablete."
+   },
+   {
+    "q": "Există un mod speedrun?",
+    "a": "Da, Mini Dash are un mod speedrun, ca să testezi cât de repede poți termina."
+   }
+  ]
+ },
+ "classic-snake": {
+  "summary": "Classic Snake preia ideea vechiului joc cu șarpele și o ține simplă: mănânci puncte mici ca să devii mai mare și încerci să construiești cel mai mare șarpe din clasament. Pe măsură ce șarpele crește, e mai greu de condus fără să te lovești de ceva, așa că fiecare punct face jocul puțin mai palpitant.\n\nComenzile sunt doar un clic de mouse sau o atingere, așa că pornește imediat pe calculator sau pe telefon. Rundele sunt scurte, deci e ușor să încerci din nou și să-ți depășești propriul record.",
+  "how_to": "Dă clic cu mouse-ul sau atinge ecranul ca să joci și să-ți conduci șarpele. Mănâncă punctele mici ca să devii mai lung. Încearcă să devii cel mai mare șarpe din clasament.",
+  "tips": [
+   "Mănâncă mai întâi punctele din apropiere, ca să crești în siguranță.",
+   "Lasă-ți loc de întors pe măsură ce șarpele tău se lungește.",
+   "Planifică un drum înainte să te duci după un punct îndepărtat.",
+   "Joacă mai multe runde și încearcă să-ți depășești cea mai bună lungime."
+  ],
+  "faq": [
+   {
+    "q": "Cum se joacă Classic Snake?",
+    "a": "Dă clic sau atinge ca să-ți conduci șarpele, mănâncă punctele mici ca să devii mai lung și încearcă să ajungi cel mai mare șarpe din clasament."
+   },
+   {
+    "q": "Pot juca Classic Snake pe telefon?",
+    "a": "Da, jocul merge cu o atingere, așa că merge pe telefoane și tablete."
+   },
+   {
+    "q": "Este Classic Snake gratuit?",
+    "a": "Da, îl poți juca gratuit în browser, fără să descarci nimic."
+   }
+  ]
+ },
+ "checkers": {
+  "summary": "Checkers este un joc clasic de strategie în care contează fiecare mutare. Îți muți piesele pe tablă, capturezi piesele adversarului sărind peste ele și încerci să duci o piesă pe partea opusă, ca să fie încoronată și să se poată mișca în orice direcție. Capturarea este obligatorie, așa că poți planifica capcane și îți poți forța adversarul să facă anumite mutări.\n\nEste ușor de învățat și durează mult să-l stăpânești. Jocul răsplătește gândirea înainte: înainte de fiecare mutare, uită-te ce îi permite adversarului să facă mai departe. Este un joc bun pentru a exersa planificarea, răbdarea și gândirea atentă.",
+  "how_to": "Mută-ți piesele înainte pe tablă și capturează piesele adversarului sărind peste ele. Dacă o capturare este posibilă, trebuie s-o faci. Când una dintre piesele tale ajunge pe partea opusă a tablei, este încoronată și apoi se poate mișca în orice direcție. Câștigi capturând toate piesele adversarului sau lăsându-l fără mutări.",
+  "tips": [
+   "Gândește-te ce îi permite mutarea ta adversarului mai departe.",
+   "Folosește capturarea obligatorie ca să întinzi capcane.",
+   "Ține piesele împreună, ca să se protejeze una pe alta.",
+   "Încearcă să încoronezi o piesă, pentru că o piesă încoronată este mult mai puternică."
+  ],
+  "faq": [
+   {
+    "q": "Este obligatorie capturarea la Checkers?",
+    "a": "Da, în acest joc trebuie să capturezi când o capturare este posibilă. Asta face posibile capcanele și planificarea."
+   },
+   {
+    "q": "Ce se întâmplă când o piesă este încoronată?",
+    "a": "O piesă care ajunge pe partea opusă a tablei este încoronată și se poate mișca în orice direcție."
+   },
+   {
+    "q": "Pot învăța Checkers aici?",
+    "a": "Da, regulile sunt simple, iar câteva partide sunt o metodă bună de a învăța."
+   }
+  ]
  }
 }

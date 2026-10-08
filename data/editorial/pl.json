@@ -5677,5 +5677,149 @@
     "a": "Masz szybko przejechać przez nabrzeża i nie wpaść do wody."
    }
   ]
+ },
+ "love-tester": {
+  "summary": "Love Tester to krótka gra dla zabawy: wpisujesz imiona, a gra mówi ci, jak bardzo do siebie pasują. To raczej żart niż nauka, więc nadaje się do śmiechu z kolegami, a nie do traktowania wyniku poważnie. Jedna próba trwa tylko kilka sekund.\n\nGra jest stworzona na ekrany dotykowe, więc świetnie działa na telefonie lub tablecie. Nie ma niczego do nauczenia ani poziomów, więc to łatwy wybór, gdy masz tylko minutę i chcesz się uśmiechnąć.",
+  "how_to": "Stuknij start, potem wpisz imiona i pozwól grze je sprawdzić. Gra pokazuje wynik jako punkty miłości. Próbuj różnych imion lub par, na przykład kolegów, zwierzaków albo ulubionych postaci, i porównuj wyniki.",
+  "tips": [
+   "Traktuj wynik jak żart – naprawdę niczego nie potrafi przewidzieć.",
+   "Spróbuj z imionami kolegów, zwierzaków lub ulubionych postaci i sprawdź, kto dostanie najwięcej punktów.",
+   "Graj na telefonie lub tablecie, bo gra korzysta z dotyku.",
+   "Pokaż wynik koledze i niech zgaduje, jakie imiona sprawdzałeś(aś)."
+  ],
+  "faq": [
+   {
+    "q": "Czy Love Tester jest prawdziwy?",
+    "a": "Nie. To zabawna gra, która wymyśla wynik dla wpisanych imion. Nie może powiedzieć nic prawdziwego o miłości ani przyjaźni."
+   },
+   {
+    "q": "Czy można grać w Love Tester na telefonie?",
+    "a": "Tak, gra jest stworzona na ekrany dotykowe, więc działa na telefonach i tabletach."
+   },
+   {
+    "q": "Czy mogę testować kolegów albo zwierzaki, a nie tylko osobę, która mi się podoba?",
+    "a": "Tak, możesz wpisać dowolne imiona, na przykład kolegów, rodzeństwa, zwierzaków lub ulubionych postaci."
+   }
+  ]
+ },
+ "tank-trouble": {
+  "summary": "W Tank Trouble siedzisz w czołgu w małym labiryncie. Objeżdżasz ściany, celujesz i starasz się trafić drugi czołg, zanim on trafi ciebie. W trybie Solo grasz przeciwko Laice, mistrzyni wojny, a w trybie dla wielu graczy możesz rzucić wyzwanie jednemu lub dwóm kolegom na tym samym urządzeniu.\n\nPola bitwy to labirynty, więc ściany są tak samo ważne jak działa. Musisz myśleć, skąd może nadjechać drugi czołg, a strzał można sprytnie wykorzystać za rogiem. Rundy są szybkie i łatwo zacząć je od nowa, więc to świetna gra do grania na zmianę z kolegami.",
+  "how_to": "W trybie Solo prowadź czołg przez labirynt i strzelaj do Laiki, swojej przeciwniczki. W trybie wieloosobowym na jednej klawiaturze gracz 1 steruje klawiszami WASD i strzela klawiszem Q, gracz 2 używa strzałek i spacji, a gracz 3 gra myszką. Wykorzystuj ściany jako osłonę i staraj się trafić drugi czołg pierwszy.",
+  "tips": [
+   "Używaj ścian jako osłony i wychylaj się dopiero, gdy jesteś gotowy(a) do strzału.",
+   "Zanim skręcisz za róg, zastanów się, skąd może nadjechać drugi czołg.",
+   "Cały czas się ruszaj, bo stojący czołg łatwo trafić.",
+   "Grajcie z kolegami na zmianę i rozegrajcie kilka rund, żeby sprawdzić, kto wygra najwięcej razy."
+  ],
+  "faq": [
+   {
+    "q": "Czy w Tank Trouble można grać z kolegą?",
+    "a": "Tak. W trybie wieloosobowym możesz grać z jednym lub dwoma kolegami na tym samym urządzeniu. Gracz 1 używa WASD i Q, gracz 2 strzałek i spacji, a gracz 3 może grać myszką."
+   },
+   {
+    "q": "Czy w Tank Trouble można grać samemu?",
+    "a": "Tak. W trybie Solo grasz przeciwko Laice, mistrzyni wojny."
+   },
+   {
+    "q": "Czy Tank Trouble jest darmowe?",
+    "a": "Tak, grasz za darmo w przeglądarce i nic nie pobierasz."
+   }
+  ]
+ },
+ "gin-rummy": {
+  "summary": "Gin Rummy to klasyczna gra karciana dla dwóch graczy, a ta wersja pozwala grać przeciwko komputerowi. Starasz się zbierać karty w zestawy i sekwencje oraz pozbywać się kart, które do nich nie pasują. Komputer dostosowuje się do twojego poziomu w trakcie gry, więc jest ciekawie, niezależnie od tego, czy dopiero zaczynasz, czy już grasz dobrze.\n\nGra zapisuje twój postęp, więc możesz wyjść i wrócić później. To spokojna gra pełna planowania i pamięci – obserwujesz, jakie karty bierze przeciwnik, a jakie odrzuca, i dzięki temu wiesz, co zatrzymać. To dobry sposób, żeby nauczyć się prawdziwej gry karcianej, w którą gra się na całym świecie.",
+  "how_to": "Graj przeciwko komputerowi. W swojej turze bierzesz kartę, a potem jedną odrzucasz, starając się układać zestawy tych samych liczb i sekwencje kart po kolei w tym samym kolorze. Karty, które nie należą do zestawu ani sekwencji, liczą się na twoją niekorzyść. Obserwuj, co bierze przeciwnik, bo to pokazuje, czego potrzebuje.",
+  "tips": [
+   "Obserwuj, jakie karty przeciwnik bierze, a jakie odrzuca.",
+   "Zatrzymuj karty, z których da się ułożyć i zestaw, i sekwencję.",
+   "Wysokie karty, które nigdzie nie pasują, odrzucaj wcześnie.",
+   "Nie spiesz się – gra się zapisuje, więc możesz pomyśleć i wrócić później."
+  ],
+  "faq": [
+   {
+    "q": "Ilu graczy ma Gin Rummy?",
+    "a": "Gin Rummy to gra dla dwóch graczy. W tej wersji grasz przeciwko komputerowi."
+   },
+   {
+    "q": "Czy gra zapisuje mój postęp?",
+    "a": "Tak, gra ma automatyczny zapis i wznawianie, więc możesz wrócić później."
+   },
+   {
+    "q": "Czy komputer jest trudnym przeciwnikiem?",
+    "a": "Komputer dostosowuje się do twojego poziomu gry, więc stanowi wyzwanie, ale nie jest niesprawiedliwy."
+   }
+  ]
+ },
+ "mini-dash": {
+  "summary": "Mini Dash to platformówka w stylu retro, w której grasz małą kroplą. Jej specjalna umiejętność to dash w powietrzu: gdy jesteś w powietrzu, możesz szybko skoczyć w lewo lub w prawo, ominąć przeszkody i zdobyć monety. Cała gra polega na tym, kiedy skakać, a kiedy użyć dasha – łatwo zacząć, ale trzeba poćwiczyć.\n\nNa każdym poziomie zbierasz monety, a jest też tryb speedrun, w którym sprawdzisz, jak szybko potrafisz przejść poziom. Gra działa z myszką na komputerze i dotykiem na telefonie lub tablecie.",
+  "how_to": "Na komputerze skaczesz klawiszem X lub lewym przyciskiem myszy, a skoczyć możesz też klawiszem C lub prawym przyciskiem myszy. W powietrzu klawisz X lub lewy przycisk myszy to dash w lewo, a C lub prawy przycisk myszy to dash w prawo. Na telefonie dotknij lewej lub prawej strony, żeby skoczyć, a potem dotknij lewej lub prawej strony w powietrzu, żeby zrobić dash w tym kierunku. Zbieraj monety i unikaj przeszkód.",
+  "tips": [
+   "Najpierw skocz, potem użyj dasha – dash działa tylko w powietrzu.",
+   "Poczekaj na odpowiedni moment, zamiast robić dash od razu po oderwaniu się od ziemi.",
+   "Wypróbuj tryb speedrun, gdy dobrze znasz poziom.",
+   "Naucz się układu poziomu, bo przeszkody zawsze stoją w tych samych miejscach."
+  ],
+  "faq": [
+   {
+    "q": "Jak zrobić dash w Mini Dash?",
+    "a": "Najpierw skocz, a potem w powietrzu naciśnij przycisk dasha. Na komputerze użyj X lub lewego przycisku myszy, żeby zrobić dash w lewo, a C lub prawego przycisku myszy, żeby zrobić dash w prawo. Na telefonie dotknij w powietrzu lewej lub prawej strony."
+   },
+   {
+    "q": "Czy w Mini Dash można grać na telefonie?",
+    "a": "Tak, gra ma sterowanie dotykowe dla telefonów i tabletów."
+   },
+   {
+    "q": "Czy jest tryb speedrun?",
+    "a": "Tak, Mini Dash ma tryb speedrun, w którym sprawdzisz, jak szybko potrafisz go przejść."
+   }
+  ]
+ },
+ "classic-snake": {
+  "summary": "Classic Snake czerpie z pomysłu starej gry w węża i trzyma się prostoty: zjadasz małe kropki, żeby urosnąć, i starasz się stworzyć największego węża w rankingu. Im dłuższy wąż, tym trudniej nim sterować, żeby w nic nie wpaść, więc każda kropka sprawia, że gra jest odrobinę bardziej emocjonująca.\n\nSterowanie to tylko kliknięcie myszką lub stuknięcie, więc gra rusza od razu na komputerze i na telefonie. Rundy są krótkie, więc łatwo spróbować jeszcze raz i pobić własny rekord.",
+  "how_to": "Kliknij myszką lub stuknij w ekran, żeby grać i sterować wężem. Zjadaj małe kropki, żeby rosnąć. Postaraj się zostać największym wężem w rankingu.",
+  "tips": [
+   "Najpierw zjadaj kropki blisko siebie, żeby rosnąć bezpiecznie.",
+   "Zostaw sobie miejsce na skręt, gdy wąż robi się dłuższy.",
+   "Zaplanuj trasę, zanim ruszysz po daleką kropkę.",
+   "Zagraj kilka rund i spróbuj pobić swoją najlepszą długość."
+  ],
+  "faq": [
+   {
+    "q": "Jak się gra w Classic Snake?",
+    "a": "Klikasz lub stukasz, żeby sterować wężem, zjadasz małe kropki, żeby urosnąć, i starasz się zdobyć największego węża w rankingu."
+   },
+   {
+    "q": "Czy w Classic Snake można grać na telefonie?",
+    "a": "Tak, gra działa na stuknięcie, więc można w nią grać na telefonach i tabletach."
+   },
+   {
+    "q": "Czy Classic Snake jest darmowe?",
+    "a": "Tak, grasz za darmo w przeglądarce i nic nie pobierasz."
+   }
+  ]
+ },
+ "checkers": {
+  "summary": "Checkers to klasyczna gra strategiczna, w której liczy się każdy ruch. Przesuwasz swoje pionki po planszy, zbijasz pionki przeciwnika, przeskakując przez nie, i starasz się dojść pionkiem na drugą stronę, żeby został koronowany i mógł poruszać się w dowolnym kierunku. Bicie jest obowiązkowe, więc możesz planować pułapki i zmuszać przeciwnika do określonych ruchów.\n\nŁatwo się jej nauczyć, a opanować ją trudno. Gra nagradza myślenie do przodu: przed każdym ruchem sprawdź, co pozwoli zrobić przeciwnikowi w następnym. To dobra gra do ćwiczenia planowania, cierpliwości i uważnego myślenia.",
+  "how_to": "Przesuwaj swoje pionki do przodu po planszy i zbijaj pionki przeciwnika, przeskakując przez nie. Jeśli bicie jest możliwe, musisz je wykonać. Gdy jeden z twoich pionków dojdzie na drugą stronę planszy, zostaje koronowany i może wtedy poruszać się w dowolnym kierunku. Wygrywasz, zbijając wszystkie pionki przeciwnika lub zostawiając go bez ruchów.",
+  "tips": [
+   "Zastanów się, co twój ruch pozwoli zrobić przeciwnikowi w następnym.",
+   "Wykorzystuj obowiązkowe bicie do zastawiania pułapek.",
+   "Trzymaj pionki razem, żeby się nawzajem chroniły.",
+   "Staraj się koronować pionek, bo koronowany pionek jest o wiele silniejszy."
+  ],
+  "faq": [
+   {
+    "q": "Czy w Checkers bicie jest obowiązkowe?",
+    "a": "Tak, w tej grze musisz bić, gdy bicie jest możliwe. Dzięki temu możliwe są pułapki i planowanie."
+   },
+   {
+    "q": "Co się dzieje, gdy pionek zostaje koronowany?",
+    "a": "Pionek, który dojdzie na drugą stronę planszy, zostaje koronowany i może poruszać się w dowolnym kierunku."
+   },
+   {
+    "q": "Czy mogę nauczyć się tu Checkers?",
+    "a": "Tak, zasady są proste, a rozegranie kilku partii to dobry sposób, żeby się ich nauczyć."
+   }
+  ]
  }
 }

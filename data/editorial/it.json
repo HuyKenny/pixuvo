@@ -5677,5 +5677,149 @@
     "a": "Attraversare le banchine in fretta senza finire in acqua."
    }
   ]
+ },
+ "love-tester": {
+  "summary": "Love Tester è un gioco breve per divertirsi: scrivi dei nomi e il gioco ti dice quanto stanno bene insieme. È più uno scherzo che una scienza, quindi va bene per ridere con gli amici, non per prendere sul serio il risultato. Ogni tentativo dura solo pochi secondi.\n\nIl gioco è pensato per gli schermi touch, quindi funziona benissimo su telefono o tablet. Non c'è niente da imparare e non ci sono livelli, quindi è una scelta facile quando hai solo un minuto e vuoi farti un sorriso.",
+  "how_to": "Tocca per iniziare, poi inserisci i nomi e lascia che il gioco li metta alla prova. Il gioco mostra il risultato come punteggio d'amore. Prova nomi o coppie diverse, per esempio amici, animali domestici o personaggi preferiti, e confronta i punteggi.",
+  "tips": [
+   "Prendi il risultato come uno scherzo: non può davvero prevedere niente.",
+   "Prova i nomi di amici, animali o personaggi preferiti e scopri chi ottiene il punteggio più alto.",
+   "Gioca su un telefono o un tablet, perché il gioco usa il touch.",
+   "Mostra il punteggio a un amico e lascia che indovini quali nomi hai provato."
+  ],
+  "faq": [
+   {
+    "q": "Love Tester è vero?",
+    "a": "No. È un gioco divertente che inventa un punteggio per i nomi che inserisci. Non può dire niente di reale sull'amore o sull'amicizia."
+   },
+   {
+    "q": "Posso giocare a Love Tester sul telefono?",
+    "a": "Sì, il gioco è pensato per gli schermi touch, quindi funziona su telefoni e tablet."
+   },
+   {
+    "q": "Posso testare amici o animali invece della mia cotta?",
+    "a": "Sì, puoi inserire qualsiasi nome, come quello di amici, fratelli e sorelle, animali domestici o personaggi preferiti."
+   }
+  ]
+ },
+ "tank-trouble": {
+  "summary": "In Tank Trouble sei su un carro armato in un piccolo labirinto. Giri intorno ai muri, prendi la mira e cerchi di colpire l'altro carro prima che colpisca te. In modalità Solo giochi contro Laika, una maestra della guerra, e in multigiocatore puoi sfidare uno o due amici sullo stesso dispositivo.\n\nI campi di battaglia sono labirinti, quindi i muri contano quanto i cannoni. Devi pensare da dove può arrivare l'altro carro, e un colpo si può usare con astuzia anche dietro l'angolo. Le partite sono veloci e facili da ricominciare, quindi è un gioco ottimo da fare a turno con gli amici.",
+  "how_to": "In modalità Solo, guida il tuo carro nel labirinto e spara a Laika, la tua avversaria. In multigiocatore su una sola tastiera, il giocatore 1 guida con i tasti WASD e spara con Q, il giocatore 2 usa le frecce e la barra spaziatrice e il giocatore 3 gioca con il mouse. Usa i muri come riparo e cerca di colpire per primo l'altro carro.",
+  "tips": [
+   "Usa i muri come riparo e sporgiti solo quando sei pronto a sparare.",
+   "Pensa da dove può arrivare l'altro carro prima di girare un angolo.",
+   "Continua a muoverti, perché un carro fermo è facile da colpire.",
+   "Giocate a turno con gli amici e fate più partite per vedere chi vince di più."
+  ],
+  "faq": [
+   {
+    "q": "Posso giocare a Tank Trouble con un amico?",
+    "a": "Sì. Puoi giocare in multigiocatore con uno o due amici sullo stesso dispositivo. Il giocatore 1 usa WASD e Q, il giocatore 2 le frecce e la barra spaziatrice, e il giocatore 3 può giocare con il mouse."
+   },
+   {
+    "q": "Posso giocare a Tank Trouble da solo?",
+    "a": "Sì. In modalità Solo giochi contro Laika, una maestra della guerra."
+   },
+   {
+    "q": "Tank Trouble è gratis?",
+    "a": "Sì, puoi giocarci gratis nel browser, senza scaricare nulla."
+   }
+  ]
+ },
+ "gin-rummy": {
+  "summary": "Gin Rummy è un classico gioco di carte per due giocatori e in questa versione giochi contro il computer. Cerchi di raccogliere le carte in tris e scale e di liberarti di quelle che non servono. Il computer si adatta al tuo livello mentre giochi, quindi il gioco resta interessante sia se sei alle prime armi sia se sei già bravo.\n\nIl gioco salva i tuoi progressi, così puoi uscire e tornare più tardi. È un gioco tranquillo di pianificazione e memoria: osservi quali carte prende l'avversario e quali scarta, e questo ti dice cosa tenere. È un buon modo per imparare un vero gioco di carte che si gioca in tutto il mondo.",
+  "how_to": "Gioca contro il computer. Al tuo turno prendi una carta e poi ne scarti una, cercando di formare tris di carte con lo stesso numero e scale di carte consecutive dello stesso seme. Le carte che non fanno parte di un tris o di una scala contano contro di te. Osserva cosa raccoglie l'avversario, perché mostra di cosa ha bisogno.",
+  "tips": [
+   "Osserva quali carte prende l'avversario e quali scarta.",
+   "Tieni le carte che possono formare sia un tris sia una scala.",
+   "Scarta presto le carte alte che non servono a niente.",
+   "Prenditi il tuo tempo: il gioco salva, quindi puoi pensare e tornare più tardi."
+  ],
+  "faq": [
+   {
+    "q": "Quanti giocatori ha Gin Rummy?",
+    "a": "Gin Rummy è un gioco per due giocatori. In questa versione giochi contro il computer."
+   },
+   {
+    "q": "Il gioco salva i miei progressi?",
+    "a": "Sì, il gioco ha il salvataggio automatico e la ripresa, quindi puoi tornare più tardi."
+   },
+   {
+    "q": "L'avversario computer è difficile?",
+    "a": "Il computer si adatta al tuo livello di gioco, quindi resta una sfida senza essere ingiusto."
+   }
+  ]
+ },
+ "mini-dash": {
+  "summary": "Mini Dash è un gioco di piattaforme in stile retrò in cui sei una piccola goccia. La sua abilità speciale è lo scatto in aria: quando sei in aria puoi scattare a sinistra o a destra per evitare gli ostacoli e raggiungere le monete. Imparare quando saltare e quando scattare è tutto il gioco: è facile da iniziare, ma ci vuole allenamento per diventare bravi.\n\nIn ogni livello raccogli le monete e c'è anche una modalità speedrun per provare a quanta velocità riesci a finire. Funziona con il mouse sul computer e con il touch su telefono o tablet.",
+  "how_to": "Sul computer premi X o il tasto sinistro del mouse per saltare, e C o il tasto destro del mouse per saltare. In aria, premi X o il tasto sinistro del mouse per scattare a sinistra e C o il tasto destro del mouse per scattare a destra. Sul telefono tocca il lato sinistro o destro per saltare, poi tocca a sinistra o a destra in aria per scattare in quella direzione. Raccogli le monete ed evita gli ostacoli.",
+  "tips": [
+   "Prima salta, poi scatta: lo scatto funziona solo in aria.",
+   "Aspetta il momento giusto invece di scattare appena stacchi i piedi da terra.",
+   "Prova la modalità speedrun quando conosci bene un livello.",
+   "Impara come è fatto un livello, perché gli ostacoli restano sempre nello stesso posto."
+  ],
+  "faq": [
+   {
+    "q": "Come si scatta in Mini Dash?",
+    "a": "Prima salta, poi premi il pulsante dello scatto mentre sei in aria. Sul computer usa X o il tasto sinistro del mouse per scattare a sinistra e C o il tasto destro del mouse per scattare a destra. Sul telefono tocca a sinistra o a destra in aria."
+   },
+   {
+    "q": "Posso giocare a Mini Dash sul telefono?",
+    "a": "Sì, il gioco ha i comandi touch per telefoni e tablet."
+   },
+   {
+    "q": "C'è una modalità speedrun?",
+    "a": "Sì, Mini Dash ha una modalità speedrun per provare a quanta velocità riesci a finire."
+   }
+  ]
+ },
+ "classic-snake": {
+  "summary": "Classic Snake riprende l'idea del vecchio gioco del serpente e la mantiene semplice: mangi piccoli puntini per diventare più grande e cerchi di costruire il serpente più grande della classifica. Più il tuo serpente cresce, più è difficile guidarlo senza urtare qualcosa, quindi ogni puntino rende il gioco un po' più emozionante.\n\nI comandi sono solo un clic del mouse o un tocco, quindi parte subito su computer o telefono. Le partite sono brevi, così è facile riprovare e battere il tuo record.",
+  "how_to": "Fai clic con il mouse o tocca lo schermo per giocare e guidare il tuo serpente. Mangia i piccoli puntini per diventare più lungo. Cerca di diventare il serpente più grande della classifica.",
+  "tips": [
+   "Mangia prima i puntini vicini a te, così cresci in sicurezza.",
+   "Lasciati spazio per girare man mano che il serpente si allunga.",
+   "Pianifica un percorso prima di andare verso un puntino lontano.",
+   "Gioca qualche partita e prova a battere la tua lunghezza migliore."
+  ],
+  "faq": [
+   {
+    "q": "Come si gioca a Classic Snake?",
+    "a": "Fai clic o tocca per guidare il tuo serpente, mangia i piccoli puntini per diventare più lungo e cerca di ottenere il serpente più grande della classifica."
+   },
+   {
+    "q": "Posso giocare a Classic Snake sul telefono?",
+    "a": "Sì, il gioco funziona con un tocco, quindi va bene su telefoni e tablet."
+   },
+   {
+    "q": "Classic Snake è gratis?",
+    "a": "Sì, puoi giocarci gratis nel browser, senza scaricare nulla."
+   }
+  ]
+ },
+ "checkers": {
+  "summary": "Checkers è un classico gioco di strategia in cui ogni mossa conta. Muovi le tue pedine sulla scacchiera, catturi le pedine dell'avversario saltandoci sopra e cerchi di portare una pedina sul lato opposto, così viene incoronata e può muoversi in qualsiasi direzione. La cattura è obbligatoria, quindi puoi pianificare trappole e costringere l'avversario a certe mosse.\n\nÈ facile da imparare e richiede molto tempo per padroneggiarlo. Il gioco premia chi pensa in anticipo: prima di ogni mossa, guarda cosa permette poi all'avversario di fare. È un buon gioco per allenare la pianificazione, la pazienza e il ragionamento attento.",
+  "how_to": "Muovi le tue pedine in avanti sulla scacchiera e cattura le pedine avversarie saltandoci sopra. Se una cattura è possibile, devi farla. Quando una delle tue pedine raggiunge il lato opposto della scacchiera, viene incoronata e può muoversi in qualsiasi direzione. Vinci catturando tutte le pedine dell'avversario o lasciandolo senza mosse.",
+  "tips": [
+   "Pensa a cosa permette la tua mossa all'avversario subito dopo.",
+   "Usa la cattura obbligatoria per tendere trappole.",
+   "Tieni le tue pedine unite, così si proteggono a vicenda.",
+   "Cerca di incoronare una pedina, perché una pedina incoronata è molto più forte."
+  ],
+  "faq": [
+   {
+    "q": "In Checkers la cattura è obbligatoria?",
+    "a": "Sì, in questo gioco devi catturare quando una cattura è possibile. È questo che rende possibili trappole e pianificazione."
+   },
+   {
+    "q": "Cosa succede quando una pedina viene incoronata?",
+    "a": "Una pedina che raggiunge il lato opposto della scacchiera viene incoronata e può muoversi in qualsiasi direzione."
+   },
+   {
+    "q": "Posso imparare Checkers qui?",
+    "a": "Sì, le regole sono semplici, e giocare qualche partita è un buon modo per impararle."
+   }
+  ]
  }
 }

@@ -5677,5 +5677,149 @@
     "a": "Băng qua bến cảng thật nhanh và không bị rơi xuống nước."
    }
   ]
+ },
+ "love-tester": {
+  "summary": "Love Tester là một game ngắn để vui: bạn gõ tên vào và game cho biết những cái tên đó hợp nhau đến mức nào. Đây là trò đùa nhiều hơn là khoa học, nên hợp nhất để cười đùa cùng bạn bè, đừng xem kết quả là chuyện nghiêm túc. Mỗi lượt thử chỉ mất vài giây.\n\nGame được làm cho màn hình cảm ứng nên chạy rất tốt trên điện thoại hay máy tính bảng. Không có gì phải học và cũng không có màn chơi, nên rất dễ chọn khi bạn chỉ có một phút và muốn mỉm cười.",
+  "how_to": "Chạm để bắt đầu, rồi nhập các tên và để game kiểm tra. Game hiển thị kết quả dưới dạng điểm tình yêu. Hãy thử những tên hoặc cặp khác nhau, ví dụ bạn bè, thú cưng hoặc nhân vật yêu thích, rồi so sánh điểm.",
+  "tips": [
+   "Cứ xem kết quả là một trò đùa – nó không thể dự đoán được điều gì thật sự.",
+   "Thử tên của bạn bè, thú cưng hoặc nhân vật yêu thích và xem ai được điểm cao nhất.",
+   "Chơi trên điện thoại hoặc máy tính bảng, vì game dùng cảm ứng.",
+   "Cho bạn xem điểm và để bạn đoán xem bạn đã thử những tên nào."
+  ],
+  "faq": [
+   {
+    "q": "Love Tester có thật không?",
+    "a": "Không. Đây là game vui, tự bịa ra điểm số cho những cái tên bạn nhập. Nó không thể nói được điều gì thật về tình yêu hay tình bạn."
+   },
+   {
+    "q": "Mình có chơi Love Tester trên điện thoại được không?",
+    "a": "Được, game được làm cho màn hình cảm ứng nên chơi được trên điện thoại và máy tính bảng."
+   },
+   {
+    "q": "Mình có thể thử bạn bè hoặc thú cưng thay vì người mình thích không?",
+    "a": "Được, bạn có thể nhập bất kỳ tên nào, như bạn bè, anh chị em, thú cưng hoặc nhân vật yêu thích."
+   }
+  ]
+ },
+ "tank-trouble": {
+  "summary": "Tank Trouble đưa bạn vào một chiếc xe tăng trong mê cung nhỏ. Bạn lái vòng qua các bức tường, ngắm bắn và cố bắn trúng xe tăng kia trước khi nó bắn trúng bạn. Ở chế độ Solo, bạn đấu với Laika, bậc thầy chiến tranh, còn ở chế độ nhiều người, bạn có thể thách đấu một hoặc hai người bạn trên cùng một thiết bị.\n\nChiến trường là các mê cung nên tường quan trọng không kém súng. Bạn phải nghĩ xem xe tăng kia có thể xuất hiện từ đâu, và có thể dùng một phát bắn khéo léo ở góc tường. Các ván đấu nhanh và dễ chơi lại, nên đây là game rất hay để thay phiên nhau chơi với bạn bè.",
+  "how_to": "Ở chế độ Solo, hãy lái xe tăng qua mê cung và bắn Laika, đối thủ của bạn. Ở chế độ nhiều người trên một bàn phím, người chơi 1 lái bằng phím WASD và bắn bằng phím Q, người chơi 2 dùng các phím mũi tên và phím cách, còn người chơi 3 chơi bằng chuột. Hãy dùng tường để nấp và cố gắng bắn trúng xe tăng kia trước.",
+  "tips": [
+   "Dùng tường để nấp và chỉ ló ra khi bạn đã sẵn sàng bắn.",
+   "Hãy nghĩ xem xe tăng kia có thể đến từ đâu trước khi vòng qua góc tường.",
+   "Cứ di chuyển liên tục, vì xe tăng đứng yên rất dễ bị bắn.",
+   "Thay phiên nhau với bạn bè và chơi vài ván để xem ai thắng nhiều nhất."
+  ],
+  "faq": [
+   {
+    "q": "Mình có chơi Tank Trouble với bạn được không?",
+    "a": "Được. Bạn có thể chơi nhiều người với một hoặc hai người bạn trên cùng một thiết bị. Người chơi 1 dùng WASD và Q, người chơi 2 dùng các phím mũi tên và phím cách, còn người chơi 3 có thể chơi bằng chuột."
+   },
+   {
+    "q": "Mình có chơi Tank Trouble một mình được không?",
+    "a": "Được. Ở chế độ Solo, bạn đấu với Laika, bậc thầy chiến tranh."
+   },
+   {
+    "q": "Tank Trouble có miễn phí không?",
+    "a": "Có, bạn có thể chơi miễn phí ngay trên trình duyệt mà không cần tải."
+   }
+  ]
+ },
+ "gin-rummy": {
+  "summary": "Gin Rummy là game bài cổ điển dành cho hai người, và ở phiên bản này bạn chơi với máy tính. Bạn cố gắng gom bài thành các bộ và các dãy, rồi bỏ những lá không hợp. Máy tính tự điều chỉnh theo trình độ của bạn khi chơi, nên game luôn thú vị dù bạn mới chơi hay đã giỏi.\n\nGame lưu tiến trình của bạn nên bạn có thể thoát ra và quay lại sau. Đây là game nhẹ nhàng cần lên kế hoạch và trí nhớ – bạn quan sát đối thủ lấy những lá nào và bỏ những lá nào, và điều đó cho bạn biết nên giữ lá nào. Đây là cách hay để học một trò chơi bài thật sự được chơi khắp thế giới.",
+  "how_to": "Chơi với máy tính. Đến lượt mình, bạn bốc một lá rồi bỏ một lá, cố gắng tạo các bộ gồm các lá cùng số và các dãy gồm các lá liên tiếp cùng chất. Những lá không nằm trong bộ hay dãy nào sẽ bị tính điểm bất lợi cho bạn. Hãy để ý đối thủ nhặt lá nào, vì điều đó cho thấy họ cần gì.",
+  "tips": [
+   "Quan sát đối thủ nhặt những lá nào và bỏ những lá nào.",
+   "Giữ lại những lá có thể tạo cả bộ lẫn dãy.",
+   "Bỏ sớm những lá lớn không hợp với chỗ nào.",
+   "Cứ thong thả – game có lưu, nên bạn có thể suy nghĩ rồi quay lại sau."
+  ],
+  "faq": [
+   {
+    "q": "Gin Rummy có bao nhiêu người chơi?",
+    "a": "Gin Rummy là game dành cho hai người. Ở phiên bản này bạn chơi với máy tính."
+   },
+   {
+    "q": "Game có lưu tiến trình của mình không?",
+    "a": "Có, game có tự động lưu và chơi tiếp, nên bạn có thể quay lại sau."
+   },
+   {
+    "q": "Đối thủ máy tính có khó không?",
+    "a": "Máy tính điều chỉnh theo trình độ chơi của bạn nên vẫn có thử thách mà không bị bất công."
+   }
+  ]
+ },
+ "mini-dash": {
+  "summary": "Mini Dash là game đi cảnh phong cách retro, trong đó bạn điều khiển một cục tròn nhỏ. Kỹ năng đặc biệt của nó là lao trên không: khi đang ở trên không, bạn có thể lao sang trái hoặc phải để tránh chướng ngại vật và lấy tiền xu. Biết khi nào nên nhảy và khi nào nên lao chính là cả game, dễ bắt đầu nhưng cần luyện tập mới thành thạo.\n\nBạn thu thập tiền xu trong mỗi màn, và còn có chế độ speedrun để thử xem bạn hoàn thành nhanh đến đâu. Game chơi được bằng chuột trên máy tính và bằng cảm ứng trên điện thoại hoặc máy tính bảng.",
+  "how_to": "Trên máy tính, nhấn X hoặc chuột trái để nhảy, và C hoặc chuột phải cũng để nhảy. Khi đang ở trên không, nhấn X hoặc chuột trái để lao sang trái, và C hoặc chuột phải để lao sang phải. Trên điện thoại, chạm vào bên trái hoặc bên phải để nhảy, rồi chạm vào bên trái hoặc bên phải khi đang ở trên không để lao theo hướng đó. Hãy thu thập tiền xu và tránh chướng ngại vật.",
+  "tips": [
+   "Nhảy trước rồi mới lao – cú lao chỉ dùng được khi đang ở trên không.",
+   "Chờ đúng thời điểm thay vì lao ngay khi vừa rời mặt đất.",
+   "Thử chế độ speedrun khi bạn đã thuộc một màn.",
+   "Học thuộc cách bố trí của màn chơi, vì chướng ngại vật luôn nằm đúng chỗ cũ."
+  ],
+  "faq": [
+   {
+    "q": "Làm sao để lao trong Mini Dash?",
+    "a": "Nhảy trước, rồi nhấn nút lao khi đang ở trên không. Trên máy tính, dùng X hoặc chuột trái để lao sang trái và C hoặc chuột phải để lao sang phải. Trên điện thoại, chạm vào bên trái hoặc bên phải khi đang ở trên không."
+   },
+   {
+    "q": "Mình có chơi Mini Dash trên điện thoại được không?",
+    "a": "Được, game có điều khiển cảm ứng cho điện thoại và máy tính bảng."
+   },
+   {
+    "q": "Có chế độ speedrun không?",
+    "a": "Có, Mini Dash có chế độ speedrun để thử xem bạn hoàn thành nhanh đến đâu."
+   }
+  ]
+ },
+ "classic-snake": {
+  "summary": "Classic Snake lấy ý tưởng từ game rắn săn mồi ngày xưa và giữ mọi thứ thật đơn giản: bạn ăn những chấm nhỏ để lớn hơn và cố gắng nuôi con rắn to nhất trên bảng xếp hạng. Rắn càng dài thì càng khó điều khiển mà không đâm vào đâu, nên mỗi chấm làm game thêm hồi hộp một chút.\n\nCách điều khiển chỉ là một cú nhấp chuột hoặc một lần chạm, nên game bắt đầu ngay trên máy tính hay điện thoại. Mỗi ván rất ngắn, nên dễ thử lại và phá kỷ lục của chính mình.",
+  "how_to": "Nhấp chuột hoặc chạm vào màn hình để chơi và điều khiển con rắn. Ăn các chấm nhỏ để dài ra. Hãy cố gắng trở thành con rắn to nhất trên bảng xếp hạng.",
+  "tips": [
+   "Ăn những chấm gần bạn trước để lớn lên an toàn.",
+   "Chừa chỗ để quay đầu khi rắn dài ra.",
+   "Vạch sẵn đường đi trước khi lao tới một chấm ở xa.",
+   "Chơi vài ván và cố phá độ dài tốt nhất của chính bạn."
+  ],
+  "faq": [
+   {
+    "q": "Chơi Classic Snake như thế nào?",
+    "a": "Nhấp hoặc chạm để điều khiển con rắn, ăn các chấm nhỏ để dài ra và cố gắng trở thành con rắn to nhất trên bảng xếp hạng."
+   },
+   {
+    "q": "Mình có chơi Classic Snake trên điện thoại được không?",
+    "a": "Được, game chơi bằng một lần chạm nên chạy được trên điện thoại và máy tính bảng."
+   },
+   {
+    "q": "Classic Snake có miễn phí không?",
+    "a": "Có, bạn có thể chơi miễn phí ngay trên trình duyệt mà không cần tải."
+   }
+  ]
+ },
+ "checkers": {
+  "summary": "Checkers là game chiến thuật cổ điển mà nước đi nào cũng quan trọng. Bạn di chuyển quân qua bàn cờ, bắt quân đối thủ bằng cách nhảy qua chúng và cố đưa một quân sang phía bên kia để được phong vương và có thể đi mọi hướng. Việc bắt quân là bắt buộc, nghĩa là bạn có thể giăng bẫy và ép đối thủ phải đi những nước nhất định.\n\nGame dễ học nhưng cần nhiều thời gian để thành thạo. Game thưởng cho việc suy nghĩ trước: trước mỗi nước đi, hãy xem nó cho phép đối thủ làm gì tiếp theo. Đây là game hay để luyện tập việc lên kế hoạch, sự kiên nhẫn và suy nghĩ cẩn thận.",
+  "how_to": "Di chuyển quân của bạn tiến lên qua bàn cờ và bắt quân đối thủ bằng cách nhảy qua chúng. Nếu có thể bắt quân thì bạn bắt buộc phải bắt. Khi một quân của bạn đến phía bên kia bàn cờ, quân đó được phong vương và sau đó có thể đi mọi hướng. Thắng bằng cách bắt hết quân của đối thủ hoặc khiến họ không còn nước đi.",
+  "tips": [
+   "Hãy nghĩ xem nước đi của bạn cho phép đối thủ làm gì tiếp theo.",
+   "Dùng luật bắt buộc bắt quân để giăng bẫy.",
+   "Giữ các quân gần nhau để chúng bảo vệ lẫn nhau.",
+   "Cố gắng phong vương cho một quân, vì quân được phong vương mạnh hơn nhiều."
+  ],
+  "faq": [
+   {
+    "q": "Trong Checkers, bắt quân có bắt buộc không?",
+    "a": "Có, trong game này bạn phải bắt khi có thể bắt. Chính điều này làm cho việc giăng bẫy và lên kế hoạch trở nên khả thi."
+   },
+   {
+    "q": "Điều gì xảy ra khi một quân được phong vương?",
+    "a": "Quân nào đến phía bên kia bàn cờ sẽ được phong vương và có thể đi mọi hướng."
+   },
+   {
+    "q": "Mình có thể học Checkers ở đây không?",
+    "a": "Có, luật rất đơn giản và chơi vài ván là cách hay để học."
+   }
+  ]
  }
 }

@@ -5677,5 +5677,149 @@
     "a": "Atravessar as docas rápido e sem se molhar."
    }
   ]
+ },
+ "love-tester": {
+  "summary": "Love Tester é um joguinho curto para se divertir: você digita nomes e o jogo diz o quanto eles combinam. É mais uma brincadeira do que ciência, então serve para rir com os amigos, não para levar o resultado a sério. Cada tentativa leva só alguns segundos.\n\nO jogo foi feito para telas sensíveis ao toque, então funciona muito bem no celular ou no tablet. Não há nada para aprender e não existem fases, o que o torna uma escolha fácil quando você tem só um minuto e quer dar um sorriso.",
+  "how_to": "Toque para começar, depois digite os nomes e deixe o jogo testá-los. O jogo mostra o resultado como uma pontuação de amor. Experimente nomes ou casais diferentes, por exemplo amigos, bichinhos de estimação ou personagens favoritos, e compare as pontuações.",
+  "tips": [
+   "Encare o resultado como uma brincadeira: ele não consegue prever nada de verdade.",
+   "Experimente nomes de amigos, bichinhos ou personagens favoritos e veja quem consegue a pontuação mais alta.",
+   "Jogue no celular ou no tablet, porque o jogo usa toque.",
+   "Mostre a pontuação para um amigo e deixe ele adivinhar quais nomes você testou."
+  ],
+  "faq": [
+   {
+    "q": "O Love Tester é de verdade?",
+    "a": "Não. É um jogo divertido que inventa uma pontuação para os nomes que você digita. Ele não consegue dizer nada real sobre amor ou amizade."
+   },
+   {
+    "q": "Dá para jogar Love Tester no celular?",
+    "a": "Sim, o jogo foi feito para telas sensíveis ao toque, então funciona em celulares e tablets."
+   },
+   {
+    "q": "Posso testar amigos ou bichinhos em vez do meu crush?",
+    "a": "Sim, você pode digitar os nomes que quiser, como de amigos, irmãos, bichinhos de estimação ou personagens favoritos."
+   }
+  ]
+ },
+ "tank-trouble": {
+  "summary": "Em Tank Trouble, você fica num tanque dentro de um pequeno labirinto. Você contorna as paredes, mira e tenta acertar o outro tanque antes que ele acerte você. No modo Solo, você joga contra Laika, uma mestra da guerra, e no multijogador pode desafiar um ou dois amigos no mesmo dispositivo.\n\nOs campos de batalha são labirintos, então as paredes importam tanto quanto os canhões. Você precisa pensar de onde o outro tanque pode vir, e dá para usar um tiro com esperteza na curva de uma parede. As rodadas são rápidas e fáceis de recomeçar, o que torna o jogo ótimo para revezar com os amigos.",
+  "how_to": "No modo Solo, dirija seu tanque pelo labirinto e atire em Laika, sua oponente. No multijogador em um só teclado, o jogador 1 dirige com as teclas WASD e atira com Q, o jogador 2 usa as setas e a barra de espaço e o jogador 3 joga com o mouse. Use as paredes como proteção e tente acertar o outro tanque primeiro.",
+  "tips": [
+   "Use as paredes como proteção e só apareça quando estiver pronto para atirar.",
+   "Pense de onde o outro tanque pode vir antes de virar uma esquina.",
+   "Não pare de se mover, porque um tanque parado é fácil de acertar.",
+   "Revezem com os amigos e joguem várias rodadas para ver quem ganha mais."
+  ],
+  "faq": [
+   {
+    "q": "Dá para jogar Tank Trouble com um amigo?",
+    "a": "Sim. Você pode jogar multijogador com um ou dois amigos no mesmo dispositivo. O jogador 1 usa WASD e Q, o jogador 2 usa as setas e a barra de espaço, e o jogador 3 pode jogar com o mouse."
+   },
+   {
+    "q": "Dá para jogar Tank Trouble sozinho?",
+    "a": "Sim. No modo Solo, você joga contra Laika, uma mestra da guerra."
+   },
+   {
+    "q": "O Tank Trouble é grátis?",
+    "a": "Sim, você pode jogar de graça no navegador, sem baixar nada."
+   }
+  ]
+ },
+ "gin-rummy": {
+  "summary": "Gin Rummy é um jogo de cartas clássico para dois jogadores, e nesta versão você joga contra o computador. Você tenta juntar as cartas em trincas e sequências e se livrar das que não combinam. O computador se adapta ao seu nível enquanto você joga, então continua interessante, seja você iniciante ou já bom no jogo.\n\nO jogo salva o seu progresso, então você pode sair e voltar depois. É um jogo calmo de planejamento e memória: você observa quais cartas o adversário pega e quais ele descarta, e isso mostra o que guardar. É um bom jeito de aprender um jogo de cartas de verdade que é jogado no mundo todo.",
+  "how_to": "Jogue contra o computador. Na sua vez, você pega uma carta e depois descarta uma, tentando formar trincas de cartas com o mesmo número e sequências de cartas seguidas do mesmo naipe. As cartas que não fazem parte de uma trinca ou sequência contam contra você. Observe o que o adversário pega, porque isso mostra o que ele precisa.",
+  "tips": [
+   "Observe quais cartas o adversário pega e quais ele descarta.",
+   "Guarde as cartas que podem formar tanto uma trinca quanto uma sequência.",
+   "Descarte cedo as cartas altas que não combinam com nada.",
+   "Não tenha pressa: o jogo salva, então você pode pensar e voltar depois."
+  ],
+  "faq": [
+   {
+    "q": "Quantos jogadores tem o Gin Rummy?",
+    "a": "Gin Rummy é um jogo para dois jogadores. Nesta versão, você joga contra o computador."
+   },
+   {
+    "q": "O jogo salva o meu progresso?",
+    "a": "Sim, o jogo tem salvamento automático e retomada, então você pode voltar depois."
+   },
+   {
+    "q": "O computador é um adversário difícil?",
+    "a": "O computador se adapta ao seu nível de jogo, então continua sendo um desafio sem ser injusto."
+   }
+  ]
+ },
+ "mini-dash": {
+  "summary": "Mini Dash é um jogo de plataforma em estilo retrô em que você controla uma pequena gotinha. Sua habilidade especial é o dash no ar: enquanto está no ar, você pode se lançar para a esquerda ou para a direita para desviar de obstáculos e alcançar moedas. Aprender quando pular e quando fazer o dash é o jogo todo: é fácil de começar, mas é preciso treinar para dominar.\n\nEm cada fase você coleta as moedas, e também há um modo speedrun para testar com que rapidez você consegue terminar. Funciona com o mouse no computador e com toque no celular ou no tablet.",
+  "how_to": "No computador, aperte X ou o botão esquerdo do mouse para pular, e C ou o botão direito do mouse para pular também. No ar, aperte X ou o botão esquerdo do mouse para fazer o dash para a esquerda, e C ou o botão direito do mouse para fazer o dash para a direita. No celular, toque no lado esquerdo ou direito para pular e depois toque à esquerda ou à direita no ar para fazer o dash nessa direção. Colete as moedas e evite os obstáculos.",
+  "tips": [
+   "Pule primeiro e depois faça o dash: o dash só funciona no ar.",
+   "Espere o momento certo em vez de fazer o dash assim que sair do chão.",
+   "Experimente o modo speedrun quando já conhecer bem uma fase.",
+   "Aprenda como a fase é montada, porque os obstáculos ficam sempre no mesmo lugar."
+  ],
+  "faq": [
+   {
+    "q": "Como fazer o dash no Mini Dash?",
+    "a": "Pule primeiro e depois aperte o botão de dash enquanto estiver no ar. No computador, use X ou o botão esquerdo do mouse para fazer o dash para a esquerda e C ou o botão direito do mouse para fazer o dash para a direita. No celular, toque à esquerda ou à direita no ar."
+   },
+   {
+    "q": "Dá para jogar Mini Dash no celular?",
+    "a": "Sim, o jogo tem controles por toque para celulares e tablets."
+   },
+   {
+    "q": "Existe um modo speedrun?",
+    "a": "Sim, o Mini Dash tem um modo speedrun para testar com que rapidez você consegue terminar."
+   }
+  ]
+ },
+ "classic-snake": {
+  "summary": "Classic Snake pega a ideia do velho jogo da cobrinha e a mantém simples: você come pontinhos para crescer e tenta formar a maior cobra do ranking. Quanto mais a sua cobra cresce, mais difícil é guiá-la sem bater em nada, então cada pontinho deixa o jogo um pouco mais emocionante.\n\nO controle é só um clique do mouse ou um toque, então o jogo começa na hora no computador ou no celular. As rodadas são curtas, o que facilita tentar de novo e bater o seu próprio recorde.",
+  "how_to": "Clique com o mouse ou toque na tela para jogar e guiar a sua cobra. Coma os pontinhos para ficar mais comprida. Tente se tornar a maior cobra do ranking.",
+  "tips": [
+   "Coma primeiro os pontinhos que estão perto de você para crescer com segurança.",
+   "Deixe espaço para virar à medida que sua cobra for ficando mais comprida.",
+   "Planeje um caminho antes de ir atrás de um pontinho distante.",
+   "Jogue algumas rodadas e tente bater o seu melhor tamanho."
+  ],
+  "faq": [
+   {
+    "q": "Como se joga Classic Snake?",
+    "a": "Clique ou toque para guiar a sua cobra, coma os pontinhos para ficar mais comprida e tente conseguir a maior cobra do ranking."
+   },
+   {
+    "q": "Dá para jogar Classic Snake no celular?",
+    "a": "Sim, o jogo funciona com um toque, então funciona em celulares e tablets."
+   },
+   {
+    "q": "O Classic Snake é grátis?",
+    "a": "Sim, você pode jogar de graça no navegador, sem baixar nada."
+   }
+  ]
+ },
+ "checkers": {
+  "summary": "Checkers é um jogo de estratégia clássico em que cada jogada conta. Você move suas peças pelo tabuleiro, captura as peças do adversário pulando sobre elas e tenta levar uma peça até o lado oposto para ela ser coroada e poder se mover em qualquer direção. A captura é obrigatória, o que permite planejar armadilhas e forçar o adversário a certas jogadas.\n\nÉ fácil de aprender e leva muito tempo para dominar. O jogo premia quem pensa à frente: antes de cada jogada, veja o que ela permite que o adversário faça em seguida. É um bom jogo para treinar planejamento, paciência e raciocínio cuidadoso.",
+  "how_to": "Mova suas peças para a frente pelo tabuleiro e capture as peças do adversário pulando sobre elas. Se uma captura for possível, você precisa fazê-la. Quando uma das suas peças chega ao lado oposto do tabuleiro, ela é coroada e passa a poder se mover em qualquer direção. Você vence capturando todas as peças do adversário ou deixando ele sem jogadas.",
+  "tips": [
+   "Pense no que a sua jogada permite que o adversário faça em seguida.",
+   "Use a captura obrigatória para montar armadilhas.",
+   "Mantenha suas peças juntas para que elas se protejam.",
+   "Tente coroar uma peça, porque uma peça coroada é muito mais poderosa."
+  ],
+  "faq": [
+   {
+    "q": "A captura é obrigatória em Checkers?",
+    "a": "Sim, neste jogo você precisa capturar quando a captura é possível. É isso que torna possíveis as armadilhas e o planejamento."
+   },
+   {
+    "q": "O que acontece quando uma peça é coroada?",
+    "a": "Uma peça que chega ao lado oposto do tabuleiro é coroada e pode se mover em qualquer direção."
+   },
+   {
+    "q": "Dá para aprender Checkers aqui?",
+    "a": "Sim, as regras são simples, e jogar algumas partidas é um bom jeito de aprender."
+   }
+  ]
  }
 }

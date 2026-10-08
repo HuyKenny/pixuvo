@@ -5677,5 +5677,149 @@
     "a": "Traverser les quais rapidement sans tomber à l'eau."
    }
   ]
+ },
+ "love-tester": {
+  "summary": "Love Tester est un petit jeu pour rire : tu tapes des prénoms et le jeu te dit à quel point ils vont bien ensemble. C'est plus une blague qu'une science, donc il est parfait pour rigoler avec des amis, pas pour prendre le résultat au sérieux. Chaque essai ne prend que quelques secondes.\n\nLe jeu est conçu pour les écrans tactiles, donc il marche très bien sur téléphone ou tablette. Il n'y a rien à apprendre et pas de niveaux, ce qui en fait un choix facile quand tu n'as qu'une minute et envie de sourire.",
+  "how_to": "Appuie sur démarrer, puis entre les prénoms et laisse le jeu les tester. Le jeu affiche le résultat sous forme de score d'amour. Essaie différents prénoms ou duos, par exemple des amis, des animaux ou des personnages préférés, et compare les scores.",
+  "tips": [
+   "Prends le résultat pour une blague – il ne peut vraiment rien prédire.",
+   "Essaie les prénoms d'amis, d'animaux ou de personnages préférés et regarde qui obtient le meilleur score.",
+   "Joue sur un téléphone ou une tablette, car le jeu utilise le tactile.",
+   "Montre le score à un ami et laisse-le deviner quels prénoms tu as essayés."
+  ],
+  "faq": [
+   {
+    "q": "Est-ce que Love Tester est vrai ?",
+    "a": "Non. C'est un jeu amusant qui invente un score pour les prénoms que tu entres. Il ne peut rien dire de réel sur l'amour ou l'amitié."
+   },
+   {
+    "q": "Peut-on jouer à Love Tester sur téléphone ?",
+    "a": "Oui, le jeu est conçu pour les écrans tactiles, donc il fonctionne sur téléphone et sur tablette."
+   },
+   {
+    "q": "Je peux tester des amis ou des animaux au lieu de mon crush ?",
+    "a": "Oui, tu peux entrer les prénoms que tu veux, comme ceux d'amis, de frères et sœurs, d'animaux ou de personnages préférés."
+   }
+  ]
+ },
+ "tank-trouble": {
+  "summary": "Dans Tank Trouble, tu es dans un char au milieu d'un petit labyrinthe. Tu contournes les murs, tu vises et tu essaies de toucher l'autre char avant qu'il ne te touche. En mode Solo, tu joues contre Laika, une experte de la guerre, et en multijoueur, tu peux défier un ou deux amis sur le même appareil.\n\nLes champs de bataille sont des labyrinthes, donc les murs comptent autant que les canons. Tu dois réfléchir à l'endroit d'où l'autre char peut arriver, et un tir peut être utilisé astucieusement au coin d'un mur. Les manches sont rapides et faciles à relancer, ce qui en fait un super jeu à se partager entre amis.",
+  "how_to": "En mode Solo, conduis ton char dans le labyrinthe et tire sur Laika, ton adversaire. En multijoueur sur un seul clavier, le joueur 1 conduit avec les touches WASD et tire avec Q, le joueur 2 utilise les flèches et la barre d'espace, et le joueur 3 joue à la souris. Sers-toi des murs comme abri et essaie de toucher l'autre char en premier.",
+  "tips": [
+   "Utilise les murs comme abri et ne sors que quand tu es prêt à tirer.",
+   "Réfléchis à l'endroit d'où l'autre char peut arriver avant de tourner au coin d'un mur.",
+   "Reste en mouvement, car un char immobile est facile à toucher.",
+   "Jouez chacun votre tour avec vos amis et faites plusieurs manches pour voir qui gagne le plus."
+  ],
+  "faq": [
+   {
+    "q": "Peut-on jouer à Tank Trouble avec un ami ?",
+    "a": "Oui. Tu peux jouer en multijoueur avec un ou deux amis sur le même appareil. Le joueur 1 utilise WASD et Q, le joueur 2 les flèches et la barre d'espace, et le joueur 3 peut jouer à la souris."
+   },
+   {
+    "q": "Peut-on jouer à Tank Trouble tout seul ?",
+    "a": "Oui. En mode Solo, tu joues contre Laika, une experte de la guerre."
+   },
+   {
+    "q": "Est-ce que Tank Trouble est gratuit ?",
+    "a": "Oui, tu peux y jouer gratuitement dans ton navigateur, sans rien télécharger."
+   }
+  ]
+ },
+ "gin-rummy": {
+  "summary": "Gin Rummy est un jeu de cartes classique pour deux joueurs, et dans cette version, tu joues contre l'ordinateur. Tu essaies de rassembler tes cartes en brelans et en suites et de te débarrasser des cartes qui ne vont pas. L'ordinateur s'adapte à ton niveau pendant la partie, donc ça reste intéressant que tu débutes ou que tu joues déjà bien.\n\nLe jeu enregistre ta progression, donc tu peux partir et revenir plus tard. C'est un jeu calme de réflexion et de mémoire – tu observes quelles cartes ton adversaire prend et lesquelles il jette, et cela t'indique ce qu'il faut garder. C'est une bonne façon d'apprendre un vrai jeu de cartes qu'on joue dans le monde entier.",
+  "how_to": "Joue contre l'ordinateur. À ton tour, tu prends une carte puis tu en jettes une, en essayant de former des brelans de même valeur et des suites de cartes qui se suivent dans la même couleur. Les cartes qui ne font partie ni d'un brelan ni d'une suite comptent contre toi. Observe ce que ton adversaire ramasse, car cela montre ce dont il a besoin.",
+  "tips": [
+   "Observe quelles cartes ton adversaire prend et lesquelles il jette.",
+   "Garde les cartes qui peuvent former à la fois un brelan et une suite.",
+   "Jette tôt les grosses cartes qui ne vont nulle part.",
+   "Prends ton temps – le jeu enregistre, donc tu peux réfléchir et revenir plus tard."
+  ],
+  "faq": [
+   {
+    "q": "Combien de joueurs y a-t-il à Gin Rummy ?",
+    "a": "Gin Rummy est un jeu pour deux joueurs. Dans cette version, tu joues contre l'ordinateur."
+   },
+   {
+    "q": "Est-ce que le jeu enregistre ma progression ?",
+    "a": "Oui, le jeu a une sauvegarde automatique et une reprise, donc tu peux revenir plus tard."
+   },
+   {
+    "q": "Est-ce que l'ordinateur est un adversaire difficile ?",
+    "a": "L'ordinateur s'adapte à ton niveau de jeu, donc il reste un défi sans être injuste."
+   }
+  ]
+ },
+ "mini-dash": {
+  "summary": "Mini Dash est un jeu de plateforme dans un style rétro où tu joues une petite goutte. Sa capacité spéciale est le dash aérien : quand tu es en l'air, tu peux foncer vers la gauche ou vers la droite pour éviter les obstacles et atteindre des pièces. Savoir quand sauter et quand faire un dash, c'est tout le jeu – facile à prendre en main, mais il faut s'entraîner pour le maîtriser.\n\nDans chaque niveau, tu ramasses les pièces, et il y a aussi un mode speedrun pour tester à quelle vitesse tu peux terminer. Il se joue à la souris sur ordinateur et au toucher sur téléphone ou tablette.",
+  "how_to": "Sur ordinateur, appuie sur X ou sur le clic gauche de la souris pour sauter, et sur C ou le clic droit de la souris pour sauter aussi. En l'air, appuie sur X ou sur le clic gauche pour faire un dash vers la gauche, et sur C ou le clic droit pour faire un dash vers la droite. Sur téléphone, touche le côté gauche ou droit pour sauter, puis touche à gauche ou à droite en l'air pour faire un dash dans cette direction. Ramasse les pièces et évite les obstacles.",
+  "tips": [
+   "Saute d'abord, puis fais un dash – le dash ne marche qu'en l'air.",
+   "Attends le bon moment au lieu de faire un dash dès que tu quittes le sol.",
+   "Essaie le mode speedrun quand tu connais bien un niveau.",
+   "Apprends la disposition d'un niveau, car les obstacles restent toujours au même endroit."
+  ],
+  "faq": [
+   {
+    "q": "Comment fait-on un dash dans Mini Dash ?",
+    "a": "Saute d'abord, puis appuie sur le bouton de dash pendant que tu es en l'air. Sur ordinateur, utilise X ou le clic gauche pour un dash vers la gauche et C ou le clic droit pour un dash vers la droite. Sur téléphone, touche le côté gauche ou droit en l'air."
+   },
+   {
+    "q": "Peut-on jouer à Mini Dash sur téléphone ?",
+    "a": "Oui, le jeu a des commandes tactiles pour téléphones et tablettes."
+   },
+   {
+    "q": "Y a-t-il un mode speedrun ?",
+    "a": "Oui, Mini Dash a un mode speedrun pour tester à quelle vitesse tu peux terminer."
+   }
+  ]
+ },
+ "classic-snake": {
+  "summary": "Classic Snake reprend l'idée du vieux jeu du serpent et reste simple : tu manges de petits points pour grandir et tu essaies de former le plus gros serpent du classement. Plus ton serpent grandit, plus il est difficile à diriger sans se cogner, donc chaque point rend le jeu un peu plus excitant.\n\nLes commandes se résument à un clic de souris ou à un toucher, donc le jeu démarre tout de suite sur ordinateur ou sur téléphone. Les manches sont courtes, ce qui permet de réessayer facilement et de battre ton propre record.",
+  "how_to": "Clique avec la souris ou touche l'écran pour jouer et diriger ton serpent. Mange les petits points pour devenir plus long. Essaie de devenir le plus gros serpent du classement.",
+  "tips": [
+   "Mange d'abord les points proches de toi pour grandir en sécurité.",
+   "Garde-toi de la place pour tourner quand ton serpent s'allonge.",
+   "Prépare un chemin avant de foncer vers un point éloigné.",
+   "Joue quelques manches et essaie de battre ta meilleure longueur."
+  ],
+  "faq": [
+   {
+    "q": "Comment joue-t-on à Classic Snake ?",
+    "a": "Clique ou touche pour diriger ton serpent, mange les petits points pour devenir plus long et essaie d'obtenir le plus gros serpent du classement."
+   },
+   {
+    "q": "Peut-on jouer à Classic Snake sur téléphone ?",
+    "a": "Oui, le jeu fonctionne avec un toucher, donc il marche sur téléphones et tablettes."
+   },
+   {
+    "q": "Est-ce que Classic Snake est gratuit ?",
+    "a": "Oui, tu peux y jouer gratuitement dans ton navigateur, sans rien télécharger."
+   }
+  ]
+ },
+ "checkers": {
+  "summary": "Checkers est un jeu de stratégie classique où chaque coup compte. Tu avances tes pions sur le plateau, tu prends les pions de ton adversaire en sautant par-dessus et tu essaies d'amener un pion de l'autre côté pour qu'il soit couronné et puisse aller dans toutes les directions. La prise est obligatoire, ce qui te permet de préparer des pièges et de forcer ton adversaire à jouer certains coups.\n\nIl est facile à apprendre et long à maîtriser. Le jeu récompense celui qui réfléchit à l'avance : avant chaque coup, regarde ce qu'il permet ensuite à ton adversaire. C'est un bon jeu pour s'entraîner à planifier, à être patient et à bien réfléchir.",
+  "how_to": "Avance tes pions sur le plateau et prends les pions adverses en sautant par-dessus. Si une prise est possible, tu dois la faire. Quand l'un de tes pions atteint l'autre côté du plateau, il est couronné et peut alors se déplacer dans toutes les directions. Tu gagnes en prenant tous les pions de l'adversaire ou en le laissant sans coup possible.",
+  "tips": [
+   "Réfléchis à ce que ton coup permet ensuite à ton adversaire.",
+   "Utilise la prise obligatoire pour tendre des pièges.",
+   "Garde tes pions groupés pour qu'ils se protègent entre eux.",
+   "Essaie de couronner un pion, car un pion couronné est bien plus puissant."
+  ],
+  "faq": [
+   {
+    "q": "La prise est-elle obligatoire à Checkers ?",
+    "a": "Oui, dans ce jeu tu dois prendre quand une prise est possible. C'est ce qui rend les pièges et la planification possibles."
+   },
+   {
+    "q": "Que se passe-t-il quand un pion est couronné ?",
+    "a": "Un pion qui atteint l'autre côté du plateau est couronné et peut se déplacer dans toutes les directions."
+   },
+   {
+    "q": "Peut-on apprendre Checkers ici ?",
+    "a": "Oui, les règles sont simples, et jouer quelques parties est une bonne façon d'apprendre."
+   }
+  ]
  }
 }

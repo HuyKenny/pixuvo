@@ -5677,5 +5677,149 @@
     "a": "Juss át gyorsan a dokkokon, és maradj száraz."
    }
   ]
+ },
+ "love-tester": {
+  "summary": "A Love Tester egy rövid, szórakoztató játék: beírsz neveket, és a játék megmondja, mennyire illenek egymáshoz. Inkább vicc, mint tudomány, ezért barátokkal nevetgélni jó, komolyan venni az eredményt viszont nem érdemes. Egy próba csak néhány másodpercig tart.\n\nA játékot érintőképernyőre találták ki, ezért telefonon vagy tableten remekül működik. Nincs mit megtanulni, és nincsenek pályák sem, így könnyű választás, ha csak egy perced van, és szeretnél mosolyogni.",
+  "how_to": "Koppints az indításra, írd be a neveket, és hagyd, hogy a játék kipróbálja őket. A játék az eredményt szerelempontszámként mutatja meg. Próbálj ki különböző neveket vagy párokat, például barátokat, kisállatokat vagy kedvenc szereplőket, és hasonlítsd össze a pontszámokat.",
+  "tips": [
+   "Vedd viccnek az eredményt – valójában semmit sem tud megjósolni.",
+   "Próbáld ki barátok, kisállatok vagy kedvenc szereplők nevét, és nézd meg, ki kapja a legmagasabb pontszámot.",
+   "Telefonon vagy tableten játssz, mert a játék érintéssel működik.",
+   "Mutasd meg a pontszámot egy barátodnak, és hagyd, hogy kitalálja, milyen neveket próbáltál ki."
+  ],
+  "faq": [
+   {
+    "q": "Igazi a Love Tester?",
+    "a": "Nem. Ez egy vicces játék, amely pontszámot talál ki a beírt nevekhez. A szerelemről vagy a barátságról nem tud semmi valódit mondani."
+   },
+   {
+    "q": "Lehet a Love Testert telefonon játszani?",
+    "a": "Igen, a játékot érintőképernyőre készítették, ezért telefonon és tableten is működik."
+   },
+   {
+    "q": "Tesztelhetek barátokat vagy kisállatokat is, nem csak azt, aki tetszik?",
+    "a": "Igen, bármilyen nevet beírhatsz, például barátokét, testvérekét, kisállatokét vagy kedvenc szereplőkét."
+   }
+  ]
+ },
+ "tank-trouble": {
+  "summary": "A Tank Trouble-ben egy kis útvesztőben ülsz egy tankban. Megkerülöd a falakat, célzol, és megpróbálod eltalálni a másik tankot, mielőtt az eltalál téged. Solo módban Laika, a háború mestere ellen játszol, többjátékos módban pedig ugyanazon az eszközön hívhatsz ki egy-két barátot.\n\nA csatatér útvesztő, ezért a falak legalább annyira számítanak, mint az ágyúk. Gondolkodnod kell azon, honnan jöhet a másik tank, a lövést pedig okosan ki lehet használni a sarok mögött is. A körök gyorsak, és könnyű újrakezdeni őket, ezért remek játék a barátokkal való felváltva játszásra.",
+  "how_to": "Solo módban vezesd a tankodat az útvesztőben, és lődd Laikát, az ellenfeledet. Többjátékos módban egy billentyűzeten az 1. játékos a WASD billentyűkkel vezet és a Q-val lő, a 2. játékos a nyílbillentyűket és a szóközt használja, a 3. játékos pedig egérrel játszik. Használd fedezéknek a falakat, és próbáld meg elsőként eltalálni a másik tankot.",
+  "tips": [
+   "Használd fedezéknek a falakat, és csak akkor lépj elő, amikor kész vagy a lövésre.",
+   "Mielőtt befordulsz egy sarkon, gondold végig, honnan jöhet a másik tank.",
+   "Mozogj folyamatosan, mert az álló tankot könnyű eltalálni.",
+   "Játsszatok felváltva a barátaiddal, és játsszatok több kört, hogy kiderüljön, ki nyer a legtöbbször."
+  ],
+  "faq": [
+   {
+    "q": "Játszhatom a Tank Trouble-t a barátommal?",
+    "a": "Igen. Egy vagy két baráttal játszhatsz többjátékos módban ugyanazon az eszközön. Az 1. játékos a WASD-t és a Q-t használja, a 2. játékos a nyílbillentyűket és a szóközt, a 3. játékos pedig játszhat egérrel."
+   },
+   {
+    "q": "Játszhatom a Tank Trouble-t egyedül?",
+    "a": "Igen. Solo módban Laika, a háború mestere ellen játszol."
+   },
+   {
+    "q": "Ingyenes a Tank Trouble?",
+    "a": "Igen, ingyen játszhatod a böngészőben, semmit sem kell letöltened."
+   }
+  ]
+ },
+ "gin-rummy": {
+  "summary": "A Gin Rummy klasszikus kétszemélyes kártyajáték, és ebben a változatban a számítógép ellen játszhatsz. Arra törekszel, hogy a lapjaidat csoportokba és sorozatokba gyűjtsd, a nem illő lapoktól pedig megszabadulj. A számítógép játék közben alkalmazkodik a szintedhez, ezért érdekes marad, akár kezdő vagy, akár már ügyes.\n\nA játék menti az előrehaladásodat, így kiléphetsz, és később visszatérhetsz. Nyugodt tervezős és memóriajáték – figyeled, milyen lapokat vesz fel és melyeket dob el az ellenfeled, és ebből tudod, mit tarts meg. Jó módja annak, hogy megtanulj egy igazi kártyajátékot, amelyet az egész világon játszanak.",
+  "how_to": "Játssz a számítógép ellen. A körödben felveszel egy lapot, majd eldobsz egyet, és közben igyekszel azonos számú lapokból csoportokat, illetve azonos színű, egymás után következő lapokból sorozatokat építeni. Azok a lapok, amelyek nem tartoznak csoportba vagy sorozatba, hátrányodra számítanak. Figyeld, mit vesz fel az ellenfeled, mert ebből kiderül, mire van szüksége.",
+  "tips": [
+   "Figyeld, milyen lapokat vesz fel és melyeket dob el az ellenfeled.",
+   "Tartsd meg azokat a lapokat, amelyekből csoport és sorozat is lehet.",
+   "A magas lapokat, amelyek sehova sem illenek, dobd el korán.",
+   "Ne kapkodj – a játék ment, így gondolkodhatsz, és később visszatérhetsz."
+  ],
+  "faq": [
+   {
+    "q": "Hány játékosa van a Gin Rummynak?",
+    "a": "A Gin Rummy kétszemélyes játék. Ebben a változatban a számítógép ellen játszol."
+   },
+   {
+    "q": "Menti a játék az előrehaladásomat?",
+    "a": "Igen, a játék automatikusan ment és folytatható, így később visszatérhetsz."
+   },
+   {
+    "q": "Nehéz ellenfél a számítógép?",
+    "a": "A számítógép alkalmazkodik a játékszintedhez, ezért kihívást jelent, de nem igazságtalan."
+   }
+  ]
+ },
+ "mini-dash": {
+  "summary": "A Mini Dash retró stílusú ugrálós játék, amelyben egy kis csepp vagy. Különleges képessége a levegőben végzett dash: amíg a levegőben vagy, balra vagy jobbra lendülhetsz, kikerülheted az akadályokat, és elérheted az érméket. Az egész játék arról szól, hogy mikor ugorj, és mikor használd a dasht – könnyű elkezdeni, de gyakorlás kell a mesteri szinthez.\n\nMinden pályán érméket gyűjtesz, és van speedrun mód is, amelyben kipróbálhatod, milyen gyorsan teljesítheted a pályát. Számítógépen egérrel, telefonon vagy tableten érintéssel működik.",
+  "how_to": "Számítógépen az X billentyűvel vagy a bal egérgombbal ugrasz, de ugorhatsz a C billentyűvel vagy a jobb egérgombbal is. A levegőben az X vagy a bal egérgomb balra, a C vagy a jobb egérgomb jobbra dash-el. Telefonon a bal vagy jobb oldal megérintésével ugrasz, majd a levegőben a bal vagy jobb oldalt megérintve abba az irányba dash-elsz. Gyűjtsd az érméket, és kerüld ki az akadályokat.",
+  "tips": [
+   "Először ugorj, aztán dash-elj – a dash csak a levegőben működik.",
+   "Várj a megfelelő pillanatra, ne dash-elj rögtön, amint elhagyod a talajt.",
+   "Próbáld ki a speedrun módot, ha már jól ismersz egy pályát.",
+   "Tanuld meg a pálya elrendezését, mert az akadályok mindig ugyanott maradnak."
+  ],
+  "faq": [
+   {
+    "q": "Hogyan kell dash-elni a Mini Dashben?",
+    "a": "Először ugorj, aztán a levegőben nyomd meg a dash gombot. Számítógépen az X vagy a bal egérgomb a balra dash, a C vagy a jobb egérgomb a jobbra dash. Telefonon a levegőben érintsd meg a bal vagy a jobb oldalt."
+   },
+   {
+    "q": "Játszhatom a Mini Dasht telefonon?",
+    "a": "Igen, a játéknak van érintésvezérlése telefonokra és tabletekre."
+   },
+   {
+    "q": "Van speedrun mód?",
+    "a": "Igen, a Mini Dashben van speedrun mód, amelyben kipróbálhatod, milyen gyorsan tudod teljesíteni."
+   }
+  ]
+ },
+ "classic-snake": {
+  "summary": "A Classic Snake a régi kígyós játék ötletét veszi át, és egyszerűen tartja: kis pontokat eszel, hogy nagyobb legyél, és megpróbálod a ranglista legnagyobb kígyóját megépíteni. Ahogy a kígyód nő, egyre nehezebb úgy irányítani, hogy ne ütközz bele semmibe, így minden pont egy kicsit izgalmasabbá teszi a játékot.\n\nAz irányítás csak egy egérkattintás vagy egy koppintás, ezért számítógépen és telefonon is azonnal indul. A körök rövidek, így könnyű újra próbálkozni, és megdönteni a saját rekordodat.",
+  "how_to": "Kattints az egérrel vagy koppints a képernyőre, hogy játssz és irányítsd a kígyódat. Edd meg a kis pontokat, hogy hosszabb legyél. Próbálj meg a ranglista legnagyobb kígyójává válni.",
+  "tips": [
+   "Először a közeli pontokat edd meg, hogy biztonságosan növekedj.",
+   "Hagyj magadnak helyet a fordulásra, ahogy a kígyód hosszabb lesz.",
+   "Tervezz meg egy útvonalat, mielőtt egy távoli pontért indulsz.",
+   "Játssz néhány kört, és próbáld megdönteni a legjobb hosszodat."
+  ],
+  "faq": [
+   {
+    "q": "Hogyan kell játszani a Classic Snake-kel?",
+    "a": "Kattintással vagy koppintással irányítod a kígyódat, megeszed a kis pontokat, hogy hosszabb legyél, és megpróbálod a ranglista legnagyobb kígyóját elérni."
+   },
+   {
+    "q": "Játszhatom a Classic Snake-et telefonon?",
+    "a": "Igen, a játék koppintással működik, ezért telefonon és tableten is játszható."
+   },
+   {
+    "q": "Ingyenes a Classic Snake?",
+    "a": "Igen, ingyen játszhatod a böngészőben, semmit sem kell letöltened."
+   }
+  ]
+ },
+ "checkers": {
+  "summary": "A Checkers klasszikus stratégiai játék, amelyben minden lépés számít. Végigviszed a bábuidat a táblán, az ellenfél bábuit átugrással leütöd, és megpróbálsz egy bábut a túlsó oldalra juttatni, hogy királlyá koronázzák, és bármely irányba léphessen. Az ütés kötelező, ezért csapdákat tervezhetsz, és lépésekre kényszerítheted az ellenfelet.\n\nKönnyű megtanulni, de sokáig tart elsajátítani. A játék az előregondolkodást jutalmazza: minden lépés előtt nézd meg, mit tesz lehetővé az ellenfélnek a következő lépésben. Jó játék a tervezés, a türelem és az alapos gondolkodás gyakorlására.",
+  "how_to": "Told előre a bábuidat a táblán, és az ellenfél bábuit átugrással üsd le. Ha lehetséges az ütés, meg kell tenned. Amikor az egyik bábud eléri a tábla túlsó oldalát, királlyá koronázzák, és innentől bármely irányba léphet. Úgy nyersz, ha leütöd az ellenfél összes bábuját, vagy ha az ellenfélnek nem marad lépése.",
+  "tips": [
+   "Gondold végig, mit tesz lehetővé a lépésed az ellenfélnek a következő lépésben.",
+   "Használd ki a kötelező ütést csapdák felállítására.",
+   "Tartsd együtt a bábuidat, hogy védjék egymást.",
+   "Próbálj meg királlyá koronázni egy bábut, mert a király sokkal erősebb."
+  ],
+  "faq": [
+   {
+    "q": "Kötelező az ütés a Checkersben?",
+    "a": "Igen, ebben a játékban ütnöd kell, ha lehetséges az ütés. Ettől lehetségesek a csapdák és a tervezés."
+   },
+   {
+    "q": "Mi történik, ha egy bábut királlyá koronáznak?",
+    "a": "Az a bábu, amely eléri a tábla túlsó oldalát, királlyá lesz, és bármely irányba léphet."
+   },
+   {
+    "q": "Meg lehet itt tanulni a Checkerst?",
+    "a": "Igen, a szabályok egyszerűek, és néhány játszma jó módja a tanulásnak."
+   }
+  ]
  }
 }

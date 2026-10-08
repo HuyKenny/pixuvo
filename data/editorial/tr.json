@@ -5677,5 +5677,149 @@
     "a": "Rıhtımları hızlıca geçmek ve ıslanmamak."
    }
   ]
+ },
+ "love-tester": {
+  "summary": "Love Tester, eğlence için oynanan kısa bir oyun: isimleri yazarsın, oyun da bu isimlerin ne kadar uyumlu olduğunu söyler. Bilimden çok bir şaka, bu yüzden arkadaşlarınla gülmek için birebir; sonucu ciddiye almak için değil. Her deneme sadece birkaç saniye sürüyor.\n\nOyun dokunmatik ekranlar için yapıldı, bu yüzden telefonda ya da tablette çok iyi çalışır. Öğrenecek bir şey yok, seviye de yok. Sadece bir dakikan varsa ve gülümsemek istiyorsan kolay bir seçim.",
+  "how_to": "Başlamak için dokun, sonra isimleri yaz ve oyunun test etmesine izin ver. Oyun sonucu bir aşk puanı olarak gösterir. Farklı isimler ya da çiftler dene, mesela arkadaşlar, evcil hayvanlar ya da sevdiğin karakterler, ve puanları karşılaştır.",
+  "tips": [
+   "Sonucu bir şaka olarak gör – gerçekte hiçbir şeyi tahmin edemez.",
+   "Arkadaşlarının, evcil hayvanlarının ya da sevdiğin karakterlerin isimlerini dene ve kimin en yüksek puanı aldığına bak.",
+   "Telefonda ya da tablette oyna, çünkü oyun dokunmatik kullanıyor.",
+   "Puanı bir arkadaşına göster ve hangi isimleri denediğini tahmin etmesine izin ver."
+  ],
+  "faq": [
+   {
+    "q": "Love Tester gerçek mi?",
+    "a": "Hayır. Yazdığın isimlere eğlence için bir puan uyduran bir oyun. Aşk ya da arkadaşlık hakkında gerçek hiçbir şey söyleyemez."
+   },
+   {
+    "q": "Love Tester'ı telefonda oynayabilir miyim?",
+    "a": "Evet, oyun dokunmatik ekranlar için yapıldı, bu yüzden telefonlarda ve tabletlerde çalışır."
+   },
+   {
+    "q": "Hoşlandığım kişi yerine arkadaşlarımı ya da evcil hayvanlarımı test edebilir miyim?",
+    "a": "Evet, arkadaşların, kardeşlerin, evcil hayvanların ya da sevdiğin karakterler gibi istediğin her ismi yazabilirsin."
+   }
+  ]
+ },
+ "tank-trouble": {
+  "summary": "Tank Trouble seni küçük bir labirentin içinde bir tanka bindirir. Duvarların etrafında dolaşır, nişan alır ve diğer tank seni vurmadan önce onu vurmaya çalışırsın. Solo modunda savaş ustası Laika'ya karşı oynarsın, çok oyunculu modda ise aynı cihazda bir ya da iki arkadaşına meydan okuyabilirsin.\n\nSavaş alanları labirent, bu yüzden duvarlar da en az toplar kadar önemli. Diğer tankın nereden çıkabileceğini düşünmen gerekir ve bir köşede mermiyi akıllıca kullanabilirsin. Turlar hızlı ve yeniden başlatması kolay, bu da arkadaşlarla sırayla oynamak için harika.",
+  "how_to": "Solo modunda tankını labirentte sür ve rakibin Laika'yı vur. Tek klavyede çok oyunculu modda 1. oyuncu WASD tuşlarıyla sürer ve Q ile ateş eder, 2. oyuncu ok tuşlarını ve boşluk tuşunu kullanır, 3. oyuncu ise fareyle oynar. Duvarları siper olarak kullan ve diğer tankı önce vurmaya çalış.",
+  "tips": [
+   "Duvarları siper olarak kullan ve sadece ateş etmeye hazır olduğunda dışarı çık.",
+   "Köşeyi dönmeden önce diğer tankın nereden gelebileceğini düşün.",
+   "Hareket etmeye devam et, çünkü yerinde duran tankı vurmak kolay.",
+   "Arkadaşlarınla sırayla oyna ve en çok kimin kazandığını görmek için birkaç tur oyna."
+  ],
+  "faq": [
+   {
+    "q": "Tank Trouble'ı arkadaşımla oynayabilir miyim?",
+    "a": "Evet. Aynı cihazda bir ya da iki arkadaşınla çok oyunculu oynayabilirsin. 1. oyuncu WASD ve Q'yu, 2. oyuncu ok tuşlarını ve boşluk tuşunu kullanır, 3. oyuncu da fareyle oynayabilir."
+   },
+   {
+    "q": "Tank Trouble'ı tek başıma oynayabilir miyim?",
+    "a": "Evet. Solo modunda savaş ustası Laika'ya karşı oynarsın."
+   },
+   {
+    "q": "Tank Trouble ücretsiz mi?",
+    "a": "Evet, tarayıcında indirmeden ücretsiz oynayabilirsin."
+   }
+  ]
+ },
+ "gin-rummy": {
+  "summary": "Gin Rummy iki kişilik klasik bir kart oyunu ve bu sürümde bilgisayara karşı oynuyorsun. Kartlarını seri ve dizi hâlinde toplamaya, uymayan kartlardan kurtulmaya çalışırsın. Bilgisayar oynadıkça seviyene uyum sağlar, bu yüzden yeni başlasan da iyi olsan da ilginç kalır.\n\nOyun ilerlemeni kaydeder, böylece çıkıp sonra geri dönebilirsin. Planlama ve hafıza isteyen sakin bir oyun – rakibinin hangi kartları aldığını ve hangilerini attığını izlersin, bu da neyi tutman gerektiğini söyler. Dünyanın her yerinde oynanan gerçek bir kart oyununu öğrenmenin güzel bir yolu.",
+  "how_to": "Bilgisayara karşı oyna. Sıra sende olduğunda bir kart çeker, sonra bir kart atarsın; aynı sayıdan setler ve aynı rengin arka arkaya dizilerini kurmaya çalışırsın. Sete ya da diziye girmeyen kartlar aleyhine sayılır. Rakibinin neyi aldığını izle, çünkü neye ihtiyacı olduğunu gösterir.",
+  "tips": [
+   "Rakibinin hangi kartları aldığını ve hangilerini attığını izle.",
+   "Hem set hem dizi yapabilecek kartları elinde tut.",
+   "Hiçbir yere uymayan yüksek kartlardan erkenden kurtul.",
+   "Acele etme – oyun kaydeder, yani düşünüp sonra geri dönebilirsin."
+  ],
+  "faq": [
+   {
+    "q": "Gin Rummy kaç kişiyle oynanır?",
+    "a": "Gin Rummy iki kişilik bir oyun. Bu sürümde bilgisayara karşı oynarsın."
+   },
+   {
+    "q": "Oyun ilerlememi kaydediyor mu?",
+    "a": "Evet, oyunda otomatik kaydetme ve devam etme var, bu yüzden sonra geri gelebilirsin."
+   },
+   {
+    "q": "Bilgisayar rakip zor mu?",
+    "a": "Bilgisayar oyun seviyene uyum sağlar, bu yüzden haksızlık etmeden zorlayıcı kalır."
+   }
+  ]
+ },
+ "mini-dash": {
+  "summary": "Mini Dash, küçük bir lekeyi oynadığın retro tarzı bir platform oyunu. Özel yeteneği hava atılışı: havadayken engellerden kaçmak ve paralara ulaşmak için sola ya da sağa atılabilirsin. Ne zaman zıplayacağını ve ne zaman atılacağını öğrenmek oyunun tamamı; başlamak kolay ama ustalaşmak pratik ister.\n\nHer seviyedeki paraları toplarsın, ayrıca ne kadar hızlı bitirebildiğini denemek için bir speedrun modu da var. Bilgisayarda fareyle, telefonda ya da tablette dokunmatik ekranla çalışır.",
+  "how_to": "Bilgisayarda zıplamak için X ya da farenin sol tuşuna bas, C ya da farenin sağ tuşu da zıplatır. Havadayken sola atılmak için X ya da farenin sol tuşuna, sağa atılmak için C ya da farenin sağ tuşuna bas. Telefonda zıplamak için ekranın sol ya da sağ tarafına dokun, sonra havadayken o yöne atılmak için sola ya da sağa dokun. Paraları topla ve engellerden kaçın.",
+  "tips": [
+   "Önce zıpla, sonra atıl – atılış sadece havadayken çalışır.",
+   "Yerden ayrılır ayrılmaz atılmak yerine doğru anı bekle.",
+   "Bir seviyeyi iyi bildiğinde speedrun modunu dene.",
+   "Seviyenin düzenini öğren, çünkü engeller hep aynı yerde durur."
+  ],
+  "faq": [
+   {
+    "q": "Mini Dash'te nasıl atılırsın?",
+    "a": "Önce zıpla, sonra havadayken atılma tuşuna bas. Bilgisayarda sola atılmak için X ya da farenin sol tuşunu, sağa atılmak için C ya da farenin sağ tuşunu kullan. Telefonda havadayken sola ya da sağa dokun."
+   },
+   {
+    "q": "Mini Dash'i telefonda oynayabilir miyim?",
+    "a": "Evet, oyunda telefonlar ve tabletler için dokunmatik kontroller var."
+   },
+   {
+    "q": "Speedrun modu var mı?",
+    "a": "Evet, Mini Dash'te ne kadar hızlı bitirebildiğini denemek için bir speedrun modu var."
+   }
+  ]
+ },
+ "classic-snake": {
+  "summary": "Classic Snake eski yılan oyununun fikrini alıp basit tutuyor: küçük noktaları yiyerek büyürsün ve skor tablosundaki en büyük yılan olmaya çalışırsın. Yılanın büyüdükçe bir şeye çarpmadan yönlendirmek zorlaşır, bu yüzden her nokta oyunu biraz daha heyecanlı yapar.\n\nKontroller sadece bir fare tıklaması ya da bir dokunuş, bu yüzden bilgisayarda da telefonda da hemen başlar. Turlar kısa, bu da tekrar denemeyi ve kendi rekorunu geçmeyi kolaylaştırır.",
+  "how_to": "Oynamak ve yılanını yönlendirmek için fareyle tıkla ya da ekrana dokun. Uzamak için küçük noktaları ye. Skor tablosundaki en büyük yılan olmaya çalış.",
+  "tips": [
+   "Güvenle büyümek için önce yakınındaki noktaları ye.",
+   "Yılanın uzadıkça dönmek için kendine yer bırak.",
+   "Uzaktaki bir noktaya gitmeden önce bir yol planla.",
+   "Birkaç tur oyna ve kendi en iyi uzunluğunu geçmeye çalış."
+  ],
+  "faq": [
+   {
+    "q": "Classic Snake nasıl oynanır?",
+    "a": "Yılanını yönlendirmek için tıkla ya da dokun, uzamak için küçük noktaları ye ve skor tablosundaki en büyük yılan olmaya çalış."
+   },
+   {
+    "q": "Classic Snake'i telefonda oynayabilir miyim?",
+    "a": "Evet, oyun bir dokunuşla çalışıyor, bu yüzden telefonlarda ve tabletlerde de çalışır."
+   },
+   {
+    "q": "Classic Snake ücretsiz mi?",
+    "a": "Evet, tarayıcında indirmeden ücretsiz oynayabilirsin."
+   }
+  ]
+ },
+ "checkers": {
+  "summary": "Checkers, her hamlenin önemli olduğu klasik bir strateji oyunu. Taşlarını tahtada ilerletir, rakibinin taşlarının üzerinden atlayarak onları alır ve bir taşı karşı tarafa ulaştırıp taç giydirmeye çalışırsın; taç giyen taş her yöne hareket edebilir. Taş almak zorunlu, yani tuzaklar kurabilir ve rakibini belirli hamleleri yapmaya zorlayabilirsin.\n\nÖğrenmesi kolay, ustalaşması uzun sürer. Oyun ileriyi düşünmeyi ödüllendirir: her hamleden önce, bunun rakibine bir sonraki adımda ne yapma imkânı verdiğine bak. Planlamayı, sabrı ve dikkatli düşünmeyi çalışmak için güzel bir oyun.",
+  "how_to": "Taşlarını tahtada ileri doğru hareket ettir ve rakip taşları üzerlerinden atlayarak al. Taş alma mümkünse, onu yapmak zorundasın. Taşlarından biri tahtanın karşı tarafına ulaştığında taç giyer ve artık her yöne hareket edebilir. Rakibin tüm taşlarını alarak ya da hamle yapamaz bırakarak kazan.",
+  "tips": [
+   "Hamlenin rakibine bir sonraki adımda ne yapma imkânı verdiğini düşün.",
+   "Zorunlu taş alma kuralını tuzak kurmak için kullan.",
+   "Taşlarını birbirini koruyacak şekilde bir arada tut.",
+   "Bir taşa taç giydirmeye çalış, çünkü taç giyen taş çok daha güçlüdür."
+  ],
+  "faq": [
+   {
+    "q": "Checkers'ta taş almak zorunlu mu?",
+    "a": "Evet, bu oyunda taş alma mümkün olduğunda almak zorundasın. Tuzakları ve planlamayı mümkün kılan da bu."
+   },
+   {
+    "q": "Bir taş taç giyince ne olur?",
+    "a": "Tahtanın karşı tarafına ulaşan bir taş taç giyer ve her yöne hareket edebilir."
+   },
+   {
+    "q": "Checkers oynamayı burada öğrenebilir miyim?",
+    "a": "Evet, kurallar basit ve birkaç oyun oynamak öğrenmek için güzel bir yol."
+   }
+  ]
  }
 }

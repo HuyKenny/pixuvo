@@ -5677,5 +5677,149 @@
     "a": "Cross the docks quickly and stay dry."
    }
   ]
+ },
+ "love-tester": {
+  "summary": "Love Tester is a short game for fun: you type in names and it tells you how well they match. It is a joke more than a science, so it is best for laughing with friends, not for taking the result seriously. Each try takes only a few seconds.\n\nThe game is built for touch screens, so it works very well on a phone or tablet. There is nothing to learn and no levels, which makes it an easy pick when you only have a minute and want a smile.",
+  "how_to": "Tap to start, then enter the names and let the game test them. The game shows a result as a love score. Try different names or pairs, for example friends, pets or favorite characters, and compare the scores.",
+  "tips": [
+   "Treat the result as a joke – it cannot really predict anything.",
+   "Try the names of friends, pets or favorite characters and see who gets the highest score.",
+   "Play on a phone or tablet, because the game uses touch.",
+   "Show the score to a friend and let them guess which names you tried."
+  ],
+  "faq": [
+   {
+    "q": "Is Love Tester real?",
+    "a": "No. It is a fun game that makes up a score for the names you enter. It cannot tell anything real about love or friendship."
+   },
+   {
+    "q": "Can I play Love Tester on my phone?",
+    "a": "Yes, the game is made for touch screens, so it works on phones and tablets."
+   },
+   {
+    "q": "Can I test friends or pets instead of a crush?",
+    "a": "Yes, you can enter any names you like, such as friends, siblings, pets or favorite characters."
+   }
+  ]
+ },
+ "tank-trouble": {
+  "summary": "Tank Trouble puts you in a tank in a small maze. You drive around the walls, line up your shot and try to hit the other tank before it hits you. In Solo mode you play against Laika, a master of war, and in multiplayer you can challenge a friend or two on the same device.\n\nThe battlefields are mazes, so the walls matter as much as the guns. You have to think about where the other tank can come from, and a shot can be used cleverly around a corner. Rounds are quick and easy to start again, which makes it a great game to take turns with friends.",
+  "how_to": "In Solo mode, drive your tank through the maze and shoot Laika, your opponent. In multiplayer on one keyboard, player 1 drives with the WASD keys and shoots with Q, player 2 uses the arrow keys and space, and player 3 plays with the mouse. Use the walls for cover and try to hit the other tank first.",
+  "tips": [
+   "Use the walls as cover and peek out only when you are ready to shoot.",
+   "Think about where the other tank can come from before you move around a corner.",
+   "Keep moving, because a tank that stands still is easy to hit.",
+   "Take turns with friends and play several rounds to see who wins the most."
+  ],
+  "faq": [
+   {
+    "q": "Can I play Tank Trouble with a friend?",
+    "a": "Yes. You can play multiplayer with one or two friends on the same device. Player 1 uses WASD and Q, player 2 uses the arrow keys and space, and player 3 can play with the mouse."
+   },
+   {
+    "q": "Can I play Tank Trouble alone?",
+    "a": "Yes. In Solo mode you play against Laika, a master of war."
+   },
+   {
+    "q": "Is Tank Trouble free?",
+    "a": "Yes, you can play it free in your browser with no download."
+   }
+  ]
+ },
+ "gin-rummy": {
+  "summary": "Gin Rummy is a classic card game for two players, and this version lets you play against the computer. You try to collect your cards into sets and runs and get rid of the cards that do not fit. The computer adjusts to your level as you play, so it stays interesting whether you are new or already good.\n\nThe game saves your progress, so you can leave and come back later. It is a calm game of planning and memory – you watch which cards your opponent takes and which they throw away, and that tells you what to keep. It is a good way to learn a real card game that is played all around the world.",
+  "how_to": "Play against the computer. On your turn you take a card and then discard one, trying to build sets of the same number and runs of cards in a row in the same suit. Cards that are not part of a set or run count against you. Watch what your opponent picks up, because it shows what they need.",
+  "tips": [
+   "Watch which cards your opponent picks up and which they discard.",
+   "Keep cards that can make both a set and a run.",
+   "Throw away high cards that do not fit anywhere early.",
+   "Take your time – the game saves, so you can think and come back."
+  ],
+  "faq": [
+   {
+    "q": "How many players does Gin Rummy have?",
+    "a": "Gin Rummy is a game for two players. In this version you play against the computer."
+   },
+   {
+    "q": "Does the game save my progress?",
+    "a": "Yes, the game has auto-save and resume, so you can come back later."
+   },
+   {
+    "q": "Is the computer opponent hard?",
+    "a": "The computer adjusts to your playing level, so it stays challenging without being unfair."
+   }
+  ]
+ },
+ "mini-dash": {
+  "summary": "Mini Dash is a retro-style platform game where you play a small blob. Its special skill is the air dash: while you are in the air you can dash left or right to avoid obstacles and reach coins. Learning when to jump and when to dash is the whole game, and it is easy to start but takes practice to master.\n\nYou collect the coins in each level, and there is also a speedrun mode to test how fast you can finish. It works with a mouse on a computer and with touch on a phone or tablet.",
+  "how_to": "On a computer, press X or the left mouse button to jump, and C or the right mouse button to jump too. In the air, press X or the left mouse button to dash left, and C or the right mouse button to dash right. On a phone, touch the left or right side to jump, then touch left or right in the air to dash that way. Collect the coins and avoid obstacles.",
+  "tips": [
+   "Jump first, then dash – the dash only works in the air.",
+   "Wait for the right moment instead of dashing as soon as you leave the ground.",
+   "Try the speedrun mode when you know a level well.",
+   "Learn the layout of a level, because obstacles stay in the same place."
+  ],
+  "faq": [
+   {
+    "q": "How do you dash in Mini Dash?",
+    "a": "Jump first, then press the dash button while you are in the air. On a computer, use X or the left mouse button to dash left and C or the right mouse button to dash right. On a phone, touch left or right in the air."
+   },
+   {
+    "q": "Can I play Mini Dash on my phone?",
+    "a": "Yes, the game has touch controls for phones and tablets."
+   },
+   {
+    "q": "Is there a speedrun mode?",
+    "a": "Yes, Mini Dash has a speedrun mode to test how quickly you can finish."
+   }
+  ]
+ },
+ "classic-snake": {
+  "summary": "Classic Snake takes the idea of the old snake game and keeps it simple: you eat small dots to become bigger, and you try to build the biggest snake on the leaderboard. As your snake grows it is harder to steer without bumping into things, so every dot makes the game a little more exciting.\n\nThe controls are just a mouse click or a tap, so it starts immediately on a computer or a phone. Rounds are short, which makes it easy to try again and beat your own record.",
+  "how_to": "Click with the mouse or tap the screen to play and steer your snake. Eat the small dots to grow longer. Try to become the biggest snake on the leaderboard.",
+  "tips": [
+   "Eat dots near you first so you grow safely.",
+   "Leave yourself space to turn as your snake gets longer.",
+   "Plan a path before you go for a dot far away.",
+   "Play a few rounds and try to beat your own best length."
+  ],
+  "faq": [
+   {
+    "q": "How do you play Classic Snake?",
+    "a": "Click or tap to steer your snake, eat the small dots to grow longer and try to get the biggest snake on the leaderboard."
+   },
+   {
+    "q": "Can I play Classic Snake on my phone?",
+    "a": "Yes, the game works with a tap, so it works on phones and tablets."
+   },
+   {
+    "q": "Is Classic Snake free?",
+    "a": "Yes, you can play it free in your browser with no download."
+   }
+  ]
+ },
+ "checkers": {
+  "summary": "Checkers is a classic strategy game, and every move counts. You move your pieces across the board, capture your opponent's pieces by jumping over them and try to get a piece to the far side so it is crowned and can move in any direction. Captures are mandatory, which means you can plan traps and force your opponent into moves.\n\nIt is easy to learn and takes a long time to master. The game rewards thinking ahead: before each move, look at what it allows your opponent to do next. It is a good game for practising planning, patience and careful thinking.",
+  "how_to": "Move your pieces forward across the board and capture opponent pieces by jumping over them. If a capture is possible, you must make it. When one of your pieces reaches the far side of the board it is crowned and can then move in any direction. Win by capturing all the opponent's pieces or leaving them with no moves.",
+  "tips": [
+   "Think about what your move lets your opponent do next.",
+   "Use the mandatory capture rule to set traps.",
+   "Keep your pieces together so they protect each other.",
+   "Try to crown a piece, because a crowned piece is much more powerful."
+  ],
+  "faq": [
+   {
+    "q": "Is capturing mandatory in Checkers?",
+    "a": "Yes, in this game you must capture when a capture is possible. This is what makes traps and planning possible."
+   },
+   {
+    "q": "What happens when a piece is crowned?",
+    "a": "A piece that reaches the far side of the board is crowned and can move in any direction."
+   },
+   {
+    "q": "Can I learn Checkers here?",
+    "a": "Yes, the rules are simple, and playing a few games is a good way to learn."
+   }
+  ]
  }
 }

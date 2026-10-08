@@ -5677,5 +5677,149 @@
     "a": "Lewati dermaga dengan cepat dan jangan sampai tercebur."
    }
   ]
+ },
+ "love-tester": {
+  "summary": "Love Tester adalah game singkat untuk seru-seruan: kamu mengetik nama-nama, lalu game memberi tahu seberapa cocok nama-nama itu. Ini lebih mirip lelucon daripada sains, jadi paling cocok untuk tertawa bareng teman, bukan untuk menanggapi hasilnya dengan serius. Setiap percobaan hanya butuh beberapa detik.\n\nGame ini dibuat untuk layar sentuh, jadi berjalan sangat baik di ponsel atau tablet. Tidak ada yang perlu dipelajari dan tidak ada level, jadi gampang dipilih kalau kamu cuma punya satu menit dan ingin tersenyum.",
+  "how_to": "Ketuk untuk mulai, lalu masukkan nama-nama dan biarkan game mengujinya. Game menampilkan hasil berupa skor cinta. Coba nama atau pasangan yang berbeda, misalnya teman, hewan peliharaan, atau karakter favorit, lalu bandingkan skornya.",
+  "tips": [
+   "Anggap hasilnya lelucon saja – game ini tidak bisa benar-benar meramal apa pun.",
+   "Coba nama teman, hewan peliharaan, atau karakter favorit dan lihat siapa yang skornya paling tinggi.",
+   "Mainkan di ponsel atau tablet, karena game ini memakai sentuhan.",
+   "Tunjukkan skornya ke temanmu dan biarkan dia menebak nama apa saja yang kamu coba."
+  ],
+  "faq": [
+   {
+    "q": "Apakah Love Tester itu asli?",
+    "a": "Tidak. Ini game seru-seruan yang mengarang skor untuk nama yang kamu masukkan. Game ini tidak bisa mengatakan hal nyata tentang cinta atau persahabatan."
+   },
+   {
+    "q": "Bisakah aku main Love Tester di ponsel?",
+    "a": "Bisa, game ini dibuat untuk layar sentuh, jadi bisa dimainkan di ponsel dan tablet."
+   },
+   {
+    "q": "Bisakah aku menguji teman atau hewan peliharaan, bukan gebetan?",
+    "a": "Bisa, kamu boleh memasukkan nama apa saja, seperti teman, saudara, hewan peliharaan, atau karakter favorit."
+   }
+  ]
+ },
+ "tank-trouble": {
+  "summary": "Tank Trouble menempatkanmu di dalam tank di sebuah labirin kecil. Kamu berkeliling di antara dinding, membidik, dan berusaha mengenai tank lawan sebelum dia mengenaimu. Di mode Solo kamu melawan Laika, sang master perang, dan di multiplayer kamu bisa menantang satu atau dua teman di perangkat yang sama.\n\nMedan pertempurannya berupa labirin, jadi dinding sama pentingnya dengan meriam. Kamu harus memikirkan dari mana tank lawan bisa muncul, dan tembakan bisa dipakai dengan cerdik di tikungan. Setiap ronde cepat dan mudah diulang, jadi game ini seru untuk main bergiliran dengan teman.",
+  "how_to": "Di mode Solo, kemudikan tankmu melewati labirin dan tembak Laika, lawanmu. Di multiplayer dengan satu keyboard, pemain 1 mengemudi dengan tombol WASD dan menembak dengan Q, pemain 2 memakai tombol panah dan spasi, dan pemain 3 bermain dengan mouse. Gunakan dinding sebagai perlindungan dan berusahalah mengenai tank lawan lebih dulu.",
+  "tips": [
+   "Gunakan dinding sebagai perlindungan dan keluarlah hanya saat kamu siap menembak.",
+   "Pikirkan dari mana tank lawan bisa datang sebelum berbelok di tikungan.",
+   "Terus bergerak, karena tank yang diam mudah ditembak.",
+   "Bergiliranlah dengan teman dan mainkan beberapa ronde untuk melihat siapa yang paling sering menang."
+  ],
+  "faq": [
+   {
+    "q": "Bisakah aku main Tank Trouble dengan teman?",
+    "a": "Bisa. Kamu bisa main multiplayer dengan satu atau dua teman di perangkat yang sama. Pemain 1 memakai WASD dan Q, pemain 2 memakai tombol panah dan spasi, dan pemain 3 bisa bermain dengan mouse."
+   },
+   {
+    "q": "Bisakah aku main Tank Trouble sendiri?",
+    "a": "Bisa. Di mode Solo kamu melawan Laika, sang master perang."
+   },
+   {
+    "q": "Apakah Tank Trouble gratis?",
+    "a": "Ya, kamu bisa memainkannya gratis di browser tanpa download."
+   }
+  ]
+ },
+ "gin-rummy": {
+  "summary": "Gin Rummy adalah game kartu klasik untuk dua pemain, dan di versi ini kamu bermain melawan komputer. Kamu berusaha mengumpulkan kartu menjadi set dan urutan, lalu membuang kartu yang tidak cocok. Komputer menyesuaikan diri dengan levelmu selama bermain, jadi tetap menarik baik kamu pemula maupun sudah jago.\n\nGame ini menyimpan progresmu, jadi kamu bisa keluar dan kembali nanti. Ini game santai yang butuh perencanaan dan ingatan – kamu memperhatikan kartu mana yang diambil lawan dan mana yang dibuangnya, dan itu memberi tahu apa yang harus kamu simpan. Ini cara yang bagus untuk belajar game kartu sungguhan yang dimainkan di seluruh dunia.",
+  "how_to": "Mainkan melawan komputer. Di gilirannya kamu mengambil satu kartu lalu membuang satu kartu, berusaha membentuk set dari angka yang sama dan urutan kartu berurutan dengan jenis yang sama. Kartu yang bukan bagian dari set atau urutan dihitung merugikanmu. Perhatikan apa yang diambil lawanmu, karena itu menunjukkan apa yang dia butuhkan.",
+  "tips": [
+   "Perhatikan kartu mana yang diambil lawan dan mana yang dibuangnya.",
+   "Simpan kartu yang bisa membentuk set sekaligus urutan.",
+   "Buang kartu bernilai tinggi yang tidak cocok di mana pun sejak awal.",
+   "Santai saja – game ini menyimpan progres, jadi kamu bisa berpikir dan kembali nanti."
+  ],
+  "faq": [
+   {
+    "q": "Berapa pemain dalam Gin Rummy?",
+    "a": "Gin Rummy adalah game untuk dua pemain. Di versi ini kamu bermain melawan komputer."
+   },
+   {
+    "q": "Apakah game ini menyimpan progresku?",
+    "a": "Ya, game ini punya simpan otomatis dan lanjut main, jadi kamu bisa kembali nanti."
+   },
+   {
+    "q": "Apakah lawan komputernya sulit?",
+    "a": "Komputer menyesuaikan diri dengan level mainmu, jadi tetap menantang tanpa curang."
+   }
+  ]
+ },
+ "mini-dash": {
+  "summary": "Mini Dash adalah game platformer bergaya retro di mana kamu memainkan gumpalan kecil. Kemampuan khususnya adalah dash di udara: saat berada di udara, kamu bisa dash ke kiri atau kanan untuk menghindari rintangan dan meraih koin. Belajar kapan harus melompat dan kapan harus dash adalah inti game ini, mudah dimulai tapi butuh latihan untuk dikuasai.\n\nKamu mengumpulkan koin di setiap level, dan ada juga mode speedrun untuk menguji seberapa cepat kamu bisa menamatkannya. Game ini bisa dimainkan dengan mouse di komputer dan dengan sentuhan di ponsel atau tablet.",
+  "how_to": "Di komputer, tekan X atau tombol kiri mouse untuk melompat, dan C atau tombol kanan mouse juga untuk melompat. Di udara, tekan X atau tombol kiri mouse untuk dash ke kiri, dan C atau tombol kanan mouse untuk dash ke kanan. Di ponsel, sentuh sisi kiri atau kanan untuk melompat, lalu sentuh kiri atau kanan di udara untuk dash ke arah itu. Kumpulkan koin dan hindari rintangan.",
+  "tips": [
+   "Lompat dulu, baru dash – dash hanya bisa dilakukan di udara.",
+   "Tunggu saat yang tepat, jangan langsung dash begitu kakimu lepas dari tanah.",
+   "Coba mode speedrun kalau kamu sudah hafal sebuah level.",
+   "Pelajari tata letak level, karena rintangan selalu ada di tempat yang sama."
+  ],
+  "faq": [
+   {
+    "q": "Bagaimana cara dash di Mini Dash?",
+    "a": "Lompat dulu, lalu tekan tombol dash saat berada di udara. Di komputer, pakai X atau tombol kiri mouse untuk dash ke kiri dan C atau tombol kanan mouse untuk dash ke kanan. Di ponsel, sentuh kiri atau kanan di udara."
+   },
+   {
+    "q": "Bisakah aku main Mini Dash di ponsel?",
+    "a": "Bisa, game ini punya kontrol sentuh untuk ponsel dan tablet."
+   },
+   {
+    "q": "Apakah ada mode speedrun?",
+    "a": "Ada, Mini Dash punya mode speedrun untuk menguji seberapa cepat kamu bisa menamatkannya."
+   }
+  ]
+ },
+ "classic-snake": {
+  "summary": "Classic Snake mengambil ide game ular zaman dulu dan membuatnya tetap sederhana: kamu memakan titik-titik kecil agar makin besar, dan berusaha membangun ular terbesar di papan peringkat. Makin panjang ularmu, makin sulit mengarahkannya tanpa menabrak, jadi setiap titik membuat game ini sedikit lebih seru.\n\nKontrolnya hanya klik mouse atau ketukan, jadi langsung bisa dimainkan di komputer maupun ponsel. Ronde-nya singkat, jadi mudah dicoba lagi dan memecahkan rekormu sendiri.",
+  "how_to": "Klik dengan mouse atau ketuk layar untuk bermain dan mengarahkan ularmu. Makan titik-titik kecil agar makin panjang. Berusahalah menjadi ular terbesar di papan peringkat.",
+  "tips": [
+   "Makan titik di dekatmu dulu supaya tumbuh dengan aman.",
+   "Sisakan ruang untuk berbelok saat ularmu makin panjang.",
+   "Rencanakan jalur sebelum mengejar titik yang jauh.",
+   "Mainkan beberapa ronde dan coba pecahkan panjang terbaikmu sendiri."
+  ],
+  "faq": [
+   {
+    "q": "Bagaimana cara main Classic Snake?",
+    "a": "Klik atau ketuk untuk mengarahkan ularmu, makan titik-titik kecil agar makin panjang, dan berusahalah menjadi ular terbesar di papan peringkat."
+   },
+   {
+    "q": "Bisakah aku main Classic Snake di ponsel?",
+    "a": "Bisa, game ini bisa dimainkan dengan ketukan, jadi berjalan di ponsel dan tablet."
+   },
+   {
+    "q": "Apakah Classic Snake gratis?",
+    "a": "Ya, kamu bisa memainkannya gratis di browser tanpa download."
+   }
+  ]
+ },
+ "checkers": {
+  "summary": "Checkers adalah game strategi klasik, dan setiap langkah berarti. Kamu menggerakkan bidakmu melintasi papan, menangkap bidak lawan dengan melompatinya, dan berusaha membawa satu bidak ke sisi seberang agar dimahkotai dan bisa bergerak ke segala arah. Menangkap itu wajib, artinya kamu bisa memasang jebakan dan memaksa lawan melakukan langkah tertentu.\n\nMudah dipelajari tapi butuh waktu lama untuk dikuasai. Game ini menghargai kemampuan berpikir ke depan: sebelum setiap langkah, lihat apa yang akan memungkinkan lawanmu lakukan berikutnya. Ini game yang bagus untuk melatih perencanaan, kesabaran, dan berpikir cermat.",
+  "how_to": "Gerakkan bidakmu maju melintasi papan dan tangkap bidak lawan dengan melompatinya. Jika penangkapan memungkinkan, kamu wajib melakukannya. Saat salah satu bidakmu mencapai sisi seberang papan, bidak itu dimahkotai dan setelah itu bisa bergerak ke segala arah. Menanglah dengan menangkap semua bidak lawan atau membuatnya tidak punya langkah.",
+  "tips": [
+   "Pikirkan apa yang akan memungkinkan lawan lakukan berikutnya setelah langkahmu.",
+   "Manfaatkan aturan wajib menangkap untuk memasang jebakan.",
+   "Jaga bidakmu tetap berdekatan agar saling melindungi.",
+   "Usahakan memahkotai satu bidak, karena bidak bermahkota jauh lebih kuat."
+  ],
+  "faq": [
+   {
+    "q": "Apakah menangkap wajib di Checkers?",
+    "a": "Ya, di game ini kamu wajib menangkap kalau penangkapan memungkinkan. Inilah yang membuat jebakan dan perencanaan jadi mungkin."
+   },
+   {
+    "q": "Apa yang terjadi saat bidak dimahkotai?",
+    "a": "Bidak yang mencapai sisi seberang papan dimahkotai dan bisa bergerak ke segala arah."
+   },
+   {
+    "q": "Bisakah aku belajar Checkers di sini?",
+    "a": "Bisa, aturannya sederhana, dan memainkan beberapa pertandingan adalah cara yang bagus untuk belajar."
+   }
+  ]
  }
 }

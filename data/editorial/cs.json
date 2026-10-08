@@ -5677,5 +5677,149 @@
     "a": "Rychle přejet mola a nezmoknout."
    }
   ]
+ },
+ "love-tester": {
+  "summary": "Love Tester je krátká hra pro zábavu: zadáš jména a hra ti řekne, jak k sobě pasují. Je to spíš vtip než věda, takže se hodí na smích s kamarády, ne na brát výsledek vážně. Jeden pokus zabere jen pár vteřin.\n\nHra je stavěná pro dotykové displeje, takže skvěle funguje na telefonu nebo tabletu. Není co se učit a nejsou tu žádné levely, takže je to snadná volba, když máš jen minutu a chceš se usmát.",
+  "how_to": "Klepni na start, pak zadej jména a nech hru, ať je otestuje. Hra ukáže výsledek jako skóre lásky. Zkoušej různá jména nebo dvojice, třeba kamarády, mazlíčky nebo oblíbené postavy, a porovnávej skóre.",
+  "tips": [
+   "Ber výsledek jako vtip – opravdu nic předpovědět nedokáže.",
+   "Zkus jména kamarádů, mazlíčků nebo oblíbených postav a zjisti, kdo dostane nejvyšší skóre.",
+   "Hraj na telefonu nebo tabletu, protože hra používá dotyk.",
+   "Ukaž skóre kamarádovi a nech ho hádat, jaká jména jsi zkoušel(a)."
+  ],
+  "faq": [
+   {
+    "q": "Je Love Tester doopravdy?",
+    "a": "Ne. Je to zábavná hra, která si k zadaným jménům vymyslí skóre. O lásce ani přátelství nemůže říct nic skutečného."
+   },
+   {
+    "q": "Dá se Love Tester hrát na mobilu?",
+    "a": "Ano, hra je stavěná pro dotykové displeje, takže funguje na telefonech i tabletech."
+   },
+   {
+    "q": "Můžu testovat kamarády nebo mazlíčky, ne jen koho se mi líbí?",
+    "a": "Ano, zadat můžeš libovolná jména, třeba kamarády, sourozence, mazlíčky nebo oblíbené postavy."
+   }
+  ]
+ },
+ "tank-trouble": {
+  "summary": "V Tank Trouble sedíš v tanku v malém bludišti. Objíždíš zdi, zaměřuješ a snažíš se trefit druhý tank dřív, než trefí on tebe. V režimu Solo hraješ proti Laice, mistryni války, a v multiplayeru můžeš vyzvat kamaráda nebo dva na jednom zařízení.\n\nBojiště jsou bludiště, takže zdi jsou stejně důležité jako děla. Musíš přemýšlet, odkud může druhý tank přijet, a výstřel se dá chytře využít i za rohem. Kola jsou rychlá a snadno se začínají znovu, takže je to skvělá hra na střídání s kamarády.",
+  "how_to": "V režimu Solo projeď tankem bludištěm a střílej na Laiku, svou soupeřku. V multiplayeru na jedné klávesnici hráč 1 řídí klávesami WASD a střílí na Q, hráč 2 používá šipky a mezerník a hráč 3 hraje myší. Využívej zdi jako kryt a snaž se trefit druhý tank první.",
+  "tips": [
+   "Používej zdi jako kryt a vykukuj, až když jsi připravený(á) vystřelit.",
+   "Než zajedeš za roh, přemýšlej, odkud může druhý tank přijet.",
+   "Pořád se hýbej, protože stojící tank se snadno trefí.",
+   "Střídejte se s kamarády a hrajte víc kol, ať zjistíte, kdo vyhraje nejvíckrát."
+  ],
+  "faq": [
+   {
+    "q": "Dá se Tank Trouble hrát s kamarádem?",
+    "a": "Ano. Multiplayer můžeš hrát s jedním nebo dvěma kamarády na jednom zařízení. Hráč 1 používá WASD a Q, hráč 2 šipky a mezerník a hráč 3 může hrát myší."
+   },
+   {
+    "q": "Dá se Tank Trouble hrát sám?",
+    "a": "Ano. V režimu Solo hraješ proti Laice, mistryni války."
+   },
+   {
+    "q": "Je Tank Trouble zdarma?",
+    "a": "Ano, hraješ ho zdarma v prohlížeči a nic nestahuješ."
+   }
+  ]
+ },
+ "gin-rummy": {
+  "summary": "Gin Rummy je klasická karetní hra pro dva hráče a tahle verze ti umožňuje hrát proti počítači. Snažíš se sbírat karty do skupin a řad a zbavovat se karet, které se nehodí. Počítač se při hře přizpůsobuje tvé úrovni, takže je hra zajímavá, ať jsi začátečník, nebo už dobrý hráč.\n\nHra ukládá tvůj postup, takže můžeš odejít a vrátit se později. Je to klidná hra plánování a paměti – sleduješ, které karty soupeř bere a které zahazuje, a podle toho poznáš, co si nechat. Je to dobrý způsob, jak se naučit pravou karetní hru, která se hraje po celém světě.",
+  "how_to": "Hraj proti počítači. Ve svém tahu si vezmeš kartu a pak jednu odhodíš, přičemž se snažíš skládat skupiny stejných čísel a řady karet po sobě ve stejné barvě. Karty, které nejsou součástí skupiny ani řady, se ti počítají v neprospěch. Sleduj, co soupeř bere, protože to prozrazuje, co potřebuje.",
+  "tips": [
+   "Sleduj, které karty soupeř bere a které odhazuje.",
+   "Nech si karty, ze kterých jde složit skupinu i řada.",
+   "Vysoké karty, které nikam nepasují, zahoď brzy.",
+   "Nespěchej – hra se ukládá, takže můžeš přemýšlet a vrátit se později."
+  ],
+  "faq": [
+   {
+    "q": "Kolik hráčů má Gin Rummy?",
+    "a": "Gin Rummy je hra pro dva hráče. V této verzi hraješ proti počítači."
+   },
+   {
+    "q": "Ukládá hra můj postup?",
+    "a": "Ano, hra má automatické ukládání a pokračování, takže se můžeš vrátit později."
+   },
+   {
+    "q": "Je počítačový soupeř těžký?",
+    "a": "Počítač se přizpůsobuje tvé úrovni hry, takže je výzva, ale není nefér."
+   }
+  ]
+ },
+ "mini-dash": {
+  "summary": "Mini Dash je plošinovka v retro stylu, ve které hraješ malou kapku. Její zvláštní schopností je vzdušný dash: když jsi ve vzduchu, můžeš se rychle vrhnout doleva nebo doprava, vyhnout se překážkám a získat mince. Celá hra spočívá v tom, kdy skočit a kdy použít dash – snadno se začíná, ale chce to trénink.\n\nV každém levelu sbíráš mince a je tu i režim speedrun, ve kterém zjistíš, jak rychle dokážeš level dokončit. Hraje se myší na počítači a dotykem na telefonu nebo tabletu.",
+  "how_to": "Na počítači skáčeš klávesou X nebo levým tlačítkem myši a skočit můžeš i klávesou C nebo pravým tlačítkem myši. Ve vzduchu stiskem X nebo levého tlačítka myši uděláš dash doleva a stiskem C nebo pravého tlačítka myši dash doprava. Na telefonu skočíš dotykem na levou nebo pravou stranu a pak dotykem vlevo nebo vpravo ve vzduchu uděláš dash tím směrem. Sbírej mince a vyhýbej se překážkám.",
+  "tips": [
+   "Nejdřív skoč, pak použij dash – dash funguje jen ve vzduchu.",
+   "Počkej na správný okamžik a nedashuj hned, jak opustíš zem.",
+   "Až level dobře znáš, zkus režim speedrun.",
+   "Nauč se rozložení levelu, protože překážky zůstávají vždy na stejném místě."
+  ],
+  "faq": [
+   {
+    "q": "Jak se v Mini Dash dělá dash?",
+    "a": "Nejdřív skoč a pak ve vzduchu stiskni tlačítko dashe. Na počítači použij X nebo levé tlačítko myši pro dash doleva a C nebo pravé tlačítko myši pro dash doprava. Na telefonu se ve vzduchu dotkni levé nebo pravé strany."
+   },
+   {
+    "q": "Dá se Mini Dash hrát na mobilu?",
+    "a": "Ano, hra má dotykové ovládání pro telefony i tablety."
+   },
+   {
+    "q": "Je tu režim speedrun?",
+    "a": "Ano, Mini Dash má režim speedrun, ve kterém zjistíš, jak rychle dokážeš hru dokončit."
+   }
+  ]
+ },
+ "classic-snake": {
+  "summary": "Classic Snake vychází z nápadu staré hry s hadem a drží ho jednoduchý: jíš malé tečky, aby ses zvětšil(a), a snažíš se vytvořit největšího hada v žebříčku. Jak had roste, hůř se řídí, aby do něčeho nenarazil, takže každá tečka dělá hru o kousek napínavější.\n\nOvládání je jen kliknutí myší nebo klepnutí, takže se hra spustí hned na počítači i na telefonu. Kola jsou krátká, takže si snadno zkusíš znovu a překonáš vlastní rekord.",
+  "how_to": "Klikni myší nebo klepni na obrazovku, začni hrát a řiď svého hada. Jez malé tečky, aby ses prodlužoval. Snaž se být největším hadem v žebříčku.",
+  "tips": [
+   "Nejdřív jez tečky blízko sebe, ať rosteš bezpečně.",
+   "Nech si místo na otáčení, jak bude had delší.",
+   "Naplánuj si cestu, než se vydáš pro tečku, která je daleko.",
+   "Zahraj si několik kol a zkus překonat svou nejlepší délku."
+  ],
+  "faq": [
+   {
+    "q": "Jak se hraje Classic Snake?",
+    "a": "Kliknutím nebo klepnutím řídíš hada, jíš malé tečky, abys byl delší, a snažíš se získat největšího hada v žebříčku."
+   },
+   {
+    "q": "Dá se Classic Snake hrát na mobilu?",
+    "a": "Ano, hra funguje na klepnutí, takže jde hrát na telefonech i tabletech."
+   },
+   {
+    "q": "Je Classic Snake zdarma?",
+    "a": "Ano, hraješ ho zdarma v prohlížeči a nic nestahuješ."
+   }
+  ]
+ },
+ "checkers": {
+  "summary": "Checkers je klasická strategická hra, ve které záleží na každém tahu. Posouváš své kameny po desce, bereš soupeřovy kameny přeskočením a snažíš se dostat kámen na druhou stranu, aby se stal dámou a mohl se pohybovat kterýmkoli směrem. Braní je povinné, takže můžeš plánovat pasti a nutit soupeře do určitých tahů.\n\nNaučit se ji je snadné, zvládnout ji trvá dlouho. Hra odměňuje přemýšlení dopředu: před každým tahem se podívej, co soupeři umožní udělat dál. Je to dobrá hra na trénink plánování, trpělivosti a pečlivého přemýšlení.",
+  "how_to": "Posouvej své kameny vpřed po desce a soupeřovy kameny bereš přeskočením. Pokud je braní možné, musíš ho provést. Když se jeden z tvých kamenů dostane na druhou stranu desky, stane se dámou a pak se může pohybovat kterýmkoli směrem. Vyhraješ, když sebereš všechny soupeřovy kameny nebo mu nezůstane žádný tah.",
+  "tips": [
+   "Přemýšlej, co soupeři tvůj tah umožní udělat dál.",
+   "Využij povinné braní k chystání pastí.",
+   "Drž své kameny pohromadě, ať se navzájem chrání.",
+   "Snaž se získat dámu, protože dáma je mnohem silnější."
+  ],
+  "faq": [
+   {
+    "q": "Je v Checkers braní povinné?",
+    "a": "Ano, v této hře musíš brát, když je braní možné. Právě díky tomu jsou možné pasti a plánování."
+   },
+   {
+    "q": "Co se stane, když se kámen stane dámou?",
+    "a": "Kámen, který se dostane na druhou stranu desky, se stane dámou a může se pohybovat kterýmkoli směrem."
+   },
+   {
+    "q": "Můžu se tu Checkers naučit?",
+    "a": "Ano, pravidla jsou jednoduchá a zahrát si pár her je dobrý způsob, jak se je naučit."
+   }
+  ]
  }
 }
