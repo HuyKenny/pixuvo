@@ -2203,6 +2203,153 @@
      "a": "Có, một số game có chế độ nhiều người chơi, như Ninja Parkour Multiplayer và Obby Modes! Online Mini-Games. Số người chơi được ghi trên trang game."
     }
    ]
+  },
+  "dinosaur": {
+   "intro": "Gừ gừ! Khủng long là nhân vật được các bé yêu thích từ lâu, và Pixuvo có hơn 200 game khủng long miễn phí để bạn chơi ngay trên trình duyệt. Chúng không giống nhau hoàn toàn – bạn có thể chạy, ấp trứng, tô màu, xây dựng hay chiến đấu.\n\nNhóm lớn nhất là game chạy. Trong Run Dino Run, Dyno Run, Running Dino và Cute Dinosaur Run, bạn điều khiển một chú khủng long băng qua thế giới tiền sử, nhảy qua chướng ngại vật và cố gắng đi xa hơn sau mỗi lượt chơi. Nếu thích chăm sóc các sinh vật nhỏ, Mini Dino Clicker cho bạn chạm để ấp khủng long và cho chúng ăn trái cây, còn Dinosaur World là game quản lý một trang trại động vật thời tiền sử. Các bé nhỏ hơn có thể tô màu khủng long trong Coloring Dinosaurs for Kids. Dino Squad Battle Mission và Stickman. Dinosaur arena là game chiến đấu, nên phù hợp hơn với các bé lớn.\n\nCách điều khiển thường rất đơn giản: một lần chạm hoặc một phím để nhảy. Nếu bị kẹt ở một game chạy vô tận, hãy để ý khoảng cách giữa các chướng ngại vật và nhảy sớm hơn bạn nghĩ một chút. Thêm game chạy có ở danh mục Game chạy vô tận, và thêm game về sinh vật có ở danh mục Động vật.",
+   "faq": [
+    {
+     "q": "Game khủng long là gì?",
+     "a": "Game khủng long là game có nhân vật chính hoặc chủ đề chính là khủng long. Chúng gồm game chạy, game bấm chuột, game chăm sóc, game tô màu và game chiến đấu."
+    },
+    {
+     "q": "Có game khủng long cho trẻ nhỏ không?",
+     "a": "Có. Coloring Dinosaurs for Kids và các game chăm sóc khủng long là bước khởi đầu nhẹ nhàng. Game chiến đấu như Dino Squad Battle Mission phù hợp hơn với các bé lớn."
+    },
+    {
+     "q": "Có chơi game khủng long trên điện thoại được không?",
+     "a": "Nhiều game chơi được trên điện thoại và máy tính bảng, không chỉ trên máy tính. Trang của mỗi game cho biết game hỗ trợ thiết bị nào."
+    },
+    {
+     "q": "Game khủng long chạy nào hay nhất?",
+     "a": "Hãy thử Run Dino Run, Dyno Run và Cute Dinosaur Run. Ý tưởng giống nhau nhưng khác về tốc độ và hình ảnh, nên game hay nhất là game bạn thích nhất."
+    }
+   ]
+  },
+  "shark": {
+   "intro": "Một chiếc vây rẽ nước, và đàn cá nhỏ vội vàng bơi đi. Game cá mập cho bạn làm kẻ đi săn, và Pixuvo có khoảng 60 game cá mập miễn phí để chơi ngay trên trình duyệt.\n\nTrong hầu hết các game, bạn là một chú cá mập lớn lên nhờ ăn những con cá nhỏ hơn. Big Shark, Shark Adventure và Gnam Gnam Shark là về việc bơi khắp biển, kiếm thức ăn và sống sót. Trong Shark Attack và Shark io, bạn chơi online và cố gắng trở thành cá mập lớn nhất máy chủ. Fish Rescue Go - Shark Attack đảo ngược vai trò: bạn điều khiển một chiếc drone để cứu cá khỏi cá mập. Shark Escape là về việc trốn khỏi chúng, Mad Shark là game bắn súng arcade, còn Shark Frenzy là game xếp hình vuốt-và-ghép với hải sản.\n\nMẹo cho các game ăn để lớn: tránh xa những con cá mập lớn hơn bạn, và ăn những con cá chỉ nhỏ hơn bạn một chút để lớn lên an toàn. Các game online chơi tốt nhất bằng chuột, còn nhiều game khác chỉ cần chạm. Thêm game dưới nước có ở danh mục Động vật.",
+   "faq": [
+    {
+     "q": "Game cá mập là gì?",
+     "a": "Game cá mập là game có cá mập là nhân vật chính hoặc mối nguy chính. Nhiều game là về bơi và ăn để lớn lên, số khác là game giải đố hoặc game giải cứu."
+    },
+    {
+     "q": "Game cá mập có an toàn cho trẻ em không?",
+     "a": "Hầu hết có phong cách hoạt hình và xoay quanh việc ăn cá. Một vài game, như game săn bắn, dành cho các bé lớn hơn, nên hãy xem trang của game."
+    },
+    {
+     "q": "Có chơi game cá mập online với người khác được không?",
+     "a": "Được, các game như Shark Attack và Shark io là game .io online, nơi bạn thi đấu với những người chơi khác trên cùng một máy chủ."
+    },
+    {
+     "q": "Làm sao để lớn hơn trong game cá mập?",
+     "a": "Hãy ăn những con cá nhỏ hơn bạn và tránh cá mập lớn hơn. Mỗi bữa ăn giúp bạn lớn lên, và cá mập càng lớn thì càng ăn được nhiều."
+    }
+   ]
+  },
+  "bowling": {
+   "intro": "Strike! Game bowling rất dễ hiểu: lăn quả bóng xuống đường và hạ càng nhiều pin càng tốt. Pixuvo có hơn 30 game bowling miễn phí để chơi trên trình duyệt, từ bản cổ điển đơn giản đến phiên bản 3D và arcade.\n\nClassic Bowling và Bowling là kiểu thẳng thắn – ngắm, chỉnh lực và lăn bóng. Bowling Hit 3D, Beach Bowling 3D và 3D Bowling mang đến đường bowling 3D, Super Bowling Mania hướng tới trải nghiệm bowling chân thực, còn Bowling Ball Striker dùng cách điều khiển cảm ứng đơn giản. Bowling Hero Multiplayer cho bạn chơi với người khác, Kitten Bowling có những chú mèo dễ thương, còn Bowling Pipe và Bowling Boom biến bowling thành những thử thách arcade.\n\nĐể chơi giỏi hơn, hãy tìm góc ném hợp với lượt đầu tiên của bạn rồi lặp lại nó. Quả bóng hơi xoáy thường trúng pin gọn hơn so với cú lăn thẳng thật nhanh. Bowling là trò hay để thay phiên nhau chơi với bạn bè và gia đình. Thêm game thể thao có ở danh mục Game thể thao.",
+   "faq": [
+    {
+     "q": "Chơi bowling online như thế nào?",
+     "a": "Bạn ngắm quả bóng, chỉnh lực và lăn nó xuống đường. Mục tiêu là hạ cả mười pin với ít lần lăn nhất có thể."
+    },
+    {
+     "q": "Strike trong bowling là gì?",
+     "a": "Strike là khi bạn hạ cả mười pin chỉ với lần lăn đầu tiên của một lượt. Đó là kết quả điểm cao nhất."
+    },
+    {
+     "q": "Có chơi bowling với bạn được không?",
+     "a": "Được, một số game như Bowling Hero Multiplayer có chế độ nhiều người chơi, và nhiều game cho hai người thay phiên nhau trên cùng một thiết bị."
+    },
+    {
+     "q": "Có game bowling 3D không?",
+     "a": "Có, Beach Bowling 3D, Bowling Hit 3D và 3D Bowling dùng đường bowling 3D."
+    }
+   ]
+  },
+  "spot-the-difference": {
+   "intro": "Hai bức tranh trông giống hệt nhau – nhưng thật ra không phải vậy. Game tìm điểm khác biệt yêu cầu bạn tìm ra từng thay đổi nhỏ, và đó là cách nhẹ nhàng để rèn luyện đôi mắt. Pixuvo có hơn 250 game miễn phí để chơi trên trình duyệt.\n\nÝ tưởng luôn như nhau: nhấp hoặc chạm vào từng điểm khác biệt bạn tìm thấy và theo dõi bộ đếm. Nhiều game có đồng hồ bấm giờ, và nút gợi ý sẽ giúp khi bạn bí. Các khung cảnh rất đa dạng. The Kitchen - Spot the differences, Eye Spy Difference The Garden và Animal Differences dùng những cảnh đời thường ấm cúng, Robot Band và Robot Bar có những chú robot ngộ nghĩnh, Small Aliens - Spot The Differences có những người ngoài hành tinh vui nhộn, còn Crime Detective - Spot Differences biến bạn thành thám tử. Pixel Differences dùng tranh pixel.\n\nThói quen tốt: nhìn bức tranh theo từng ô nhỏ thay vì nhìn cả bức một lúc, so sánh các góc trước, và nghỉ một chút nếu mắt mỏi. Các game này hợp với mọi lứa tuổi. Thêm game tìm kiếm có ở danh mục Game tìm đồ vật.",
+   "faq": [
+    {
+     "q": "Chơi game tìm điểm khác biệt như thế nào?",
+     "a": "Nhìn hai bức tranh và nhấp hoặc chạm vào mỗi chỗ khác nhau. Tìm hết các điểm khác biệt để hoàn thành màn chơi."
+    },
+    {
+     "q": "Game tìm điểm khác biệt có giúp ích cho trẻ không?",
+     "a": "Chúng rèn luyện việc quan sát cẩn thận và chú ý đến chi tiết. Chỉ cần chơi những lượt ngắn là đủ."
+    },
+    {
+     "q": "Nếu không tìm ra điểm khác biệt cuối cùng thì sao?",
+     "a": "Nhiều game có nút gợi ý. Bạn cũng có thể so sánh bức tranh theo từng vùng nhỏ, lần lượt từng vùng."
+    },
+    {
+     "q": "Có game tìm điểm khác biệt tính giờ không?",
+     "a": "Có, nhiều game có giới hạn thời gian, còn những game khác thì thoải mái, không tính giờ. Trang game và màn đầu tiên cho biết game thuộc loại nào."
+    }
+   ]
+  },
+  "baby": {
+   "intro": "Em bé và thú con là chủ đề được các bạn nhỏ yêu thích, và Pixuvo có hơn 600 game em bé miễn phí để chơi trên trình duyệt. Hầu hết là những game nhẹ nhàng về việc chăm sóc ai đó, vui chơi và học hỏi.\n\nTrong game chăm sóc, bạn trông nom một em bé suốt cả ngày. Baby Ava Daily Activities đồng hành cùng bé Ava trong một ngày của bé, Baby Care Baby Games biến bạn thành người trông trẻ, còn Kitty Take Care New Born Baby và My Baby Unicorn - Pony Care cho bạn chăm một chú mèo con hoặc chú ngựa con. Baby Doll House Cleaning Game là về việc dọn dẹp một căn nhà lớn, và Baby Taylor Little Santa Helper là câu chuyện Giáng sinh với bé Taylor. Nếu thích giải đố, hãy thử Baby Tiger Jigsaw Puzzles, Baby Pear Clicker là game chạm liên tục, còn Baby Cat Adventure là một cuộc phiêu lưu nhỏ.\n\nCách điều khiển chủ yếu là chạm và kéo, nên các game này phù hợp với trẻ nhỏ, tốt nhất là có bố mẹ ở gần với những bé nhỏ nhất. Thêm game thay đồ và chăm sóc có ở danh mục Game thay đồ.",
+   "faq": [
+    {
+     "q": "Game em bé là gì?",
+     "a": "Game em bé là game về em bé và thú con. Nhiều game là game chăm sóc, nơi bạn cho ăn, tắm và mặc đồ cho bé, số khác là game giải đố hoặc game thay đồ."
+    },
+    {
+     "q": "Game em bé có tốt cho trẻ nhỏ không?",
+     "a": "Chúng được làm cho các bạn nhỏ và chỉ cần chạm, kéo đơn giản. Với những bé nhỏ nhất, hãy chơi cùng bố mẹ."
+    },
+    {
+     "q": "Có chơi game em bé trên máy tính bảng được không?",
+     "a": "Được, nhiều game chạy tốt trên máy tính bảng và điện thoại. Trang của mỗi game cho biết game hỗ trợ thiết bị nào."
+    },
+    {
+     "q": "Có game về thú con không?",
+     "a": "Có, ví dụ Kitty Take Care New Born Baby, My Baby Unicorn - Pony Care và Baby Tiger Jigsaw Puzzles."
+    }
+   ]
+  },
+  "drawing": {
+   "intro": "Một cây bút chì, một cây cọ, một nét vẽ – game vẽ tranh biến ngón tay hay con chuột của bạn thành dụng cụ. Pixuvo có hơn 600 game vẽ miễn phí để chơi trên trình duyệt, và chúng không hề giống nhau: có game về nghệ thuật, có game dùng nét vẽ để giải câu đố.\n\nTrong game giải đố bằng vẽ, bạn vẽ một đường rồi xem nó tác động thế nào. Ở Line Rider, bạn vẽ đường ray để người lái đến được lá cờ, Draw Surfer yêu cầu bạn vẽ đường đi cho một vận động viên lướt sóng, Draw The Path - Puzzle dẫn một quả bóng vào giỏ, còn ở Dogat bạn vẽ hàng rào để bảo vệ chú cún khỏi lũ ong. Với sự sáng tạo yên tĩnh, Pixeler và Color Pixels - Coloring by Numbers là game pixel art, và Diamond Painting by Number cho bạn tô những viên kim cương được đánh số.\n\nNếu một câu đố nét vẽ chưa ổn, hãy thử một hình dạng khác – ý tưởng đầu tiên thường chưa phải là hay nhất. Game vẽ là cách thư giãn tốt, và các game nghệ thuật không có đáp án sai. Thêm game tô màu có ở danh mục Game tô màu & vẽ.",
+   "faq": [
+    {
+     "q": "Game vẽ tranh là gì?",
+     "a": "Game vẽ tranh cho bạn vẽ bằng ngón tay hoặc chuột. Một số là game nghệ thuật, số khác dùng nét vẽ của bạn để giải câu đố."
+    },
+    {
+     "q": "Có game vẽ tranh cho trẻ em không?",
+     "a": "Có, nhiều game được làm cho trẻ em. Game tô màu và pixel art là khởi đầu nhẹ nhàng."
+    },
+    {
+     "q": "Game vẽ và game tô màu khác nhau thế nào?",
+     "a": "Trong game tô màu, bạn tô vào những bức tranh có sẵn. Trong game vẽ, bạn tự tạo ra các đường nét, hình khối hoặc tranh pixel."
+    },
+    {
+     "q": "Có vẽ trên điện thoại hoặc máy tính bảng được không?",
+     "a": "Được, vẽ bằng ngón tay trên màn hình cảm ứng rất thoải mái. Nhiều game hỗ trợ điện thoại và máy tính bảng."
+    }
+   ]
+  },
+  "food": {
+   "intro": "Bánh quy, bánh ngọt, rau củ, pizza – game đồ ăn đưa những thứ ngon nhất lên màn hình. Pixuvo có hơn 500 game đồ ăn miễn phí để chơi trên trình duyệt, với đủ phong cách khác nhau.\n\nTrong các game chế biến, bạn nấu hoặc nướng một món gì đó. Cookie Master cho bạn tạo và trang trí bánh quy rồi bán cho khách, Idle Cookie Tycoon là game idle về việc kinh doanh bánh quy, còn Piece of Cake: Merge & Bake kết hợp giải đố với việc điều hành một quán cà phê. Perfect Slices Online là về việc thái rau củ, Sausage Flip là thử thách lật xúc xích, còn Fruit Crush, Fruits into Baskets và Donut Art là các game giải đố với trái cây và đồ ngọt.\n\nGame đồ ăn rất hợp với những bé thích nấu ăn, trò chơi cửa hàng và giải đố. Hãy nhớ rằng mọi thứ chỉ có trên màn hình – vào bếp thật thì tốt nhất nên có người lớn đi cùng. Thêm game nấu ăn có ở danh mục Game nấu ăn.",
+   "faq": [
+    {
+     "q": "Game đồ ăn là gì?",
+     "a": "Game đồ ăn là game về đồ ăn: game nấu và nướng, game cửa hàng và quán cà phê, cùng các game giải đố với trái cây, đồ ngọt và đồ ăn vặt."
+    },
+    {
+     "q": "Game đồ ăn có tốt cho trẻ em không?",
+     "a": "Hầu hết đều vui vẻ và dễ học. Chúng phù hợp với những bé thích nấu ăn và chơi bán hàng."
+    },
+    {
+     "q": "Game đồ ăn và game nấu ăn khác nhau thế nào?",
+     "a": "Game nấu ăn là về việc chế biến món ăn từng bước một. Game đồ ăn rộng hơn và còn gồm game giải đố, game cửa hàng và game bấm chuột về đồ ăn."
+    },
+    {
+     "q": "Có chơi game đồ ăn trên điện thoại được không?",
+     "a": "Nhiều game đồ ăn chơi được trên điện thoại và máy tính bảng. Trang của mỗi game cho biết game hỗ trợ thiết bị nào."
+    }
+   ]
   }
  }
 }

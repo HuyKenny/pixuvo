@@ -397,8 +397,8 @@ const base = {
   'consent.save': 'Save choices',
 
   // ── SEO landing pages (curated in the admin; translations for the published ones) ──
-  'land.kids.h1': 'Kids Games',
-  'land.kids.title': 'Kids Games – Free Online Games for Kids, No Downloads',
+  'land.kids.h1': 'Games for Kids',
+  'land.kids.title': 'Free Games for Kids – Play Online, No Downloads',
   'land.kids.description': 'Free online games for kids: easy, colourful games for little ones, learning games and coloring. Play in the browser, no downloads or sign-up.',
   'land.kids.intro': 'Games picked for younger players: simple controls, bright worlds and no violence-first gameplay.',
   'land.girls.h1': 'Games for Girls',
@@ -434,11 +434,11 @@ const base = {
   'land.space.description': 'Free space games: rockets, planets, aliens and galaxy shooters you can play in your browser. No downloads.',
   'land.space.intro': 'Rockets, planets, aliens and adventures among the stars.',
   'land.christmas.h1': 'Christmas Games',
-  'land.christmas.title': 'Christmas Games – Free Online Holiday Games',
+  'land.christmas.title': 'Christmas Games for Kids – Free Online Holiday Games',
   'land.christmas.description': 'Free Christmas games: Santa, presents, snow and winter puzzles you can play in your browser.',
   'land.christmas.intro': 'Santa, presents, snowmen and winter fun.',
   'land.halloween.h1': 'Halloween Games',
-  'land.halloween.title': 'Halloween Games – Free Spooky Games Online',
+  'land.halloween.title': 'Halloween Games for Kids – Free Spooky Games Online',
   'land.halloween.description': 'Free Halloween games: pumpkins, friendly ghosts and spooky puzzles you can play in your browser.',
   'land.halloween.intro': 'Pumpkins, costumes and spooky (not too scary) fun.',
   'land.spider-solitaire.h1': 'Spider Solitaire',
@@ -469,6 +469,34 @@ const base = {
   'land.parkour.title': 'Parkour Games – Play Free Parkour and Obby Games Online',
   'land.parkour.description': 'Free parkour games: jump, climb and run through obstacle courses and obbies. Play online in your browser, no downloads.',
   'land.parkour.intro': 'Jump, climb and run through tricky obstacle courses.',
+  'land.dinosaur.h1': 'Dinosaur Games',
+  'land.dinosaur.title': 'Dinosaur Games – Play Free Dinosaur Games Online',
+  'land.dinosaur.description': 'Free dinosaur games: run, jump and roar as a dino, hatch baby dinosaurs and color prehistoric animals. Play online, no downloads.',
+  'land.dinosaur.intro': 'Run, hatch and color – dinosaurs in every kind of game.',
+  'land.shark.h1': 'Shark Games',
+  'land.shark.title': 'Shark Games – Play Free Shark Games Online',
+  'land.shark.description': 'Free shark games: swim, eat smaller fish and grow into the biggest shark in the sea. Play online in your browser, no downloads.',
+  'land.shark.intro': 'Swim, eat and grow – be the biggest shark in the sea.',
+  'land.bowling.h1': 'Bowling Games',
+  'land.bowling.title': 'Bowling Games – Play Free Bowling Games Online',
+  'land.bowling.description': 'Free bowling games: aim, roll and knock down all the pins in classic, 3D and arcade bowling. Play online, no downloads.',
+  'land.bowling.intro': 'Aim, roll and knock down all the pins.',
+  'land.spot-the-difference.h1': 'Spot the Difference Games',
+  'land.spot-the-difference.title': 'Spot the Difference Games – Free Find the Differences Online',
+  'land.spot-the-difference.description': 'Free spot the difference games: compare two pictures, find every difference and train your eyes. Play online, no downloads.',
+  'land.spot-the-difference.intro': 'Compare two pictures and find every difference.',
+  'land.baby.h1': 'Baby Games',
+  'land.baby.title': 'Baby Games – Free Baby Care and Baby Games Online',
+  'land.baby.description': 'Free baby games: care for babies and baby animals, play puzzles and dress-up with cute little ones. Play online, no downloads.',
+  'land.baby.intro': 'Care for cute babies and baby animals.',
+  'land.drawing.h1': 'Drawing Games',
+  'land.drawing.title': 'Drawing Games – Play Free Drawing Games Online',
+  'land.drawing.description': 'Free drawing games: sketch lines that solve puzzles, make pixel art and paint by numbers. Play online in your browser, no downloads.',
+  'land.drawing.intro': 'Draw lines, paint pixels and solve puzzles with your pencil.',
+  'land.food.h1': 'Food Games',
+  'land.food.title': 'Food Games – Play Free Food Games Online',
+  'land.food.description': 'Free food games: bake cookies, slice vegetables, merge cakes and run your own bakery. Play online in your browser, no downloads.',
+  'land.food.intro': 'Bake, slice, merge and serve – games full of food.',
   'land.2-player-racing.h1': '2 Player Racing Games',
   'land.2-player-racing.title': '2 Player Racing Games – Race a Friend Online for Free',
   'land.2-player-racing.description': 'Free 2 player racing games you can play in your browser: split-screen races, car duels and head-to-head tracks. No downloads.',
@@ -591,7 +619,7 @@ const base = {
 
 // catn = short label (chips, menus); catg = the whole "… games" phrase used in titles and headings; catb = blurb.
 // A name that already says what the games are ("Logic Puzzles") must not get "Games" appended.
-const CATG: Record<string, string> = { logic: 'Logic Puzzles' };
+const CATG: Record<string, string> = { logic: 'Logic Puzzles', simulation: 'Simulation & Simulator Games' };
 const categories = Object.fromEntries(CATEGORIES.flatMap((c) => [[`catn.${c.slug}`, c.name], [`catg.${c.slug}`, CATG[c.slug] ?? `${c.name} Games`], [`catb.${c.slug}`, c.blurb]]));
 const themes = Object.fromEntries(THEMES.map((t) => [`theme.${t.slug}`, t.name]));
 

@@ -2203,6 +2203,153 @@
      "a": "Evet, Ninja Parkour Multiplayer ve Obby Modes! Online Mini-Games gibi bazı oyunlarda çok oyunculu mod var. Oyuncu sayısını oyun sayfasında görebilirsin."
     }
    ]
+  },
+  "dinosaur": {
+   "intro": "Grr! Dinozorlar oyunlar var olduğundan beri çocukların gözdesi, Pixuvo'da da tarayıcında oynayabileceğin 200'den fazla ücretsiz dinozor oyunu var. Hepsi aynı türden değil: koşabilir, yumurtadan çıkarabilir, boyayabilir, inşa edebilir ya da savaşabilirsin.\n\nEn büyük grup koşu oyunları. Run Dino Run, Dyno Run, Running Dino ve Cute Dinosaur Run oyunlarında bir dinozoru tarih öncesi bir dünyada yönetir, engellerin üzerinden atlar ve her seferinde biraz daha uzağa gitmeye çalışırsın. Canlılara bakmayı seviyorsan Mini Dino Clicker'da dokunarak dinozorları yumurtadan çıkarıp onlara meyve yedirebilirsin; Dinosaur World ise tarih öncesi hayvanlardan oluşan bir çiftliği yönetmekle ilgili. Küçük çocuklar Coloring Dinosaurs for Kids oyununda dinozor boyayabilir. Dino Squad Battle Mission ve Stickman. Dinosaur arena savaş oyunları, bu yüzden daha çok büyük çocuklara göre.\n\nKontroller genelde basit: zıplamak için tek dokunuş ya da tek tuş. Sonsuz koşu oyununda takılırsan engeller arasındaki mesafeye dikkat et ve sandığından biraz daha erken zıpla. Daha fazla koşu oyununu Koşu Oyunları kategorisinde, daha fazla yaratık oyununu Hayvanlar bölümünde bulabilirsin.",
+   "faq": [
+    {
+     "q": "Dinozor oyunları nedir?",
+     "a": "Dinozorun kahraman ya da ana konu olduğu oyunlardır. Koşu, tıklama, bakım, boyama ve savaş oyunlarını kapsar."
+    },
+    {
+     "q": "Küçük çocuklar için dinozor oyunları var mı?",
+     "a": "Evet. Coloring Dinosaurs for Kids ve dinozor bakım oyunları yumuşak bir başlangıç olur. Dino Squad Battle Mission gibi savaş oyunları daha büyük çocuklara uygundur."
+    },
+    {
+     "q": "Dinozor oyunlarını telefonda oynayabilir miyim?",
+     "a": "Çoğu bilgisayarın yanı sıra telefon ve tabletlerde de çalışır. Her oyunun sayfası hangi cihazları desteklediğini gösterir."
+    },
+    {
+     "q": "En iyi dinozor koşu oyunu hangisi?",
+     "a": "Run Dino Run, Dyno Run ve Cute Dinosaur Run oyunlarını dene. Fikir benzer ama hız ve görünüm farklı, yani en iyisi en çok hoşuna giden."
+    }
+   ]
+  },
+  "shark": {
+   "intro": "Bir yüzgeç suyu yarıyor ve küçük balıklar kaçışıyor. Köpekbalığı oyunları avcı olmana izin verir; Pixuvo'da tarayıcında oynayabileceğin yaklaşık 60 ücretsiz oyun var.\n\nÇoğunda daha küçük balıkları yiyerek büyüyen bir köpekbalığısın. Big Shark, Shark Adventure ve Gnam Gnam Shark oyunları denizde yüzmek, yiyecek toplamak ve hayatta kalmakla ilgili. Shark Attack ve Shark io oyunlarında online oynar, sunucudaki en büyük köpekbalığı olmaya çalışırsın. Fish Rescue Go - Shark Attack işi tersine çevirir: balıkları köpekbalıklarından kurtarmak için bir drone yönetirsin. Shark Escape onlardan kaçmakla ilgili, Mad Shark bir arcade nişancı oyunu, Shark Frenzy ise deniz ürünleriyle kaydır ve eşleştir bulmacası.\n\nYeme oyunları için bir ipucu: senden büyük köpekbalıklarından uzak dur ve güvenle büyümek için yalnızca senden biraz küçük balıkları ye. Online oyunlar fareyle en iyisi, diğerlerinin çoğu ise dokunuşla oynanır. Daha fazla su altı oyunu Hayvanlar bölümünde.",
+   "faq": [
+    {
+     "q": "Köpekbalığı oyunları nedir?",
+     "a": "Köpekbalığının ana karakter ya da ana tehlike olduğu oyunlardır. Çoğu büyümek için yüzüp yemekle ilgili, bazıları ise bulmaca ya da kurtarma oyunu."
+    },
+    {
+     "q": "Köpekbalığı oyunları çocuklar için güvenli mi?",
+     "a": "Çoğu çizgi film tarzında ve balık yemekle ilgili. Avlanma oyunları gibi birkaçı büyük çocuklara göre, bu yüzden oyun sayfasına bak."
+    },
+    {
+     "q": "Köpekbalığı oyunlarını diğer oyuncularla online oynayabilir miyim?",
+     "a": "Evet, Shark Attack ve Shark io gibi oyunlar aynı sunucuda diğer oyuncularla yarıştığın online .io oyunlarıdır."
+    },
+    {
+     "q": "Köpekbalığı oyununda nasıl daha çok büyürüm?",
+     "a": "Senden küçük balıkları ye ve daha büyük köpekbalıklarından kaçın. Her yemek seni büyütür, büyük köpekbalığı da daha çok yiyebilir."
+    }
+   ]
+  },
+  "bowling": {
+   "intro": "Strike! Bowling oyunlarını anlamak kolay: topu pistte yuvarla ve olabildiğince çok lobutu devir. Pixuvo'da tarayıcında oynayabileceğin 30'dan fazla ücretsiz bowling oyunu var; basit klasiklerden 3D ve arcade sürümlere kadar.\n\nClassic Bowling ve Bowling düz bowling oyunları: nişan alırsın, gücü ayarlarsın ve atarsın. Bowling Hit 3D, Beach Bowling 3D ve 3D Bowling 3D pistler sunar, Super Bowling Mania gerçekçi bir bowling deneyimini hedefler, Bowling Ball Striker ise basit dokunmatik kontroller kullanır. Bowling Hero Multiplayer başka insanlara karşı oynamana izin verir, Kitten Bowling sevimli kediler getirir, Bowling Pipe ve Bowling Boom ise bowlingi arcade zorluklarına dönüştürür.\n\nDaha iyi oynamak için ilk atışta işe yarayan açıyı bul ve tekrarla. Topa verilen hafif bir kavis, lobutlara hızlı ve düz bir atıştan genelde daha temiz çarpar. Bowling, arkadaşlar ve aileyle sırayla oynamak için güzel bir oyun. Daha fazla spor oyunu Spor Oyunları kategorisinde.",
+   "faq": [
+    {
+     "q": "Online bowling nasıl oynanır?",
+     "a": "Topa nişan alır, gücü ayarlar ve pistte yuvarlarsın. Amaç, on lobutun hepsini mümkün olan en az atışta devirmek."
+    },
+    {
+     "q": "Bowlingde strike nedir?",
+     "a": "Strike, bir turun ilk atışında on lobutun hepsini devirmektir. En iyi puanı verir."
+    },
+    {
+     "q": "Bowlingi arkadaşımla oynayabilir miyim?",
+     "a": "Evet, Bowling Hero Multiplayer gibi bazı oyunlarda çok oyunculu mod var; çoğunda ise iki oyuncu aynı cihazda sırayla oynayabilir."
+    },
+    {
+     "q": "3D bowling oyunları var mı?",
+     "a": "Evet, Beach Bowling 3D, Bowling Hit 3D ve 3D Bowling 3D pistler kullanır."
+    }
+   ]
+  },
+  "spot-the-difference": {
+   "intro": "İki resim aynı görünüyor ama değil. Farkı bul oyunları her küçük değişikliği bulmanı ister ve gözlerini çalıştırmanın sakin bir yolu. Pixuvo'da tarayıcında oynayabileceğin 250'den fazla ücretsiz oyun var.\n\nFikir hep aynı: bulduğun her farka tıkla ya da dokun ve sayaca bak. Birçok oyunda zamanlayıcı var, takıldığında ise ipucu düğmesi yardım eder. Sahneler çok çeşitli. The Kitchen - Spot the differences, Eye Spy Difference The Garden ve Animal Differences sıcacık günlük sahneler kullanır, Robot Band ve Robot Bar komik robotlar getirir, Small Aliens - Spot The Differences komik uzaylılar sunar, Crime Detective - Spot Differences ise seni dedektif yapar. Pixel Differences piksel resimler kullanır.\n\nİyi alışkanlıklar: resme hepsini birden değil küçük karelere bölerek bak, önce köşeleri karşılaştır ve gözlerin yorulursa kısa bir mola ver. Bu oyunlar her yaşa uygun. Daha fazla arama oyunu Gizli Nesne Oyunları kategorisinde.",
+   "faq": [
+    {
+     "q": "Farkı bul oyunu nasıl oynanır?",
+     "a": "İki resme bak ve farklı olan her yere tıkla ya da dokun. Seviyeyi bitirmek için tüm farkları bul."
+    },
+    {
+     "q": "Farkı bul oyunları çocuklara yardımcı olur mu?",
+     "a": "Dikkatli bakmayı ve ayrıntılara dikkat etmeyi çalıştırır. Kısa oyun süreleri yeterli."
+    },
+    {
+     "q": "Son farkı bulamazsam ne yapmalıyım?",
+     "a": "Birçok oyunda ipucu düğmesi var. Resmi küçük bölgelere ayırıp tek tek de karşılaştırabilirsin."
+    },
+    {
+     "q": "Zamanlayıcılı farkı bul oyunları var mı?",
+     "a": "Evet, birçoğunda süre sınırı var, diğerleri zamanlayıcısız ve rahat. Oyun sayfası ve ilk seviye hangisi olduğunu gösterir."
+    }
+   ]
+  },
+  "baby": {
+   "intro": "Bebekler ve yavru hayvanlar küçük oyuncuların favori konusu; Pixuvo'da tarayıcında oynayabileceğin 600'den fazla ücretsiz bebek oyunu var. Çoğu birine bakmak, oynamak ve öğrenmekle ilgili sakin oyunlar.\n\nBakım oyunlarında bir bebeğe gün boyu göz kulak olursun. Baby Ava Daily Activities Bebek Ava'ya günü boyunca eşlik eder, Baby Care Baby Games seni bebek bakıcısı yapar, Kitty Take Care New Born Baby ve My Baby Unicorn - Pony Care ise yeni doğmuş bir yavru kediye ya da midilliye bakmana izin verir. Baby Doll House Cleaning Game büyük bir evi toplamakla ilgili, Baby Taylor Little Santa Helper ise Bebek Taylor'lı bir Noel hikâyesi. Bulmacaları tercih edersen Baby Tiger Jigsaw Puzzles'ı dene; Baby Pear Clicker dokunma oyunu, Baby Cat Adventure küçük bir macera.\n\nKontroller çoğunlukla dokunma ve sürükleme, bu yüzden bu oyunlar küçük çocuklara uygun; en küçükler için yanlarında bir ebeveyn olması iyi olur. Daha fazla giydirme ve bakım oyunu Giydirme Oyunları kategorisinde.",
+   "faq": [
+    {
+     "q": "Bebek oyunları nedir?",
+     "a": "Bebekler ve yavru hayvanlarla ilgili oyunlardır. Çoğu bir bebeği beslediğin, yıkadığın ve giydirdiğin bakım oyunudur; diğerleri bulmaca ya da giydirme oyunlarıdır."
+    },
+    {
+     "q": "Bebek oyunları küçük çocuklar için uygun mu?",
+     "a": "Küçük oyuncular için yapılmıştır ve basit dokunma ve sürükleme kullanır. En küçükler için bir ebeveynle birlikte oynayın."
+    },
+    {
+     "q": "Bebek oyunlarını tablette oynayabilir miyim?",
+     "a": "Evet, çoğu tablet ve telefonlarda iyi çalışır. Oyun sayfası hangi cihazları desteklediğini gösterir."
+    },
+    {
+     "q": "Yavru hayvan oyunları var mı?",
+     "a": "Evet, örneğin Kitty Take Care New Born Baby, My Baby Unicorn - Pony Care ve Baby Tiger Jigsaw Puzzles."
+    }
+   ]
+  },
+  "drawing": {
+   "intro": "Bir kalem, bir fırça, bir çizgi: çizim oyunları parmağını ya da fareni bir araca dönüştürür. Pixuvo'da tarayıcında oynayabileceğin 600'den fazla ücretsiz çizim oyunu var ve hepsi aynı değil: bazıları sanatla ilgili, bazıları ise çizimi bir bulmacayı çözmek için kullanır.\n\nBulmaca çizim oyunlarında bir çizgi çizer ve ne yaptığını izlersin. Line Rider'da sürücü bayrağa ulaşsın diye pisti çizersin, Draw Surfer senden bir sörfçü için yollar çizmeni ister, Draw The Path - Puzzle bir topu sepete yönlendirir, Dogat'ta ise bir köpek yavrusunu arılardan korumak için engeller çizersin. Sakin yaratıcılık için Pixeler ve Color Pixels - Coloring by Numbers piksel sanatı oyunları, Diamond Painting by Number ise numaralı elmasları boyamana izin verir.\n\nBir çizgi bulmacası olmuyorsa farklı bir şekil dene: ilk fikir çoğu zaman en iyisi olmaz. Çizim oyunları rahatlamanın güzel bir yolu, sanat oyunlarında ise yanlış cevap yok. Daha fazla boyama oyunu Boyama ve Çizim Oyunları kategorisinde.",
+   "faq": [
+    {
+     "q": "Çizim oyunları nedir?",
+     "a": "Parmağınla ya da farenle çizim yaptığın oyunlardır. Bazıları sanat oyunu, diğerleri çizdiğin çizgiyle bir bulmacayı çözer."
+    },
+    {
+     "q": "Çocuklar için çizim oyunları var mı?",
+     "a": "Evet, birçoğu çocuklar için yapılmıştır. Boyama ve piksel sanatı oyunları sakin bir başlangıçtır."
+    },
+    {
+     "q": "Çizim ve boyama oyunları arasındaki fark nedir?",
+     "a": "Boyama oyunlarında hazır resimleri doldurursun. Çizim oyunlarında kendi çizgilerini, şekillerini ya da piksel resimlerini yaparsın."
+    },
+    {
+     "q": "Telefonda ya da tablette çizim yapabilir miyim?",
+     "a": "Evet, dokunmatik ekranda parmakla çizim çok iyi çalışır. Birçok oyun telefon ve tabletleri destekler."
+    }
+   ]
+  },
+  "food": {
+   "intro": "Kurabiyeler, pastalar, sebzeler, pizza: yemek oyunları ekrana en lezzetli şeyleri getirir. Pixuvo'da tarayıcında oynayabileceğin 500'den fazla ücretsiz yemek oyunu var ve birçok farklı tarzda geliyorlar.\n\nYapım oyunlarında bir şey pişirir ya da fırınlarsın. Cookie Master kurabiye yapıp süslemene ve müşterilere satmana izin verir, Idle Cookie Tycoon bir kurabiye işletmesi hakkında bir idle oyunu, Piece of Cake: Merge & Bake ise bulmacaları kafe işletmeyle karıştırır. Perfect Slices Online sebze doğramakla ilgili, Sausage Flip bir çevirme mücadelesi, Fruit Crush, Fruits into Baskets ve Donut Art ise meyve ve tatlılı bulmaca oyunları.\n\nYemek oyunları yemek yapmayı, dükkânları ve bulmacaları seven çocuklara çok uygun. Unutma, hepsi sadece ekranda: gerçek mutfakta bir yetişkinle olmak en iyisi. Daha fazla yemek yapma oyunu Yemek Yapma Oyunları kategorisinde.",
+   "faq": [
+    {
+     "q": "Yemek oyunları nedir?",
+     "a": "Yemekle ilgili oyunlardır: yemek pişirme ve fırınlama oyunları, dükkân ve kafe oyunları ve meyve, tatlı ve atıştırmalıklı bulmacalar."
+    },
+    {
+     "q": "Yemek oyunları çocuklar için uygun mu?",
+     "a": "Çoğu neşeli ve öğrenmesi kolay. Yemek yapmayı ve dükkânları seven çocuklara iyi gelir."
+    },
+    {
+     "q": "Yemek oyunları ile yemek yapma oyunları arasındaki fark nedir?",
+     "a": "Yemek yapma oyunları yemekleri adım adım hazırlamakla ilgilidir. Yemek oyunları daha geniştir ve bulmacaları, dükkân oyunlarını ve yemekli clicker oyunlarını da içerir."
+    },
+    {
+     "q": "Yemek oyunlarını telefonda oynayabilir miyim?",
+     "a": "Birçok yemek oyunu telefon ve tabletlerde çalışır. Oyun sayfası hangi cihazları desteklediğini gösterir."
+    }
+   ]
   }
  }
 }

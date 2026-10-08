@@ -2203,6 +2203,153 @@
      "a": "Oui, certains jeux ont un mode multijoueur, comme Ninja Parkour Multiplayer et Obby Modes! Online Mini-Games. Le nombre de joueurs est indiqué sur la page du jeu."
     }
    ]
+  },
+  "dinosaur": {
+   "intro": "Roooar ! Les dinosaures sont les préférés des enfants depuis qu'il existe des jeux, et Pixuvo propose plus de 200 jeux de dinosaures gratuits dans ton navigateur. Ils ne sont pas tous du même genre : tu peux courir, faire éclore, colorier, construire ou te battre.\n\nLe plus gros groupe, ce sont les runners. Dans Run Dino Run, Dyno Run, Running Dino et Cute Dinosaur Run, tu diriges un dinosaure dans un monde préhistorique, tu sautes par-dessus des obstacles et tu essaies d'aller plus loin à chaque fois. Si tu aimes t'occuper de créatures, Mini Dino Clicker te laisse taper pour faire éclore des dinos et les nourrir de fruits, et Dinosaur World consiste à gérer un ranch d'animaux préhistoriques. Les plus jeunes peuvent colorier des dinosaures dans Coloring Dinosaurs for Kids. Dino Squad Battle Mission et Stickman. Dinosaur arena sont des jeux de combat, plutôt pour les plus grands.\n\nLes commandes sont en général simples : une touche ou un tapotement pour sauter. Si tu bloques dans un runner sans fin, observe la distance entre les obstacles et saute un peu plus tôt que tu ne le crois. D'autres jeux de course à pied se trouvent dans la catégorie Jeux de runner, et d'autres jeux de créatures dans la catégorie Jeux d'animaux.",
+   "faq": [
+    {
+     "q": "Que sont les jeux de dinosaures ?",
+     "a": "Ce sont des jeux où un dinosaure est le héros ou le sujet principal. On y trouve des runners, des jeux de clicker, des jeux de soin, des jeux de coloriage et des jeux de combat."
+    },
+    {
+     "q": "Y a-t-il des jeux de dinosaures pour les jeunes enfants ?",
+     "a": "Oui. Coloring Dinosaurs for Kids et les jeux de soin des dinosaures sont une douce entrée en matière. Les jeux de combat comme Dino Squad Battle Mission conviennent mieux aux plus grands."
+    },
+    {
+     "q": "Puis-je jouer aux jeux de dinosaures sur mon téléphone ?",
+     "a": "Beaucoup fonctionnent sur téléphone et tablette comme sur ordinateur. La page du jeu indique les appareils pris en charge."
+    },
+    {
+     "q": "Quel est le meilleur runner de dinosaure ?",
+     "a": "Essaie Run Dino Run, Dyno Run et Cute Dinosaur Run. L'idée est proche, mais la vitesse et l'apparence changent : le meilleur est donc celui que tu préfères."
+    }
+   ]
+  },
+  "shark": {
+   "intro": "Une nageoire fend l'eau et les petits poissons s'enfuient. Les jeux de requin te laissent être le chasseur, et Pixuvo en propose environ 60 gratuits dans ton navigateur.\n\nDans la plupart, tu es un requin qui grandit en mangeant des poissons plus petits. Big Shark, Shark Adventure et Gnam Gnam Shark consistent à nager dans la mer, collecter de la nourriture et survivre. Dans Shark Attack et Shark io, tu joues en ligne et tu essaies de devenir le plus grand requin du serveur. Fish Rescue Go - Shark Attack inverse les rôles : tu diriges un drone pour sauver des poissons des requins. Shark Escape consiste à leur échapper, Mad Shark est un shooter d'arcade et Shark Frenzy est un puzzle de glissement avec des fruits de mer.\n\nUn conseil pour les jeux où l'on mange : reste loin des requins plus gros que toi et mange des poissons à peine plus petits pour grandir en sécurité. Les jeux en ligne se jouent mieux à la souris, et beaucoup d'autres fonctionnent au toucher. D'autres jeux sous-marins se trouvent dans la catégorie Jeux d'animaux.",
+   "faq": [
+    {
+     "q": "Que sont les jeux de requin ?",
+     "a": "Ce sont des jeux où un requin est le personnage principal ou le danger principal. Beaucoup consistent à nager et manger pour grandir, d'autres sont des puzzles ou des jeux de sauvetage."
+    },
+    {
+     "q": "Les jeux de requin sont-ils sûrs pour les enfants ?",
+     "a": "La plupart ont un style dessin animé et tournent autour du fait de manger des poissons. Quelques-uns, comme les jeux de chasse, sont pour les plus grands : regarde la page du jeu."
+    },
+    {
+     "q": "Puis-je jouer aux jeux de requin en ligne avec d'autres joueurs ?",
+     "a": "Oui, des jeux comme Shark Attack et Shark io sont des jeux .io en ligne où tu affrontes d'autres joueurs sur le même serveur."
+    },
+    {
+     "q": "Comment grandir dans un jeu de requin ?",
+     "a": "Mange des poissons plus petits que toi et évite les requins plus gros. Chaque repas te fait grandir, et un requin plus gros peut manger plus."
+    }
+   ]
+  },
+  "bowling": {
+   "intro": "Strike ! Les jeux de bowling se comprennent facilement : fais rouler la boule sur la piste et renverse autant de quilles que possible. Pixuvo propose plus de 30 jeux de bowling gratuits dans ton navigateur, des classiques simples aux versions 3D et arcade.\n\nClassic Bowling et Bowling sont les plus directs : vise, règle la puissance et lance. Bowling Hit 3D, Beach Bowling 3D et 3D Bowling te donnent des pistes en 3D, Super Bowling Mania vise une expérience de bowling réaliste et Bowling Ball Striker utilise de simples commandes tactiles. Bowling Hero Multiplayer te fait jouer contre d'autres personnes, Kitten Bowling apporte de mignons chatons, et Bowling Pipe et Bowling Boom transforment le bowling en défis d'arcade.\n\nPour mieux jouer, trouve l'angle qui marche pour ton premier lancer et reproduis-le. Un peu d'effet sur la boule touche souvent les quilles plus proprement qu'un lancer rapide et droit. Le bowling est un bon jeu à faire à tour de rôle avec les amis et la famille. D'autres jeux de sport se trouvent dans la catégorie Jeux de sport.",
+   "faq": [
+    {
+     "q": "Comment jouer au bowling en ligne ?",
+     "a": "Tu vises avec la boule, tu règles la puissance et tu la lances sur la piste. Le but est de faire tomber les dix quilles en un minimum de lancers."
+    },
+    {
+     "q": "Qu'est-ce qu'un strike au bowling ?",
+     "a": "Un strike, c'est faire tomber les dix quilles au premier lancer d'un tour. C'est le meilleur score."
+    },
+    {
+     "q": "Puis-je jouer au bowling avec un ami ?",
+     "a": "Oui, certains jeux, comme Bowling Hero Multiplayer, ont un mode multijoueur, et beaucoup permettent à deux joueurs de jouer à tour de rôle sur le même appareil."
+    },
+    {
+     "q": "Existe-t-il des jeux de bowling en 3D ?",
+     "a": "Oui, Beach Bowling 3D, Bowling Hit 3D et 3D Bowling utilisent des pistes en 3D."
+    }
+   ]
+  },
+  "spot-the-difference": {
+   "intro": "Deux images semblent identiques – mais elles ne le sont pas. Les jeux des différences te demandent de trouver chaque petit changement, et ils sont une façon calme d'entraîner tes yeux. Pixuvo en propose plus de 250 gratuits dans ton navigateur.\n\nL'idée est toujours la même : clique ou touche chaque différence que tu trouves et surveille le compteur. Beaucoup de jeux ont un minuteur, et un bouton d'indice aide quand tu bloques. Les scènes varient beaucoup. The Kitchen - Spot the differences, Eye Spy Difference The Garden et Animal Differences utilisent des scènes du quotidien chaleureuses, Robot Band et Robot Bar apportent des robots amusants, Small Aliens - Spot The Differences de drôles d'extraterrestres, et Crime Detective - Spot Differences fait de toi un détective. Pixel Differences utilise des images en pixels.\n\nLes bons réflexes : regarde l'image par petits carrés plutôt qu'en entier, compare d'abord les coins et fais une courte pause quand tes yeux fatiguent. Ces jeux conviennent à tous les âges. D'autres jeux de recherche se trouvent dans la catégorie Jeux d'objets cachés.",
+   "faq": [
+    {
+     "q": "Comment jouer aux jeux des différences ?",
+     "a": "Regarde les deux images et clique ou touche chaque endroit où elles diffèrent. Quand tu as trouvé toutes les différences, le niveau est terminé."
+    },
+    {
+     "q": "Les jeux des différences aident-ils les enfants ?",
+     "a": "Ils exercent l'observation attentive et le sens du détail. De courtes séances suffisent."
+    },
+    {
+     "q": "Et si je ne trouve pas la dernière différence ?",
+     "a": "Beaucoup de jeux ont un bouton d'indice. Tu peux aussi comparer l'image par petites zones, une par une."
+    },
+    {
+     "q": "Y a-t-il des jeux des différences avec minuteur ?",
+     "a": "Oui, beaucoup de jeux ont une limite de temps, d'autres sont détendus, sans minuteur. La page du jeu et le premier niveau montrent de quel type il s'agit."
+    }
+   ]
+  },
+  "baby": {
+   "intro": "Les bébés et les bébés animaux sont un thème favori des plus jeunes joueurs, et Pixuvo propose plus de 600 jeux de bébé gratuits dans ton navigateur. La plupart sont des jeux doux, où l'on s'occupe de quelqu'un, joue et apprend.\n\nDans les jeux de soins, tu t'occupes d'un bébé toute la journée. Baby Ava Daily Activities accompagne Baby Ava dans sa journée, Baby Care Baby Games fait de toi la baby-sitter, et Kitty Take Care New Born Baby et My Baby Unicorn - Pony Care te laissent soigner un chaton ou un poney. Baby Doll House Cleaning Game consiste à ranger une grande maison, et Baby Taylor Little Santa Helper est une histoire de Noël avec Baby Taylor. Si tu préfères les puzzles, essaie Baby Tiger Jigsaw Puzzles, Baby Pear Clicker est un jeu où l'on tape et Baby Cat Adventure est une petite quête.\n\nLes commandes se résument surtout à taper et glisser, donc ces jeux conviennent aux plus jeunes, idéalement avec un parent à côté pour les tout-petits. D'autres jeux d'habillage et de soins se trouvent dans la catégorie Jeux d'habillage.",
+   "faq": [
+    {
+     "q": "Que sont les jeux de bébé ?",
+     "a": "Ce sont des jeux sur les bébés et les bébés animaux. Beaucoup sont des jeux de soins où tu nourris, laves et habilles un bébé, d'autres sont des puzzles ou des jeux d'habillage."
+    },
+    {
+     "q": "Les jeux de bébé conviennent-ils aux petits enfants ?",
+     "a": "Ils sont faits pour les plus jeunes et utilisent de simples tapotements et glissements. Pour les tout-petits, jouez ensemble avec un parent."
+    },
+    {
+     "q": "Puis-je jouer aux jeux de bébé sur une tablette ?",
+     "a": "Oui, beaucoup fonctionnent bien sur tablette et téléphone. La page du jeu indique les appareils pris en charge."
+    },
+    {
+     "q": "Y a-t-il des jeux de bébés animaux ?",
+     "a": "Oui, par exemple Kitty Take Care New Born Baby, My Baby Unicorn - Pony Care et Baby Tiger Jigsaw Puzzles."
+    }
+   ]
+  },
+  "drawing": {
+   "intro": "Un crayon, un pinceau, un trait – les jeux de dessin transforment ton doigt ou ta souris en outil. Pixuvo propose plus de 600 jeux de dessin gratuits dans ton navigateur, et ils ne sont pas tous pareils : certains parlent d'art, d'autres se servent du dessin pour résoudre une énigme.\n\nDans les jeux de dessin à énigmes, tu traces une ligne et tu regardes ce qu'elle fait. Dans Line Rider, tu dessines la piste pour que le pilote atteigne le drapeau, Draw Surfer te demande de tracer des chemins pour un surfeur, Draw The Path - Puzzle guide une balle dans un panier, et dans Dogat tu dessines des barrières pour protéger un chiot des abeilles. Pour une créativité tranquille, Pixeler et Color Pixels - Coloring by Numbers sont des jeux de pixel art, et Diamond Painting by Number te fait peindre des diamants numérotés.\n\nSi une énigme de ligne ne marche pas, essaie une autre forme – la première idée n'est souvent pas la meilleure. Les jeux de dessin sont une bonne façon de se détendre, et les jeux artistiques n'ont pas de mauvaise réponse. D'autres jeux se trouvent dans la catégorie Jeux de coloriage et de dessin.",
+   "faq": [
+    {
+     "q": "Que sont les jeux de dessin ?",
+     "a": "Les jeux de dessin te laissent dessiner avec le doigt ou la souris. Certains sont des jeux artistiques, d'autres utilisent la ligne dessinée pour résoudre une énigme."
+    },
+    {
+     "q": "Y a-t-il des jeux de dessin pour les enfants ?",
+     "a": "Oui, beaucoup sont faits pour les enfants. Les jeux de coloriage et de pixel art sont une entrée tranquille."
+    },
+    {
+     "q": "Quelle est la différence entre jeux de dessin et jeux de coloriage ?",
+     "a": "Dans les jeux de coloriage, tu remplis des images déjà existantes. Dans les jeux de dessin, tu crées tes propres lignes, formes ou images en pixels."
+    },
+    {
+     "q": "Puis-je dessiner sur un téléphone ou une tablette ?",
+     "a": "Oui, dessiner du doigt sur un écran tactile fonctionne bien. Beaucoup de jeux prennent en charge téléphones et tablettes."
+    }
+   ]
+  },
+  "food": {
+   "intro": "Cookies, gâteaux, légumes, pizza – les jeux de nourriture mettent les choses les plus savoureuses à l'écran. Pixuvo propose plus de 500 jeux de nourriture gratuits dans ton navigateur, et ils existent dans de nombreux styles.\n\nDans les jeux de préparation, tu cuisines ou tu fais de la pâtisserie. Cookie Master te laisse créer et décorer des cookies et les vendre à des clients, Idle Cookie Tycoon est un jeu idle sur une affaire de cookies, et Piece of Cake: Merge & Bake mêle puzzles et gestion d'un café. Perfect Slices Online consiste à couper des légumes, Sausage Flip est un défi de retournement, et Fruit Crush, Fruits into Baskets et Donut Art sont des puzzles avec des fruits et des sucreries.\n\nLes jeux de nourriture conviennent aux enfants qui aiment cuisiner, jouer à la marchande et faire des puzzles. N'oublie pas qu'ils ne sont que sur l'écran : une vraie cuisine, c'est mieux avec un adulte. D'autres jeux de cuisine se trouvent dans la catégorie Jeux de cuisine.",
+   "faq": [
+    {
+     "q": "Que sont les jeux de nourriture ?",
+     "a": "Ce sont des jeux sur la nourriture : jeux de cuisine et de pâtisserie, jeux de boutique et de café, et puzzles avec fruits, sucreries et en-cas."
+    },
+    {
+     "q": "Les jeux de nourriture sont-ils bons pour les enfants ?",
+     "a": "La plupart sont joyeux et faciles à apprendre. Ils conviennent aux enfants qui aiment cuisiner et jouer à la marchande."
+    },
+    {
+     "q": "Quelle est la différence entre jeux de nourriture et jeux de cuisine ?",
+     "a": "Les jeux de cuisine consistent à préparer des plats pas à pas. Les jeux de nourriture sont plus larges et comprennent aussi des puzzles, des jeux de boutique et des clickers de nourriture."
+    },
+    {
+     "q": "Puis-je jouer aux jeux de nourriture sur mon téléphone ?",
+     "a": "Beaucoup de jeux de nourriture fonctionnent sur téléphone et tablette. La page du jeu indique les appareils pris en charge."
+    }
+   ]
   }
  }
 }
