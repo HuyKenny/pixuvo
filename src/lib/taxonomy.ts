@@ -213,17 +213,39 @@ export function findSensitiveTerms(text: string): string[] {
  * searched themes (dinosaur games, bowling games…) filter on these precise slugs instead. The importer adds them on
  * every import; scripts/retag.ts backfills existing games.
  */
-export const TITLE_TAGS: Array<{ slug: string; name: string; re: RegExp; exclude?: RegExp }> = [
+export interface DerivedTag {
+  slug: string;
+  name: string;
+  re: RegExp;
+  exclude?: RegExp;
+  /** Test the description too (age words such as "toddler" live there, not in the title). */
+  inText?: boolean;
+  /** SQL LIKE patterns that pre-select candidates for scripts/retag.ts (inText rules only). */
+  likes?: string[];
+}
+export const TITLE_TAGS: DerivedTag[] = [
   { slug: 'dinosaur-games', name: 'Dinosaur Games', re: /(?<![a-z0-9])(dino|dinos|dinosaur|dinosaurs|dyno|t-?rex|trex|jurassic|raptor|triceratops|stegosaurus)(?![a-z0-9])/i },
   { slug: 'shark-games', name: 'Shark Games', re: /(?<![a-z0-9])(shark|sharks|megalodon)(?![a-z0-9])/i },
   { slug: 'bowling-games', name: 'Bowling Games', re: /(?<![a-z0-9])bowling(?![a-z0-9])/i },
   { slug: 'spot-the-difference', name: 'Spot The Difference', re: /(?<![a-z0-9])(differences?|spot the|odd one out)(?![a-z0-9])/i, exclude: /(?<![a-z0-9])(date|romance|kiss|sexy)(?![a-z0-9])/i },
   // "Baby" also names war/shooter heroes (Baby Sniper, Gears of Babies); a baby-games page is for care and play games.
+  { slug: 'ludo-games', name: 'Ludo Games', re: /(?<![a-z0-9])(ludo|chinczyk|parcheesi|parchisi)(?![a-z0-9])/i },
+  // Age words: the description must say it (partner tags never do). Violent titles are not "games for toddlers".
+  { slug: 'toddler-games', name: 'Toddler Games', inText: true, likes: ['%toddler%', '%preschool%', '%pre-school%', '%pre-k%'], re: /(?<![a-z0-9])(toddlers?|preschoolers?|preschool|pre-school|pre-k)(?![a-z0-9])/i, exclude: /(?<![a-z0-9])(sniper|zombie|zombies|shooter|shooting|gun|guns|kill|killer|blood|horror|war|battle|haunted|creepy|scary|ghost|backrooms)(?![a-z0-9])/i },
+  { slug: 'kindergarten-games', name: 'Kindergarten Games', inText: true, likes: ['%kindergarten%', '%first grade%', '%1st grade%', '%5 year old%', '%5-year-old%', '%ages 3%', '%ages 4%', '%ages 5%', '%age 5%'], re: /(?<![a-z0-9])(kindergarten|kindergarteners?|first grade|1st grade|5 year olds?|5-year-olds?|ages? [3-5])(?![a-z0-9])/i, exclude: /(?<![a-z0-9])(sniper|zombie|zombies|shooter|shooting|gun|guns|kill|killer|blood|horror|war|battle|haunted|creepy|scary|ghost|backrooms)(?![a-z0-9])/i },
   { slug: 'baby-games', name: 'Baby Games', re: /(?<![a-z0-9])(baby|babies|toddler|toddlers|newborn|infant)(?![a-z0-9])/i, exclude: /(?<![a-z0-9])(sniper|war|wars|gun|guns|shoot|shooter|shooting|kill|killer|zombie|soldier|gears|battle|arena|tournament|vietnam|great|hero|ninja|fight|fighter|bomb|survival|escape)(?![a-z0-9])/i },
 ];
 
-export function titleTags(title: string): Array<{ slug: string; name: string }> {
-  return TITLE_TAGS.filter((t) => t.re.test(title) && !t.exclude?.test(title)).map(({ slug, name }) => ({ slug, name }));
+export function derivedMatch(t: DerivedTag, title: string, description = ''): boolean {
+  const text = t.inText ? `${title} ${description}` : title;
+  return t.re.test(text) && !t.exclude?.test(text);
+}
+
+/** `style` is the game's visual style ("3d" feeds the 3D games landing). */
+export function titleTags(title: string, description = '', style: string | null = null): Array<{ slug: string; name: string }> {
+  const out = TITLE_TAGS.filter((t) => derivedMatch(t, title, description)).map(({ slug, name }) => ({ slug, name }));
+  if (style === '3d') out.push({ slug: '3d-games', name: '3D Games' });
+  return out;
 }
 
 /** Query synonyms for search (both directions). */
@@ -306,6 +328,10 @@ export const RELATED: Record<string, string[]> = {
   baby: ['dress-up', 'cooking', 'coloring', 'kids', 'girls'],
   drawing: ['coloring', 'brain', 'kids', 'educational'],
   food: ['cooking', 'tycoon', 'match-3', 'kids'],
+  toddler: ['baby', 'kindergarten', 'coloring', 'educational', 'kids'],
+  kindergarten: ['toddler', 'educational', 'coloring', 'math', 'kids'],
+  ludo: ['board', 'card', '2-player', 'multiplayer'],
+  '3d': ['racing', 'runner', 'sports', 'shooting'],
   platformer: ['parkour', 'runner', 'arcade', 'stickman'],
   logic: ['sudoku', 'brain', 'math', 'board', 'puzzle'],
   action: ['fighting', 'shooting', 'stickman', 'ninja', 'platformer', 'boys'],

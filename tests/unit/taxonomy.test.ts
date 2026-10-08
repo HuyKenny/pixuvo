@@ -45,3 +45,16 @@ describe('title-derived tags', () => {
     expect(slugs('Dinosaurs and Babies')).toEqual(['dinosaur-games', 'baby-games']);
   });
 });
+
+describe('description and style derived tags', () => {
+  it('uses the description for age words, skips scary titles, and tags 3D by style', async () => {
+    const { titleTags } = await import('../../src/lib/taxonomy.ts');
+    const slugs = (t: string, d = '', s: string | null = null) => titleTags(t, d, s).map((x) => x.slug);
+    expect(slugs('Wooden Puzzles', 'Wooden Puzzles is puzzle game for toddlers where you put objects in place')).toEqual(['toddler-games']);
+    expect(slugs('Wooden Puzzles', 'A puzzle game')).toEqual([]);
+    expect(slugs('Haunted Kindergarten', 'Venture into an abandoned kindergarten, every shadow hides a threat')).toEqual([]);
+    expect(slugs('Coloring Book Kindergarten', 'Coloring book game for kids in kindergarten')).toEqual(['kindergarten-games']);
+    expect(slugs('Ludo King')).toEqual(['ludo-games']);
+    expect(slugs('Slope City', '', '3d')).toEqual(['3d-games']);
+  });
+});

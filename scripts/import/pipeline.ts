@@ -320,7 +320,7 @@ export async function runImport(db: SqlDb, adapter: ProviderAdapter, opts: RunOp
       if (out.length >= 8) break;
     }
     // Title-derived tags (landing pages) come on top of the 8 partner tags.
-    for (const t of titleTags(item.title)) if (!seenT.has(t.slug) && !catSet.has(t.slug)) { seenT.add(t.slug); out.push(t); }
+    for (const t of titleTags(item.title, item.description, item.visualStyle)) if (!seenT.has(t.slug) && !catSet.has(t.slug)) { seenT.add(t.slug); out.push(t); }
     return out;
   }
 
