@@ -3,8 +3,10 @@
  * GameMonetize: Publisher → Websites and Ads.txt Management (received 2026-10-02).
  * GamePix: my.gamepix.com → Properties → Verify ads.txt (verbatim file, src/config/ads-gamepix.ts).
  * HTMLGames: https://cdn.htmlgames.com/ads.partners.txt (verbatim file, src/config/ads-htmlgames.ts).
+ * GameFlare: https://distribution.gameflare.com/publishers/ (src/config/ads-gameflare.ts).
  */
 import { GAMEPIX_ADS_TXT } from './ads-gamepix';
+import { GAMEFLARE_ADS_TXT } from './ads-gameflare';
 import { HTMLGAMES_ADS_TXT } from './ads-htmlgames';
 
 export const ADS_TXT_BLOCKS: Array<{ source: string; lines: string[] }> = [
@@ -14,6 +16,7 @@ export const ADS_TXT_BLOCKS: Array<{ source: string; lines: string[] }> = [
   },
   { source: 'GamePix (property 9O09X)', lines: GAMEPIX_ADS_TXT.split('\n') },
   { source: 'HTMLGames.com (Zygomatic)', lines: HTMLGAMES_ADS_TXT.split('\n') },
+  { source: 'GameFlare.com', lines: GAMEFLARE_ADS_TXT },
 ];
 
 // domain, publisher id, relationship[, cert id][ # comment]  — comment lines and blank lines pass through.

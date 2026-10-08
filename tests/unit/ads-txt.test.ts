@@ -14,4 +14,10 @@ describe('ads.txt', () => {
     expect(txt).toContain('yollamedia.com, 1aa310c633fb5a7cc62be96a2d7bda1e, DIRECT');
     expect(txt).toContain('contextweb.com, 558511, RESELLER,');
   });
+  it('carries the GameFlare revenue-share lines', () => {
+    const txt = renderAdsTxt();
+    expect(txt).toContain('# GameFlare.com');
+    expect(txt).toContain('cpmstar.com, 23984, RESELLER');
+    expect(txt).toContain('google.com, pub-7020262665364086, RESELLER, f08c47fec0942fa0');
+  });
 });
