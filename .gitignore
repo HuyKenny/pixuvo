@@ -14,3 +14,4 @@ coverage/
 tmp/
 *.log
 public/data/
+__pycache__/
