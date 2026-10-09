@@ -41,6 +41,9 @@ const desc = short.length >= 70 ? short : short ? truncate(`${short.replace(/[.!
 const portrait = g.orientation === 'portrait' || (!!g.width && !!g.height && g.height > g.width * 1.1);
 // How the stage is sized on phones: portrait = full screen height, any = tall adaptive frame, landscape = 16:9.
 const fit = portrait ? 'portrait' : g.orientation === 'any' ? 'any' : 'landscape';
+// Landscape stage follows the game's own shape (4:3 games used to scroll inside a 16:9 frame). GameFlare adds a ~45 px bar below the game.
+const frameBar = g.providerName === 'GameFlare' ? 1.08 : 1;
+const ratio = fit === 'landscape' && g.width && g.height ? Math.min(1.78, Math.max(1.25, Math.round((g.width / (g.height * frameBar)) * 1000) / 1000)) : 1.778;
 const votes = g.ratingUp + g.ratingDown;
 const liked = votes >= 5 ? Math.round((g.ratingUp / votes) * 100) : null; // shown only with ≥ 5 real votes
 const players = g.players ? (g.players >= 2 ? t('game.playersN', { n: g.players }) : t('game.players1')) : null;
@@ -97,7 +100,7 @@ const data = { id: g.id, slug: g.slug, title: g.title, thumb: g.thumb, portrait,
           <div class="game-tags">{g.categories.slice(0, 3).map((c, idx) => <Tag href={categoryPath(c.slug)} tone={tones[idx % tones.length]!}>{catName(c)}</Tag>)}{g.mobile && <Tag tone="green">{t('game.mobile')}</Tag>}{g.inAppPurchases && <Tag tone="orange">{t('game.iap')}</Tag>}</div>
         </header>
 
-        <div class:list={['stage', { portrait }]} id="stage" data-fit={fit} data-game={JSON.stringify(data)}>
+        <div class:list={['stage', { portrait }]} id="stage" data-fit={fit} style={`--ar:${ratio}`} data-game={JSON.stringify(data)}>
           <div class="stage-poster" data-poster>
             <img class="bg" src={g.thumb} alt="" width="320" height="240" referrerpolicy="no-referrer" />
             <div class="inner">

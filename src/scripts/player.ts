@@ -108,6 +108,7 @@ if (stage && data) {
     const help = document.querySelector<HTMLElement>('[data-share-status]');
     if (help) help.innerHTML = `<span class="help-row"><span>${escapeText(tr('c.notStarting'))}</span><button type="button" class="mini-btn" data-retry>${escapeText(tr('c.reload'))}</button></span>`;
     fitToScreen();
+    setTimeout(fitToScreen, 1500); // layout shifts (images, partner bar) after the first scroll
   }
 
   // Phones: bring the whole game into view once (only if the visitor has not scrolled yet).
@@ -115,10 +116,17 @@ if (stage && data) {
   let userScrolled = false;
   for (const ev of ['touchmove', 'wheel', 'keydown'] as const) addEventListener(ev, () => (userScrolled = true), { once: true, passive: true });
   function fitToScreen() {
-    if (!phone.matches || userScrolled) return;
-    const header = matchMedia('(orientation: landscape) and (max-height: 500px)').matches ? 0 : (document.querySelector('.site-header')?.getBoundingClientRect().height ?? 0);
-    const top = stage!.getBoundingClientRect().top + scrollY - header;
-    scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+    if (userScrolled) return;
+    const landscapePhone = matchMedia('(orientation: landscape) and (max-height: 500px)').matches;
+    const header = landscapePhone ? 0 : (document.querySelector('.site-header')?.getBoundingClientRect().height ?? 0);
+    const r = stage!.getBoundingClientRect();
+    if (!phone.matches) {
+      // Desktop / tablet: scroll only when the stage is cut off by the screen edge (breadcrumbs and title sit above it).
+      if (r.top >= header && r.bottom <= innerHeight) return;
+      scrollTo({ top: Math.max(0, r.top + scrollY - header - 8), behavior: 'smooth' });
+      return;
+    }
+    scrollTo({ top: Math.max(0, r.top + scrollY - header), behavior: 'smooth' });
   }
   matchMedia('(orientation: landscape)').addEventListener('change', () => {
     userScrolled = false;

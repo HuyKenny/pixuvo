@@ -3638,3 +3638,22 @@ body.is-fullscreen .bottom-nav {
   color: #c5c9e4;
   font-weight: 700;
 }
+
+/* ══ v5 — stage follows the game's shape and the screen height (audit 9. 10. 2026) ══════════════
+   Landscape games: aspect ratio from the feed size (--ar, clamped 1.25–1.78); on wide screens the width shrinks so the
+   whole stage fits under the header. Portrait games: height never exceeds the free screen height (notebook 1366×768). */
+@media not all and (orientation: landscape) and (max-height: 500px) {
+  body:not(.expanded-mode):not(.is-fullscreen) .stage[data-fit='landscape'] {
+    aspect-ratio: var(--ar, 1.778);
+    min-height: 0;
+  }
+}
+@media (min-width: 700px) {
+  body:not(.expanded-mode):not(.is-fullscreen) .stage[data-fit='landscape'] {
+    width: min(100%, calc((100svh - var(--header-h) - 16px) * var(--ar, 1.778)));
+    margin-inline: auto;
+  }
+  body:not(.expanded-mode):not(.is-fullscreen) .stage.portrait {
+    height: min(760px, calc(100svh - var(--header-h) - 16px));
+  }
+}
