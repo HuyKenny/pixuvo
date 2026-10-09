@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any -- ad-hoc Playwright audit; page data is untyped JSON */
 /**
  * Audit: does each game fit the screen (no page scroll, no inner scroll, little letterbox)?
  *   tsx scripts/audit-fit.ts <sample.json> <out.json> [--games a,b] [--base https://pixuvo.com]
