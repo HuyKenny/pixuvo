@@ -4,8 +4,11 @@
  *   remembered choice (cookie) → browser language → Cloudflare country → English
  * Bots and English visitors get the static page; others a 302 to /{lang}/.
  * Every other request goes straight to Astro (static files never reach the Worker).
+ * scheduled(): the daily Cron Trigger (wrangler.jsonc → triggers.crons) only starts the GitHub sync
+ * workflow; the import itself never runs inside the Worker. tests/unit/worker-cron.test.ts guards it.
  */
 import { handle } from '@astrojs/cloudflare/handler';
+import { dispatchSync, type DispatchEnv } from './lib/server/dispatch';
 import { DEFAULT_LANG, detectLang } from './i18n/locales';
 
 type Env = { ASSETS: Fetcher } & Record<string, unknown>;
@@ -35,5 +38,8 @@ export default {
       return out;
     }
     return handle(request, env as never, ctx);
+  },
+  async scheduled(_controller: ScheduledController, env: Env, ctx: ExecutionContext): Promise<void> {
+    ctx.waitUntil(dispatchSync(env as unknown as DispatchEnv).then((r) => console.log('daily sync dispatch', JSON.stringify(r))));
   },
 } satisfies ExportedHandler<Env>;
