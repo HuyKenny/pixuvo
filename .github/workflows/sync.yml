@@ -42,7 +42,7 @@ jobs:
       - name: Probe embeds (dead developer domains → offline after 2 failed runs; oldest-checked first)
         if: github.event_name == 'workflow_dispatch'
         continue-on-error: true
-        run: pnpm exec tsx scripts/probe-embeds.ts --target remote --limit 1500
+        run: pnpm exec tsx scripts/probe-embeds.ts --target remote --limit 5000
       - name: Metrics (popular / trending / ranks)
         if: github.event_name == 'workflow_dispatch'
         run: pnpm exec tsx scripts/metrics.ts --target remote
