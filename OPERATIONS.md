@@ -121,3 +121,9 @@ pnpm exec tsx scripts/i18n-audit.ts --langs cs,de        # English left on local
   (sitemap submitted), IndexNow daily from the Pi cron (`bin/indexnow.py pixuvo --sitemap`, key file in `public/`).
   Seznam Webmaster needs a key the owner creates at reporter.seznam.cz/wm.
 * Never set noindex on URLs that have GSC impressions (new site: deindexing, not crawl-budget savings).
+
+## Watchdog (added 2026-10-14)
+The daily sync once silently stopped for 11 days (a refactor dropped `scheduled()` from `src/worker.ts`). Two guards now exist:
+`tests/unit/worker-cron.test.ts` (fails CI if the cron handler disappears) and `.github/workflows/watchdog.yml`
+(08:30 UTC, runs `scripts/watchdog.ts`: every provider imported within 36 h, no failed imports in 48 h, key pages 200).
+On failure it re-dispatches `sync.yml` and fails the run, so GitHub e-mails it.
