@@ -118,7 +118,8 @@ pnpm exec tsx scripts/hold-brands.ts --target remote --dry-run   # published tit
 pnpm exec tsx scripts/i18n-audit.ts --langs cs,de        # English left on localised pages
 ```
 * Search engines: GSC property `sc-domain:pixuvo.com` (service account is owner, sitemap submitted), Bing Webmaster
-  (sitemap submitted), IndexNow daily from the Pi cron (`bin/indexnow.py pixuvo --sitemap`, key file in `public/`).
+  (sitemap submitted), IndexNow daily from the sync workflow (`scripts/indexnow.ts`, key file in `public/`; the Pi cron was switched off on 9. 10. and nothing replaced it until 22. 10.).
+  `sitemaps/priority.xml` (top 1 000 by rank + 500 newest, English) is listed first in the sitemap index so a DR≈0 domain gets its best pages crawled first.
   Seznam Webmaster needs a key the owner creates at reporter.seznam.cz/wm.
 * Never set noindex on URLs that have GSC impressions (new site: deindexing, not crawl-budget savings).
 

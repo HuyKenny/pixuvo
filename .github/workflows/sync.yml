@@ -48,6 +48,10 @@ jobs:
         run: pnpm exec tsx scripts/metrics.ts --target remote
       - name: Publish (skips when nothing changed)
         run: pnpm exec tsx scripts/publish.ts --target remote --deploy
+      - name: IndexNow (hubs + games added or changed in the last 3 days)
+        if: github.event_name == 'workflow_dispatch'
+        continue-on-error: true
+        run: pnpm exec tsx scripts/indexnow.ts --target remote
       - name: Free-tier report
         if: always()
         continue-on-error: true

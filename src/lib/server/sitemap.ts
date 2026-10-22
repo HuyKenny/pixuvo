@@ -1,5 +1,8 @@
 // 5 000 URLs per file keeps one sitemap request well inside the CPU budget.
 export const GAMES_PER_SITEMAP = 5_000;
+// Priority tier: best-ranked and newest published games (see sitemaps/priority.xml).
+export const PRIORITY_TOP = 1_000;
+export const PRIORITY_NEW = 500;
 export function xml(body: string): Response {
   return new Response(`<?xml version="1.0" encoding="UTF-8"?>\n${body}`, {
     headers: { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=3600, s-maxage=3600' },
