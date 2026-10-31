@@ -5,7 +5,7 @@ name: Watchdog
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 8 * * *'
+    - cron: '30 8 * * 2'
 permissions:
   contents: read
   actions: write

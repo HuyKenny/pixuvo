@@ -9,7 +9,7 @@ import { parseArgs } from 'node:util';
 import { loadConfig } from './lib/env.ts';
 import { openTarget } from './lib/target.ts';
 
-const { values } = parseArgs({ options: { target: { type: 'string', default: 'remote' }, 'max-age-h': { type: 'string', default: '36' }, site: { type: 'string', default: 'https://pixuvo.com' } } });
+const { values } = parseArgs({ options: { target: { type: 'string', default: 'remote' }, 'max-age-h': { type: 'string', default: '200' }, site: { type: 'string', default: 'https://pixuvo.com' } } });
 const maxAgeH = Number(values['max-age-h']);
 const problems: string[] = [];
 
