@@ -24,6 +24,7 @@ const path = `/${doc}/`;
       <div class="page-head"><h1>{text.h1}</h1><p class="lead">{i.t('doc.updated', { date: i.date(DOC_UPDATED) ?? DOC_UPDATED })}</p></div>
       {translated && BINDING_EN.includes(doc) && <p class="note doc-binding">{i.t('doc.englishBinding')} <a href={path} data-keep-href>{i.t('doc.readEnglish')}</a></p>}
       <Fragment set:html={html} />
+      {doc === 'about' && i.lang === 'en' && <p>Pixuvo is built and run by Ha Duy Huy (Kenny), an SEO consultant from Prague. Every game runs in the browser, with no downloads and no sign-up. More about him at <a href="https://huy.cz/" rel="nofollow">huy.cz</a>.</p>}
     </article>
   </div>
 </Base>

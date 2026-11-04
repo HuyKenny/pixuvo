@@ -31,7 +31,8 @@ const t = i.t;
 const ld = [
   { '@context': 'https://schema.org', '@type': 'WebSite', name: 'Pixuvo', url: SITE.url + '/',
     potentialAction: { '@type': 'SearchAction', target: `${SITE.url}/search/?q={search_term_string}`, 'query-input': 'required name=search_term_string' } },
-  { '@context': 'https://schema.org', '@type': 'Organization', name: 'Pixuvo', url: SITE.url + '/', logo: `${SITE.url}/logo-512.png`, email: SITE.email },
+  { '@context': 'https://schema.org', '@type': 'Organization', name: 'Pixuvo', url: SITE.url + '/', logo: `${SITE.url}/logo-512.png`, email: SITE.email,
+    founder: { '@type': 'Person', '@id': 'https://huy.cz/#kenny', name: 'Ha Duy Huy', alternateName: 'Kenny', url: 'https://huy.cz/', jobTitle: 'SEO konzultant' } },
 ];
 ---
 <Base title={t('home.title')} description={t('home.description', { count: i.approx(total) })} path="/" jsonLd={ld}>
