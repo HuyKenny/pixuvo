@@ -19,6 +19,8 @@ const cfg = loadConfig();
 const LIMIT = { files: 20_000, fileStop: 18_000, dbBytes: 500e6, accountBytes: 5e9, requests: 100_000, cpuMs: 10, rowsRead: 5_000_000, rowsWritten: 100_000 };
 const rows: Array<[string, string, string, 'ok' | 'warn' | 'FAIL']> = [];
 const add = (what: string, value: string, limit: string, status: 'ok' | 'warn' | 'FAIL') => rows.push([what, value, limit, status]);
+// Account-wide rows (other projects' traffic) only warn: pixuvo cannot fix them and a FAIL skips the rest of the sync job.
+const acctLvl = (v: number, lim: number): 'ok' | 'warn' => (v > lim * 0.7 ? 'warn' : 'ok');
 const lvl = (v: number, lim: number): 'ok' | 'warn' | 'FAIL' => (v > lim ? 'FAIL' : v > lim * 0.7 ? 'warn' : 'ok');
 
 function count(dir: string): number {
@@ -65,14 +67,14 @@ if (values.target === 'remote') {
       const errs = a.px.reduce((s, x) => s + x.sum.errors, 0);
       const p50 = Math.max(0, ...a.px.map((x) => x.quantiles.cpuTimeP50 / 1000));
       const p99 = Math.max(0, ...a.px.map((x) => x.quantiles.cpuTimeP99 / 1000));
-      add('Worker requests 24 h (account)', String(reqAll), '100 000/day', lvl(reqAll, LIMIT.requests));
+      add('Worker requests 24 h (account)', String(reqAll), '100 000/day', acctLvl(reqAll, LIMIT.requests));
       add('Worker requests 24 h (pixuvo)', `${reqPx} (${errs} errors)`, '-', 'ok');
       add('Worker CPU p50 / p99 (pixuvo)', `${p50.toFixed(2)} / ${p99.toFixed(2)} ms`, '10 ms', p99 > LIMIT.cpuMs ? 'warn' : 'ok');
       const rr = a.d1.reduce((s, x) => s + x.sum.rowsRead, 0);
       const rw = a.d1.reduce((s, x) => s + x.sum.rowsWritten, 0);
       const mineRw = a.d1.filter((x) => x.dimensions.databaseId === cfg.CF_D1_DATABASE_ID).reduce((s, x) => s + x.sum.rowsWritten, 0);
-      add('D1 rows read since yesterday (account)', String(rr), '5 M/day', lvl(rr, LIMIT.rowsRead * 2));
-      add('D1 rows written since yesterday (account)', `${rw} (pixuvo ${mineRw})`, '100 k/day', lvl(rw, LIMIT.rowsWritten * 2));
+      add('D1 rows read since yesterday (account)', String(rr), '5 M/day', acctLvl(rr, LIMIT.rowsRead * 2));
+      add('D1 rows written since yesterday (account)', `${rw} (pixuvo ${mineRw})`, '100 k/day', acctLvl(rw, LIMIT.rowsWritten * 2));
     }
   }
 }

@@ -65,7 +65,9 @@ check(sug.status === 200 && ((await sug.json()) as { items: unknown[] }).items.l
 const det = await get('/', { headers: { 'accept-language': 'cs-CZ,cs;q=0.9' } });
 check(det.status === 302 && det.headers.get('location') === '/cs/', 'homepage → /cs/ for Czech browser', `${det.status} ${det.headers.get('location')}`);
 const bot = await get('/', { headers: { 'accept-language': 'cs', 'user-agent': 'Mozilla/5.0 (compatible; Googlebot/2.1)' } });
-check(bot.status === 200, 'bots are not redirected', String(bot.status));
+// Since 31 Oct the Cloudflare WAF answers 403 to a UA containing "bot" that is not a verified search crawler (a fake Googlebot
+// from a CI runner), so 403 is a pass here; what must never happen is a redirect. Real Googlebot is verified and gets 200.
+check(bot.status === 200 || bot.status === 403, 'bots are not redirected', String(bot.status));
 const csCat = await get('/cs/racing-games/');
 const csHtml = await csCat.text();
 check(csCat.status === 200 && /<html lang="cs"/.test(csHtml) && csHtml.includes('hreflang="x-default"') && csHtml.includes('<link rel="canonical" href="https://pixuvo.com/cs/racing-games/">'), 'Czech category page (lang, canonical, hreflang)', String(csCat.status));

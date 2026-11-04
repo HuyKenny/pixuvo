@@ -6,8 +6,8 @@
   "compatibility_date": "2026-09-25",
   "compatibility_flags": ["nodejs_compat"],
   "workers_dev": true,
-  // Daily 03:20 UTC: dispatch the GitHub "Sync and publish" workflow (src/worker.ts → scheduled).
-  "triggers": { "crons": ["20 3 * * 1"] },
+  // Mon + Thu 03:20 UTC (cost cut 31 Oct): dispatch the GitHub "Sync and publish" workflow (src/worker.ts → scheduled).
+  "triggers": { "crons": ["20 3 * * 1,4"] },
   // pixuvo.com is served by this Worker; www.pixuvo.com is a zone Redirect Rule (301 → apex), so it never hits the Worker.
   "routes": [{ "pattern": "pixuvo.com", "custom_domain": true }],
   "preview_urls": false,
