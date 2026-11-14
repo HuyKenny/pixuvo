@@ -6,7 +6,9 @@
 import type { Lang } from './locales';
 
 export interface Faq { q: string; a: string }
-export interface Block { intro: string; faq?: Faq[] }
+/** One contextual link to a sister site in one language only (linkbuilding wave 14. 11. 2026); plain dofollow <a>. */
+export interface SisterLink { before: string; anchor: string; href: string; after: string }
+export interface Block { intro: string; faq?: Faq[]; link?: SisterLink }
 export interface Content {
   home?: { h2: string; intro: string };
   cat?: Record<string, Block>;

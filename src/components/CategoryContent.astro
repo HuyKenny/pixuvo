@@ -20,6 +20,7 @@ const types = subs.map((s) => ({ href: categoryPath(s.slug), name: i.catGames(s.
       <>
         <h2 id="about-cat-h">{t('cat.aboutH2', games)}</h2>
         {paragraphs(block.intro).map((p) => <p>{p}</p>)}
+        {block.link && /^https:\/\//.test(block.link.href) && <p>{block.link.before}<a href={block.link.href}>{block.link.anchor}</a>{block.link.after}</p>}
       </>
     )}
     {types.length > 0 && (
