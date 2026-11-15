@@ -27,7 +27,7 @@ for (const f of failed.rows) problems.push(`${f.provider_id}: ${f.n} failed impo
 
 for (const path of ['/', '/new-games/', '/popular-games/', '/sitemap.xml', '/cs/']) {
   try {
-    const r = await fetch(values.site + path, { headers: { 'accept-language': 'en', 'user-agent': 'pixuvo-watchdog' }, redirect: 'follow' });
+    const r = await fetch(values.site + path, { headers: { 'accept-language': 'en', 'user-agent': 'pixuvo-watchdog', ...(process.env.MALINA_WARM_TOKEN ? { 'x-malina-warm': process.env.MALINA_WARM_TOKEN } : {}) }, redirect: 'follow' });
     console.log(`${path.padEnd(16)} ${r.status}`);
     if (r.status !== 200) problems.push(`${path} answers ${r.status}`);
   } catch (e) {

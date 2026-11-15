@@ -21,7 +21,9 @@ const { values } = parseArgs({ options: { base: { type: 'string', default: 'http
 const base = values.base!.replace(/\/$/, '');
 const results: Array<[boolean, string, string]> = [];
 const check = (ok: boolean, name: string, detail = '') => results.push([ok, name, detail]);
-const get = (path: string, init: RequestInit = {}) => fetch(path.startsWith('http') ? path : base + path, { redirect: 'manual', ...init, headers: { 'user-agent': 'PixuvoLaunchCheck/1.0', ...(init.headers ?? {}) } });
+// GitHub runners (Azure ASN) are challenged by the zone WAF; the secret x-malina-warm header is the allowed bypass.
+const warm: Record<string, string> = process.env.MALINA_WARM_TOKEN ? { 'x-malina-warm': process.env.MALINA_WARM_TOKEN } : {};
+const get = (path: string, init: RequestInit = {}) => fetch(path.startsWith('http') ? path : base + path, { redirect: 'manual', ...init, headers: { 'user-agent': 'PixuvoLaunchCheck/1.0', ...warm, ...(init.headers ?? {}) } });
 
 const home = await get('/', { headers: { 'accept-language': 'en-US,en;q=0.9' } });
 const homeHtml = await home.text();
@@ -77,9 +79,9 @@ check(ar.status === 200 && /<html lang="ar" dir="rtl"/.test(await ar.text()), 'A
 check((await get('/xx/')).status === 404, 'unknown language → 404');
 check((await get('/sitemaps/cs-categories.xml')).status === 200, 'Czech categories sitemap');
 if (!values.quick && !values.preview) {
-  const http = await fetch('http://pixuvo.com/', { redirect: 'manual' });
+  const http = await fetch('http://pixuvo.com/', { redirect: 'manual', headers: warm });
   check([301, 308].includes(http.status) && (http.headers.get('location') ?? '').startsWith('https://pixuvo.com'), 'http → https', String(http.status));
-  const www = await fetch('https://www.pixuvo.com/racing-games/?x=1', { redirect: 'manual' });
+  const www = await fetch('https://www.pixuvo.com/racing-games/?x=1', { redirect: 'manual', headers: warm });
   check([301, 308].includes(www.status) && (www.headers.get('location') ?? '') === 'https://pixuvo.com/racing-games/?x=1', 'www → apex 301 keeps path', `${www.status} ${www.headers.get('location')}`);
   for (const p of ['/about/', '/contact/', '/privacy/', '/cookies/', '/terms/', '/copyright/']) check((await get(p)).status === 200, `legal page ${p}`);
 }

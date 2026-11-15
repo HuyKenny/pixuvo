@@ -21,6 +21,7 @@ env:
   PLAYGAMA_CLID: ${{ secrets.PLAYGAMA_CLID }}
   GAMEMONETIZE_FEED_URL: ${{ secrets.GAMEMONETIZE_FEED_URL }}
   TURNSTILE_SITE_KEY: ${{ secrets.TURNSTILE_SITE_KEY }}
+  MALINA_WARM_TOKEN: ${{ secrets.MALINA_WARM_TOKEN }}
 jobs:
   sync:
     # Never from forks / pull requests.
