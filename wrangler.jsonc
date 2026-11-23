@@ -6,8 +6,10 @@
   "compatibility_date": "2026-09-25",
   "compatibility_flags": ["nodejs_compat"],
   "workers_dev": true,
-  // Mon + Thu 03:20 UTC (cost cut 31 Oct): dispatch the GitHub "Sync and publish" workflow (src/worker.ts → scheduled).
-  "triggers": { "crons": ["20 3 * * 1,4"] },
+  // No cron trigger since 23 Nov 2026 (Workers Free: 5 crons per account, reserved for malina-cron). The /games/ and
+  // language pages are frozen static shards (pixuvo-z01..z04, scripts/cloudflare-free/zmraz.py); a sync would add games
+  // the shards do not have. Run "Sync and publish" manually only together with a re-freeze of the shards.
+  "triggers": { "crons": [] },
   // pixuvo.com is served by this Worker; www.pixuvo.com is a zone Redirect Rule (301 → apex), so it never hits the Worker.
   "routes": [{ "pattern": "pixuvo.com", "custom_domain": true }],
   "preview_urls": false,
