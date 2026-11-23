@@ -67,6 +67,11 @@ def finish(a):
             shutil.copy2(p, d)
             added += 1
 
+    if not (out / "404.html").exists():
+        # zmraz asks for a path without the trailing slash, which the app answers with a 301; ask with one
+        st, _, body = zmraz.fetch(a.base.rstrip("/") + "/zz-not-found-page/")
+        if st == 404 and body:
+            (out / "404.html").write_bytes(body)
     random_pages(out, client)
     safety_404(out)
     (out / "_headers").write_text(HEADERS)
