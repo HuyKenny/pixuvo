@@ -70,6 +70,8 @@ def finish(a):
     if not (out / "404.html").exists():
         # zmraz asks for a path without the trailing slash, which the app answers with a 301; ask with one
         st, _, body = zmraz.fetch(a.base.rstrip("/") + "/zz-not-found-page/")
+        if body[:2] == b"\x1f\x8b":
+            body = __import__("gzip").decompress(body)      # error responses come gzipped without the header
         if st == 404 and body:
             (out / "404.html").write_bytes(body)
     random_pages(out, client)
