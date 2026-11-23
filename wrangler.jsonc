@@ -5,13 +5,13 @@
   "main": "./src/worker.ts",
   "compatibility_date": "2026-09-25",
   "compatibility_flags": ["nodejs_compat"],
-  "workers_dev": true,
-  // No cron trigger since 23 Nov 2026 (Workers Free: 5 crons per account, reserved for malina-cron). The /games/ and
-  // language pages are frozen static shards (pixuvo-z01..z04, scripts/cloudflare-free/zmraz.py); a sync would add games
-  // the shards do not have. Run "Sync and publish" manually only together with a re-freeze of the shards.
+  "workers_dev": false,  // the SSR mirror on workers.dev would render pages from D1 (Free plan: reads + CPU)
+  // No cron trigger since 23 Nov 2026 (Workers Free: 5 crons per account, reserved for malina-cron). Pages are static
+  // shards rebuilt by .github/workflows/sync.yml (scripts/static/build.sh, Mon + Thu): pixuvo-z01..zNN serve /games/ and the
+  // language dirs, pixuvo-static serves pixuvo.com/*; this Worker only answers pixuvo.com/api/* (zone route below).
   "triggers": { "crons": [] },
   // pixuvo.com is served by this Worker; www.pixuvo.com is a zone Redirect Rule (301 → apex), so it never hits the Worker.
-  "routes": [{ "pattern": "pixuvo.com", "custom_domain": true }],
+  "routes": [{ "pattern": "pixuvo.com", "custom_domain": true }, { "pattern": "pixuvo.com/api/*", "zone_name": "pixuvo.com" }],
   "preview_urls": false,
   "assets": { "binding": "ASSETS", "directory": "./dist/client", "html_handling": "auto-trailing-slash", "not_found_handling": "none", "run_worker_first": ["/"] },
   "d1_databases": [

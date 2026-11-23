@@ -1,4 +1,4 @@
-/** Rebuilds games_fts from games/tags/categories (after a restore or a taxonomy rename). Batched. */
+/** Rebuilds games_fts from games/tags/categories (after a restore or a taxonomy rename). Batched by 100 ids (D1 bound-parameter limit). */
 import { parseArgs } from 'node:util';
 import { loadConfig } from './lib/env.ts';
 import { openTarget } from './lib/target.ts';
@@ -7,7 +7,7 @@ const db = openTarget(values.target!, loadConfig());
 await db.batch([{ sql: 'DELETE FROM games_fts' }]);
 let last = 0;
 for (;;) {
-  const ids = (await db.all<{ id: number }>("SELECT id FROM games WHERE id > ? AND status != 'merged' ORDER BY id LIMIT 500", [last])).rows.map((r) => r.id);
+  const ids = (await db.all<{ id: number }>("SELECT id FROM games WHERE id > ? AND status != 'merged' ORDER BY id LIMIT 100", [last])).rows.map((r) => r.id);
   if (!ids.length) break;
   await db.batch([{
     sql: `INSERT INTO games_fts (rowid, title, aliases, developer, labels)
