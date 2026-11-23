@@ -101,7 +101,7 @@ for n in $(seq 1 "$N"); do
   if [[ $n -gt 1 ]]; then st=$WORK/state-$n; rm -rf "$st"; cp -r .wrangler/state "$st"; fi
   p=$((PORT + n - 1))
   setsid "$WRANGLER" dev -c dist/server/wrangler.json --local --persist-to "$st" --port "$p" --ip 127.0.0.1 \
-    --show-interactive-dev-session=false > "$WORK/dev-$n.log" 2>&1 &
+    --inspector-port $((9300 + n)) --show-interactive-dev-session=false > "$WORK/dev-$n.log" 2>&1 &
   PIDS+=($!)
   BASES+="${BASES:+,}http://127.0.0.1:$p"
 done
@@ -109,7 +109,7 @@ for b in ${BASES//,/ }; do
   for i in $(seq 1 180); do
     curl -sf -o /dev/null "$b/robots.txt" && break
     sleep 1
-    [[ $i == 180 ]] && { tail -30 "$WORK"/dev-1.log; exit 1; }
+    [[ $i == 180 ]] && { for f in "$WORK"/dev-*.log; do echo "== $f"; grep -v -E "^[│├└┌]" "$f" | tail -15; done; exit 1; }
   done
 done
 echo "$N dev servers ready"
