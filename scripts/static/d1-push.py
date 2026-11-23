@@ -48,7 +48,18 @@ def main():
         "SELECT name FROM main.sqlite_master WHERE type='table' AND sql NOT LIKE 'CREATE VIRTUAL%' ORDER BY name")
         if not r[0].startswith(SKIP)]
     base_tables = {r[0] for r in con.execute("SELECT name FROM b.sqlite_master WHERE type='table'")}
+    # parents before children (games before game_categories ...); D1 also checks foreign keys only at commit
+    deps = {t: {r[2] for r in con.execute(f"SELECT * FROM pragma_foreign_key_list({lit(t)})")} & set(tables) - {t}
+            for t in tables}
+    ordered = []
+    while deps:
+        ready = sorted(t for t, d in deps.items() if not d - set(ordered)) or sorted(deps)[:1]
+        for t in ready:
+            ordered.append(t)
+            deps.pop(t)
+    tables = ordered
     out = open(a.out, "w", encoding="utf-8")
+    out.write("PRAGMA defer_foreign_keys = true;\n")
     total_est = 0
     summary = []
     for t in tables:

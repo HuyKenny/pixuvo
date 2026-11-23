@@ -228,7 +228,7 @@ export async function filterGames(q: Q, f: FilterInput, pageSize: number = SITE.
     params.push(f.q.match);
   }
   const extra = where.length ? ' AND ' + where.join(' AND ') : '';
-  const CAP = 5000;
+  const CAP = 1000; // the count reads up to CAP rows of D1 per uncached filter change (Workers Free: 5 M reads/day per account)
   let base: string;
   let baseParams: Param[];
   let order: string;
@@ -374,11 +374,20 @@ export async function searchGames(q: Q, raw: string, limit: number, offset = 0):
 export async function suggest(q: Q, raw: string): Promise<Array<{ slug: string; title: string; thumb: string; cat: string | null; catSlug: string | null }>> {
   const fq = buildFtsQuery(raw);
   if (!fq) return [];
+  // FTS5 ranks inside the index (ORDER BY rank LIMIT): the 30 best title hits (always first) + the 30 best hits in any
+  // column, joined in that order (CROSS JOIN). Scoring every match with bm25() in SQL read ~26 000 D1 rows for a short
+  // prefix like "car"; this reads ~150–300 (Workers Free: 5 M D1 reads/day for the whole account).
   const rows = await q.all<CardRow>(
-    `SELECT ${CARD_COLS} FROM games_fts f JOIN games g ON g.id = f.rowid ${CARD_JOIN}
-      WHERE games_fts MATCH ? AND g.status = 'published'
-      ORDER BY (g.title_norm = ?) DESC, (g.title_norm LIKE ?) DESC, bm25(games_fts, 10.0, 6.0, 3.0, 1.0) LIMIT 8`,
-    [fq.match, fq.norm, fq.norm.slice(0, 40) + '%'],
+    `WITH hits AS (
+       SELECT id, min(r) AS r FROM (
+         SELECT * FROM (SELECT rowid AS id, rank - 1000 AS r FROM games_fts WHERE games_fts MATCH ? ORDER BY rank LIMIT 30)
+         UNION ALL
+         SELECT * FROM (SELECT rowid AS id, rank AS r FROM games_fts WHERE games_fts MATCH ? ORDER BY rank LIMIT 30)
+       ) GROUP BY id)
+     SELECT ${CARD_COLS} FROM hits CROSS JOIN games g ON g.id = hits.id ${CARD_JOIN}
+      WHERE g.status = 'published'
+      ORDER BY (g.title_norm = ?) DESC, (g.title_norm LIKE ?) DESC, hits.r LIMIT 8`,
+    [`title : (${fq.match})`, fq.match, fq.norm, fq.norm.slice(0, 40) + '%'],
   );
   return rows.map((r) => ({ slug: r.slug, title: r.title, thumb: r.thumb_url, cat: r.cat, catSlug: r.cat_slug ?? null }));
 }
