@@ -94,6 +94,48 @@ def wrangler_deploy(name, d, routes, work, nf):
     return ok, full[-1500:]
 
 
+def sticky_shards(plan, routes_now):
+    """Pack the prefix groups into shards, keeping every prefix on the shard that serves it now while it fits.
+
+    A prefix that moves anyway goes to a shard deployed BEFORE the one it leaves (gaining shards first), so the old
+    owner never serves its route without the files. Returns [(worker name, files, route patterns)].
+    """
+    groups = []
+    for sh in plan:
+        pre = sorted(sh["prefixes"], key=len, reverse=True)
+        by = {p: [] for p in pre}
+        for f in sh["files"]:
+            u = zmraz.url_path(f)
+            by[next((p for p in pre if u.startswith(p)), pre[-1])].append(f)
+        groups += list(by.items())
+    owner = {p: r.get("script") for p, r in routes_now.items()}
+    shards = {}                                   # name -> [prefixes, files]
+    rest = []
+    for p, fl in sorted(groups, key=lambda g: -len(g[1])):
+        cur = owner.get(f"{DOMAIN}{p}*") or ""
+        if re.fullmatch(re.escape(API_WORKER) + r"-z\d\d", cur):
+            sh = shards.setdefault(cur, [[], []])
+            if len(sh[1]) + len(fl) <= zmraz.SHARD_CAP:
+                sh[0].append(p)
+                sh[1] += fl
+                continue
+        rest.append((p, fl))
+    for p, fl in rest:
+        for name in sorted(shards):
+            if len(shards[name][1]) + len(fl) <= zmraz.SHARD_CAP:
+                break
+        else:
+            name = next(f"{API_WORKER}-z{i:02d}" for i in range(1, 100) if f"{API_WORKER}-z{i:02d}" not in shards)
+            shards[name] = [[], []]
+        shards[name][0].append(p)
+        shards[name][1] += fl
+    gains = {n: sum(1 for p in v[0] if owner.get(f"{DOMAIN}{p}*") != n) for n, v in shards.items()}
+    order = sorted(shards, key=lambda n: (-gains[n], n))
+    for n in order:
+        print(f"plan {n}: {len(shards[n][1])} files, {len(shards[n][0])} prefixes, {gains[n]} moved in")
+    return [(n, shards[n][1], [f"{DOMAIN}{p}*" for p in shards[n][0]]) for n in order if shards[n][1]]
+
+
 def deploy(a):
     out = Path(a.out)
     acc = zmraz.account_id()
@@ -108,7 +150,7 @@ def deploy(a):
             and not any(zmraz.url_path(f).startswith(f"/{s}/") for s in SEGMENTS)]
     if len(root) > zmraz.SHARD_CAP:
         sys.exit(f"{STATIC_WORKER}: {len(root)} files > {zmraz.SHARD_CAP}")
-    jobs = [(f"{API_WORKER}-z{i:02d}", sh["files"], [f"{DOMAIN}{p}*" for p in sh["prefixes"]]) for i, sh in enumerate(plan, 1)]
+    jobs = sticky_shards(plan, routes_now)
     jobs.append((STATIC_WORKER, root, [f"{DOMAIN}/*"]))
     freed = []          # (pattern, previous script) — put back if a deploy fails
     for name, fl, pats in jobs:
