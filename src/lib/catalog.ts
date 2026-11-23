@@ -241,14 +241,18 @@ export async function filterGames(q: Q, f: FilterInput, pageSize: number = SITE.
     baseParams = params;
     order = f.sort === 'new' ? 'g.added_at DESC, g.id DESC' : f.sort === 'az' ? 'g.title_norm, g.id' : 'g.rank_score DESC, g.id DESC';
   }
+  // No filter, only category/sort/page (the static listings page with #page=N): the count is already known, so no
+  // count query and no cap — the pager reaches the same last page as the server-rendered one.
+  const known = where.length ? null : f.cat ? f.cat.count : Number((await getSetting(q, 'published_count')) ?? 0) || null;
   const [rows, cnt] = await Promise.all([
     q.all<CardRow>(`SELECT ${CARD_COLS} ${base.replace('WHERE', `${CARD_JOIN} WHERE`)} ORDER BY ${order} LIMIT ? OFFSET ?`, [...baseParams, pageSize, (f.page - 1) * pageSize]),
-    q.all<{ n: number }>(`SELECT count(*) AS n FROM (SELECT 1 ${base} LIMIT ${CAP + 1})`, baseParams),
+    known !== null ? Promise.resolve([{ n: known }]) : q.all<{ n: number }>(`SELECT count(*) AS n FROM (SELECT 1 ${base} LIMIT ${CAP + 1})`, baseParams),
   ]);
   const n = cnt[0]?.n ?? 0;
+  const cap = known !== null ? Infinity : CAP;
   return {
-    items: rows.map(toCard), page: f.page, pageSize, total: Math.min(n, CAP), capped: n > CAP,
-    pages: Math.min(SITE.maxCategoryPages, Math.max(1, Math.ceil(Math.min(n, CAP) / pageSize))),
+    items: rows.map(toCard), page: f.page, pageSize, total: Math.min(n, cap), capped: n > cap,
+    pages: Math.min(SITE.maxCategoryPages, Math.max(1, Math.ceil(Math.min(n, cap) / pageSize))),
   };
 }
 

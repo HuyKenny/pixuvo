@@ -67,6 +67,11 @@ def finish(a):
             shutil.copy2(p, d)
             added += 1
 
+    random_pages(out, client)
+    safety_404(out)
+    (out / "_headers").write_text(HEADERS)
+    fix_links(out)
+
     meta = json.loads((out.parent / (out.name + ".meta.json")).read_text())
     html = [p for p in out.rglob("*.html")]
     leaked = [p for p in html[:3000] if b"127.0.0.1" in p.read_bytes()]
@@ -76,6 +81,126 @@ def finish(a):
     _, urls = zmraz.sitemap_urls("https://" + DOMAIN, a.base.rstrip("/"))
     if len(html) < 0.97 * len(urls) or meta["errors"] > max(50, len(urls) // 100):
         sys.exit(f"render incomplete: {len(html)} pages for {len(urls)} sitemap URLs, {meta['errors']} errors — not deploying")
+
+
+# Hashed build files never change in place; HTML keeps the default max-age=0 so a deploy shows up at once.
+HEADERS = """/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+/icons/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+/data/*
+  Cache-Control: public, max-age=300, stale-while-revalidate=3600
+"""
+LANG_RE = "|".join(re.escape(x) for x in LANGS)
+ASSET_EXT = re.compile(r"\.(?!html?$)[a-z0-9]{1,8}$", re.I)
+
+
+def exists(out, path):
+    rel = path.lstrip("/")
+    if not rel:
+        return (out / "index.html").is_file()
+    if path.endswith("/"):
+        return (out / rel / "index.html").is_file()
+    return (out / rel).is_file() or (out / (rel + ".html")).is_file() or (out / rel / "index.html").is_file()
+
+
+def random_pages(out, client):
+    """/random/ was a Worker redirect to one of the top games: now a static page that picks one in the browser.
+    /<lang>/random/ prefers games that have a page in that language."""
+    top = sorted(p.parent.name for p in (client / "games").glob("*/index.html") if p.parent.name != "page")[:3000]
+    random_ = __import__("random")
+    random_.seed(7)
+    pool = random_.sample(top, min(300, len(top)))
+    for lang in [""] + LANGS:
+        local = sorted(p.parent.name for p in (out / lang / "games").glob("*/index.html")) if lang else []
+        base = f"/{lang}/games/" if len(local) >= 20 else "/games/"
+        slugs = local[:300] if len(local) >= 20 else pool
+        page = ('<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex,nofollow">'
+                '<meta name="viewport" content="width=device-width,initial-scale=1"><title>Pixuvo</title>'
+                f'<script>(function(){{var s={json.dumps(slugs, separators=(",", ":"))};'
+                f'location.replace({json.dumps(base)}+s[Math.floor(Math.random()*s.length)]+"/")}})()</script>'
+                f'<a href="{base}">Pixuvo</a>')
+        d = out / lang / "random" / "index.html" if lang else out / "random" / "index.html"
+        d.parent.mkdir(parents=True, exist_ok=True)
+        d.write_text(page, encoding="utf-8")
+
+
+def safety_404(out):
+    """Safety net for links from elsewhere: /<lang>/x/ without a page in that language -> the English /x/,
+    /x/page/N/ -> /x/#page=N (listings page in the browser). The English 404 stops the chain."""
+    f = out / "404.html"
+    if not f.exists():
+        return
+    js = ("<script>(function(){var p=location.pathname,m=p.match(/^\\/(?:" + LANG_RE + ")(\\/.+)$/);"
+          "if(m){location.replace(m[1]+location.search+location.hash);return}"
+          "m=p.match(/^(.*\\/)page\\/(\\d+)\\/?$/);if(m)location.replace(m[1]+'#page='+m[2])})()</script>")
+    h = f.read_text(encoding="utf-8")
+    if "location.replace(m[1]+location.search" not in h:
+        f.write_text(h.replace("<head>", "<head>" + js, 1), encoding="utf-8")
+
+
+def fix_links(out):
+    """Frozen pages only exist for sitemap URLs. Links the app renders to pages that were not frozen are pointed at
+    an existing page: /<lang>/games/<slug>/ without a translation -> /games/<slug>/ (language switcher -> /<lang>/),
+    /x/page/N/ -> /x/#page=N (the listing loads page N in the browser), rel=prev/next to such pages are dropped."""
+    memo = {}
+
+    def target(path, keep):
+        key = (path, keep)
+        if key in memo:
+            return memo[key]
+        res = path
+        if not exists(out, path):
+            m = re.match(r"^(.*/)page/(\d+)/$", path)
+            ml = re.match(r"^/(" + LANG_RE + r")(/.*)$", path)
+            if m and exists(out, m.group(1)):
+                res = f"{m.group(1)}#page={m.group(2)}"
+            elif ml and keep:
+                res = f"/{ml.group(1)}/"
+            elif ml:
+                res = target(ml.group(2), False)
+            else:
+                res = None
+        memo[key] = res
+        return res
+
+    tag_re = re.compile(r'<(?:a\b|link rel="(?:prev|next)")[^>]*>')
+    href_re = re.compile(r'(\shref=")((?:https://pixuvo\.com)?/(?!/)[^"#?]*)([^"]*)"')
+    changed = unresolved = 0
+    bad = {}
+    for f in out.rglob("*.html"):
+        h = f.read_text(encoding="utf-8", errors="replace")
+
+        def tag_fix(tm):
+            nonlocal unresolved
+            tag = tm.group(0)
+            hm = href_re.search(tag)
+            if not hm:
+                return tag
+            absu = hm.group(2).startswith("https://")
+            path = hm.group(2)[len("https://pixuvo.com"):] if absu else hm.group(2)
+            if not path or ASSET_EXT.search(path) or path.startswith(("/api/", "/cdn-cgi/", "/go/")):
+                return tag
+            t = target(path, "data-keep-href" in tag)
+            if t == path:
+                return tag
+            if tag.startswith("<link"):
+                return ""                                # rel=prev/next to a page that is not a file
+            if t is None:
+                unresolved += 1
+                bad[path] = bad.get(path, 0) + 1
+                return tag
+            new = ("https://pixuvo.com" + t if absu else t) + ("" if "#" in t else hm.group(3))
+            return tag[:hm.start(2)] + new + tag[hm.end(3):]
+
+        h2 = tag_re.sub(tag_fix, h)
+        if h2 != h:
+            f.write_text(h2, encoding="utf-8")
+            changed += 1
+    top = sorted(bad.items(), key=lambda x: -x[1])[:10]
+    print(f"links: {changed} pages rewritten, {unresolved} links still point at missing pages {top}")
 
 
 def cf(path, method="GET"):
@@ -146,7 +271,7 @@ def deploy(a):
     work.mkdir(exist_ok=True)
     plan = zmraz.plan_segment_shards(out, SEGMENTS)
     files = [p.relative_to(out).as_posix() for p in out.rglob("*") if p.is_file()]
-    root = [f for f in files if f not in ("_redirects", "404.html")
+    root = [f for f in files if f not in ("_redirects", "404.html", "_headers")
             and not any(zmraz.url_path(f).startswith(f"/{s}/") for s in SEGMENTS)]
     if len(root) > zmraz.SHARD_CAP:
         sys.exit(f"{STATIC_WORKER}: {len(root)} files > {zmraz.SHARD_CAP}")
@@ -156,6 +281,8 @@ def deploy(a):
     for name, fl, pats in jobs:
         d = work / name
         zmraz.materialize(out, d, fl)
+        if (out / "_headers").exists():
+            shutil.copy(out / "_headers", d / "_headers")
         rts = [{"pattern": p, "zone_name": DOMAIN} for p in pats]
         print(f"{name}: {len(fl)} files, {len(pats)} routes", flush=True)
         ok, log = wrangler_deploy(name, d, rts, work, nf)

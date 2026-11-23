@@ -91,7 +91,9 @@ rm -f dist/server/.dev.vars
 endstep
 
 step "render every sitemap page from the local app"
-# workerd runs the app on one thread: one dev server per CPU, each on its own copy of the local state
+# workerd runs the app on one thread: one dev server per CPU, each on its own copy of the local state.
+# Sitemap pages + discovered utility pages (favorites, search, popular, ... in every language); never discovered game
+# pages without a translation, /page/N/ listings or /random/ (publish_static.py finish points links at existing pages).
 N=${PIXUVO_DEV_INSTANCES:-$(nproc)}
 PIDS=(); BASES=""
 stop_dev() { for p in "${PIDS[@]}"; do kill -- -"$p" 2>/dev/null || true; done; }
@@ -113,7 +115,8 @@ for b in ${BASES//,/ }; do
   done
 done
 echo "$N dev servers ready"
-python3 -u scripts/static/zmraz.py crawl pixuvo.com --base "$BASES" --out "$OUT" --extra-until 0 \
+python3 -u scripts/static/zmraz.py crawl pixuvo.com --base "$BASES" --out "$OUT" --extra-until 200000 \
+  --extra-skip '^(/[a-z]{2}(-han[st])?)?/(games/[^/]+/|([^/]+/)*page/[0-9]+/|random/)$' \
   --limit 200000 --workers "${PIXUVO_CRAWL_WORKERS:-$((N * 4))}" | grep -E "souborů|^\{" | awk 'NR % 20 == 0 || /^\{/' || true
 python3 scripts/static/publish_static.py finish --out "$OUT" --base "http://127.0.0.1:$PORT" --client dist/client
 stop_dev

@@ -90,7 +90,7 @@ if (bar && forms.length && gridEl) {
     }
     if (out.sort?.[0] === 'featured') delete out.sort;
     if (out.page && (!/^\d{1,3}$/.test(out.page[0]!) || out.page[0] === '1')) delete out.page;
-    if (out.page && Object.keys(out).length === 1) delete out.page; // unfiltered pages are real URLs
+    // #page=N alone is a plain listing page: the static site has no /page/N/ files (links are rewritten to #page=N)
     return out;
   };
   const writeHash = (s: State) => {
@@ -174,8 +174,7 @@ if (bar && forms.length && gridEl) {
     const qs = new URLSearchParams();
     if (category) qs.set('cat', category);
     for (const k of KEYS) if (s[k]?.length) qs.set(k, s[k]!.join(','));
-    // Unfiltered /games/ lists newest first.
-    if (!category && !s.sort && !isFiltered(s)) qs.set('sort', 'new');
+    if (!category && !s.sort && activeCount(s) === 0) qs.set('sort', 'az'); // /games/#page=N = the A–Z directory order
     qs.delete('page');
     if (page > 1) qs.set('page', String(page));
     if (pageLang() !== 'en') qs.set('lang', pageLang());

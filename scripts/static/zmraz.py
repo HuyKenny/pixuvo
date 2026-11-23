@@ -104,6 +104,7 @@ class Freezer:
         self.extra_until = MAX_FILES
         self.skip = SKIP_PREFIX
         self.fetch_base = self.base   # --base: crawl another origin (local dev server), files keep the production domain
+        self.extra_skip = None        # --extra-skip REGEX: discovered pages matching it are never fetched
         self.bases = []               # --base a,b,c: several local dev servers, pages spread over them (pixuvo)
         self.exits = ("/go/",)        # exit pages: fetched even beyond --extra-until (/akce/ on kakapo)
 
@@ -212,7 +213,9 @@ class Freezer:
                     last = p.rstrip("/").rsplit("/", 1)[-1]
                     is_page = "." not in last
                     if not from_prio and is_page and not p.startswith(self.exits) and len(self.files) >= self.extra_until:
-                        continue    # discovered page outside the sitemap: only while the single-Worker budget lasts
+                        continue
+                    if not from_prio and is_page and self.extra_skip and self.extra_skip.match(p):
+                        continue    # pixuvo: discovered game pages without a translation, /page/N/ listings    # discovered page outside the sitemap: only while the single-Worker budget lasts
                     futs[ex.submit(self.handle, p)] = p
                 if not futs:
                     break
@@ -448,6 +451,7 @@ def main():
     ap.add_argument("--no-go", action="store_true", help="skip /go/ exits (generate them with go-z-d1.py)")
     ap.add_argument("--skip", action="append", default=[], metavar="PREFIX",
                     help="extra path prefix not to fetch, repeatable (e.g. --skip /img/ when thumbnails live on R2)")
+    ap.add_argument("--extra-skip", help="regex of discovered (non-sitemap) page paths never fetched")
     ap.add_argument("--base", help="origin to fetch from instead of https://<domain> (e.g. http://127.0.0.1:8787)")
     ap.add_argument("--exits", default="/go/", help="comma list of exit prefixes fetched beyond --extra-until (e.g. /go/,/akce/)")
     a = ap.parse_args()
@@ -458,6 +462,7 @@ def main():
         fz = Freezer(a.domain, out, a.workers)
         fz.extra_until = a.extra_until
         fz.no_go = a.no_go
+        fz.extra_skip = re.compile(a.extra_skip) if a.extra_skip else None
         fz.skip = SKIP_PREFIX + tuple(a.skip)
         fz.exits = tuple(x for x in a.exits.split(",") if x)
         if a.base:
