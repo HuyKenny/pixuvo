@@ -115,7 +115,7 @@ done
 echo "$N dev servers ready"
 python3 -u scripts/static/zmraz.py crawl pixuvo.com --base "$BASES" --out "$OUT" --extra-until 0 \
   --limit 200000 --workers "${PIXUVO_CRAWL_WORKERS:-$((N * 4))}" | grep -E "souborů|^\{" | awk 'NR % 20 == 0 || /^\{/' || true
-python3 scripts/static/site.py finish --out "$OUT" --base "http://127.0.0.1:$PORT" --client dist/client
+python3 scripts/static/publish_static.py finish --out "$OUT" --base "http://127.0.0.1:$PORT" --client dist/client
 stop_dev
 trap - EXIT
 for n in $(seq 2 "$N"); do rm -rf "$WORK/state-$n"; done
@@ -123,7 +123,7 @@ endstep
 
 if [[ $DEPLOY == 1 ]]; then
   step "deploy shards + pixuvo-static"
-  python3 scripts/static/site.py deploy --out "$OUT"
+  python3 scripts/static/publish_static.py deploy --out "$OUT"
   endstep
   step "deploy API Worker (pixuvo: /api/* only)"
   $WR deploy -c dist/server/wrangler.json 2>&1 | grep -v -i -E 'token|key' | tail -6

@@ -15,3 +15,4 @@ tmp/
 *.log
 public/data/
 __pycache__/
+.static-work/
