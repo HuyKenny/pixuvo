@@ -181,7 +181,8 @@ class Freezer:
             text = body.decode("utf-8", "replace")
             refs = re.findall(r'''(?:href|src|poster|data-src)\s*=\s*["']([^"']+)["']''', text)
             # meta content= only when it is a URL (og:image etc.), never descriptions
-            refs += [x for x in re.findall(r'''content\s*=\s*["']([^"']+)["']''', text) if x.startswith(("/", "http"))]
+            refs += [x for x in re.findall(r'''content\s*=\s*["']([^"']+)["']''', text)
+                     if re.match(r"^(https?://[^/\s]|/(?!//))[^\s…]*$", x)]   # a description starting with "///…" is no URL
             for s in re.findall(r'''srcset\s*=\s*["']([^"']+)["']''', text):
                 refs += [x.strip().split(" ")[0] for x in s.split(",")]
             refs += re.findall(r'''url\(\s*["']?([^"')]+)["']?\s*\)''', text)

@@ -151,7 +151,8 @@ def safety_404(out):
 def fix_links(out):
     """Frozen pages only exist for sitemap URLs. Links the app renders to pages that were not frozen are pointed at
     an existing page: /<lang>/games/<slug>/ without a translation -> /games/<slug>/ (language switcher -> /<lang>/),
-    /x/page/N/ -> /x/#page=N (the listing loads page N in the browser), rel=prev/next to such pages are dropped."""
+    /x/page/N/ -> /x/#page=N (the listing loads page N in the browser), rel=prev/next to such pages are dropped,
+    a category page that was not built -> /categories/ (localised for /<lang>/), anything else -> nearest existing parent."""
     memo = {}
 
     def target(path, keep):
@@ -168,8 +169,15 @@ def fix_links(out):
                 res = f"/{ml.group(1)}/"
             elif ml:
                 res = target(ml.group(2), False)
+                if res == "/categories/" and exists(out, f"/{ml.group(1)}/categories/"):
+                    res = f"/{ml.group(1)}/categories/"
+            elif re.match(r"^/[a-z0-9-]+-games/$", path) and exists(out, "/categories/"):
+                res = "/categories/"         # a category below the page threshold (e.g. /cooperative-games/)
             else:
-                res = None
+                # nearest existing ancestor (/games/x/y/ -> /games/)
+                parts = path.rstrip("/").split("/")
+                res = next(("/".join(parts[:i]) + "/" for i in range(len(parts) - 1, 0, -1)
+                            if exists(out, "/".join(parts[:i]) + "/")), "/")
         memo[key] = res
         return res
 
