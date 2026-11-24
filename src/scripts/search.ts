@@ -15,7 +15,7 @@ if (form && input && list) {
   let timer: number | undefined;
   let ctrl: AbortController | null = null;
   let active = -1;
-  let items: Array<{ slug: string; title: string; thumb: string; cat: string | null; kind?: 'category' }> = [];
+  let items: Array<{ slug: string; title: string; thumb: string; cat: string | null; kind?: 'category'; loc?: boolean }> = [];
 
   const close = () => {
     list.hidden = true;
@@ -31,7 +31,7 @@ if (form && input && list) {
         items
           .map(
             (g, i) =>
-              `<li><a id="sg-${i}" role="option" aria-selected="false" href="${g.kind === 'category' ? lp(`/${esc(g.slug)}-games/`) : lp(`/games/${esc(g.slug)}/`)}"><img src="${esc(g.thumb)}" alt="" width="56" height="42" loading="lazy" referrerpolicy="no-referrer"><span><span class="s-title">${esc(g.title)}</span><br><span class="s-cat">${esc(g.cat ?? '')}</span></span></a></li>`,
+              `<li><a id="sg-${i}" role="option" aria-selected="false" href="${g.kind === 'category' ? lp(`/${esc(g.slug)}-games/`) : (g.loc === false ? `/games/${esc(g.slug)}/` : lp(`/games/${esc(g.slug)}/`))}"><img src="${esc(g.thumb)}" alt="" width="56" height="42" loading="lazy" referrerpolicy="no-referrer"><span><span class="s-title">${esc(g.title)}</span><br><span class="s-cat">${esc(g.cat ?? '')}</span></span></a></li>`,
           )
           .join('') + `<li><a class="s-all" href="${lp('/search/')}?q=${encodeURIComponent(q)}">${esc(tr('c.seeAll', { q }))}</a></li>`;
     }

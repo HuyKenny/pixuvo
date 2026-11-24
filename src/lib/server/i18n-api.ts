@@ -4,6 +4,21 @@ import { DEFAULT_LANG, isLang } from '../../i18n/locales';
 import type { CategoryInfo } from '../types';
 import { MIN_CATEGORY_GAMES } from '../taxonomy';
 
+/**
+ * Static site: a game has a page in another language only when it has Pixuvo's own text there (game_editorial, the
+ * same rule as the {lang}-games sitemaps). `loc: false` tells the browser to link the English /games/<slug>/.
+ */
+export async function markLocalPages<T extends { slug: string }>(db: { all<R>(sql: string, params?: unknown[]): Promise<R[]> }, items: T[], lang: string): Promise<Array<T & { loc?: boolean }>> {
+  if (lang === DEFAULT_LANG || !items.length) return items;
+  const slugs = items.map((g) => g.slug).filter((x) => typeof x === 'string').slice(0, 90);
+  const rows = await db.all<{ slug: string }>(
+    `SELECT g.slug FROM games g JOIN game_editorial e ON e.game_id = g.id AND e.lang = ? WHERE g.slug IN (${slugs.map(() => '?').join(', ')})`,
+    [lang, ...slugs],
+  );
+  const has = new Set(rows.map((r) => r.slug));
+  return items.map((g) => ({ ...g, loc: has.has(g.slug) }));
+}
+
 export function apiLang(url: URL): string {
   const l = url.searchParams.get('lang');
   return isLang(l) ? l : DEFAULT_LANG;
