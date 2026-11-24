@@ -1,6 +1,6 @@
 /** GET /api/games/?cat=&sub=&theme=&q=&device=&players=&mode=&style=&controls=&sort=&page=&lang= — JSON behind fragment filters. */
 import type { APIRoute } from 'astro';
-import { filterGames, parseFilters } from '../../lib/catalog';
+import { filterGames, parseFilters, searchPage } from '../../lib/catalog';
 import { categoriesCached, q } from '../../lib/server/db';
 import { error, json } from '../../lib/server/http';
 import { apiLang, localiseCards } from '../../lib/server/i18n-api';
@@ -12,6 +12,8 @@ export const GET: APIRoute = async ({ url }) => {
   const cats = await categoriesCached(db);
   const f = parseFilters(url.searchParams, cats);
   if (!f) return error(400, 'Invalid filter.');
-  const res = await filterGames(db, f);
+  // Text only (the static /search/ page): FTS-ranked, cheap in D1 reads; any other filter -> the filter query.
+  const textOnly = f.q && !f.cat && !f.sub.length && !f.theme.length && !f.device && !f.players.length && !f.mode && !f.style.length && !f.controls.length && f.sort === 'featured';
+  const res = (textOnly ? await searchPage(db, url.searchParams.get('q') ?? '', f.page) : null) ?? await filterGames(db, f);
   return json({ ...res, items: await localiseCards(res.items, apiLang(url)) }, { cache: 'public' });
 };

@@ -7,7 +7,7 @@ import { categoriesCached, q } from '../lib/server/db';
 import { categoryHits } from '../lib/server/i18n-api';
 import { categoryIcon } from '../lib/category-icons';
 import { SITE } from '../lib/site';
-import { useI18n } from '../i18n';
+import { clientDict, useI18n } from '../i18n';
 const i = await useI18n(Astro);
 const t = i.t;
 const raw = (Astro.url.searchParams.get('q') ?? '').trim().slice(0, 80);
@@ -15,12 +15,15 @@ const page = clampPage(Astro.url.searchParams.get('page') ?? '1', 20) ?? 1;
 const res = raw ? await searchGames(q(), raw, SITE.pageSize, (page - 1) * SITE.pageSize) : null;
 const hits = raw ? await categoryHits(raw, i.lang, await categoriesCached(q()), 4) : [];
 const pages = res ? Math.min(20, Math.max(1, Math.ceil(res.total / SITE.pageSize))) : 1;
+// The static site has one /search/ page per language (no query): the browser reads ?q= and renders the results
+// from GET /api/games/?q= (FTS-ranked, see searchPage) with the strings below.
+const searchI18n = raw ? '' : JSON.stringify(await clientDict(i.lang, ['search.'])).replace(/</g, '\\u003c');
 const href = (n: number) => `/search/?q=${encodeURIComponent(raw)}${n > 1 ? `&page=${n}` : ''}`;
 ---
 <Base title={raw ? t('search.titleQuery', { q: raw }) : t('search.title')} description={t('search.description')} path={null} noindex query={raw}>
   <div class="wrap">
     <div class="page-head">
-      <h1>{raw ? t('search.resultsFor', { q: raw }) : t('search.title')}</h1>
+      <h1 id="search-h1">{raw ? t('search.resultsFor', { q: raw }) : t('search.title')}</h1>
       {res && <p class="lead">{res.total === 0 ? t('search.none') : res.capped ? t('search.foundCapped', { n: String(res.total) }) : t('search.found', { n: res.total })}</p>}
     </div>
     {hits.length > 0 && (
@@ -28,8 +31,12 @@ const href = (n: number) => `/search/?q=${encodeURIComponent(raw)}${n > 1 ? `&pa
         {hits.map((h) => <a class="chip" href={`/${h.slug}-games/`}><img src={categoryIcon(h.slug)} alt="" width="22" height="22" />{h.title}</a>)}
       </nav>
     )}
+    {!raw && <script type="application/json" id="i18n-search" set:html={searchI18n} />}
+    {!raw && <p class="lead" id="search-lead" hidden></p>}
+    {!raw && <nav class="chips search-cats" id="search-cats" hidden aria-label={t('search.categoryHit')}></nav>}
+    {!raw && <div id="search-live" hidden></div>}
     {!raw && (
-      <form action="/search/" method="get" role="search" style="max-width:560px">
+      <form action="/search/" method="get" role="search" style="max-width:560px" id="search-form">
         <label class="field">{t('search.field')}<input type="search" name="q" maxlength="80" required /></label>
         <button class="btn btn-primary" type="submit" style="margin-top:10px">{t('search.submit')}</button>
       </form>
@@ -40,3 +47,6 @@ const href = (n: number) => `/search/?q=${encodeURIComponent(raw)}${n > 1 ? `&pa
     {res && <Pagination page={page} pages={pages} href={href} label={t('search.pages')} />}
   </div>
 </Base>
+<script>
+  import '../scripts/search-page';
+</script>

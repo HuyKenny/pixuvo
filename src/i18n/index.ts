@@ -110,10 +110,10 @@ export function useI18n(astro: { url: URL }): Promise<I18n> {
 }
 
 /** Keys the browser scripts need (prefix "c."), as a small JSON blob per page. */
-export async function clientDict(lang: Lang): Promise<Record<string, string>> {
+export async function clientDict(lang: Lang, prefixes: string[] = ['c.', 'theme.']): Promise<Record<string, string>> {
   const dict = await loadDict(lang);
   const out: Record<string, string> = {};
-  const client = (k: string) => k.startsWith('c.') || k.startsWith('theme.');
+  const client = (k: string) => prefixes.some((p) => k.startsWith(p));
   for (const [k, v] of Object.entries(en as Dict)) if (client(k) && v) out[k] = dict[k] ?? v;
   // Plural forms that English does not have (e.g. _few, _many).
   for (const [k, v] of Object.entries(dict)) if (client(k) && v) out[k] = v;

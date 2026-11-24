@@ -375,6 +375,35 @@ export async function searchGames(q: Q, raw: string, limit: number, offset = 0):
   return { items: rows.map(toCard), total: Math.min(n, CAP), capped: n > CAP };
 }
 
+/**
+ * Text search for the static /search/ page (GET /api/games/?q=&page=): FTS5 ranks inside the index (title hits first,
+ * then any column), only the rows of the requested pages are joined. ~1 000 D1 rows per page instead of scoring every
+ * match; at most 20 pages like the server-rendered search.
+ */
+export async function searchPage(q: Q, raw: string, page: number, pageSize: number = SITE.pageSize): Promise<(Paged<GameCard> & { capped: boolean }) | null> {
+  const fq = buildFtsQuery(raw);
+  if (!fq) return null;
+  const MAX_PAGES = 20;
+  const p = Math.min(Math.max(1, page), MAX_PAGES);
+  const take = p * pageSize;
+  const rows = await q.all<CardRow>(
+    `WITH hits AS (
+       SELECT id, min(r) AS r FROM (
+         SELECT * FROM (SELECT rowid AS id, rank - 1000 AS r FROM games_fts WHERE games_fts MATCH ? ORDER BY rank LIMIT ?)
+         UNION ALL
+         SELECT * FROM (SELECT rowid AS id, rank AS r FROM games_fts WHERE games_fts MATCH ? ORDER BY rank LIMIT ?)
+       ) GROUP BY id)
+     SELECT ${CARD_COLS} FROM hits CROSS JOIN games g ON g.id = hits.id ${CARD_JOIN}
+      WHERE g.status = 'published'
+      ORDER BY (g.title_norm = ?) DESC, (g.title_norm LIKE ?) DESC, hits.r, g.id LIMIT ? OFFSET ?`,
+    [`title : (${fq.match})`, take, fq.match, take, fq.norm, fq.norm.slice(0, 40) + '%', pageSize, (p - 1) * pageSize],
+  );
+  const cap = MAX_PAGES * pageSize;
+  const cnt = await q.all<{ n: number }>(`SELECT count(*) AS n FROM (SELECT 1 FROM games_fts WHERE games_fts MATCH ? LIMIT ${cap + 1})`, [fq.match]);
+  const n = cnt[0]?.n ?? 0;
+  return { items: rows.map(toCard), page: p, pageSize, total: Math.min(n, cap), capped: n > cap, pages: Math.max(1, Math.ceil(Math.min(n, cap) / pageSize)) };
+}
+
 export async function suggest(q: Q, raw: string): Promise<Array<{ slug: string; title: string; thumb: string; cat: string | null; catSlug: string | null }>> {
   const fq = buildFtsQuery(raw);
   if (!fq) return [];
